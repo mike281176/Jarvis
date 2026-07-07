@@ -11,7 +11,7 @@ class JarvisPWA {
         this.synthesis = window.speechSynthesis;
         this.isListening = false;
         this.conversation = [];
-        this.apiBaseUrl = this.config.apiUrl || 'http://192.168.1.81:8124';
+        this.apiBaseUrl = this.config.apiUrl || 'https://api-jarvis.utvyc79trn*************.ui.nabu.casa';
         
         this.init();
     }
@@ -21,7 +21,7 @@ class JarvisPWA {
     loadConfig() {
         const defaultConfig = {
             user: null,
-            apiUrl: 'http://192.168.1.81:8124',
+            apiUrl: 'https://api-jarvis.utvyc79trn*************.ui.nabu.casa',
             language: 'de-DE',
             autoSpeak: true
         };
