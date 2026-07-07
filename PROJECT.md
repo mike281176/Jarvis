@@ -122,14 +122,14 @@ pending → processing → completed
 
 ---
 
-## Wichtige Pfade (NICHT /tmp/)
+| Wichtige Pfade (NICHT `/tmp/`)
 
-| Zweck | Pfad |
-|-------|------|
-| Nachrichten-Queue | `/home/mike/projects/jarvis/data/messages.json` |
-| Log-Dateien | `/home/mike/projects/jarvis/data/logs/` |
-| Python Scripts | `/home/mike/projects/jarvis/scripts/` |
-| Config Backups | `/home/mike/projects/jarvis/config/backups/` |
+| Zweck | Pfad | Status |
+|-------|------|--------|
+| Nachrichten-Queue | `/home/mike/projects/jarvis/data/messages.json` | ❌ EINGESTELLT |
+| Log-Dateien | `/home/mike/projects/jarvis/data/logs/` | ✅ Aktiv |
+| Python Scripts | `/home/mike/projects/jarvis/scripts/` | ✅ Aktiv |
+| Config Backups | `/home/mike/projects/jarvis/config/backups/` | ✅ Aktiv |
 
 ---
 
@@ -158,14 +158,17 @@ pending → processing → completed
 
 ### In Progress
 - [ ] Migration von `/tmp/` zu persistentem Speicher
-- [ ] Echo-Geräte Mapping finalisieren
+- [x] ~~Echo-Geräte Mapping finalisieren~~ ❌ EINGESTELLT
 - [ ] Solar-Entity Discovery verbessern
 
 ### Todo
 - [ ] REST-API Endpunkt für externe Integrationen
 - [ ] Fehler-Retry-Mechanismus
 - [ ] Logging & Monitoring Dashboard
-- [ ] Stimmen-Erkennung (wer spricht)
+- [x] ~~Stimmen-Erkennung (wer spricht)~~ ❌ EINGESTELLT
+
+### Eingestellt / On Hold
+- [ ] ~~Echo-Geräte Sprachausgabe (Alexa TTS)~~ ❌ Vorerst eingestellt wegen technischer Komplexität
 
 ### Done
 - [x] Basis-Skripte erstellt
@@ -173,16 +176,19 @@ pending → processing → completed
 
 ---
 
-## Echo-Geräte Mapping
+## Echo-Geräte Mapping (❌ EINGESTELLT)
 
-| Raum | Event Entity | Notify Service |
-|------|------------|----------------|
-| Wohnzimmer | `event.wohnzimmer_wohnzimmer_echo_sprachereignis` | `notify.wohnzimmer_echo_durchsagen` |
-| Arbeitszimmer | `event.arbeitzimmer_arbeitszimmer_sprachereignis` | `notify.arbeitszimmer_durchsagen` |
-| Bad | `event.bad_bad_sprachereignis` | `notify.bad_durchsagen` |
-| Lager | `event.lager_sprachereignis` | `notify.lager_durchsagen` |
-| Schlafzimmer | `event.schlafzimmer_sprachereignis` | `notify.schlafzimmer_durchsagen` |
-| Auto | `event.kontrollraum_mikes_echo_auto_sprachereignis` | `notify.mikes_echo_auto_durchsagen` |
+> **Hinweis:** Die Echo-Geräte Sprachausgabe wurde vorerst eingestellt.
+> Die PWA-Variante über Browser-Spracherkennung bleibt aktiv.
+
+| Raum | Event Entity | Notify Service | Status |
+|------|------------|----------------|--------|
+| Wohnzimmer | `event.wohnzimmer_wohnzimmer_echo_sprachereignis` | `notify.wohnzimmer_echo_durchsagen` | ❌ Paused |
+| Arbeitszimmer | `event.arbeitzimmer_arbeitszimmer_sprachereignis` | `notify.arbeitszimmer_durchsagen` | ❌ Paused |
+| Bad | `event.bad_bad_sprachereignis` | `notify.bad_durchsagen` | ❌ Paused |
+| Lager | `event.lager_sprachereignis` | `notify.lager_durchsagen` | ❌ Paused |
+| Schlafzimmer | `event.schlafzimmer_sprachereignis` | `notify.schlafzimmer_durchsagen` | ❌ Paused |
+| Auto | `event.kontrollraum_mikes_echo_auto_sprachereignis` | `notify.mikes_echo_auto_durchsagen` | ❌ Paused |
 
 ---
 
@@ -198,4 +204,4 @@ Geprüfte Entities in Reihenfolge:
 
 ## Letzte Änderung
 
-*Automatisch aktualisiert bei jedem Chat mit diesem Projekt*
+- **07.07.2026:** Echo-Geräte Sprachausgabe vorerst eingestellt. PWA-Variante bleibt aktiv.
