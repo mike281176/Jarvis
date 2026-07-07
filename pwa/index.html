@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000510">
+    <title>J.A.R.V.I.S.</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%2300D4FF' stroke-width='3'/><circle cx='50' cy='50' r='25' fill='%2300D4FF' opacity='0.3'/><circle cx='50' cy='50' r='10' fill='%2300D4FF'/></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div id="login-screen" class="screen login-screen">
+            <div class="hologram-container">
+                <div class="jarvis-ring ring-1"></div>
+                <div class="jarvis-ring ring-2"></div>
+                <div class="jarvis-ring ring-3"></div>
+                <div class="center-core"></div>
+            </div>
+            
+            <div class="login-header">
+                <h1 class="jarvis-title">
+                    <span class="letter">J</span><span class="letter">.</span><span class="letter">A</span><span class="letter">.</span><span class="letter">R</span><span class="letter">.</span><span class="letter">V</span><span class="letter">.</span><span class="letter">I</span><span class="letter">.</span><span class="letter">S</span><span class="letter">.</span>
+                </h1>
+                <p class="subtitle">Just A Rather Very Intelligent System</p>
+            </div>
+            
+            <div class="user-selection">
+                <p class="scan-line">Bitte identifizieren Sie sich...</p>
+                <div class="user-cards">
+                    <button class="user-card" data-user="mike">
+                        <div class="user-avatar">
+                            <div class="avatar-ring"></div>
+                            <span class="avatar-initial">M</span>
+                        </div>
+                        <span class="user-name">Mike</span>
+                        <span class="user-role">Administrator</span>
+                        <div class="card-glow"></div>
+                    </button>
+                    <button class="user-card" data-user="gast">
+                        <div class="user-avatar">
+                            <div class="avatar-ring"></div>
+                            <span class="avatar-initial">G</span>
+                        </div>
+                        <span class="user-name">Gast</span>
+                        <span class="user-role">Besucher</span>
+                        <div class="card-glow"></div>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="system-status">
+                <div class="status-indicator online"></div>
+                <span class="status-text">System Online</span>
+            </div>
+            
+            <button class="settings-toggle" id="showSettings">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M12 1v6m0 6v6m4.22-10.22l4.24-4.24M6.34 17.66l-4.24 4.24M23 12h-6m-6 0H1m20.24 4.24l-4.24-4.24M6.34 6.34L2.1 2.1"></path>
+                </svg>
+                Einstellungen
+            </button>
+            
+            <div class="settings-panel" id="settingsPanel" style="display: none;">
+                <div class="input-group">
+                    <label class="hud-label">API Endpunkt</label>
+                    <input type="url" id="apiUrl" class="hud-input" value="http://192.168.1.81:8124" placeholder="http://...">
+                </div>
+                <button class="hud-button" id="saveSettings">Speichern</button>
+            </div>
+        </div>
+        
+        <!-- Main Interface -->
+        <div id="main-interface" class="screen main-interface" style="display: none;">
+            <!-- Header -->
+            <header class="hud-header">
+                <div class="header-left">
+                    <div class="system-logo">
+                        <div class="mini-ring"></div>
+                        <span>J.A.R.V.I.S.</span>
+                    </div>
+                </div>
+                <div class="header-center">
+                    <div class="location-badge">
+                        <span class="location-icon">◉</span>
+                        <span id="currentLocation">Wohnzimmer</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <span class="user-badge" id="currentUser">M</span>
+                    <button class="logout-btn" id="logoutBtn">×</button>
+                </div>
+            </header>
+            
+            <!-- Main Content -->
+            <main class="hud-main">
+                <!-- Voice Visualizer -->
+                <div class="voice-section">
+                    <div class="voice-container">
+                        <div class="voice-ring ring-outer" id="voiceRing1"></div>
+                        <div class="voice-ring ring-middle" id="voiceRing2"></div>
+                        <div class="voice-ring ring-inner" id="voiceRing3"></div>
+                        <div class="voice-core" id="voiceCore">
+                            <div class="core-pulse"></div>
+                        </div>
+                        <button class="voice-btn" id="voiceBtn" title="Sprachbefehl">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" y1="19" x2="12" y2="23"></line>
+                                <line x1="8" y1="23" x2="16" y2="23"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="voice-status" id="voiceStatus">Bereit</div>
+                </div>
+                
+                <!-- Chat Area -->
+                <div class="chat-container" id="chatContainer">
+                    <div class="welcome-message">
+                        <div class="message-bubble jarvis">
+                            <div class="message-avatar">J</div>
+                            <div class="message-content">
+                                <p>Guten Tag, Sir. J.A.R.V.I.S. steht zu Ihren Diensten. Womit kann ich behilflich sein?</p>
+                                <span class="message-time" id="welcomeTime"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Input Area -->
+                <div class="input-section">
+                    <div class="input-wrapper">
+                        <input type="text" id="textInput" class="hud-input" placeholder="Geben Sie einen Befehl ein..." autocomplete="off">
+                        <button class="send-btn" id="sendBtn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="quick-btn" data-command="Wie viel Solar?">⚡ Solar</button>
+                        <button class="quick-btn" data-command="Wie ist die Temperatur?">🌡️ Klima</button>
+                        <button class="quick-btn" data-command="Wie spät ist es?">⏰ Uhrzeit</button>
+                        <button class="quick-btn" data-command="Guten Abend">👋 Begrüßung</button>
+                    </div>
+                </div>
+            </main>
+            
+            <!-- Footer -->
+            <footer class="hud-footer">
+                <div class="footer-left">
+                    <span class="connection-status online">● Verbindung aktiv</span>
+                </div>
+                <div class="footer-center">
+                    <span id="systemTime">14:00:00</span>
+                </div>
+                <div class="footer-right">
+                    <span class="version">v1.0.0</span>
+                </div>
+            </footer>
+            
+            <!-- Scan Line Effect -->
+            <div class="scan-overlay"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

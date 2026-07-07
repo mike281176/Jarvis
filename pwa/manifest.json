@@ -1,0 +1,30 @@
+{
+    "name": "J.A.R.V.I.S.",
+    "short_name": "J.A.R.V.I.S.",
+    "description": "Just A Rather Very Intelligent System - Ihr persönlicher Home Assistant",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000510",
+    "theme_color": "#000510",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Ccircle cx='96' cy='96' r='90' fill='none' stroke='%2300D4FF' stroke-width='4'/%3E%3Ccircle cx='96' cy='96' r='50' fill='%2300D4FF' opacity='0.3'/%3E%3Ccircle cx='96' cy='96' r='20' fill='%2300D4FF'/%3E%3C/svg%3E",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='256' cy='256' r='240' fill='none' stroke='%2300D4FF' stroke-width='8'/%3E%3Ccircle cx='256' cy='256' r='130' fill='%2300D4FF' opacity='0.3'/%3E%3Ccircle cx='256' cy='256' r='50' fill='%2300D4FF'/%3E%3C/svg%3E",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        }
+    ],
+    "categories": ["productivity", "utilities"],
+    "lang": "de",
+    "dir": "ltr",
+    "scope": "/",
+    "serviceworker": {
+        "src": "sw.js",
+        "scope": "/"
+    }
+}

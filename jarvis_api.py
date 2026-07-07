@@ -16,18 +16,10 @@ from typing import Dict, Any, Optional
 import threading
 import requests
 
-# Konfiguration - Lade aus .env falls verfügbar
+# Konfiguration
 HA_URL = "http://192.168.1.91:8123"
-HA_TOKEN = os.getenv('HA_TOKEN', '')  # Aus .env laden, niemals hardcodieren
+HA_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIzN2RjMDdmMDQ4ZWY0MTM1ODBmNWQ4ZDI2ZmQ1ZmM3ZCIsImlhdCI6MTc4MzExMDc1NiwiZXhwIjoyMDk4NDcwNzU2fQ.1t2-mVT2vuCKiJiE12BzhpWN7xcaPfBnGyIAzT141p0"
 PORT = 8124
-
-# Versuche .env zu laden
-try:
-    from dotenv import load_dotenv
-    load_dotenv('/home/mike/.hermes/.env')
-    HA_TOKEN = os.getenv('HA_TOKEN', '')
-except ImportError:
-    pass
 
 class JarvisAPIHandler(BaseHTTPRequestHandler):
     """HTTP Request Handler für JARVIS API"""
@@ -198,61 +190,90 @@ class JarvisAPIHandler(BaseHTTPRequestHandler):
         return None
     
     def handle_solar_query(self, user: str, message: str, context: Dict) -> Dict:
-        """Behandle Solar-Anfragen"""
-        user_ctx = self.get_user_context(user)
+        """Behandle Solar-Anfragen mit korrekten Entities"""
         
-        # Versuche verschiedene Solar-Entities
-        power = None
-        for entity in user_ctx.get('solar_entities', ['sensor.growatt_output_power']):
-            data = self.get_ha_state(entity)
-            if data and data.get('state') not in ['unknown', 'unavailable', None, '']:
-                try:
-                    power = float(data['state'])
-                    break
-                except:
-                    continue
+        # Sammle alle Solar-Daten
+        growatt_solar = self.get_ha_state('sensor.growatt_solar_power')
+        growatt_output = self.get_ha_state('sensor.growatt_output_power')
+        growatt_soc = self.get_ha_state('sensor.growatt_soc')
         
-        # Fallback: Suche nach allen Solar-Entities
-        if power is None:
+        hm1500_power = self.get_ha_state('sensor.hm1500_power')
+        hm1500_yield_day = self.get_ha_state('sensor.solar_yieldday')
+        
+        # Berechne Gesamtleistung
+        total_power = 0
+        sources = []
+        
+        if growatt_solar and growatt_solar.get('state') not in ['unknown', 'unavailable', None]:
             try:
-                headers = {'Authorization': f'Bearer {HA_TOKEN}'}
-                resp = requests.get(f"{HA_URL}/api/states", headers=headers, timeout=5)
-                if resp.status_code == 200:
-                    for state in resp.json():
-                        if 'solar' in state['entity_id'] or 'growatt' in state['entity_id']:
-                            if 'power' in state['entity_id']:
-                                try:
-                                    val = float(state['state'])
-                                    if val >= 0:
-                                        power = val
-                                        break
-                                except:
-                                    continue
-            except Exception as e:
-                print(f"  ⚠️ Solar-Suche Fehler: {e}")
+                power = float(growatt_solar['state'])
+                total_power += power
+                sources.append(f"Growatt: {int(power)}W")
+            except:
+                pass
         
-        if power is not None:
-            # Formatiere Antwort
-            if power > 1000:
-                power_str = f"{power/1000:.2f} kW"
+        if hm1500_power and hm1500_power.get('state') not in ['unknown', 'unavailable', None]:
+            try:
+                power = float(hm1500_power['state'])
+                total_power += power
+                sources.append(f"HM1500: {int(power)}W")
+            except:
+                pass
+        
+        # Batterie SOC
+        soc = None
+        if growatt_soc and growatt_soc.get('state') not in ['unknown', 'unavailable', None]:
+            try:
+                soc = int(float(growatt_soc['state']))
+            except:
+                pass
+        
+        # Tagesertrag
+        daily_yield = None
+        if hm1500_yield_day and hm1500_yield_day.get('state') not in ['unknown', 'unavailable', None]:
+            try:
+                daily_yield = float(hm1500_yield_day['state'])
+            except:
+                pass
+        
+        if total_power > 0:
+            # Erstelle Antwort
+            if total_power > 1000:
+                power_str = f"{total_power/1000:.1f} kW"
             else:
-                power_str = f"{int(power)} Watt"
+                power_str = f"{int(total_power)} W"
             
-            responses = [
-                f"Aktuell produzieren wir {power_str} Solarstrom, Sir.",
-                f"Die PV-Anlage liefert {power_str}, Sir.",
-                f"Solarproduktion: {power_str}, Sir. Die Sonne scheint für uns."
-            ]
+            response_parts = [f"Aktuell produzieren wir {power_str} Solarstrom"]
+            
+            if sources:
+                response_parts.append(f" ({', '.join(sources)})")
+            
+            if soc is not None:
+                response_parts.append(f". Batteriespeicher ist bei {soc}%")
+            
+            if daily_yield is not None:
+                if daily_yield > 1000:
+                    response_parts.append(f". Heute bereits {daily_yield/1000:.1f} kWh erzeugt")
+                else:
+                    response_parts.append(f". Heute bereits {int(daily_yield)} Wh erzeugt")
+            
+            response_parts.append(", Sir.")
             
             return {
                 'intent': 'solar_query',
-                'response': responses[hash(str(power)) % len(responses)],
-                'data': {'power': power, 'unit': 'W' if power < 1000 else 'kW'}
+                'response': ''.join(response_parts),
+                'data': {
+                    'total_power': total_power,
+                    'unit': 'kW' if total_power > 1000 else 'W',
+                    'soc': soc,
+                    'daily_yield': daily_yield,
+                    'sources': sources
+                }
             }
         
         return {
             'intent': 'solar_query',
-            'response': "Die Solaranlage sendet momentan keine Daten, Sir. Ich vermute, sie macht Pause.",
+            'response': "Die Solaranlage sendet momentan keine Daten, Sir. Wahrscheinlich ist es Nacht oder die Wechselrichter machen Pause.",
             'data': {'error': 'no_data'}
         }
     
