@@ -11,7 +11,7 @@ class JarvisPWA {
         this.synthesis = window.speechSynthesis;
         this.isListening = false;
         this.conversation = [];
-        this.apiBaseUrl = this.config.apiUrl || 'https://api-jarvis.utvyc79trn*************.ui.nabu.casa';
+        this.apiBaseUrl = this.config.apiUrl || 'https://api-jarvis-app.utvyc79trndebidkjm1******.ui.nabu.casa';
         
         this.init();
     }
@@ -21,7 +21,7 @@ class JarvisPWA {
     loadConfig() {
         const defaultConfig = {
             user: null,
-            apiUrl: 'https://api-jarvis.utvyc79trn*************.ui.nabu.casa',
+            apiUrl: 'https://api-jarvis-app.utvyc79trndebidkjm1******.ui.nabu.casa',
             language: 'de-DE',
             autoSpeak: true
         };
