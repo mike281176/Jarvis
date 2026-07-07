@@ -382,7 +382,10 @@ class JarvisPWA {
         // Stoppe vorherige Sprache
         this.synthesis.cancel();
         
-        const utterance = new SpeechSynthesisUtterance(text);
+        // Ersetze "J.A.R.V.I.S." durch "Jarvis" für bessere Aussprache
+        const speakableText = text.replace(/J\.A\.R\.V\.I\.S\./g, 'Jarvis');
+        
+        const utterance = new SpeechSynthesisUtterance(speakableText);
         utterance.lang = 'de-DE';
         utterance.rate = 1.0;
         utterance.pitch = 0.9;
@@ -468,6 +471,9 @@ class JarvisPWA {
     addMessage(text, sender) {
         const chatContainer = document.getElementById('chatContainer');
         
+        // Lösche vorherige Nachrichten, behalte nur die letzte
+        chatContainer.innerHTML = '';
+        
         const messageBubble = document.createElement('div');
         messageBubble.className = `message-bubble ${sender}`;
         
@@ -483,7 +489,37 @@ class JarvisPWA {
         `;
         
         chatContainer.appendChild(messageBubble);
-        chatContainer.scrollTop = chatContainer.scrollHeight;
+        
+        // Speichere im Konversationslog
+        this.logConversation(text, sender);
+    }
+    
+    logConversation(text, sender) {
+        const logEntry = {
+            timestamp: new Date().toISOString(),
+            sender: sender,
+            text: text,
+            user: this.user?.name || 'unknown'
+        };
+        
+        // Lade bestehendes Log
+        let conversationLog = JSON.parse(localStorage.getItem('jarvis_conversation_log') || '[]');
+        conversationLog.push(logEntry);
+        
+        // Speichere nur letzte 100 Einträge
+        if (conversationLog.length > 100) {
+            conversationLog = conversationLog.slice(-100);
+        }
+        
+        localStorage.setItem('jarvis_conversation_log', JSON.stringify(conversationLog));
+    }
+    
+    getConversationLog() {
+        return JSON.parse(localStorage.getItem('jarvis_conversation_log') || '[]');
+    }
+    
+    clearConversationLog() {
+        localStorage.removeItem('jarvis_conversation_log');
     }
 
     // ==================== HILFSFUNKTIONEN ====================
