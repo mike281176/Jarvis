@@ -942,3 +942,142 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 212, 255, 0.5);
 }
+
+/* ============================================
+   PASSWORD PANEL STYLES
+   ============================================ */
+
+.password-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    z-index: 20;
+    width: 100%;
+    max-width: 400px;
+    padding: var(--space-lg);
+}
+
+.password-form {
+    background: var(--hud-surface);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 16px;
+    padding: var(--space-xl);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 
+                0 0 40px rgba(0, 212, 255, 0.1);
+}
+
+.password-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    justify-content: center;
+}
+
+.user-avatar-small {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 212, 255, 0.2);
+    border: 2px solid var(--jarvis-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-avatar-small .avatar-initial {
+    font-family: var(--font-hud);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--jarvis-blue);
+}
+
+.password-title {
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.password-group {
+    margin-bottom: var(--space-lg);
+}
+
+.password-input {
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 1.2rem !important;
+}
+
+.password-actions {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+}
+
+.hud-button {
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    color: var(--jarvis-blue);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: 8px;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all var(--anim-fast);
+    min-width: 120px;
+}
+
+.hud-button:hover {
+    background: rgba(0, 212, 255, 0.2);
+    border-color: var(--jarvis-blue);
+    box-shadow: var(--glow-blue);
+}
+
+.hud-button.primary {
+    background: rgba(0, 212, 255, 0.25);
+    border-color: var(--jarvis-blue);
+}
+
+.hud-button.primary:hover {
+    background: rgba(0, 212, 255, 0.35);
+    box-shadow: var(--glow-blue-strong);
+}
+
+.hud-button.secondary {
+    background: transparent;
+    border-color: rgba(255, 100, 100, 0.4);
+    color: rgba(255, 100, 100, 0.8);
+}
+
+.hud-button.secondary:hover {
+    background: rgba(255, 100, 100, 0.1);
+    border-color: rgba(255, 100, 100, 0.6);
+    box-shadow: 0 0 10px rgba(255, 100, 100, 0.3);
+}
+
+.password-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+    padding: var(--space-sm);
+    background: rgba(255, 50, 50, 0.1);
+    border: 1px solid rgba(255, 100, 100, 0.3);
+    border-radius: 8px;
+    color: rgba(255, 100, 100, 0.9);
+    font-size: 0.85rem;
+}
+
+.error-icon {
+    font-size: 1rem;
+}
+
+/* Shake Animation for wrong password */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}

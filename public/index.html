@@ -51,6 +51,30 @@
                 </div>
             </div>
             
+            <!-- Password Panel for Mike -->
+            <div class="password-panel" id="passwordPanel" style="display: none;">
+                <div class="password-form">
+                    <div class="password-header">
+                        <div class="user-avatar-small">
+                            <span class="avatar-initial">M</span>
+                        </div>
+                        <span class="password-title">Sicherheitsauthentifizierung</span>
+                    </div>
+                    <div class="input-group password-group">
+                        <label class="hud-label">Passwort eingeben</label>
+                        <input type="password" id="passwordInput" class="hud-input password-input" placeholder="••••••••" autocomplete="off">
+                    </div>
+                    <div class="password-actions">
+                        <button class="hud-button secondary" id="cancelLogin">Abbrechen</button>
+                        <button class="hud-button primary" id="submitPassword">Authentifizieren</button>
+                    </div>
+                    <div class="password-error" id="passwordError" style="display: none;">
+                        <span class="error-icon">⚠</span>
+                        <span class="error-text">Falsches Passwort. Zugriff verweigert.</span>
+                    </div>
+                </div>
+            </div>
+            
             <div class="system-status">
                 <div class="status-indicator online"></div>
                 <span class="status-text">System Online</span>

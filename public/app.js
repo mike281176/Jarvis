@@ -62,8 +62,23 @@ class JarvisPWA {
         document.querySelectorAll('.user-card').forEach(card => {
             card.addEventListener('click', (e) => {
                 const userId = e.currentTarget.dataset.user;
-                this.login(userId);
+                this.handleUserSelect(userId);
             });
+        });
+        
+        // Password Panel Events
+        document.getElementById('submitPassword').addEventListener('click', () => {
+            this.verifyPassword();
+        });
+        
+        document.getElementById('cancelLogin').addEventListener('click', () => {
+            this.hidePasswordPanel();
+        });
+        
+        document.getElementById('passwordInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                this.verifyPassword();
+            }
         });
         
         // Settings Toggle
@@ -106,6 +121,67 @@ class JarvisPWA {
             this.showMainInterface();
             this.speak(`Willkommen zurück, ${this.user.name}. J.A.R.V.I.S. steht zu Ihren Diensten.`);
         }, 600);
+    }
+
+    handleUserSelect(userId) {
+        if (userId === 'mike') {
+            this.showPasswordPanel();
+        } else {
+            this.login(userId);
+        }
+    }
+
+    showPasswordPanel() {
+        const userSelection = document.querySelector('.user-selection');
+        const passwordPanel = document.getElementById('passwordPanel');
+        
+        userSelection.style.display = 'none';
+        passwordPanel.style.display = 'flex';
+        
+        document.getElementById('passwordInput').value = '';
+        document.getElementById('passwordError').style.display = 'none';
+        document.getElementById('passwordInput').focus();
+        
+        // Animation
+        passwordPanel.style.opacity = '0';
+        passwordPanel.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+            passwordPanel.style.transition = 'all 0.3s ease';
+            passwordPanel.style.opacity = '1';
+            passwordPanel.style.transform = 'translateY(0)';
+        }, 10);
+    }
+
+    hidePasswordPanel() {
+        const userSelection = document.querySelector('.user-selection');
+        const passwordPanel = document.getElementById('passwordPanel');
+        
+        passwordPanel.style.display = 'none';
+        userSelection.style.display = 'block';
+        
+        document.getElementById('passwordInput').value = '';
+        document.getElementById('passwordError').style.display = 'none';
+    }
+
+    verifyPassword() {
+        const input = document.getElementById('passwordInput').value;
+        const errorDiv = document.getElementById('passwordError');
+        
+        if (input === 'Jarvis2026') {
+            errorDiv.style.display = 'none';
+            this.login('mike');
+        } else {
+            errorDiv.style.display = 'flex';
+            document.getElementById('passwordInput').value = '';
+            document.getElementById('passwordInput').focus();
+            
+            // Shake animation
+            const panel = document.querySelector('.password-form');
+            panel.style.animation = 'shake 0.5s ease';
+            setTimeout(() => {
+                panel.style.animation = '';
+            }, 500);
+        }
     }
 
     logout() {
