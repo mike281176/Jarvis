@@ -1,12 +1,11 @@
 {
   "version": 2,
   "name": "jarvis-voice-client",
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "installCommand": null,
+  "devCommand": null,
   "routes": [
     {
       "src": "/(.*)",
