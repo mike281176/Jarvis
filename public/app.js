@@ -11,7 +11,7 @@ class JarvisPWA {
         this.synthesis = window.speechSynthesis;
         this.isListening = false;
         this.conversation = [];
-        this.apiBaseUrl = this.config.apiUrl || 'https://api-jarvis-app.utvyc79trndebidkjm1******.ui.nabu.casa';
+        this.apiBaseUrl = this.config.apiUrl || 'https://nonconvergent-francene-toxically.ngrok-free.dev';
         
         this.init();
     }
@@ -21,7 +21,7 @@ class JarvisPWA {
     loadConfig() {
         const defaultConfig = {
             user: null,
-            apiUrl: 'https://api-jarvis-app.utvyc79trndebidkjm1******.ui.nabu.casa',
+            apiUrl: 'https://nonconvergent-francene-toxically.ngrok-free.dev',
             language: 'de-DE',
             autoSpeak: true
         };
@@ -435,7 +435,8 @@ class JarvisPWA {
             const response = await fetch(`${this.apiBaseUrl}/api/jarvis/ask`, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'ngrok-skip-browser-warning': 'true'
                 },
                 body: JSON.stringify({
                     user: this.user.id,
