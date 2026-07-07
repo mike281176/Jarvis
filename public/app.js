@@ -119,7 +119,9 @@ class JarvisPWA {
         
         setTimeout(() => {
             this.showMainInterface();
-            this.speak(`Willkommen zurück, ${this.user.name}. J.A.R.V.I.S. steht zu Ihren Diensten.`);
+            // Abwechslung in der Anrede
+            const salutation = Math.random() > 0.5 ? 'Sir' : 'Master';
+            this.speak(`Willkommen zurück, ${this.user.name}. J.A.R.V.I.S. steht zu Ihren Diensten, ${salutation}.`);
         }, 600);
     }
 
@@ -383,7 +385,14 @@ class JarvisPWA {
         this.synthesis.cancel();
         
         // Ersetze "J.A.R.V.I.S." durch "Jarvis" für bessere Aussprache
-        const speakableText = text.replace(/J\.A\.R\.V\.I\.S\./g, 'Jarvis');
+        // Und füge zufällige Anrede-Abwechslung ein (Sir/Master)
+        let speakableText = text.replace(/J\.A\.R\.V\.I\.S\./g, 'Jarvis');
+        
+        // Ersetze "Sir" durch zufällige Anrede wenn nicht explizit gesetzt
+        if (Math.random() > 0.7 && !speakableText.includes('Master')) {
+            speakableText = speakableText.replace(/, Sir\./g, ', Master.');
+            speakableText = speakableText.replace(/, Sir,/g, ', Master,');
+        }
         
         const utterance = new SpeechSynthesisUtterance(speakableText);
         utterance.lang = 'de-DE';
