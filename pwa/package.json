@@ -1,0 +1,13 @@
+{
+  "name": "jarvis-voice-client",
+  "version": "2.0.0",
+  "description": "J.A.R.V.I.S. - Personal AI Assistant PWA",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8125",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["jarvis", "pwa", "voice", "home-assistant", "ai"],
+  "author": "Mike Schiller",
+  "license": "MIT"
+}
