@@ -448,7 +448,7 @@ class JarvisPWA {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${this.config.apiKey || 'Jarvis2026'}`,
+                    'Authorization': `Bearer ${this.config.apiKey || 'fb74aee26654c46e06e8b82158e1eb12991fb866f0300435fd9c34d0e67634d3'}`,
                     'ngrok-skip-browser-warning': 'true'
                 },
                 body: JSON.stringify({
