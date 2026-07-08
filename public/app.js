@@ -37,6 +37,7 @@ class JarvisPWA {
     // ==================== INITIALISIERUNG ====================
 
     init() {
+        this.loadVersion();
         if (!this.user) {
             this.showLoginScreen();
         } else {
@@ -47,6 +48,23 @@ class JarvisPWA {
         }
         
         this.registerServiceWorker();
+    }
+
+    async loadVersion() {
+        try {
+            const response = await fetch('version.json?v=' + Date.now(), { cache: 'no-store' });
+            if (response.ok) {
+                const version = await response.json();
+                this.versionInfo = version;
+                const display = document.getElementById('versionDisplay');
+                if (display) {
+                    display.textContent = `v${version.commit}`;
+                    display.title = `${version.branch} • ${version.full_commit} • ${version.built_at}`;
+                }
+            }
+        } catch (e) {
+            console.warn('Version info not available:', e);
+        }
     }
 
     // ==================== LOGIN SCREEN ====================
