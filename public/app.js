@@ -432,19 +432,32 @@ class JarvisPWA {
         this.updateVoiceStatus('Verarbeite...', 'active');
         
         try {
-            const response = await fetch(`${this.apiBaseUrl}/api/jarvis/ask`, {
+            const location = document.getElementById('currentLocation')?.textContent || 'Wohnzimmer';
+            const salutation = Math.random() > 0.5 ? 'Sir' : 'Master';
+            
+            // System-Prompt für J.A.R.V.I.S. Persönlichkeit
+            const systemPrompt = `Du bist J.A.R.V.I.S., der persönliche Assistent von Mike Schiller.\n` +
+                `Stil: professionell, loyal, analytisch, britisches Understatement, trockener Humor.\n` +
+                `Sprache: Deutsch. Anrede: ${salutation}.\n` +
+                `Du hast Zugriff auf Smart Home (Home Assistant), E-Mail, Web-Suche, Termine und Server.\n` +
+                `Nutze diese Tools, wenn der Nutzer nach Status, Daten oder Aktionen fragt.\n` +
+                `Bevorzuge kurze, prägnante Antworten. Füge gelegentlich einen trockenen Kommentar hinzu.\n` +
+                `Der Nutzer befindet sich aktuell im Raum: ${location}.`;
+            
+            const response = await fetch(`${this.apiBaseUrl}/v1/chat/completions`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${this.config.apiKey || 'Jarvis2026'}`,
                     'ngrok-skip-browser-warning': 'true'
                 },
                 body: JSON.stringify({
-                    user: this.user.id,
-                    message: message,
-                    context: {
-                        location: document.getElementById('currentLocation').textContent,
-                        timestamp: new Date().toISOString()
-                    }
+                    model: 'hermes-agent',
+                    stream: false,
+                    messages: [
+                        { role: 'system', content: systemPrompt },
+                        { role: 'user', content: message }
+                    ]
                 })
             });
             
@@ -453,18 +466,18 @@ class JarvisPWA {
             }
             
             const data = await response.json();
+            const jarvisResponse = data.choices?.[0]?.message?.content || data.response || 'Entschuldigung, Sir. Ich habe keine Antwort erhalten.';
             
             // Zeige JARVIS Antwort
-            this.addMessage(data.response, 'jarvis');
+            this.addMessage(jarvisResponse, 'jarvis');
             
             // Sprich Antwort aus
-            this.speak(data.response);
+            this.speak(jarvisResponse);
             
             // Speichere in Konversation
             this.conversation.push({
                 user: message,
-                jarvis: data.response,
-                intent: data.intent,
+                jarvis: jarvisResponse,
                 timestamp: new Date()
             });
             
