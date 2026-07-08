@@ -47,27 +47,45 @@ self.addEventListener('activate', event => {
     );
 });
 
-// Fetch Event
+// Fetch Event: Nur statische GET-Assets cachen, API-Calls ignorieren
 self.addEventListener('fetch', event => {
-    // Externe Anfragen niemals abfangen
-    if (!event.request.url.startsWith(self.location.origin)) {
+    const request = event.request;
+    const url = new URL(request.url);
+    
+    // Externe Requests nicht abfangen
+    if (url.origin !== self.location.origin) {
+        return;
+    }
+    
+    // API-Requests und Nicht-GET niemals abfangen
+    if (request.method !== 'GET' || url.pathname.startsWith('/api/')) {
+        return;
+    }
+    
+    // Nur statische Assets cachen
+    const staticExtensions = /\.(html|css|js|json|png|jpg|jpeg|svg|ico|woff|woff2|ttf|eot)$/i;
+    if (!staticExtensions.test(url.pathname) && url.pathname !== '/') {
         return;
     }
     
     event.respondWith(
-        fetch(event.request, { cache: 'no-store' })
+        fetch(request, { cache: 'no-store' })
             .then(response => {
-                if (response && response.status === 200 && response.type === 'basic') {
-                    const responseToCache = response.clone();
-                    caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseToCache));
+                if (response && response.status === 200) {
+                    const clone = response.clone();
+                    caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
                 }
                 return response;
             })
-            .catch(() => caches.match(event.request).then(cached => cached || (event.request.mode === 'navigate' ? caches.match('/index.html') : undefined)))
+            .catch(() => {
+                return caches.match(request).then(cached => {
+                    return cached || caches.match('/index.html');
+                });
+            })
     );
 });
 
-// Sofort auf Updates reagieren und Clients übernehmen
+// Sofort auf Updates reagieren
 self.addEventListener('message', event => {
     if (event.data && event.data.type === 'SKIP_WAITING') {
         self.skipWaiting();
