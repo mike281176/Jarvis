@@ -2,7 +2,7 @@
   "version": 2,
   "name": "jarvis-voice-client",
   "framework": null,
-  "buildCommand": "sh -c 'echo \"{\\\"commit\\\": \\\"$VERCEL_GIT_COMMIT_SHA\\\", \\\"short_commit\\\": \\\"${VERCEL_GIT_COMMIT_SHA:0:7}\\\", \\\"branch\\\": \\\"$VERCEL_GIT_COMMIT_REF\\\", \\\"built_at\\\": \\\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\\\", \\\"app\\\": \\\"J.A.R.V.I.S. PWA\\\"}\" > public/version.json'",
+  "buildCommand": "sh -c 'python3 -c \"import json, os; sha=os.environ[\\\"VERCEL_GIT_COMMIT_SHA\\\"]; json.dump({\\\"commit\\\": sha, \\\"short_commit\\\": sha[:7], \\\"branch\\\": os.environ.get(\\\"VERCEL_GIT_COMMIT_REF\\\", \\\"unknown\\\"), \\\"built_at\\\": __import__(\\\"datetime\\\").datetime.utcnow().strftime(\\\"%Y-%m-%dT%H:%M:%SZ\\\"), \\\"app\\\": \\\"J.A.R.V.I.S. PWA\\\"}, open(\\\"public/version.json\\\", \\\"w\\\"))\"'",
   "outputDirectory": "public",
   "installCommand": null,
   "devCommand": null,
