@@ -746,6 +746,78 @@ body {
     height: 20px;
 }
 
+.camera-btn {
+    width: 44px;
+    height: 44px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 8px;
+    color: var(--jarvis-blue);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--anim-fast);
+    margin-left: 8px;
+    flex-shrink: 0;
+}
+
+.camera-btn:hover {
+    background: rgba(0, 212, 255, 0.25);
+    box-shadow: var(--glow-blue);
+}
+
+.camera-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.camera-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 5, 16, 0.95);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-md);
+}
+
+.camera-frame {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid var(--jarvis-blue);
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(0, 212, 255, 0.05);
+    box-shadow: var(--glow-blue);
+}
+
+.camera-frame video {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #000;
+}
+
+.camera-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-md);
+    gap: var(--space-sm);
+}
+
+.camera-hint {
+    text-align: center;
+    padding: 0 var(--space-md) var(--space-md);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
 /* Quick Actions */
 .quick-actions {
     display: flex;

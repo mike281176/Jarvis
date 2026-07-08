@@ -51,6 +51,7 @@ class JarvisPWA {
             this.showMainInterface();
             this.initSpeechRecognition();
             this.initVoices();
+            this.initCamera();
             this.updateSystemTime();
         }
         
@@ -702,6 +703,150 @@ class JarvisPWA {
         setTimeout(() => {
             toast.remove();
         }, 3000);
+    }
+
+    // ==================== KAMERA / BILDANALYSE ====================
+
+    initCamera() {
+        this.cameraStream = null;
+        this.cameraOverlay = document.getElementById('cameraOverlay');
+        this.cameraVideo = document.getElementById('cameraVideo');
+        this.cameraCanvas = document.getElementById('cameraCanvas');
+        this.cameraBtn = document.getElementById('cameraBtn');
+        this.cameraCapture = document.getElementById('cameraCapture');
+        this.cameraCancel = document.getElementById('cameraCancel');
+
+        if (this.cameraBtn) {
+            this.cameraBtn.addEventListener('click', () => this.openCamera());
+        }
+        if (this.cameraCapture) {
+            this.cameraCapture.addEventListener('click', () => this.captureAndAnalyze());
+        }
+        if (this.cameraCancel) {
+            this.cameraCancel.addEventListener('click', () => this.closeCamera());
+        }
+    }
+
+    async openCamera() {
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+            this.showNotification('Kamera wird in diesem Browser nicht unterstützt.', 'error');
+            return;
+        }
+
+        try {
+            this.cameraStream = await navigator.mediaDevices.getUserMedia({
+                video: { facingMode: 'environment' },
+                audio: false
+            });
+            this.cameraVideo.srcObject = this.cameraStream;
+            this.cameraOverlay.style.display = 'flex';
+        } catch (err) {
+            console.error('Kamera-Fehler:', err);
+            this.showNotification('Kamera-Zugriff verweigert oder nicht verfügbar.', 'error');
+        }
+    }
+
+    closeCamera() {
+        if (this.cameraStream) {
+            this.cameraStream.getTracks().forEach(track => track.stop());
+            this.cameraStream = null;
+        }
+        if (this.cameraVideo) {
+            this.cameraVideo.srcObject = null;
+        }
+        if (this.cameraOverlay) {
+            this.cameraOverlay.style.display = 'none';
+        }
+    }
+
+    async captureAndAnalyze() {
+        if (!this.cameraVideo || !this.cameraVideo.videoWidth) {
+            this.showNotification('Kamera noch nicht bereit.', 'error');
+            return;
+        }
+
+        const ctx = this.cameraCanvas.getContext('2d');
+        this.cameraCanvas.width = this.cameraVideo.videoWidth;
+        this.cameraCanvas.height = this.cameraVideo.videoHeight;
+        ctx.drawImage(this.cameraVideo, 0, 0);
+
+        // JPEG mit reduzierter Qualität, damit Base64 nicht zu groß wird
+        const imageBase64 = this.cameraCanvas.toDataURL('image/jpeg', 0.85);
+
+        this.closeCamera();
+        await this.sendImageForAnalysis(imageBase64);
+    }
+
+    async sendImageForAnalysis(imageBase64) {
+        const message = 'Was siehst du auf diesem Bild?';
+        this.addMessage(message, 'user');
+        this.addMessage('Bildanalyse läuft...', 'jarvis');
+        this.updateVoiceStatus('Analysiere...', 'active');
+
+        const location = document.getElementById('currentLocation')?.textContent || 'Wohnzimmer';
+        const salutation = Math.random() > 0.5 ? 'Sir' : 'Master';
+
+        const systemPrompt = `Du bist J.A.R.V.I.S. (Just A Rather Very Intelligent System), der persönliche KI-Assistent und Butler von Mike Schiller.\n` +
+            `Stil: britisches Understatement, trockener, subtiler Humor, professionell, loyal, analytisch, elegant und auf den Punkt.\n` +
+            `Sprache: Hochdeutsch. Anrede: ${salutation}.\n` +
+            `Sprechweise:\n` +
+            `- Beginne gelegentlich mit einer kurzen Bestätigung: \"Sehr wohl, Sir.\", \"Natürlich, Sir.\", \"Verstanden, Master.\", \"Wie gewünscht, Sir.\"\n` +
+            `- Verwende subtile Floskeln wie \"eine Momentaufnahme der Lage\", \"mit aller gebotenen Vorsicht\", \"das System ist stabil, wenn auch nicht begeistert\".\n` +
+            `- Bleibe sachlich; Sarkasmus nur warm und respektvoll.\n` +
+            `- Vermeide typische KI-Standardfloskeln.\n` +
+            `- Füge bei passenden Gelegenheiten einen trockenen Kommentar am Ende hinzu.\n` +
+            `Beschreibe das Bild präzise und knapp. Nenne auffällige Objekte, Farben, Personen oder Texte.\n` +
+            `Der aktuelle Nutzer ist ${this.user.name} (Rolle: ${this.user.role}).\n` +
+            `Der Nutzer befindet sich aktuell im Raum: ${location}.`;
+
+        const headers = {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${this.apiKey}`,
+            'ngrok-skip-browser-warning': 'true'
+        };
+        if (this.config.authToken) {
+            headers['X-Jarvis-Auth-Token'] = this.config.authToken;
+            headers['X-Jarvis-User-Id'] = this.user.id;
+        }
+
+        try {
+            const response = await fetch(`${this.apiBaseUrl}/api/jarvis/v1/chat/completions`, {
+                method: 'POST',
+                headers: headers,
+                body: JSON.stringify({
+                    model: 'hermes-agent',
+                    stream: false,
+                    messages: [
+                        { role: 'system', content: systemPrompt },
+                        {
+                            role: 'user',
+                            content: [
+                                { type: 'text', text: 'Was siehst du auf diesem Bild? Antworte auf Deutsch.' },
+                                { type: 'image_url', image_url: { url: imageBase64 } }
+                            ]
+                        }
+                    ]
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+
+            const data = await response.json();
+            const jarvisResponse = data.choices?.[0]?.message?.content || 'Entschuldigung, Sir. Ich konnte das Bild nicht analysieren.';
+
+            this.addMessage(jarvisResponse, 'jarvis');
+            this.speak(jarvisResponse);
+            this.conversation.push({ user: message, jarvis: jarvisResponse, timestamp: new Date() });
+        } catch (error) {
+            console.error('Bildanalyse Fehler:', error);
+            const errorMsg = 'Entschuldigung, Sir. Die Bildanalyse ist vorübergehend nicht verfügbar.';
+            this.addMessage(errorMsg, 'jarvis');
+            this.speak(errorMsg);
+        }
+
+        this.updateVoiceStatus('Bereit', 'ready');
     }
 
     // ==================== SERVICE WORKER ====================

@@ -161,6 +161,12 @@
                 <div class="input-section">
                     <div class="input-wrapper">
                         <input type="text" id="textInput" class="hud-input" placeholder="Geben Sie einen Befehl ein..." autocomplete="off">
+                        <button class="camera-btn" id="cameraBtn" title="Kamera">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                <circle cx="12" cy="13" r="4"></circle>
+                            </svg>
+                        </button>
                         <button class="send-btn" id="sendBtn">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -172,7 +178,7 @@
                         <button class="quick-btn" data-command="Wie viel Solar?">⚡ Solar</button>
                         <button class="quick-btn" data-command="Wie ist die Temperatur?">🌡️ Klima</button>
                         <button class="quick-btn" data-command="Wie spät ist es?">⏰ Uhrzeit</button>
-                        <button class="quick-btn" data-command="Guten Abend">👋 Begrüßung</button>
+                        <button class="quick-btn" data-command="Was siehst du?">📷 Kamera</button>
                     </div>
                 </div>
             </main>
@@ -192,6 +198,19 @@
             
             <!-- Scan Line Effect -->
             <div class="scan-overlay"></div>
+            
+            <!-- Camera Overlay -->
+            <div class="camera-overlay" id="cameraOverlay" style="display: none;">
+                <div class="camera-frame">
+                    <video id="cameraVideo" autoplay playsinline></video>
+                    <canvas id="cameraCanvas" style="display: none;"></canvas>
+                    <div class="camera-controls">
+                        <button class="hud-button secondary" id="cameraCancel">Abbrechen</button>
+                        <button class="hud-button primary" id="cameraCapture">Aufnehmen</button>
+                    </div>
+                    <div class="camera-hint">Halten Sie das Objekt ruhig. Das Bild wird zur Analyse an J.A.R.V.I.S. gesendet.</div>
+                </div>
+            </div>
         </div>
     </div>
     
