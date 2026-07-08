@@ -519,7 +519,7 @@ class JarvisPWA {
                 headers: headers,
                 body: JSON.stringify({
                     model: 'hermes-agent',
-                    stream: false,
+                    stream: true,
                     messages: [
                         { role: 'system', content: systemPrompt },
                         { role: 'user', content: message }
@@ -531,13 +531,53 @@ class JarvisPWA {
                 throw new Error(`HTTP ${response.status}`);
             }
             
-            const data = await response.json();
-            const jarvisResponse = data.choices?.[0]?.message?.content || data.response || 'Entschuldigung, Sir. Ich habe keine Antwort erhalten.';
+            // Streaming-Verarbeitung: Text live anzeigen, Sprache erst am Ende
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder('utf-8');
+            let streamedText = '';
+            let buffer = '';
             
-            // Zeige JARVIS Antwort
+            // Leere Antwort-Bubble anlegen, die während des Streams befüllt wird
+            this.addMessage('', 'jarvis');
+            const jarvisBubbles = document.querySelectorAll('.message-bubble.jarvis');
+            const contentEl = jarvisBubbles[jarvisBubbles.length - 1]?.querySelector('.message-content p');
+            
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                
+                buffer += decoder.decode(value, { stream: true });
+                const lines = buffer.split('\n');
+                buffer = lines.pop(); // unvollständige Zeile zurückbehalten
+                
+                for (const line of lines) {
+                    const trimmed = line.trim();
+                    if (!trimmed.startsWith('data:')) continue;
+                    const dataStr = trimmed.slice(5).trim();
+                    if (dataStr === '[DONE]') continue;
+                    
+                    try {
+                        const chunk = JSON.parse(dataStr);
+                        const delta = chunk.choices?.[0]?.delta;
+                        if (delta?.content) {
+                            streamedText += delta.content;
+                            if (contentEl) {
+                                contentEl.textContent = streamedText;
+                                contentEl.parentElement.scrollTop = contentEl.parentElement.scrollHeight;
+                            }
+                        }
+                    } catch (e) {
+                        // Ungültiges Chunk ignorieren
+                    }
+                }
+            }
+            
+            const jarvisResponse = streamedText || 'Entschuldigung, Sir. Ich habe keine Antwort erhalten.';
+            
+            // Finale Antwort im UI sicherstellen
             this.addMessage(jarvisResponse, 'jarvis');
             
-            // Sprich Antwort aus
+            // Sprich Antwort erst jetzt aus, wenn der Stream komplett ist
             this.speak(jarvisResponse);
             
             // Speichere in Konversation
