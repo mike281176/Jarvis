@@ -100,39 +100,68 @@
         </div>
         
         <!-- Main Interface -->
-        <div id="main-interface" class="screen main-interface" style="display: none;">
+        <div id="main-interface" class="screen dashboard-interface" style="display: none;">
             <!-- Header -->
-            <header class="hud-header">
+            <header class="dashboard-header">
                 <div class="header-left">
                     <div class="system-logo">
                         <div class="mini-ring"></div>
                         <span>J.A.R.V.I.S.</span>
                     </div>
+                    <div class="system-status-badge" id="systemStatusBadge">
+                        <span class="status-dot online"></span>
+                        <span class="status-label">SYSTEM ONLINE</span>
+                    </div>
                 </div>
                 <div class="header-center">
-                    <div class="location-badge">
-                        <span class="location-icon">◉</span>
-                        <span id="currentLocation">Wohnzimmer</span>
+                    <div class="clock-widget">
+                        <span id="systemTime">14:00:00</span>
+                        <span id="systemDate" class="system-date">--</span>
                     </div>
                 </div>
                 <div class="header-right">
                     <span class="user-badge" id="currentUser">M</span>
+                    <button class="hud-button icon" id="chatToggle" title="Chat">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </button>
+                    <button class="hud-button icon" id="dashboardRefresh" title="Aktualisieren">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+                    </button>
                     <button class="logout-btn" id="logoutBtn">×</button>
                 </div>
             </header>
-            
-            <!-- Main Content -->
-            <main class="hud-main">
-                <!-- Voice Visualizer -->
-                <div class="voice-section">
-                    <div class="voice-container">
-                        <div class="voice-ring ring-outer" id="voiceRing1"></div>
-                        <div class="voice-ring ring-middle" id="voiceRing2"></div>
-                        <div class="voice-ring ring-inner" id="voiceRing3"></div>
-                        <div class="voice-core" id="voiceCore">
-                            <div class="core-pulse"></div>
-                        </div>
-                        <button class="voice-btn" id="voiceBtn" title="Sprachbefehl">
+
+            <!-- Dashboard Grid -->
+            <main class="dashboard-grid" id="dashboardGrid">
+                <!-- Left Sidebar: Navigation / Core Status -->
+                <aside class="dashboard-sidebar">
+                    <nav class="sidebar-nav">
+                        <button class="nav-item active" data-view="overview">
+                            <span class="nav-icon">◈</span> Übersicht
+                        </button>
+                        <button class="nav-item" data-view="climate">
+                            <span class="nav-icon">🌡️</span> Klima
+                        </button>
+                        <button class="nav-item" data-view="security">
+                            <span class="nav-icon">📹</span> Überwachung
+                        </button>
+                        <button class="nav-item" data-view="energy">
+                            <span class="nav-icon">⚡</span> Energie
+                        </button>
+                    </nav>
+
+                    <div class="sidebar-widget core-status">
+                        <h3>Kernsystem</h3>
+                        <ul class="core-list">
+                            <li><span class="core-dot active"></span> Hermes API</li>
+                            <li><span class="core-dot active"></span> Home Assistant</li>
+                            <li><span class="core-dot" id="ngrokStatusDot"></span> ngrok Tunnel</li>
+                            <li><span class="core-dot" id="nasStatusDot"></span> NAS</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget voice-widget">
+                        <button class="voice-btn large" id="voiceBtn" title="Sprachbefehl">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
                                 <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
@@ -140,65 +169,199 @@
                                 <line x1="8" y1="23" x2="16" y2="23"></line>
                             </svg>
                         </button>
+                        <div class="voice-status" id="voiceStatus">Bereit</div>
                     </div>
-                    <div class="voice-status" id="voiceStatus">Bereit</div>
-                </div>
-                
-                <!-- Chat Area -->
-                <div class="chat-container" id="chatContainer">
-                    <div class="welcome-message">
-                        <div class="message-bubble jarvis">
-                            <div class="message-avatar">J</div>
-                            <div class="message-content">
-                                <p>Guten Tag, Sir. J.A.R.V.I.S. steht zu Ihren Diensten. Womit kann ich behilflich sein?</p>
-                                <span class="message-time" id="welcomeTime"></span>
+                </aside>
+
+                <!-- Center: Core Visualization + Key Metrics -->
+                <section class="dashboard-center">
+                    <!-- Top Row: Solar & Battery -->
+                    <div class="widget-row top-metrics">
+                        <div class="hud-widget solar-widget">
+                            <div class="widget-header">
+                                <span class="widget-icon">☀</span>
+                                <span>Solar Ertrag</span>
+                                <span class="live-badge">LIVE</span>
+                            </div>
+                            <div class="widget-body">
+                                <div class="metric-large" id="solarPower">0 <span class="unit">W</span></div>
+                                <div class="metric-sub" id="solarToday">Heute: 0 kWh</div>
+                                <div class="solar-bar"><div class="solar-fill" id="solarFill"></div></div>
+                            </div>
+                        </div>
+
+                        <div class="hud-widget battery-widget">
+                            <div class="widget-header">
+                                <span class="widget-icon">🔋</span>
+                                <span>Speicher</span>
+                            </div>
+                            <div class="widget-body">
+                                <div class="battery-gauge" id="batteryGauge">
+                                    <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" class="gauge-bg"></circle><circle cx="50" cy="50" r="42" class="gauge-fill" id="batteryFill"></circle></svg>
+                                    <div class="gauge-value" id="batterySoc">10%</div>
+                                </div>
+                                <div class="metric-sub" id="batteryFlow">Ruhe</div>
+                            </div>
+                        </div>
+
+                        <div class="hud-widget consumption-widget">
+                            <div class="widget-header">
+                                <span class="widget-icon">🏠</span>
+                                <span>Haushalt</span>
+                            </div>
+                            <div class="widget-body">
+                                <div class="metric-large" id="housePower">0 <span class="unit">W</span></div>
+                                <div class="metric-sub" id="gridStatus">Netzbezug</div>
+                                <div class="phase-bars">
+                                    <div class="phase-bar"><span>L1</span><div class="bar"><div id="phaseA"></div></div></div>
+                                    <div class="phase-bar"><span>L2</span><div class="bar"><div id="phaseB"></div></div></div>
+                                    <div class="phase-bar"><span>L3</span><div class="bar"><div id="phaseC"></div></div></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Input Area -->
-                <div class="input-section">
-                    <div class="input-wrapper">
-                        <input type="text" id="textInput" class="hud-input" placeholder="Geben Sie einen Befehl ein..." autocomplete="off">
-                        <button class="camera-btn" id="cameraBtn" title="Kamera">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                                <circle cx="12" cy="13" r="4"></circle>
-                            </svg>
-                        </button>
-                        <button class="send-btn" id="sendBtn">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                            </svg>
-                        </button>
+
+                    <!-- Center Core: AI Orb -->
+                    <div class="widget-row core-row">
+                        <div class="hud-widget core-orb-widget">
+                            <div class="voice-container large">
+                                <div class="voice-ring ring-outer" id="voiceRing1"></div>
+                                <div class="voice-ring ring-middle" id="voiceRing2"></div>
+                                <div class="voice-ring ring-inner" id="voiceRing3"></div>
+                                <div class="voice-core" id="voiceCore">
+                                    <div class="core-pulse"></div>
+                                    <span class="core-label">J.A.R.V.I.S.</span>
+                                </div>
+                            </div>
+                            <div class="orb-status" id="voiceStatusCenter">Bereit</div>
+                        </div>
+
+                        <!-- Climate Mini Panel -->
+                        <div class="hud-widget climate-widget">
+                            <div class="widget-header">
+                                <span class="widget-icon">❄</span>
+                                <span>Klima Wohnzimmer</span>
+                            </div>
+                            <div class="widget-body climate-body">
+                                <div class="climate-temp" id="climateTemp">--°C</div>
+                                <div class="climate-mode" id="climateMode">Aus</div>
+                                <div class="climate-controls">
+                                    <button class="climate-btn" id="climateMinus">−</button>
+                                    <button class="climate-btn power" id="climatePower">⏻</button>
+                                    <button class="climate-btn" id="climatePlus">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="quick-actions">
-                        <button class="quick-btn" data-command="Wie viel Solar?">⚡ Solar</button>
-                        <button class="quick-btn" data-command="Wie ist die Temperatur?">🌡️ Klima</button>
-                        <button class="quick-btn" data-command="Wie spät ist es?">⏰ Uhrzeit</button>
-                        <button class="quick-btn" data-command="Was siehst du?">📷 Kamera</button>
+
+                    <!-- Bottom Row: Environment + Notifications -->
+                    <div class="widget-row bottom-metrics">
+                        <div class="hud-widget env-widget">
+                            <div class="widget-header">
+                                <span class="widget-icon">🌡</span>
+                                <span>Temperaturen</span>
+                            </div>
+                            <div class="widget-body env-grid" id="envGrid">
+                                <div class="env-item"><span>Garten</span><b id="tempGarten">--°C</b></div>
+                                <div class="env-item"><span>Pool</span><b id="tempPool">--°C</b></div>
+                                <div class="env-item"><span>Wohnz.</span><b id="tempWohn">--°C</b></div>
+                                <div class="env-item"><span>Arbeitsz.</span><b id="tempArbeit">--°C</b></div>
+                            </div>
+                        </div>
+
+                        <div class="hud-widget alerts-widget">
+                            <div class="widget-header">
+                                <span class="widget-icon">📡</span>
+                                <span>Meldungen</span>
+                            </div>
+                            <div class="widget-body alerts-list" id="alertsList">
+                                <div class="alert-item info"><span class="alert-dot"></span>Keine neuen Meldungen</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
+
+                <!-- Right Sidebar: Cameras + Quick Commands -->
+                <aside class="dashboard-rightbar">
+                    <div class="hud-widget camera-widget">
+                        <div class="widget-header">
+                            <span class="widget-icon">📹</span>
+                            <span>Kamera</span>
+                            <select id="cameraSelect" class="camera-select">
+                                <option value="">Auswählen...</option>
+                                <option value="front_door">Haustür</option>
+                                <option value="back_door">Hintere Tür</option>
+                                <option value="einfahrt">Einfahrt</option>
+                                <option value="doorbird">Doorbird</option>
+                            </select>
+                        </div>
+                        <div class="camera-feed" id="cameraFeed">
+                            <div class="camera-placeholder">Kamera wählen</div>
+                        </div>
+                    </div>
+
+                    <div class="hud-widget commands-widget">
+                        <div class="widget-header">
+                            <span class="widget-icon">⚡</span>
+                            <span>Schnellbefehle</span>
+                        </div>
+                        <div class="commands-grid">
+                            <button class="cmd-btn" data-command="Licht Wohnzimmer an" data-entity="light.lampe1" data-service="light.turn_on">💡 Wohnzi.</button>
+                            <button class="cmd-btn" data-command="Licht Wohnzimmer aus" data-entity="light.lampe1" data-service="light.turn_off">🌑 Dunkel</button>
+                            <button class="cmd-btn" data-command="Brunnen an" data-entity="switch.brunnen_garten" data-service="switch.turn_on">⛲ Brunnen</button>
+                            <button class="cmd-btn" data-command="Pool an" data-entity="switch.pool_warmepumpe" data-service="switch.turn_on">🏊 Pool</button>
+                            <button class="cmd-btn" data-command="Klima Bad an" data-entity="switch.test" data-service="switch.turn_on">🌀 Bad</button>
+                            <button class="cmd-btn" data-command="Klima Wohnzimmer an" data-entity="climate.split_klimaanlage" data-service="climate.set_hvac_mode" data-value="cool">❄ Klima</button>
+                        </div>
+                    </div>
+
+                    <div class="hud-widget chat-widget mini-chat" id="miniChatWidget">
+                        <div class="widget-header">
+                            <span class="widget-icon">💬</span>
+                            <span>Letzte Unterhaltung</span>
+                        </div>
+                        <div class="chat-messages" id="chatContainer">
+                            <div class="message-bubble jarvis compact">
+                                <div class="message-content"><p>Guten Tag, Sir. Ich bin bereit.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </main>
-            
-            <!-- Footer -->
-            <footer class="hud-footer">
+
+            <!-- Dashboard Footer -->
+            <footer class="dashboard-footer">
                 <div class="footer-left">
                     <span class="connection-status online">● Verbindung aktiv</span>
+                    <span id="haEntityCount">HA: -- Entitäten</span>
                 </div>
                 <div class="footer-center">
-                    <span id="systemTime">14:00:00</span>
+                    <span class="version" id="footerVersion">v1.0.0</span>
                 </div>
                 <div class="footer-right">
-                    <span class="version">v1.0.0</span>
+                    <button class="hud-button small" id="cameraBtn">📷 Analyse</button>
+                    <div class="input-pill">
+                        <input type="text" id="textInput" placeholder="Befehl oder Frage...">
+                        <button id="sendBtn">➤</button>
+                    </div>
                 </div>
             </footer>
-            
-            <!-- Scan Line Effect -->
-            <div class="scan-overlay"></div>
-            
+
+            <!-- Chat Overlay (full) -->
+            <div class="chat-overlay" id="chatOverlay" style="display: none;">
+                <div class="chat-panel">
+                    <div class="chat-panel-header">
+                        <span>J.A.R.V.I.S. Dialog</span>
+                        <button class="close-panel" id="closeChat">×</button>
+                    </div>
+                    <div class="chat-panel-body" id="chatPanelBody"></div>
+                    <div class="chat-panel-footer">
+                        <input type="text" id="chatPanelInput" placeholder="Geben Sie einen Befehl ein...">
+                        <button id="chatPanelSend">➤</button>
+                    </div>
+                </div>
+            </div>
+
             <!-- Camera Overlay -->
             <div class="camera-overlay" id="cameraOverlay" style="display: none;">
                 <div class="camera-frame">
@@ -211,6 +374,9 @@
                     <div class="camera-hint">Halten Sie das Objekt ruhig. Das Bild wird zur Analyse an J.A.R.V.I.S. gesendet.</div>
                 </div>
             </div>
+
+            <!-- Scan Line Effect -->
+            <div class="scan-overlay"></div>
         </div>
     </div>
     

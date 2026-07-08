@@ -264,11 +264,13 @@ class JarvisPWA {
         
         // Update UI
         document.getElementById('currentUser').textContent = this.user.name.charAt(0);
-        document.getElementById('welcomeTime').textContent = this.getTimeString();
         
         // Initialize Speech
         this.initSpeechRecognition();
         this.initVoices();
+        
+        // Initialize Dashboard
+        this.initDashboard();
         
         // Event Listeners
         this.initMainEventListeners();
@@ -279,11 +281,12 @@ class JarvisPWA {
     }
 
     initMainEventListeners() {
-        // Voice Button
-        const voiceBtn = document.getElementById('voiceBtn');
-        voiceBtn.addEventListener('click', () => this.toggleVoiceInput());
+        // Voice Button (both sidebar and core)
+        document.querySelectorAll('#voiceBtn').forEach(btn => {
+            btn.addEventListener('click', () => this.toggleVoiceInput());
+        });
         
-        // Text Input
+        // Text Input - footer pill
         const textInput = document.getElementById('textInput');
         const sendBtn = document.getElementById('sendBtn');
         
@@ -305,7 +308,49 @@ class JarvisPWA {
             }
         });
         
-        // Quick Actions
+        // Chat Overlay inputs
+        const chatPanelInput = document.getElementById('chatPanelInput');
+        const chatPanelSend = document.getElementById('chatPanelSend');
+        if (chatPanelInput && chatPanelSend) {
+            chatPanelSend.addEventListener('click', () => {
+                const message = chatPanelInput.value.trim();
+                if (message) {
+                    this.sendMessage(message);
+                    chatPanelInput.value = '';
+                }
+            });
+            chatPanelInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    const message = chatPanelInput.value.trim();
+                    if (message) {
+                        this.sendMessage(message);
+                        chatPanelInput.value = '';
+                    }
+                }
+            });
+        }
+        
+        // Chat toggle
+        const chatToggle = document.getElementById('chatToggle');
+        const chatOverlay = document.getElementById('chatOverlay');
+        const closeChat = document.getElementById('closeChat');
+        if (chatToggle && chatOverlay) {
+            chatToggle.addEventListener('click', () => this.openChatPanel());
+        }
+        if (closeChat && chatOverlay) {
+            closeChat.addEventListener('click', () => chatOverlay.style.display = 'none');
+        }
+        
+        // Dashboard refresh
+        const refreshBtn = document.getElementById('dashboardRefresh');
+        if (refreshBtn) {
+            refreshBtn.addEventListener('click', () => {
+                this.refreshDashboardData();
+                this.showNotification('Dashboard aktualisiert', 'success');
+            });
+        }
+        
+        // Quick Actions (legacy)
         document.querySelectorAll('.quick-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const command = e.currentTarget.dataset.command;
@@ -313,12 +358,331 @@ class JarvisPWA {
             });
         });
         
+        // Command buttons
+        document.querySelectorAll('.cmd-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => this.handleCommandButton(e.currentTarget));
+        });
+        
+        // Climate controls
+        const climateMinus = document.getElementById('climateMinus');
+        const climatePlus = document.getElementById('climatePlus');
+        const climatePower = document.getElementById('climatePower');
+        if (climateMinus) climateMinus.addEventListener('click', () => this.adjustClimate(-1));
+        if (climatePlus) climatePlus.addEventListener('click', () => this.adjustClimate(+1));
+        if (climatePower) climatePower.addEventListener('click', () => this.toggleClimatePower());
+        
+        // Camera selector
+        const cameraSelect = document.getElementById('cameraSelect');
+        if (cameraSelect) {
+            cameraSelect.addEventListener('change', (e) => this.loadCameraFeed(e.target.value));
+        }
+        
         // Logout
         document.getElementById('logoutBtn').addEventListener('click', () => {
             if (confirm('Möchten Sie sich abmelden?')) {
                 this.logout();
             }
         });
+    }
+
+    // ==================== DASHBOARD ====================
+
+    initDashboard() {
+        // Erste Datenladung
+        this.refreshDashboardData();
+        
+        // Regelmäßige Aktualisierung alle 30 Sekunden
+        if (this.dashboardInterval) clearInterval(this.dashboardInterval);
+        this.dashboardInterval = setInterval(() => this.refreshDashboardData(), 30000);
+        
+        // Uhrzeit mit Datum
+        this.updateClock();
+        setInterval(() => this.updateClock(), 1000);
+    }
+
+    updateClock() {
+        const now = new Date();
+        const timeEl = document.getElementById('systemTime');
+        const dateEl = document.getElementById('systemDate');
+        if (timeEl) timeEl.textContent = now.toLocaleTimeString('de-DE');
+        if (dateEl) {
+            dateEl.textContent = now.toLocaleDateString('de-DE', {
+                weekday: 'short',
+                day: '2-digit',
+                month: 'short'
+            });
+        }
+    }
+
+    async refreshDashboardData() {
+        try {
+            const [states, cameraRes] = await Promise.all([
+                this.haFetch('/api/states'),
+                this.haFetch('/api/camera_proxy/camera.einfahrt_main?token=' + Date.now()).catch(() => null)
+            ]);
+
+            if (states && Array.isArray(states)) {
+                this.updateEnergyWidgets(states);
+                this.updateClimateWidget(states);
+                this.updateEnvironmentWidgets(states);
+                this.updateEntityCount(states.length);
+            }
+        } catch (error) {
+            console.warn('Dashboard-Daten konnten nicht geladen werden:', error);
+            this.addAlert('HA-Verbindung unterbrochen', 'error');
+        }
+    }
+
+    async haFetch(path) {
+        const url = `${this.apiBaseUrl}/api/jarvis/ha-proxy${path}`;
+        const headers = {
+            'Authorization': `Bearer ${this.apiKey}`,
+            'ngrok-skip-browser-warning': 'true'
+        };
+        if (this.config.authToken) {
+            headers['X-Jarvis-Auth-Token'] = this.config.authToken;
+            headers['X-Jarvis-User-Id'] = this.user.id;
+        }
+        const response = await fetch(url, { headers });
+        if (!response.ok) throw new Error(`HA Proxy ${response.status}`);
+        if (path.includes('camera_proxy') || response.headers.get('content-type')?.includes('image')) {
+            return response.blob();
+        }
+        return response.json();
+    }
+
+    updateEnergyWidgets(states) {
+        // Solar
+        const solarState = states.find(s => s.entity_id === 'sensor.hm1500_pv_power');
+        if (solarState) {
+            const watts = parseFloat(solarState.state) || 0;
+            document.getElementById('solarPower').innerHTML = `${Math.round(watts)} <span class="unit">W</span>`;
+            const max = 1500;
+            document.getElementById('solarFill').style.width = `${Math.min((watts / max) * 100, 100)}%`;
+        }
+
+        const solarToday = states.find(s => s.entity_id === 'sensor.hm1500_daily_energy');
+        if (solarToday) {
+            document.getElementById('solarToday').textContent = `Heute: ${parseFloat(solarToday.state).toFixed(1)} kWh`;
+        }
+
+        // Battery
+        const batteryState = states.find(s => s.entity_id === 'sensor.hm1500_battery_soc');
+        if (batteryState) {
+            const soc = parseFloat(batteryState.state) || 0;
+            document.getElementById('batterySoc').textContent = `${Math.round(soc)}%`;
+            const fill = document.getElementById('batteryFill');
+            const offset = 264 - (264 * soc / 100);
+            fill.style.strokeDashoffset = offset;
+            fill.style.stroke = soc < 20 ? '#ff5555' : soc > 80 ? '#00ff88' : 'var(--jarvis-blue)';
+        }
+
+        const batteryFlowState = states.find(s => s.entity_id === 'sensor.hm1500_battery_power');
+        if (batteryFlowState) {
+            const power = parseFloat(batteryFlowState.state) || 0;
+            const flowText = power > 50 ? `Laden +${Math.round(power)} W` : power < -50 ? `Entladen ${Math.round(Math.abs(power))} W` : 'Ruhe';
+            document.getElementById('batteryFlow').textContent = flowText;
+        }
+
+        // House consumption
+        const powerState = states.find(s => s.entity_id === 'sensor.shellyem3_total_active_power');
+        if (powerState) {
+            const watts = parseFloat(powerState.state) || 0;
+            document.getElementById('housePower').innerHTML = `${Math.round(watts)} <span class="unit">W</span>`;
+        }
+
+        // Grid
+        const gridState = states.find(s => s.entity_id === 'sensor.shellyem3_total_active_import_power');
+        if (gridState) {
+            const importW = parseFloat(gridState.state) || 0;
+            document.getElementById('gridStatus').textContent = importW > 50 ? `Netzbezug ${Math.round(importW)} W` : 'Autark';
+        }
+
+        // Phases
+        const phaseA = states.find(s => s.entity_id === 'sensor.shellyem3_channel_a_power');
+        const phaseB = states.find(s => s.entity_id === 'sensor.shellyem3_channel_b_power');
+        const phaseC = states.find(s => s.entity_id === 'sensor.shellyem3_channel_c_power');
+        const maxPhase = 4000;
+        if (phaseA) document.getElementById('phaseA').style.width = `${Math.min((parseFloat(phaseA.state) || 0) / maxPhase * 100, 100)}%`;
+        if (phaseB) document.getElementById('phaseB').style.width = `${Math.min((parseFloat(phaseB.state) || 0) / maxPhase * 100, 100)}%`;
+        if (phaseC) document.getElementById('phaseC').style.width = `${Math.min((parseFloat(phaseC.state) || 0) / maxPhase * 100, 100)}%`;
+    }
+
+    updateClimateWidget(states) {
+        const climate = states.find(s => s.entity_id === 'climate.split_klimaanlage');
+        if (!climate) return;
+
+        const tempEl = document.getElementById('climateTemp');
+        const modeEl = document.getElementById('climateMode');
+        const powerBtn = document.getElementById('climatePower');
+
+        const currentTemp = climate.attributes?.current_temperature;
+        const targetTemp = climate.attributes?.temperature;
+        const mode = climate.state;
+
+        if (tempEl) {
+            const display = currentTemp ? `${currentTemp}°C` : (targetTemp ? `${targetTemp}°C` : '--°C');
+            tempEl.textContent = display;
+        }
+        if (modeEl) {
+            const labels = { off: 'Aus', cool: 'Kühlen', heat: 'Heizen', dry: 'Trocknen', fan_only: 'Lüfter' };
+            modeEl.textContent = labels[mode] || mode;
+        }
+        if (powerBtn) {
+            powerBtn.classList.toggle('active', mode !== 'off');
+        }
+    }
+
+    updateEnvironmentWidgets(states) {
+        const mapping = {
+            tempGarten: 'sensor.temperature_garten',
+            tempPool: 'sensor.temperature_pool',
+            tempWohn: 'sensor.temperature_wohnzimmer',
+            tempArbeit: 'sensor.temperature_arbeitszimmer'
+        };
+        Object.entries(mapping).forEach(([id, entityId]) => {
+            const state = states.find(s => s.entity_id === entityId);
+            const el = document.getElementById(id);
+            if (state && el) {
+                const val = parseFloat(state.state);
+                el.textContent = isNaN(val) ? '--°C' : `${val.toFixed(1)}°C`;
+            }
+        });
+    }
+
+    updateEntityCount(count) {
+        const el = document.getElementById('haEntityCount');
+        if (el) el.textContent = `HA: ${count} Entitäten`;
+    }
+
+    adjustClimate(delta) {
+        const tempEl = document.getElementById('climateTemp');
+        const current = parseFloat(tempEl?.textContent) || 23;
+        const newTemp = Math.max(16, Math.min(30, current + delta));
+        this.callService('climate.split_klimaanlage', 'climate.set_temperature', { temperature: newTemp });
+    }
+
+    toggleClimatePower() {
+        const modeEl = document.getElementById('climateMode');
+        const isOff = modeEl?.textContent === 'Aus';
+        this.callService('climate.split_klimaanlage', 'climate.set_hvac_mode', { hvac_mode: isOff ? 'cool' : 'off' });
+    }
+
+    async handleCommandButton(btn) {
+        const command = btn.dataset.command;
+        const entityId = btn.dataset.entity;
+        const service = btn.dataset.service;
+        const value = btn.dataset.value;
+        
+        // Visuelles Feedback
+        btn.classList.toggle('active');
+        setTimeout(() => btn.classList.toggle('active'), 600);
+
+        if (service && entityId) {
+            const data = {};
+            if (service.startsWith('light.') || service.startsWith('switch.')) {
+                // Keine extra Daten nötig
+            } else if (service.startsWith('climate.')) {
+                if (service.includes('hvac_mode')) data.hvac_mode = value;
+            }
+            await this.callService(entityId, service, data);
+        }
+
+        if (command) {
+            this.sendMessage(command);
+        }
+    }
+
+    async callService(entityId, service, data = {}) {
+        const [domain, serviceName] = service.split('.');
+        const url = `${this.apiBaseUrl}/api/jarvis/ha-proxy/api/services/${domain}/${serviceName}`;
+        const headers = {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${this.apiKey}`,
+            'ngrok-skip-browser-warning': 'true'
+        };
+        if (this.config.authToken) {
+            headers['X-Jarvis-Auth-Token'] = this.config.authToken;
+            headers['X-Jarvis-User-Id'] = this.user.id;
+        }
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers,
+                body: JSON.stringify({ entity_id: entityId, ...data })
+            });
+            if (!response.ok) throw new Error(`Service ${response.status}`);
+            this.showNotification('Befehl ausgeführt', 'success');
+            setTimeout(() => this.refreshDashboardData(), 1000);
+        } catch (error) {
+            console.error('Service-Fehler:', error);
+            this.showNotification('Befehl fehlgeschlagen', 'error');
+        }
+    }
+
+    loadCameraFeed(cameraKey) {
+        const feed = document.getElementById('cameraFeed');
+        if (!feed) return;
+
+        if (!cameraKey) {
+            feed.innerHTML = '<div class="camera-placeholder">Kamera wählen</div>';
+            return;
+        }
+
+        // Reolink / Frigate / Doorbird über HA Proxy mit Cache-Busting
+        const entityId = `camera.${cameraKey}_main`;
+        const url = `${this.apiBaseUrl}/api/jarvis/ha-proxy/api/camera_proxy/${entityId}?token=${Date.now()}`;
+        feed.innerHTML = `<img src="${url}" alt="${cameraKey}" id="liveCameraFeed" onerror="this.parentElement.innerHTML='<div class=camera-placeholder>Bild nicht verfügbar</div>'">`;
+        
+        // Aktualisiere Bild alle 2 Sekunden
+        if (this.cameraInterval) clearInterval(this.cameraInterval);
+        this.cameraInterval = setInterval(() => {
+            const img = document.getElementById('liveCameraFeed');
+            if (img) img.src = `${url}&t=${Date.now()}`;
+        }, 2000);
+    }
+
+    openChatPanel() {
+        const overlay = document.getElementById('chatOverlay');
+        const body = document.getElementById('chatPanelBody');
+        if (!overlay || !body) return;
+
+        overlay.style.display = 'flex';
+        body.innerHTML = '';
+        
+        // Lade letzte Konversationseinträge
+        const log = this.getConversationLog().slice(-20);
+        log.forEach(entry => {
+            const bubble = document.createElement('div');
+            bubble.className = `message-bubble ${entry.sender}`;
+            const avatar = entry.sender === 'jarvis' ? 'J' : this.user.name.charAt(0);
+            bubble.innerHTML = `
+                <div class="message-avatar">${avatar}</div>
+                <div class="message-content">
+                    <p>${this.escapeHtml(entry.text)}</p>
+                    <span class="message-time">${new Date(entry.timestamp).toLocaleTimeString('de-DE', {hour:'2-digit', minute:'2-digit'})}</span>
+                </div>
+            `;
+            body.appendChild(bubble);
+        });
+        
+        body.scrollTop = body.scrollHeight;
+    }
+
+    addAlert(text, type = 'info') {
+        const list = document.getElementById('alertsList');
+        if (!list) return;
+        
+        const item = document.createElement('div');
+        item.className = `alert-item ${type}`;
+        item.innerHTML = `<span class="alert-dot"></span>${this.escapeHtml(text)}`;
+        list.prepend(item);
+        
+        // Max 5 alerts
+        while (list.children.length > 5) {
+            list.removeChild(list.lastChild);
+        }
     }
 
     // ==================== SPRACHERKENNUNG ====================
