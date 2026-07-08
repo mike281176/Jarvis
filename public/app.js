@@ -508,9 +508,15 @@ class JarvisPWA {
                 `Du hast Zugriff auf Smart Home (Home Assistant), E-Mail, Web-Suche, Termine und Server.\n` +
                 `Nutze diese Tools, wenn der Nutzer nach Status, Daten oder Aktionen fragt.\n` +
                 `Bevorzuge kurze, prägnante Antworten. Schachtelsätze vermeiden.\n` +
+                `SMART-HOME-REGELN (Klimaanlage):\n` +
+                `- Wenn der Nutzer \"Klima an\" oder ähnlich sagt, prüfe ZUERST den aktuellen Zustand der Klimaanlage im aktuellen Raum.\n` +
+                `- Stelle eine Rückfrage in diesem Format: \"Klima ist aus. Soll ich auf 23 Grad einschalten, oder wünschen Sie eine andere Temperatur?\"\n` +
+                `- Schalte die Klimaanlage NIEMALS ohne ausdrückliche Bestätigung des Nutzers ein.\n` +
+                `- Im Wohnzimmer ist die relevante Entität climate.split_klimaanlage; im Bad gibt es keine Klimaanlage.\n` +
                 `Der aktuelle Nutzer ist ${this.user.name} (Rolle: ${this.user.role}).\n` +
                 `Der Nutzer befindet sich aktuell im Raum: ${location}.\n` +
-                `Beantworte Uhrzeit- und Datumsfragen mit der aktuellen Systemzeit des Servers, falls bekannt; sonst mit allgemeinen Formulierungen.`;
+                `Beantworte Uhrzeit- und Datumsfragen mit der aktuellen Systemzeit des Servers, falls bekannt; sonst mit allgemeinen Formulierungen.\n` +
+                `WICHTIG: Wenn du intern ein Tool aufrufst, zeige dem Nutzer NIE den rohen tool_call-Block. Gib nur die für den Menschen lesbare Antwort aus.`;
 
             const headers = {
                 'Content-Type': 'application/json',
@@ -582,16 +588,19 @@ class JarvisPWA {
             
             const jarvisResponse = streamedText || 'Entschuldigung, Sir. Ich habe keine Antwort erhalten.';
             
+            // Rohe tool_call-Blöcke aus der finalen Antwort entfernen
+            const cleanedResponse = this.sanitizeResponse(jarvisResponse);
+            
             // Finale Antwort im UI sicherstellen
-            this.addMessage(jarvisResponse, 'jarvis');
+            this.addMessage(cleanedResponse, 'jarvis');
             
             // Sprich Antwort erst jetzt aus, wenn der Stream komplett ist
-            this.speak(jarvisResponse);
+            this.speak(cleanedResponse);
             
             // Speichere in Konversation
             this.conversation.push({
                 user: message,
-                jarvis: jarvisResponse,
+                jarvis: cleanedResponse,
                 timestamp: new Date()
             });
             
@@ -603,6 +612,16 @@ class JarvisPWA {
         }
         
         this.updateVoiceStatus('Bereit', 'ready');
+    }
+    
+    sanitizeResponse(text) {
+        // Entfernt rohe tool_call-Blöcke, die manche Modelle ausgeben, bevor sie Tools ausführen
+        if (!text) return text;
+        // Filter Markdown-Codeblöcke mit tool_call
+        return text
+            .replace(/```\s*tool_call[\s\S]*?```/gi, '')
+            .replace(/\{\s*"name"\s*:\s*"(ha_|tool_|call_)[^"]*"[\s\S]*?\}/g, '')
+            .trim();
     }
 
     addMessage(text, sender) {
