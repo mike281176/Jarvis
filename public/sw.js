@@ -3,12 +3,13 @@
  * Für Offline-Fähigkeit und schnelles Laden
  */
 
-const CACHE_NAME = 'jarvis-v1';
+const CACHE_NAME = 'jarvis-v2';
 const urlsToCache = [
     '/',
     '/index.html',
     '/styles.css',
     '/app.js',
+    '/sw.js',
     '/manifest.json'
 ];
 
@@ -49,6 +50,12 @@ self.addEventListener('activate', event => {
 
 // Fetch Event
 self.addEventListener('fetch', event => {
+    // Nur Anfragen an die eigene Domain abfangen. Externe APIs (Hermes/ngrok)
+    // sollen immer direkt gefetcht werden, damit CORS und Tokens funktionieren.
+    if (!event.request.url.startsWith(self.location.origin)) {
+        return;
+    }
+    
     event.respondWith(
         caches.match(event.request)
             .then(response => {
