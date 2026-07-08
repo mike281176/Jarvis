@@ -661,9 +661,35 @@ class JarvisPWA {
 
     registerServiceWorker() {
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-                .then(reg => console.log('Service Worker registriert'))
-                .catch(err => console.log('Service Worker Registrierung fehlgeschlagen'));
+            // Zuerst alle alten Service Worker deregistrieren (Clean-Slate)
+            navigator.serviceWorker.getRegistrations().then(regs => {
+                const unregisterPromises = regs.map(reg => reg.unregister());
+                return Promise.all(unregisterPromises);
+            }).then(() => {
+                const scope = window.location.pathname;
+                return navigator.serviceWorker.register('/sw.js', { scope, updateViaCache: 'none' });
+            }).then(reg => {
+                console.log('Service Worker registriert');
+                
+                reg.addEventListener('updatefound', () => {
+                    const newWorker = reg.installing;
+                    if (!newWorker) return;
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            newWorker.postMessage({ type: 'SKIP_WAITING' });
+                        }
+                    });
+                });
+                
+                reg.update().catch(() => {});
+            }).catch(err => console.log('Service Worker Registrierung fehlgeschlagen', err));
+            
+            let refreshing = false;
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                if (refreshing) return;
+                refreshing = true;
+                window.location.reload();
+            });
         }
     }
 }
