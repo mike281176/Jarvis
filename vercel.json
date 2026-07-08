@@ -2,8 +2,14 @@
   "version": 2,
   "name": "jarvis-voice-client",
   "framework": null,
-  "buildCommand": null,
+  "buildCommand": "sh -c 'echo \"{\\\"commit\\\": \\\"$VERCEL_GIT_COMMIT_SHA\\\", \\\"short_commit\\\": \\\"${VERCEL_GIT_COMMIT_SHA:0:7}\\\", \\\"branch\\\": \\\"$VERCEL_GIT_COMMIT_REF\\\", \\\"built_at\\\": \\\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\\\", \\\"app\\\": \\\"J.A.R.V.I.S. PWA\\\"}\" > public/version.json'",
   "outputDirectory": "public",
   "installCommand": null,
-  "devCommand": null
+  "devCommand": null,
+  "rewrites": [
+    {
+      "source": "/api/jarvis/:path*",
+      "destination": "https://nonconvergent-francene-toxically.ngrok-free.dev/:path*"
+    }
+  ]
 }

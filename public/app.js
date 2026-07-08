@@ -11,7 +11,8 @@ class JarvisPWA {
         this.synthesis = window.speechSynthesis;
         this.isListening = false;
         this.conversation = [];
-        this.apiBaseUrl = this.config.apiUrl || 'https://nonconvergent-francene-toxically.ngrok-free.dev';
+        this.apiBaseUrl = this.config.apiUrl || '';
+        this.apiKey = this.config.apiKey || 'fb74aee26654c46e06e8b82158e1eb12991fb866f0300435fd9c34d0e67634d3';
         
         this.init();
     }
@@ -22,13 +23,18 @@ class JarvisPWA {
         const defaultConfig = {
             user: null,
             authToken: null,
-            apiUrl: 'https://nonconvergent-francene-toxically.ngrok-free.dev',
+            apiUrl: '',
             language: 'de-DE',
             autoSpeak: true
         };
         
         const saved = localStorage.getItem('jarvis_config');
-        return saved ? { ...defaultConfig, ...JSON.parse(saved) } : defaultConfig;
+        const cfg = saved ? { ...defaultConfig, ...JSON.parse(saved) } : defaultConfig;
+        // Migration: alte ngrok-API-URL entfernen, relative Pfade nutzen
+        if (cfg.apiUrl && cfg.apiUrl.includes('ngrok-free.dev')) {
+            cfg.apiUrl = '';
+        }
+        return cfg;
     }
 
     saveConfig() {
@@ -118,7 +124,11 @@ class JarvisPWA {
         });
         
         // Load API URL
-        document.getElementById('apiUrl').value = this.config.apiUrl;
+        const apiUrlInput = document.getElementById('apiUrl');
+        if (apiUrlInput) {
+            apiUrlInput.value = this.config.apiUrl || '';
+            apiUrlInput.placeholder = '/api/jarvis/... (leer = Standard)';
+        }
     }
 
     login(userId, token, userInfo) {
@@ -197,11 +207,10 @@ class JarvisPWA {
         }
         
         try {
-            const response = await fetch(`${this.apiBaseUrl}/auth/login`, {
+            const response = await fetch(`${this.apiBaseUrl}/api/jarvis/auth/login`, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'ngrok-skip-browser-warning': 'true'
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ username: userId, password: input })
             });
@@ -492,7 +501,7 @@ class JarvisPWA {
             
             const headers = {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${this.config.apiKey || 'fb74aee26654c46e06e8b82158e1eb12991fb866f0300435fd9c34d0e67634d3'}`,
+                'Authorization': `Bearer ${this.apiKey}`,
                 'ngrok-skip-browser-warning': 'true'
             };
             if (this.config.authToken) {
@@ -500,7 +509,7 @@ class JarvisPWA {
                 headers['X-Jarvis-User-Id'] = this.user.id;
             }
             
-            const response = await fetch(`${this.apiBaseUrl}/v1/chat/completions`, {
+            const response = await fetch(`${this.apiBaseUrl}/api/jarvis/v1/chat/completions`, {
                 method: 'POST',
                 headers: headers,
                 body: JSON.stringify({
