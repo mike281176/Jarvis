@@ -65,12 +65,17 @@ class JarvisPWA {
                 this.versionInfo = version;
                 const display = document.getElementById('versionDisplay');
                 if (display) {
-                    display.textContent = `v${version.commit}`;
-                    display.title = `${version.branch} • ${version.full_commit} • ${version.built_at}`;
+                    const short = version.short_commit || version.commit?.substring(0, 7) || 'unknown';
+                    display.textContent = `v${short}`;
+                    display.title = `Commit: ${version.commit}\nBranch: ${version.branch}\nBuilt: ${version.built_at}`;
                 }
             }
-        } catch (e) {
-            console.warn('Version info not available:', e);
+        } catch (error) {
+            console.warn('Fehler beim Laden der Versionsinfo:', error);
+            const display = document.getElementById('versionDisplay');
+            if (display) {
+                display.textContent = 'v--';
+            }
         }
     }
 
