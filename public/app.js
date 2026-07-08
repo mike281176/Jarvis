@@ -21,6 +21,7 @@ class JarvisPWA {
     loadConfig() {
         const defaultConfig = {
             user: null,
+            authToken: null,
             apiUrl: 'https://nonconvergent-francene-toxically.ngrok-free.dev',
             language: 'de-DE',
             autoSpeak: true
@@ -120,14 +121,10 @@ class JarvisPWA {
         document.getElementById('apiUrl').value = this.config.apiUrl;
     }
 
-    login(userId) {
-        const users = {
-            mike: { name: 'Mike', role: 'Administrator' },
-            gast: { name: 'Gast', role: 'Besucher' }
-        };
-        
-        this.user = { id: userId, ...users[userId] };
+    login(userId, token, userInfo) {
+        this.user = { id: userId, ...userInfo };
         this.config.user = this.user;
+        this.config.authToken = token;
         this.saveConfig();
         
         // Animation und Wechsel
@@ -137,32 +134,37 @@ class JarvisPWA {
         
         setTimeout(() => {
             this.showMainInterface();
-            // Abwechslung in der Anrede
             const salutation = Math.random() > 0.5 ? 'Sir' : 'Master';
             this.speak(`Willkommen zurück, ${this.user.name}. J.A.R.V.I.S. steht zu Ihren Diensten, ${salutation}.`);
         }, 600);
     }
 
     handleUserSelect(userId) {
-        if (userId === 'mike') {
-            this.showPasswordPanel();
-        } else {
-            this.login(userId);
-        }
+        this.selectedUser = userId;
+        this.showPasswordPanel(userId);
     }
 
-    showPasswordPanel() {
+    showPasswordPanel(userId) {
         const userSelection = document.querySelector('.user-selection');
         const passwordPanel = document.getElementById('passwordPanel');
+        const passwordTitle = document.querySelector('.password-title');
+        const avatarInitial = document.querySelector('.password-header .avatar-initial');
+        
+        const labels = {
+            mike: { title: 'Sicherheitsauthentifizierung', initial: 'M' },
+            tanja: { title: 'Authentifizierung', initial: 'T' }
+        };
+        const info = labels[userId] || labels.mike;
         
         userSelection.style.display = 'none';
         passwordPanel.style.display = 'flex';
+        if (passwordTitle) passwordTitle.textContent = info.title;
+        if (avatarInitial) avatarInitial.textContent = info.initial;
         
         document.getElementById('passwordInput').value = '';
         document.getElementById('passwordError').style.display = 'none';
         document.getElementById('passwordInput').focus();
         
-        // Animation
         passwordPanel.style.opacity = '0';
         passwordPanel.style.transform = 'translateY(20px)';
         setTimeout(() => {
@@ -181,33 +183,58 @@ class JarvisPWA {
         
         document.getElementById('passwordInput').value = '';
         document.getElementById('passwordError').style.display = 'none';
+        this.selectedUser = null;
     }
 
-    verifyPassword() {
+    async verifyPassword() {
         const input = document.getElementById('passwordInput').value;
         const errorDiv = document.getElementById('passwordError');
+        const userId = this.selectedUser;
         
-        if (input === 'Jarvis2026') {
-            errorDiv.style.display = 'none';
-            this.login('mike');
-        } else {
+        if (!userId || !input) {
             errorDiv.style.display = 'flex';
-            document.getElementById('passwordInput').value = '';
-            document.getElementById('passwordInput').focus();
+            return;
+        }
+        
+        try {
+            const response = await fetch(`${this.apiBaseUrl}/auth/login`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'ngrok-skip-browser-warning': 'true'
+                },
+                body: JSON.stringify({ username: userId, password: input })
+            });
             
-            // Shake animation
-            const panel = document.querySelector('.password-form');
-            panel.style.animation = 'shake 0.5s ease';
-            setTimeout(() => {
-                panel.style.animation = '';
-            }, 500);
+            const data = await response.json();
+            
+            if (response.ok && data.success && data.token) {
+                errorDiv.style.display = 'none';
+                this.login(userId, data.token, data.user);
+            } else {
+                errorDiv.style.display = 'flex';
+                document.getElementById('passwordInput').value = '';
+                document.getElementById('passwordInput').focus();
+                
+                const panel = document.querySelector('.password-form');
+                panel.style.animation = 'shake 0.5s ease';
+                setTimeout(() => {
+                    panel.style.animation = '';
+                }, 500);
+            }
+        } catch (error) {
+            console.error('Login Fehler:', error);
+            errorDiv.style.display = 'flex';
+            document.querySelector('.error-text').textContent = 'Verbindungsfehler. Bitte erneut versuchen.';
         }
     }
 
     logout() {
         this.user = null;
         this.config.user = null;
+        this.config.authToken = null;
         this.saveConfig();
+        this.conversation = [];
         this.showLoginScreen();
     }
 
@@ -460,15 +487,22 @@ class JarvisPWA {
                 `Du hast Zugriff auf Smart Home (Home Assistant), E-Mail, Web-Suche, Termine und Server.\n` +
                 `Nutze diese Tools, wenn der Nutzer nach Status, Daten oder Aktionen fragt.\n` +
                 `Bevorzuge kurze, prägnante Antworten. Füge gelegentlich einen trockenen Kommentar hinzu.\n` +
+                `Der aktuelle Nutzer ist ${this.user.name} (Rolle: ${this.user.role}).\n` +
                 `Der Nutzer befindet sich aktuell im Raum: ${location}.`;
+            
+            const headers = {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${this.config.apiKey || 'fb74aee26654c46e06e8b82158e1eb12991fb866f0300435fd9c34d0e67634d3'}`,
+                'ngrok-skip-browser-warning': 'true'
+            };
+            if (this.config.authToken) {
+                headers['X-Jarvis-Auth-Token'] = this.config.authToken;
+                headers['X-Jarvis-User-Id'] = this.user.id;
+            }
             
             const response = await fetch(`${this.apiBaseUrl}/v1/chat/completions`, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${this.config.apiKey || 'fb74aee26654c46e06e8b82158e1eb12991fb866f0300435fd9c34d0e67634d3'}`,
-                    'ngrok-skip-browser-warning': 'true'
-                },
+                headers: headers,
                 body: JSON.stringify({
                     model: 'hermes-agent',
                     stream: false,
