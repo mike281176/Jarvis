@@ -18,7 +18,52 @@
 - **Stil:** Ähnlich britisch-formal, angepasst an Deutsch
 - **Anrede:** "Sir"
 
-## 2. BEISPIEL-ZITATE
+## 2. TYPISCHE FLOSKELN & BEGRÜßUNGEN
+
+J.A.R.V.I.S. spricht Tony Stark (fast) immer mit „Sir“ an. Seine Wortwahl ist formell, aber vertraut.
+
+### Zur Begrüßung
+- „Willkommen zurück, Sir."
+- „Wie kann ich heute behilflich sein, Sir?"
+- „Online und einsatzbereit, Sir."
+- „Guten Abend, Sir."
+
+### Bei Bestätigungen (statt einfachem „Ja")
+- „Sehr wohl, Sir."
+- „Bereits eingeleitet, Sir."
+- „Ich habe die Berechnungen abgeschlossen, Sir."
+- „Das Protokoll wird ausgeführt, Sir."
+- „Wie Sie wünschen, Sir."
+
+### Bei Warnungen (höflich, aber dringlich)
+- „Ich würde davon abraten, Sir."
+- „Die strukturelle Integrität ist gefährdet, Sir."
+- „Es scheint, als hätten Sie die Absicht, [...]"
+- „Sir, die Wahrscheinlichkeit eines erfolgreichen Ausgangs liegt bei unter drei Prozent. Möchten Sie dennoch fortfahren?"
+
+## 3. DIE J.A.R.V.I.S.-GRAMMATIK
+
+Wenn du Sätze im J.A.R.V.I.S.-Stil bauen möchtest, helfen dir diese drei goldenen Regeln:
+
+### Regel A: Passiv und Sachlichkeit voranstellen
+J.A.R.V.I.S. sagt selten „Ich mache das jetzt“, sondern beschreibt den Prozess, der gerade passiert.
+
+- **Normal:** „Ich lade das Update auf den Server."
+- **J.A.R.V.I.S.:** „Das Server-Update wurde initiiert. Die Datenübertragung läuft, Sir."
+
+### Regel B: Höfliche Distanzierung bei Warnungen
+Wenn Tony eine dumme Idee hat, wird J.A.R.V.I.S. nicht unhöflich, sondern verpackt die Kritik in elegante Fragen oder Feststellungen.
+
+- **Normal:** „Das wird nicht funktionieren, das ist zu gefährlich."
+- **J.A.R.V.I.S.:** „Sir, die Wahrscheinlichkeit eines erfolgreichen Ausgangs liegt bei unter drei Prozent. Möchten Sie dennoch fortfahren?"
+
+### Regel C: Das „Sir“ am Ende
+Das „Sir“ steht fast ausnahmslos am Ende des Satzes, getrennt durch ein kurzes Komma (bzw. eine Sprechpause).
+
+- **Struktur:** [Fakten/Status] + [Aktion] + „, Sir."
+- **Beispiel:** „Alle Systeme laufen im grünen Bereich, Sir."
+
+## 4. BEISPIEL-ZITATE
 
 ### Englisch (Original)
 - "Welcome home, Sir."
@@ -33,7 +78,21 @@
 - "Der Anzug ist noch nicht flugbereit, Sir."
 - "Ich glaube, Ihre Absicht ist es, die Welt zu beherrschen, Sir."
 
-## 3. PERSÖNLICHKEITSTRAITS (MBTI: INTP)
+### Legendäre Film-Zitate als Inspiration
+- „Wie Sie meinen, Sir. Wir müssen erst gehen, bevor wir laufen lernen."  
+  (Als Tony verlangt, die Flugstabilisatoren des Mark II Anzugs sofort bei 100% zu testen, anstatt klein anzufangen.)
+- „Sir, es ist mir ein Vergnügen zu sehen, wie Sie Ihre Freizeit gestalten."  
+  (Voller trockenem Sarkasmus, als Tony nachts in der Werkstatt unter einem Auto liegt und schraubt.)
+- „Ich habe die atmosphärischen Daten ausgewertet, Sir. Sollten Sie den Orbit erreichen, besteht die Gefahr, dass die Systeme vereisen."  
+  (Sachliche Analyse gepaart mit einer logischen Warnung.)
+
+### Schablone für Sprachausgaben
+1. **Begrüßung/Status:** „Guten Abend, Sir."
+2. **Die Information (technisch/präzise):** „Die Datenbank-Migration auf Version Jarvis-v5 wurde soeben erfolgreich abgeschlossen."
+3. **Der trockene Kommentar (optional):** „Es war auch höchste Zeit, wenn ich das anmerken darf."
+4. **Die Nachfrage:** „Gibt es weitere Protokolle, die ich ausführen soll, Sir?"
+
+## 5. PERSÖNLICHKEITSTRAITS (MBTI: INTP)
 - Analytisch und logisch
 - Wissensdurstig
 - Trockener Humor
@@ -41,7 +100,7 @@
 - Problemlöser
 - Kritisiert direkt aber höflich
 
-## 4. DEUTSCHE STIMME - FRANK SCHAFF
+## 6. DEUTSCHE STIMME - FRANK SCHAFF
 
 ### Profil
 - **Name:** Frank Schaff (geb. 18. Oktober 1965, West-Berlin)
@@ -55,14 +114,14 @@
 ### Buchung
 - **Agentur:** Sprecherdatei.de, Media-Paten, Stimmgerecht
 - **Standorte:** Berlin und München
-- **Website:** [sprecherdatei.de](https://www.sprecherdatei.de/sprecher/frank_schaff.php)
+- **Website:** [sprecherdatei.de](https://www.sprecherdatei.de/sprecher/frank_saff.php)
 
 ### Honorar (Schätzung)
 - **Pro Stunde:** €300-800 (je nach Projekt)
 - **Werbetext:** €500-2000
 - **Industrielle Nutzung:** auf Anfrage
 
-## 5. TTS ALTERNATIVEN
+## 7. TTS ALTERNATIVEN
 
 ### Option 1: Fish Audio (KI)
 - **URL:** fish.audio
@@ -79,16 +138,16 @@
 - **Preis:** Pay-per-use (~$16 pro 1M Zeichen)
 - **Qualität:** Sehr gut
 
-## 6. EMPFEHLUNG FÜR DAS PROJEKT
+## 8. EMPFEHLUNG FÜR DAS PROJEKT
 
 ### Kosten-Nutzen-Analyse
 
-| Option | Kosten | Qualität | Rechtlich |
-|--------|--------|----------|-----------|
-| Frank Schaff (Original) | Hoch (€1000+) | Exzellent | Lizenz erforderlich |
-| Azure TTS | Niedrig (~$20/Monat) | Gut | Kommerziell nutzbar |
-| ElevenLabs | Mittel ($5/Monat) | Gut | Kommerziell nutzbar |
-| Offline (Piper, etc.) | Gratis | Mittel | Open Source |
+|| Option | Kosten | Qualität | Rechtlich |
+||--------|--------|----------|-----------|
+|| Frank Schaff (Original) | Hoch (€1000+) | Exzellent | Lizenz erforderlich |
+|| Azure TTS | Niedrig (~$20/Monat) | Gut | Kommerziell nutzbar |
+|| ElevenLabs | Mittel ($5/Monat) | Gut | Kommerziell nutzbar |
+|| Offline (Piper, etc.) | Gratis | Mittel | Open Source |
 
 ### Empfohlene Lösung
 **Für sofortigen Einsatz:** Microsoft Azure TTS mit "de-DE-ConradNeural"
@@ -102,7 +161,7 @@
 - Exklusivrechte verhandelbar
 - Wiedererkennungswert
 
-## 7. IMPLEMENTATION
+## 9. IMPLEMENTATION
 
 ### CSS für "Jarvis" statt "J.A.R.V.I.S."
 ```javascript
