@@ -45,6 +45,10 @@ class JarvisPWA {
 
     init() {
         this.loadVersion();
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('demo') && !this.user) {
+            this.user = { id: 'mike', name: 'Mike' };
+        }
         if (!this.user) {
             this.showLoginScreen();
         } else {
@@ -370,19 +374,21 @@ class JarvisPWA {
             btn.addEventListener('click', (e) => this.handleCommandButton(e.currentTarget));
         });
         
-        // Climate controls
-        const climateMinus = document.getElementById('climateMinus');
-        const climatePlus = document.getElementById('climatePlus');
-        const climatePower = document.getElementById('climatePower');
-        if (climateMinus) climateMinus.addEventListener('click', () => this.adjustClimate(-1));
-        if (climatePlus) climatePlus.addEventListener('click', () => this.adjustClimate(+1));
-        if (climatePower) climatePower.addEventListener('click', () => this.toggleClimatePower());
+        // Side menu view switching
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const view = e.currentTarget.dataset.view;
+                this.switchView(view);
+            });
+        });
         
-        // Camera selector
-        const cameraSelect = document.getElementById('cameraSelect');
-        if (cameraSelect) {
-            cameraSelect.addEventListener('change', (e) => this.loadCameraFeed(e.target.value));
-        }
+        // Home climate controls
+        const homeClimateMinus = document.getElementById('homeClimateMinus');
+        const homeClimatePlus = document.getElementById('homeClimatePlus');
+        const homeClimatePower = document.getElementById('homeClimatePower');
+        if (homeClimateMinus) homeClimateMinus.addEventListener('click', () => this.adjustClimate(-1));
+        if (homeClimatePlus) homeClimatePlus.addEventListener('click', () => this.adjustClimate(+1));
+        if (homeClimatePower) homeClimatePower.addEventListener('click', () => this.toggleClimatePower());
         
         // Logout
         document.getElementById('logoutBtn').addEventListener('click', () => {
@@ -394,7 +400,52 @@ class JarvisPWA {
 
     // ==================== DASHBOARD ====================
 
+    switchView(viewName) {
+        // Menu highlight
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.classList.toggle('active', item.dataset.view === viewName);
+        });
+        // View visibility
+        document.querySelectorAll('.view-container').forEach(view => {
+            view.classList.toggle('active', view.id === `view-${viewName}`);
+        });
+        // Refresh camera feeds when cameras view shown
+        if (viewName === 'cameras') {
+            this.startCameraFeeds();
+        } else {
+            this.stopCameraFeeds();
+        }
+    }
+
+    startCameraFeeds() {
+        if (this.cameraInterval) clearInterval(this.cameraInterval);
+        const cams = [
+            { id: 'camFrontImg', entity: 'camera.front_door' },
+            { id: 'camBackImg', entity: 'camera.back_door' },
+            { id: 'camEinfahrtImg', entity: 'camera.einfahrt_hochauflosung' },
+            { id: 'camDoorbirdImg', entity: 'camera.doorbird' }
+        ];
+        const token = Date.now();
+        const update = () => {
+            cams.forEach(cam => {
+                const img = document.getElementById(cam.id);
+                if (img) {
+                    img.src = `${this.apiBaseUrl}/api/jarvis/ha-proxy/api/camera_proxy/${cam.entity}?token=${token}&t=${Date.now()}`;
+                }
+            });
+        };
+        update();
+        this.cameraInterval = setInterval(update, 2000);
+    }
+
+    stopCameraFeeds() {
+        if (this.cameraInterval) clearInterval(this.cameraInterval);
+    }
+
     initDashboard() {
+        // Default view home
+        this.switchView('home');
+        
         // Erste Datenladung
         this.refreshDashboardData();
         
@@ -459,69 +510,89 @@ class JarvisPWA {
     }
 
     updateEnergyWidgets(states) {
-        // Solar
-        const solarState = states.find(s => s.entity_id === 'sensor.hm1500_pv_power');
-        if (solarState) {
-            const watts = parseFloat(solarState.state) || 0;
-            document.getElementById('solarPower').innerHTML = `${Math.round(watts)} <span class="unit">W</span>`;
-            const max = 1500;
-            document.getElementById('solarFill').style.width = `${Math.min((watts / max) * 100, 100)}%`;
+        // Solar power and today
+        const solarPowerState = states.find(s => s.entity_id === 'sensor.jarvis_solar_aktuell' || s.entity_id === 'sensor.hm1500_power');
+        const solarTodayState = states.find(s => s.entity_id === 'sensor.jarvis_solar_heute' || s.entity_id === 'sensor.hm1500_yieldday');
+        if (solarPowerState) {
+            const watts = parseFloat(solarPowerState.state) || 0;
+            const text = `${Math.round(watts)} W`;
+            this.setText('homeSolarPower', text);
+            this.setText('stromSolarPower', text);
+        }
+        if (solarTodayState) {
+            let kwh = parseFloat(solarTodayState.state) || 0;
+            if (solarTodayState.entity_id === 'sensor.hm1500_yieldday') kwh = kwh / 1000;
+            const text = `Heute: ${kwh.toFixed(1)} kWh`;
+            this.setText('homeSolarToday', text);
+            this.setText('stromSolarToday', text);
         }
 
-        const solarToday = states.find(s => s.entity_id === 'sensor.hm1500_daily_energy');
-        if (solarToday) {
-            document.getElementById('solarToday').textContent = `Heute: ${parseFloat(solarToday.state).toFixed(1)} kWh`;
-        }
-
-        // Battery
-        const batteryState = states.find(s => s.entity_id === 'sensor.hm1500_battery_soc');
+        // Battery SoC and flow
+        const batteryState = states.find(s => s.entity_id === 'sensor.gesamt_batterie_soc' || s.entity_id === 'sensor.batterie_summe');
         if (batteryState) {
             const soc = parseFloat(batteryState.state) || 0;
-            document.getElementById('batterySoc').textContent = `${Math.round(soc)}%`;
-            const fill = document.getElementById('batteryFill');
-            const offset = 264 - (264 * soc / 100);
-            fill.style.strokeDashoffset = offset;
-            fill.style.stroke = soc < 20 ? '#ff5555' : soc > 80 ? '#00ff88' : 'var(--jarvis-blue)';
+            this.setText('homeBatterySoc', `${Math.round(soc)} %`);
+            this.setText('stromBatterySoc', `${Math.round(soc)} %`);
         }
 
-        const batteryFlowState = states.find(s => s.entity_id === 'sensor.hm1500_battery_power');
-        if (batteryFlowState) {
+        const batteryFlowState = states.find(s => s.entity_id === 'sensor.gesamt_lade_leistung' || s.entity_id === 'sensor.gesamt_entlade_leistung');
+        const charge = states.find(s => s.entity_id === 'sensor.gesamt_lade_leistung');
+        const discharge = states.find(s => s.entity_id === 'sensor.gesamt_entlade_leistung');
+        if (charge && discharge) {
+            const c = parseFloat(charge.state) || 0;
+            const d = parseFloat(discharge.state) || 0;
+            const flowText = c > d ? `Laden +${Math.round(c)} W` : d > c ? `Entladen ${Math.round(d)} W` : 'Ruhe';
+            this.setText('homeBatteryFlow', flowText);
+            this.setText('stromBatteryFlow', flowText);
+        } else if (batteryFlowState) {
             const power = parseFloat(batteryFlowState.state) || 0;
             const flowText = power > 50 ? `Laden +${Math.round(power)} W` : power < -50 ? `Entladen ${Math.round(Math.abs(power))} W` : 'Ruhe';
-            document.getElementById('batteryFlow').textContent = flowText;
+            this.setText('homeBatteryFlow', flowText);
+            this.setText('stromBatteryFlow', flowText);
         }
 
-        // House consumption
-        const powerState = states.find(s => s.entity_id === 'sensor.shellyem3_total_active_power');
+        // House consumption / grid import
+        const powerState = states.find(s => s.entity_id === 'sensor.power_consumption');
         if (powerState) {
             const watts = parseFloat(powerState.state) || 0;
-            document.getElementById('housePower').innerHTML = `${Math.round(watts)} <span class="unit">W</span>`;
+            this.setText('homeHousePower', `${Math.round(watts)} W`);
+            this.setText('stromConsumption', `${Math.round(watts)} W`);
         }
 
-        // Grid
-        const gridState = states.find(s => s.entity_id === 'sensor.shellyem3_total_active_import_power');
+        const gridState = states.find(s => s.entity_id === 'sensor.power_import_grid' || s.entity_id === 'sensor.power_grid_total_raw');
         if (gridState) {
             const importW = parseFloat(gridState.state) || 0;
-            document.getElementById('gridStatus').textContent = importW > 50 ? `Netzbezug ${Math.round(importW)} W` : 'Autark';
+            this.setText('homeGridStatus', importW > 50 ? `Netzbezug ${Math.round(importW)} W` : 'Autark');
+            this.setText('stromGrid', importW > 50 ? `Netzbezug ${Math.round(importW)} W` : 'Autark');
         }
 
         // Phases
-        const phaseA = states.find(s => s.entity_id === 'sensor.shellyem3_channel_a_power');
-        const phaseB = states.find(s => s.entity_id === 'sensor.shellyem3_channel_b_power');
-        const phaseC = states.find(s => s.entity_id === 'sensor.shellyem3_channel_c_power');
-        const maxPhase = 4000;
-        if (phaseA) document.getElementById('phaseA').style.width = `${Math.min((parseFloat(phaseA.state) || 0) / maxPhase * 100, 100)}%`;
-        if (phaseB) document.getElementById('phaseB').style.width = `${Math.min((parseFloat(phaseB.state) || 0) / maxPhase * 100, 100)}%`;
-        if (phaseC) document.getElementById('phaseC').style.width = `${Math.min((parseFloat(phaseC.state) || 0) / maxPhase * 100, 100)}%`;
+        const phaseA = states.find(s => s.entity_id === 'sensor.haus_channel_a_power');
+        const phaseB = states.find(s => s.entity_id === 'sensor.haus_channel_b_power');
+        const phaseC = states.find(s => s.entity_id === 'sensor.haus_channel_c_power');
+        const maxPhase = 5000;
+        if (phaseA) this.setBar('stromPhaseA', (parseFloat(phaseA.state) || 0) / maxPhase * 100);
+        if (phaseB) this.setBar('stromPhaseB', (parseFloat(phaseB.state) || 0) / maxPhase * 100);
+        if (phaseC) this.setBar('stromPhaseC', (parseFloat(phaseC.state) || 0) / maxPhase * 100);
+    }
+
+    setText(id, text) {
+        const el = document.getElementById(id);
+        if (el) el.textContent = text;
+    }
+
+    setBar(id, percent) {
+        const el = document.getElementById(id);
+        if (el) el.style.width = `${Math.min(percent, 100)}%`;
     }
 
     updateClimateWidget(states) {
         const climate = states.find(s => s.entity_id === 'climate.split_klimaanlage');
         if (!climate) return;
 
-        const tempEl = document.getElementById('climateTemp');
-        const modeEl = document.getElementById('climateMode');
-        const powerBtn = document.getElementById('climatePower');
+        const tempEl = document.getElementById('homeClimateTemp');
+        const modeEl = document.getElementById('homeClimateMode');
+        const powerBtn = document.getElementById('homeClimatePower');
 
         const currentTemp = climate.attributes?.current_temperature;
         const targetTemp = climate.attributes?.temperature;
@@ -542,10 +613,10 @@ class JarvisPWA {
 
     updateEnvironmentWidgets(states) {
         const mapping = {
-            tempGarten: 'sensor.temperature_garten',
-            tempPool: 'sensor.temperature_pool',
-            tempWohn: 'sensor.temperature_wohnzimmer',
-            tempArbeit: 'sensor.temperature_arbeitszimmer'
+            statusTempGarten: 'sensor.garten',
+            statusTempPool: 'sensor.pool_temperatur',
+            statusTempWohn: 'sensor.wohnzimmer_echo_temperatur',
+            statusTempArbeit: 'sensor.arbeitszimmer_temperatur'
         };
         Object.entries(mapping).forEach(([id, entityId]) => {
             const state = states.find(s => s.entity_id === entityId);
@@ -562,15 +633,81 @@ class JarvisPWA {
         if (el) el.textContent = `HA: ${count} Entitäten`;
     }
 
+    updateStatusPanel(states) {
+        const statusMap = {
+            'status-haos-dot': 'update',
+            'status-proxmox-dot': 'binary_sensor.proxmox_status',
+            'status-nas-dot': 'binary_sensor.nas_security_status',
+            'status-gateway-dot': 'sensor.cloud_gateway_ultra_state',
+            'status-solar-dot': 'binary_sensor.hm1500_reachable',
+            'status-zigbee-dot': 'binary_sensor.zigbee2mqtt_bridge_connection_state',
+            'status-opendtu-dot': 'binary_sensor.opendtu_168ec4_status',
+            'status-jarvis-dot': 'sensor.jarvis_gateway'
+        };
+        Object.entries(statusMap).forEach(([id, entityId]) => {
+            const state = states.find(s => s.entity_id === entityId);
+            const dot = document.getElementById(id);
+            if (!dot) return;
+            if (!state || state.state === 'unavailable' || state.state === 'unknown') {
+                dot.className = 'status-dot-sm offline';
+                return;
+            }
+            const good = ['on', 'connected', 'home', 'ok', 'online'].includes(state.state.toLowerCase());
+            dot.className = good ? 'status-dot-sm online' : 'status-dot-sm offline';
+        });
+    }
+
+    updateCameraMetadata(states) {
+        const faceMap = {
+            camFrontFace: 'sensor.front_door_last_recognized_face',
+            camBackFace: 'sensor.back_door_last_recognized_face',
+            camEinfahrtFace: 'sensor.einfahrt_last_recognized_face',
+            camDoorbirdFace: 'sensor.doorbird_last_recognized_face'
+        };
+        const plateMap = {
+            camFrontPlate: 'sensor.front_door_last_recognized_plate',
+            camBackPlate: 'sensor.back_door_last_recognized_plate',
+            camEinfahrtPlate: 'sensor.einfahrt_last_recognized_plate',
+            camDoorbirdPlate: 'sensor.doorbird_last_recognized_plate'
+        };
+        Object.entries(faceMap).forEach(([id, entityId]) => {
+            const state = states.find(s => s.entity_id === entityId);
+            const el = document.getElementById(id);
+            if (el && state) el.textContent = state.state === 'Unknown' ? '–' : state.state;
+        });
+        Object.entries(plateMap).forEach(([id, entityId]) => {
+            const state = states.find(s => s.entity_id === entityId);
+            const el = document.getElementById(id);
+            if (el && state) el.textContent = state.state === 'Unknown' ? '–' : state.state;
+        });
+    }
+
+    async refreshDashboardData() {
+        try {
+            const states = await this.haFetch('/api/states');
+            if (states && Array.isArray(states)) {
+                this.updateEnergyWidgets(states);
+                this.updateClimateWidget(states);
+                this.updateEnvironmentWidgets(states);
+                this.updateStatusPanel(states);
+                this.updateCameraMetadata(states);
+                this.updateEntityCount(states.length);
+            }
+        } catch (error) {
+            console.warn('Dashboard-Daten konnten nicht geladen werden:', error);
+            this.addAlert('HA-Verbindung unterbrochen', 'error');
+        }
+    }
+
     adjustClimate(delta) {
-        const tempEl = document.getElementById('climateTemp');
+        const tempEl = document.getElementById('homeClimateTemp');
         const current = parseFloat(tempEl?.textContent) || 23;
         const newTemp = Math.max(16, Math.min(30, current + delta));
         this.callService('climate.split_klimaanlage', 'climate.set_temperature', { temperature: newTemp });
     }
 
     toggleClimatePower() {
-        const modeEl = document.getElementById('climateMode');
+        const modeEl = document.getElementById('homeClimateMode');
         const isOff = modeEl?.textContent === 'Aus';
         this.callService('climate.split_klimaanlage', 'climate.set_hvac_mode', { hvac_mode: isOff ? 'cool' : 'off' });
     }

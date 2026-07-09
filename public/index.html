@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#000510">
     <title>J.A.R.V.I.S.</title>
     <link rel="manifest" href="manifest.json">
@@ -11,6 +11,7 @@
 </head>
 <body>
     <div id="app">
+
         <!-- Login Screen -->
         <div id="login-screen" class="screen login-screen">
             <div class="hologram-container">
@@ -19,17 +20,17 @@
                 <div class="jarvis-ring ring-3"></div>
                 <div class="center-core"></div>
             </div>
-            
+
             <div class="login-header">
                 <h1 class="jarvis-title">
                     <span class="letter">J</span><span class="letter">.</span><span class="letter">A</span><span class="letter">.</span><span class="letter">R</span><span class="letter">.</span><span class="letter">V</span><span class="letter">.</span><span class="letter">I</span><span class="letter">.</span><span class="letter">S</span><span class="letter">.</span>
                 </h1>
                 <p class="subtitle">Just A Rather Very Intelligent System</p>
             </div>
-            
+
             <div class="user-selection">
                 <p class="scan-line">Bitte identifizieren Sie sich...</p>
-                <div class="user-cards">
+                <div class="user-cards"
                     <button class="user-card" data-user="mike">
                         <div class="user-avatar">
                             <div class="avatar-ring"></div>
@@ -50,7 +51,7 @@
                     </button>
                 </div>
             </div>
-            
+
             <div class="password-panel" id="passwordPanel" style="display: none;">
                 <div class="password-form">
                     <div class="password-header">
@@ -73,13 +74,13 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="system-status">
                 <div class="status-indicator online"></div>
                 <span class="status-text">System Online</span>
                 <span class="version-display" id="versionDisplay"></span>
             </div>
-            
+
             <button class="settings-toggle" id="showSettings">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="3"></circle>
@@ -87,7 +88,7 @@
                 </svg>
                 Einstellungen
             </button>
-            
+
             <div class="settings-panel" id="settingsPanel" style="display: none;">
                 <div class="input-group">
                     <label class="hud-label">API Präfix</label>
@@ -97,9 +98,10 @@
                 <button class="hud-button" id="saveSettings">Speichern</button>
             </div>
         </div>
-        
+
         <!-- Main Interface -->
         <div id="main-interface" class="screen dashboard-interface" style="display: none;">
+
             <!-- Header -->
             <header class="dashboard-header">
                 <div class="header-left">
@@ -109,7 +111,7 @@
                     </div>
                     <div class="system-status-badge" id="systemStatusBadge">
                         <span class="status-dot online"></span>
-                        <span class="status-label">SYSTEM ONLINE</span>
+                        <span class="status-label">ONLINE</span>
                     </div>
                 </div>
                 <div class="header-center">
@@ -130,46 +132,37 @@
                 </div>
             </header>
 
-            <!-- Command Center Grid -->
-            <main class="command-center-grid" id="dashboardGrid">
-                <!-- Top Modules -->
-                <div class="module-row top-row">
-                    <article class="cc-module module-solar">
-                        <div class="module-header"><span class="module-line"></span><span class="module-title">SOLAR</span><span class="module-id">01</span></div>
-                        <div class="module-body">
-                            <div class="metric-large" id="solarPower">0 <span class="unit">W</span></div>
-                            <div class="metric-sub" id="solarToday">Heute: 0 kWh</div>
-                            <div class="solar-bar"><div class="solar-fill" id="solarFill"></div></div>
-                        </div>
-                    </article>
-                    <article class="cc-module module-battery">
-                        <div class="module-header"><span class="module-line"></span><span class="module-title">SPEICHER</span><span class="module-id">02</span></div>
-                        <div class="module-body">
-                            <div class="battery-gauge" id="batteryGauge">
-                                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" class="gauge-bg"></circle><circle cx="50" cy="50" r="42" class="gauge-fill" id="batteryFill"></circle></svg>
-                                <div class="gauge-value" id="batterySoc">10%</div>
-                            </div>
-                            <div class="metric-sub" id="batteryFlow">Ruhe</div>
-                        </div>
-                    </article>
-                </div>
+            <!-- Layout: Menu | Main Stage | Status -->
+            <div class="layout-wrapper">
 
-                <!-- Middle Row: Left, Core, Right -->
-                <div class="module-row middle-row">
-                    <article class="cc-module module-climate">
-                        <div class="module-header"><span class="module-line"></span><span class="module-title">KLIMA</span><span class="module-id">03</span></div>
-                        <div class="module-body climate-body">
-                            <div class="climate-temp" id="climateTemp">--°C</div>
-                            <div class="climate-mode" id="climateMode">Aus</div>
-                            <div class="climate-controls">
-                                <button class="climate-btn" id="climateMinus">−</button>
-                                <button class="climate-btn power" id="climatePower">⏻</button>
-                                <button class="climate-btn" id="climatePlus">+</button>
-                            </div>
-                        </div>
-                    </article>
+                <!-- Left Menu -->
+                <nav class="side-menu">
+                    <button class="menu-item active" data-view="home" data-label="HOME">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">HOME</span>
+                    </button>
+                    <button class="menu-item" data-view="cameras" data-label="KAMERAS">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">KAMERAS</span>
+                    </button>
+                    <button class="menu-item" data-view="strom" data-label="STROM">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">STROM</span>
+                    </button>
+                    <button class="menu-item" data-view="quixx24" data-label="QUIXX24">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">QUIXX24</span>
+                    </button>
+                    <button class="menu-item" data-view="netzwerk" data-label="NETZWERK">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">NETZWERK</span>
+                    </button>
+                </nav>
 
-                    <!-- Central AI Core Globe -->
+                <!-- Center Stage -->
+                <main class="main-stage">
+
+                    <!-- AI Core Globe -->
                     <div class="cc-core" id="aiCoreContainer">
                         <div class="pcb-traces"></div>
                         <div class="globe-wrapper">
@@ -194,88 +187,219 @@
                         <div class="core-hint">Zum Sprechen antippen</div>
                     </div>
 
-                    <article class="cc-module module-env">
-                        <div class="module-header"><span class="module-line"></span><span class="module-title">TEMP</span><span class="module-id">05</span></div>
-                        <div class="module-body env-grid" id="envGrid">
-                            <div class="env-item"><span>Garten</span><b id="tempGarten">--°C</b></div>
-                            <div class="env-item"><span>Pool</span><b id="tempPool">--°C</b></div>
-                            <div class="env-item"><span>Wohnz.</span><b id="tempWohn">--°C</b></div>
-                            <div class="env-item"><span>Arbeitsz.</span><b id="tempArbeit">--°C</b></div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Bottom Modules -->
-                <div class="module-row bottom-row">
-                    <article class="cc-module module-house">
-                        <div class="module-header"><span class="module-line"></span><span class="module-title">HAUSHALT</span><span class="module-id">04</span></div>
-                        <div class="module-body">
-                            <div class="metric-large" id="housePower">0 <span class="unit">W</span></div>
-                            <div class="metric-sub" id="gridStatus">Netzbezug</div>
-                            <div class="phase-bars">
-                                <div class="phase-bar"><span>L1</span><div class="bar"><div id="phaseA"></div></div></div>
-                                <div class="phase-bar"><span>L2</span><div class="bar"><div id="phaseB"></div></div></div>
-                                <div class="phase-bar"><span>L3</span><div class="bar"><div id="phaseC"></div></div></div>
+                    <!-- Dynamic View Containers -->
+                    <div class="view-container active" id="view-home">
+                        <div class="tile top-left" data-id="home-solar">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">SOLAR</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="homeSolarPower">0 <span>W</span></div>
+                                <div class="tile-sub" id="homeSolarToday">Heute: 0 kWh</div>
                             </div>
                         </div>
-                    </article>
-                    <article class="cc-module module-alerts">
-                        <div class="module-header"><span class="module-line"></span><span class="module-title">MELDUNGEN</span><span class="module-id">06</span></div>
-                        <div class="module-body">
-                            <div class="alerts-list" id="alertsList">
-                                <div class="alert-item info"><span class="alert-dot"></span>Keine neuen Meldungen</div>
+                        <div class="tile top-right" data-id="home-battery">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">SPEICHER</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="homeBatterySoc">0 <span>%</span></div>
+                                <div class="tile-sub" id="homeBatteryFlow">Ruhe</div>
                             </div>
                         </div>
-                    </article>
-                </div>
-
-                <!-- Lower Modules: Camera + Commands -->
-                <div class="module-row lower-row">
-                    <article class="cc-module module-camera">
-                        <div class="module-header"><span class="module-line"></span><span class="module-title">KAMERA</span><span class="module-id">07</span></div>
-                        <div class="module-body">
-                            <select id="cameraSelect" class="camera-select">
-                                <option value="">Auswählen...</option>
-                                <option value="front_door">Haustür</option>
-                                <option value="back_door">Hintere Tür</option>
-                                <option value="einfahrt">Einfahrt</option>
-                                <option value="doorbird">Doorbird</option>
-                            </select>
-                            <div class="camera-feed" id="cameraFeed">
-                                <div class="camera-placeholder">Kamera wählen</div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="cc-module module-commands">
-                        <div class="module-header"><span class="module-line"></span><span class="module-title">BEFEHLE</span><span class="module-id">08</span></div>
-                        <div class="module-body">
-                            <div class="commands-grid">
-                                <button class="cmd-btn" data-command="Licht Wohnzimmer an" data-entity="light.lampe1" data-service="light.turn_on">Wohnzimmer</button>
-                                <button class="cmd-btn" data-command="Licht Wohnzimmer aus" data-entity="light.lampe1" data-service="light.turn_off">Dunkel</button>
-                                <button class="cmd-btn" data-command="Brunnen an" data-entity="switch.brunnen_garten" data-service="switch.turn_on">Brunnen</button>
-                                <button class="cmd-btn" data-command="Pool an" data-entity="switch.pool_warmepumpe" data-service="switch.turn_on">Pool</button>
-                                <button class="cmd-btn" data-command="Klima Bad an" data-entity="switch.test" data-service="switch.turn_on">Bad</button>
-                                <button class="cmd-btn" data-command="Klima Wohnzimmer an" data-entity="climate.split_klimaanlage" data-service="climate.set_hvac_mode" data-value="cool">Klima</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="cc-module module-chat mini-chat" id="miniChatWidget">
-                        <div class="module-header"><span class="module-line"></span><span class="module-title">DIALOG</span><span class="module-id">09</span></div>
-                        <div class="module-body">
-                            <div class="chat-messages" id="chatContainer">
-                                <div class="message-bubble jarvis compact">
-                                    <div class="message-content"><p>Guten Tag, Sir. Ich bin bereit.</p></div>
+                        <div class="tile bottom-left" data-id="home-climate">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">KLIMA</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="homeClimateTemp">--°C</div>
+                                <div class="tile-sub" id="homeClimateMode">Aus</div>
+                                <div class="mini-controls"
+                                    <button class="mini-btn" id="homeClimateMinus">−</button>
+                                    <button class="mini-btn power" id="homeClimatePower">⏻</button>
+                                    <button class="mini-btn" id="homeClimatePlus">+</button>
                                 </div>
                             </div>
                         </div>
-                    </article>
-                </div>
-            </main>
+                        <div class="tile bottom-right" data-id="home-house">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">HAUSHALT</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="homeHousePower">0 <span>W</span></div>
+                                <div class="tile-sub" id="homeGridStatus">Netzbezug</div>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- Dashboard Footer -->
+                    <div class="view-container" id="view-cameras">
+                        <div class="tile top-left camera-tile" data-id="cam-front">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">FRONT DOOR</span></div>
+                            <div class="tile-body camera-body">
+                                <img id="camFrontImg" src="" alt="Front Door" loading="lazy">
+                                <div class="cam-overlay">
+                                    <div class="cam-meta">
+                                        <span id="camFrontFace">–</span>
+                                        <span id="camFrontPlate">–</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile top-right camera-tile" data-id="cam-back">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">BACK DOOR</span></div>
+                            <div class="tile-body camera-body">
+                                <img id="camBackImg" src="" alt="Back Door" loading="lazy">
+                                <div class="cam-overlay">
+                                    <div class="cam-meta">
+                                        <span id="camBackFace">–</span>
+                                        <span id="camBackPlate">–</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile bottom-left camera-tile" data-id="cam-einfahrt">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">EINFAHRT</span></div>
+                            <div class="tile-body camera-body">
+                                <img id="camEinfahrtImg" src="" alt="Einfahrt" loading="lazy">
+                                <div class="cam-overlay">
+                                    <div class="cam-meta">
+                                        <span id="camEinfahrtFace">–</span>
+                                        <span id="camEinfahrtPlate">–</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile bottom-right camera-tile" data-id="cam-doorbird">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">DOORBIRD</span></div>
+                            <div class="tile-body camera-body">
+                                <img id="camDoorbirdImg" src="" alt="Doorbird" loading="lazy">
+                                <div class="cam-overlay">
+                                    <div class="cam-meta">
+                                        <span id="camDoorbirdFace">–</span>
+                                        <span id="camDoorbirdPlate">–</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-container" id="view-strom">
+                        <div class="tile top-left" data-id="strom-solar">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">SOLAR ERTRAG</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="stromSolarPower">0 <span>W</span></div>
+                                <div class="tile-sub" id="stromSolarToday">Heute: 0 kWh</div>
+                            </div>
+                        </div>
+                        <div class="tile top-right" data-id="strom-battery">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">BATTERIE</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="stromBatterySoc">0 <span>%</span></div>
+                                <div class="tile-sub" id="stromBatteryFlow">Ruhe</div>
+                            </div>
+                        </div>
+                        <div class="tile bottom-left" data-id="strom-consumption">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">VERBRAUCH</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="stromConsumption">0 <span>W</span></div>
+                                <div class="tile-sub" id="stromGrid">Netzbezug</div>
+                            </div>
+                        </div>
+                        <div class="tile bottom-right" data-id="strom-phases">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">PHASEN</span></div>
+                            <div class="tile-body">
+                                <div class="phase-row"><span>L1</span><div class="phase-bar-sm"><div id="stromPhaseA"></div></div></div>
+                                <div class="phase-row"><span>L2</span><div class="phase-bar-sm"><div id="stromPhaseB"></div></div></div>
+                                <div class="phase-row"><span>L3</span><div class="phase-bar-sm"><div id="stromPhaseC"></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-container" id="view-quixx24">
+                        <div class="tile wide-top">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">QUIXX24 — ÜBERSICHT</span></div>
+                            <div class="tile-body">
+                                <p class="placeholder-text">Miettoiletten-Status, Tracker und Auftragsdaten werden hier integriert.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-container" id="view-netzwerk">
+                        <div class="tile wide-top">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">NETZWERK — GERÄTE</span></div>
+                            <div class="tile-body">
+                                <p class="placeholder-text">UniFi-Topologie, Clients und Gateway-Status werden hier angezeigt.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+
+                <!-- Right Status Panel -->
+                <aside class="status-panel">
+                    <div class="panel-header">
+                        <span class="panel-line"></span>
+                        <span class="panel-title">SYSTEM STATUS</span>
+                    </div>
+                    <div class="status-list" id="statusList">
+                        <div class="status-row" data-entity="update">
+                            <span class="status-dot-sm online" id="status-haos-dot"></span>
+                            <span class="status-name">HAOS</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.proxmox_status">
+                            <span class="status-dot-sm" id="status-proxmox-dot"></span>
+                            <span class="status-name">Proxmox</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.nas_security_status">
+                            <span class="status-dot-sm online" id="status-nas-dot"></span>
+                            <span class="status-name">NAS</span>
+                        </div>
+                        <div class="status-row" data-entity="sensor.cloud_gateway_ultra_state">
+                            <span class="status-dot-sm" id="status-gateway-dot"></span>
+                            <span class="status-name">Gateway</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.hm1500_reachable">
+                            <span class="status-dot-sm" id="status-solar-dot"></span>
+                            <span class="status-name">Solar</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.zigbee2mqtt_bridge_connection_state">
+                            <span class="status-dot-sm" id="status-zigbee-dot"></span>
+                            <span class="status-name">Zigbee</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.opendtu_168ec4_status">
+                            <span class="status-dot-sm" id="status-opendtu-dot"></span>
+                            <span class="status-name">OpenDTU</span>
+                        </div>
+                        <div class="status-row" data-entity="sensor.jarvis_gateway">
+                            <span class="status-dot-sm" id="status-jarvis-dot"></span>
+                            <span class="status-name">Jarvis API</span>
+                        </div>
+                    </div>
+
+                    <div class="panel-divider"></div>
+
+                    <div class="panel-header">
+                        <span class="panel-line"></span>
+                        <span class="panel-title">UMGEBUNG</span>
+                    </div>
+                    <div class="env-list">
+                        <div class="env-row">
+                            <span class="env-name">Garten</span>
+                            <span class="env-value" id="statusTempGarten">--°C</span>
+                        </div>
+                        <div class="env-row">
+                            <span class="env-name">Pool</span>
+                            <span class="env-value" id="statusTempPool">--°C</span>
+                        </div>
+                        <div class="env-row">
+                            <span class="env-name">Wohnz.</span>
+                            <span class="env-value" id="statusTempWohn">--°C</span>
+                        </div>
+                        <div class="env-row">
+                            <span class="env-name">Arbeitsz.</span>
+                            <span class="env-value" id="statusTempArbeit">--°C</span>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+
+            <!-- Footer -->
             <footer class="dashboard-footer">
                 <div class="footer-left">
-                    <span class="connection-status online">● Verbindung aktiv</span>
+                    <span class="connection-status online" id="footerConnection">● Verbindung aktiv</span>
                     <span id="haEntityCount">HA: -- Entitäten</span>
                 </div>
                 <div class="footer-center">
@@ -290,7 +414,7 @@
                 </div>
             </footer>
 
-            <!-- Chat Overlay (full) -->
+            <!-- Overlays -->
             <div class="chat-overlay" id="chatOverlay" style="display: none;">
                 <div class="chat-panel">
                     <div class="chat-panel-header">
@@ -305,7 +429,6 @@
                 </div>
             </div>
 
-            <!-- Camera Overlay -->
             <div class="camera-overlay" id="cameraOverlay" style="display: none;">
                 <div class="camera-frame">
                     <video id="cameraVideo" autoplay playsinline></video>
@@ -318,11 +441,10 @@
                 </div>
             </div>
 
-            <!-- Scan Line Effect -->
             <div class="scan-overlay"></div>
         </div>
     </div>
-    
+
     <script src="app.js"></script>
 </body>
 </html>
