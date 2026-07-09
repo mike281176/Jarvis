@@ -3,7 +3,7 @@
  * Für Offline-Fähigkeit und schnelles Laden
  */
 
-const CACHE_NAME = 'jarvis-v3';
+const CACHE_NAME = 'jarvis-v4';
 const urlsToCache = [
     '/',
     '/index.html',
@@ -15,15 +15,18 @@ const urlsToCache = [
 
 // Install Event
 self.addEventListener('install', event => {
-    console.log('[J.A.R.V.I.S.] Service Worker v3 installiert');
+    console.log('[J.A.R.V.I.S.] Service Worker v4 installiert');
     
     event.waitUntil(
         caches.keys().then(cacheNames => {
-            // Alle alten Jarvis-Caches löschen
+            // Alle alten Jarvis-Caches löschen, inklusive v3
             return Promise.all(
                 cacheNames
                     .filter(name => name.startsWith('jarvis-'))
-                    .map(name => caches.delete(name))
+                    .map(name => {
+                        console.log('[J.A.R.V.I.S.] Lösche alten Cache:', name);
+                        return caches.delete(name);
+                    })
             );
         }).then(() => caches.open(CACHE_NAME))
           .then(cache => cache.addAll(urlsToCache))
@@ -34,14 +37,17 @@ self.addEventListener('install', event => {
 
 // Activate Event
 self.addEventListener('activate', event => {
-    console.log('[J.A.R.V.I.S.] Service Worker v3 aktiviert');
+    console.log('[J.A.R.V.I.S.] Service Worker v4 aktiviert');
     
     event.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames
-                    .filter(name => name !== CACHE_NAME)
-                    .map(name => caches.delete(name))
+                    .filter(name => name !== CACHE_NAME && name.startsWith('jarvis-'))
+                    .map(name => {
+                        console.log('[J.A.R.V.I.S.] Lösche alten Cache beim Aktivieren:', name);
+                        return caches.delete(name);
+                    })
             );
         }).then(() => self.clients.claim())
     );
