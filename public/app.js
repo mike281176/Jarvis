@@ -281,32 +281,39 @@ class JarvisPWA {
     }
 
     initMainEventListeners() {
-        // Voice Button (both sidebar and core)
-        document.querySelectorAll('#voiceBtn').forEach(btn => {
-            btn.addEventListener('click', () => this.toggleVoiceInput());
-        });
+        // AI Core Globe replaces the microphone
+        const aiCore = document.getElementById('aiCoreContainer');
+        if (aiCore) {
+            aiCore.addEventListener('click', () => {
+                aiCore.classList.add('pressed');
+                setTimeout(() => aiCore.classList.remove('pressed'), 150);
+                this.toggleVoiceInput();
+            });
+        }
         
         // Text Input - footer pill
         const textInput = document.getElementById('textInput');
         const sendBtn = document.getElementById('sendBtn');
         
-        sendBtn.addEventListener('click', () => {
-            const message = textInput.value.trim();
-            if (message) {
-                this.sendMessage(message);
-                textInput.value = '';
-            }
-        });
-        
-        textInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
+        if (sendBtn && textInput) {
+            sendBtn.addEventListener('click', () => {
                 const message = textInput.value.trim();
                 if (message) {
                     this.sendMessage(message);
                     textInput.value = '';
                 }
-            }
-        });
+            });
+            
+            textInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    const message = textInput.value.trim();
+                    if (message) {
+                        this.sendMessage(message);
+                        textInput.value = '';
+                    }
+                }
+            });
+        }
         
         // Chat Overlay inputs
         const chatPanelInput = document.getElementById('chatPanelInput');
@@ -690,7 +697,8 @@ class JarvisPWA {
     initSpeechRecognition() {
         if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
             console.warn('Spracherkennung nicht verfügbar');
-            document.getElementById('voiceStatus').textContent = 'Texteingabe';
+            const statusEl = document.getElementById('voiceStatusCenter');
+            if (statusEl) statusEl.textContent = 'Texteingabe';
             return;
         }
         
@@ -703,7 +711,7 @@ class JarvisPWA {
         
         this.recognition.onstart = () => {
             this.isListening = true;
-            this.updateVoiceStatus('Höre...', 'listening');
+            this.updateVoiceStatus('HÖRE...', 'listening');
         };
         
         this.recognition.onresult = (event) => {
@@ -720,7 +728,8 @@ class JarvisPWA {
             }
             
             if (interimTranscript) {
-                document.getElementById('voiceStatus').textContent = interimTranscript;
+                const statusEl = document.getElementById('voiceStatusCenter');
+                if (statusEl) statusEl.textContent = interimTranscript;
             }
             
             if (finalTranscript) {
@@ -730,13 +739,13 @@ class JarvisPWA {
         
         this.recognition.onend = () => {
             this.isListening = false;
-            this.updateVoiceStatus('Bereit', 'ready');
+            this.updateVoiceStatus('BEREIT', 'ready');
         };
         
         this.recognition.onerror = (event) => {
             console.error('Spracherkennungsfehler:', event.error);
             this.isListening = false;
-            this.updateVoiceStatus('Fehler - Tippen', 'error');
+            this.updateVoiceStatus('FEHLER - TIPPEN', 'error');
         };
     }
 
@@ -758,30 +767,26 @@ class JarvisPWA {
     }
 
     updateVoiceStatus(text, state) {
-        const statusEl = document.getElementById('voiceStatus');
-        const voiceBtn = document.getElementById('voiceBtn');
+        const statusEl = document.getElementById('voiceStatusCenter');
         const voiceCore = document.getElementById('voiceCore');
+        const aiCore = document.getElementById('aiCoreContainer');
         
-        statusEl.textContent = text;
+        if (statusEl) statusEl.textContent = text;
         
-        // Update visual states
-        document.querySelectorAll('.voice-ring').forEach(ring => {
-            ring.classList.remove('active');
-        });
-        
-        voiceCore.classList.remove('active', 'listening');
-        voiceBtn.classList.remove('listening');
+        if (voiceCore) voiceCore.classList.remove('active', 'listening', 'speaking');
+        if (aiCore) aiCore.classList.remove('listening', 'speaking', 'error');
         
         if (state === 'listening') {
-            document.querySelectorAll('.voice-ring').forEach(ring => {
-                ring.classList.add('active');
-            });
-            voiceCore.classList.add('active', 'listening');
-            voiceBtn.classList.add('listening');
+            if (voiceCore) voiceCore.classList.add('active', 'listening');
+            if (aiCore) aiCore.classList.add('listening');
+        } else if (state === 'active' || state === 'speaking') {
+            if (voiceCore) voiceCore.classList.add('active', 'speaking');
+            if (aiCore) aiCore.classList.add('speaking');
         } else if (state === 'error') {
-            statusEl.style.color = '#ff6464';
+            if (aiCore) aiCore.classList.add('error');
+            if (statusEl) statusEl.style.color = '#ff6464';
         } else {
-            statusEl.style.color = '';
+            if (statusEl) statusEl.style.color = '';
         }
     }
 
@@ -836,7 +841,7 @@ class JarvisPWA {
         
         // Visuelle Animation während des Sprechens
         utterance.onstart = () => {
-            this.updateVoiceStatus('Spreche...', 'active');
+            this.updateVoiceStatus('SPRECHVORGANG...', 'speaking');
         };
         
         utterance.onend = () => {

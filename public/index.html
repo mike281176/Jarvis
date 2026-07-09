@@ -51,7 +51,6 @@
                 </div>
             </div>
             
-            <!-- Password Panel for Mike -->
             <div class="password-panel" id="passwordPanel" style="display: none;">
                 <div class="password-form">
                     <div class="password-header">
@@ -131,162 +130,110 @@
                 </div>
             </header>
 
-            <!-- Dashboard Grid -->
-            <main class="dashboard-grid" id="dashboardGrid">
-                <!-- Left Sidebar: Navigation / Core Status -->
-                <aside class="dashboard-sidebar">
-                    <nav class="sidebar-nav">
-                        <button class="nav-item active" data-view="overview">
-                            <span class="nav-icon">◈</span> Übersicht
-                        </button>
-                        <button class="nav-item" data-view="climate">
-                            <span class="nav-icon">🌡️</span> Klima
-                        </button>
-                        <button class="nav-item" data-view="security">
-                            <span class="nav-icon">📹</span> Überwachung
-                        </button>
-                        <button class="nav-item" data-view="energy">
-                            <span class="nav-icon">⚡</span> Energie
-                        </button>
-                    </nav>
-
-                    <div class="sidebar-widget core-status">
-                        <h3>Kernsystem</h3>
-                        <ul class="core-list">
-                            <li><span class="core-dot active"></span> Hermes API</li>
-                            <li><span class="core-dot active"></span> Home Assistant</li>
-                            <li><span class="core-dot" id="ngrokStatusDot"></span> ngrok Tunnel</li>
-                            <li><span class="core-dot" id="nasStatusDot"></span> NAS</li>
-                        </ul>
-                    </div>
-
-                    <div class="sidebar-widget voice-widget">
-                        <button class="voice-btn large" id="voiceBtn" title="Sprachbefehl">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
-                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                                <line x1="12" y1="19" x2="12" y2="23"></line>
-                                <line x1="8" y1="23" x2="16" y2="23"></line>
-                            </svg>
-                        </button>
-                        <div class="voice-status" id="voiceStatus">Bereit</div>
-                    </div>
-                </aside>
-
-                <!-- Center: Core Visualization + Key Metrics -->
-                <section class="dashboard-center">
-                    <!-- Top Row: Solar & Battery -->
-                    <div class="widget-row top-metrics">
-                        <div class="hud-widget solar-widget">
-                            <div class="widget-header">
-                                <span class="widget-icon">☀</span>
-                                <span>Solar Ertrag</span>
-                                <span class="live-badge">LIVE</span>
+            <!-- Command Center Grid -->
+            <main class="command-center-grid" id="dashboardGrid">
+                <!-- Top Modules -->
+                <div class="module-row top-row">
+                    <article class="cc-module module-solar">
+                        <div class="module-header"><span class="module-line"></span><span class="module-title">SOLAR</span><span class="module-id">01</span></div>
+                        <div class="module-body">
+                            <div class="metric-large" id="solarPower">0 <span class="unit">W</span></div>
+                            <div class="metric-sub" id="solarToday">Heute: 0 kWh</div>
+                            <div class="solar-bar"><div class="solar-fill" id="solarFill"></div></div>
+                        </div>
+                    </article>
+                    <article class="cc-module module-battery">
+                        <div class="module-header"><span class="module-line"></span><span class="module-title">SPEICHER</span><span class="module-id">02</span></div>
+                        <div class="module-body">
+                            <div class="battery-gauge" id="batteryGauge">
+                                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" class="gauge-bg"></circle><circle cx="50" cy="50" r="42" class="gauge-fill" id="batteryFill"></circle></svg>
+                                <div class="gauge-value" id="batterySoc">10%</div>
                             </div>
-                            <div class="widget-body">
-                                <div class="metric-large" id="solarPower">0 <span class="unit">W</span></div>
-                                <div class="metric-sub" id="solarToday">Heute: 0 kWh</div>
-                                <div class="solar-bar"><div class="solar-fill" id="solarFill"></div></div>
+                            <div class="metric-sub" id="batteryFlow">Ruhe</div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Middle Row: Left, Core, Right -->
+                <div class="module-row middle-row">
+                    <article class="cc-module module-climate">
+                        <div class="module-header"><span class="module-line"></span><span class="module-title">KLIMA</span><span class="module-id">03</span></div>
+                        <div class="module-body climate-body">
+                            <div class="climate-temp" id="climateTemp">--°C</div>
+                            <div class="climate-mode" id="climateMode">Aus</div>
+                            <div class="climate-controls">
+                                <button class="climate-btn" id="climateMinus">−</button>
+                                <button class="climate-btn power" id="climatePower">⏻</button>
+                                <button class="climate-btn" id="climatePlus">+</button>
                             </div>
                         </div>
+                    </article>
 
-                        <div class="hud-widget battery-widget">
-                            <div class="widget-header">
-                                <span class="widget-icon">🔋</span>
-                                <span>Speicher</span>
-                            </div>
-                            <div class="widget-body">
-                                <div class="battery-gauge" id="batteryGauge">
-                                    <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" class="gauge-bg"></circle><circle cx="50" cy="50" r="42" class="gauge-fill" id="batteryFill"></circle></svg>
-                                    <div class="gauge-value" id="batterySoc">10%</div>
+                    <!-- Central AI Core Globe -->
+                    <div class="cc-core" id="aiCoreContainer">
+                        <div class="pcb-traces"></div>
+                        <div class="globe-wrapper">
+                            <div class="orbit orbit-1"><span class="orbit-dot"></span></div>
+                            <div class="orbit orbit-2"><span class="orbit-dot dot-1"></span><span class="orbit-dot dot-2"></span></div>
+                            <div class="orbit orbit-3"><span class="orbit-dot"></span></div>
+                            <div class="globe" id="voiceCore">
+                                <div class="globe-mesh">
+                                    <div class="meridian"></div>
+                                    <div class="meridian"></div>
+                                    <div class="meridian"></div>
+                                    <div class="parallel"></div>
+                                    <div class="parallel"></div>
+                                    <div class="parallel"></div>
                                 </div>
-                                <div class="metric-sub" id="batteryFlow">Ruhe</div>
-                            </div>
-                        </div>
-
-                        <div class="hud-widget consumption-widget">
-                            <div class="widget-header">
-                                <span class="widget-icon">🏠</span>
-                                <span>Haushalt</span>
-                            </div>
-                            <div class="widget-body">
-                                <div class="metric-large" id="housePower">0 <span class="unit">W</span></div>
-                                <div class="metric-sub" id="gridStatus">Netzbezug</div>
-                                <div class="phase-bars">
-                                    <div class="phase-bar"><span>L1</span><div class="bar"><div id="phaseA"></div></div></div>
-                                    <div class="phase-bar"><span>L2</span><div class="bar"><div id="phaseB"></div></div></div>
-                                    <div class="phase-bar"><span>L3</span><div class="bar"><div id="phaseC"></div></div></div>
+                                <div class="core-text core-glitch" aria-label="J.A.R.V.I.S.">
+                                    <span class="letter">J</span><span>.</span><span class="letter">A</span><span>.</span><span class="letter">R</span><span>.</span><span class="letter">V</span><span>.</span><span class="letter">I</span><span>.</span><span class="letter">S</span><span>.</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="core-status" id="voiceStatusCenter">BEREIT</div>
+                        <div class="core-hint">Zum Sprechen antippen</div>
                     </div>
 
-                    <!-- Center Core: AI Orb -->
-                    <div class="widget-row core-row">
-                        <div class="hud-widget core-orb-widget">
-                            <div class="voice-container large">
-                                <div class="voice-ring ring-outer" id="voiceRing1"></div>
-                                <div class="voice-ring ring-middle" id="voiceRing2"></div>
-                                <div class="voice-ring ring-inner" id="voiceRing3"></div>
-                                <div class="voice-core" id="voiceCore">
-                                    <div class="core-pulse"></div>
-                                    <span class="core-label">J.A.R.V.I.S.</span>
-                                </div>
-                            </div>
-                            <div class="orb-status" id="voiceStatusCenter">Bereit</div>
+                    <article class="cc-module module-env">
+                        <div class="module-header"><span class="module-line"></span><span class="module-title">TEMP</span><span class="module-id">05</span></div>
+                        <div class="module-body env-grid" id="envGrid">
+                            <div class="env-item"><span>Garten</span><b id="tempGarten">--°C</b></div>
+                            <div class="env-item"><span>Pool</span><b id="tempPool">--°C</b></div>
+                            <div class="env-item"><span>Wohnz.</span><b id="tempWohn">--°C</b></div>
+                            <div class="env-item"><span>Arbeitsz.</span><b id="tempArbeit">--°C</b></div>
                         </div>
+                    </article>
+                </div>
 
-                        <!-- Climate Mini Panel -->
-                        <div class="hud-widget climate-widget">
-                            <div class="widget-header">
-                                <span class="widget-icon">❄</span>
-                                <span>Klima Wohnzimmer</span>
-                            </div>
-                            <div class="widget-body climate-body">
-                                <div class="climate-temp" id="climateTemp">--°C</div>
-                                <div class="climate-mode" id="climateMode">Aus</div>
-                                <div class="climate-controls">
-                                    <button class="climate-btn" id="climateMinus">−</button>
-                                    <button class="climate-btn power" id="climatePower">⏻</button>
-                                    <button class="climate-btn" id="climatePlus">+</button>
-                                </div>
+                <!-- Bottom Modules -->
+                <div class="module-row bottom-row">
+                    <article class="cc-module module-house">
+                        <div class="module-header"><span class="module-line"></span><span class="module-title">HAUSHALT</span><span class="module-id">04</span></div>
+                        <div class="module-body">
+                            <div class="metric-large" id="housePower">0 <span class="unit">W</span></div>
+                            <div class="metric-sub" id="gridStatus">Netzbezug</div>
+                            <div class="phase-bars">
+                                <div class="phase-bar"><span>L1</span><div class="bar"><div id="phaseA"></div></div></div>
+                                <div class="phase-bar"><span>L2</span><div class="bar"><div id="phaseB"></div></div></div>
+                                <div class="phase-bar"><span>L3</span><div class="bar"><div id="phaseC"></div></div></div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Bottom Row: Environment + Notifications -->
-                    <div class="widget-row bottom-metrics">
-                        <div class="hud-widget env-widget">
-                            <div class="widget-header">
-                                <span class="widget-icon">🌡</span>
-                                <span>Temperaturen</span>
-                            </div>
-                            <div class="widget-body env-grid" id="envGrid">
-                                <div class="env-item"><span>Garten</span><b id="tempGarten">--°C</b></div>
-                                <div class="env-item"><span>Pool</span><b id="tempPool">--°C</b></div>
-                                <div class="env-item"><span>Wohnz.</span><b id="tempWohn">--°C</b></div>
-                                <div class="env-item"><span>Arbeitsz.</span><b id="tempArbeit">--°C</b></div>
-                            </div>
-                        </div>
-
-                        <div class="hud-widget alerts-widget">
-                            <div class="widget-header">
-                                <span class="widget-icon">📡</span>
-                                <span>Meldungen</span>
-                            </div>
-                            <div class="widget-body alerts-list" id="alertsList">
+                    </article>
+                    <article class="cc-module module-alerts">
+                        <div class="module-header"><span class="module-line"></span><span class="module-title">MELDUNGEN</span><span class="module-id">06</span></div>
+                        <div class="module-body">
+                            <div class="alerts-list" id="alertsList">
                                 <div class="alert-item info"><span class="alert-dot"></span>Keine neuen Meldungen</div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </article>
+                </div>
 
-                <!-- Right Sidebar: Cameras + Quick Commands -->
-                <aside class="dashboard-rightbar">
-                    <div class="hud-widget camera-widget">
-                        <div class="widget-header">
-                            <span class="widget-icon">📹</span>
-                            <span>Kamera</span>
+                <!-- Lower Modules: Camera + Commands -->
+                <div class="module-row lower-row">
+                    <article class="cc-module module-camera">
+                        <div class="module-header"><span class="module-line"></span><span class="module-title">KAMERA</span><span class="module-id">07</span></div>
+                        <div class="module-body">
                             <select id="cameraSelect" class="camera-select">
                                 <option value="">Auswählen...</option>
                                 <option value="front_door">Haustür</option>
@@ -294,39 +241,35 @@
                                 <option value="einfahrt">Einfahrt</option>
                                 <option value="doorbird">Doorbird</option>
                             </select>
-                        </div>
-                        <div class="camera-feed" id="cameraFeed">
-                            <div class="camera-placeholder">Kamera wählen</div>
-                        </div>
-                    </div>
-
-                    <div class="hud-widget commands-widget">
-                        <div class="widget-header">
-                            <span class="widget-icon">⚡</span>
-                            <span>Schnellbefehle</span>
-                        </div>
-                        <div class="commands-grid">
-                            <button class="cmd-btn" data-command="Licht Wohnzimmer an" data-entity="light.lampe1" data-service="light.turn_on">💡 Wohnzi.</button>
-                            <button class="cmd-btn" data-command="Licht Wohnzimmer aus" data-entity="light.lampe1" data-service="light.turn_off">🌑 Dunkel</button>
-                            <button class="cmd-btn" data-command="Brunnen an" data-entity="switch.brunnen_garten" data-service="switch.turn_on">⛲ Brunnen</button>
-                            <button class="cmd-btn" data-command="Pool an" data-entity="switch.pool_warmepumpe" data-service="switch.turn_on">🏊 Pool</button>
-                            <button class="cmd-btn" data-command="Klima Bad an" data-entity="switch.test" data-service="switch.turn_on">🌀 Bad</button>
-                            <button class="cmd-btn" data-command="Klima Wohnzimmer an" data-entity="climate.split_klimaanlage" data-service="climate.set_hvac_mode" data-value="cool">❄ Klima</button>
-                        </div>
-                    </div>
-
-                    <div class="hud-widget chat-widget mini-chat" id="miniChatWidget">
-                        <div class="widget-header">
-                            <span class="widget-icon">💬</span>
-                            <span>Letzte Unterhaltung</span>
-                        </div>
-                        <div class="chat-messages" id="chatContainer">
-                            <div class="message-bubble jarvis compact">
-                                <div class="message-content"><p>Guten Tag, Sir. Ich bin bereit.</p></div>
+                            <div class="camera-feed" id="cameraFeed">
+                                <div class="camera-placeholder">Kamera wählen</div>
                             </div>
                         </div>
-                    </div>
-                </aside>
+                    </article>
+                    <article class="cc-module module-commands">
+                        <div class="module-header"><span class="module-line"></span><span class="module-title">BEFEHLE</span><span class="module-id">08</span></div>
+                        <div class="module-body">
+                            <div class="commands-grid">
+                                <button class="cmd-btn" data-command="Licht Wohnzimmer an" data-entity="light.lampe1" data-service="light.turn_on">Wohnzimmer</button>
+                                <button class="cmd-btn" data-command="Licht Wohnzimmer aus" data-entity="light.lampe1" data-service="light.turn_off">Dunkel</button>
+                                <button class="cmd-btn" data-command="Brunnen an" data-entity="switch.brunnen_garten" data-service="switch.turn_on">Brunnen</button>
+                                <button class="cmd-btn" data-command="Pool an" data-entity="switch.pool_warmepumpe" data-service="switch.turn_on">Pool</button>
+                                <button class="cmd-btn" data-command="Klima Bad an" data-entity="switch.test" data-service="switch.turn_on">Bad</button>
+                                <button class="cmd-btn" data-command="Klima Wohnzimmer an" data-entity="climate.split_klimaanlage" data-service="climate.set_hvac_mode" data-value="cool">Klima</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cc-module module-chat mini-chat" id="miniChatWidget">
+                        <div class="module-header"><span class="module-line"></span><span class="module-title">DIALOG</span><span class="module-id">09</span></div>
+                        <div class="module-body">
+                            <div class="chat-messages" id="chatContainer">
+                                <div class="message-bubble jarvis compact">
+                                    <div class="message-content"><p>Guten Tag, Sir. Ich bin bereit.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </main>
 
             <!-- Dashboard Footer -->
@@ -339,7 +282,7 @@
                     <span class="version" id="footerVersion">v1.0.0</span>
                 </div>
                 <div class="footer-right">
-                    <button class="hud-button small" id="cameraBtn">📷 Analyse</button>
+                    <button class="hud-button small" id="cameraBtn">Analyse</button>
                     <div class="input-pill">
                         <input type="text" id="textInput" placeholder="Befehl oder Frage...">
                         <button id="sendBtn">➤</button>
