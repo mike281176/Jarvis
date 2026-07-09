@@ -1,0 +1,71 @@
+# J.A.R.V.I.S. System Status Sensors
+# Diese Template-Sensoren übersetzen die HAOS-UniFi device_tracker
+# States in ein einfaches online/offline für die PWA.
+
+template:
+  - binary_sensor:
+      - name: "JARVIS Status HAOS"
+        unique_id: jarvis_status_haos
+        device_class: connectivity
+        state: "{{ is_state('device_tracker.homeassistant', 'home') }}"
+        icon: mdi:home-assistant
+
+      - name: "JARVIS Status Proxmox"
+        unique_id: jarvis_status_proxmox
+        device_class: connectivity
+        state: "{{ is_state('device_tracker.proxmox', 'home') }}"
+        icon: mdi:server
+
+      - name: "JARVIS Status NAS"
+        unique_id: jarvis_status_nas
+        device_class: connectivity
+        state: "{{ is_state('device_tracker.nas_2', 'home') }}"
+        icon: mdi:nas
+
+      - name: "JARVIS Status Gateway"
+        unique_id: jarvis_status_gateway
+        device_class: connectivity
+        state: "{{ is_state('device_tracker.cloud_gateway_ultra', 'home') }}"
+        icon: mdi:router-network
+
+      - name: "JARVIS Status OpenDTU"
+        unique_id: jarvis_status_opendtu
+        device_class: connectivity
+        state: "{{ is_state('device_tracker.unifi_default_9a_88_e0_16_8e_c5', 'home') }}"
+        icon: mdi:solar-power
+
+      - name: "JARVIS Status Jarvis API"
+        unique_id: jarvis_status_jarvis_api
+        device_class: connectivity
+        state: "{{ is_state('device_tracker.ubuntu_server_3', 'home') }}"
+        icon: mdi:assistant
+
+      - name: "JARVIS Status Zigbee"
+        unique_id: jarvis_status_zigbee
+        device_class: connectivity
+        state: "{{ is_state('binary_sensor.zigbee2mqtt_bridge_connection_state', 'on') }}"
+        icon: mdi:zigbee
+
+      - name: "JARVIS Status Solar"
+        unique_id: jarvis_status_solar
+        device_class: connectivity
+        state: "{{ is_state('binary_sensor.hm1500_reachable', 'on') }}"
+        icon: mdi:solar-panel
+
+  - sensor:
+      - name: "JARVIS Online Count"
+        unique_id: jarvis_online_count
+        state: >
+          {% set services = [
+            states('binary_sensor.jarvis_status_haos'),
+            states('binary_sensor.jarvis_status_proxmox'),
+            states('binary_sensor.jarvis_status_nas'),
+            states('binary_sensor.jarvis_status_gateway'),
+            states('binary_sensor.jarvis_status_opendtu'),
+            states('binary_sensor.jarvis_status_jarvis_api'),
+            states('binary_sensor.jarvis_status_zigbee'),
+            states('binary_sensor.jarvis_status_solar')
+          ] %}
+          {{ services | select('eq', 'on') | list | length }}
+        unit_of_measurement: "online"
+        icon: mdi:checkbox-multiple-marked-circle

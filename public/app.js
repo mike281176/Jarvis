@@ -635,15 +635,16 @@ class JarvisPWA {
 
     updateStatusPanel(states) {
         const statusMap = {
-            'status-haos-dot': 'update',
-            'status-proxmox-dot': 'binary_sensor.proxmox_status',
-            'status-nas-dot': 'binary_sensor.nas_security_status',
-            'status-gateway-dot': 'sensor.cloud_gateway_ultra_state',
-            'status-solar-dot': 'binary_sensor.hm1500_reachable',
-            'status-zigbee-dot': 'binary_sensor.zigbee2mqtt_bridge_connection_state',
-            'status-opendtu-dot': 'binary_sensor.opendtu_168ec4_status',
-            'status-jarvis-dot': 'sensor.jarvis_gateway'
+            'status-haos-dot': 'binary_sensor.jarvis_status_haos',
+            'status-proxmox-dot': 'binary_sensor.jarvis_status_proxmox',
+            'status-nas-dot': 'binary_sensor.jarvis_status_nas',
+            'status-gateway-dot': 'binary_sensor.jarvis_status_gateway',
+            'status-solar-dot': 'binary_sensor.jarvis_status_solar',
+            'status-zigbee-dot': 'binary_sensor.jarvis_status_zigbee',
+            'status-opendtu-dot': 'binary_sensor.jarvis_status_opendtu',
+            'status-jarvis-dot': 'binary_sensor.jarvis_status_jarvis_api'
         };
+        let onlineCount = 0;
         Object.entries(statusMap).forEach(([id, entityId]) => {
             const state = states.find(s => s.entity_id === entityId);
             const dot = document.getElementById(id);
@@ -654,7 +655,13 @@ class JarvisPWA {
             }
             const good = ['on', 'connected', 'home', 'ok', 'online'].includes(state.state.toLowerCase());
             dot.className = good ? 'status-dot-sm online' : 'status-dot-sm offline';
+            if (good) onlineCount++;
         });
+        const footer = document.getElementById('footerConnection');
+        if (footer) {
+            footer.innerHTML = `● ${onlineCount}/8 Systeme online`;
+            footer.className = onlineCount === 8 ? 'connection-status online' : 'connection-status offline';
+        }
     }
 
     updateCameraMetadata(states) {
