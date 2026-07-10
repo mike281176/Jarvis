@@ -1,0 +1,30 @@
+[Unit]
+Description=Hermes Agent Gateway - Messaging Platform Integration
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=/home/mike/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run
+WorkingDirectory=/home/mike/.hermes
+Environment="PATH=/home/mike/.hermes/hermes-agent/venv/bin:/home/mike/.hermes/hermes-agent/node_modules/.bin:/home/mike/.hermes/node/bin:/home/mike/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment="VIRTUAL_ENV=/home/mike/.hermes/hermes-agent/venv"
+Environment="HERMES_HOME=/home/mike/.hermes"
+Environment="HASS_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIzN2RjMDdmMDQ4ZWY0MTM1ODBmNWQ4ZDI2ZmQ1ZmM3ZCIsImlhdCI6MTc4MzExMDc1NiwiZXhwIjoyMDk4NDcwNzU2fQ.1t2-mVT2vuCKiJiE12BzhpWN7xcaPfBnGyIAzT141p0"
+Environment="API_SERVER_ENABLED=true"
+Environment="API_SERVER_KEY=Jarvis2026"
+Environment="API_SERVER_CORS_ORIGINS=https://jarvis-app.quixx24.com,https://nonconvergent-francene-toxically.ngrok-free.dev,http://192.168.1.81:8125,http://192.168.1.81:8888,http://localhost:8125,http://localhost:8888"
+Restart=always
+RestartSec=5
+RestartForceExitStatus=75
+KillMode=mixed
+KillSignal=SIGTERM
+ExecReload=/bin/kill -USR1 $MAINPID
+ExecStopPost=-/home/mike/.hermes/hermes-agent/venv/bin/python -m gateway.cgroup_cleanup
+TimeoutStopSec=90
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

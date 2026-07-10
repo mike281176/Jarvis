@@ -1,0 +1,13 @@
+[Unit]
+Description=ngrok secure tunnel client for J.A.R.V.I.S.
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/mike/.config/ngrok/start-ngrok.sh
+Restart=always
+RestartSec=15
+EnvironmentFile=/home/mike/.config/ngrok/ngrok.env
+
+[Install]
+WantedBy=default.target

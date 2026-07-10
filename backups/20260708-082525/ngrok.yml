@@ -1,0 +1,8 @@
+version: "3"
+agent:
+    authtoken: 2uxK2tJiqrHtZm1Y2dinubXHVhM_2mWw27EvLULHYnwUTiXUf
+tunnels:
+  jarvis-api:
+    proto: http
+    addr: 8124
+    domain: nonconvergent-francene-toxically.ngrok-free.dev
