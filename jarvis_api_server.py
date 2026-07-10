@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-J.A.R.V.I.S. API Server v3.1
+J.A.R.V.I.S. API Server v3.2
 REST API für die J.A.R.V.I.S. PWA (Port 8124)
 Endpunkt: POST /api/jarvis/ask
 Proxy: /api/jarvis/ha-proxy/* -> Home Assistant
@@ -19,13 +19,28 @@ from urllib.parse import urlparse
 
 PORT = 8124
 HA_URL = "http://192.168.1.91:8123"
+
+# Token aus Hermes-Umgebung oder .env laden
 HA_TOKEN = os.environ.get('HASS_TOKEN', '')
+if not HA_TOKEN:
+    # Fallback: Token aus Hermes .env laden
+    try:
+        with open(os.path.expanduser('~/.hermes/.env'), 'r') as f:
+            for line in f:
+                if line.startswith('HASS_TOKEN='):
+                    HA_TOKEN = line.strip().split('=', 1)[1]
+                    break
+    except:
+        pass
+
+if not HA_TOKEN:
+    print("⚠️  WARNUNG: HASS_TOKEN nicht gesetzt!")
 
 # CORS Headers für PWA
 CORS_HEADERS = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Jarvis-Auth-Token, X-Jarvis-User-Id'
 }
 
 class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
@@ -51,17 +66,21 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
     def handle_ha_proxy(self, path, method, body=None):
         """Proxy-Funktion für Home Assistant Anfragen"""
         try:
+            # Remove the proxy prefix to get the actual HA path
             ha_path = path.replace('/api/jarvis/ha-proxy', '', 1)
             if not ha_path.startswith('/'):
                 ha_path = '/' + ha_path
                 
             target_url = f"{HA_URL}{ha_path}"
             
+            # Setup headers for the request to HA
+            # Use the server's HASS_TOKEN for authentication
             headers = {
                 'Authorization': f'Bearer {HA_TOKEN}',
                 'Content-Type': 'application/json'
             }
             
+            # Forward relevant headers from the original request, but NOT Host or Content-Length
             for key, value in self.headers.items():
                 if key.lower() not in ['host', 'content-length']:
                     headers[key] = value
@@ -94,8 +113,8 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(e.read())
         except Exception as e:
-            print(f"❌ Proxy Fehler: {e}")
-            self.send_json_response({'status': 'error', 'message': f'Proxy Fehler: {str(e)}'}, 500)
+            print(f"❌ Proxy Error: {e}")
+            self.send_json_response({'status': 'error', 'message': f'Proxy Error: {str(e)}'}, 500)
 
     def do_GET(self):
         if self.path.startswith('/api/jarvis/ha-proxy/'):
@@ -107,7 +126,7 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
                 'status': 'ok',
                 'message': 'J.A.R.V.I.S. API Server läuft, Sir.',
                 'timestamp': datetime.now().isoformat(),
-                'version': '3.1'
+                'version': '3.2'
             })
         elif self.path == '/api/jarvis/status':
             status = self.get_system_status()
@@ -148,7 +167,7 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             })
             
         except Exception as e:
-            print(f"❌ Fehler: {e}")
+            print(f"❌ Error: {e}")
             self.send_json_response({'status': 'error', 'message': 'Interner Fehler'}, 500)
     
     def process_intent(self, message, user, context):
@@ -170,30 +189,236 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             return {'text': "Ich verstehe, Sir.", 'intent': 'unknown'}
     
     def handle_solar_intent(self, message):
-        return {'text': "Solar-Daten werden abgerufen, Sir.", 'intent': 'solar'}
-    
+        """Solar-Produktion abfragen"""
+        try:
+            # Moderne aggregierte JARVIS-Sensoren bevorzugen
+            solar = self.fetch_ha_state('sensor.jarvis_solar_aktuell') or self.fetch_ha_state('sensor.gesamt_solar_eingang')
+            today = self.fetch_ha_state('sensor.jarvis_solar_heute')
+            battery = self.fetch_ha_state('sensor.gesamt_batterie_soc') or self.fetch_ha_state('sensor.batterie_summe')
+            grid = self.fetch_ha_state('sensor.power_import_grid') or self.fetch_ha_state('sensor.power_grid_total_raw')
+
+            parts = []
+            if solar and solar not in ['unknown', 'unavailable', 'None']:
+                parts.append(f"Die Solaranlage liefert aktuell {solar} Watt")
+            if today and today not in ['unknown', 'unavailable', 'None']:
+                parts.append(f"Heute wurden bereits {today} kWh erzeugt")
+            if battery and battery not in ['unknown', 'unavailable', 'None']:
+                parts.append(f"Der Batteriespeicher ist zu {battery}% gefüllt")
+            if grid and grid not in ['unknown', 'unavailable', 'None']:
+                try:
+                    grid_val = float(grid)
+                    if grid_val > 50:
+                        parts.append(f"Wir beziehen {round(grid_val)} Watt aus dem Netz")
+                    else:
+                        parts.append("Das Haus ist aktuell autark")
+                except:
+                    pass
+
+            if parts:
+                text = ". ".join(parts) + ", Sir."
+                try:
+                    watt_val = float(solar) if solar else 0
+                    if watt_val > 3000:
+                        text += " Die Sonne scheint gnädig heute."
+                    elif watt_val > 1000:
+                        text += " Solides Ergebnis für die Stundenzeit."
+                    else:
+                        text += " Wir sollten vielleicht die Wolken anschreiben."
+                except:
+                    pass
+            else:
+                text = "Ich kann aktuell keine Solar-Daten abrufen, Sir. Entweder ist es Nacht oder die Verbindung ist unterbrochen."
+
+            return {'text': text, 'intent': 'solar'}
+        except Exception as e:
+            return {'text': "Entschuldigung, Sir. Die Solar-Daten sind momentan nicht verfügbar.", 'intent': 'solar_error'}
+
     def handle_weather_intent(self, message):
-        return {'text': "Wetterdaten werden abgerufen, Sir.", 'intent': 'weather'}
-    
+        """Wetter abfragen"""
+        try:
+            weather = self.fetch_ha_state_object('weather.troisdorf')
+            if weather and weather.get('state'):
+                condition = weather.get('state')
+                temp = weather.get('attributes', {}).get('temperature', 'unbekannt')
+                conditions_map = {
+                    'sunny': 'sonnig',
+                    'cloudy': 'bewölkt',
+                    'partlycloudy': 'teilweise bewölkt',
+                    'rainy': 'regnerisch',
+                    'clear-night': 'klar'
+                }
+                condition_de = conditions_map.get(condition, condition)
+                text = f"In Troisdorf sind es aktuell {temp}°C bei {condition_de}em Wetter, Sir."
+                if 'sonn' in (condition_de or ''):
+                    text += " Bitte denken Sie an Sonnenschutz. Ihre Haut ist nicht mehr das, was sie einmal war."
+                elif 'regen' in (condition_de or ''):
+                    text += " Regen ist flüssiger Sonnenschein, nur weniger populär."
+                return {'text': text, 'intent': 'weather'}
+            else:
+                return {'text': "Die Wetterdaten sind momentan nicht verfügbar, Sir. Schauen Sie aus dem Fenster - das ist oft genau so zuverlässig.", 'intent': 'weather_unavailable'}
+        except Exception as e:
+            return {'text': "Ich konnte die Wetterdaten nicht abrufen, Sir. Die Atmosphäre scheint mir heute verschlossen.", 'intent': 'weather_error'}
+
     def handle_climate_intent(self, message):
-        return {'text': "Klimaanlage wird geprüft, Sir.", 'intent': 'climate'}
-    
+        """Klimaanlage abfragen"""
+        try:
+            climate = self.fetch_ha_state_object('climate.split_klimaanlage')
+            if climate and climate.get('state'):
+                state = climate.get('state')
+                attrs = climate.get('attributes', {})
+                temp = attrs.get('temperature', 'unbekannt')
+                current = attrs.get('current_temperature', 'unbekannt')
+                modes = {
+                    'off': 'ausgeschaltet',
+                    'cool': 'kühlend',
+                    'heat': 'heizend',
+                    'dry': 'entfeuchtend',
+                    'fan_only': 'nur Lüftung'
+                }
+                mode = modes.get(state, state)
+                text = f"Die Klimaanlage ist {mode} und steht auf {temp}°C. Aktuelle Raumtemperatur: {current}°C, Sir."
+                if state == 'off':
+                    text += " Wenn Sie möchten, kann ich sie für Sie aktivieren."
+                return {'text': text, 'intent': 'climate'}
+            else:
+                return {'text': "Ich kann den Status der Klimaanlage nicht ermitteln, Sir. Vielleicht hat sie frei genommen.", 'intent': 'climate_unavailable'}
+        except Exception as e:
+            return {'text': "Die Klimaanlage antwortet nicht, Sir. Möglicherweise ist sie in einem kühlen Raum verschwunden.", 'intent': 'climate_error'}
+
     def handle_time_intent(self, message):
-        return {'text': f"Es ist {datetime.now().strftime('%H:%M')} Uhr, Sir.", 'intent': 'time'}
-    
+        """Uhrzeit abfragen"""
+        now = datetime.now()
+        time_str = now.strftime('%H:%M')
+        date_str = now.strftime('%d.%m.%Y')
+        text = f"Es ist {time_str} Uhr am {date_str}, Sir."
+        hour = now.hour
+        if 5 <= hour < 12:
+            text += " Ein wunderbarer Morgen, nicht wahr?"
+        elif 12 <= hour < 14:
+            text += " Zeit für die Mittagspause, wenn Sie so geneigt sind."
+        elif 14 <= hour < 18:
+            text += " Der Nachmittag neigt sich dem Ende zu."
+        elif 18 <= hour < 22:
+            text += " Der Abend ist da. Ruhestand wäre angebracht."
+        else:
+            text += " Es ist spät, Sir. Selbst KI-Systeme brauchen manchmal Ruhe."
+        return {'text': text, 'intent': 'time'}
+
     def handle_pool_intent(self, message):
-        return {'text': "Pool-Temperatur wird abgefragt, Sir.", 'intent': 'pool'}
-    
+        """Pool-Temperatur abfragen"""
+        try:
+            pool_temp = self.fetch_ha_state('sensor.pool_temperatur')
+            if pool_temp and pool_temp not in ['unknown', 'unavailable', 'None']:
+                text = f"Die Pool-Temperatur beträgt {pool_temp}°C, Sir."
+                try:
+                    temp_val = float(pool_temp)
+                    if temp_val < 20:
+                        text += " Das ist eher was für Hartgesottene."
+                    elif temp_val < 25:
+                        text += " Angenehm kühl für eine Erfrischung."
+                    else:
+                        text += " Badewannentemperatur. Wie im Luxushotel."
+                except:
+                    pass
+                return {'text': text, 'intent': 'pool'}
+            else:
+                return {'text': "Die Pool-Temperatur ist momentan nicht verfügbar, Sir. Entweder ist der Sensor untergetaucht oder das Wasser hat ihn vertrieben.", 'intent': 'pool_unavailable'}
+        except Exception as e:
+            return {'text': "Ich kann die Pool-Temperatur nicht ermitteln, Sir. Vielleicht ist das Wasser zu kalt für den Sensor.", 'intent': 'pool_error'}
+
     def handle_status_intent(self, message):
-        return {'text': "Alle Systeme nominal, Sir.", 'intent': 'status'}
-    
+        """Systemstatus abfragen"""
+        try:
+            ha_config = self.fetch_ha_config()
+            version = ha_config.get('version', 'unbekannt') if ha_config else 'unbekannt'
+            return {'text': f"Home Assistant läuft mit Version {version}. J.A.R.V.I.S. API Server ist operational. Alle Systeme nominal, Sir.", 'intent': 'status'}
+        except:
+            return {'text': "Die Systemstatus-Abfrage ist fehlgeschlagen, Sir. Aber ich bin hier, das zählt doch, oder?", 'intent': 'status_error'}
+
     def get_system_status(self):
-        return {'api': 'running', 'timestamp': datetime.now().isoformat(), 'home_assistant': {'connected': True}}
+        """Systemstatus für Health-Check"""
+        return {
+            'api': 'running',
+            'timestamp': datetime.now().isoformat(),
+            'home_assistant': self.check_ha_connection()
+        }
+
+    def check_ha_connection(self):
+        """Prüfe Home Assistant Verbindung"""
+        try:
+            config = self.fetch_ha_config()
+            return {'connected': True, 'version': config.get('version', 'unknown')} if config else {'connected': False}
+        except:
+            return {'connected': False}
+
+    def fetch_ha_state(self, entity_id):
+        """Hole State von Home Assistant Entity"""
+        try:
+            headers = {
+                'Authorization': f'Bearer {HA_TOKEN}',
+                'Content-Type': 'application/json'
+            }
+            req = urllib.request.Request(
+                f"{HA_URL}/api/states/{entity_id}",
+                headers=headers,
+                method='GET'
+            )
+            with urllib.request.urlopen(req, timeout=5) as response:
+                data = json.loads(response.read().decode())
+                return data.get('state')
+        except Exception as e:
+            print(f"  ⚠️ HA Fehler für {entity_id}: {e}")
+            return None
+
+    def fetch_ha_config(self):
+        """Hole Home Assistant Config"""
+        try:
+            headers = {
+                'Authorization': f'Bearer {HA_TOKEN}',
+                'Content-Type': 'application/json'
+            }
+            req = urllib.request.Request(
+                f"{HA_URL}/api/config",
+                headers=headers,
+                method='GET'
+            )
+            with urllib.request.urlopen(req, timeout=5) as response:
+                return json.loads(response.read().decode())
+        except Exception as e:
+            print(f"  ⚠️ HA Config Fehler: {e}")
+            return None
+
+    def fetch_ha_state_object(self, entity_id):
+        """Hole komplettes State-Objekt (state + attributes) von HA"""
+        try:
+            headers = {
+                'Authorization': f'Bearer {HA_TOKEN}',
+                'Content-Type': 'application/json'
+            }
+            req = urllib.request.Request(
+                f"{HA_URL}/api/states/{entity_id}",
+                headers=headers,
+                method='GET'
+            )
+            with urllib.request.urlopen(req, timeout=5) as response:
+                return json.loads(response.read().decode())
+        except Exception as e:
+            print(f"  ⚠️ HA Fehler für {entity_id}: {e}")
+            return None
+
+    def get_environment_temperatures(self):
+        """Aktuelle Umgebungstemperaturen aus HA abfragen"""
+        return {
+            'garten': self.fetch_ha_state('sensor.garten'),
+            'pool': self.fetch_ha_state('sensor.pool_temperatur'),
+            'wohnzimmer': self.fetch_ha_state('sensor.wohnzimmer_echo_temperatur'),
+            'arbeitszimmer': self.fetch_ha_state('sensor.arbeitszimmer_temperatur')
+        }
 
 def start_server():
     socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
-        print(f"J.A.R.V.I.S. API Server v3.1 on port {PORT}...")
+        print(f"J.A.R.V.I.S. API Server v3.2 on port {PORT}...")
         httpd.serve_forever()
 
 if __name__ == '__main__':
