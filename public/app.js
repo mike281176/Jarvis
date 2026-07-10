@@ -474,15 +474,13 @@ class JarvisPWA {
 
     async refreshDashboardData() {
         try {
-            const [states, cameraRes] = await Promise.all([
-                this.haFetch('/api/states'),
-                this.haFetch('/api/camera_proxy/camera.einfahrt_main?token=' + Date.now()).catch(() => null)
-            ]);
-
+            const states = await this.haFetch('/api/states');
             if (states && Array.isArray(states)) {
                 this.updateEnergyWidgets(states);
                 this.updateClimateWidget(states);
                 this.updateEnvironmentWidgets(states);
+                this.updateStatusPanel(states);
+                this.updateCameraMetadata(states);
                 this.updateEntityCount(states.length);
             }
         } catch (error) {

@@ -1,0 +1,1860 @@
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 204, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 199, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 410, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 405, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 425, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 420, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 425, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 420, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 425, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 420, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 425, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 420, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 425, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 420, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 425, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 420, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 425, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 420, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 425, in <module>
+    start_server()
+  File "/home/mike/projects/jarvis/jarvis_api_server.py", line 420, in start_server
+    with socketserver.TCPServer(("0.0.0.0", PORT), JarvisAPIHandler) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
