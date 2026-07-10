@@ -588,18 +588,31 @@ class JarvisPWA {
 
     updateClimateWidget(states) {
         const climate = states.find(s => s.entity_id === 'climate.split_klimaanlage');
-        if (!climate) return;
-
         const tempEl = document.getElementById('homeClimateTemp');
         const modeEl = document.getElementById('homeClimateMode');
         const powerBtn = document.getElementById('homeClimatePower');
+
+        if (!climate) {
+            // Fallback auf Schalter im Schlafzimmer, falls Klima-Entität fehlt
+            const secondary = states.find(s => s.entity_id === 'switch.klima_schlafzimmer');
+            const isOn = secondary && secondary.state === 'on';
+            if (tempEl) tempEl.textContent = '--°C';
+            if (modeEl) modeEl.textContent = isOn ? 'Kühlen' : 'Aus';
+            if (powerBtn) powerBtn.classList.toggle('active', isOn);
+            return;
+        }
 
         const currentTemp = climate.attributes?.current_temperature;
         const targetTemp = climate.attributes?.temperature;
         const mode = climate.state;
 
         if (tempEl) {
-            const display = currentTemp ? `${currentTemp}°C` : (targetTemp ? `${targetTemp}°C` : '--°C');
+            let display = '--°C';
+            if (currentTemp != null && !isNaN(parseFloat(currentTemp))) {
+                display = `${parseFloat(currentTemp).toFixed(1)}°C`;
+            } else if (targetTemp != null && !isNaN(parseFloat(targetTemp))) {
+                display = `${parseFloat(targetTemp).toFixed(1)}°C`;
+            }
             tempEl.textContent = display;
         }
         if (modeEl) {
@@ -621,9 +634,11 @@ class JarvisPWA {
         Object.entries(mapping).forEach(([id, entityId]) => {
             const state = states.find(s => s.entity_id === entityId);
             const el = document.getElementById(id);
-            if (state && el) {
-                const val = parseFloat(state.state);
-                el.textContent = isNaN(val) ? '--°C' : `${val.toFixed(1)}°C`;
+            if (!el) return;
+            if (!state || state.state === 'unavailable' || state.state === 'unknown' || isNaN(parseFloat(state.state))) {
+                el.textContent = '--°C';
+            } else {
+                el.textContent = `${parseFloat(state.state).toFixed(1)}°C`;
             }
         });
     }
