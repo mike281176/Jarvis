@@ -474,13 +474,43 @@ class JarvisPWA {
 
     async refreshDashboardData() {
         try {
-            const states = await this.haFetch('/api/states');
-            if (states && Array.isArray(states)) {
+            // Nur benötigte Entities laden für bessere Performance
+            const requiredEntities = [
+                // Solar
+                'sensor.jarvis_solar_aktuell', 'sensor.jarvis_solar_heute',
+                'sensor.hm1500_power', 'sensor.hm1500_yieldday',
+                // Battery
+                'sensor.gesamt_batterie_soc', 'sensor.batterie_summe',
+                'sensor.gesamt_lade_leistung', 'sensor.gesamt_entlade_leistung',
+                // Grid/House
+                'sensor.power_import_grid', 'sensor.power_grid_total_raw',
+                'sensor.jarvis_gesamt_verbrauch', 'sensor.shelly_3em_total_power',
+                // Climate
+                'climate.split_klimaanlage', 'switch.klima_schlafzimmer',
+                // Environment temps
+                'sensor.garten', 'sensor.pool_temperatur',
+                'sensor.wohnzimmer_echo_temperatur', 'sensor.arbeitszimmer_temperatur',
+                // Status sensors
+                'binary_sensor.jarvis_status_haos', 'binary_sensor.jarvis_status_proxmox',
+                'binary_sensor.jarvis_status_nas', 'binary_sensor.jarvis_status_gateway',
+                'binary_sensor.jarvis_status_solar', 'binary_sensor.jarvis_status_zigbee',
+                'binary_sensor.jarvis_status_opendtu', 'binary_sensor.jarvis_status_jarvis_api'
+            ];
+            
+            // States einzeln laden und zusammenführen
+            const states = [];
+            for (const entityId of requiredEntities) {
+                try {
+                    const state = await this.haFetch(`/api/states/${entityId}`);
+                    if (state && state.entity_id) states.push(state);
+                } catch (e) { /* Entity nicht gefunden */ }
+            }
+            
+            if (states.length > 0) {
                 this.updateEnergyWidgets(states);
                 this.updateClimateWidget(states);
                 this.updateEnvironmentWidgets(states);
                 this.updateStatusPanel(states);
-                this.updateCameraMetadata(states);
                 this.updateEntityCount(states.length);
             }
         } catch (error) {
@@ -704,13 +734,43 @@ class JarvisPWA {
 
     async refreshDashboardData() {
         try {
-            const states = await this.haFetch('/api/states');
-            if (states && Array.isArray(states)) {
+            // Nur benötigte Entities laden für bessere Performance
+            const requiredEntities = [
+                // Solar
+                'sensor.jarvis_solar_aktuell', 'sensor.jarvis_solar_heute',
+                'sensor.hm1500_power', 'sensor.hm1500_yieldday',
+                // Battery
+                'sensor.gesamt_batterie_soc', 'sensor.batterie_summe',
+                'sensor.gesamt_lade_leistung', 'sensor.gesamt_entlade_leistung',
+                // Grid/House
+                'sensor.power_import_grid', 'sensor.power_grid_total_raw',
+                'sensor.jarvis_gesamt_verbrauch', 'sensor.shelly_3em_total_power',
+                // Climate
+                'climate.split_klimaanlage', 'switch.klima_schlafzimmer',
+                // Environment temps
+                'sensor.garten', 'sensor.pool_temperatur',
+                'sensor.wohnzimmer_echo_temperatur', 'sensor.arbeitszimmer_temperatur',
+                // Status sensors
+                'binary_sensor.jarvis_status_haos', 'binary_sensor.jarvis_status_proxmox',
+                'binary_sensor.jarvis_status_nas', 'binary_sensor.jarvis_status_gateway',
+                'binary_sensor.jarvis_status_solar', 'binary_sensor.jarvis_status_zigbee',
+                'binary_sensor.jarvis_status_opendtu', 'binary_sensor.jarvis_status_jarvis_api'
+            ];
+            
+            // States einzeln laden und zusammenführen
+            const states = [];
+            for (const entityId of requiredEntities) {
+                try {
+                    const state = await this.haFetch(`/api/states/${entityId}`);
+                    if (state && state.entity_id) states.push(state);
+                } catch (e) { /* Entity nicht gefunden */ }
+            }
+            
+            if (states.length > 0) {
                 this.updateEnergyWidgets(states);
                 this.updateClimateWidget(states);
                 this.updateEnvironmentWidgets(states);
                 this.updateStatusPanel(states);
-                this.updateCameraMetadata(states);
                 this.updateEntityCount(states.length);
             }
         } catch (error) {
