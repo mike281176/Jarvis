@@ -218,16 +218,19 @@ class JarvisPWA {
         
         try {
             const url = `${this.apiBaseUrl}/api/jarvis/auth/login`;
+            const requestBody = JSON.stringify({ username: userId, password: input });
             console.log('[JARVIS DEBUG] Login URL:', url);
             console.log('[JARVIS DEBUG] apiBaseUrl:', this.apiBaseUrl);
             console.log('[JARVIS DEBUG] selectedUser:', userId);
+            console.log('[JARVIS DEBUG] requestBody:', requestBody);
+            console.log('[JARVIS DEBUG] password length:', input.length);
             
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ username: userId, password: input })
+                body: requestBody
             });
             
             const responseText = await response.text();
