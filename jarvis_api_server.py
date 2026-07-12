@@ -43,7 +43,48 @@ CORS_HEADERS = {
     'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Jarvis-Auth-Token, X-Jarvis-User-Id'
 }
 
+AUTH_BACKEND = ('127.0.0.1', 8643)
+
+
 class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
+    def _proxy_to_backend(self, backend, method, body=None):
+        """Interner Proxy zu einem anderen lokalen Service (Auth oder spaeter)."""
+        import http.client
+        parsed = urlparse(self.path)
+        path = parsed.path
+        # Auth-Service erwartet /auth/* statt /api/jarvis/auth/*
+        if backend == AUTH_BACKEND and path.startswith('/api/jarvis/auth/'):
+            path = path.replace('/api/jarvis/auth/', '/auth/', 1)
+        query = parsed.query
+        target_path = f"{path}?{query}" if query else path
+
+        forward_headers = {}
+        for key, value in self.headers.items():
+            if key.lower() in ('host', 'connection', 'keep-alive', 'proxy-authenticate',
+                               'proxy-authorization', 'te', 'trailers', 'transfer-encoding', 'upgrade'):
+                continue
+            forward_headers[key] = value
+        forward_headers['Host'] = f"{backend[0]}:{backend[1]}"
+
+        try:
+            conn = http.client.HTTPConnection(*backend, timeout=10)
+            conn.request(method, target_path, body=body, headers=forward_headers)
+            resp = conn.getresponse()
+
+            self.send_response(resp.status)
+            for key, value in resp.getheaders():
+                if key.lower() in ('transfer-encoding', 'content-encoding', 'content-length',
+                                   'connection', 'keep-alive'):
+                    continue
+                self.send_header(key, value)
+            for key, value in CORS_HEADERS.items():
+                self.send_header(key, value)
+            self.end_headers()
+            self.wfile.write(resp.read())
+            conn.close()
+        except Exception as e:
+            self.send_json_response({'status': 'error', 'message': f'Proxy Error: {str(e)}'}, 502)
+
     def log_message(self, format, *args):
         timestamp = datetime.now().strftime('%H:%M:%S')
         print(f"[{timestamp}] {args[0]}")
@@ -119,6 +160,10 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             self.handle_ha_proxy(self.path, 'GET')
             return
 
+        if self.path.startswith('/api/jarvis/auth/'):
+            self._proxy_to_backend(AUTH_BACKEND, 'GET')
+            return
+
         if self.path == '/health' or self.path == '/api/jarvis/health':
             self.send_json_response({
                 'status': 'ok',
@@ -137,6 +182,12 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             content_length = int(self.headers.get('Content-Length', 0))
             body = self.rfile.read(content_length)
             self.handle_ha_proxy(self.path, 'POST', body)
+            return
+
+        if self.path.startswith('/api/jarvis/auth/'):
+            content_length = int(self.headers.get('Content-Length', 0))
+            body = self.rfile.read(content_length)
+            self._proxy_to_backend(AUTH_BACKEND, 'POST', body)
             return
 
         if self.path == '/api/jarvis/ask':
