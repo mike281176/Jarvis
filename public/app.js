@@ -217,7 +217,12 @@ class JarvisPWA {
         }
         
         try {
-            const response = await fetch(`${this.apiBaseUrl}/api/jarvis/auth/login`, {
+            const url = `${this.apiBaseUrl}/api/jarvis/auth/login`;
+            console.log('[JARVIS DEBUG] Login URL:', url);
+            console.log('[JARVIS DEBUG] apiBaseUrl:', this.apiBaseUrl);
+            console.log('[JARVIS DEBUG] selectedUser:', userId);
+            
+            const response = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -225,12 +230,28 @@ class JarvisPWA {
                 body: JSON.stringify({ username: userId, password: input })
             });
             
-            const data = await response.json();
+            const responseText = await response.text();
+            console.log('[JARVIS DEBUG] Raw response:', response.status, responseText);
+            
+            let data;
+            try {
+                data = JSON.parse(responseText);
+            } catch (e) {
+                console.error('[JARVIS DEBUG] JSON parse error:', e);
+                data = { raw: responseText };
+            }
+            console.log('[JARVIS DEBUG] Parsed data:', data);
             
             if (response.ok && data.success && data.token) {
                 errorDiv.style.display = 'none';
                 this.login(userId, data.token, data.user);
             } else {
+                const errorText = document.querySelector('.error-text');
+                if (data.error) {
+                    errorText.textContent = `Fehler: ${data.error}. Bitte prüfen.`;
+                } else {
+                    errorText.textContent = 'Falsches Passwort. Zugriff verweigert.';
+                }
                 errorDiv.style.display = 'flex';
                 document.getElementById('passwordInput').value = '';
                 document.getElementById('passwordInput').focus();
@@ -242,9 +263,10 @@ class JarvisPWA {
                 }, 500);
             }
         } catch (error) {
-            console.error('Login Fehler:', error);
+            console.error('[JARVIS DEBUG] Login Fehler:', error);
+            const errorText = document.querySelector('.error-text');
+            if (errorText) errorText.textContent = 'Verbindungsfehler. Bitte Einstellungen prüfen.';
             errorDiv.style.display = 'flex';
-            document.querySelector('.error-text').textContent = 'Verbindungsfehler. Bitte erneut versuchen.';
         }
     }
 
