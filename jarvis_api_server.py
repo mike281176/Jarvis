@@ -61,7 +61,8 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
         forward_headers = {}
         for key, value in self.headers.items():
             if key.lower() in ('host', 'connection', 'keep-alive', 'proxy-authenticate',
-                               'proxy-authorization', 'te', 'trailers', 'transfer-encoding', 'upgrade'):
+                               'proxy-authorization', 'te', 'trailers', 'transfer-encoding',
+                               'upgrade'):
                 continue
             forward_headers[key] = value
         forward_headers['Host'] = f"{backend[0]}:{backend[1]}"
@@ -73,7 +74,7 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
 
             self.send_response(resp.status)
             for key, value in resp.getheaders():
-                if key.lower() in ('transfer-encoding', 'content-encoding', 'content-length',
+                if key.lower() in ('transfer-encoding', 'content-encoding',
                                    'connection', 'keep-alive'):
                     continue
                 self.send_header(key, value)
