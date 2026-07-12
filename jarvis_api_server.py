@@ -73,17 +73,15 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
                 
             target_url = f"{HA_URL}{ha_path}"
             
-            # Setup headers for the request to HA
-            # Use the server's HASS_TOKEN for authentication
+            # Setup minimal headers for the request to HA.
+            # Ngrok/Vercel inject headers like X-Forwarded-For, X-Original-Host,
+            # etc. Home Assistant rejects these as a modified Host header, so we
+            # only send what HA needs: Authorization and Content-Type.
             headers = {
                 'Authorization': f'Bearer {HA_TOKEN}',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
             }
-            
-            # Forward relevant headers from the original request, but NOT Host or Content-Length
-            for key, value in self.headers.items():
-                if key.lower() not in ['host', 'content-length']:
-                    headers[key] = value
 
             req = urllib.request.Request(
                 target_url,
