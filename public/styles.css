@@ -413,9 +413,28 @@ html, body {
 .input-pill button { background: rgba(0, 212, 255, 0.15); border: none; color: var(--jarvis-blue); padding: 0 0.7rem; cursor: pointer; font-size: 1rem; }
 
 /* Overlays */
-.chat-overlay, .camera-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px); display: none; align-items: center; justify-content: center; z-index: 200; }
-.chat-panel, .camera-frame { background: var(--hud-surface); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 12px; padding: var(--space-md); max-width: 600px; width: 90%; box-shadow: var(--glow-blue-strong); }
+.chat-overlay, .camera-overlay, .climate-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px); display: none; align-items: center; justify-content: center; z-index: 200; }
+.chat-panel, .camera-frame, .climate-panel { background: var(--hud-surface); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 12px; padding: var(--space-md); max-width: 600px; width: 90%; box-shadow: var(--glow-blue-strong); }
 .scan-overlay { position: fixed; inset: 0; pointer-events: none; z-index: 5; background: linear-gradient(transparent 50%, rgba(0, 212, 255, 0.03) 50%); background-size: 100% 4px; opacity: 0.25; animation: scan-move 10s linear infinite; }
+
+/* Climate Overlay */
+.climate-panel { max-width: 520px; max-height: 90vh; display: flex; flex-direction: column; }
+.climate-panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md); }
+.climate-panel-header .panel-title { font-family: var(--font-hud); font-size: 0.8rem; letter-spacing: 0.12em; color: var(--jarvis-blue); }
+.climate-panel-body { display: flex; flex-direction: column; gap: var(--space-md); overflow-y: auto; }
+.climate-zone { border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 10px; padding: var(--space-sm); background: rgba(0, 212, 255, 0.04); transition: opacity 0.2s; }
+.climate-zone.disabled { opacity: 0.5; pointer-events: none; }
+.zone-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-xs); }
+.zone-name { font-family: var(--font-hud); font-size: 0.75rem; letter-spacing: 0.08em; color: var(--jarvis-blue); }
+.zone-status { font-size: 0.7rem; color: var(--jarvis-green); }
+.climate-zone.disabled .zone-status { color: var(--text-secondary); }
+.zone-body { display: flex; justify-content: space-between; align-items: center; gap: var(--space-sm); }
+.zone-temp { display: flex; flex-direction: column; }
+.zone-target { font-size: 1.6rem; font-weight: 300; font-family: var(--font-hud); color: var(--text-primary); }
+.zone-current { font-size: 0.7rem; color: var(--text-secondary); margin-top: 0.15rem; }
+.climate-tile { background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.climate-tile:hover { border-color: rgba(0, 212, 255, 0.4); }
+.tile-hint { font-size: 0.6rem; color: var(--text-secondary); margin-top: 0.3rem; opacity: 0.7; }
 
 /* ===========================
    ANIMATIONS
