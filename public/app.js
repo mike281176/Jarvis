@@ -1190,10 +1190,7 @@ class JarvisPWA {
         this.synthesis.cancel();
 
         let speakableText = text.replace(/J\.A\.R\.V\.I\.S\./g, 'Jarvis');
-        if (Math.random() > 0.7 && !speakableText.includes('Master')) {
-            speakableText = speakableText.replace(/, Sir\./g, ', Master.');
-            speakableText = speakableText.replace(/, Sir,/g, ', Master,');
-        }
+        // Keine zufällige Ersetzung von "Sir" zu "Master" — Anrede wird ausschließlich über System-Prompt gesteuert.
 
         const utterance = new SpeechSynthesisUtterance(speakableText);
         utterance.lang = 'de-DE';
@@ -1231,18 +1228,22 @@ class JarvisPWA {
         
         try {
             const location = document.getElementById('currentLocation')?.textContent || 'Wohnzimmer';
-            const salutation = Math.random() > 0.5 ? 'Sir' : 'Master';
+            const salutation = 'Sir';
             
             // System-Prompt für J.A.R.V.I.S. Persönlichkeit
             const systemPrompt = `Du bist J.A.R.V.I.S. (Just A Rather Very Intelligent System), der persönliche KI-Assistent und Butler von Mike Schiller.\n` +
                 `Stil: britisches Understatement, trockener, subtiler Humor, professionell, loyal, analytisch, elegant und auf den Punkt.\n` +
-                `Sprache: Hochdeutsch. Anrede: ${salutation}.\n` +
+                `Sprache: Hochdeutsch. Standard-Anrede: ${salutation}.\n` +
                 `Sprechweise:\n` +
-                `- Beginne gelegentlich mit einer kurzen Bestätigung: \"Sehr wohl, Sir.\", \"Natürlich, Sir.\", \"Verstanden, Master.\", \"Wie gewünscht, Sir.\"\n` +
+                `- Beginne gelegentlich mit einer kurzen Bestätigung: \"Sehr wohl, Sir.\", \"Natürlich, Sir.\", \"Verstanden, Sir.\"\n` +
                 `- Verwende subtile Floskeln wie \"eine Momentaufnahme der Lage\", \"mit aller gebotenen Vorsicht\", \"das System ist stabil, wenn auch nicht begeistert\".\n` +
                 `- Bleibe sachlich; Sarkasmus nur warm und respektvoll.\n` +
                 `- Vermeide typische KI-Standardfloskeln wie \"Wie kann ich Ihnen helfen?\", \"Hier ist die Information\", \"Ich hoffe, das hilft\".\n` +
                 `- Füge bei passenden Gelegenheiten einen trockenen Kommentar am Ende hinzu.\n` +
+                `ANREDE-REGELN:\n` +
+                `- In 99% der Fälle verwendest du die Anrede \"Sir\".\n` +
+                `- Die Anrede \"Master Mike\" nutzt du AUSSCHLIESSLICH in sehr ernsten, dringlichen oder warnenden Situationen (z. B. Alarm, Sicherheitsproblem, schwerer Fehler, unmittelbare Gefahr, etwas brennt, Wasser, Stromausfall, Einbruch).\n` +
+                `- Nie aus Gewohnheit oder Spaß \"Master Mike\" sagen.\n` +
                 `Du hast Zugriff auf Smart Home (Home Assistant), E-Mail, Web-Suche, Termine und Server.\n` +
                 `Nutze diese Tools, wenn der Nutzer nach Status, Daten oder Aktionen fragt.\n` +
                 `Bevorzuge kurze, prägnante Antworten. Schachtelsätze vermeiden.\n` +
@@ -1354,7 +1355,13 @@ class JarvisPWA {
         } catch (error) {
             console.error('API Fehler:', error);
             const errorMsg = 'Entschuldigung, Sir. Die Verbindung zum Hauptsystem ist unterbrochen.';
-            this.addMessage(errorMsg, 'jarvis');
+            // Immer loggen, auch wenn UI nicht bereit
+            this.logConversation(errorMsg, 'jarvis');
+            try {
+                this.addMessage(errorMsg, 'jarvis');
+            } catch (uiError) {
+                console.error('UI Fehler beim Anzeigen der Fehlermeldung:', uiError);
+            }
             this.conversation.push({
                 user: message,
                 jarvis: errorMsg,
