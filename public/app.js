@@ -1104,13 +1104,13 @@ class JarvisPWA {
             
             if (finalTranscript) {
                 this._lastInterimTranscript = '';
-                console.log('[JARVIS DEBUG] final transcript:', finalTranscript);
+                this.logDebug('final transcript', {text: finalTranscript});
                 this.sendMessage(finalTranscript);
             }
         };
         
         this.recognition.onend = () => {
-            console.log('[JARVIS DEBUG] recognition.onend, last interim:', this._lastInterimTranscript);
+            this.logDebug('recognition.onend', {lastInterim: this._lastInterimTranscript});
             // Fallback: falls nur Interim-Resultate vorhanden waren, sende das letzte Interim
             if (this._lastInterimTranscript && this._lastInterimTranscript.trim()) {
                 const fallback = this._lastInterimTranscript.trim();
@@ -1122,7 +1122,7 @@ class JarvisPWA {
         };
         
         this.recognition.onerror = (event) => {
-            console.error('Spracherkennungsfehler:', event.error);
+            this.logDebug('recognition.onerror', {error: event.error});
             // Bei "no-speech" nicht als Fehler werten, sondern einfach bereit sein
             if (event.error === 'no-speech') {
                 this.updateVoiceStatus('Bereit', 'ready');
@@ -1240,10 +1240,10 @@ class JarvisPWA {
     // ==================== API KOMMUNIKATION ====================
 
     async sendMessage(message) {
-        console.log('[JARVIS DEBUG] sendMessage called:', JSON.stringify({message, length: message ? message.length : 0}));
+        this.logDebug('sendMessage called', {message, length: message ? message.length : 0});
         
         if (!message || !message.trim()) {
-            console.warn('[JARVIS DEBUG] sendMessage ignored: empty message');
+            this.logDebug('sendMessage ignored: empty message');
             this.updateVoiceStatus('Bereit', 'ready');
             return;
         }
@@ -1268,7 +1268,7 @@ class JarvisPWA {
                 `Sprechweise:\n` +
                 `- Beginne gelegentlich mit einer kurzen Bestätigung: \"Sehr wohl, Sir.\", \"Natürlich, Sir.\", \"Verstanden, Sir.\"\n` +
                 `- Verwende subtile Floskeln wie \"eine Momentaufnahme der Lage\", \"mit aller gebotenen Vorsicht\", \"das System ist stabil, wenn auch nicht begeistert\".\n` +
-                `- Bleibe sachlich; Sarkasmus nur warm und respektvoll.\n` +
+                `- Bleibe sachlich; Sarkasmus nur warm und respekvoll.\n` +
                 `- Vermeide typische KI-Standardfloskeln wie \"Wie kann ich Ihnen helfen?\", \"Hier ist die Information\", \"Ich hoffe, das hilft\".\n` +
                 `- Füge bei passenden Gelegenheiten einen trockenen Kommentar am Ende hinzu.\n` +
                 `ANREDE-REGELN:\n` +
@@ -1299,8 +1299,7 @@ class JarvisPWA {
             }
             
             const url = `${this.apiBaseUrl}/api/jarvis/v1/chat/completions`;
-            console.log('[JARVIS DEBUG] API URL:', url);
-            console.log('[JARVIS DEBUG] API headers:', JSON.stringify({...headers, Authorization: '(hidden)'}));
+            this.logDebug('API request', {url, apiBaseUrl: this.apiBaseUrl, hasAuthToken: !!this.config.authToken, userId: this.user?.id});
             
             const response = await fetch(url, {
                 method: 'POST',
@@ -1317,7 +1316,7 @@ class JarvisPWA {
             
             if (!response.ok) {
                 const errorText = await response.text().catch(() => `HTTP ${response.status}`);
-                console.error('[JARVIS DEBUG] API error:', response.status, errorText);
+                this.logDebug('API error response', {status: response.status, body: errorText});
                 throw new Error(`HTTP ${response.status}: ${errorText}`);
             }
             
@@ -1390,7 +1389,7 @@ class JarvisPWA {
             });
             
         } catch (error) {
-            console.error('[JARVIS DEBUG] sendMessage catch:', error);
+            this.logDebug('sendMessage catch error', {message: error.message, stack: error.stack});
             const errorMsg = 'Entschuldigung, Sir. Die Verbindung zum Hauptsystem ist unterbrochen.';
             // Immer loggen, auch wenn UI nicht bereit
             this.logConversation(errorMsg, 'jarvis');
@@ -1398,7 +1397,7 @@ class JarvisPWA {
             try {
                 this.addMessage(errorMsg, 'jarvis');
             } catch (uiError) {
-                console.error('[JARVIS DEBUG] UI error showing error message:', uiError);
+                this.logDebug('UI error showing error message', {message: uiError.message});
             }
             this.conversation.push({
                 user: cleanMessage,
@@ -1481,6 +1480,12 @@ class JarvisPWA {
         localStorage.setItem('jarvis_conversation_log', JSON.stringify(conversationLog));
     }
     
+    logDebug(label, data = null) {
+        const entry = data ? `${label}: ${JSON.stringify(data)}` : label;
+        console.log(`[JARVIS DEBUG] ${entry}`);
+        this.logConversation(entry, 'debug');
+    }
+    
     getConversationLog() {
         return JSON.parse(localStorage.getItem('jarvis_conversation_log') || '[]');
     }
@@ -1512,7 +1517,8 @@ class JarvisPWA {
             const senderLabel = {
                 user: 'Mike',
                 jarvis: 'J.A.R.V.I.S.',
-                interim: 'Spracheingabe'
+                interim: 'Spracheingabe',
+                debug: 'DEBUG'
             }[entry.sender] || entry.sender;
             item.innerHTML = `
                 <div class="log-time">${time}</div>
