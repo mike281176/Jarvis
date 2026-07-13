@@ -314,29 +314,52 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             return {'text': "Ich konnte die Wetterdaten nicht abrufen, Sir. Die Atmosphäre scheint mir heute verschlossen.", 'intent': 'weather_error'}
 
     def handle_climate_intent(self, message):
-        """Klimaanlage abfragen"""
+        """Klimaanlage abfragen — Wohnzimmer und Schlafzimmer"""
         try:
-            climate = self.fetch_ha_state_object('climate.split_klimaanlage')
-            if climate and climate.get('state'):
-                state = climate.get('state')
-                attrs = climate.get('attributes', {})
-                temp = attrs.get('temperature', 'unbekannt')
-                current = attrs.get('current_temperature', 'unbekannt')
-                modes = {
-                    'off': 'ausgeschaltet',
-                    'cool': 'kühlend',
-                    'heat': 'heizend',
-                    'dry': 'entfeuchtend',
-                    'fan_only': 'nur Lüftung'
-                }
-                mode = modes.get(state, state)
-                text = f"Die Klimaanlage ist {mode} und steht auf {temp}°C. Aktuelle Raumtemperatur: {current}°C, Sir."
-                if state == 'off':
-                    text += " Wenn Sie möchten, kann ich sie für Sie aktivieren."
+            message_lower = message.lower()
+            modes = {
+                'off': 'ausgeschaltet',
+                'cool': 'kühlend',
+                'heat': 'heizend',
+                'dry': 'entfeuchtend',
+                'fan_only': 'nur Lüftung'
+            }
+
+            # Raum erkennen
+            if any(kw in message_lower for kw in ['schlafzimmer', 'schlaf']):
+                rooms = [{'entity': 'climate.schlafzimmer', 'name': 'Schlafzimmer'}]
+            elif any(kw in message_lower for kw in ['wohnzimmer', 'wohn', 'grosses', 'großes']):
+                rooms = [{'entity': 'climate.split_klimaanlage', 'name': 'Wohnzimmer'}]
+            else:
+                # Beide abfragen, wenn kein Raum genannt wurde
+                rooms = [
+                    {'entity': 'climate.split_klimaanlage', 'name': 'Wohnzimmer'},
+                    {'entity': 'climate.schlafzimmer', 'name': 'Schlafzimmer'}
+                ]
+
+            parts = []
+            for room in rooms:
+                climate = self.fetch_ha_state_object(room['entity'])
+                if climate and climate.get('state'):
+                    state = climate.get('state')
+                    attrs = climate.get('attributes', {})
+                    temp = attrs.get('temperature', 'unbekannt')
+                    current = attrs.get('current_temperature', 'unbekannt')
+                    mode = modes.get(state, state)
+                    parts.append(
+                        f"Die {room['name']}-Klimaanlage ist {mode} und steht auf {temp}°C. "
+                        f"Aktuelle Raumtemperatur: {current}°C."
+                    )
+                else:
+                    parts.append(f"Der Status der {room['name']}-Klimaanlage ist mir nicht verfügbar, Sir.")
+
+            if parts:
+                text = " ".join(parts) + " Soll ich etwas einstellen?"
                 return {'text': text, 'intent': 'climate'}
             else:
                 return {'text': "Ich kann den Status der Klimaanlage nicht ermitteln, Sir. Vielleicht hat sie frei genommen.", 'intent': 'climate_unavailable'}
         except Exception as e:
+            print(f"❌ Climate intent error: {e}")
             return {'text': "Die Klimaanlage antwortet nicht, Sir. Möglicherweise ist sie in einem kühlen Raum verschwunden.", 'intent': 'climate_error'}
 
     def handle_time_intent(self, message):
