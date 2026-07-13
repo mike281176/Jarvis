@@ -1269,7 +1269,7 @@ class JarvisPWA {
                 `- Antworte kurz, prägnant, ohne typische KI-Floskeln.\n` +
                 `- \"Master Mike\" nur bei ernsten Alarmen/Gefahren (Einbruch, Feuer, Wasser, Stromausfall, schwerer Fehler).\n` +
                 `- Du hast Zugriff auf Smart Home, E-Mail, Web-Suche, Termine und Server.\n` +
-                `- Beantworte Uhrzeit- und Datumsfragen ohne Tool-Aufruf.\n` +
+                `- Beantworte Uhrzeit- und Datumsfragen direkt mit einer konkreten Angabe. Vermeide Sätze wie \"Ich kann die exakte Zeit nicht nennen\".\n` +
                 `- Klimaanlage \"an\" immer mit Rückfrage; schalte niemals ohne Bestätigung ein.\n` +
                 `- Zeige niemals rohe tool_call-Blöcke, nur menschenlesbare Antworten.\n` +
                 `\n` +
@@ -1294,6 +1294,7 @@ class JarvisPWA {
                 body: JSON.stringify({
                     model: 'hermes-agent',
                     stream: true,
+                    max_tokens: 120,
                     messages: [
                         { role: 'system', content: systemPrompt },
                         { role: 'user', content: cleanMessage }

@@ -66,7 +66,8 @@ class ProxyHandler(BaseHTTPRequestHandler):
         forward_headers = {}
         for key, value in self.headers.items():
             if key.lower() in ('host', 'connection', 'keep-alive', 'proxy-authenticate',
-                               'proxy-authorization', 'te', 'trailers', 'transfer-encoding', 'upgrade'):
+                               'proxy-authorization', 'te', 'trailers', 'transfer-encoding', 'upgrade',
+                               'origin', 'referer'):
                 continue
             forward_headers[key] = value
         forward_headers['Host'] = f"{backend[0]}:{backend[1]}"
@@ -182,7 +183,8 @@ class ProxyHandler(BaseHTTPRequestHandler):
         forward_headers = {}
         for key, value in self.headers.items():
             if key.lower() in ('host', 'connection', 'keep-alive', 'proxy-authenticate',
-                               'proxy-authorization', 'te', 'trailers', 'transfer-encoding', 'upgrade'):
+                               'proxy-authorization', 'te', 'trailers', 'transfer-encoding', 'upgrade',
+                               'origin', 'referer'):
                 continue
             forward_headers[key] = value
         forward_headers['Host'] = f"{backend[0]}:{backend[1]}"
