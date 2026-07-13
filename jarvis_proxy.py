@@ -124,7 +124,15 @@ class ProxyHandler(BaseHTTPRequestHandler):
             if parsed.query:
                 target_path = f"{target_path}?{parsed.query}"
             self._proxy_to_path(AUTH_BACKEND, target_path)
-        # Jarvis API (/api/jarvis/*) an API-Server (8124)
+        # Hermes Chat API (/api/jarvis/v1/*) an Hermes API Server (8642)
+        # Damit PWA-Chat durch Hermes Agent mit Skills/Memory verarbeitet wird.
+        # Der Pfad wird auf /v1/* umgeschrieben, da Hermes den /api/jarvis Praefix nicht kennt.
+        elif parsed.path.startswith('/api/jarvis/v1/'):
+            target_path = parsed.path.replace('/api/jarvis/v1/', '/v1/', 1)
+            if parsed.query:
+                target_path = f"{target_path}?{parsed.query}"
+            self._proxy_to_path(HERMES_BACKEND, target_path)
+        # Jarvis API (/api/jarvis/*, aber nicht /v1/) an API-Server (8124)
         elif parsed.path.startswith('/api/jarvis/'):
             self._proxy(API_BACKEND)
         # Andere API-Requests an Hermes (8642)

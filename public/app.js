@@ -1290,8 +1290,8 @@ class JarvisPWA {
             let buffer = '';
             
             // Leere Antwort-Bubble anlegen, die während des Streams befüllt wird
-            this.addMessage('', 'jarvis');
-            const jarvisBubbles = document.querySelectorAll('.message-bubble.jarvis');
+            this.addMessage('', 'jarvis', { ephemeral: true });
+            const jarvisBubbles = document.querySelectorAll('.message-bubble.jarvis[data-ephemeral="true"]');
             const contentEl = jarvisBubbles[jarvisBubbles.length - 1]?.querySelector('.message-content p');
             
             while (true) {
@@ -1329,8 +1329,17 @@ class JarvisPWA {
             // Rohe tool_call-Blöcke aus der finalen Antwort entfernen
             const cleanedResponse = this.sanitizeResponse(jarvisResponse);
             
-            // Finale Antwort im UI sicherstellen
-            this.addMessage(cleanedResponse, 'jarvis');
+            // Temporäre Bubble in finale Bubble umwandeln
+            const jarvisBubblesFinal = document.querySelectorAll('.message-bubble.jarvis[data-ephemeral="true"]');
+            const finalBubble = jarvisBubblesFinal[jarvisBubblesFinal.length - 1];
+            if (finalBubble) {
+                finalBubble.removeAttribute('data-ephemeral');
+                finalBubble.querySelector('.message-content p').textContent = cleanedResponse;
+                this.logConversation(cleanedResponse, 'jarvis');
+            } else {
+                // Fallback falls Bubble nicht existiert
+                this.addMessage(cleanedResponse, 'jarvis');
+            }
             
             // Sprich Antwort erst jetzt aus, wenn der Stream komplett ist
             this.speak(cleanedResponse);
@@ -1346,6 +1355,11 @@ class JarvisPWA {
             console.error('API Fehler:', error);
             const errorMsg = 'Entschuldigung, Sir. Die Verbindung zum Hauptsystem ist unterbrochen.';
             this.addMessage(errorMsg, 'jarvis');
+            this.conversation.push({
+                user: message,
+                jarvis: errorMsg,
+                timestamp: new Date()
+            });
             this.speak(errorMsg);
         }
         
@@ -1362,14 +1376,24 @@ class JarvisPWA {
             .trim();
     }
 
-    addMessage(text, sender) {
+    addMessage(text, sender, { ephemeral = false } = {}) {
         const chatContainer = document.getElementById('chatContainer');
+        if (!chatContainer) return;
         
-        // Lösche vorherige Nachrichten, behalte nur die letzte
-        chatContainer.innerHTML = '';
+        let messageBubble;
+        if (ephemeral) {
+            // Ersetze vorhandene ephemeral Bubble desselben Senders
+            const existing = chatContainer.querySelector(`.message-bubble.${sender}[data-ephemeral="true"]`);
+            if (existing) {
+                messageBubble = existing;
+                messageBubble.querySelector('.message-content p').textContent = text;
+                return messageBubble;
+            }
+        }
         
-        const messageBubble = document.createElement('div');
+        messageBubble = document.createElement('div');
         messageBubble.className = `message-bubble ${sender}`;
+        if (ephemeral) messageBubble.setAttribute('data-ephemeral', 'true');
         
         const time = this.getTimeString();
         const avatar = sender === 'jarvis' ? 'J' : this.user.name.charAt(0);
@@ -1383,9 +1407,13 @@ class JarvisPWA {
         `;
         
         chatContainer.appendChild(messageBubble);
+        chatContainer.scrollTop = chatContainer.scrollHeight;
         
-        // Speichere im Konversationslog
-        this.logConversation(text, sender);
+        // Speichere im Konversationslog (nur echte Nachrichten, nicht temporäre Stream-Bubbles)
+        if (!ephemeral && text) {
+            this.logConversation(text, sender);
+        }
+        return messageBubble;
     }
     
     logConversation(text, sender) {

@@ -340,6 +340,30 @@ html, body {
 .phase-bar-sm { height: 5px; background: rgba(0, 212, 255, 0.1); border-radius: 3px; overflow: hidden; }
 .phase-bar-sm > div { height: 100%; width: 0%; background: var(--jarvis-blue); border-radius: 3px; transition: width 0.5s ease; }
 
+/* Toggle switch */
+.toggle { position: relative; display: inline-block; width: 44px; height: 24px; }
+.toggle input { opacity: 0; width: 0; height: 0; }
+.toggle-slider { position: absolute; cursor: pointer; inset: 0; background: rgba(0, 20, 40, 0.8); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 24px; transition: 0.3s; }
+.toggle-slider::before { content: ''; position: absolute; height: 16px; width: 16px; left: 3px; bottom: 3px; background: var(--text-secondary); border-radius: 50%; transition: 0.3s; }
+.toggle input:checked + .toggle-slider { background: rgba(0, 212, 255, 0.2); border-color: var(--jarvis-blue); }
+.toggle input:checked + .toggle-slider::before { transform: translateX(20px); background: var(--jarvis-blue); }
+
+/* Settings view */
+.settings-tile { height: 75%; top: 5%; }
+.settings-body { display: flex; flex-direction: column; gap: var(--space-md); overflow-y: auto; padding-right: var(--space-xs); }
+.settings-section { background: rgba(0, 10, 20, 0.5); border: 1px solid rgba(0, 212, 255, 0.15); border-radius: 8px; padding: var(--space-sm); }
+.section-title { font-family: var(--font-hud); font-size: 0.75rem; color: var(--jarvis-blue); letter-spacing: 0.1em; margin-bottom: var(--space-sm); }
+.settings-row { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); margin-bottom: var(--space-sm); }
+.settings-row:last-child { margin-bottom: 0; }
+.log-list { max-height: 220px; overflow-y: auto; display: flex; flex-direction: column; gap: 0.4rem; }
+.log-entry { font-size: 0.75rem; padding: 0.4rem; border-radius: 4px; background: rgba(0, 20, 40, 0.5); border-left: 2px solid var(--jarvis-blue); }
+.log-entry.user { border-left-color: var(--jarvis-green); }
+.log-entry.jarvis { border-left-color: var(--jarvis-orange); }
+.log-entry.interim { border-left-color: var(--jarvis-blue); opacity: 0.75; font-style: italic; }
+.log-time { font-family: var(--font-hud); font-size: 0.6rem; color: var(--text-secondary); margin-bottom: 0.15rem; }
+.log-sender { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--jarvis-blue); margin-right: 0.3rem; }
+.log-text { color: var(--text-primary); word-break: break-word; }
+
 /* ===========================
    RIGHT STATUS PANEL
    =========================== */

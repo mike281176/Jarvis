@@ -109,6 +109,7 @@ class AuthHandler(BaseHTTPRequestHandler):
 
         content_length = int(self.headers.get('Content-Length', 0))
         body = self.rfile.read(content_length).decode('utf-8')
+        print(f"[AUTH SERVICE] Path: {parsed.path}, Body: {body!r}")
         try:
             data = json.loads(body)
         except json.JSONDecodeError:
