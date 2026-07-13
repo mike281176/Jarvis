@@ -1065,12 +1065,17 @@ class JarvisPWA {
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         this.recognition = new SpeechRecognition();
         
-        this.recognition.continuous = false;
+        // continuous=true verhindert, dass Chrome nach kurzer Pause abbricht
+        this.recognition.continuous = true;
         this.recognition.interimResults = true;
         this.recognition.lang = this.config.language;
         
+        // Letztes Interim als Fallback merken
+        this._lastInterimTranscript = '';
+        
         this.recognition.onstart = () => {
             this.isListening = true;
+            this._lastInterimTranscript = '';
             this.updateVoiceStatus('HÖRE...', 'listening');
         };
         
@@ -1088,6 +1093,7 @@ class JarvisPWA {
             }
             
             if (interimTranscript) {
+                this._lastInterimTranscript = interimTranscript;
                 const statusEl = document.getElementById('voiceStatusCenter');
                 if (statusEl) statusEl.textContent = interimTranscript;
                 // Optional: Interim-Transkripte loggen
@@ -1097,19 +1103,31 @@ class JarvisPWA {
             }
             
             if (finalTranscript) {
+                this._lastInterimTranscript = '';
                 this.sendMessage(finalTranscript);
             }
         };
         
         this.recognition.onend = () => {
+            // Fallback: falls nur Interim-Resultate vorhanden waren, sende das letzte Interim
+            if (this._lastInterimTranscript && this._lastInterimTranscript.trim()) {
+                const fallback = this._lastInterimTranscript.trim();
+                this._lastInterimTranscript = '';
+                this.sendMessage(fallback);
+            }
             this.isListening = false;
             this.updateVoiceStatus('BEREIT', 'ready');
         };
         
         this.recognition.onerror = (event) => {
             console.error('Spracherkennungsfehler:', event.error);
-            this.isListening = false;
-            this.updateVoiceStatus('FEHLER - TIPPEN', 'error');
+            // Bei "no-speech" nicht als Fehler werten, sondern einfach bereit sein
+            if (event.error === 'no-speech') {
+                this.updateVoiceStatus('Bereit', 'ready');
+            } else {
+                this.isListening = false;
+                this.updateVoiceStatus('FEHLER - TIPPEN', 'error');
+            }
         };
     }
 
@@ -1281,7 +1299,9 @@ class JarvisPWA {
             });
             
             if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
+                const errorText = await response.text().catch(() => `HTTP ${response.status}`);
+                console.error('[JARVIS DEBUG] API error:', response.status, errorText);
+                throw new Error(`HTTP ${response.status}: ${errorText}`);
             }
             
             // Streaming-Verarbeitung: Text live anzeigen, Sprache erst am Ende
