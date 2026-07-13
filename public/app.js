@@ -1104,11 +1104,13 @@ class JarvisPWA {
             
             if (finalTranscript) {
                 this._lastInterimTranscript = '';
+                console.log('[JARVIS DEBUG] final transcript:', finalTranscript);
                 this.sendMessage(finalTranscript);
             }
         };
         
         this.recognition.onend = () => {
+            console.log('[JARVIS DEBUG] recognition.onend, last interim:', this._lastInterimTranscript);
             // Fallback: falls nur Interim-Resultate vorhanden waren, sende das letzte Interim
             if (this._lastInterimTranscript && this._lastInterimTranscript.trim()) {
                 const fallback = this._lastInterimTranscript.trim();
@@ -1238,8 +1240,19 @@ class JarvisPWA {
     // ==================== API KOMMUNIKATION ====================
 
     async sendMessage(message) {
-        // Zeige User-Nachricht
-        this.addMessage(message, 'user');
+        console.log('[JARVIS DEBUG] sendMessage called:', JSON.stringify({message, length: message ? message.length : 0}));
+        
+        if (!message || !message.trim()) {
+            console.warn('[JARVIS DEBUG] sendMessage ignored: empty message');
+            this.updateVoiceStatus('Bereit', 'ready');
+            return;
+        }
+        
+        const cleanMessage = message.trim();
+        
+        // Zeige User-Nachricht und logge sie
+        this.addMessage(cleanMessage, 'user');
+        this.logConversation(cleanMessage, 'user');
         
         // Aktiviere Lade-Zustand
         this.updateVoiceStatus('Verarbeite...', 'active');
@@ -1285,7 +1298,11 @@ class JarvisPWA {
                 headers['X-Jarvis-User-Id'] = this.user.id;
             }
             
-            const response = await fetch(`${this.apiBaseUrl}/api/jarvis/v1/chat/completions`, {
+            const url = `${this.apiBaseUrl}/api/jarvis/v1/chat/completions`;
+            console.log('[JARVIS DEBUG] API URL:', url);
+            console.log('[JARVIS DEBUG] API headers:', JSON.stringify({...headers, Authorization: '(hidden)'}));
+            
+            const response = await fetch(url, {
                 method: 'POST',
                 headers: headers,
                 body: JSON.stringify({
@@ -1293,7 +1310,7 @@ class JarvisPWA {
                     stream: true,
                     messages: [
                         { role: 'system', content: systemPrompt },
-                        { role: 'user', content: message }
+                        { role: 'user', content: cleanMessage }
                     ]
                 })
             });
@@ -1367,23 +1384,24 @@ class JarvisPWA {
             
             // Speichere in Konversation
             this.conversation.push({
-                user: message,
+                user: cleanMessage,
                 jarvis: cleanedResponse,
                 timestamp: new Date()
             });
             
         } catch (error) {
-            console.error('API Fehler:', error);
+            console.error('[JARVIS DEBUG] sendMessage catch:', error);
             const errorMsg = 'Entschuldigung, Sir. Die Verbindung zum Hauptsystem ist unterbrochen.';
             // Immer loggen, auch wenn UI nicht bereit
             this.logConversation(errorMsg, 'jarvis');
+            this.logConversation(`ERROR: ${error.message || error}`, 'jarvis');
             try {
                 this.addMessage(errorMsg, 'jarvis');
             } catch (uiError) {
-                console.error('UI Fehler beim Anzeigen der Fehlermeldung:', uiError);
+                console.error('[JARVIS DEBUG] UI error showing error message:', uiError);
             }
             this.conversation.push({
-                user: message,
+                user: cleanMessage,
                 jarvis: errorMsg,
                 timestamp: new Date()
             });
