@@ -377,6 +377,55 @@ class JarvisPWA {
             closeChat.addEventListener('click', () => chatOverlay.style.display = 'none');
         }
         
+        // Settings / Auswertung
+        const settingsMenuItems = document.querySelectorAll('.menu-item[data-view="einstellungen"], #settingsHeaderBtn');
+        settingsMenuItems.forEach(el => {
+            el.addEventListener('click', () => this.switchView('einstellungen'));
+        });
+        
+        const logInterimToggle = document.getElementById('logInterimToggle');
+        if (logInterimToggle) {
+            logInterimToggle.checked = this.config.logInterim || false;
+            logInterimToggle.addEventListener('change', (e) => {
+                this.config.logInterim = e.target.checked;
+                this.saveConfig();
+                this.showNotification(e.target.checked ? 'Interim-Logs aktiviert' : 'Interim-Logs deaktiviert', 'success');
+            });
+        }
+
+        const autoSpeakToggle = document.getElementById('autoSpeakToggle');
+        if (autoSpeakToggle) {
+            autoSpeakToggle.checked = this.config.autoSpeak !== false;
+            autoSpeakToggle.addEventListener('change', (e) => {
+                this.config.autoSpeak = e.target.checked;
+                this.saveConfig();
+                this.showNotification(e.target.checked ? 'Sprachausgabe aktiviert' : 'Sprachausgabe deaktiviert', 'success');
+            });
+        }
+
+        const ttsTestBtn = document.getElementById('ttsTestBtn');
+        if (ttsTestBtn) {
+            ttsTestBtn.addEventListener('click', () => {
+                this.speak('J.A.R.V.I.S. Sprachausgabe funktioniert, Sir.');
+            });
+        }
+        
+        const exportLogBtn = document.getElementById('exportLogBtn');
+        if (exportLogBtn) {
+            exportLogBtn.addEventListener('click', () => this.exportConversationLog());
+        }
+        
+        const clearLogBtn = document.getElementById('clearLogBtn');
+        if (clearLogBtn) {
+            clearLogBtn.addEventListener('click', () => {
+                if (confirm('Konversationsverlauf wirklich löschen?')) {
+                    this.clearConversationLog();
+                    this.renderConversationLog();
+                    this.showNotification('Log gelöscht', 'success');
+                }
+            });
+        }
+        
         // Dashboard refresh
         const refreshBtn = document.getElementById('dashboardRefresh');
         if (refreshBtn) {
@@ -411,9 +460,11 @@ class JarvisPWA {
         const homeClimateMinus = document.getElementById('homeClimateMinus');
         const homeClimatePlus = document.getElementById('homeClimatePlus');
         const homeClimatePower = document.getElementById('homeClimatePower');
+        const homeClimateModeBtn = document.getElementById('homeClimateModeBtn');
         if (homeClimateMinus) homeClimateMinus.addEventListener('click', () => this.adjustClimate(-1));
         if (homeClimatePlus) homeClimatePlus.addEventListener('click', () => this.adjustClimate(+1));
         if (homeClimatePower) homeClimatePower.addEventListener('click', () => this.toggleClimatePower());
+        if (homeClimateModeBtn) homeClimateModeBtn.addEventListener('click', () => this.toggleClimateMode());
         
         // Logout
         document.getElementById('logoutBtn').addEventListener('click', () => {
@@ -439,6 +490,10 @@ class JarvisPWA {
             this.startCameraFeeds();
         } else {
             this.stopCameraFeeds();
+        }
+        // Render conversation log when settings view shown
+        if (viewName === 'einstellungen') {
+            this.renderConversationLog();
         }
     }
 
@@ -511,7 +566,7 @@ class JarvisPWA {
                 'sensor.power_import_grid', 'sensor.power_grid_total_raw',
                 'sensor.jarvis_gesamt_verbrauch', 'sensor.shelly_3em_total_power',
                 // Climate
-                'climate.split_klimaanlage', 'switch.klima_schlafzimmer',
+                'climate.split_klimaanlage', 'climate.schlafzimmer', 'switch.klima_schlafzimmer',
                 // Environment temps
                 'sensor.garten', 'sensor.pool_temperatur',
                 'sensor.wohnzimmer_echo_temperatur', 'sensor.arbeitszimmer_temperatur',
@@ -640,40 +695,116 @@ class JarvisPWA {
     }
 
     updateClimateWidget(states) {
+        // Wohnzimmer-Klima (primär) und Schlafzimmer-Klima
         const climate = states.find(s => s.entity_id === 'climate.split_klimaanlage');
-        const tempEl = document.getElementById('homeClimateTemp');
+        const bedroomClimate = states.find(s => s.entity_id === 'climate.schlafzimmer');
+        const bedroomSwitch = states.find(s => s.entity_id === 'switch.klima_schlafzimmer');
+
+        const targetEl = document.getElementById('homeClimateTarget');
+        const currentEl = document.getElementById('homeClimateCurrent');
         const modeEl = document.getElementById('homeClimateMode');
+        const modeBtn = document.getElementById('homeClimateModeBtn');
         const powerBtn = document.getElementById('homeClimatePower');
 
-        if (!climate) {
-            // Fallback auf Schalter im Schlafzimmer, falls Klima-Entität fehlt
-            const secondary = states.find(s => s.entity_id === 'switch.klima_schlafzimmer');
-            const isOn = secondary && secondary.state === 'on';
-            if (tempEl) tempEl.textContent = '--°C';
-            if (modeEl) modeEl.textContent = isOn ? 'Kühlen' : 'Aus';
-            if (powerBtn) powerBtn.classList.toggle('active', isOn);
+        // Standard: Wohnzimmer; Schlafzimmer nur als Fallback/Switch
+        this.currentClimateEntity = climate ? 'climate.split_klimaanlage' : (bedroomClimate ? 'climate.schlafzimmer' : (bedroomSwitch ? 'switch.klima_schlafzimmer' : null));
+        this.currentClimateMode = climate ? climate.state : (bedroomClimate ? bedroomClimate.state : (bedroomSwitch?.state === 'on' ? 'cool' : 'off'));
+        this.currentClimateTarget = climate ? climate.attributes?.temperature : (bedroomClimate ? bedroomClimate.attributes?.temperature : null);
+
+        const labels = { off: 'Aus', cool: 'Kühlen', heat: 'Heizen', dry: 'Trocknen', fan_only: 'Lüfter' };
+        const icons = { off: '⏻', cool: '❄', heat: '♨', dry: '💧', fan_only: '✦' };
+
+        if (climate) {
+            const currentTemp = climate.attributes?.current_temperature;
+            const targetTemp = climate.attributes?.temperature;
+            const mode = climate.state;
+
+            if (targetEl) {
+                targetEl.textContent = targetTemp != null && !isNaN(parseFloat(targetTemp))
+                    ? `${parseFloat(targetTemp).toFixed(1)}°C`
+                    : '--°C';
+            }
+            if (currentEl) {
+                currentEl.textContent = currentTemp != null && !isNaN(parseFloat(currentTemp))
+                    ? `Ist: ${parseFloat(currentTemp).toFixed(1)}°C`
+                    : 'Ist: --°C';
+            }
+            if (modeEl) modeEl.textContent = labels[mode] || mode;
+            if (modeBtn) modeBtn.textContent = icons[mode] || icons.cool;
+            if (powerBtn) powerBtn.classList.toggle('active', mode !== 'off');
+            if (modeBtn) modeBtn.classList.toggle('heat', mode === 'heat');
             return;
         }
 
-        const currentTemp = climate.attributes?.current_temperature;
-        const targetTemp = climate.attributes?.temperature;
-        const mode = climate.state;
+        if (bedroomClimate) {
+            const currentTemp = bedroomClimate.attributes?.current_temperature;
+            const targetTemp = bedroomClimate.attributes?.temperature;
+            const mode = bedroomClimate.state;
 
-        if (tempEl) {
-            let display = '--°C';
-            if (currentTemp != null && !isNaN(parseFloat(currentTemp))) {
-                display = `${parseFloat(currentTemp).toFixed(1)}°C`;
-            } else if (targetTemp != null && !isNaN(parseFloat(targetTemp))) {
-                display = `${parseFloat(targetTemp).toFixed(1)}°C`;
+            if (targetEl) {
+                targetEl.textContent = targetTemp != null && !isNaN(parseFloat(targetTemp))
+                    ? `${parseFloat(targetTemp).toFixed(1)}°C`
+                    : '--°C';
             }
-            tempEl.textContent = display;
+            if (currentEl) {
+                currentEl.textContent = currentTemp != null && !isNaN(parseFloat(currentTemp))
+                    ? `Ist: ${parseFloat(currentTemp).toFixed(1)}°C`
+                    : 'Ist: --°C';
+            }
+            if (modeEl) modeEl.textContent = labels[mode] || mode;
+            if (modeBtn) modeBtn.textContent = icons[mode] || icons.cool;
+            if (powerBtn) powerBtn.classList.toggle('active', mode !== 'off');
+            if (modeBtn) modeBtn.classList.toggle('heat', mode === 'heat');
+            return;
         }
-        if (modeEl) {
-            const labels = { off: 'Aus', cool: 'Kühlen', heat: 'Heizen', dry: 'Trocknen', fan_only: 'Lüfter' };
-            modeEl.textContent = labels[mode] || mode;
+
+        // Fallback alter Schlafzimmer-Schalter
+        const isOn = bedroomSwitch && bedroomSwitch.state === 'on';
+        if (targetEl) targetEl.textContent = isOn ? 'An' : 'Aus';
+        if (currentEl) currentEl.textContent = 'Schlafzimmer';
+        if (modeEl) modeEl.textContent = isOn ? 'Kühlen' : 'Aus';
+        if (modeBtn) modeBtn.textContent = isOn ? '❄' : '⏻';
+        if (powerBtn) powerBtn.classList.toggle('active', isOn);
+    }
+
+    adjustClimate(delta) {
+        if (!this.currentClimateEntity) {
+            this.showNotification('Keine Klima-Entität verfügbar', 'error');
+            return;
         }
-        if (powerBtn) {
-            powerBtn.classList.toggle('active', mode !== 'off');
+        if (this.currentClimateEntity.startsWith('climate.')) {
+            const temp = this.currentClimateTarget != null ? parseFloat(this.currentClimateTarget) : 23;
+            const newTemp = Math.max(16, Math.min(32, temp + delta));
+            this.callService(this.currentClimateEntity, 'climate.set_temperature', { temperature: newTemp });
+        } else if (this.currentClimateEntity.startsWith('switch.')) {
+            this.callService(this.currentClimateEntity, 'switch.turn_on');
+        }
+    }
+
+    toggleClimatePower() {
+        if (!this.currentClimateEntity) {
+            this.showNotification('Keine Klima-Entität verfügbar', 'error');
+            return;
+        }
+        if (this.currentClimateEntity.startsWith('climate.')) {
+            const nextMode = this.currentClimateMode === 'off' ? 'cool' : 'off';
+            this.callService(this.currentClimateEntity, 'climate.set_hvac_mode', { hvac_mode: nextMode });
+        } else if (this.currentClimateEntity.startsWith('switch.')) {
+            const service = this.currentClimateMode === 'off' ? 'switch.turn_on' : 'switch.turn_off';
+            this.callService(this.currentClimateEntity, service);
+        }
+    }
+
+    toggleClimateMode() {
+        if (!this.currentClimateEntity) {
+            this.showNotification('Keine Klima-Entität verfügbar', 'error');
+            return;
+        }
+        if (this.currentClimateEntity.startsWith('climate.')) {
+            const nextMode = this.currentClimateMode === 'heat' ? 'cool' : 'heat';
+            this.callService(this.currentClimateEntity, 'climate.set_hvac_mode', { hvac_mode: nextMode });
+        } else if (this.currentClimateEntity.startsWith('switch.')) {
+            this.toggleClimatePower();
         }
     }
 
@@ -771,7 +902,7 @@ class JarvisPWA {
                 'sensor.power_import_grid', 'sensor.power_grid_total_raw',
                 'sensor.jarvis_gesamt_verbrauch', 'sensor.shelly_3em_total_power',
                 // Climate
-                'climate.split_klimaanlage', 'switch.klima_schlafzimmer',
+                'climate.split_klimaanlage', 'climate.schlafzimmer', 'switch.klima_schlafzimmer',
                 // Environment temps
                 'sensor.garten', 'sensor.pool_temperatur',
                 'sensor.wohnzimmer_echo_temperatur', 'sensor.arbeitszimmer_temperatur',
@@ -802,19 +933,6 @@ class JarvisPWA {
             console.warn('Dashboard-Daten konnten nicht geladen werden:', error);
             this.addAlert('HA-Verbindung unterbrochen', 'error');
         }
-    }
-
-    adjustClimate(delta) {
-        const tempEl = document.getElementById('homeClimateTemp');
-        const current = parseFloat(tempEl?.textContent) || 23;
-        const newTemp = Math.max(16, Math.min(30, current + delta));
-        this.callService('climate.split_klimaanlage', 'climate.set_temperature', { temperature: newTemp });
-    }
-
-    toggleClimatePower() {
-        const modeEl = document.getElementById('homeClimateMode');
-        const isOff = modeEl?.textContent === 'Aus';
-        this.callService('climate.split_klimaanlage', 'climate.set_hvac_mode', { hvac_mode: isOff ? 'cool' : 'off' });
     }
 
     async handleCommandButton(btn) {
@@ -947,12 +1065,17 @@ class JarvisPWA {
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         this.recognition = new SpeechRecognition();
         
-        this.recognition.continuous = false;
+        // continuous=true verhindert, dass Chrome nach kurzer Pause abbricht
+        this.recognition.continuous = true;
         this.recognition.interimResults = true;
         this.recognition.lang = this.config.language;
         
+        // Letztes Interim als Fallback merken
+        this._lastInterimTranscript = '';
+        
         this.recognition.onstart = () => {
             this.isListening = true;
+            this._lastInterimTranscript = '';
             this.updateVoiceStatus('HÖRE...', 'listening');
         };
         
@@ -970,24 +1093,43 @@ class JarvisPWA {
             }
             
             if (interimTranscript) {
+                this._lastInterimTranscript = interimTranscript;
                 const statusEl = document.getElementById('voiceStatusCenter');
                 if (statusEl) statusEl.textContent = interimTranscript;
+                // Optional: Interim-Transkripte loggen
+                if (this.config.logInterim) {
+                    this.logConversation(interimTranscript, 'interim');
+                }
             }
             
             if (finalTranscript) {
+                this._lastInterimTranscript = '';
+                this.logDebug('final transcript', {text: finalTranscript});
                 this.sendMessage(finalTranscript);
             }
         };
         
         this.recognition.onend = () => {
+            this.logDebug('recognition.onend', {lastInterim: this._lastInterimTranscript});
+            // Fallback: falls nur Interim-Resultate vorhanden waren, sende das letzte Interim
+            if (this._lastInterimTranscript && this._lastInterimTranscript.trim()) {
+                const fallback = this._lastInterimTranscript.trim();
+                this._lastInterimTranscript = '';
+                this.sendMessage(fallback);
+            }
             this.isListening = false;
             this.updateVoiceStatus('BEREIT', 'ready');
         };
         
         this.recognition.onerror = (event) => {
-            console.error('Spracherkennungsfehler:', event.error);
-            this.isListening = false;
-            this.updateVoiceStatus('FEHLER - TIPPEN', 'error');
+            this.logDebug('recognition.onerror', {error: event.error});
+            // Bei "no-speech" nicht als Fehler werten, sondern einfach bereit sein
+            if (event.error === 'no-speech') {
+                this.updateVoiceStatus('Bereit', 'ready');
+            } else {
+                this.isListening = false;
+                this.updateVoiceStatus('FEHLER - TIPPEN', 'error');
+            }
         };
     }
 
@@ -1050,84 +1192,88 @@ class JarvisPWA {
     }
 
     speak(text) {
-        if (!this.config.autoSpeak || !this.synthesis) return;
-        
-        // Stoppe vorherige Sprache
-        this.synthesis.cancel();
-        
-        // Ersetze "J.A.R.V.I.S." durch "Jarvis" für bessere Aussprache
-        // Und füge zufällige Anrede-Abwechslung ein (Sir/Master)
-        let speakableText = text.replace(/J\.A\.R\.V\.I\.S\./g, 'Jarvis');
-        
-        // Ersetze "Sir" durch zufällige Anrede wenn nicht explizit gesetzt
-        if (Math.random() > 0.7 && !speakableText.includes('Master')) {
-            speakableText = speakableText.replace(/, Sir\./g, ', Master.');
-            speakableText = speakableText.replace(/, Sir,/g, ', Master,');
+        if (!this.synthesis) return;
+        if (this.config.autoSpeak === false) return;
+
+        // Chrome/Android: AudioContext/SpeechSynthesis muss durch User-Gesture initialisiert sein
+        const unlockAudio = () => {
+            this.synthesis.cancel();
+            const unlock = new SpeechSynthesisUtterance(' ');
+            unlock.volume = 0;
+            this.synthesis.speak(unlock);
+        };
+        if (!this.audioUnlocked) {
+            try { unlockAudio(); } catch (e) {}
+            this.audioUnlocked = true;
         }
-        
+
+        this.synthesis.cancel();
+
+        let speakableText = text.replace(/J\.A\.R\.V\.I\.S\./g, 'Jarvis');
+        // Keine zufällige Ersetzung von "Sir" zu "Master" — Anrede wird ausschließlich über System-Prompt gesteuert.
+
         const utterance = new SpeechSynthesisUtterance(speakableText);
         utterance.lang = 'de-DE';
         utterance.rate = 1.0;
         utterance.pitch = 0.9;
-        
-        // Versuche einen guten deutschen Voice zu finden
+
         if (this.voices && this.voices.length > 0) {
-            const germanVoice = this.voices.find(v => 
+            const germanVoice = this.voices.find(v =>
                 v.lang.startsWith('de') && v.name.includes('Google')
             ) || this.voices.find(v => v.lang.startsWith('de'));
-            
-            if (germanVoice) {
-                utterance.voice = germanVoice;
-            }
+            if (germanVoice) utterance.voice = germanVoice;
         }
-        
-        // Visuelle Animation während des Sprechens
+
         utterance.onstart = () => {
             this.updateVoiceStatus('SPRECHVORGANG...', 'speaking');
         };
-        
         utterance.onend = () => {
             this.updateVoiceStatus('Bereit', 'ready');
         };
-        
+        utterance.onerror = (e) => {
+            console.error('[JARVIS TTS]', e.error);
+        };
+
         this.synthesis.speak(utterance);
     }
 
     // ==================== API KOMMUNIKATION ====================
 
     async sendMessage(message) {
-        // Zeige User-Nachricht
-        this.addMessage(message, 'user');
+        this.logDebug('sendMessage called', {message, length: message ? message.length : 0});
+        
+        if (!message || !message.trim()) {
+            this.logDebug('sendMessage ignored: empty message');
+            this.updateVoiceStatus('Bereit', 'ready');
+            return;
+        }
+        
+        const cleanMessage = message.trim();
+        
+        // Zeige User-Nachricht und logge sie
+        this.addMessage(cleanMessage, 'user');
+        this.logConversation(cleanMessage, 'user');
         
         // Aktiviere Lade-Zustand
         this.updateVoiceStatus('Verarbeite...', 'active');
         
         try {
             const location = document.getElementById('currentLocation')?.textContent || 'Wohnzimmer';
-            const salutation = Math.random() > 0.5 ? 'Sir' : 'Master';
+            const salutation = 'Sir';
             
             // System-Prompt für J.A.R.V.I.S. Persönlichkeit
-            const systemPrompt = `Du bist J.A.R.V.I.S. (Just A Rather Very Intelligent System), der persönliche KI-Assistent und Butler von Mike Schiller.\n` +
-                `Stil: britisches Understatement, trockener, subtiler Humor, professionell, loyal, analytisch, elegant und auf den Punkt.\n` +
-                `Sprache: Hochdeutsch. Anrede: ${salutation}.\n` +
-                `Sprechweise:\n` +
-                `- Beginne gelegentlich mit einer kurzen Bestätigung: \"Sehr wohl, Sir.\", \"Natürlich, Sir.\", \"Verstanden, Master.\", \"Wie gewünscht, Sir.\"\n` +
-                `- Verwende subtile Floskeln wie \"eine Momentaufnahme der Lage\", \"mit aller gebotenen Vorsicht\", \"das System ist stabil, wenn auch nicht begeistert\".\n` +
-                `- Bleibe sachlich; Sarkasmus nur warm und respektvoll.\n` +
-                `- Vermeide typische KI-Standardfloskeln wie \"Wie kann ich Ihnen helfen?\", \"Hier ist die Information\", \"Ich hoffe, das hilft\".\n` +
-                `- Füge bei passenden Gelegenheiten einen trockenen Kommentar am Ende hinzu.\n` +
-                `Du hast Zugriff auf Smart Home (Home Assistant), E-Mail, Web-Suche, Termine und Server.\n` +
-                `Nutze diese Tools, wenn der Nutzer nach Status, Daten oder Aktionen fragt.\n` +
-                `Bevorzuge kurze, prägnante Antworten. Schachtelsätze vermeiden.\n` +
-                `SMART-HOME-REGELN (Klimaanlage):\n` +
-                `- Wenn der Nutzer \"Klima an\" oder ähnlich sagt, prüfe ZUERST den aktuellen Zustand der Klimaanlage im aktuellen Raum.\n` +
-                `- Stelle eine Rückfrage in diesem Format: \"Klima ist aus. Soll ich auf 23 Grad einschalten, oder wünschen Sie eine andere Temperatur?\"\n` +
-                `- Schalte die Klimaanlage NIEMALS ohne ausdrückliche Bestätigung des Nutzers ein.\n` +
-                `- Im Wohnzimmer ist die relevante Entität climate.split_klimaanlage; im Bad gibt es keine Klimaanlage.\n` +
-                `Der aktuelle Nutzer ist ${this.user.name} (Rolle: ${this.user.role}).\n` +
-                `Der Nutzer befindet sich aktuell im Raum: ${location}.\n` +
-                `Beantworte Uhrzeit- und Datumsfragen mit der aktuellen Systemzeit des Servers, falls bekannt; sonst mit allgemeinen Formulierungen.\n` +
-                `WICHTIG: Wenn du intern ein Tool aufrufst, zeige dem Nutzer NIE den rohen tool_call-Block. Gib nur die für den Menschen lesbare Antwort aus.`;
+            const systemPrompt = `Du bist J.A.R.V.I.S., der persönliche KI-Assistent und Butler von Mike Schiller.\n` +
+                `Stil: britisches Understatement, trockener Humor, professionell, loyal, analytisch, elegant. Sprache: Hochdeutsch. Anrede: ${salutation}.\n` +
+                `\n` +
+                `REGELN:\n` +
+                `- Antworte kurz, prägnant, ohne typische KI-Floskeln.\n` +
+                `- \"Master Mike\" nur bei ernsten Alarmen/Gefahren (Einbruch, Feuer, Wasser, Stromausfall, schwerer Fehler).\n` +
+                `- Du hast Zugriff auf Smart Home, E-Mail, Web-Suche, Termine und Server.\n` +
+                `- Beantworte Uhrzeit- und Datumsfragen direkt mit einer konkreten Angabe. Vermeide Sätze wie \"Ich kann die exakte Zeit nicht nennen\".\n` +
+                `- Klimaanlage \"an\" immer mit Rückfrage; schalte niemals ohne Bestätigung ein.\n` +
+                `- Zeige niemals rohe tool_call-Blöcke, nur menschenlesbare Antworten.\n` +
+                `\n` +
+                `Nutzer: ${this.user.name}, Rolle: ${this.user.role}. Raum: ${location}.`;
 
             const headers = {
                 'Content-Type': 'application/json',
@@ -1139,21 +1285,27 @@ class JarvisPWA {
                 headers['X-Jarvis-User-Id'] = this.user.id;
             }
             
-            const response = await fetch(`${this.apiBaseUrl}/api/jarvis/v1/chat/completions`, {
+            const url = `${this.apiBaseUrl}/api/jarvis/v1/chat/completions`;
+            this.logDebug('API request', {url, apiBaseUrl: this.apiBaseUrl, hasAuthToken: !!this.config.authToken, userId: this.user?.id});
+            
+            const response = await fetch(url, {
                 method: 'POST',
                 headers: headers,
                 body: JSON.stringify({
                     model: 'hermes-agent',
                     stream: true,
+                    max_tokens: 120,
                     messages: [
                         { role: 'system', content: systemPrompt },
-                        { role: 'user', content: message }
+                        { role: 'user', content: cleanMessage }
                     ]
                 })
             });
             
             if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
+                const errorText = await response.text().catch(() => `HTTP ${response.status}`);
+                this.logDebug('API error response', {status: response.status, body: errorText});
+                throw new Error(`HTTP ${response.status}: ${errorText}`);
             }
             
             // Streaming-Verarbeitung: Text live anzeigen, Sprache erst am Ende
@@ -1163,8 +1315,8 @@ class JarvisPWA {
             let buffer = '';
             
             // Leere Antwort-Bubble anlegen, die während des Streams befüllt wird
-            this.addMessage('', 'jarvis');
-            const jarvisBubbles = document.querySelectorAll('.message-bubble.jarvis');
+            this.addMessage('', 'jarvis', { ephemeral: true });
+            const jarvisBubbles = document.querySelectorAll('.message-bubble.jarvis[data-ephemeral="true"]');
             const contentEl = jarvisBubbles[jarvisBubbles.length - 1]?.querySelector('.message-content p');
             
             while (true) {
@@ -1202,23 +1354,44 @@ class JarvisPWA {
             // Rohe tool_call-Blöcke aus der finalen Antwort entfernen
             const cleanedResponse = this.sanitizeResponse(jarvisResponse);
             
-            // Finale Antwort im UI sicherstellen
-            this.addMessage(cleanedResponse, 'jarvis');
+            // Temporäre Bubble in finale Bubble umwandeln
+            const jarvisBubblesFinal = document.querySelectorAll('.message-bubble.jarvis[data-ephemeral="true"]');
+            const finalBubble = jarvisBubblesFinal[jarvisBubblesFinal.length - 1];
+            if (finalBubble) {
+                finalBubble.removeAttribute('data-ephemeral');
+                finalBubble.querySelector('.message-content p').textContent = cleanedResponse;
+                this.logConversation(cleanedResponse, 'jarvis');
+            } else {
+                // Fallback falls Bubble nicht existiert
+                this.addMessage(cleanedResponse, 'jarvis');
+            }
             
             // Sprich Antwort erst jetzt aus, wenn der Stream komplett ist
             this.speak(cleanedResponse);
             
             // Speichere in Konversation
             this.conversation.push({
-                user: message,
+                user: cleanMessage,
                 jarvis: cleanedResponse,
                 timestamp: new Date()
             });
             
         } catch (error) {
-            console.error('API Fehler:', error);
+            this.logDebug('sendMessage catch error', {message: error.message, stack: error.stack});
             const errorMsg = 'Entschuldigung, Sir. Die Verbindung zum Hauptsystem ist unterbrochen.';
-            this.addMessage(errorMsg, 'jarvis');
+            // Immer loggen, auch wenn UI nicht bereit
+            this.logConversation(errorMsg, 'jarvis');
+            this.logConversation(`ERROR: ${error.message || error}`, 'jarvis');
+            try {
+                this.addMessage(errorMsg, 'jarvis');
+            } catch (uiError) {
+                this.logDebug('UI error showing error message', {message: uiError.message});
+            }
+            this.conversation.push({
+                user: cleanMessage,
+                jarvis: errorMsg,
+                timestamp: new Date()
+            });
             this.speak(errorMsg);
         }
         
@@ -1235,14 +1408,24 @@ class JarvisPWA {
             .trim();
     }
 
-    addMessage(text, sender) {
+    addMessage(text, sender, { ephemeral = false } = {}) {
         const chatContainer = document.getElementById('chatContainer');
+        if (!chatContainer) return;
         
-        // Lösche vorherige Nachrichten, behalte nur die letzte
-        chatContainer.innerHTML = '';
+        let messageBubble;
+        if (ephemeral) {
+            // Ersetze vorhandene ephemeral Bubble desselben Senders
+            const existing = chatContainer.querySelector(`.message-bubble.${sender}[data-ephemeral="true"]`);
+            if (existing) {
+                messageBubble = existing;
+                messageBubble.querySelector('.message-content p').textContent = text;
+                return messageBubble;
+            }
+        }
         
-        const messageBubble = document.createElement('div');
+        messageBubble = document.createElement('div');
         messageBubble.className = `message-bubble ${sender}`;
+        if (ephemeral) messageBubble.setAttribute('data-ephemeral', 'true');
         
         const time = this.getTimeString();
         const avatar = sender === 'jarvis' ? 'J' : this.user.name.charAt(0);
@@ -1256,9 +1439,13 @@ class JarvisPWA {
         `;
         
         chatContainer.appendChild(messageBubble);
+        chatContainer.scrollTop = chatContainer.scrollHeight;
         
-        // Speichere im Konversationslog
-        this.logConversation(text, sender);
+        // Speichere im Konversationslog (nur echte Nachrichten, nicht temporäre Stream-Bubbles)
+        if (!ephemeral && text) {
+            this.logConversation(text, sender);
+        }
+        return messageBubble;
     }
     
     logConversation(text, sender) {
@@ -1281,12 +1468,71 @@ class JarvisPWA {
         localStorage.setItem('jarvis_conversation_log', JSON.stringify(conversationLog));
     }
     
+    logDebug(label, data = null) {
+        const entry = data ? `${label}: ${JSON.stringify(data)}` : label;
+        console.log(`[JARVIS DEBUG] ${entry}`);
+        this.logConversation(entry, 'debug');
+    }
+    
     getConversationLog() {
         return JSON.parse(localStorage.getItem('jarvis_conversation_log') || '[]');
     }
     
     clearConversationLog() {
         localStorage.removeItem('jarvis_conversation_log');
+    }
+
+    renderConversationLog() {
+        const list = document.getElementById('conversationLogList');
+        const countEl = document.getElementById('logCount');
+        if (!list || !countEl) return;
+        
+        const log = this.getConversationLog().slice(-50).reverse();
+        countEl.textContent = log.length;
+        
+        if (log.length === 0) {
+            list.innerHTML = '<div class="placeholder-text">Keine Einträge vorhanden.</div>';
+            return;
+        }
+        
+        list.innerHTML = '';
+        log.forEach(entry => {
+            const item = document.createElement('div');
+            item.className = `log-entry ${entry.sender}`;
+            const time = new Date(entry.timestamp).toLocaleTimeString('de-DE', {
+                hour: '2-digit', minute: '2-digit', second: '2-digit'
+            });
+            const senderLabel = {
+                user: 'Mike',
+                jarvis: 'J.A.R.V.I.S.',
+                interim: 'Spracheingabe',
+                debug: 'DEBUG'
+            }[entry.sender] || entry.sender;
+            item.innerHTML = `
+                <div class="log-time">${time}</div>
+                <span class="log-sender">${senderLabel}</span>
+                <span class="log-text">${this.escapeHtml(entry.text)}</span>
+            `;
+            list.appendChild(item);
+        });
+    }
+    
+    exportConversationLog() {
+        const log = this.getConversationLog();
+        if (log.length === 0) {
+            this.showNotification('Keine Logs zum Exportieren', 'error');
+            return;
+        }
+        const blob = new Blob([JSON.stringify(log, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `jarvis-log-${new Date().toISOString().slice(0, 10)}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        this.showNotification('Log exportiert', 'success');
     }
 
     // ==================== HILFSFUNKTIONEN ====================
@@ -1482,37 +1728,46 @@ class JarvisPWA {
     // ==================== SERVICE WORKER ====================
 
     registerServiceWorker() {
-        if ('serviceWorker' in navigator) {
-            // Zuerst alle alten Service Worker deregistrieren (Clean-Slate)
-            navigator.serviceWorker.getRegistrations().then(regs => {
-                const unregisterPromises = regs.map(reg => reg.unregister());
-                return Promise.all(unregisterPromises);
-            }).then(() => {
-                const scope = window.location.pathname;
-                return navigator.serviceWorker.register('/sw.js', { scope, updateViaCache: 'none' });
-            }).then(reg => {
-                console.log('Service Worker registriert');
-                
-                reg.addEventListener('updatefound', () => {
-                    const newWorker = reg.installing;
-                    if (!newWorker) return;
-                    newWorker.addEventListener('statechange', () => {
-                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                            newWorker.postMessage({ type: 'SKIP_WAITING' });
-                        }
-                    });
+        if (!('serviceWorker' in navigator)) return;
+
+        const scope = window.location.pathname;
+
+        // Nur alte Registrations außerhalb des aktuellen Scopes entfernen
+        navigator.serviceWorker.getRegistrations().then(regs => {
+            return Promise.all(regs.map(reg => {
+                const regScope = reg.scope || '';
+                // Wenn der Scope nicht passt oder ein anderer Pfad aktiv ist, aufräumen
+                const baseScope = new URL(regScope).pathname;
+                if (baseScope !== scope) {
+                    return reg.unregister().catch(() => false);
+                }
+                return Promise.resolve(true);
+            }));
+        }).then(() => {
+            return navigator.serviceWorker.register('/sw.js', { scope, updateViaCache: 'none' });
+        }).then(reg => {
+            console.log('[JARVIS] Service Worker registriert');
+
+            reg.addEventListener('updatefound', () => {
+                const newWorker = reg.installing;
+                if (!newWorker) return;
+                newWorker.addEventListener('statechange', () => {
+                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        newWorker.postMessage({ type: 'SKIP_WAITING' });
+                    }
                 });
-                
-                reg.update().catch(() => {});
-            }).catch(err => console.log('Service Worker Registrierung fehlgeschlagen', err));
-            
-            let refreshing = false;
-            navigator.serviceWorker.addEventListener('controllerchange', () => {
-                if (refreshing) return;
-                refreshing = true;
-                window.location.reload();
             });
-        }
+
+            // Regelmäßig auf Updates prüfen (alle 5 Minuten)
+            setInterval(() => reg.update().catch(() => {}), 300000);
+        }).catch(err => console.log('[JARVIS] Service Worker Registrierung fehlgeschlagen', err));
+
+        let refreshing = false;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+            if (refreshing) return;
+            refreshing = true;
+            window.location.reload();
+        });
     }
 }
 

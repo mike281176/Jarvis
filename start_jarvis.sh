@@ -19,7 +19,7 @@ PROJECT_DIR="/home/mike/projects/jarvis"
 NGROK_CONFIG="/home/mike/.config/ngrok/ngrok.yml"
 API_SCRIPT="${PROJECT_DIR}/jarvis_api_server.py"
 NGROK_TUNNEL_NAME="jarvis-api-direct"
-API_PORT=8124
+API_PORT=8645
 NGROK_DOMAIN="nonconvergent-francene-toxically.ngrok-free.dev"
 
 # Logdateien (rotiert täglich)

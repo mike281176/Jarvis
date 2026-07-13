@@ -67,6 +67,10 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             forward_headers[key] = value
         forward_headers['Host'] = f"{backend[0]}:{backend[1]}"
 
+        print(f"[AUTH PROXY] {method} {target_path}")
+        print(f"[AUTH PROXY] Headers: {forward_headers}")
+        print(f"[AUTH PROXY] Body length: {len(body) if body else 0}")
+
         try:
             conn = http.client.HTTPConnection(*backend, timeout=10)
             conn.request(method, target_path, body=body, headers=forward_headers)
