@@ -125,6 +125,12 @@
                     <button class="hud-button icon" id="chatToggle" title="Chat">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                     </button>
+                    <button class="hud-button icon" id="settingsHeaderBtn" title="Einstellungen">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6m4.22-10.22l4.24-4.24M6.34 17.66l-4.24 4.24M23 12h-6m-6 0H1m20.24 4.24l-4.24-4.24M6.34 6.34L2.1 2.1"></path>
+                        </svg>
+                    </button>
                     <button class="hud-button icon" id="dashboardRefresh" title="Aktualisieren">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
                     </button>
@@ -156,6 +162,10 @@
                     <button class="menu-item" data-view="netzwerk" data-label="NETZWERK">
                         <span class="menu-line"></span>
                         <span class="menu-text">NETZWERK</span>
+                    </button>
+                    <button class="menu-item" data-view="einstellungen" data-label="EINSTELLUNGEN">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">EINSTELLUNGEN</span>
                     </button>
                 </nav>
 
@@ -206,10 +216,12 @@
                         <div class="tile bottom-left" data-id="home-climate">
                             <div class="tile-header"><span class="tile-line"></span><span class="tile-title">KLIMA</span></div>
                             <div class="tile-body">
-                                <div class="metric" id="homeClimateTemp">--°C</div>
-                                <div class="tile-sub" id="homeClimateMode">Aus</div>
-                                <div class="mini-controls"
+                                <div class="metric" id="homeClimateTarget">--°C</div>
+                                <div class="tile-sub" id="homeClimateCurrent">Ist: --°C</div>
+                                <div class="tile-sub mode" id="homeClimateMode">Aus</div>
+                                <div class="mini-controls">
                                     <button class="mini-btn" id="homeClimateMinus">−</button>
+                                    <button class="mini-btn mode" id="homeClimateModeBtn">❄</button>
                                     <button class="mini-btn power" id="homeClimatePower">⏻</button>
                                     <button class="mini-btn" id="homeClimatePlus">+</button>
                                 </div>
@@ -321,6 +333,52 @@
                             <div class="tile-header"><span class="tile-line"></span><span class="tile-title">NETZWERK — GERÄTE</span></div>
                             <div class="tile-body">
                                 <p class="placeholder-text">UniFi-Topologie, Clients und Gateway-Status werden hier angezeigt.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-container" id="view-einstellungen">
+                        <div class="tile wide-top settings-tile" data-id="settings-main">
+                            <div class="tile-header">
+                                <span class="tile-line"></span>
+                                <span class="tile-title">EINSTELLUNGEN & AUSWERTUNG</span>
+                            </div>
+                            <div class="tile-body settings-body">
+                                <div class="settings-section">
+                                    <div class="section-title">Sprachausgabe</div>
+                                    <div class="settings-row">
+                                        <label class="hud-label">Antworten laut vorlesen</label>
+                                        <label class="toggle">
+                                            <input type="checkbox" id="autoSpeakToggle" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-row">
+                                        <button class="hud-button secondary" id="ttsTestBtn">Stimme testen</button>
+                                    </div>
+                                </div>
+
+                                <div class="settings-section">
+                                    <div class="section-title">Spracheingabe-Protokoll</div>
+                                    <div class="settings-row">
+                                        <label class="hud-label">Interim-Transkripte loggen</label>
+                                        <label class="toggle">
+                                            <input type="checkbox" id="logInterimToggle">
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-row">
+                                        <button class="hud-button secondary" id="exportLogBtn">Log exportieren</button>
+                                        <button class="hud-button secondary" id="clearLogBtn">Log löschen</button>
+                                    </div>
+                                </div>
+
+                                <div class="settings-section">
+                                    <div class="section-title">Konversationsverlauf (<span id="logCount">0</span>)</div>
+                                    <div class="log-list" id="conversationLogList">
+                                        <div class="placeholder-text">Keine Einträge vorhanden.</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
