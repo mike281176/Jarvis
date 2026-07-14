@@ -9,7 +9,7 @@
   "rewrites": [
     {
       "source": "/api/jarvis/:path*",
-      "destination": "https://nonconvergent-francene-toxically.ngrok-free.dev/api/jarvis/:path*"
+      "destination": "https://jarvis-api.quixx24.eu/api/jarvis/:path*"
     }
   ]
 }
