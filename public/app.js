@@ -456,15 +456,30 @@ class JarvisPWA {
             });
         });
         
-        // Home climate controls
-        const homeClimateMinus = document.getElementById('homeClimateMinus');
-        const homeClimatePlus = document.getElementById('homeClimatePlus');
-        const homeClimatePower = document.getElementById('homeClimatePower');
-        const homeClimateModeBtn = document.getElementById('homeClimateModeBtn');
-        if (homeClimateMinus) homeClimateMinus.addEventListener('click', () => this.adjustClimate(-1));
-        if (homeClimatePlus) homeClimatePlus.addEventListener('click', () => this.adjustClimate(+1));
-        if (homeClimatePower) homeClimatePower.addEventListener('click', () => this.toggleClimatePower());
-        if (homeClimateModeBtn) homeClimateModeBtn.addEventListener('click', () => this.toggleClimateMode());
+        // Home climate tile opens overlay
+        const homeClimateTile = document.getElementById('homeClimateTile');
+        if (homeClimateTile) {
+            homeClimateTile.addEventListener('click', () => this.openClimateOverlay());
+        }
+
+        // Climate overlay controls
+        const climateOverlay = document.getElementById('climateOverlay');
+        const closeClimate = document.getElementById('closeClimate');
+        if (closeClimate) {
+            closeClimate.addEventListener('click', () => this.closeClimateOverlay());
+        }
+        if (climateOverlay) {
+            climateOverlay.addEventListener('click', (e) => {
+                if (e.target === climateOverlay) this.closeClimateOverlay();
+            });
+        }
+        document.querySelectorAll('.climate-zone .mini-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const zone = e.currentTarget.dataset.zone;
+                const action = e.currentTarget.dataset.action;
+                this.handleClimateAction(zone, action);
+            });
+        });
         
         // Logout
         document.getElementById('logoutBtn').addEventListener('click', () => {
@@ -695,30 +710,31 @@ class JarvisPWA {
     }
 
     updateClimateWidget(states) {
-        // Wohnzimmer-Klima (primär) und Schlafzimmer-Klima
-        const climate = states.find(s => s.entity_id === 'climate.split_klimaanlage');
-        const bedroomClimate = states.find(s => s.entity_id === 'climate.schlafzimmer');
-        const bedroomSwitch = states.find(s => s.entity_id === 'switch.klima_schlafzimmer');
+        const zones = [
+            { id: 'wohnzimmer', entity: 'climate.split_klimaanlage' },
+            { id: 'schlafzimmer', entity: 'climate.schlafzimmer' },
+            { id: 'arbeitszimmer', entity: null }
+        ];
 
+        // Cache latest states for overlay
+        this.climateStates = {};
+        zones.forEach(zone => {
+            if (!zone.entity) return;
+            const found = states.find(s => s.entity_id === zone.entity);
+            if (found) this.climateStates[zone.id] = found;
+        });
+
+        // Home tile summary: prefer living room, fallback bedroom
+        const climate = this.climateStates['wohnzimmer'] || this.climateStates['schlafzimmer'];
         const targetEl = document.getElementById('homeClimateTarget');
         const currentEl = document.getElementById('homeClimateCurrent');
         const modeEl = document.getElementById('homeClimateMode');
-        const modeBtn = document.getElementById('homeClimateModeBtn');
-        const powerBtn = document.getElementById('homeClimatePower');
-
-        // Standard: Wohnzimmer; Schlafzimmer nur als Fallback/Switch
-        this.currentClimateEntity = climate ? 'climate.split_klimaanlage' : (bedroomClimate ? 'climate.schlafzimmer' : (bedroomSwitch ? 'switch.klima_schlafzimmer' : null));
-        this.currentClimateMode = climate ? climate.state : (bedroomClimate ? bedroomClimate.state : (bedroomSwitch?.state === 'on' ? 'cool' : 'off'));
-        this.currentClimateTarget = climate ? climate.attributes?.temperature : (bedroomClimate ? bedroomClimate.attributes?.temperature : null);
-
         const labels = { off: 'Aus', cool: 'Kühlen', heat: 'Heizen', dry: 'Trocknen', fan_only: 'Lüfter' };
-        const icons = { off: '⏻', cool: '❄', heat: '♨', dry: '💧', fan_only: '✦' };
 
         if (climate) {
             const currentTemp = climate.attributes?.current_temperature;
             const targetTemp = climate.attributes?.temperature;
             const mode = climate.state;
-
             if (targetEl) {
                 targetEl.textContent = targetTemp != null && !isNaN(parseFloat(targetTemp))
                     ? `${parseFloat(targetTemp).toFixed(1)}°C`
@@ -730,81 +746,121 @@ class JarvisPWA {
                     : 'Ist: --°C';
             }
             if (modeEl) modeEl.textContent = labels[mode] || mode;
-            if (modeBtn) modeBtn.textContent = icons[mode] || icons.cool;
-            if (powerBtn) powerBtn.classList.toggle('active', mode !== 'off');
-            if (modeBtn) modeBtn.classList.toggle('heat', mode === 'heat');
-            return;
+        } else {
+            if (targetEl) targetEl.textContent = '--°C';
+            if (currentEl) currentEl.textContent = 'Ist: --°C';
+            if (modeEl) modeEl.textContent = 'Aus';
         }
 
-        if (bedroomClimate) {
-            const currentTemp = bedroomClimate.attributes?.current_temperature;
-            const targetTemp = bedroomClimate.attributes?.temperature;
-            const mode = bedroomClimate.state;
-
-            if (targetEl) {
-                targetEl.textContent = targetTemp != null && !isNaN(parseFloat(targetTemp))
-                    ? `${parseFloat(targetTemp).toFixed(1)}°C`
-                    : '--°C';
-            }
-            if (currentEl) {
-                currentEl.textContent = currentTemp != null && !isNaN(parseFloat(currentTemp))
-                    ? `Ist: ${parseFloat(currentTemp).toFixed(1)}°C`
-                    : 'Ist: --°C';
-            }
-            if (modeEl) modeEl.textContent = labels[mode] || mode;
-            if (modeBtn) modeBtn.textContent = icons[mode] || icons.cool;
-            if (powerBtn) powerBtn.classList.toggle('active', mode !== 'off');
-            if (modeBtn) modeBtn.classList.toggle('heat', mode === 'heat');
-            return;
+        // If overlay is open, refresh it
+        const overlay = document.getElementById('climateOverlay');
+        if (overlay && overlay.style.display === 'flex') {
+            this.renderClimateOverlay();
         }
-
-        // Fallback alter Schlafzimmer-Schalter
-        const isOn = bedroomSwitch && bedroomSwitch.state === 'on';
-        if (targetEl) targetEl.textContent = isOn ? 'An' : 'Aus';
-        if (currentEl) currentEl.textContent = 'Schlafzimmer';
-        if (modeEl) modeEl.textContent = isOn ? 'Kühlen' : 'Aus';
-        if (modeBtn) modeBtn.textContent = isOn ? '❄' : '⏻';
-        if (powerBtn) powerBtn.classList.toggle('active', isOn);
     }
 
-    adjustClimate(delta) {
-        if (!this.currentClimateEntity) {
-            this.showNotification('Keine Klima-Entität verfügbar', 'error');
+    openClimateOverlay() {
+        this.renderClimateOverlay();
+        const overlay = document.getElementById('climateOverlay');
+        if (overlay) overlay.style.display = 'flex';
+    }
+
+    closeClimateOverlay() {
+        const overlay = document.getElementById('climateOverlay');
+        if (overlay) overlay.style.display = 'none';
+    }
+
+    renderClimateOverlay() {
+        const labels = { off: 'Aus', cool: 'Kühlen', heat: 'Heizen', dry: 'Trocknen', fan_only: 'Lüfter' };
+        const icons = { off: '⏻', cool: '❄', heat: '♨', dry: '💧', fan_only: '✦' };
+        const zones = [
+            { id: 'wohnzimmer', entity: 'climate.split_klimaanlage', name: 'Wohnzimmer' },
+            { id: 'schlafzimmer', entity: 'climate.schlafzimmer', name: 'Schlafzimmer' },
+            { id: 'arbeitszimmer', entity: null, name: 'Arbeitszimmer' }
+        ];
+
+        zones.forEach(zone => {
+            const stateObj = zone.entity ? (this.climateStates?.[zone.id]) : null;
+            const targetEl = document.getElementById(`climateTarget-${zone.id}`);
+            const currentEl = document.getElementById(`climateCurrent-${zone.id}`);
+            const statusEl = document.getElementById(`climateStatus-${zone.id}`);
+            const modeBtn = document.getElementById(`climateModeBtn-${zone.id}`);
+            const powerBtn = document.getElementById(`climatePowerBtn-${zone.id}`);
+            const zoneEl = document.querySelector(`.climate-zone[data-zone="${zone.id}"]`);
+
+            if (!zone.entity) {
+                // Arbeitszimmer placeholder
+                if (targetEl) targetEl.textContent = '--°C';
+                if (currentEl) currentEl.textContent = 'Ist: --°C';
+                if (statusEl) statusEl.textContent = 'Nicht verbunden';
+                if (modeBtn) { modeBtn.textContent = '❄'; modeBtn.classList.remove('heat'); }
+                if (powerBtn) powerBtn.classList.remove('active');
+                return;
+            }
+
+            if (stateObj) {
+                const state = stateObj.state;
+                const attrs = stateObj.attributes || {};
+                const targetTemp = attrs.temperature;
+                const currentTemp = attrs.current_temperature;
+
+                if (targetEl) {
+                    targetEl.textContent = targetTemp != null && !isNaN(parseFloat(targetTemp))
+                        ? `${parseFloat(targetTemp).toFixed(1)}°C`
+                        : '--°C';
+                }
+                if (currentEl) {
+                    currentEl.textContent = currentTemp != null && !isNaN(parseFloat(currentTemp))
+                        ? `Ist: ${parseFloat(currentTemp).toFixed(1)}°C`
+                        : 'Ist: --°C';
+                }
+                if (statusEl) statusEl.textContent = labels[state] || state;
+                if (modeBtn) {
+                    modeBtn.textContent = icons[state] || icons.cool;
+                    modeBtn.classList.toggle('heat', state === 'heat');
+                }
+                if (powerBtn) powerBtn.classList.toggle('active', state !== 'off');
+                if (zoneEl) zoneEl.classList.remove('disabled');
+            } else {
+                if (targetEl) targetEl.textContent = '--°C';
+                if (currentEl) currentEl.textContent = 'Ist: --°C';
+                if (statusEl) statusEl.textContent = 'Offline';
+                if (modeBtn) { modeBtn.textContent = '❄'; modeBtn.classList.remove('heat'); }
+                if (powerBtn) powerBtn.classList.remove('active');
+            }
+        });
+    }
+
+    getClimateEntity(zoneId) {
+        const map = { wohnzimmer: 'climate.split_klimaanlage', schlafzimmer: 'climate.schlafzimmer', arbeitszimmer: null };
+        return map[zoneId];
+    }
+
+    getClimateState(zoneId) {
+        return this.climateStates?.[zoneId];
+    }
+
+    handleClimateAction(zoneId, action) {
+        const entity = this.getClimateEntity(zoneId);
+        if (!entity) {
+            this.showNotification(`${zoneId.charAt(0).toUpperCase() + zoneId.slice(1)} ist noch nicht verbunden`, 'warning');
             return;
         }
-        if (this.currentClimateEntity.startsWith('climate.')) {
-            const temp = this.currentClimateTarget != null ? parseFloat(this.currentClimateTarget) : 23;
+        const stateObj = this.getClimateState(zoneId);
+        const currentMode = stateObj ? stateObj.state : 'off';
+        const currentTarget = stateObj?.attributes?.temperature;
+
+        if (action === 'minus' || action === 'plus') {
+            const temp = currentTarget != null ? parseFloat(currentTarget) : 23;
+            const delta = action === 'minus' ? -1 : +1;
             const newTemp = Math.max(16, Math.min(32, temp + delta));
-            this.callService(this.currentClimateEntity, 'climate.set_temperature', { temperature: newTemp });
-        } else if (this.currentClimateEntity.startsWith('switch.')) {
-            this.callService(this.currentClimateEntity, 'switch.turn_on');
-        }
-    }
-
-    toggleClimatePower() {
-        if (!this.currentClimateEntity) {
-            this.showNotification('Keine Klima-Entität verfügbar', 'error');
-            return;
-        }
-        if (this.currentClimateEntity.startsWith('climate.')) {
-            const nextMode = this.currentClimateMode === 'off' ? 'cool' : 'off';
-            this.callService(this.currentClimateEntity, 'climate.set_hvac_mode', { hvac_mode: nextMode });
-        } else if (this.currentClimateEntity.startsWith('switch.')) {
-            const service = this.currentClimateMode === 'off' ? 'switch.turn_on' : 'switch.turn_off';
-            this.callService(this.currentClimateEntity, service);
-        }
-    }
-
-    toggleClimateMode() {
-        if (!this.currentClimateEntity) {
-            this.showNotification('Keine Klima-Entität verfügbar', 'error');
-            return;
-        }
-        if (this.currentClimateEntity.startsWith('climate.')) {
-            const nextMode = this.currentClimateMode === 'heat' ? 'cool' : 'heat';
-            this.callService(this.currentClimateEntity, 'climate.set_hvac_mode', { hvac_mode: nextMode });
-        } else if (this.currentClimateEntity.startsWith('switch.')) {
-            this.toggleClimatePower();
+            this.callService(entity, 'climate.set_temperature', { temperature: newTemp });
+        } else if (action === 'power') {
+            const nextMode = currentMode === 'off' ? 'cool' : 'off';
+            this.callService(entity, 'climate.set_hvac_mode', { hvac_mode: nextMode });
+        } else if (action === 'mode') {
+            const nextMode = currentMode === 'heat' ? 'cool' : 'heat';
+            this.callService(entity, 'climate.set_hvac_mode', { hvac_mode: nextMode });
         }
     }
 

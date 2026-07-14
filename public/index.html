@@ -213,20 +213,15 @@
                                 <div class="tile-sub" id="homeBatteryFlow">Ruhe</div>
                             </div>
                         </div>
-                        <div class="tile bottom-left" data-id="home-climate">
+                        <button class="tile bottom-left climate-tile" data-id="home-climate" id="homeClimateTile">
                             <div class="tile-header"><span class="tile-line"></span><span class="tile-title">KLIMA</span></div>
                             <div class="tile-body">
                                 <div class="metric" id="homeClimateTarget">--°C</div>
                                 <div class="tile-sub" id="homeClimateCurrent">Ist: --°C</div>
                                 <div class="tile-sub mode" id="homeClimateMode">Aus</div>
-                                <div class="mini-controls">
-                                    <button class="mini-btn" id="homeClimateMinus">−</button>
-                                    <button class="mini-btn mode" id="homeClimateModeBtn">❄</button>
-                                    <button class="mini-btn power" id="homeClimatePower">⏻</button>
-                                    <button class="mini-btn" id="homeClimatePlus">+</button>
-                                </div>
+                                <div class="tile-hint">Zum Steuern antippen</div>
                             </div>
-                        </div>
+                        </button>
                         <div class="tile bottom-right" data-id="home-house">
                             <div class="tile-header"><span class="tile-line"></span><span class="tile-title">HAUSHALT</span></div>
                             <div class="tile-body">
@@ -496,6 +491,76 @@
                         <button class="hud-button primary" id="cameraCapture">Aufnehmen</button>
                     </div>
                     <div class="camera-hint">Halten Sie das Objekt ruhig. Das Bild wird zur Analyse an J.A.R.V.I.S. gesendet.</div>
+                </div>
+            </div>
+
+            <div class="climate-overlay" id="climateOverlay" style="display: none;">
+                <div class="climate-panel">
+                    <div class="climate-panel-header">
+                        <span class="panel-title">KLIMA STEUERUNG</span>
+                        <button class="close-panel" id="closeClimate">×</button>
+                    </div>
+                    <div class="climate-panel-body" id="climatePanelBody">
+                        <!-- Wohnzimmer -->
+                        <div class="climate-zone" data-zone="wohnzimmer" data-entity="climate.split_klimaanlage">
+                            <div class="zone-header">
+                                <span class="zone-name">Wohnzimmer</span>
+                                <span class="zone-status" id="climateStatus-wohnzimmer">--</span>
+                            </div>
+                            <div class="zone-body">
+                                <div class="zone-temp">
+                                    <span class="zone-target" id="climateTarget-wohnzimmer">--°C</span>
+                                    <span class="zone-current" id="climateCurrent-wohnzimmer">Ist: --°C</span>
+                                </div>
+                                <div class="zone-controls">
+                                    <button class="mini-btn" data-action="minus" data-zone="wohnzimmer">−</button>
+                                    <button class="mini-btn mode" data-action="mode" data-zone="wohnzimmer" id="climateModeBtn-wohnzimmer">❄</button>
+                                    <button class="mini-btn power" data-action="power" data-zone="wohnzimmer" id="climatePowerBtn-wohnzimmer">⏻</button>
+                                    <button class="mini-btn" data-action="plus" data-zone="wohnzimmer">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Schlafzimmer -->
+                        <div class="climate-zone" data-zone="schlafzimmer" data-entity="climate.schlafzimmer">
+                            <div class="zone-header">
+                                <span class="zone-name">Schlafzimmer</span>
+                                <span class="zone-status" id="climateStatus-schlafzimmer">--</span>
+                            </div>
+                            <div class="zone-body">
+                                <div class="zone-temp">
+                                    <span class="zone-target" id="climateTarget-schlafzimmer">--°C</span>
+                                    <span class="zone-current" id="climateCurrent-schlafzimmer">Ist: --°C</span>
+                                </div>
+                                <div class="zone-controls">
+                                    <button class="mini-btn" data-action="minus" data-zone="schlafzimmer">−</button>
+                                    <button class="mini-btn mode" data-action="mode" data-zone="schlafzimmer" id="climateModeBtn-schlafzimmer">❄</button>
+                                    <button class="mini-btn power" data-action="power" data-zone="schlafzimmer" id="climatePowerBtn-schlafzimmer">⏻</button>
+                                    <button class="mini-btn" data-action="plus" data-zone="schlafzimmer">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Arbeitszimmer -->
+                        <div class="climate-zone disabled" data-zone="arbeitszimmer" data-entity="">
+                            <div class="zone-header">
+                                <span class="zone-name">Arbeitszimmer</span>
+                                <span class="zone-status" id="climateStatus-arbeitszimmer">Nicht verbunden</span>
+                            </div>
+                            <div class="zone-body">
+                                <div class="zone-temp">
+                                    <span class="zone-target" id="climateTarget-arbeitszimmer">--°C</span>
+                                    <span class="zone-current" id="climateCurrent-arbeitszimmer">Ist: --°C</span>
+                                </div>
+                                <div class="zone-controls">
+                                    <button class="mini-btn" data-action="minus" data-zone="arbeitszimmer" disabled>−</button>
+                                    <button class="mini-btn mode" data-action="mode" data-zone="arbeitszimmer" id="climateModeBtn-arbeitszimmer" disabled>❄</button>
+                                    <button class="mini-btn power" data-action="power" data-zone="arbeitszimmer" id="climatePowerBtn-arbeitszimmer" disabled>⏻</button>
+                                    <button class="mini-btn" data-action="plus" data-zone="arbeitszimmer" disabled>+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
