@@ -153,10 +153,177 @@ class JarvisPWA {
         document.querySelector('.hologram-container').style.transition = 'opacity 0.5s ease';
         
         setTimeout(() => {
-            this.showMainInterface();
-            const salutation = Math.random() > 0.5 ? 'Sir' : 'Master';
-            this.speak(`Willkommen zurück, ${this.user.name}. J.A.R.V.I.S. steht zu Ihren Diensten, ${salutation}.`);
+            this.showBootSequence();
         }, 600);
+    }
+
+    // ==================== BOOT / GREETING SEQUENCE ====================
+
+    buildGreeting() {
+        const now = new Date();
+        const weekdayNames = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+        const weekday = weekdayNames[now.getDay()];
+        const day = String(now.getDate()).padStart(2, '0');
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const year = now.getFullYear();
+        const hour = now.getHours();
+        let dayPart = 'Tag';
+        if (hour < 6) dayPart = 'Nacht';
+        else if (hour < 12) dayPart = 'Morgen';
+        else if (hour < 14) dayPart = 'Mittag';
+        else if (hour < 18) dayPart = 'Nachmittag';
+        else if (hour < 22) dayPart = 'Abend';
+        else dayPart = 'Nacht';
+
+        const name = this.user?.name || 'Sir';
+        return `Guten ${dayPart}, ${name}. Wir haben ${weekday}, den ${day}.${month}.${year}. J.A.R.V.I.S. steht zu Ihren Diensten. Systeme nominal.`;
+    }
+
+    showBootSequence() {
+        const overlay = document.getElementById('bootSequence');
+        const textEl = document.getElementById('bootText');
+        const subtitleEl = document.getElementById('bootSubtitle');
+        const canvas = document.getElementById('bootCanvas');
+        if (!overlay || !textEl || !canvas) {
+            this.showMainInterface();
+            return;
+        }
+
+        overlay.style.display = 'flex';
+        overlay.classList.remove('fading-out');
+        textEl.textContent = '';
+        if (subtitleEl) subtitleEl.textContent = 'Systeme werden initialisiert';
+
+        const greeting = this.buildGreeting();
+        this.typeBootText(greeting, textEl, 40);
+        this.startBootVisualizer(canvas);
+        this.speak(greeting);
+
+        setTimeout(() => {
+            overlay.classList.add('fading-out');
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                this.stopBootVisualizer();
+                this.showMainInterface();
+            }, 900);
+        }, 4500);
+    }
+
+    typeBootText(text, element, speedMs) {
+        let i = 0;
+        element.textContent = '';
+        this._bootTypeInterval = setInterval(() => {
+            element.textContent += text.charAt(i);
+            i++;
+            if (i >= text.length) {
+                clearInterval(this._bootTypeInterval);
+                this._bootTypeInterval = null;
+            }
+        }, speedMs);
+    }
+
+    startBootVisualizer(canvas) {
+        if (!canvas) return;
+        this._bootCanvas = canvas;
+        this._bootCtx = canvas.getContext('2d');
+        this._bootRaf = null;
+        this._bootWaves = [];
+        this._bootActive = true;
+
+        const resize = () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        };
+        resize();
+        this._bootResizeHandler = resize;
+        window.addEventListener('resize', resize);
+
+        const centerX = () => canvas.width / 2;
+        const centerY = () => canvas.height / 2;
+        const maxRadius = () => Math.min(canvas.width, canvas.height) * 0.45;
+
+        for (let i = 0; i < 5; i++) {
+            this._bootWaves.push({
+                radius: 60 + i * 30,
+                speed: 0.8 + i * 0.25,
+                amplitude: 4 + i,
+                phase: i * 1.2,
+                opacity: 0.25 - i * 0.04
+            });
+        }
+
+        const draw = (time) => {
+            if (!this._bootActive) return;
+            const ctx = this._bootCtx;
+            const w = canvas.width;
+            const h = canvas.height;
+            ctx.clearRect(0, 0, w, h);
+
+            const cx = centerX();
+            const cy = centerY();
+            const t = time * 0.002;
+
+            // Glow center
+            const glow = ctx.createRadialGradient(cx, cy, 10, cx, cy, 80);
+            glow.addColorStop(0, 'rgba(0, 212, 255, 0.35)');
+            glow.addColorStop(1, 'rgba(0, 212, 255, 0)');
+            ctx.fillStyle = glow;
+            ctx.beginPath();
+            ctx.arc(cx, cy, 80, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Animated wave rings
+            this._bootWaves.forEach((wave, idx) => {
+                const r = wave.radius + Math.sin(t * wave.speed + wave.phase) * 8;
+                const alpha = wave.opacity + Math.sin(t * wave.speed * 1.3 + wave.phase) * 0.08;
+                ctx.strokeStyle = `rgba(0, 212, 255, ${Math.max(0.05, Math.min(0.5, alpha))})`;
+                ctx.lineWidth = 1.5;
+                ctx.beginPath();
+                for (let a = 0; a <= Math.PI * 2; a += 0.08) {
+                    const wobble = Math.sin(a * 8 + t * wave.speed + wave.phase) * wave.amplitude;
+                    const radius = r + wobble;
+                    const x = cx + Math.cos(a) * radius;
+                    const y = cy + Math.sin(a) * radius;
+                    if (a === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.closePath();
+                ctx.stroke();
+            });
+
+            // Particles
+            const particleCount = 24;
+            for (let i = 0; i < particleCount; i++) {
+                const angle = (i / particleCount) * Math.PI * 2 + t * 0.3;
+                const dist = 90 + Math.sin(t + i) * 20;
+                const x = cx + Math.cos(angle) * dist;
+                const y = cy + Math.sin(angle) * dist;
+                ctx.fillStyle = `rgba(0, 212, 255, ${0.3 + Math.sin(t * 2 + i) * 0.2})`;
+                ctx.beginPath();
+                ctx.arc(x, y, 1.5, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            this._bootRaf = requestAnimationFrame(draw);
+        };
+
+        this._bootRaf = requestAnimationFrame(draw);
+    }
+
+    stopBootVisualizer() {
+        this._bootActive = false;
+        if (this._bootRaf) cancelAnimationFrame(this._bootRaf);
+        if (this._bootTypeInterval) {
+            clearInterval(this._bootTypeInterval);
+            this._bootTypeInterval = null;
+        }
+        if (this._bootResizeHandler) {
+            window.removeEventListener('resize', this._bootResizeHandler);
+            this._bootResizeHandler = null;
+        }
+        if (this._bootCanvas && this._bootCtx) {
+            this._bootCtx.clearRect(0, 0, this._bootCanvas.width, this._bootCanvas.height);
+        }
     }
 
     handleUserSelect(userId) {
