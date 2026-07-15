@@ -206,7 +206,7 @@ class JarvisPWA {
                 this.stopBootVisualizer();
                 this.showMainInterface();
             }, 900);
-        }, 4500);
+        }, 7000);
     }
 
     typeBootText(text, element, speedMs) {
