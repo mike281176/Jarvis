@@ -814,7 +814,10 @@ class JarvisPWA {
                         ? `Ist: ${parseFloat(currentTemp).toFixed(1)}°C`
                         : 'Ist: --°C';
                 }
-                if (statusEl) statusEl.textContent = labels[state] || state;
+                if (statusEl) {
+                    statusEl.textContent = labels[state] || state;
+                    statusEl.classList.toggle('off', state === 'off');
+                }
                 if (modeBtn) {
                     modeBtn.textContent = icons[state] || icons.cool;
                     modeBtn.classList.toggle('heat', state === 'heat');
@@ -824,7 +827,10 @@ class JarvisPWA {
             } else {
                 if (targetEl) targetEl.textContent = '--°C';
                 if (currentEl) currentEl.textContent = 'Ist: --°C';
-                if (statusEl) statusEl.textContent = 'Offline';
+                if (statusEl) {
+                    statusEl.textContent = 'Offline';
+                    statusEl.classList.add('off');
+                }
                 if (modeBtn) { modeBtn.textContent = '❄'; modeBtn.classList.remove('heat'); }
                 if (powerBtn) powerBtn.classList.remove('active');
             }

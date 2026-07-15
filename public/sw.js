@@ -3,7 +3,7 @@
  * Für Offline-Fähigkeit und schnelles Laden
  */
 
-const CACHE_NAME = 'jarvis-v12';
+const CACHE_NAME = 'jarvis-v13';
 const urlsToCache = [
     '/',
     '/index.html',

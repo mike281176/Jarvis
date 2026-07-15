@@ -161,6 +161,30 @@ html, body {
 .logout-btn { background: transparent; border: 1px solid rgba(255, 100, 100, 0.3); color: rgba(255, 100, 100, 0.7); width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; transition: all 0.2s; }
 .logout-btn:hover { background: rgba(255, 100, 100, 0.2); border-color: rgba(255, 100, 100, 0.5); color: #ff6464; }
 
+/* Close panel buttons (chat, climate, camera overlays) */
+.close-panel {
+    background: transparent;
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    color: var(--jarvis-blue);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.4rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    padding: 0;
+}
+.close-panel:hover {
+    background: rgba(0, 212, 255, 0.15);
+    border-color: rgba(0, 212, 255, 0.6);
+    color: var(--jarvis-blue-light);
+    box-shadow: var(--glow-blue);
+}
+
 /* Layout wrapper */
 .layout-wrapper {
     flex: 1 1 auto;
@@ -427,6 +451,7 @@ html, body {
 .zone-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-xs); }
 .zone-name { font-family: var(--font-hud); font-size: 0.75rem; letter-spacing: 0.08em; color: var(--jarvis-blue); }
 .zone-status { font-size: 0.7rem; color: var(--jarvis-green); }
+.zone-status.off { color: var(--jarvis-red); }
 .climate-zone.disabled .zone-status { color: var(--text-secondary); }
 .zone-body { display: flex; justify-content: space-between; align-items: center; gap: var(--space-sm); }
 .zone-temp { display: flex; flex-direction: column; }
