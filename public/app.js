@@ -1828,8 +1828,6 @@ class JarvisPWA {
     registerServiceWorker() {
         if (!('serviceWorker' in navigator)) return;
 
-        const scope = window.location.pathname;
-
         // Install-Prompt für PWA abfangen
         let deferredPrompt = null;
         const installBtn = document.getElementById('installPwaBtn');
@@ -1863,33 +1861,26 @@ class JarvisPWA {
             });
         }
 
-        // Nur alte Registrations außerhalb des aktuellen Scopes entfernen
-        navigator.serviceWorker.getRegistrations().then(regs => {
-            return Promise.all(regs.map(reg => {
-                const regScope = reg.scope || '';
-                const baseScope = new URL(regScope).pathname;
-                if (baseScope !== scope) {
-                    return reg.unregister().catch(() => false);
-                }
-                return Promise.resolve(true);
-            }));
-        }).then(() => {
-            return navigator.serviceWorker.register('/sw.js', { scope, updateViaCache: 'none' });
-        }).then(reg => {
-            console.log('[JARVIS] Service Worker registriert');
+        // Service Worker registrieren und Updates automatisch einspielen
+        navigator.serviceWorker.register('/sw.js')
+            .then(reg => {
+                console.log('[JARVIS] Service Worker registriert');
 
-            reg.addEventListener('updatefound', () => {
-                const newWorker = reg.installing;
-                if (!newWorker) return;
-                newWorker.addEventListener('statechange', () => {
-                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                        newWorker.postMessage({ type: 'SKIP_WAITING' });
-                    }
+                reg.addEventListener('updatefound', () => {
+                    const newWorker = reg.installing;
+                    if (!newWorker) return;
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            console.log('[JARVIS] Neue Version verfügbar, lade neu...');
+                            newWorker.postMessage({ type: 'SKIP_WAITING' });
+                        }
+                    });
                 });
-            });
 
-            setInterval(() => reg.update().catch(() => {}), 300000);
-        }).catch(err => console.log('[JARVIS] Service Worker Registrierung fehlgeschlagen', err));
+                // Alle 5 Minuten auf Updates prüfen
+                setInterval(() => reg.update().catch(() => {}), 300000);
+            })
+            .catch(err => console.log('[JARVIS] Service Worker Registrierung fehlgeschlagen', err));
 
         let refreshing = false;
         navigator.serviceWorker.addEventListener('controllerchange', () => {

@@ -1,51 +1,37 @@
 /**
  * J.A.R.V.I.S. Service Worker
- * Für Offline-Fähigkeit und schnelles Laden
+ * Network-first für statische Assets, damit Updates sofort sichtbar sind.
  */
 
-const CACHE_NAME = 'jarvis-v17';
-const urlsToCache = [
+const CACHE_NAME = 'jarvis-v18';
+const STATIC_ASSETS = [
     '/',
     '/index.html',
     '/styles.css',
     '/app.js',
-    '/sw.js',
     '/manifest.json'
 ];
 
-// Install Event
+// Install: statische Assets vorab cachen und sofort aktiv werden
 self.addEventListener('install', event => {
-    console.log('[J.A.R.V.I.S.] Service Worker v4 installiert');
-    
+    console.log('[J.A.R.V.I.S.] Service Worker installiert');
     event.waitUntil(
-        caches.keys().then(cacheNames => {
-            // Alle alten Jarvis-Caches löschen, inklusive v3
-            return Promise.all(
-                cacheNames
-                    .filter(name => name.startsWith('jarvis-'))
-                    .map(name => {
-                        console.log('[J.A.R.V.I.S.] Lösche alten Cache:', name);
-                        return caches.delete(name);
-                    })
-            );
-        }).then(() => caches.open(CACHE_NAME))
-          .then(cache => cache.addAll(urlsToCache))
+        caches.open(CACHE_NAME)
+            .then(cache => cache.addAll(STATIC_ASSETS))
+            .then(() => self.skipWaiting())
     );
-    
-    self.skipWaiting();
 });
 
-// Activate Event
+// Activate: alte Caches löschen, alle Clients übernehmen
 self.addEventListener('activate', event => {
-    console.log('[J.A.R.V.I.S.] Service Worker v4 aktiviert');
-    
+    console.log('[J.A.R.V.I.S.] Service Worker aktiviert');
     event.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames
-                    .filter(name => name !== CACHE_NAME && name.startsWith('jarvis-'))
+                    .filter(name => name.startsWith('jarvis-') && name !== CACHE_NAME)
                     .map(name => {
-                        console.log('[J.A.R.V.I.S.] Lösche alten Cache beim Aktivieren:', name);
+                        console.log('[J.A.R.V.I.S.] Lösche alten Cache:', name);
                         return caches.delete(name);
                     })
             );
@@ -53,27 +39,31 @@ self.addEventListener('activate', event => {
     );
 });
 
-// Fetch Event: Nur statische GET-Assets cachen, API-Calls ignorieren
+function isStaticAsset(url) {
+    const staticExtensions = /\.(html|css|js|json|png|jpg|jpeg|svg|ico|woff|woff2|ttf|eot|webmanifest)$/i;
+    return url.origin === self.location.origin &&
+           url.pathname !== '/sw.js' &&
+           (staticExtensions.test(url.pathname) || url.pathname === '/');
+}
+
+function isApi(url) {
+    return url.pathname.startsWith('/api/');
+}
+
+// Fetch: Network-first für statische Assets, damit Updates sofort ankommen
 self.addEventListener('fetch', event => {
     const request = event.request;
     const url = new URL(request.url);
-    
-    // Externe Requests nicht abfangen
-    if (url.origin !== self.location.origin) {
+
+    // Externe und API-Requests nicht abfangen
+    if (url.origin !== self.location.origin || request.method !== 'GET' || isApi(url)) {
         return;
     }
-    
-    // API-Requests und Nicht-GET niemals abfangen
-    if (request.method !== 'GET' || url.pathname.startsWith('/api/')) {
+
+    if (!isStaticAsset(url)) {
         return;
     }
-    
-    // Nur statische Assets cachen
-    const staticExtensions = /\.(html|css|js|json|png|jpg|jpeg|svg|ico|woff|woff2|ttf|eot)$/i;
-    if (!staticExtensions.test(url.pathname) && url.pathname !== '/') {
-        return;
-    }
-    
+
     event.respondWith(
         fetch(request, { cache: 'no-store' })
             .then(response => {
@@ -91,7 +81,7 @@ self.addEventListener('fetch', event => {
     );
 });
 
-// Sofort auf Updates reagieren
+// Message Handler für manuelles Update
 self.addEventListener('message', event => {
     if (event.data && event.data.type === 'SKIP_WAITING') {
         self.skipWaiting();
