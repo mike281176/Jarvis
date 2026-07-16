@@ -618,7 +618,7 @@ class JarvisPWA {
                 'sensor.power_import_grid', 'sensor.power_grid_total_raw',
                 'sensor.jarvis_gesamt_verbrauch', 'sensor.shelly_3em_total_power',
                 // Climate
-                'climate.split_klimaanlage', 'climate.schlafzimmer', 'switch.klima_schlafzimmer',
+                'climate.split_klimaanlage', 'climate.schlafzimmer', 'climate.arbeitszimmer', 'switch.klima_schlafzimmer',
                 // Environment temps
                 'sensor.garten', 'sensor.pool_temperatur',
                 'sensor.wohnzimmer_echo_temperatur', 'sensor.arbeitszimmer_temperatur',
@@ -750,7 +750,7 @@ class JarvisPWA {
         const zones = [
             { id: 'wohnzimmer', entity: 'climate.split_klimaanlage' },
             { id: 'schlafzimmer', entity: 'climate.schlafzimmer' },
-            { id: 'arbeitszimmer', entity: null }
+            { id: 'arbeitszimmer', entity: 'climate.arbeitszimmer' }
         ];
 
         // Cache latest states for overlay
@@ -813,7 +813,7 @@ class JarvisPWA {
         const zones = [
             { id: 'wohnzimmer', entity: 'climate.split_klimaanlage', name: 'Wohnzimmer' },
             { id: 'schlafzimmer', entity: 'climate.schlafzimmer', name: 'Schlafzimmer' },
-            { id: 'arbeitszimmer', entity: null, name: 'Arbeitszimmer' }
+            { id: 'arbeitszimmer', entity: 'climate.arbeitszimmer', name: 'Arbeitszimmer' }
         ];
 
         zones.forEach(zone => {
@@ -875,7 +875,7 @@ class JarvisPWA {
     }
 
     getClimateEntity(zoneId) {
-        const map = { wohnzimmer: 'climate.split_klimaanlage', schlafzimmer: 'climate.schlafzimmer', arbeitszimmer: null };
+        const map = { wohnzimmer: 'climate.split_klimaanlage', schlafzimmer: 'climate.schlafzimmer', arbeitszimmer: 'climate.arbeitszimmer' };
         return map[zoneId];
     }
 
@@ -1001,7 +1001,7 @@ class JarvisPWA {
                 'sensor.power_import_grid', 'sensor.power_grid_total_raw',
                 'sensor.jarvis_gesamt_verbrauch', 'sensor.shelly_3em_total_power',
                 // Climate
-                'climate.split_klimaanlage', 'climate.schlafzimmer', 'switch.klima_schlafzimmer',
+                'climate.split_klimaanlage', 'climate.schlafzimmer', 'climate.arbeitszimmer', 'switch.klima_schlafzimmer',
                 // Environment temps
                 'sensor.garten', 'sensor.pool_temperatur',
                 'sensor.wohnzimmer_echo_temperatur', 'sensor.arbeitszimmer_temperatur',
