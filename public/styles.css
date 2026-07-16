@@ -513,11 +513,14 @@ html, body {
 
 .blueprint-drawing {
     position: absolute;
-    bottom: 6%;
-    left: 50%;
-    transform: translateX(-50%) scale(0.95);
-    width: min(90vw, 560px);
-    opacity: 0.55;
+    top: 3%;
+    left: 2%;
+    right: auto;
+    bottom: auto;
+    transform: rotate(-45deg) scale(0.85);
+    transform-origin: top left;
+    width: min(55vw, 320px);
+    opacity: 0.5;
     pointer-events: none;
     z-index: 2;
 }
