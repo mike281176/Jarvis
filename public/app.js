@@ -1823,18 +1823,50 @@ class JarvisPWA {
         this.updateVoiceStatus('Bereit', 'ready');
     }
 
-    // ==================== SERVICE WORKER ====================
+    // ==================== SERVICE WORKER + PWA INSTALL ====================
 
     registerServiceWorker() {
         if (!('serviceWorker' in navigator)) return;
 
         const scope = window.location.pathname;
 
+        // Install-Prompt für PWA abfangen
+        let deferredPrompt = null;
+        const installBtn = document.getElementById('installPwaBtn');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            if (installBtn) installBtn.style.display = 'inline-flex';
+            console.log('[JARVIS] PWA install prompt ready');
+        });
+
+        window.addEventListener('appinstalled', () => {
+            deferredPrompt = null;
+            if (installBtn) installBtn.style.display = 'none';
+            console.log('[JARVIS] PWA installed');
+        });
+
+        if (installBtn) {
+            installBtn.addEventListener('click', async () => {
+                if (!deferredPrompt) {
+                    this.showNotification('Installation nicht verfügbar. Browser meldet kein Install-Prompt.', 'error');
+                    return;
+                }
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                    this.showNotification('J.A.R.V.I.S. wird installiert', 'success');
+                }
+                deferredPrompt = null;
+                installBtn.style.display = 'none';
+            });
+        }
+
         // Nur alte Registrations außerhalb des aktuellen Scopes entfernen
         navigator.serviceWorker.getRegistrations().then(regs => {
             return Promise.all(regs.map(reg => {
                 const regScope = reg.scope || '';
-                // Wenn der Scope nicht passt oder ein anderer Pfad aktiv ist, aufräumen
                 const baseScope = new URL(regScope).pathname;
                 if (baseScope !== scope) {
                     return reg.unregister().catch(() => false);
@@ -1856,7 +1888,6 @@ class JarvisPWA {
                 });
             });
 
-            // Regelmäßig auf Updates prüfen (alle 5 Minuten)
             setInterval(() => reg.update().catch(() => {}), 300000);
         }).catch(err => console.log('[JARVIS] Service Worker Registrierung fehlgeschlagen', err));
 

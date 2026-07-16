@@ -6,25 +6,29 @@
     "display": "standalone",
     "background_color": "#000510",
     "theme_color": "#000510",
-    "orientation": "portrait-primary",
-    "icons": [
-        {
-            "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Ccircle cx='96' cy='96' r='90' fill='none' stroke='%2300D4FF' stroke-width='4'/%3E%3Ccircle cx='96' cy='96' r='50' fill='%2300D4FF' opacity='0.3'/%3E%3Ccircle cx='96' cy='96' r='20' fill='%2300D4FF'/%3E%3C/svg%3E",
-            "sizes": "192x192",
-            "type": "image/svg+xml"
-        },
-        {
-            "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='256' cy='256' r='240' fill='none' stroke='%2300D4FF' stroke-width='8'/%3E%3Ccircle cx='256' cy='256' r='130' fill='%2300D4FF' opacity='0.3'/%3E%3Ccircle cx='256' cy='256' r='50' fill='%2300D4FF'/%3E%3C/svg%3E",
-            "sizes": "512x512",
-            "type": "image/svg+xml"
-        }
-    ],
-    "categories": ["productivity", "utilities"],
+    "orientation": "any",
+    "scope": "/",
     "lang": "de",
     "dir": "ltr",
-    "scope": "/",
-    "serviceworker": {
-        "src": "sw.js",
-        "scope": "/"
-    }
+    "categories": ["productivity", "utilities"],
+    "icons": [
+        {
+            "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%23000510'/%3E%3Ccircle cx='96' cy='96' r='90' fill='none' stroke='%2300D4FF' stroke-width='4'/%3E%3Ccircle cx='96' cy='96' r='50' fill='%2300D4FF' opacity='0.3'/%3E%3Ccircle cx='96' cy='96' r='20' fill='%2300D4FF'/%3E%3C/svg%3E",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
+        {
+            "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23000510'/%3E%3Ccircle cx='256' cy='256' r='240' fill='none' stroke='%2300D4FF' stroke-width='8'/%3E%3Ccircle cx='256' cy='256' r='130' fill='%2300D4FF' opacity='0.3'/%3E%3Ccircle cx='256' cy='256' r='50' fill='%2300D4FF'/%3E%3C/svg%3E",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
+        {
+            "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23000510'/%3E%3Ccircle cx='256' cy='256' r='220' fill='none' stroke='%2300D4FF' stroke-width='10'/%3E%3Ccircle cx='256' cy='256' r='120' fill='%2300D4FF' opacity='0.25'/%3E%3Ccircle cx='256' cy='256' r='45' fill='%2300D4FF'/%3E%3C/svg%3E",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "maskable"
+        }
+    ]
 }
