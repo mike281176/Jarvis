@@ -3,13 +3,14 @@
  * Network-first für statische Assets, damit Updates sofort sichtbar sind.
  */
 
-const CACHE_NAME = 'jarvis-v23';
+const CACHE_NAME = 'jarvis-v24';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
     '/styles.css',
     '/app.js',
-    '/manifest.json'
+    '/manifest.json',
+    '/klima-jarvis.png'
 ];
 
 // Install: statische Assets vorab cachen und sofort aktiv werden
