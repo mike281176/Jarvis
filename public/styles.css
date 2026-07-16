@@ -468,7 +468,7 @@ html, body {
 /* Overlays */
 .chat-overlay, .camera-overlay, .climate-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px); display: none; align-items: center; justify-content: center; z-index: 200; }
 .chat-panel, .camera-frame, .climate-panel { background: var(--hud-surface); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 12px; padding: var(--space-md); max-width: 600px; width: 90%; box-shadow: var(--glow-blue-strong); }
-.climate-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.92); backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center; z-index: 200; overflow: hidden; }
+.climate-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.92); backdrop-filter: blur(6px); display: none; align-items: center; justify-content: flex-end; z-index: 200; overflow: hidden; padding-right: 5%; }
 
 .scan-overlay { position: fixed; inset: 0; pointer-events: none; z-index: 5; background: linear-gradient(transparent 50%, rgba(0, 212, 255, 0.03) 50%); background-size: 100% 4px; opacity: 0.25; animation: scan-move 10s linear infinite; }
 
@@ -513,25 +513,30 @@ html, body {
 
 .blueprint-drawing {
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    width: 55%;
+    height: 55%;
     z-index: 0;
     pointer-events: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-end;
     overflow: hidden;
 }
 
 .ac-drawing {
-    width: min(160vw, 1100px);
-    height: auto;
-    max-height: 110vh;
+    width: auto;
+    height: 100%;
+    max-width: none;
     object-fit: contain;
-    opacity: 0.45;
+    opacity: 0.55;
     mix-blend-mode: screen;
     filter: drop-shadow(0 0 22px rgba(0, 212, 255, 0.16));
-    transform: rotate(-20deg) translate(-8%, 10%);
-    transform-origin: center center;
+    transform: rotate(-10deg) translate(8%, -5%);
+    transform-origin: top right;
 }
 
 /* Expanding tile animation */
@@ -566,7 +571,7 @@ html, body {
         opacity: 1;
     }
     100% {
-        left: 50%;
+        left: calc(100% - 270px);
         top: 50%;
         width: 540px;
         height: 420px;
