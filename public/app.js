@@ -25,7 +25,8 @@ class JarvisPWA {
             authToken: null,
             apiUrl: '',
             language: 'de-DE',
-            autoSpeak: true
+            autoSpeak: true,
+            voiceProfile: 'standard'
         };
         
         const saved = localStorage.getItem('jarvis_config');
@@ -428,6 +429,16 @@ class JarvisPWA {
                 this.showNotification(e.target.checked ? 'Sprachausgabe aktiviert' : 'Sprachausgabe deaktiviert', 'success');
             });
         }
+        const voiceProfileSelect = document.getElementById('voiceProfileSelect');
+        if (voiceProfileSelect) {
+            voiceProfileSelect.value = this.config.voiceProfile || 'standard';
+            voiceProfileSelect.addEventListener('change', (e) => {
+                this.config.voiceProfile = e.target.value;
+                this.saveConfig();
+                this.showNotification(`Stimmprofil auf ${e.target.options[e.target.selectedIndex].text} gesetzt`, 'success');
+            });
+        }
+        
 
         const ttsTestBtn = document.getElementById('ttsTestBtn');
         if (ttsTestBtn) {
@@ -1307,7 +1318,18 @@ class JarvisPWA {
         const utterance = new SpeechSynthesisUtterance(speakableText);
         utterance.lang = 'de-DE';
         utterance.rate = 1.0;
-        utterance.pitch = 0.9;
+
+        const profile = this.config.voiceProfile || 'standard';
+        const pSettings = {
+            'standard': { pitch: 0.9, rate: 1.0 },
+            'elegant': { pitch: 0.8, rate: 0.9 },
+            'sarcastic': { pitch: 1.1, rate: 1.1 },
+            'alarm': { pitch: 1.2, rate: 1.2 }
+        };
+        const settings = pSettings[profile] || pSettings['standard'];
+        utterance.pitch = settings.pitch;
+        utterance.rate = settings.rate;
+        
 
         if (this.voices && this.voices.length > 0) {
             const germanVoice = this.voices.find(v =>
@@ -1393,6 +1415,7 @@ class JarvisPWA {
                     model: 'hermes-agent',
                     stream: true,
                     max_tokens: 120,
+                    session_key: 'jarvis-pwa-main-chat',
                     messages: [
                         { role: 'system', content: systemPrompt },
                         { role: 'user', content: cleanMessage }
