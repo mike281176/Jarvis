@@ -443,7 +443,8 @@ class JarvisPWA {
         const ttsTestBtn = document.getElementById('ttsTestBtn');
         if (ttsTestBtn) {
             ttsTestBtn.addEventListener('click', () => {
-            this.testVoice();
+                this.testVoice();
+            });
         }
         
         const exportLogBtn = document.getElementById('exportLogBtn');
