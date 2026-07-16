@@ -513,24 +513,25 @@ html, body {
 
 .blueprint-drawing {
     position: absolute;
-    top: 2%;
-    left: 1%;
-    right: auto;
-    bottom: auto;
-    transform: rotate(-45deg);
-    transform-origin: top left;
-    width: min(60vw, 360px);
-    opacity: 0.65;
+    inset: 0;
+    z-index: 0;
     pointer-events: none;
-    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .ac-drawing {
-    width: 100%;
+    width: min(160vw, 1100px);
     height: auto;
+    max-height: 110vh;
     object-fit: contain;
-    filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.25));
-    border-radius: 6px;
+    opacity: 0.45;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 22px rgba(0, 212, 255, 0.16));
+    transform: rotate(-20deg) translate(-8%, 10%);
+    transform-origin: center center;
 }
 
 /* Expanding tile animation */
