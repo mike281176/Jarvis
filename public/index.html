@@ -572,14 +572,22 @@
     <div class="boot-sequence" id="bootSequence" style="display: none;">
         <div class="boot-backdrop"></div>
         <canvas class="boot-canvas" id="bootCanvas"></canvas>
-        <div class="boot-core">
+
+        <div class="boot-core" id="bootCore">
             <div class="boot-ring ring-1"></div>
             <div class="boot-ring ring-2"></div>
             <div class="boot-ring ring-3"></div>
-            <div class="boot-center"></div>
+            <div class="boot-center" id="bootCenter"></div>
+            <div class="boot-speaking-ring wave-1"></div>
+            <div class="boot-speaking-ring wave-2"></div>
+            <div class="boot-speaking-ring wave-3"></div>
+            <div class="boot-speaking-ring wave-4"></div>
         </div>
-        <div class="boot-text" id="bootText"></div>
-        <div class="boot-subtitle" id="bootSubtitle">Systeme werden initialisiert</div>
+
+        <div class="boot-text-wrap">
+            <div class="boot-text" id="bootText"></div>
+            <div class="boot-subtitle" id="bootSubtitle">Systeme werden initialisiert</div>
+        </div>
     </div>
 
     <script src="app.js"></script>

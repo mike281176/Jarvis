@@ -184,6 +184,7 @@ class JarvisPWA {
         const textEl = document.getElementById('bootText');
         const subtitleEl = document.getElementById('bootSubtitle');
         const canvas = document.getElementById('bootCanvas');
+        const core = document.getElementById('bootCore');
         if (!overlay || !textEl || !canvas) {
             this.showMainInterface();
             return;
@@ -191,14 +192,32 @@ class JarvisPWA {
 
         overlay.style.display = 'flex';
         overlay.classList.remove('fading-out');
+        if (core) core.classList.remove('speaking');
         textEl.textContent = '';
         if (subtitleEl) subtitleEl.textContent = 'Systeme werden initialisiert';
 
         const greeting = this.buildGreeting();
-        this.typeBootText(greeting, textEl, 40);
+        const typeSpeed = 38;
+        this.typeBootText(greeting, textEl, typeSpeed);
         this.startBootVisualizer(canvas);
-        this.speak(greeting);
 
+        // TTS mit Animation synchronisieren
+        const startSpeakingVisuals = () => {
+            if (core) core.classList.add('speaking');
+            if (subtitleEl) subtitleEl.textContent = 'Sprachausgabe aktiv';
+        };
+        const stopSpeakingVisuals = () => {
+            if (core) core.classList.remove('speaking');
+            if (subtitleEl) subtitleEl.textContent = 'Systeme bereit';
+        };
+
+        this.speak(greeting, {
+            onstart: startSpeakingVisuals,
+            onend: stopSpeakingVisuals
+        });
+
+        // Mindestens so lange wie Begrüßung anzeigen, aber mindestens 7s
+        const totalDuration = Math.max(7000, greeting.length * typeSpeed + 1800);
         setTimeout(() => {
             overlay.classList.add('fading-out');
             setTimeout(() => {
@@ -206,7 +225,7 @@ class JarvisPWA {
                 this.stopBootVisualizer();
                 this.showMainInterface();
             }, 900);
-        }, 7000);
+        }, totalDuration);
     }
 
     typeBootText(text, element, speedMs) {
@@ -240,7 +259,6 @@ class JarvisPWA {
 
         const centerX = () => canvas.width / 2;
         const centerY = () => canvas.height / 2;
-        const maxRadius = () => Math.min(canvas.width, canvas.height) * 0.45;
 
         for (let i = 0; i < 5; i++) {
             this._bootWaves.push({
@@ -324,6 +342,8 @@ class JarvisPWA {
         if (this._bootCanvas && this._bootCtx) {
             this._bootCtx.clearRect(0, 0, this._bootCanvas.width, this._bootCanvas.height);
         }
+        const core = document.getElementById('bootCore');
+        if (core) core.classList.remove('speaking');
     }
 
     handleUserSelect(userId) {
@@ -1420,7 +1440,7 @@ class JarvisPWA {
         }
     }
 
-    speak(text) {
+    speak(text, { onstart, onend } = {}) {
         if (!this.synthesis) return;
         if (this.config.autoSpeak === false) return;
 
@@ -1455,12 +1475,15 @@ class JarvisPWA {
 
         utterance.onstart = () => {
             this.updateVoiceStatus('SPRECHVORGANG...', 'speaking');
+            if (typeof onstart === 'function') onstart();
         };
         utterance.onend = () => {
             this.updateVoiceStatus('Bereit', 'ready');
+            if (typeof onend === 'function') onend();
         };
         utterance.onerror = (e) => {
             console.error('[JARVIS TTS]', e.error);
+            if (typeof onend === 'function') onend();
         };
 
         this.synthesis.speak(utterance);
