@@ -443,8 +443,7 @@ class JarvisPWA {
         const ttsTestBtn = document.getElementById('ttsTestBtn');
         if (ttsTestBtn) {
             ttsTestBtn.addEventListener('click', () => {
-                this.speak('J.A.R.V.I.S. Sprachausgabe funktioniert, Sir.');
-            });
+            this.testVoice();
         }
         
         const exportLogBtn = document.getElementById('exportLogBtn');
