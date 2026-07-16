@@ -1912,6 +1912,11 @@ class JarvisPWA {
             window.location.reload();
         });
     }
+    }
+        this.speak(text);
+        const text = document.getElementById('ttsTestText')?.value || 'J.A.R.V.I.S. steht zu Ihren Diensten, Sir.';
+    async testVoice() {
+
 }
 
 // ==================== INITIALISIERUNG ====================
