@@ -389,7 +389,8 @@ html, body {
 .mini-controls { display: flex; gap: var(--space-xs); margin-top: var(--space-xs); justify-content: center; }
 .mini-btn { width: 26px; height: 26px; border-radius: 50%; background: rgba(0, 212, 255, 0.08); border: 1px solid rgba(0, 212, 255, 0.3); color: var(--jarvis-blue); cursor: pointer; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; }
 .mini-btn.power { color: var(--jarvis-green); border-color: rgba(0, 255, 136, 0.35); }
-.phase-row { display: grid; grid-template-columns: 18px 1fr; align-items: center; gap: var(--space-xs); font-size: 0.65rem; color: var(--text-secondary); margin-bottom: 0.2rem; }
+.phase-row { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: var(--space-xs); font-size: 0.6rem; color: var(--text-secondary); margin-bottom: 0.2rem; }
+.phase-row span { white-space: nowrap; }
 .phase-bar-sm { height: 5px; background: rgba(0, 212, 255, 0.1); border-radius: 3px; overflow: hidden; }
 .phase-bar-sm > div { height: 100%; width: 0%; background: var(--jarvis-blue); border-radius: 3px; transition: width 0.5s ease; }
 
