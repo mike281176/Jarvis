@@ -22,3 +22,4 @@ __pycache__/
 # Node / Vercel Build-Artefakte
 node_modules/
 .vercel/
+state.db
