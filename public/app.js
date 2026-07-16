@@ -1361,6 +1361,11 @@ class JarvisPWA {
 
     async sendMessage(message) {
         this.logDebug('sendMessage called', {message, length: message ? message.length : 0});
+
+    async testVoice() {
+        const text = document.getElementById('ttsTestText')?.value || 'J.A.R.V.I.S. steht zu Ihren Diensten, Sir.';
+        this.speak(text);
+    }
         
         if (!message || !message.trim()) {
             this.logDebug('sendMessage ignored: empty message');
