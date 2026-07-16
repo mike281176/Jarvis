@@ -443,7 +443,7 @@ class JarvisPWA {
         const ttsTestBtn = document.getElementById('ttsTestBtn');
         if (ttsTestBtn) {
             ttsTestBtn.addEventListener('click', () => {
-                this.testVoice();
+                this.speak('J.A.R.V.I.S. Sprachausgabe funktioniert, Sir.');
             });
         }
         
@@ -1361,170 +1361,163 @@ class JarvisPWA {
 
     async sendMessage(message) {
         this.logDebug('sendMessage called', {message, length: message ? message.length : 0});
-
-    }
-        this.updateVoiceStatus('Bereit', 'ready');
         
+        if (!message || !message.trim()) {
+            this.logDebug('sendMessage ignored: empty message');
+            this.updateVoiceStatus('Bereit', 'ready');
+            return;
         }
-            this.speak(errorMsg);
-            });
-                timestamp: new Date()
-                jarvis: errorMsg,
-                user: cleanMessage,
-            this.conversation.push({
-            }
-                this.logDebug('UI error showing error message', {message: uiError.message});
-            } catch (uiError) {
-                this.addMessage(errorMsg, 'jarvis');
-            try {
-            this.logConversation(`ERROR: ${error.message || error}`, 'jarvis');
-            this.logConversation(errorMsg, 'jarvis');
-            // Immer loggen, auch wenn UI nicht bereit
-            const errorMsg = 'Entschuldigung, Sir. Die Verbindung zum Hauptsystem ist unterbrochen.';
-            this.logDebug('sendMessage catch error', {message: error.message, stack: error.stack});
-        } catch (error) {
-            
-            });
-                timestamp: new Date()
-                jarvis: cleanedResponse,
-                user: cleanMessage,
-            this.conversation.push({
-            // Speichere in Konversation
-            
-            this.speak(cleanedResponse);
-            // Sprich Antwort erst jetzt aus, wenn der Stream komplett ist
-            
-            }
-                this.addMessage(cleanedResponse, 'jarvis');
-                // Fallback falls Bubble nicht existiert
-            } else {
-                this.logConversation(cleanedResponse, 'jarvis');
-                finalBubble.querySelector('.message-content p').textContent = cleanedResponse;
-                finalBubble.removeAttribute('data-ephemeral');
-            if (finalBubble) {
-            const finalBubble = jarvisBubblesFinal[jarvisBubblesFinal.length - 1];
-            const jarvisBubblesFinal = document.querySelectorAll('.message-bubble.jarvis[data-ephemeral="true"]');
-            // Temporäre Bubble in finale Bubble umwandeln
-            
-            const cleanedResponse = this.sanitizeResponse(jarvisResponse);
-            // Rohe tool_call-Blöcke aus der finalen Antwort entfernen
-            
-            const jarvisResponse = streamedText || 'Entschuldigung, Sir. Ich habe keine Antwort erhalten.';
-            
-            }
-                }
-                    }
-                        // Ungültiges Chunk ignorieren
-                    } catch (e) {
-                        }
-                            }
-                                contentEl.parentElement.scrollTop = contentEl.parentElement.scrollHeight;
-                                contentEl.textContent = streamedText;
-                            if (contentEl) {
-                            streamedText += delta.content;
-                        if (delta?.content) {
-                        const delta = chunk.choices?.[0]?.delta;
-                        const chunk = JSON.parse(dataStr);
-                    try {
-                    
-                    if (dataStr === '[DONE]') continue;
-                    const dataStr = trimmed.slice(5).trim();
-                    if (!trimmed.startsWith('data:')) continue;
-                    const trimmed = line.trim();
-                for (const line of lines) {
-                
-                buffer = lines.pop(); // unvollständige Zeile zurückbehalten
-                const lines = buffer.split('\n');
-                buffer += decoder.decode(value, { stream: true });
-                
-                if (done) break;
-                const { done, value } = await reader.read();
-            while (true) {
-            
-            const contentEl = jarvisBubbles[jarvisBubbles.length - 1]?.querySelector('.message-content p');
-            const jarvisBubbles = document.querySelectorAll('.message-bubble.jarvis[data-ephemeral="true"]');
-            this.addMessage('', 'jarvis', { ephemeral: true });
-            // Leere Antwort-Bubble anlegen, die während des Streams befüllt wird
-            
-            let buffer = '';
-            let streamedText = '';
-            const decoder = new TextDecoder('utf-8');
-            const reader = response.body.getReader();
-            // Streaming-Verarbeitung: Text live anzeigen, Sprache erst am Ende
-            
-            }
-                throw new Error(`HTTP ${response.status}: ${errorText}`);
-                this.logDebug('API error response', {status: response.status, body: errorText});
-                const errorText = await response.text().catch(() => `HTTP ${response.status}`);
-            if (!response.ok) {
-            
-            });
-                })
-                    ]
-                        { role: 'user', content: cleanMessage }
-                        { role: 'system', content: systemPrompt },
-                    messages: [
-                    session_key: 'jarvis-pwa-main-chat',
-                    max_tokens: 120,
-                    stream: true,
-                    model: 'hermes-agent',
-                body: JSON.stringify({
-                headers: headers,
-                method: 'POST',
-            const response = await fetch(url, {
-            
-            this.logDebug('API request', {url, apiBaseUrl: this.apiBaseUrl, hasAuthToken: !!this.config.authToken, userId: this.user?.id});
-            const url = `${this.apiBaseUrl}/api/jarvis/v1/chat/completions`;
-            
-            }
-                headers['X-Jarvis-User-Id'] = this.user.id;
-                headers['X-Jarvis-Auth-Token'] = this.config.authToken;
-            if (this.config.authToken) {
-            };
-                'ngrok-skip-browser-warning': 'true'
-                'Authorization': `Bearer ${this.apiKey}`,
-                'Content-Type': 'application/json',
-            const headers = {
-
-                `Nutzer: ${this.user.name}, Rolle: ${this.user.role}. Raum: ${location}.`;
-                `\n` +
-                `- Zeige niemals rohe tool_call-Blöcke, nur menschenlesbare Antworten.\n` +
-                `- Klimaanlage \"an\" immer mit Rückfrage; schalte niemals ohne Bestätigung ein.\n` +
-                `- Beantworte Uhrzeit- und Datumsfragen direkt mit einer konkreten Angabe. Vermeide Sätze wie \"Ich kann die exakte Zeit nicht nennen\".\n` +
-                `- Du hast Zugriff auf Smart Home, E-Mail, Web-Suche, Termine und Server.\n` +
-                `- \"Master Mike\" nur bei ernsten Alarmen/Gefahren (Einbruch, Feuer, Wasser, Stromausfall, schwerer Fehler).\n` +
-                `- Antworte kurz, prägnant, ohne typische KI-Floskeln.\n` +
-                `REGELN:\n` +
-                `\n` +
-                `Stil: britisches Understatement, trockener Humor, professionell, loyal, analytisch, elegant. Sprache: Hochdeutsch. Anrede: ${salutation}.\n` +
-            const systemPrompt = `Du bist J.A.R.V.I.S., der persönliche KI-Assistent und Butler von Mike Schiller.\n` +
-            // System-Prompt für J.A.R.V.I.S. Persönlichkeit
-            
-            const salutation = 'Sir';
-            const location = document.getElementById('currentLocation')?.textContent || 'Wohnzimmer';
-        try {
-        
-        this.updateVoiceStatus('Verarbeite...', 'active');
-        // Aktiviere Lade-Zustand
-        
-        this.logConversation(cleanMessage, 'user');
-        this.addMessage(cleanMessage, 'user');
-        // Zeige User-Nachricht und logge sie
         
         const cleanMessage = message.trim();
         
-        }
-            return;
-            this.updateVoiceStatus('Bereit', 'ready');
-            this.logDebug('sendMessage ignored: empty message');
-        if (!message || !message.trim()) {
+        // Zeige User-Nachricht und logge sie
+        this.addMessage(cleanMessage, 'user');
+        this.logConversation(cleanMessage, 'user');
         
+        // Aktiviere Lade-Zustand
+        this.updateVoiceStatus('Verarbeite...', 'active');
+        
+        try {
+            const location = document.getElementById('currentLocation')?.textContent || 'Wohnzimmer';
+            const salutation = 'Sir';
+            
+            // System-Prompt für J.A.R.V.I.S. Persönlichkeit
+            const systemPrompt = `Du bist J.A.R.V.I.S., der persönliche KI-Assistent und Butler von Mike Schiller.\n` +
+                `Stil: britisches Understatement, trockener Humor, professionell, loyal, analytisch, elegant. Sprache: Hochdeutsch. Anrede: ${salutation}.\n` +
+                `\n` +
+                `REGELN:\n` +
+                `- Antworte kurz, prägnant, ohne typische KI-Floskeln.\n` +
+                `- \"Master Mike\" nur bei ernsten Alarmen/Gefahren (Einbruch, Feuer, Wasser, Stromausfall, schwerer Fehler).\n` +
+                `- Du hast Zugriff auf Smart Home, E-Mail, Web-Suche, Termine und Server.\n` +
+                `- Beantworte Uhrzeit- und Datumsfragen direkt mit einer konkreten Angabe. Vermeide Sätze wie \"Ich kann die exakte Zeit nicht nennen\".\n` +
+                `- Klimaanlage \"an\" immer mit Rückfrage; schalte niemals ohne Bestätigung ein.\n` +
+                `- Zeige niemals rohe tool_call-Blöcke, nur menschenlesbare Antworten.\n` +
+                `\n` +
+                `Nutzer: ${this.user.name}, Rolle: ${this.user.role}. Raum: ${location}.`;
 
-    async testVoice() {
-
+            const headers = {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${this.apiKey}`,
+                'ngrok-skip-browser-warning': 'true'
+            };
+            if (this.config.authToken) {
+                headers['X-Jarvis-Auth-Token'] = this.config.authToken;
+                headers['X-Jarvis-User-Id'] = this.user.id;
+            }
+            
+            const url = `${this.apiBaseUrl}/api/jarvis/v1/chat/completions`;
+            this.logDebug('API request', {url, apiBaseUrl: this.apiBaseUrl, hasAuthToken: !!this.config.authToken, userId: this.user?.id});
+            
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: headers,
+                body: JSON.stringify({
+                    model: 'hermes-agent',
+                    stream: true,
+                    max_tokens: 120,
+                    session_key: 'jarvis-pwa-main-chat',
+                    messages: [
+                        { role: 'system', content: systemPrompt },
+                        { role: 'user', content: cleanMessage }
+                    ]
+                })
+            });
+            
+            if (!response.ok) {
+                const errorText = await response.text().catch(() => `HTTP ${response.status}`);
+                this.logDebug('API error response', {status: response.status, body: errorText});
+                throw new Error(`HTTP ${response.status}: ${errorText}`);
+            }
+            
+            // Streaming-Verarbeitung: Text live anzeigen, Sprache erst am Ende
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder('utf-8');
+            let streamedText = '';
+            let buffer = '';
+            
+            // Leere Antwort-Bubble anlegen, die während des Streams befüllt wird
+            this.addMessage('', 'jarvis', { ephemeral: true });
+            const jarvisBubbles = document.querySelectorAll('.message-bubble.jarvis[data-ephemeral="true"]');
+            const contentEl = jarvisBubbles[jarvisBubbles.length - 1]?.querySelector('.message-content p');
+            
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                
+                buffer += decoder.decode(value, { stream: true });
+                const lines = buffer.split('\n');
+                buffer = lines.pop(); // unvollständige Zeile zurückbehalten
+                
+                for (const line of lines) {
+                    const trimmed = line.trim();
+                    if (!trimmed.startsWith('data:')) continue;
+                    const dataStr = trimmed.slice(5).trim();
+                    if (dataStr === '[DONE]') continue;
+                    
+                    try {
+                        const chunk = JSON.parse(dataStr);
+                        const delta = chunk.choices?.[0]?.delta;
+                        if (delta?.content) {
+                            streamedText += delta.content;
+                            if (contentEl) {
+                                contentEl.textContent = streamedText;
+                                contentEl.parentElement.scrollTop = contentEl.parentElement.scrollHeight;
+                            }
+                        }
+                    } catch (e) {
+                        // Ungültiges Chunk ignorieren
+                    }
+                }
+            }
+            
+            const jarvisResponse = streamedText || 'Entschuldigung, Sir. Ich habe keine Antwort erhalten.';
+            
+            // Rohe tool_call-Blöcke aus der finalen Antwort entfernen
+            const cleanedResponse = this.sanitizeResponse(jarvisResponse);
+            
+            // Temporäre Bubble in finale Bubble umwandeln
+            const jarvisBubblesFinal = document.querySelectorAll('.message-bubble.jarvis[data-ephemeral="true"]');
+            const finalBubble = jarvisBubblesFinal[jarvisBubblesFinal.length - 1];
+            if (finalBubble) {
+                finalBubble.removeAttribute('data-ephemeral');
+                finalBubble.querySelector('.message-content p').textContent = cleanedResponse;
+                this.logConversation(cleanedResponse, 'jarvis');
+            } else {
+                // Fallback falls Bubble nicht existiert
+                this.addMessage(cleanedResponse, 'jarvis');
+            }
+            
+            // Sprich Antwort erst jetzt aus, wenn der Stream komplett ist
+            this.speak(cleanedResponse);
+            
+            // Speichere in Konversation
+            this.conversation.push({
+                user: cleanMessage,
+                jarvis: cleanedResponse,
+                timestamp: new Date()
+            });
+            
+        } catch (error) {
+            this.logDebug('sendMessage catch error', {message: error.message, stack: error.stack});
+            const errorMsg = 'Entschuldigung, Sir. Die Verbindung zum Hauptsystem ist unterbrochen.';
+            // Immer loggen, auch wenn UI nicht bereit
+            this.logConversation(errorMsg, 'jarvis');
+            this.logConversation(`ERROR: ${error.message || error}`, 'jarvis');
+            try {
+                this.addMessage(errorMsg, 'jarvis');
+            } catch (uiError) {
+                this.logDebug('UI error showing error message', {message: uiError.message});
+            }
+            this.conversation.push({
+                user: cleanMessage,
+                jarvis: errorMsg,
+                timestamp: new Date()
+            });
+            this.speak(errorMsg);
+        }
+        
+        this.updateVoiceStatus('Bereit', 'ready');
     }
-        this.speak(text);
-        const text = document.getElementById('ttsTestText')?.value || 'J.A.R.V.I.S. steht zu Ihren Diensten, Sir.';
     
     sanitizeResponse(text) {
         // Entfernt rohe tool_call-Blöcke, die manche Modelle ausgeben, bevor sie Tools ausführen
@@ -1919,11 +1912,6 @@ class JarvisPWA {
             window.location.reload();
         });
     }
-    }
-        this.speak(text);
-        const text = document.getElementById('ttsTestText')?.value || 'J.A.R.V.I.S. steht zu Ihren Diensten, Sir.';
-    async testVoice() {
-
 }
 
 // ==================== INITIALISIERUNG ====================
