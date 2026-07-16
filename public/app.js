@@ -496,7 +496,7 @@ class JarvisPWA {
         // Home climate tile opens overlay
         const homeClimateTile = document.getElementById('homeClimateTile');
         if (homeClimateTile) {
-            homeClimateTile.addEventListener('click', () => this.openClimateOverlay());
+            homeClimateTile.addEventListener('click', (e) => this.openClimateOverlay(e));
         }
 
         // Climate overlay controls
@@ -796,15 +796,53 @@ class JarvisPWA {
         }
     }
 
-    openClimateOverlay() {
+    openClimateOverlay(clickEvent) {
         this.renderClimateOverlay();
         const overlay = document.getElementById('climateOverlay');
-        if (overlay) overlay.style.display = 'flex';
+        const expander = document.getElementById('climateExpander');
+        if (!overlay) return;
+
+        // Measure the clicked tile (or fallback to center)
+        let rect = null;
+        if (clickEvent && clickEvent.currentTarget && clickEvent.currentTarget.getBoundingClientRect) {
+            rect = clickEvent.currentTarget.getBoundingClientRect();
+        } else {
+            const tile = document.getElementById('homeClimateTile');
+            if (tile) rect = tile.getBoundingClientRect();
+        }
+
+        if (rect && expander) {
+            const cx = rect.left + rect.width / 2;
+            const cy = rect.top + rect.height / 2;
+            overlay.style.setProperty('--start-x', `${cx}px`);
+            overlay.style.setProperty('--start-y', `${cy}px`);
+            overlay.style.setProperty('--start-w', `${rect.width}px`);
+            overlay.style.setProperty('--start-h', `${rect.height}px`);
+        }
+
+        overlay.style.display = 'flex';
+        overlay.classList.remove('open');
+        overlay.classList.add('opening');
+
+        // Allow the single reflow, then finish
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                overlay.classList.add('open');
+            });
+        });
+
+        // Remove 'opening' class after animation completes
+        setTimeout(() => {
+            overlay.classList.remove('opening');
+        }, 500);
     }
 
     closeClimateOverlay() {
         const overlay = document.getElementById('climateOverlay');
-        if (overlay) overlay.style.display = 'none';
+        if (overlay) {
+            overlay.classList.remove('open', 'opening');
+            overlay.style.display = 'none';
+        }
     }
 
     renderClimateOverlay() {

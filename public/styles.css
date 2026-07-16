@@ -468,10 +468,107 @@ html, body {
 /* Overlays */
 .chat-overlay, .camera-overlay, .climate-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px); display: none; align-items: center; justify-content: center; z-index: 200; }
 .chat-panel, .camera-frame, .climate-panel { background: var(--hud-surface); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 12px; padding: var(--space-md); max-width: 600px; width: 90%; box-shadow: var(--glow-blue-strong); }
+.climate-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.92); backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center; z-index: 200; overflow: hidden; }
+
 .scan-overlay { position: fixed; inset: 0; pointer-events: none; z-index: 5; background: linear-gradient(transparent 50%, rgba(0, 212, 255, 0.03) 50%); background-size: 100% 4px; opacity: 0.25; animation: scan-move 10s linear infinite; }
 
-/* Climate Overlay */
-.climate-panel { max-width: 520px; max-height: 90vh; display: flex; flex-direction: column; }
+/* Blueprint background */
+.blueprint-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease 0.15s;
+}
+.climate-overlay.open .blueprint-bg { opacity: 1; }
+
+.blueprint-grid {
+    position: absolute;
+    inset: -50%;
+    background:
+        linear-gradient(rgba(0, 212, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
+    background-size: 80px 80px, 80px 80px, 20px 20px, 20px 20px;
+    transform: perspective(800px) rotateX(60deg);
+    transform-origin: center center;
+    animation: blueprint-pan 20s linear infinite;
+}
+
+.blueprint-title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-hud);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--jarvis-blue);
+    opacity: 0.4;
+    text-transform: uppercase;
+}
+
+.blueprint-drawing {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    width: min(90vw, 520px);
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.ac-drawing { width: 100%; height: auto; }
+
+/* Expanding tile animation */
+.climate-expander {
+    position: fixed;
+    left: var(--start-x, 50%);
+    top: var(--start-y, 50%);
+    width: var(--start-w, 0px);
+    height: var(--start-h, 0px);
+    background: rgba(0, 212, 255, 0.06);
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    border-radius: 10px;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 201;
+    transform: translate(-50%, -50%);
+    transition: none;
+}
+
+.climate-overlay.opening .climate-expander {
+    opacity: 1;
+    animation: climate-expand 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes climate-expand {
+    0% {
+        left: var(--start-x);
+        top: var(--start-y);
+        width: var(--start-w);
+        height: var(--start-h);
+        border-radius: 10px;
+        opacity: 1;
+    }
+    100% {
+        left: 50%;
+        top: 50%;
+        width: 540px;
+        height: 420px;
+        border-radius: 14px;
+        opacity: 0;
+    }
+}
+
+@keyframes blueprint-pan {
+    0% { background-position: 0 0, 0 0, 0 0, 0 0; }
+    100% { background-position: 80px 80px, 80px 80px, 20px 20px, 20px 20px; }
+}
+
+.climate-panel { position: relative; z-index: 202; max-width: 520px; max-height: 90vh; display: flex; flex-direction: column; opacity: 0; transform: translateY(20px) scale(0.96); transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1) 0.25s; }
+.climate-overlay.open .climate-panel { opacity: 1; transform: translateY(0) scale(1); }
 .climate-panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md); }
 .climate-panel-header .panel-title { font-family: var(--font-hud); font-size: 0.8rem; letter-spacing: 0.12em; color: var(--jarvis-blue); }
 .climate-panel-body { display: flex; flex-direction: column; gap: var(--space-md); overflow-y: auto; }

@@ -3,7 +3,7 @@
  * Network-first für statische Assets, damit Updates sofort sichtbar sind.
  */
 
-const CACHE_NAME = 'jarvis-v20';
+const CACHE_NAME = 'jarvis-v21';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
