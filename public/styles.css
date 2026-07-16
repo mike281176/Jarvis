@@ -468,7 +468,7 @@ html, body {
 /* Overlays */
 .chat-overlay, .camera-overlay, .climate-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px); display: none; align-items: center; justify-content: center; z-index: 200; }
 .chat-panel, .camera-frame, .climate-panel { background: var(--hud-surface); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 12px; padding: var(--space-md); max-width: 600px; width: 90%; box-shadow: var(--glow-blue-strong); }
-.climate-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.92); backdrop-filter: blur(6px); display: none; align-items: center; justify-content: flex-end; z-index: 200; overflow: hidden; padding-right: 5%; }
+.climate-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.92); backdrop-filter: blur(6px); display: none; align-items: flex-end; justify-content: flex-end; z-index: 200; overflow: hidden; padding: 0 2% 2% 0; }
 
 .scan-overlay { position: fixed; inset: 0; pointer-events: none; z-index: 5; background: linear-gradient(transparent 50%, rgba(0, 212, 255, 0.03) 50%); background-size: 100% 4px; opacity: 0.25; animation: scan-move 10s linear infinite; }
 
@@ -476,7 +476,7 @@ html, body {
 .blueprint-bg {
     position: absolute;
     inset: 0;
-    z-index: 1;
+    z-index: 0;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease 0.15s;
@@ -517,8 +517,8 @@ html, body {
     right: 0;
     bottom: auto;
     left: auto;
-    width: 55%;
-    height: 55%;
+    width: 40%;
+    height: 40%;
     z-index: 0;
     pointer-events: none;
     display: flex;
@@ -529,13 +529,13 @@ html, body {
 
 .ac-drawing {
     width: auto;
-    height: 100%;
+    height: 115%;
     max-width: none;
     object-fit: contain;
-    opacity: 0.55;
+    opacity: 0.85;
     mix-blend-mode: screen;
-    filter: drop-shadow(0 0 22px rgba(0, 212, 255, 0.16));
-    transform: rotate(-10deg) translate(8%, -5%);
+    filter: drop-shadow(0 0 18px rgba(0, 212, 255, 0.14));
+    transform: translate(4%, -12%);
     transform-origin: top right;
 }
 
@@ -571,9 +571,9 @@ html, body {
         opacity: 1;
     }
     100% {
-        left: calc(100% - 270px);
-        top: 50%;
-        width: 540px;
+        left: calc(100% - 200px);
+        top: calc(100% - 230px);
+        width: 380px;
         height: 420px;
         border-radius: 14px;
         opacity: 0;
@@ -588,13 +588,13 @@ html, body {
 /* Climate panel with internal blueprint feel */
 .climate-panel {
     position: relative;
-    z-index: 202;
-    max-width: 520px;
-    max-height: 90vh;
-    width: 90%;
+    z-index: 2;
+    width: 100%;
+    max-width: 360px;
+    max-height: 64vh;
     display: flex;
     flex-direction: column;
-    background: rgba(0, 10, 22, 0.72);
+    background: rgba(0, 10, 22, 0.82);
     border: 1px solid rgba(0, 212, 255, 0.35);
     border-radius: 14px;
     padding: var(--space-md);
@@ -623,18 +623,19 @@ html, body {
 .climate-overlay.open .climate-panel { opacity: 1; transform: translateY(0) scale(1); }
 .climate-panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md); }
 .climate-panel-header .panel-title { font-family: var(--font-hud); font-size: 0.8rem; letter-spacing: 0.12em; color: var(--jarvis-blue); }
-.climate-panel-body { display: flex; flex-direction: column; gap: var(--space-md); overflow-y: auto; }
-.climate-zone { border: 1px solid rgba(0, 212, 255, 0.25); border-radius: 10px; padding: var(--space-sm); background: rgba(0, 8, 18, 0.6); transition: opacity 0.2s; }
+.climate-panel-body { display: flex; flex-direction: column; gap: var(--space-xs); overflow-y: auto; flex: 1 1 auto; min-height: 0; }
+.climate-zone { border: 1px solid rgba(0, 212, 255, 0.25); border-radius: 10px; padding: var(--space-xs) var(--space-sm); background: rgba(0, 8, 18, 0.6); transition: opacity 0.2s; flex: 0 0 auto; }
 .climate-zone.disabled { opacity: 0.5; pointer-events: none; }
-.zone-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-xs); }
-.zone-name { font-family: var(--font-hud); font-size: 0.75rem; letter-spacing: 0.08em; color: var(--jarvis-blue); }
-.zone-status { font-size: 0.7rem; color: var(--jarvis-green); }
+.zone-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0; }
+.zone-name { font-family: var(--font-hud); font-size: 0.7rem; letter-spacing: 0.08em; color: var(--jarvis-blue); }
+.zone-status { font-size: 0.65rem; color: var(--jarvis-green); }
 .zone-status.off { color: var(--jarvis-red); }
 .climate-zone.disabled .zone-status { color: var(--text-secondary); }
 .zone-body { display: flex; justify-content: space-between; align-items: center; gap: var(--space-sm); }
 .zone-temp { display: flex; flex-direction: column; }
-.zone-target { font-size: 1.6rem; font-weight: 300; font-family: var(--font-hud); color: var(--text-primary); }
-.zone-current { font-size: 0.7rem; color: var(--text-secondary); margin-top: 0.15rem; }
+.zone-target { font-size: 1.25rem; font-weight: 300; font-family: var(--font-hud); color: var(--text-primary); }
+.zone-current { font-size: 0.6rem; color: var(--text-secondary); margin-top: 0; }
+.mini-btn { width: 24px; height: 24px; font-size: 0.85rem; padding: 0; display: flex; align-items: center; justify-content: center; }
 .climate-tile { background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; }
 .climate-tile:hover { border-color: rgba(0, 212, 255, 0.4); }
 .tile-hint { font-size: 0.6rem; color: var(--text-secondary); margin-top: 0.3rem; opacity: 0.7; }
@@ -706,6 +707,22 @@ html, body {
     .core-text { font-size: 0.75rem; }
     .footer-left, .footer-center { display: none; }
     .dashboard-footer { grid-template-columns: 1fr; }
+}
+
+/* Climate overlay: small height screens */
+@media (max-height: 650px) {
+    .blueprint-drawing { width: 35%; height: 32%; }
+    .ac-drawing { height: 100%; }
+    .climate-panel { max-height: 72vh; max-width: 320px; }
+    .climate-panel-header { margin-bottom: var(--space-sm); }
+    .zone-target { font-size: 1.1rem; }
+}
+
+@media (max-height: 520px) {
+    .blueprint-drawing { width: 28%; height: 26%; }
+    .climate-panel { max-height: 78vh; }
+    .zone-name { font-size: 0.65rem; }
+    .zone-status { font-size: 0.6rem; }
 }
 
 /* Voice waves scale with responsive globe */
