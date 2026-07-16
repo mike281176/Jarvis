@@ -610,14 +610,13 @@ class JarvisPWA {
             const requiredEntities = [
                 // Solar
                 'sensor.jarvis_solar_aktuell', 'sensor.jarvis_solar_heute',
-                'sensor.hm1500_power', 'sensor.hm1500_yieldday',
+                'sensor.hm1500_power', 'sensor.solar_yieldday',
                 // Battery
                 'sensor.gesamt_batterie_soc', 'sensor.batterie_summe',
                 'sensor.gesamt_lade_leistung', 'sensor.gesamt_entlade_leistung',
                 // Grid/House
                 'sensor.power_import_grid', 'sensor.power_grid_total_raw',
-                'sensor.jarvis_gesamt_verbrauch', 'sensor.shelly_3em_total_power',
-                'sensor.power_consumption', 'sensor.total_power',
+                'sensor.total_power', 'sensor.power_consumption',
                 // Phases
                 'sensor.haus_channel_a_power', 'sensor.haus_channel_b_power', 'sensor.haus_channel_c_power',
                 // Climate
@@ -675,7 +674,7 @@ class JarvisPWA {
     updateEnergyWidgets(states) {
         // Solar power and today
         const solarPowerState = states.find(s => s.entity_id === 'sensor.jarvis_solar_aktuell' || s.entity_id === 'sensor.hm1500_power');
-        const solarTodayState = states.find(s => s.entity_id === 'sensor.jarvis_solar_heute' || s.entity_id === 'sensor.hm1500_yieldday');
+        const solarTodayState = states.find(s => s.entity_id === 'sensor.jarvis_solar_heute' || s.entity_id === 'sensor.solar_yieldday');
         if (solarPowerState) {
             const watts = parseFloat(solarPowerState.state) || 0;
             const text = `${Math.round(watts)} W`;
@@ -684,7 +683,7 @@ class JarvisPWA {
         }
         if (solarTodayState) {
             let kwh = parseFloat(solarTodayState.state) || 0;
-            if (solarTodayState.entity_id === 'sensor.hm1500_yieldday') kwh = kwh / 1000;
+            if (solarTodayState.entity_id === 'sensor.solar_yieldday') kwh = kwh / 1000;
             const text = `Heute: ${kwh.toFixed(1)} kWh`;
             this.setText('homeSolarToday', text);
             this.setText('stromSolarToday', text);
