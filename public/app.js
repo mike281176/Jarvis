@@ -732,10 +732,10 @@ class JarvisPWA {
         const phaseA = states.find(s => s.entity_id === 'sensor.haus_channel_a_power');
         const phaseB = states.find(s => s.entity_id === 'sensor.haus_channel_b_power');
         const phaseC = states.find(s => s.entity_id === 'sensor.haus_channel_c_power');
-        const maxPhase = 5000;
-        if (phaseA) this.setBar('stromPhaseA', (parseFloat(phaseA.state) || 0) / maxPhase * 100);
-        if (phaseB) this.setBar('stromPhaseB', (parseFloat(phaseB.state) || 0) / maxPhase * 100);
-        if (phaseC) this.setBar('stromPhaseC', (parseFloat(phaseC.state) || 0) / maxPhase * 100);
+        const fmt = v => `${Number.isFinite(v) ? Math.round(v) : 0} W`;
+        if (phaseA) this.setText('stromPhaseA', fmt(parseFloat(phaseA.state)));
+        if (phaseB) this.setText('stromPhaseB', fmt(parseFloat(phaseB.state)));
+        if (phaseC) this.setText('stromPhaseC', fmt(parseFloat(phaseC.state)));
     }
 
     setText(id, text) {
