@@ -147,17 +147,23 @@ class JarvisPWA {
         this.config.authToken = token;
         this.saveConfig();
         
-        // Animation und Wechsel
-        document.querySelector('.hologram-container').style.animation = 'none';
-        document.querySelector('.hologram-container').style.opacity = '0';
-        document.querySelector('.hologram-container').style.transition = 'opacity 0.5s ease';
+        // Fade out login hologram, then switch to main interface + greeting
+        const hologram = document.querySelector('.hologram-container');
+        if (hologram) {
+            hologram.style.animation = 'none';
+            hologram.style.opacity = '0';
+            hologram.style.transition = 'opacity 0.5s ease';
+        }
         
         setTimeout(() => {
-            this.showBootSequence();
+            this.showMainInterface();
+            // German greeting with weekday, spoken with voice-wave visuals
+            const greeting = this.buildGreeting();
+            this.speak(greeting);
         }, 600);
     }
 
-    // ==================== BOOT / GREETING SEQUENCE ====================
+    // ==================== GREETING ====================
 
     buildGreeting() {
         const now = new Date();
@@ -177,173 +183,6 @@ class JarvisPWA {
 
         const name = this.user?.name || 'Sir';
         return `Guten ${dayPart}, ${name}. Wir haben ${weekday}, den ${day}.${month}.${year}. J.A.R.V.I.S. steht zu Ihren Diensten. Systeme nominal.`;
-    }
-
-    showBootSequence() {
-        const overlay = document.getElementById('bootSequence');
-        const textEl = document.getElementById('bootText');
-        const subtitleEl = document.getElementById('bootSubtitle');
-        const canvas = document.getElementById('bootCanvas');
-        const core = document.getElementById('bootCore');
-        if (!overlay || !textEl || !canvas) {
-            this.showMainInterface();
-            return;
-        }
-
-        overlay.style.display = 'flex';
-        overlay.classList.remove('fading-out');
-        if (core) core.classList.remove('speaking');
-        textEl.textContent = '';
-        if (subtitleEl) subtitleEl.textContent = 'Systeme werden initialisiert';
-
-        const greeting = this.buildGreeting();
-        const typeSpeed = 38;
-        this.typeBootText(greeting, textEl, typeSpeed);
-        this.startBootVisualizer(canvas);
-
-        // TTS mit Animation synchronisieren
-        const startSpeakingVisuals = () => {
-            if (core) core.classList.add('speaking');
-            if (subtitleEl) subtitleEl.textContent = 'Sprachausgabe aktiv';
-        };
-        const stopSpeakingVisuals = () => {
-            if (core) core.classList.remove('speaking');
-            if (subtitleEl) subtitleEl.textContent = 'Systeme bereit';
-        };
-
-        this.speak(greeting, {
-            onstart: startSpeakingVisuals,
-            onend: stopSpeakingVisuals
-        });
-
-        // Mindestens so lange wie Begrüßung anzeigen, aber mindestens 7s
-        const totalDuration = Math.max(7000, greeting.length * typeSpeed + 1800);
-        setTimeout(() => {
-            overlay.classList.add('fading-out');
-            setTimeout(() => {
-                overlay.style.display = 'none';
-                this.stopBootVisualizer();
-                this.showMainInterface();
-            }, 900);
-        }, totalDuration);
-    }
-
-    typeBootText(text, element, speedMs) {
-        let i = 0;
-        element.textContent = '';
-        this._bootTypeInterval = setInterval(() => {
-            element.textContent += text.charAt(i);
-            i++;
-            if (i >= text.length) {
-                clearInterval(this._bootTypeInterval);
-                this._bootTypeInterval = null;
-            }
-        }, speedMs);
-    }
-
-    startBootVisualizer(canvas) {
-        if (!canvas) return;
-        this._bootCanvas = canvas;
-        this._bootCtx = canvas.getContext('2d');
-        this._bootRaf = null;
-        this._bootWaves = [];
-        this._bootActive = true;
-
-        const resize = () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        };
-        resize();
-        this._bootResizeHandler = resize;
-        window.addEventListener('resize', resize);
-
-        const centerX = () => canvas.width / 2;
-        const centerY = () => canvas.height / 2;
-
-        for (let i = 0; i < 5; i++) {
-            this._bootWaves.push({
-                radius: 60 + i * 30,
-                speed: 0.8 + i * 0.25,
-                amplitude: 4 + i,
-                phase: i * 1.2,
-                opacity: 0.25 - i * 0.04
-            });
-        }
-
-        const draw = (time) => {
-            if (!this._bootActive) return;
-            const ctx = this._bootCtx;
-            const w = canvas.width;
-            const h = canvas.height;
-            ctx.clearRect(0, 0, w, h);
-
-            const cx = centerX();
-            const cy = centerY();
-            const t = time * 0.002;
-
-            // Glow center
-            const glow = ctx.createRadialGradient(cx, cy, 10, cx, cy, 80);
-            glow.addColorStop(0, 'rgba(0, 212, 255, 0.35)');
-            glow.addColorStop(1, 'rgba(0, 212, 255, 0)');
-            ctx.fillStyle = glow;
-            ctx.beginPath();
-            ctx.arc(cx, cy, 80, 0, Math.PI * 2);
-            ctx.fill();
-
-            // Animated wave rings
-            this._bootWaves.forEach((wave, idx) => {
-                const r = wave.radius + Math.sin(t * wave.speed + wave.phase) * 8;
-                const alpha = wave.opacity + Math.sin(t * wave.speed * 1.3 + wave.phase) * 0.08;
-                ctx.strokeStyle = `rgba(0, 212, 255, ${Math.max(0.05, Math.min(0.5, alpha))})`;
-                ctx.lineWidth = 1.5;
-                ctx.beginPath();
-                for (let a = 0; a <= Math.PI * 2; a += 0.08) {
-                    const wobble = Math.sin(a * 8 + t * wave.speed + wave.phase) * wave.amplitude;
-                    const radius = r + wobble;
-                    const x = cx + Math.cos(a) * radius;
-                    const y = cy + Math.sin(a) * radius;
-                    if (a === 0) ctx.moveTo(x, y);
-                    else ctx.lineTo(x, y);
-                }
-                ctx.closePath();
-                ctx.stroke();
-            });
-
-            // Particles
-            const particleCount = 24;
-            for (let i = 0; i < particleCount; i++) {
-                const angle = (i / particleCount) * Math.PI * 2 + t * 0.3;
-                const dist = 90 + Math.sin(t + i) * 20;
-                const x = cx + Math.cos(angle) * dist;
-                const y = cy + Math.sin(angle) * dist;
-                ctx.fillStyle = `rgba(0, 212, 255, ${0.3 + Math.sin(t * 2 + i) * 0.2})`;
-                ctx.beginPath();
-                ctx.arc(x, y, 1.5, 0, Math.PI * 2);
-                ctx.fill();
-            }
-
-            this._bootRaf = requestAnimationFrame(draw);
-        };
-
-        this._bootRaf = requestAnimationFrame(draw);
-    }
-
-    stopBootVisualizer() {
-        this._bootActive = false;
-        if (this._bootRaf) cancelAnimationFrame(this._bootRaf);
-        if (this._bootTypeInterval) {
-            clearInterval(this._bootTypeInterval);
-            this._bootTypeInterval = null;
-        }
-        if (this._bootResizeHandler) {
-            window.removeEventListener('resize', this._bootResizeHandler);
-            this._bootResizeHandler = null;
-        }
-        if (this._bootCanvas && this._bootCtx) {
-            this._bootCtx.clearRect(0, 0, this._bootCanvas.width, this._bootCanvas.height);
-        }
-        const core = document.getElementById('bootCore');
-        if (core) core.classList.remove('speaking');
     }
 
     handleUserSelect(userId) {
@@ -1444,6 +1283,11 @@ class JarvisPWA {
         if (!this.synthesis) return;
         if (this.config.autoSpeak === false) return;
 
+        const aiCore = document.getElementById('aiCoreContainer');
+        const setSpeaking = (active) => {
+            if (aiCore) aiCore.classList.toggle('speaking', active);
+        };
+
         // Chrome/Android: AudioContext/SpeechSynthesis muss durch User-Gesture initialisiert sein
         const unlockAudio = () => {
             this.synthesis.cancel();
@@ -1459,7 +1303,6 @@ class JarvisPWA {
         this.synthesis.cancel();
 
         let speakableText = text.replace(/J\.A\.R\.V\.I\.S\./g, 'Jarvis');
-        // Keine zufällige Ersetzung von "Sir" zu "Master" — Anrede wird ausschließlich über System-Prompt gesteuert.
 
         const utterance = new SpeechSynthesisUtterance(speakableText);
         utterance.lang = 'de-DE';
@@ -1475,14 +1318,17 @@ class JarvisPWA {
 
         utterance.onstart = () => {
             this.updateVoiceStatus('SPRECHVORGANG...', 'speaking');
+            setSpeaking(true);
             if (typeof onstart === 'function') onstart();
         };
         utterance.onend = () => {
             this.updateVoiceStatus('Bereit', 'ready');
+            setSpeaking(false);
             if (typeof onend === 'function') onend();
         };
         utterance.onerror = (e) => {
             console.error('[JARVIS TTS]', e.error);
+            setSpeaking(false);
             if (typeof onend === 'function') onend();
         };
 

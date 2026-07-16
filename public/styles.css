@@ -255,6 +255,35 @@ html, body {
     display: flex; align-items: center; justify-content: center;
     perspective: 800px;
 }
+.voice-waves {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 360px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.cc-core.speaking .voice-waves {
+    opacity: 1;
+}
+.voice-wave {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 212, 255, 0);
+    opacity: 0;
+}
+.cc-core.speaking .voice-wave {
+    opacity: 1;
+}
+.voice-wave.wave-1 { width: 160px; height: 160px; animation: voice-wave-pulse 1.4s ease-out infinite; }
+.voice-wave.wave-2 { width: 220px; height: 220px; animation: voice-wave-pulse 1.4s ease-out 0.35s infinite; }
+.voice-wave.wave-3 { width: 290px; height: 290px; animation: voice-wave-pulse 1.4s ease-out 0.7s infinite; }
+.voice-wave.wave-4 { width: 360px; height: 360px; animation: voice-wave-pulse 1.4s ease-out 1.05s infinite; }
 .orbit {
     position: absolute; border: 1px solid rgba(0, 212, 255, 0.35);
     border-radius: 50%; transform-style: preserve-3d; pointer-events: none;
@@ -301,11 +330,11 @@ html, body {
 .cc-core.listening .orbit-dot { background: var(--jarvis-green); box-shadow: 0 0 8px var(--jarvis-green), 0 0 16px var(--jarvis-green); }
 .cc-core.listening .core-text { color: var(--jarvis-green); text-shadow: var(--glow-green); }
 .cc-core.listening .core-status { color: var(--jarvis-green); text-shadow: var(--glow-green); }
-.cc-core.speaking .globe { border-color: var(--jarvis-orange); box-shadow: inset 0 0 50px rgba(255, 153, 0, 0.14), 0 0 30px rgba(255, 153, 0, 0.25), 0 0 70px rgba(255, 153, 0, 0.1); animation: glitch-shake 0.28s ease-in-out infinite; }
-.cc-core.speaking .orbit { border-color: rgba(255, 153, 0, 0.35); }
-.cc-core.speaking .orbit-dot { background: var(--jarvis-orange); box-shadow: 0 0 8px var(--jarvis-orange), 0 0 16px var(--jarvis-orange); }
-.cc-core.speaking .core-text { color: var(--jarvis-orange); text-shadow: var(--glow-orange); animation: glitch-flicker 0.25s linear infinite; }
-.cc-core.speaking .core-status { color: var(--jarvis-orange); text-shadow: var(--glow-orange); }
+.cc-core.speaking .globe { border-color: rgba(0, 212, 255, 0.9); box-shadow: inset 0 0 60px rgba(0, 212, 255, 0.18), 0 0 40px rgba(0, 212, 255, 0.35), 0 0 90px rgba(0, 212, 255, 0.15); }
+.cc-core.speaking .orbit { border-color: rgba(0, 212, 255, 0.55); }
+.cc-core.speaking .orbit-dot { background: var(--jarvis-blue-light); box-shadow: 0 0 10px var(--jarvis-blue-light), 0 0 20px var(--jarvis-blue-light); }
+.cc-core.speaking .core-text { color: var(--jarvis-blue-light); text-shadow: 0 0 12px rgba(0, 212, 255, 0.7); }
+.cc-core.speaking .core-status { color: var(--jarvis-blue-light); text-shadow: 0 0 10px rgba(0, 212, 255, 0.5); }
 .cc-core:hover .globe { transform: scale(1.03); }
 .cc-core.pressed .globe { transform: scale(0.97); }
 
@@ -476,6 +505,12 @@ html, body {
 @keyframes glitch-shake { 0%, 100% { transform: translate(0, 0) scale(1); } 20% { transform: translate(-2px, 1px) scale(1.005); } 40% { transform: translate(2px, -1px) scale(0.995); } 60% { transform: translate(-1px, -1px) scale(1.002); } 80% { transform: translate(1px, 1px) scale(0.998); } }
 @keyframes glitch-flicker { 0%, 100% { opacity: 1; transform: translate(0); } 25% { opacity: 0.85; transform: translate(-1px); } 50% { opacity: 1; transform: translate(1px); } 75% { opacity: 0.9; transform: translate(0); } }
 
+@keyframes voice-wave-pulse {
+    0% { transform: translate(-50%, -50%) scale(0.55); opacity: 0.65; border-color: rgba(0, 212, 255, 0.6); }
+    50% { opacity: 0.25; }
+    100% { transform: translate(-50%, -50%) scale(1.1); opacity: 0; border-color: rgba(0, 212, 255, 0.05); }
+}
+
 /* ===========================
    RESPONSIVE — Pixel 9 Pro XL etc.
    =========================== */
@@ -524,150 +559,32 @@ html, body {
     .dashboard-footer { grid-template-columns: 1fr; }
 }
 
-/* ===========================
-   BOOT / GREETING SEQUENCE
-   =========================== */
-.boot-sequence {
-    position: fixed;
-    inset: 0;
-    z-index: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-    background: var(--hud-bg);
+/* Voice waves scale with responsive globe */
+@media (max-width: 1100px) {
+    .voice-waves { width: 320px; height: 320px; }
+    .voice-wave.wave-1 { width: 140px; height: 140px; }
+    .voice-wave.wave-2 { width: 190px; height: 190px; }
+    .voice-wave.wave-3 { width: 250px; height: 250px; }
+    .voice-wave.wave-4 { width: 320px; height: 320px; }
 }
-.boot-backdrop {
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(ellipse at center, rgba(0, 212, 255, 0.08) 0%, transparent 60%),
-        linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px),
-        var(--hud-bg);
-    background-size: 100% 100%, 50px 50px, 50px 50px, 100% 100%;
-    opacity: 0;
-    animation: boot-fade-in 0.6s ease forwards;
+@media (max-width: 900px) {
+    .voice-waves { width: 280px; height: 280px; }
+    .voice-wave.wave-1 { width: 120px; height: 120px; }
+    .voice-wave.wave-2 { width: 170px; height: 170px; }
+    .voice-wave.wave-3 { width: 220px; height: 220px; }
+    .voice-wave.wave-4 { width: 280px; height: 280px; }
 }
-.boot-canvas {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.8;
+@media (max-width: 700px) {
+    .voice-waves { width: 240px; height: 240px; }
+    .voice-wave.wave-1 { width: 100px; height: 100px; }
+    .voice-wave.wave-2 { width: 140px; height: 140px; }
+    .voice-wave.wave-3 { width: 190px; height: 190px; }
+    .voice-wave.wave-4 { width: 240px; height: 240px; }
 }
-.boot-core {
-    position: relative;
-    width: 220px;
-    height: 220px;
-    z-index: 2;
-    animation: boot-core-scale 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-.boot-ring {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    border: 1px solid rgba(0, 212, 255, 0.35);
-    box-shadow: 0 0 12px rgba(0, 212, 255, 0.25), inset 0 0 12px rgba(0, 212, 255, 0.15);
-    opacity: 0;
-    animation: boot-ring-in 0.8s ease forwards, boot-ring-spin 8s linear infinite;
-}
-.boot-ring.ring-1 { width: 220px; height: 220px; animation-delay: 0.1s, 0s; }
-.boot-ring.ring-2 { width: 170px; height: 170px; animation-delay: 0.25s, 0s; border-color: rgba(0, 212, 255, 0.25); animation-duration: 0.8s, 12s; }
-.boot-ring.ring-3 { width: 120px; height: 120px; animation-delay: 0.4s, 0s; border-color: rgba(0, 212, 255, 0.18); animation-duration: 0.8s, 16s; }
-.boot-center {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--jarvis-blue) 0%, rgba(0, 212, 255, 0.2) 60%, transparent 100%);
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.7), 0 0 40px rgba(0, 212, 255, 0.4);
-    opacity: 0;
-    animation: boot-center-in 0.6s ease 0.5s forwards;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.boot-core.speaking .boot-center {
-    transform: translate(-50%, -50%) scale(1.3);
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.95), 0 0 60px rgba(0, 212, 255, 0.55);
-    animation: boot-center-pulse 0.8s ease-in-out infinite;
-}
-.boot-speaking-ring {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    border: 1px solid rgba(0, 212, 255, 0);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-}
-.boot-core.speaking .boot-speaking-ring {
-    opacity: 1;
-}
-.boot-speaking-ring.wave-1 { width: 140px; height: 140px; animation: speaking-wave 1.6s ease-out infinite; }
-.boot-speaking-ring.wave-2 { width: 190px; height: 190px; animation: speaking-wave 1.6s ease-out 0.4s infinite; }
-.boot-speaking-ring.wave-3 { width: 250px; height: 250px; animation: speaking-wave 1.6s ease-out 0.8s infinite; }
-.boot-speaking-ring.wave-4 { width: 320px; height: 320px; animation: speaking-wave 1.6s ease-out 1.2s infinite; }
-.boot-text-wrap {
-    position: relative;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2.5rem;
-    min-height: 4rem;
-}
-.boot-text {
-    position: relative;
-    z-index: 3;
-    font-family: var(--font-hud);
-    font-size: 1.1rem;
-    letter-spacing: 0.08em;
-    color: var(--jarvis-blue);
-    text-align: center;
-    min-height: 1.6rem;
-    max-width: min(90vw, 900px);
-    line-height: 1.5;
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
-    opacity: 0;
-    animation: boot-text-in 0.6s ease 0.7s forwards;
-    padding: 0 1.5rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-.boot-subtitle {
-    position: relative;
-    z-index: 3;
-    margin-top: 0.6rem;
-    font-size: 0.65rem;
-    letter-spacing: 0.12em;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    opacity: 0;
-    animation: boot-text-in 0.6s ease 0.9s forwards;
-}
-.boot-sequence.fading-out .boot-backdrop,
-.boot-sequence.fading-out .boot-canvas,
-.boot-sequence.fading-out .boot-core,
-.boot-sequence.fading-out .boot-text-wrap {
-    transition: opacity 0.8s ease;
-    opacity: 0 !important;
-}
-
-@keyframes boot-fade-in { to { opacity: 1; } }
-@keyframes boot-core-scale { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-@keyframes boot-ring-in { from { transform: translate(-50%, -50%) scale(0.5); opacity: 0; } to { transform: translate(-50%, -50%) scale(1); opacity: 1; } }
-@keyframes boot-ring-spin { from { transform: translate(-50%, -50%) rotateX(70deg) rotateZ(0deg); } to { transform: translate(-50%, -50%) rotateX(70deg) rotateZ(360deg); } }
-@keyframes boot-center-in { from { opacity: 0; transform: translate(-50%, -50%) scale(0); } to { opacity: 1; transform: translate(-50%, -50%) scale(1); } }
-@keyframes boot-center-pulse { 0%, 100% { transform: translate(-50%, -50%) scale(1.25); } 50% { transform: translate(-50%, -50%) scale(1.45); } }
-@keyframes boot-text-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes speaking-wave {
-    0% { transform: translate(-50%, -50%) scale(0.6); opacity: 0.7; border-color: rgba(0, 212, 255, 0.55); }
-    50% { opacity: 0.35; }
-    100% { transform: translate(-50%, -50%) scale(1.15); opacity: 0; border-color: rgba(0, 212, 255, 0.05); }
+@media (max-width: 520px) {
+    .voice-waves { width: 200px; height: 200px; }
+    .voice-wave.wave-1 { width: 80px; height: 80px; }
+    .voice-wave.wave-2 { width: 115px; height: 115px; }
+    .voice-wave.wave-3 { width: 155px; height: 155px; }
+    .voice-wave.wave-4 { width: 200px; height: 200px; }
 }
