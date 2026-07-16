@@ -476,6 +476,7 @@ html, body {
 .blueprint-bg {
     position: absolute;
     inset: 0;
+    z-index: 1;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease 0.15s;
@@ -486,10 +487,10 @@ html, body {
     position: absolute;
     inset: -50%;
     background:
-        linear-gradient(rgba(0, 212, 255, 0.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 212, 255, 0.08) 1px, transparent 1px),
-        linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
+        linear-gradient(rgba(0, 212, 255, 0.18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 255, 0.18) 1px, transparent 1px),
+        linear-gradient(rgba(0, 212, 255, 0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 255, 0.09) 1px, transparent 1px);
     background-size: 80px 80px, 80px 80px, 20px 20px, 20px 20px;
     transform: perspective(800px) rotateX(60deg);
     transform-origin: center center;
@@ -505,18 +506,20 @@ html, body {
     font-size: 0.65rem;
     letter-spacing: 0.2em;
     color: var(--jarvis-blue);
-    opacity: 0.4;
+    opacity: 0.6;
     text-transform: uppercase;
+    z-index: 2;
 }
 
 .blueprint-drawing {
     position: absolute;
-    bottom: 5%;
+    bottom: 6%;
     left: 50%;
-    transform: translateX(-50%) scale(0.9);
-    width: min(90vw, 520px);
-    opacity: 0.35;
+    transform: translateX(-50%) scale(0.95);
+    width: min(90vw, 560px);
+    opacity: 0.55;
     pointer-events: none;
+    z-index: 2;
 }
 
 .ac-drawing { width: 100%; height: auto; }
@@ -528,8 +531,8 @@ html, body {
     top: var(--start-y, 50%);
     width: var(--start-w, 0px);
     height: var(--start-h, 0px);
-    background: rgba(0, 212, 255, 0.06);
-    border: 1px solid rgba(0, 212, 255, 0.35);
+    background: rgba(0, 212, 255, 0.08);
+    border: 1px solid rgba(0, 212, 255, 0.45);
     border-radius: 10px;
     pointer-events: none;
     opacity: 0;
@@ -567,12 +570,46 @@ html, body {
     100% { background-position: 80px 80px, 80px 80px, 20px 20px, 20px 20px; }
 }
 
-.climate-panel { position: relative; z-index: 202; max-width: 520px; max-height: 90vh; display: flex; flex-direction: column; opacity: 0; transform: translateY(20px) scale(0.96); transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1) 0.25s; }
+/* Climate panel with internal blueprint feel */
+.climate-panel {
+    position: relative;
+    z-index: 202;
+    max-width: 520px;
+    max-height: 90vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 10, 22, 0.72);
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    border-radius: 14px;
+    padding: var(--space-md);
+    box-shadow: var(--glow-blue-strong);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px) scale(0.96);
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1) 0.25s;
+}
+
+.climate-panel::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(rgba(0, 212, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 255, 0.06) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.climate-panel > * { position: relative; z-index: 1; }
+
 .climate-overlay.open .climate-panel { opacity: 1; transform: translateY(0) scale(1); }
 .climate-panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md); }
 .climate-panel-header .panel-title { font-family: var(--font-hud); font-size: 0.8rem; letter-spacing: 0.12em; color: var(--jarvis-blue); }
 .climate-panel-body { display: flex; flex-direction: column; gap: var(--space-md); overflow-y: auto; }
-.climate-zone { border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 10px; padding: var(--space-sm); background: rgba(0, 212, 255, 0.04); transition: opacity 0.2s; }
+.climate-zone { border: 1px solid rgba(0, 212, 255, 0.25); border-radius: 10px; padding: var(--space-sm); background: rgba(0, 8, 18, 0.6); transition: opacity 0.2s; }
 .climate-zone.disabled { opacity: 0.5; pointer-events: none; }
 .zone-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-xs); }
 .zone-name { font-family: var(--font-hud); font-size: 0.75rem; letter-spacing: 0.08em; color: var(--jarvis-blue); }
