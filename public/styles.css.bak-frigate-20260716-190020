@@ -663,232 +663,113 @@ html, body {
 }
 
 /* ===========================
-   RESPONSIVE — Mobile first, no scroll
+   RESPONSIVE — Pixel 9 Pro XL etc.
    =========================== */
-
-/* Tablet (768px-1024px) */
-@media (max-width: 1024px) {
-    .layout-wrapper { grid-template-columns: 100px 1fr 140px; gap: var(--space-xs); padding: var(--space-xs); }
-    .tile { width: 180px; }
-    .cc-core { width: 300px; height: 220px; }
-    .globe-wrapper { transform: scale(0.85); }
-    .dashboard-header { min-height: 44px; }
-    .dashboard-footer { min-height: 40px; }
+@media (max-width: 1100px) {
+    .layout-wrapper { grid-template-columns: 110px 1fr 150px; }
+    .tile { width: 190px; }
+    .cc-core { width: 340px; height: 240px; }
+    .globe-wrapper { transform: scale(0.9); }
 }
 
-/* Small tablet / large phone (600px-767px) */
-@media (max-width: 767px) {
-    .layout-wrapper { grid-template-columns: 80px 1fr 0; }
-    .status-panel { display: none; }
-    .dashboard-header { grid-template-columns: 1fr auto; min-height: 40px; padding: 0.2rem 0.4rem; }
+@media (max-width: 900px) {
+    .layout-wrapper { grid-template-columns: 100px 1fr 140px; gap: var(--space-xs); padding: var(--space-xs); }
+    .menu-text { font-size: 0.6rem; letter-spacing: 0.05em; }
+    .tile { width: 170px; padding: var(--space-xs); }
+    .metric { font-size: 1.5rem; }
+    .tile-sub { font-size: 0.65rem; }
+    .camera-tile { height: 130px; }
+    .cc-core { width: 300px; height: 220px; }
+    .globe-wrapper { transform: scale(0.8); }
+}
+
+@media (max-width: 700px) {
+    .layout-wrapper { grid-template-columns: 80px 1fr 120px; }
+    .dashboard-header { grid-template-columns: 1fr auto; }
     .header-center { display: none; }
-    .header-left .system-logo span { display: none; }
-    .header-left .system-status-badge { display: none; }
-    .header-right .hud-button.icon { width: 30px; height: 30px; }
-    .header-right .hud-button.icon svg { width: 14px; height: 14px; }
-    .user-badge { width: 24px; height: 24px; font-size: 0.7rem; }
-    .logout-btn { width: 24px; height: 24px; font-size: 1rem; }
-    .menu-text { font-size: 0.55rem; letter-spacing: 0.05em; }
-    .menu-item { padding: 0.2rem 0.3rem; }
-    .side-menu { padding: 0.2rem; gap: 0.15rem; }
-    .tile { width: 150px; padding: 0.3rem; }
-    .tile.top-left, .tile.top-right { top: 1%; }
-    .tile.bottom-left, .tile.bottom-right { bottom: 1%; }
-    .tile-header { margin-bottom: 0.15rem; }
-    .tile-title { font-size: 0.55rem; }
-    .metric { font-size: 1.3rem; }
-    .metric span { font-size: 0.6rem; }
-    .tile-sub { font-size: 0.6rem; margin-top: 0.1rem; }
-    .camera-tile { height: 100px; }
-    .cc-core { width: 200px; height: 160px; }
-    .globe-wrapper { transform: scale(0.55); }
-    .core-text { font-size: 0.7rem; }
-    .core-status { font-size: 0.55rem; margin-top: 0.3rem; }
-    .core-hint { display: none; }
-    .dashboard-footer { min-height: 36px; padding: 0.15rem 0.3rem; }
+    .status-name { font-size: 0.65rem; }
+    .tile { width: 150px; }
+    .cc-core { width: 260px; height: 200px; }
+    .globe-wrapper { transform: scale(0.7); }
+    .input-pill input { width: 140px; }
+}
+
+@media (max-width: 520px) {
+    .layout-wrapper { grid-template-columns: 70px 1fr 0; }
+    .status-panel { display: none; }
+    .menu-text { font-size: 0.55rem; }
+    .tile { width: 130px; }
+    .tile.top-left, .tile.top-right { top: 2%; }
+    .tile.bottom-left, .tile.bottom-right { bottom: 2%; }
+    .metric { font-size: 1.25rem; }
+    .camera-tile { height: 110px; }
+    .cc-core { width: 220px; height: 180px; }
+    .globe-wrapper { transform: scale(0.6); }
+    .core-text { font-size: 0.75rem; }
     .footer-left, .footer-center { display: none; }
     .dashboard-footer { grid-template-columns: 1fr; }
-    .input-pill input { width: 100px; font-size: 0.7rem; padding: 0.2rem 0.4rem; }
-    .input-pill button { padding: 0 0.4rem; font-size: 0.85rem; }
-    .hud-button.small { padding: 0.2rem 0.4rem; font-size: 0.65rem; }
-    .phase-row { font-size: 0.6rem; }
-    .hologram-container { width: 200px; height: 200px; top: 35%; }
-    .ring-1 { width: 190px; height: 190px; }
-    .ring-2 { width: 150px; height: 150px; }
-    .ring-3 { width: 110px; height: 110px; }
-    .center-core { width: 50px; height: 50px; }
-    .jarvis-title { font-size: 2rem; }
-    .login-header { margin-top: 80px; }
-    .user-card { width: 120px; padding: 0.6rem; }
-    .user-avatar { width: 44px; height: 44px; }
-    .avatar-initial { font-size: 1rem; }
-    .user-name { font-size: 0.9rem; }
-    .password-panel { min-width: 240px; padding: var(--space-sm); }
-    .settings-panel { min-width: 220px; right: var(--space-xs); bottom: 60px; }
-    .settings-toggle { bottom: var(--space-sm); right: var(--space-sm); font-size: 0.7rem; padding: 0.2rem 0.4rem; }
-    .system-status { bottom: var(--space-sm); font-size: 0.6rem; }
-    .voice-waves { width: 180px; height: 180px; }
-    .voice-wave.wave-1 { width: 70px; height: 70px; }
-    .voice-wave.wave-2 { width: 100px; height: 100px; }
-    .voice-wave.wave-3 { width: 140px; height: 140px; }
-    .voice-wave.wave-4 { width: 180px; height: 180px; }
-    .orbit-1 { width: 180px; height: 50px; }
-    .orbit-2 { width: 160px; height: 55px; }
-    .orbit-3 { width: 200px; height: 45px; }
-    .globe { width: 90px; height: 90px; }
-    .globe::before { inset: 5px; }
-    .parallel:nth-child(4) { width: 70px; height: 70px; }
-    .parallel:nth-child(5) { width: 45px; height: 45px; }
-    .parallel:nth-child(6) { width: 20px; height: 20px; }
-    .meridian { border-width: 0.5px; }
-    .parallel { border-width: 0.5px; }
-    .pcb-traces { display: none; }
-    .scan-overlay { display: none; }
-    .settings-tile { height: 70%; }
-    .settings-body { gap: var(--space-sm); }
-    .settings-section { padding: 0.3rem; }
-    .section-title { font-size: 0.65rem; margin-bottom: 0.3rem; }
-    .settings-row { margin-bottom: 0.3rem; }
-    .log-list { max-height: 120px; }
-    .log-entry { font-size: 0.6rem; padding: 0.2rem; }
-    .chat-panel, .camera-frame, .climate-panel { max-width: 95%; padding: var(--space-sm); }
-    .climate-overlay { padding: 0.2rem; }
-    .climate-panel { max-width: 100%; max-height: 90vh; padding: var(--space-sm); border-radius: 10px; }
-    .climate-panel-header { margin-bottom: var(--space-sm); }
-    .climate-panel-header .panel-title { font-size: 0.7rem; }
-    .climate-panel-body { gap: 0.3rem; }
-    .climate-zone { padding: 0.2rem 0.4rem; }
-    .zone-name { font-size: 0.65rem; }
-    .zone-status { font-size: 0.6rem; }
-    .zone-target { font-size: 1.1rem; }
-    .zone-current { font-size: 0.55rem; }
-    .mini-btn { width: 24px; height: 24px; font-size: 0.8rem; }
-    .blueprint-drawing { width: 50%; height: 25%; opacity: 0.3; }
-    .ac-drawing { opacity: 0.4; }
-    .blueprint-title { font-size: 0.5rem; }
 }
 
-/* Phone (under 600px) */
-@media (max-width: 599px) {
-    .layout-wrapper { grid-template-columns: 60px 1fr 0; gap: 0.15rem; padding: 0.15rem; }
-    .side-menu { padding: 0.15rem; gap: 0.1rem; border-radius: 6px; }
-    .menu-item { padding: 0.15rem 0.2rem; font-size: 0.5rem; border-radius: 4px; }
-    .menu-text { font-size: 0.5rem; }
-    .menu-line { display: none; }
-    .tile { width: 100%; position: relative !important; left: auto !important; right: auto !important; top: auto !important; bottom: auto !important; }
-    .view-container.active { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.1rem; overflow: hidden; height: 100%; }
-    .tile { flex: 1; min-height: 0; padding: 0.2rem 0.3rem; border-radius: 6px; }
-    .tile-header { margin-bottom: 0.1rem; }
-    .tile-line { width: 8px; }
-    .tile-title { font-size: 0.5rem; }
-    .metric { font-size: 1rem; }
-    .metric span { font-size: 0.5rem; }
-    .tile-sub { font-size: 0.5rem; }
-    .camera-tile { height: 80px; }
-    .cc-core { display: none; }
-    .dashboard-header { min-height: 34px; padding: 0.1rem 0.3rem; }
-    .header-right .hud-button.icon { width: 26px; height: 26px; }
-    .header-right .hud-button.icon svg { width: 12px; height: 12px; }
-    .user-badge { width: 20px; height: 20px; font-size: 0.6rem; }
-    .logout-btn { width: 20px; height: 20px; font-size: 0.85rem; }
-    .dashboard-footer { min-height: 32px; padding: 0.1rem 0.2rem; }
-    .input-pill input { width: 80px; font-size: 0.6rem; padding: 0.15rem 0.3rem; }
-    .input-pill button { padding: 0 0.3rem; font-size: 0.75rem; }
-    .hud-button.small { padding: 0.15rem 0.3rem; font-size: 0.55rem; }
-    .phase-row { font-size: 0.5rem; }
-    .hologram-container { width: 150px; height: 150px; top: 30%; }
-    .ring-1 { width: 140px; height: 140px; }
-    .ring-2 { width: 110px; height: 110px; }
-    .ring-3 { width: 80px; height: 80px; }
-    .center-core { width: 36px; height: 36px; }
-    .jarvis-title { font-size: 1.5rem; }
-    .subtitle { font-size: 0.65rem; }
-    .login-header { margin-top: 60px; }
-    .user-card { width: 100px; padding: 0.4rem; }
-    .user-avatar { width: 36px; height: 36px; }
-    .avatar-initial { font-size: 0.85rem; }
-    .user-name { font-size: 0.75rem; }
-    .user-role { font-size: 0.55rem; }
-    .password-panel { min-width: 200px; }
-    .scan-line { font-size: 0.65rem; }
-    .user-cards { gap: var(--space-sm); }
-    .settings-panel { min-width: 180px; bottom: 50px; }
-    .settings-toggle { bottom: var(--space-xs); right: var(--space-xs); font-size: 0.6rem; }
-    .system-status { bottom: var(--space-xs); font-size: 0.5rem; }
-    .status-indicator { width: 5px; height: 5px; }
-    .climate-panel { max-height: 92vh; padding: 0.3rem; }
-    .climate-panel-header .panel-title { font-size: 0.65rem; }
-    .zone-name { font-size: 0.6rem; }
-    .zone-target { font-size: 1rem; }
-    .zone-current { font-size: 0.5rem; }
-    .mini-btn { width: 22px; height: 22px; font-size: 0.7rem; }
-    .blueprint-drawing { display: none; }
-    .blueprint-title { display: none; }
-    .settings-tile { height: 65%; }
-    .log-list { max-height: 80px; }
-    .log-entry { font-size: 0.5rem; padding: 0.15rem; }
-    .section-title { font-size: 0.55rem; }
-    .hud-label { font-size: 0.55rem; }
-    .hud-input { font-size: 0.7rem; padding: 0.15rem 0.3rem; }
-    .hud-button { font-size: 0.65rem; padding: 0.15rem 0.3rem; }
-    .chat-panel, .camera-frame { max-width: 98%; padding: var(--space-xs); }
+/* Climate overlay: mobile / small screens */
+@media (max-width: 600px) {
+    .climate-overlay { padding: var(--space-xs); }
+    .climate-panel { max-width: 100%; max-height: 85vh; padding: var(--space-md); border-radius: 12px; }
+    .climate-panel-header { margin-bottom: var(--space-md); }
+    .climate-panel-header .panel-title { font-size: 0.8rem; }
+    .climate-panel-body { gap: var(--space-sm); }
+    .climate-zone { padding: var(--space-xs) var(--space-sm); }
+    .zone-name { font-size: 0.75rem; }
+    .zone-status { font-size: 0.7rem; }
+    .zone-target { font-size: 1.35rem; }
+    .zone-current { font-size: 0.65rem; }
+    .mini-btn { width: 28px; height: 28px; font-size: 0.9rem; }
+    .blueprint-drawing { width: 55%; height: 30%; opacity: 0.45; }
+    .ac-drawing { opacity: 0.5; }
 }
 
-/* Very small phones (under 380px) */
-@media (max-width: 380px) {
-    .layout-wrapper { grid-template-columns: 44px 1fr 0; }
-    .menu-text { display: none; }
-    .menu-item { justify-content: center; padding: 0.1rem; }
-    .menu-item::before { content: attr(data-label); font-size: 0.5rem; }
-    .tile-title { font-size: 0.45rem; }
-    .metric { font-size: 0.85rem; }
-    .tile-sub { font-size: 0.45rem; }
-    .camera-tile { height: 65px; }
-    .dashboard-header { min-height: 30px; }
-    .header-right .hud-button.icon { width: 22px; height: 22px; }
-    .header-right .hud-button.icon svg { width: 10px; height: 10px; }
-    .user-badge { width: 18px; height: 18px; font-size: 0.5rem; }
-    .logout-btn { width: 18px; height: 18px; font-size: 0.75rem; }
-    .dashboard-footer { min-height: 28px; }
-    .input-pill input { width: 60px; font-size: 0.55rem; }
-    .jarvis-title { font-size: 1.2rem; }
-    .user-card { width: 80px; padding: 0.3rem; }
-    .user-avatar { width: 30px; height: 30px; }
-    .avatar-initial { font-size: 0.7rem; }
-    .user-name { font-size: 0.65rem; }
-    .hologram-container { width: 120px; height: 120px; }
-    .ring-1 { width: 110px; height: 110px; }
-    .ring-2 { width: 85px; height: 85px; }
-    .ring-3 { width: 60px; height: 60px; }
-    .center-core { width: 28px; height: 28px; }
-    .login-header { margin-top: 45px; }
-}
-
-/* Short screens - reduce vertical space */
 @media (max-height: 700px) {
-    .dashboard-header { min-height: 36px; }
-    .dashboard-footer { min-height: 34px; }
-    .hologram-container { top: 30%; }
-    .login-header { margin-top: 50px; }
-    .jarvis-title { font-size: 1.8rem; }
-    .user-card { padding: 0.4rem; }
-    .user-avatar { width: 40px; height: 40px; }
-    .cc-core { height: 140px; }
-    .globe-wrapper { transform: scale(0.5); }
-    .climate-panel { max-height: 85vh; }
-    .blueprint-drawing { width: 30%; height: 25%; }
+    .blueprint-drawing { width: 32%; height: 30%; }
+    .climate-panel { max-height: 82vh; padding: var(--space-md); }
+    .climate-panel-header { margin-bottom: var(--space-sm); }
+    .zone-target { font-size: 1.4rem; }
+    .mini-btn { width: 30px; height: 30px; }
 }
 
 @media (max-height: 520px) {
-    .dashboard-header { min-height: 30px; }
-    .dashboard-footer { min-height: 28px; }
-    .hologram-container { display: none; }
-    .login-header { margin-top: 20px; }
-    .jarvis-title { font-size: 1.4rem; }
-    .subtitle { display: none; }
-    .user-card { width: 90px; padding: 0.3rem; }
-    .user-avatar { width: 30px; height: 30px; }
-    .cc-core { display: none; }
+    .blueprint-drawing { width: 28%; height: 24%; }
     .climate-panel { max-height: 88vh; }
-    .blueprint-drawing { display: none; }
+    .zone-name { font-size: 0.75rem; }
+    .zone-status { font-size: 0.7rem; }
+    .zone-target { font-size: 1.2rem; }
+    .mini-btn { width: 26px; height: 26px; }
+}
+
+/* Voice waves scale with responsive globe */
+@media (max-width: 1100px) {
+    .voice-waves { width: 320px; height: 320px; }
+    .voice-wave.wave-1 { width: 140px; height: 140px; }
+    .voice-wave.wave-2 { width: 190px; height: 190px; }
+    .voice-wave.wave-3 { width: 250px; height: 250px; }
+    .voice-wave.wave-4 { width: 320px; height: 320px; }
+}
+@media (max-width: 900px) {
+    .voice-waves { width: 280px; height: 280px; }
+    .voice-wave.wave-1 { width: 120px; height: 120px; }
+    .voice-wave.wave-2 { width: 170px; height: 170px; }
+    .voice-wave.wave-3 { width: 220px; height: 220px; }
+    .voice-wave.wave-4 { width: 280px; height: 280px; }
+}
+@media (max-width: 700px) {
+    .voice-waves { width: 240px; height: 240px; }
+    .voice-wave.wave-1 { width: 100px; height: 100px; }
+    .voice-wave.wave-2 { width: 140px; height: 140px; }
+    .voice-wave.wave-3 { width: 190px; height: 190px; }
+    .voice-wave.wave-4 { width: 240px; height: 240px; }
+}
+@media (max-width: 520px) {
+    .voice-waves { width: 200px; height: 200px; }
+    .voice-wave.wave-1 { width: 80px; height: 80px; }
+    .voice-wave.wave-2 { width: 115px; height: 115px; }
+    .voice-wave.wave-3 { width: 155px; height: 155px; }
+    .voice-wave.wave-4 { width: 200px; height: 200px; }
 }

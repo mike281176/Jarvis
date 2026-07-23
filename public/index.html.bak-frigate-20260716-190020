@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000510">
+    <title>J.A.R.V.I.S.</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%2300D4FF' stroke-width='3'/><circle cx='50' cy='50' r='25' fill='%2300D4FF' opacity='0.3'/><circle cx='50' cy='50' r='10' fill='%2300D4FF'/></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+
+        <!-- Login Screen -->
+        <div id="login-screen" class="screen login-screen">
+            <div class="hologram-container">
+                <div class="jarvis-ring ring-1"></div>
+                <div class="jarvis-ring ring-2"></div>
+                <div class="jarvis-ring ring-3"></div>
+                <div class="center-core"></div>
+            </div>
+
+            <div class="login-header">
+                <h1 class="jarvis-title">
+                    <span class="letter">J</span><span class="letter">.</span><span class="letter">A</span><span class="letter">.</span><span class="letter">R</span><span class="letter">.</span><span class="letter">V</span><span class="letter">.</span><span class="letter">I</span><span class="letter">.</span><span class="letter">S</span><span class="letter">.</span>
+                </h1>
+                <p class="subtitle">Just A Rather Very Intelligent System</p>
+            </div>
+
+            <div class="user-selection">
+                <p class="scan-line">Bitte identifizieren Sie sich...</p>
+                <div class="user-cards">
+                    <button class="user-card" data-user="mike">
+                        <div class="user-avatar">
+                            <div class="avatar-ring"></div>
+                            <span class="avatar-initial">M</span>
+                        </div>
+                        <span class="user-name">Mike</span>
+                        <span class="user-role">Administrator</span>
+                        <div class="card-glow"></div>
+                    </button>
+                    <button class="user-card" data-user="tanja">
+                        <div class="user-avatar">
+                            <div class="avatar-ring"></div>
+                            <span class="avatar-initial">T</span>
+                        </div>
+                        <span class="user-name">Tanja</span>
+                        <span class="user-role">Benutzer</span>
+                        <div class="card-glow"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="password-panel" id="passwordPanel" style="display: none;">
+                <div class="password-form">
+                    <div class="password-header">
+                        <div class="user-avatar-small">
+                            <span class="avatar-initial">M</span>
+                        </div>
+                        <span class="password-title">Sicherheitsauthentifizierung</span>
+                    </div>
+                    <div class="input-group password-group">
+                        <label class="hud-label">Passwort eingeben</label>
+                        <input type="password" id="passwordInput" class="hud-input password-input" placeholder="••••••••" autocomplete="off">
+                    </div>
+                    <div class="password-actions">
+                        <button class="hud-button secondary" id="cancelLogin">Abbrechen</button>
+                        <button class="hud-button primary" id="submitPassword">Authentifizieren</button>
+                    </div>
+                    <div class="password-error" id="passwordError" style="display: none;">
+                        <span class="error-icon">⚠</span>
+                        <span class="error-text">Falsches Passwort. Zugriff verweigert.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="system-status">
+                <div class="status-indicator online"></div>
+                <span class="status-text">System Online</span>
+                <span class="version-display" id="versionDisplay"></span>
+            </div>
+
+            <button class="settings-toggle" id="showSettings">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M12 1v6m0 6v6m4.22-10.22l4.24-4.24M6.34 17.66l-4.24 4.24M23 12h-6m-6 0H1m20.24 4.24l-4.24-4.24M6.34 6.34L2.1 2.1"></path>
+                </svg>
+                Einstellungen
+            </button>
+
+            <div class="settings-panel" id="settingsPanel" style="display: none;">
+                <div class="input-group">
+                    <label class="hud-label">API Präfix</label>
+                    <input type="url" id="apiUrl" class="hud-input" value="" placeholder="/api/jarvis/... (leer = Standard)">
+                    <small class="input-hint">Leer lassen für Vercel-Proxy.</small>
+                </div>
+                <button class="hud-button" id="saveSettings">Speichern</button>
+            </div>
+        </div>
+
+        <!-- Main Interface -->
+        <div id="main-interface" class="screen dashboard-interface" style="display: none;">
+
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div class="header-left">
+                    <div class="system-logo">
+                        <div class="mini-ring"></div>
+                        <span>J.A.R.V.I.S.</span>
+                    </div>
+                    <div class="system-status-badge" id="systemStatusBadge">
+                        <span class="status-dot online"></span>
+                        <span class="status-label">ONLINE</span>
+                    </div>
+                </div>
+                <div class="header-center">
+                    <div class="clock-widget">
+                        <span id="systemTime">14:00:00</span>
+                        <span id="systemDate" class="system-date">--</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <span class="user-badge" id="currentUser">M</span>
+                    <button class="hud-button icon" id="chatToggle" title="Chat">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </button>
+                    <button class="hud-button icon" id="installPwaBtn" title="App installieren" style="display: none;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </button>
+                    <button class="hud-button icon" id="settingsHeaderBtn" title="Einstellungen">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6m4.22-10.22l4.24-4.24M6.34 17.66l-4.24 4.24M23 12h-6m-6 0H1m20.24 4.24l-4.24-4.24M6.34 6.34L2.1 2.1"></path>
+                        </svg>
+                    </button>
+                    <button class="hud-button icon" id="dashboardRefresh" title="Aktualisieren">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+                    </button>
+                    <button class="logout-btn" id="logoutBtn">×</button>
+                </div>
+            </header>
+
+            <!-- Layout: Menu | Main Stage | Status -->
+            <div class="layout-wrapper">
+
+                <!-- Left Menu -->
+                <nav class="side-menu">
+                    <button class="menu-item active" data-view="home" data-label="HOME">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">HOME</span>
+                    </button>
+                    <button class="menu-item" data-view="cameras" data-label="KAMERAS">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">KAMERAS</span>
+                    </button>
+                    <button class="menu-item" data-view="strom" data-label="STROM">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">STROM</span>
+                    </button>
+                    <button class="menu-item" data-view="quixx24" data-label="QUIXX24">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">QUIXX24</span>
+                    </button>
+                    <button class="menu-item" data-view="netzwerk" data-label="NETZWERK">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">NETZWERK</span>
+                    </button>
+                    <button class="menu-item" data-view="einstellungen" data-label="EINSTELLUNGEN">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">EINSTELLUNGEN</span>
+                    </button>
+                </nav>
+
+                <!-- Center Stage -->
+                <main class="main-stage">
+
+                    <!-- AI Core Globe -->
+                    <div class="cc-core" id="aiCoreContainer">
+                        <div class="pcb-traces"></div>
+                        <div class="globe-wrapper">
+                            <div class="voice-waves">
+                                <div class="voice-wave wave-1"></div>
+                                <div class="voice-wave wave-2"></div>
+                                <div class="voice-wave wave-3"></div>
+                                <div class="voice-wave wave-4"></div>
+                            </div>
+                            <div class="orbit orbit-1"><span class="orbit-dot"></span></div>
+                            <div class="orbit orbit-2"><span class="orbit-dot dot-1"></span><span class="orbit-dot dot-2"></span></div>
+                            <div class="orbit orbit-3"><span class="orbit-dot"></span></div>
+                            <div class="globe" id="voiceCore">
+                                <div class="globe-mesh">
+                                    <div class="meridian"></div>
+                                    <div class="meridian"></div>
+                                    <div class="meridian"></div>
+                                    <div class="parallel"></div>
+                                    <div class="parallel"></div>
+                                    <div class="parallel"></div>
+                                </div>
+                                <div class="core-text core-glitch" aria-label="J.A.R.V.I.S.">
+                                    <span class="letter">J</span><span>.</span><span class="letter">A</span><span>.</span><span class="letter">R</span><span>.</span><span class="letter">V</span><span>.</span><span class="letter">I</span><span>.</span><span class="letter">S</span><span>.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="core-status" id="voiceStatusCenter">BEREIT</div>
+                        <div class="core-hint">Zum Sprechen antippen</div>
+                    </div>
+
+                    <!-- Dynamic View Containers -->
+                    <div class="view-container active" id="view-home">
+                        <div class="tile top-left" data-id="home-solar">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">SOLAR</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="homeSolarPower">0 <span>W</span></div>
+                                <div class="tile-sub" id="homeSolarToday">Heute: 0 kWh</div>
+                            </div>
+                        </div>
+                        <div class="tile top-right" data-id="home-battery">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">SPEICHER</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="homeBatterySoc">0 <span>%</span></div>
+                                <div class="tile-sub" id="homeBatteryFlow">Ruhe</div>
+                            </div>
+                        </div>
+                        <button class="tile bottom-left climate-tile" data-id="home-climate" id="homeClimateTile">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">KLIMA</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="homeClimateTarget">--°C</div>
+                                <div class="tile-sub" id="homeClimateCurrent">Ist: --°C</div>
+                                <div class="tile-sub mode" id="homeClimateMode">Aus</div>
+                                <div class="tile-hint">Zum Steuern antippen</div>
+                            </div>
+                        </button>
+                        <div class="tile bottom-right" data-id="home-house">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">HAUSHALT</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="homeHousePower">0 <span>W</span></div>
+                                <div class="tile-sub" id="homeGridStatus">Netzbezug</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-container" id="view-cameras">
+                        <div class="tile top-left camera-tile" data-id="cam-front">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">FRONT DOOR</span></div>
+                            <div class="tile-body camera-body">
+                                <img id="camFrontImg" src="" alt="Front Door" loading="lazy">
+                                <div class="cam-overlay">
+                                    <div class="cam-meta">
+                                        <span id="camFrontFace">–</span>
+                                        <span id="camFrontPlate">–</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile top-right camera-tile" data-id="cam-back">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">BACK DOOR</span></div>
+                            <div class="tile-body camera-body">
+                                <img id="camBackImg" src="" alt="Back Door" loading="lazy">
+                                <div class="cam-overlay">
+                                    <div class="cam-meta">
+                                        <span id="camBackFace">–</span>
+                                        <span id="camBackPlate">–</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile bottom-left camera-tile" data-id="cam-einfahrt">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">EINFAHRT</span></div>
+                            <div class="tile-body camera-body">
+                                <img id="camEinfahrtImg" src="" alt="Einfahrt" loading="lazy">
+                                <div class="cam-overlay">
+                                    <div class="cam-meta">
+                                        <span id="camEinfahrtFace">–</span>
+                                        <span id="camEinfahrtPlate">–</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile bottom-right camera-tile" data-id="cam-doorbird">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">DOORBIRD</span></div>
+                            <div class="tile-body camera-body">
+                                <img id="camDoorbirdImg" src="" alt="Doorbird" loading="lazy">
+                                <div class="cam-overlay">
+                                    <div class="cam-meta">
+                                        <span id="camDoorbirdFace">–</span>
+                                        <span id="camDoorbirdPlate">–</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-container" id="view-strom">
+                        <div class="tile top-left" data-id="strom-solar">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">SOLAR ERTRAG</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="stromSolarPower">0 <span>W</span></div>
+                                <div class="tile-sub" id="stromSolarToday">Heute: 0 kWh</div>
+                            </div>
+                        </div>
+                        <div class="tile top-right" data-id="strom-battery">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">BATTERIE</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="stromBatterySoc">0 <span>%</span></div>
+                                <div class="tile-sub" id="stromBatteryFlow">Ruhe</div>
+                            </div>
+                        </div>
+                        <div class="tile bottom-left" data-id="strom-consumption">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">VERBRAUCH</span></div>
+                            <div class="tile-body">
+                                <div class="metric" id="stromConsumption">0 <span>W</span></div>
+                                <div class="tile-sub" id="stromGrid">Netzbezug</div>
+                            </div>
+                        </div>
+                        <div class="tile bottom-right" data-id="strom-phases">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">PHASEN</span></div>
+                            <div class="tile-body">
+                                <div class="phase-row"><span>Haus Phase A</span><span class="phase-value" id="stromPhaseA">– W</span></div>
+                                <div class="phase-row"><span>Haus Phase B</span><span class="phase-value" id="stromPhaseB">– W</span></div>
+                                <div class="phase-row"><span>Haus Phase C</span><span class="phase-value" id="stromPhaseC">– W</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-container" id="view-quixx24">
+                        <div class="tile wide-top">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">QUIXX24 — ÜBERSICHT</span></div>
+                            <div class="tile-body">
+                                <p class="placeholder-text">Miettoiletten-Status, Tracker und Auftragsdaten werden hier integriert.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-container" id="view-netzwerk">
+                        <div class="tile wide-top">
+                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">NETZWERK — GERÄTE</span></div>
+                            <div class="tile-body">
+                                <p class="placeholder-text">UniFi-Topologie, Clients und Gateway-Status werden hier angezeigt.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-container" id="view-einstellungen">
+                        <div class="tile wide-top settings-tile" data-id="settings-main">
+                            <div class="tile-header">
+                                <span class="tile-line"></span>
+                                <span class="tile-title">EINSTELLUNGEN & AUSWERTUNG</span>
+                            </div>
+                            <div class="tile-body settings-body">
+                                <div class="settings-section">
+                                    <div class="section-title">Sprachausgabe</div>
+                                    <div class="settings-row">
+                                        <label class="hud-label">Antworten laut vorlesen</label>
+                                        <label class="toggle">
+                                            <input type="checkbox" id="autoSpeakToggle" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-row">
+                                        <label class="hud-label">Stimmprofil</label>
+                                        <select id="voiceProfileSelect" class="hud-input">
+                                            <option value="standard">Standard (Butler)</option>
+                                            <option value="elegant">Elegant (Formal)</option>
+                                            <option value="sarcastic">Sarkastisch (Trocken)</option>
+                                            <option value="alarm">Alarm (Dringend)</option>
+                                        </select>
+                                    </div>
+                                    <div class="settings-row">
+                                        <button class="hud-button secondary" id="ttsTestBtn">Stimme testen</button>
+                                    </div>
+                                    <div class="settings-row">
+                                        <label class="hud-label">Test-Satz</label>
+                                        <input type="text" id="ttsTestText" class="hud-input" value="J.A.R.V.I.S. steht zu Ihren Diensten, Sir.">
+                                    </div>
+                                    <div class="settings-row">
+                                        <button class="hud-button secondary" id="ttsTestAgainBtn">Erneut testen</button>
+                                    </div>
+                                </div>
+
+                                <div class="settings-section">
+                                    <div class="section-title">Spracheingabe-Protokoll</div>
+                                    <div class="settings-row">
+                                        <label class="hud-label">Interim-Transkripte loggen</label>
+                                        <label class="toggle">
+                                            <input type="checkbox" id="logInterimToggle">
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="settings-row">
+                                        <button class="hud-button secondary" id="exportLogBtn">Log exportieren</button>
+                                        <button class="hud-button secondary" id="clearLogBtn">Log löschen</button>
+                                    </div>
+                                </div>
+
+                                <div class="settings-section">
+                                    <div class="section-title">Konversationsverlauf (<span id="logCount">0</span>)</div>
+                                    <div class="log-list" id="conversationLogList">
+                                        <div class="placeholder-text">Keine Einträge vorhanden.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+
+                <!-- Right Status Panel -->
+                <aside class="status-panel">
+                    <div class="panel-header">
+                        <span class="panel-line"></span>
+                        <span class="panel-title">SYSTEM STATUS</span>
+                    </div>
+                    <div class="status-list" id="statusList">
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_haos">
+                            <span class="status-dot-sm" id="status-haos-dot"></span>
+                            <span class="status-name">HAOS</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_proxmox">
+                            <span class="status-dot-sm" id="status-proxmox-dot"></span>
+                            <span class="status-name">Proxmox</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_nas">
+                            <span class="status-dot-sm" id="status-nas-dot"></span>
+                            <span class="status-name">NAS</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_gateway">
+                            <span class="status-dot-sm" id="status-gateway-dot"></span>
+                            <span class="status-name">Gateway</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_solar">
+                            <span class="status-dot-sm" id="status-solar-dot"></span>
+                            <span class="status-name">Solar</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_zigbee">
+                            <span class="status-dot-sm" id="status-zigbee-dot"></span>
+                            <span class="status-name">Zigbee</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_opendtu">
+                            <span class="status-dot-sm" id="status-opendtu-dot"></span>
+                            <span class="status-name">OpenDTU</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_jarvis_api">
+                            <span class="status-dot-sm" id="status-jarvis-dot"></span>
+                            <span class="status-name">Jarvis API</span>
+                        </div>
+                    </div>
+
+                    <div class="panel-divider"></div>
+
+                    <div class="panel-header">
+                        <span class="panel-line"></span>
+                        <span class="panel-title">UMGEBUNG</span>
+                    </div>
+                    <div class="env-list">
+                        <div class="env-row">
+                            <span class="env-name">Garten</span>
+                            <span class="env-value" id="statusTempGarten">--°C</span>
+                        </div>
+                        <div class="env-row">
+                            <span class="env-name">Pool</span>
+                            <span class="env-value" id="statusTempPool">--°C</span>
+                        </div>
+                        <div class="env-row">
+                            <span class="env-name">Wohnz.</span>
+                            <span class="env-value" id="statusTempWohn">--°C</span>
+                        </div>
+                        <div class="env-row">
+                            <span class="env-name">Arbeitsz.</span>
+                            <span class="env-value" id="statusTempArbeit">--°C</span>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="dashboard-footer">
+                <div class="footer-left">
+                    <span class="connection-status online" id="footerConnection">● Verbindung aktiv</span>
+                    <span id="haEntityCount">HA: -- Entitäten</span>
+                </div>
+                <div class="footer-center">
+                    <span class="version" id="footerVersion">v1.0.0</span>
+                </div>
+                <div class="footer-right">
+                    <button class="hud-button small" id="cameraBtn">Analyse</button>
+                    <div class="input-pill">
+                        <input type="text" id="textInput" placeholder="Befehl oder Frage...">
+                        <button id="sendBtn">➤</button>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Overlays -->
+            <div class="chat-overlay" id="chatOverlay" style="display: none;">
+                <div class="chat-panel">
+                    <div class="chat-panel-header">
+                        <span>J.A.R.V.I.S. Dialog</span>
+                        <button class="close-panel" id="closeChat">×</button>
+                    </div>
+                    <div class="chat-panel-body" id="chatPanelBody"></div>
+                    <div class="chat-panel-footer">
+                        <input type="text" id="chatPanelInput" placeholder="Geben Sie einen Befehl ein...">
+                        <button id="chatPanelSend">➤</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="camera-overlay" id="cameraOverlay" style="display: none;">
+                <div class="camera-frame">
+                    <video id="cameraVideo" autoplay playsinline></video>
+                    <canvas id="cameraCanvas" style="display: none;"></canvas>
+                    <div class="camera-controls">
+                        <button class="hud-button secondary" id="cameraCancel">Abbrechen</button>
+                        <button class="hud-button primary" id="cameraCapture">Aufnehmen</button>
+                    </div>
+                    <div class="camera-hint">Halten Sie das Objekt ruhig. Das Bild wird zur Analyse an J.A.R.V.I.S. gesendet.</div>
+                </div>
+            </div>
+
+            <div class="climate-overlay" id="climateOverlay" style="display: none;">
+                <!-- Blueprint background -->
+                <div class="blueprint-bg" aria-hidden="true">
+                    <div class="blueprint-grid"></div>
+                    <div class="blueprint-title">SPLIT-KLIMAGERÄT — TECHNISCHE ZEICHNUNG</div>
+                    <div class="blueprint-drawing">
+                        <img src="klima-jarvis.png" alt="Klimaanlage technische Zeichnung" class="ac-drawing"/>
+                    </div>
+                </div>
+
+                <div class="climate-expander" id="climateExpander" aria-hidden="true"></div>
+
+                <div class="climate-panel" id="climatePanel">
+                    <div class="climate-panel-header">
+                        <span class="panel-title">KLIMA STEUERUNG</span>
+                        <button class="close-panel" id="closeClimate">×</button>
+                    </div>
+                    <div class="climate-panel-body" id="climatePanelBody">
+                        <!-- Wohnzimmer -->
+                        <div class="climate-zone" data-zone="wohnzimmer" data-entity="climate.split_klimaanlage">
+                            <div class="zone-header">
+                                <span class="zone-name">Wohnzimmer</span>
+                                <span class="zone-status" id="climateStatus-wohnzimmer">--</span>
+                            </div>
+                            <div class="zone-body">
+                                <div class="zone-temp">
+                                    <span class="zone-target" id="climateTarget-wohnzimmer">--°C</span>
+                                    <span class="zone-current" id="climateCurrent-wohnzimmer">Ist: --°C</span>
+                                </div>
+                                <div class="zone-controls">
+                                    <button class="mini-btn" data-action="minus" data-zone="wohnzimmer">−</button>
+                                    <button class="mini-btn mode" data-action="mode" data-zone="wohnzimmer" id="climateModeBtn-wohnzimmer">❄</button>
+                                    <button class="mini-btn power" data-action="power" data-zone="wohnzimmer" id="climatePowerBtn-wohnzimmer">⏻</button>
+                                    <button class="mini-btn" data-action="plus" data-zone="wohnzimmer">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Schlafzimmer -->
+                        <div class="climate-zone" data-zone="schlafzimmer" data-entity="climate.schlafzimmer">
+                            <div class="zone-header">
+                                <span class="zone-name">Schlafzimmer</span>
+                                <span class="zone-status" id="climateStatus-schlafzimmer">--</span>
+                            </div>
+                            <div class="zone-body">
+                                <div class="zone-temp">
+                                    <span class="zone-target" id="climateTarget-schlafzimmer">--°C</span>
+                                    <span class="zone-current" id="climateCurrent-schlafzimmer">Ist: --°C</span>
+                                </div>
+                                <div class="zone-controls">
+                                    <button class="mini-btn" data-action="minus" data-zone="schlafzimmer">−</button>
+                                    <button class="mini-btn mode" data-action="mode" data-zone="schlafzimmer" id="climateModeBtn-schlafzimmer">❄</button>
+                                    <button class="mini-btn power" data-action="power" data-zone="schlafzimmer" id="climatePowerBtn-schlafzimmer">⏻</button>
+                                    <button class="mini-btn" data-action="plus" data-zone="schlafzimmer">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Arbeitszimmer -->
+                        <div class="climate-zone" data-zone="arbeitszimmer" data-entity="climate.arbeitszimmer">
+                            <div class="zone-header">
+                                <span class="zone-name">Arbeitszimmer</span>
+                                <span class="zone-status" id="climateStatus-arbeitszimmer">--</span>
+                            </div>
+                            <div class="zone-body">
+                                <div class="zone-temp">
+                                    <span class="zone-target" id="climateTarget-arbeitszimmer">--°C</span>
+                                    <span class="zone-current" id="climateCurrent-arbeitszimmer">Ist: --°C</span>
+                                </div>
+                                <div class="zone-controls">
+                                    <button class="mini-btn" data-action="minus" data-zone="arbeitszimmer">−</button>
+                                    <button class="mini-btn mode" data-action="mode" data-zone="arbeitszimmer" id="climateModeBtn-arbeitszimmer">❄</button>
+                                    <button class="mini-btn power" data-action="power" data-zone="arbeitszimmer" id="climatePowerBtn-arbeitszimmer">⏻</button>
+                                    <button class="mini-btn" data-action="plus" data-zone="arbeitszimmer">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scan-overlay"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
