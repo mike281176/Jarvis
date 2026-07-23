@@ -334,6 +334,94 @@ class JarvisPWA {
         // Start Time Update
         this.updateSystemTime();
         setInterval(() => this.updateSystemTime(), 1000);
+
+        // Initialize Voice-First Mobile Mode
+        this.initVoiceMode();
+    }
+
+    initVoiceMode() {
+        const isMobile = window.innerWidth <= 767;
+        const mainInterface = document.getElementById('main-interface');
+        
+        if (isMobile) {
+            mainInterface.classList.add('voice-mode');
+        }
+
+        // Drawer toggle
+        const handle = document.getElementById('voiceDrawerHandle');
+        const drawer = document.getElementById('voiceDrawer');
+        const closeBtn = document.getElementById('voiceDrawerClose');
+        
+        if (handle && drawer) {
+            handle.addEventListener('click', () => {
+                drawer.classList.toggle('open');
+            });
+        }
+        
+        if (closeBtn && drawer) {
+            closeBtn.addEventListener('click', () => {
+                drawer.classList.remove('open');
+            });
+        }
+
+        // Drawer menu items - switch view and close drawer
+        const drawerItems = document.querySelectorAll('.voice-drawer-body .drawer-menu-item');
+        drawerItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                const view = e.currentTarget.dataset.view;
+                if (view) {
+                    this.switchView(view);
+                    if (drawer) drawer.classList.remove('open');
+                }
+            });
+        });
+
+        // Response bubble close
+        const bubbleClose = document.getElementById('voiceBubbleClose');
+        if (bubbleClose) {
+            bubbleClose.addEventListener('click', () => {
+                document.getElementById('voiceResponseBubble').classList.remove('show');
+            });
+        }
+
+        // Update voice time
+        this.updateVoiceTime();
+        setInterval(() => this.updateVoiceTime(), 1000);
+
+        // Listen for resize to toggle voice mode
+        window.addEventListener('resize', () => {
+            const nowMobile = window.innerWidth <= 767;
+            if (nowMobile && !mainInterface.classList.contains('voice-mode')) {
+                mainInterface.classList.add('voice-mode');
+            } else if (!nowMobile && mainInterface.classList.contains('voice-mode')) {
+                mainInterface.classList.remove('voice-mode');
+            }
+        });
+    }
+
+    updateVoiceTime() {
+        const el = document.getElementById('voiceTime');
+        if (!el) return;
+        const now = new Date();
+        el.textContent = now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+    }
+
+    showVoiceBubble(text) {
+        const bubble = document.getElementById('voiceResponseBubble');
+        const bubbleText = document.getElementById('voiceBubbleText');
+        if (!bubble || !bubbleText) return;
+        bubbleText.textContent = text;
+        bubble.classList.add('show');
+        // Auto-hide after 8 seconds
+        clearTimeout(this._bubbleTimeout);
+        this._bubbleTimeout = setTimeout(() => {
+            bubble.classList.remove('show');
+        }, 8000);
+    }
+
+    hideVoiceBubble() {
+        const bubble = document.getElementById('voiceResponseBubble');
+        if (bubble) bubble.classList.remove('show');
     }
 
     initMainEventListeners() {
@@ -1348,6 +1436,9 @@ class JarvisPWA {
         };
 
         this.synthesis.speak(utterance);
+
+        // Show voice bubble on mobile
+        this.showVoiceBubble(text);
     }
 
     // ==================== API KOMMUNIKATION ====================

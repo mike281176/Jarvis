@@ -768,7 +768,7 @@ html, body {
     .blueprint-title { font-size: 0.5rem; }
 }
 
-/* Phone (under 600px) */
+/* Phone (under 600px) — Voice-First Mode */
 @media (max-width: 599px) {
     .layout-wrapper { grid-template-columns: 60px 1fr 0; gap: 0.15rem; padding: 0.15rem; }
     .side-menu { padding: 0.15rem; gap: 0.1rem; border-radius: 6px; }
@@ -832,6 +832,386 @@ html, body {
     .hud-input { font-size: 0.7rem; padding: 0.15rem 0.3rem; }
     .hud-button { font-size: 0.65rem; padding: 0.15rem 0.3rem; }
     .chat-panel, .camera-frame { max-width: 98%; padding: var(--space-xs); }
+}
+
+/* ===========================
+   VOICE-FIRST MOBILE MODE
+   =========================== */
+.voice-mode .dashboard-header,
+.voice-mode .side-menu,
+.voice-mode .status-panel,
+.voice-mode .dashboard-footer,
+.voice-mode .view-container,
+.voice-mode .scan-overlay {
+    display: none !important;
+}
+
+.voice-mode .layout-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+                var(--hud-bg);
+}
+
+.voice-mode .main-stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.voice-mode .cc-core {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
+
+.voice-mode .globe-wrapper {
+    transform: scale(1);
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 360/220;
+    perspective: 800px;
+}
+
+.voice-mode .globe {
+    width: 150px;
+    height: 150px;
+}
+
+.voice-mode .orbit-1 { width: 340px; height: 90px; }
+.voice-mode .orbit-2 { width: 300px; height: 100px; }
+.voice-mode .orbit-3 { width: 380px; height: 80px; }
+
+.voice-mode .voice-waves {
+    width: 360px;
+    height: 360px;
+}
+
+.voice-mode .voice-wave.wave-1 { width: 160px; height: 160px; }
+.voice-mode .voice-wave.wave-2 { width: 220px; height: 220px; }
+.voice-mode .voice-wave.wave-3 { width: 290px; height: 290px; }
+.voice-mode .voice-wave.wave-4 { width: 360px; height: 360px; }
+
+.voice-mode .core-text { font-size: 1.2rem; }
+.voice-mode .core-status { font-size: 0.85rem; margin-top: var(--space-md); }
+.voice-mode .core-hint { display: block; font-size: 0.7rem; margin-top: var(--space-sm); opacity: 0.6; }
+.voice-mode .pcb-traces { display: block; opacity: 0.15; }
+
+/* Voice-mode drawer handle */
+.voice-drawer-handle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: linear-gradient(transparent, rgba(0, 5, 16, 0.8) 40%);
+    transition: opacity 0.3s;
+}
+
+.voice-drawer-handle .drawer-bar {
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(0, 212, 255, 0.4);
+    box-shadow: 0 0 8px rgba(0, 212, 255, 0.2);
+    transition: all 0.3s;
+}
+
+.voice-drawer-handle .drawer-label {
+    font-family: var(--font-hud);
+    font-size: 0.55rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+    opacity: 0.6;
+}
+
+/* Voice-mode drawer (slide-up dashboard) */
+.voice-drawer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 5, 16, 0.97);
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 16px 16px 0 0;
+    backdrop-filter: blur(12px);
+    transform: translateY(100%);
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.5);
+}
+
+.voice-drawer.open {
+    transform: translateY(0);
+}
+
+.voice-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-sm) var(--space-md);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    flex-shrink: 0;
+}
+
+.voice-drawer-header .drawer-title {
+    font-family: var(--font-hud);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    color: var(--jarvis-blue);
+}
+
+.voice-drawer-header .drawer-close {
+    background: transparent;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    color: var(--jarvis-blue);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voice-drawer-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.voice-drawer-body .drawer-menu-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: rgba(0, 12, 26, 0.6);
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-family: var(--font-hud);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.voice-drawer-body .drawer-menu-item:hover,
+.voice-drawer-body .drawer-menu-item:active {
+    border-color: var(--jarvis-blue);
+    background: rgba(0, 212, 255, 0.08);
+    box-shadow: var(--glow-blue);
+}
+
+.voice-drawer-body .drawer-menu-item .menu-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--jarvis-blue);
+    font-size: 1rem;
+}
+
+.voice-drawer-body .drawer-menu-item .menu-arrow {
+    margin-left: auto;
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+}
+
+/* Voice-mode quick status bar */
+.voice-quick-status {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.voice-quick-status .qs-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.voice-quick-status .qs-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--jarvis-green);
+    box-shadow: 0 0 6px var(--jarvis-green);
+}
+
+.voice-quick-status .qs-text {
+    font-family: var(--font-hud);
+    font-size: 0.55rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.1em;
+}
+
+.voice-quick-status .qs-time {
+    font-family: var(--font-hud);
+    font-size: 0.65rem;
+    color: var(--text-primary);
+    letter-spacing: 0.08em;
+}
+
+.voice-quick-status .qs-user {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--jarvis-blue);
+    color: var(--hud-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.65rem;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/* Voice-mode response bubble */
+.voice-response-bubble {
+    position: fixed;
+    bottom: 60px;
+    left: 16px;
+    right: 16px;
+    z-index: 30;
+    display: none;
+    background: rgba(0, 10, 22, 0.9);
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    border-radius: 12px;
+    padding: var(--space-sm) var(--space-md);
+    backdrop-filter: blur(8px);
+    box-shadow: var(--glow-blue);
+    animation: bubble-in 0.3s ease;
+}
+
+.voice-response-bubble.show {
+    display: block;
+}
+
+.voice-response-bubble .bubble-text {
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.voice-response-bubble .bubble-close {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@keyframes bubble-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Voice-mode: hide desktop elements on small screens */
+@media (max-width: 599px) {
+    .dashboard-interface:not(.voice-mode) .cc-core { display: none; }
+}
+
+/* Voice-mode: show on all mobile screens */
+@media (max-width: 767px) {
+    .dashboard-interface.voice-mode .dashboard-header,
+    .dashboard-interface.voice-mode .side-menu,
+    .dashboard-interface.voice-mode .status-panel,
+    .dashboard-interface.voice-mode .dashboard-footer,
+    .dashboard-interface.voice-mode .view-container,
+    .dashboard-interface.voice-mode .scan-overlay {
+        display: none !important;
+    }
+    .dashboard-interface.voice-mode .layout-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .dashboard-interface.voice-mode .main-stage {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dashboard-interface.voice-mode .cc-core {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        height: 100%;
+    }
+    .dashboard-interface.voice-mode .globe-wrapper {
+        transform: scale(0.85);
+        max-width: 300px;
+    }
+    .dashboard-interface.voice-mode .globe { width: 120px; height: 120px; }
+    .dashboard-interface.voice-mode .orbit-1 { width: 280px; height: 75px; }
+    .dashboard-interface.voice-mode .orbit-2 { width: 250px; height: 85px; }
+    .dashboard-interface.voice-mode .orbit-3 { width: 310px; height: 65px; }
+    .dashboard-interface.voice-mode .voice-waves { width: 300px; height: 300px; }
+    .dashboard-interface.voice-mode .voice-wave.wave-1 { width: 130px; height: 130px; }
+    .dashboard-interface.voice-mode .voice-wave.wave-2 { width: 180px; height: 180px; }
+    .dashboard-interface.voice-mode .voice-wave.wave-3 { width: 240px; height: 240px; }
+    .dashboard-interface.voice-mode .voice-wave.wave-4 { width: 300px; height: 300px; }
+    .dashboard-interface.voice-mode .core-text { font-size: 1rem; }
+    .dashboard-interface.voice-mode .core-status { font-size: 0.75rem; }
+    .dashboard-interface.voice-mode .core-hint { display: block; font-size: 0.6rem; }
+    .dashboard-interface.voice-mode .pcb-traces { display: block; opacity: 0.12; }
 }
 
 /* Very small phones (under 380px) */
