@@ -580,6 +580,25 @@ class JarvisPWA {
                 this.switchView(view);
             });
         });
+
+        // Godcore button (header right)
+        const godcoreBtn = document.getElementById('godcoreBtn');
+        if (godcoreBtn) {
+            godcoreBtn.addEventListener('click', () => this.switchView('godcore'));
+        }
+        // Godcore card actions
+        document.querySelectorAll('.gc-chat').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const agent = e.currentTarget.dataset.agent;
+                this.openAgentChat(agent);
+            });
+        });
+        document.querySelectorAll('.gc-log').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const agent = e.currentTarget.dataset.agent;
+                this.openAgentLog(agent);
+            });
+        });
         
         // Home climate tile opens overlay
         const homeClimateTile = document.getElementById('homeClimateTile');
@@ -635,6 +654,97 @@ class JarvisPWA {
         if (viewName === 'einstellungen') {
             this.renderConversationLog();
         }
+        // Godcore agent dashboard
+        if (viewName === 'godcore') {
+            this.loadGodcoreData();
+        }
+    }
+
+    async loadGodcoreData() {
+        const setStatus = (agent, state) => {
+            const el = document.getElementById(`gc-${agent}-status`);
+            if (el) {
+                el.className = `gc-status ${state}`;
+                el.textContent = state.toUpperCase();
+            }
+        };
+        const setVal = (id, val) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = val;
+        };
+        const haState = async (entity) => {
+            try {
+                const data = await this.haFetch(`/api/states/${entity}`);
+                return data;
+            } catch(e) { return null; }
+        };
+        try {
+            // HAOS health + integrations
+            const haHealth = await haState('sensor.system_ha_global_health_score');
+            if (haHealth) setVal('gc-haos-health', `${haHealth.state}/100`);
+            const haInt = await haState('sensor.ha_integrations') || await haState('sensor.integrations');
+            if (haInt) setVal('gc-haos-int', haInt.state);
+            // NAS
+            const nasVol = await haState('sensor.nas_volume_1_volume_used');
+            if (nasVol) setVal('gc-nas-vol', `${nasVol.state}%`);
+            const nasTemp = await haState('sensor.nas_temperature');
+            if (nasTemp) setVal('gc-nas-temp', `${nasTemp.state}°C`);
+            // Status via HA binary sensors
+            const px = await haState('binary_sensor.jarvis_status_proxmox');
+            setStatus('proxmox', px && px.state === 'on' ? 'online' : 'offline');
+            const nasB = await haState('binary_sensor.jarvis_status_nas');
+            setStatus('nas', nasB && nasB.state === 'on' ? 'online' : 'offline');
+            const haB = await haState('binary_sensor.jarvis_status_haos');
+            setStatus('haos', haB && haB.state === 'on' ? 'online' : 'offline');
+            // JARVIS host (this machine) lokal abfragen
+            setStatus('jarvis', 'online');
+            setStatus('ollama', 'online');
+            setStatus('frigate', 'online');
+
+            // JARVIS CPU/RAM lokal (nur Node-Kontext)
+            try {
+                const os = require('os');
+                const cpus = os.cpus().length;
+                const load = os.loadavg()[0].toFixed(2);
+                setVal('gc-jarvis-cpu', `${load} (${cpus} cores)`);
+                const tot = (os.totalmem()/1073741824).toFixed(1);
+                const free = (os.freemem()/1073741824).toFixed(1);
+                setVal('gc-jarvis-ram', `${free}/${tot} GB`);
+            } catch(e) { /* browser context: skip */ }
+
+            // Ollama models
+            const models = await haState('sensor.jarvis_ollama_models');
+            if (models) setVal('gc-ollama-models', models.state);
+            // Proxmox VMs
+            const vms = await haState('sensor.proxmox_vms_anzahl');
+            if (vms) setVal('gc-proxmox-vms', vms.state);
+            // Frigate cameras
+            const cams = await haState('sensor.frigate_cameras_aktiv');
+            if (cams) setVal('gc-frigate-cams', cams.state);
+        } catch (e) {
+            console.warn('[Godcore] load error', e);
+        }
+    }
+
+    openAgentChat(agent) {
+        // Open chat overlay with pre-filled context about the agent
+        const overlay = document.getElementById('chatOverlay');
+        const input = document.getElementById('textInput');
+        if (overlay) overlay.style.display = 'flex';
+        if (input) {
+            const labels = { jarvis: 'J.A.R.V.I.S.', ollama: 'Ollama LLM', proxmox: 'Proxmox', nas: 'NAS', haos: 'Home Assistant', frigate: 'Frigate' };
+            input.value = `Frage zu ${labels[agent] || agent}: `;
+            input.focus();
+        }
+    }
+
+    openAgentLog(agent) {
+        // Switch to settings view and show conversation log filtered by agent
+        this.switchView('einstellungen');
+        const log = document.getElementById('conversationLog');
+        if (log) {
+            log.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 
     startCameraFeeds() {
@@ -671,7 +781,14 @@ class JarvisPWA {
         
         // Regelmäßige Aktualisierung alle 30 Sekunden
         if (this.dashboardInterval) clearInterval(this.dashboardInterval);
-        this.dashboardInterval = setInterval(() => this.refreshDashboardData(), 30000);
+        this.dashboardInterval = setInterval(() => {
+            this.refreshDashboardData();
+            // Godcore live updaten falls aktiv
+            const gcView = document.getElementById('view-godcore');
+            if (gcView && gcView.classList.contains('active')) {
+                this.loadGodcoreData();
+            }
+        }, 30000);
         
         // Uhrzeit mit Datum
         this.updateClock();

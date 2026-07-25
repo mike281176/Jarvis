@@ -141,6 +141,9 @@
                     <button class="hud-button icon" id="dashboardRefresh" title="Aktualisieren">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
                     </button>
+                    <button class="hud-button icon godcore-btn" id="godcoreBtn" title="Godcore - Agenten Dashboard">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path></svg>
+                    </button>
                     <button class="logout-btn" id="logoutBtn">×</button>
                 </div>
             </header>
@@ -408,6 +411,107 @@
                     </div>
 
                 </main>
+
+                <!-- Godcore Agent Dashboard View -->
+                <div class="view-container" id="view-godcore">
+                    <div class="godcore-header">
+                        <span class="tile-line"></span>
+                        <span class="tile-title">GODCORE — AGENTEN KONTROLLE</span>
+                        <span class="godcore-live" id="godcoreLive">LIVE</span>
+                    </div>
+                    <div class="godcore-grid" id="godcoreGrid">
+                        <div class="godcore-card" data-agent="jarvis">
+                            <div class="gc-card-top">
+                                <span class="gc-icon">🛰️</span>
+                                <span class="gc-name">J.A.R.V.I.S.</span>
+                                <span class="gc-status online" id="gc-jarvis-status">ONLINE</span>
+                            </div>
+                            <div class="gc-meta">Rolle: Steuerungs-KI · Modell: tencent/hy3 · Workspace: lokal</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-jarvis-host">192.168.1.81</span></div>
+                            <div class="gc-row"><span>CPU</span><span id="gc-jarvis-cpu">—</span></div>
+                            <div class="gc-row"><span>RAM</span><span id="gc-jarvis-ram">—</span></div>
+                            <div class="gc-actions">
+                                <button class="hud-button small gc-chat" data-agent="jarvis">Chat</button>
+                                <button class="hud-button small gc-log" data-agent="jarvis">Logs</button>
+                            </div>
+                        </div>
+                        <div class="godcore-card" data-agent="ollama">
+                            <div class="gc-card-top">
+                                <span class="gc-icon">🧠</span>
+                                <span class="gc-name">Ollama LLM</span>
+                                <span class="gc-status online" id="gc-ollama-status">ONLINE</span>
+                            </div>
+                            <div class="gc-meta">Rolle: Lokale KI · Modell: llama3.2:3b · Embed: nomic-embed</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-ollama-host">192.168.1.170:11434</span></div>
+                            <div class="gc-row"><span>Modelle</span><span id="gc-ollama-models">—</span></div>
+                            <div class="gc-row"><span>VRAM</span><span id="gc-ollama-vram">—</span></div>
+                            <div class="gc-actions">
+                                <button class="hud-button small gc-chat" data-agent="ollama">Chat</button>
+                                <button class="hud-button small gc-log" data-agent="ollama">Logs</button>
+                            </div>
+                        </div>
+                        <div class="godcore-card" data-agent="proxmox">
+                            <div class="gc-card-top">
+                                <span class="gc-icon">🖥️</span>
+                                <span class="gc-name">Proxmox VE</span>
+                                <span class="gc-status online" id="gc-proxmox-status">ONLINE</span>
+                            </div>
+                            <div class="gc-meta">Rolle: Virtualisierung · VMs: Hermes, OpenClaw (optional)</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-proxmox-host">192.168.1.130</span></div>
+                            <div class="gc-row"><span>Nodes</span><span id="gc-proxmox-nodes">—</span></div>
+                            <div class="gc-row"><span>VMs</span><span id="gc-proxmox-vms">—</span></div>
+                            <div class="gc-actions">
+                                <button class="hud-button small gc-chat" data-agent="proxmox">Chat</button>
+                                <button class="hud-button small gc-log" data-agent="proxmox">Logs</button>
+                            </div>
+                        </div>
+                        <div class="godcore-card" data-agent="nas">
+                            <div class="gc-card-top">
+                                <span class="gc-icon">💾</span>
+                                <span class="gc-name">Synology NAS</span>
+                                <span class="gc-status online" id="gc-nas-status">ONLINE</span>
+                            </div>
+                            <div class="gc-meta">Rolle: Storage · Paperless, Backups, Portainer</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-nas-host">192.168.1.159</span></div>
+                            <div class="gc-row"><span>Vol. 1</span><span id="gc-nas-vol">—</span></div>
+                            <div class="gc-row"><span>Temp</span><span id="gc-nas-temp">—</span></div>
+                            <div class="gc-actions">
+                                <button class="hud-button small gc-chat" data-agent="nas">Chat</button>
+                                <button class="hud-button small gc-log" data-agent="nas">Logs</button>
+                            </div>
+                        </div>
+                        <div class="godcore-card" data-agent="haos">
+                            <div class="gc-card-top">
+                                <span class="gc-icon">🏠</span>
+                                <span class="gc-name">Home Assistant OS</span>
+                                <span class="gc-status online" id="gc-haos-status">ONLINE</span>
+                            </div>
+                            <div class="gc-meta">Rolle: Smart Home Hub · 13 Alexa, Frigate, 2023 Entities</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-haos-host">192.168.1.91</span></div>
+                            <div class="gc-row"><span>Health</span><span id="gc-haos-health">—</span></div>
+                            <div class="gc-row"><span>Integrations</span><span id="gc-haos-int">—</span></div>
+                            <div class="gc-actions">
+                                <button class="hud-button small gc-chat" data-agent="haos">Chat</button>
+                                <button class="hud-button small gc-log" data-agent="haos">Logs</button>
+                            </div>
+                        </div>
+                        <div class="godcore-card" data-agent="frigate">
+                            <div class="gc-card-top">
+                                <span class="gc-icon">📹</span>
+                                <span class="gc-name">Frigate NVR</span>
+                                <span class="gc-status online" id="gc-frigate-status">ONLINE</span>
+                            </div>
+                            <div class="gc-meta">Rolle: KI-Kamera-Auswertung · Doorbird, Einfahrt</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-frigate-host">192.168.1.176</span></div>
+                            <div class="gc-row"><span>Kameras</span><span id="gc-frigate-cams">—</span></div>
+                            <div class="gc-row"><span>Detectors</span><span id="gc-frigate-det">—</span></div>
+                            <div class="gc-actions">
+                                <button class="hud-button small gc-chat" data-agent="frigate">Chat</button>
+                                <button class="hud-button small gc-log" data-agent="frigate">Logs</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Right Status Panel -->
                 <aside class="status-panel">
