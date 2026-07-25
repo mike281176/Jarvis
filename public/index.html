@@ -520,15 +520,15 @@
                         <span class="panel-title">SYSTEM STATUS</span>
                     </div>
                     <div class="status-list" id="statusList">
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_haos">
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_haos" data-agent="haos">
                             <span class="status-dot-sm" id="status-haos-dot"></span>
                             <span class="status-name">HAOS</span>
                         </div>
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_proxmox">
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_proxmox" data-agent="proxmox">
                             <span class="status-dot-sm" id="status-proxmox-dot"></span>
                             <span class="status-name">Proxmox</span>
                         </div>
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_nas">
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_nas" data-agent="nas">
                             <span class="status-dot-sm" id="status-nas-dot"></span>
                             <span class="status-name">NAS</span>
                         </div>
@@ -548,7 +548,7 @@
                             <span class="status-dot-sm" id="status-opendtu-dot"></span>
                             <span class="status-name">OpenDTU</span>
                         </div>
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_jarvis_api">
+                        <div class="status-row" data-entity="binary_sensor.jarvis_status_jarvis_api" data-agent="jarvis">
                             <span class="status-dot-sm" id="status-jarvis-dot"></span>
                             <span class="status-name">Jarvis API</span>
                         </div>
@@ -766,6 +766,26 @@
                         <span>Einstellungen</span>
                         <span class="menu-arrow">›</span>
                     </button>
+                </div>
+            </div>
+
+            <!-- Godcore Agent Detail Modal -->
+            <div class="godcore-modal" id="godcoreModal" style="display: none;">
+                <div class="godcore-modal-backdrop" id="godcoreModalBackdrop"></div>
+                <div class="godcore-modal-card" id="godcoreModalCard">
+                    <div class="gc-modal-header">
+                        <span class="gc-modal-icon" id="gcModalIcon">🛰️</span>
+                        <span class="gc-modal-name" id="gcModalName">Agent</span>
+                        <span class="gc-status online" id="gcModalStatus">ONLINE</span>
+                        <button class="drawer-close" id="godcoreModalClose">×</button>
+                    </div>
+                    <div class="gc-modal-meta" id="gcModalMeta"></div>
+                    <div class="gc-modal-rows" id="gcModalRows"></div>
+                    <div class="gc-modal-actions">
+                        <button class="hud-button small" id="gcModalChat">Chat öffnen</button>
+                        <button class="hud-button small" id="gcModalLog">Log ansehen</button>
+                        <button class="hud-button small secondary" id="gcModalFull">Godcore-View öffnen</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -599,6 +599,35 @@ class JarvisPWA {
                 this.openAgentLog(agent);
             });
         });
+        // Status Panel rows -> open Godcore detail modal
+        document.querySelectorAll('.status-row[data-agent]').forEach(row => {
+            row.addEventListener('click', (e) => {
+                const agent = e.currentTarget.dataset.agent;
+                this.openGodcoreModal(agent);
+            });
+        });
+        // Godcore modal close
+        const gcModalClose = document.getElementById('godcoreModalClose');
+        const gcModalBackdrop = document.getElementById('godcoreModalBackdrop');
+        if (gcModalClose) gcModalClose.addEventListener('click', () => this.closeGodcoreModal());
+        if (gcModalBackdrop) gcModalBackdrop.addEventListener('click', () => this.closeGodcoreModal());
+        const gcModalChat = document.getElementById('gcModalChat');
+        if (gcModalChat) gcModalChat.addEventListener('click', () => {
+            const a = this._gcActiveAgent;
+            this.closeGodcoreModal();
+            if (a) this.openAgentChat(a);
+        });
+        const gcModalLog = document.getElementById('gcModalLog');
+        if (gcModalLog) gcModalLog.addEventListener('click', () => {
+            const a = this._gcActiveAgent;
+            this.closeGodcoreModal();
+            if (a) this.openAgentLog(a);
+        });
+        const gcModalFull = document.getElementById('gcModalFull');
+        if (gcModalFull) gcModalFull.addEventListener('click', () => {
+            this.closeGodcoreModal();
+            this.switchView('godcore');
+        });
         
         // Home climate tile opens overlay
         const homeClimateTile = document.getElementById('homeClimateTile');
@@ -745,6 +774,89 @@ class JarvisPWA {
         if (log) {
             log.scrollIntoView({ behavior: 'smooth' });
         }
+    }
+
+    // Godcore Agent-Konfiguration (zentral gepfegt)
+    getGodcoreAgents() {
+        return {
+            jarvis: { icon: '🛰️', name: 'J.A.R.V.I.S.', meta: 'Rolle: Steuerungs-KI · Modell: tencent/hy3 · Workspace: lokal', host: '192.168.1.81' },
+            ollama: { icon: '🧠', name: 'Ollama LLM', meta: 'Rolle: Lokale KI · Modell: llama3.2:3b · Embed: nomic-embed', host: '192.168.1.170:11434' },
+            proxmox: { icon: '🖥️', name: 'Proxmox VE', meta: 'Rolle: Virtualisierung · VMs: Hermes, OpenClaw (optional)', host: '192.168.1.130' },
+            nas: { icon: '💾', name: 'Synology NAS', meta: 'Rolle: Storage · Paperless, Backups, Portainer', host: '192.168.1.159' },
+            haos: { icon: '🏠', name: 'Home Assistant OS', meta: 'Rolle: Smart Home Hub · 13 Alexa, Frigate, 2023 Entities', host: '192.168.1.91' },
+            frigate: { icon: '📹', name: 'Frigate NVR', meta: 'Rolle: KI-Kamera-Auswertung · Doorbird, Einfahrt', host: '192.168.1.176' }
+        };
+    }
+
+    async openGodcoreModal(agent) {
+        const agents = this.getGodcoreAgents();
+        const cfg = agents[agent];
+        if (!cfg) return;
+        this._gcActiveAgent = agent;
+        const iconEl = document.getElementById('gcModalIcon');
+        const nameEl = document.getElementById('gcModalName');
+        const statusEl = document.getElementById('gcModalStatus');
+        const metaEl = document.getElementById('gcModalMeta');
+        const rowsEl = document.getElementById('gcModalRows');
+        if (iconEl) iconEl.textContent = cfg.icon;
+        if (nameEl) nameEl.textContent = cfg.name;
+        if (metaEl) metaEl.textContent = cfg.meta;
+        if (statusEl) {
+            const dot = document.getElementById(`status-${agent === 'jarvis' ? 'jarvis' : agent}-dot`);
+            const online = dot && dot.classList.contains('onine');
+            statusEl.className = `gc-status ${online ? 'online' : 'offline'}`;
+            statusEl.textContent = online ? 'ONLINE' : 'OFFLINE';
+        }
+        // Live-Daten via HA-Proxy laden
+        if (rowsEl) {
+            rowsEl.innerHTML = '<div class="gc-row"><span>Host</span><span>' + cfg.host + '</span></div><div class="gc-row"><span>Status</span><span>Lade…</span></div>';
+        }
+        const modal = document.getElementById('godcoreModal');
+        if (modal) modal.style.display = 'flex';
+        // Daten asynchron nachladen
+        try {
+            const haState = async (entity) => {
+                try { return await this.haFetch(`/api/states/${entity}`); } catch(e) { return null; }
+            };
+            const rows = [];
+            rows.push(['Host', cfg.host]);
+            if (agent === 'jarvis') {
+                try {
+                    const os = require('os');
+                    rows.push(['CPU', `${os.loadavg()[0].toFixed(2)} (${os.cpus().length} cores)`]);
+                    rows.push(['RAM', `${ (os.freemem()/1073741824).toFixed(1) }/${(os.totalmem()/1073741824).toFixed(1)} GB`]);
+                } catch(e) { rows.push(['CPU', 'n/a (Browser)']); }
+            } else if (agent === 'haos') {
+                const h = await haState('sensor.system_ha_global_health_score');
+                if (h) rows.push(['Health', `${h.state}/100`]);
+                const i = await haState('sensor.ha_integrations');
+                if (i) rows.push(['Integrations', i.state]);
+            } else if (agent === 'nas') {
+                const v = await haState('sensor.nas_volume_1_volume_used');
+                if (v) rows.push(['Vol. 1', `${v.state}%`]);
+                const t = await haState('sensor.nas_temperature');
+                if (t) rows.push(['Temp', `${t.state}°C`]);
+            } else if (agent === 'ollama') {
+                const m = await haState('sensor.jarvis_ollama_models');
+                if (m) rows.push(['Modelle', m.state]);
+            } else if (agent === 'proxmox') {
+                const v = await haState('sensor.proxmox_vms_anzahl');
+                if (v) rows.push(['VMs', v.state]);
+            } else if (agent === 'frigate') {
+                const c = await haState('sensor.frigate_cameras_aktiv');
+                if (c) rows.push(['Kameras', c.state]);
+            }
+            if (rowsEl) {
+                rowsEl.innerHTML = rows.map(r => `<div class="gc-row"><span>${r[0]}</span><span>${r[1]}</span></div>`).join('');
+            }
+        } catch(e) {
+            if (rowsEl) rowsEl.innerHTML += '<div class="gc-row"><span>Fehler</span><span>HA-Daten nicht erreichbar</span></div>';
+        }
+    }
+
+    closeGodcoreModal() {
+        const modal = document.getElementById('godcoreModal');
+        if (modal) modal.style.display = 'none';
     }
 
     startCameraFeeds() {
