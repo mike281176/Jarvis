@@ -1199,7 +1199,8 @@ class JarvisPWA {
                 'binary_sensor.jarvis_status_haos', 'binary_sensor.jarvis_status_proxmox',
                 'binary_sensor.jarvis_status_nas', 'binary_sensor.jarvis_status_gateway',
                 'binary_sensor.jarvis_status_solar', 'binary_sensor.jarvis_status_zigbee',
-                'binary_sensor.jarvis_status_opendtu', 'binary_sensor.jarvis_status_jarvis_api'
+                'binary_sensor.jarvis_status_opendtu', 'binary_sensor.jarvis_status_jarvis_api',
+                'binary_sensor.paperless_status'
             ];
             
             // States einzeln laden und zusammenführen
@@ -1542,7 +1543,7 @@ class JarvisPWA {
         if (el) el.textContent = `HA: ${count} Entitäten`;
     }
 
-    updateStatusPanel(states) {
+    async updateStatusPanel(states) {
         const statusMap = {
             'status-haos-dot': 'binary_sensor.jarvis_status_haos',
             'status-proxmox-dot': 'binary_sensor.jarvis_status_proxmox',
@@ -1551,25 +1552,50 @@ class JarvisPWA {
             'status-solar-dot': 'binary_sensor.jarvis_status_solar',
             'status-zigbee-dot': 'binary_sensor.jarvis_status_zigbee',
             'status-opendtu-dot': 'binary_sensor.jarvis_status_opendtu',
-            'status-jarvis-dot': 'binary_sensor.jarvis_status_jarvis_api'
+            'status-jarvis-dot': 'binary_sensor.jarvis_status_jarvis_api',
+            'status-paperless-dot': 'binary_sensor.paperless_status'
         };
         let onlineCount = 0;
-        Object.entries(statusMap).forEach(([id, entityId]) => {
+        
+        // Normale HA-Sensoren prüfen
+        for (const [id, entityId] of Object.entries(statusMap)) {
             const state = states.find(s => s.entity_id === entityId);
             const dot = document.getElementById(id);
-            if (!dot) return;
+            if (!dot) continue;
+            
+            // Paperless: Fallback API-Check wenn Sensor nicht verfügbar
+            if (id === 'status-paperless-dot' && (!state || state.state === 'unavailable' || state.state === 'unknown')) {
+                try {
+                    const response = await fetch('http://192.168.1.159:8777/api/documents/', {
+                        method: 'HEAD',
+                        headers: { 'Authorization': 'Token 44568e6750650f79836f5cb18f5f76b0fe1eb29f' },
+                        signal: AbortSignal.timeout(3000)
+                    });
+                    const isOnline = response.ok;
+                    dot.className = isOnline ? 'status-dot-sm online' : 'status-dot-sm offline';
+                    if (isOnline) onlineCount++;
+                    continue;
+                } catch (e) {
+                    console.warn('Paperless API Check failed:', e);
+                    dot.className = 'status-dot-sm offline';
+                    continue;
+                }
+            }
+            
+            // Normale Logik für andere Sensoren
             if (!state || state.state === 'unavailable' || state.state === 'unknown') {
                 dot.className = 'status-dot-sm offline';
-                return;
+                continue;
             }
             const good = ['on', 'connected', 'home', 'ok', 'online'].includes(state.state.toLowerCase());
             dot.className = good ? 'status-dot-sm online' : 'status-dot-sm offline';
             if (good) onlineCount++;
-        });
+        }
+        
         const footer = document.getElementById('footerConnection');
         if (footer) {
-            footer.innerHTML = `● ${onlineCount}/8 Systeme online`;
-            footer.className = onlineCount === 8 ? 'connection-status online' : 'connection-status offline';
+            footer.innerHTML = `● ${onlineCount}/9 Systeme online`;
+            footer.className = onlineCount === 9 ? 'connection-status online' : 'connection-status offline';
         }
     }
 
