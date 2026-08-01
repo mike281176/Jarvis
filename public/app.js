@@ -1115,21 +1115,40 @@ class JarvisPWA {
 
     startCameraFeeds() {
         if (this.cameraInterval) clearInterval(this.cameraInterval);
+        
+        // Kamera-Konfiguration: WebRTC/go2rtc优先，fallback auf camera_proxy
+        // Entities aus HAOS: camera.back_door_standardauflosung, camera.doorstation_* etc.
         const cams = [
-            { id: 'camFrontImg', entity: 'camera.front_door' },
-            { id: 'camBackImg', entity: 'camera.back_door' },
-            { id: 'camEinfahrtImg', entity: 'camera.einfahrt_hochauflosung' },
-            { id: 'camDoorbirdImg', entity: 'camera.doorbird' }
+            { id: 'camFrontImg', entity: 'camera.back_door_standardauflosung', webrtc: false },
+            { id: 'camBackImg', entity: 'camera.back_door_standardauflosung', webrtc: false },
+            { id: 'camEinfahrtImg', entity: 'camera.einfahrt_hochauflosung', webrtc: false },
+            { id: 'camDoorbirdImg', entity: 'camera.doorstation_1ccae371de47_live', webrtc: false }
         ];
-        const token = Date.now();
+        
         const update = () => {
             cams.forEach(cam => {
                 const img = document.getElementById(cam.id);
-                if (img) {
+                if (!img) return;
+                
+                // Versuch: go2rtc WebRTC Stream (schneller, zuverlässiger)
+                // Fallback: HA camera_proxy (langsam, aber kompatibel)
+                if (cam.webrtc) {
+                    // WebRTC Stream via go2rtc
+                    img.src = `http://192.168.1.91:8123/api/webrtc/webrtc_token/${cam.entity}`;
+                } else {
+                    // Fallback: HA camera_proxy mit Token
+                    const token = Date.now();
                     img.src = `${this.apiBaseUrl}/api/jarvis/ha-proxy/api/camera_proxy/${cam.entity}?token=${token}&t=${Date.now()}`;
                 }
+                
+                // Error handler: Zeige Placeholder wenn Bild nicht lädt
+                img.onerror = () => {
+                    img.alt = 'Kamera nicht verfügbar';
+                    img.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240"><rect fill="%231a1a2e" width="320" height="240"/><text fill="%23666" font-family="Arial" font-size="16" x="160" y="120" text-anchor="middle">Kamera offline</text></svg>';
+                };
             });
         };
+        
         update();
         this.cameraInterval = setInterval(update, 2000);
     }
