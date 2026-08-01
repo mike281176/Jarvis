@@ -11,11 +11,12 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$SCRIPT_DIR"
+PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+cd "$PROJECT_DIR"
 
 PORT=${PORT:-8125}
 HOST=${HOST:-0.0.0.0}
-PUBLIC_DIR="./public"
+PUBLIC_DIR="$PROJECT_DIR/public"
 
 echo "╔════════════════════════════════════════════════════════╗"
 echo "║         J.A.R.V.I.S. PWA - Local Server                ║"
@@ -62,6 +63,7 @@ echo "⏹️  Stoppen mit STRG+C"
 echo ""
 
 # Python3 HTTPS Server
+cd "$PUBLIC_DIR"
 python3 << EOF
 import http.server
 import ssl
@@ -70,9 +72,6 @@ import os
 
 PORT = $PORT
 HOST = "$HOST"
-DIRECTORY = "$PUBLIC_DIR"
-
-os.chdir(DIRECTORY)
 
 Handler = http.server.SimpleHTTPRequestHandler
 
