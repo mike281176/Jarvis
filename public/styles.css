@@ -1273,8 +1273,8 @@ html, body {
     .blueprint-drawing { display: none; }
 }
 
-/* ===== GODCORE AGENTEN DASHBOARD ===== */
-#view-godcore {
+/* ===== OLLAMA VM DASHBOARD ===== */
+#view-ollama {
     display: none;
     flex-direction: column;
     gap: 0.5rem;
@@ -1282,9 +1282,9 @@ html, body {
     overflow-y: auto;
     height: 100%;
 }
-#view-godcore.active { display: flex; }
+#view-ollama.active { display: flex; }
 
-.godcore-header {
+.ollama-header {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -1293,13 +1293,13 @@ html, body {
     border-radius: 8px;
     background: rgba(0, 212, 255, 0.05);
 }
-.godcore-header .tile-title {
+.ollama-header .tile-title {
     font-size: 0.7rem;
     letter-spacing: 1.5px;
     color: var(--jarvis-blue, #00d4ff);
     font-weight: 600;
 }
-.godcore-live {
+.ollama-live {
     margin-left: auto;
     font-size: 0.55rem;
     letter-spacing: 1px;
@@ -1307,20 +1307,20 @@ html, body {
     border: 1px solid rgba(74, 222, 128, 0.4);
     border-radius: 4px;
     padding: 0.1rem 0.4rem;
-    animation: godcorePulse 2s infinite;
+    animation: ollamaPulse 2s infinite;
 }
-@keyframes godcorePulse {
+@keyframes ollamaPulse {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.4; }
 }
 
-.godcore-grid {
+.ollama-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 0.5rem;
 }
 
-.godcore-card {
+.ollama-card {
     border: 1px solid rgba(0, 212, 255, 0.2);
     border-radius: 10px;
     padding: 0.6rem;
@@ -1330,7 +1330,7 @@ html, body {
     gap: 0.35rem;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
-.godcore-card:hover {
+.ollama-card:hover {
     border-color: var(--jarvis-blue, #00d4ff);
     box-shadow: 0 0 12px rgba(0, 212, 255, 0.2);
 }
@@ -1393,8 +1393,8 @@ html, body {
     color: var(--jarvis-blue, #00d4ff);
 }
 
-/* ===== GODCORE DETAIL MODAL ===== */
-.godcore-modal {
+/* ===== OLLAMA VM DETAIL MODAL ===== */
+.ollama-modal {
     position: fixed;
     inset: 0;
     z-index: 999;
@@ -1402,13 +1402,13 @@ html, body {
     align-items: center;
     justify-content: center;
 }
-.godcore-modal-backdrop {
+.ollama-modal-backdrop {
     position: absolute;
     inset: 0;
     background: rgba(0, 5, 12, 0.75);
     backdrop-filter: blur(3px);
 }
-.godcore-modal-card {
+.ollama-modal-card {
     position: relative;
     width: min(440px, 92vw);
     max-height: 86vh;
@@ -1472,3 +1472,53 @@ html, body {
     flex-wrap: wrap;
 }
 .gc-modal-actions .hud-button { flex: 1; min-width: 120px; }
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .ollama-modal-card {
+        width: min(95vw, 400px);
+        max-height: 75vh;
+        padding: 0.8rem;
+    }
+    .gc-modal-header {
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+    .gc-modal-name {
+        font-size: 0.7rem;
+        flex-basis: 100%;
+        order: 3;
+    }
+    .gc-modal-meta {
+        font-size: 0.55rem;
+        flex-basis: 100%;
+        order: 4;
+    }
+    .gc-modal-rows .gc-row {
+        font-size: 0.6rem;
+        padding: 0.2rem 0;
+    }
+    .gc-modal-actions {
+        flex-direction: column;
+    }
+    .gc-modal-actions .hud-button {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .ollama-modal-card {
+        width: 98vw;
+        max-height: 85vh;
+    }
+    .gc-modal-header .gc-modal-icon {
+        font-size: 1rem;
+    }
+    .gc-modal-header .gc-modal-name {
+        font-size: 0.65rem;
+    }
+    .gc-modal-meta {
+        font-size: 0.5rem;
+    }
+}

@@ -1,9 +1,10 @@
 /**
  * J.A.R.V.I.S. Service Worker
  * Network-first für statische Assets, damit Updates sofort sichtbar sind.
+ * Mit Offline-Fallback für API-Requests (cached letzte erfolgreiche Response).
  */
 
-const CACHE_NAME = 'jarvis-v36';
+const CACHE_NAME = 'jarvis-v37';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -12,6 +13,10 @@ const STATIC_ASSETS = [
     '/manifest.json',
     '/klima-jarvis.png'
 ];
+
+// API-Responses für Offline-Fallback cachen (max 10 letzte)
+const API_CACHE_NAME = 'jarvis-api-cache';
+const MAX_API_CACHE_SIZE = 10;
 
 // Install: statische Assets vorab cachen und sofort aktiv werden
 self.addEventListener('install', event => {
@@ -51,16 +56,58 @@ function isApi(url) {
     return url.pathname.startsWith('/api/');
 }
 
-// Fetch: Network-first für statische Assets, damit Updates sofort ankommen
+// Fetch: Network-first für statische Assets, Cache-First für API mit Offline-Fallback
 self.addEventListener('fetch', event => {
     const request = event.request;
     const url = new URL(request.url);
 
-    // Externe und API-Requests nicht abfangen
-    if (url.origin !== self.location.origin || request.method !== 'GET' || isApi(url)) {
+    // Nur GET-Requests von derselben Origin
+    if (url.origin !== self.location.origin || request.method !== 'GET') {
         return;
     }
 
+    // API-Requests: Cache-First mit Network-Fallback
+    if (isApi(url)) {
+        event.respondWith(
+            caches.match(request).then(cached => {
+                if (cached) {
+                    // Cached Response zurückgeben, im Hintergrund aktualisieren
+                    fetch(request, { cache: 'no-store' }).then(response => {
+                        if (response && response.status === 200) {
+                            cacheApiResponse(request, response.clone());
+                        }
+                    }).catch(() => {
+                        // Network failed, cached response already returned
+                    });
+                    return cached;
+                }
+
+                // Nicht im Cache, von Network holen
+                return fetch(request, { cache: 'no-store' }).then(response => {
+                    if (response && response.status === 200) {
+                        cacheApiResponse(request, response.clone());
+                    }
+                    return response;
+                }).catch(() => {
+                    // Offline: Fallback Response
+                    return new Response(
+                        JSON.stringify({
+                            error: 'offline',
+                            message: 'Keine Netzwerkverbindung. Bitte versuchen Sie es später.',
+                            cached: false
+                        }),
+                        {
+                            status: 503,
+                            headers: { 'Content-Type': 'application/json' }
+                        }
+                    );
+                });
+            })
+        );
+        return;
+    }
+
+    // Statische Assets: Network-first
     if (!isStaticAsset(url)) {
         return;
     }
@@ -81,6 +128,24 @@ self.addEventListener('fetch', event => {
             })
     );
 });
+
+// Hilfsfunktion: API-Response mit Größenlimit cachen
+async function cacheApiResponse(request, response) {
+    try {
+        const cache = await caches.open(API_CACHE_NAME);
+        
+        // Cache-Größe prüfen und alte Einträge löschen
+        const keys = await cache.keys();
+        if (keys.length >= MAX_API_CACHE_SIZE) {
+            // Ältesten Eintrag löschen
+            await cache.delete(keys[0]);
+        }
+        
+        await cache.put(request, response);
+    } catch (error) {
+        console.warn('[J.A.R.V.I.S.] API-Cache fehlgeschlagen:', error);
+    }
+}
 
 // Message Handler für manuelles Update
 self.addEventListener('message', event => {

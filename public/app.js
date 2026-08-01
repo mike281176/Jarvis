@@ -581,52 +581,67 @@ class JarvisPWA {
             });
         });
 
-        // Godcore button (header right)
-        const godcoreBtn = document.getElementById('godcoreBtn');
-        if (godcoreBtn) {
-            godcoreBtn.addEventListener('click', () => this.switchView('godcore'));
+        // Ollama VM button (header right)
+        const ollamaBtn = document.getElementById('ollamaBtn');
+        if (ollamaBtn) {
+            ollamaBtn.addEventListener('click', () => this.switchView('ollama'));
         }
-        // Godcore card actions
+        // Ollama VM card actions
         document.querySelectorAll('.gc-chat').forEach(btn => {
             btn.addEventListener('click', (e) => {
-                const agent = e.currentTarget.dataset.agent;
-                this.openAgentChat(agent);
+                const component = e.currentTarget.dataset.agent;
+                this.openOllamaComponent(component);
             });
         });
         document.querySelectorAll('.gc-log').forEach(btn => {
             btn.addEventListener('click', (e) => {
-                const agent = e.currentTarget.dataset.agent;
-                this.openAgentLog(agent);
+                const component = e.currentTarget.dataset.agent;
+                this.openOllamaLog(component);
             });
         });
-        // Status Panel rows -> open Godcore detail modal
+        // Status Panel rows -> open Status Detail Modal
         document.querySelectorAll('.status-row[data-agent]').forEach(row => {
             row.addEventListener('click', (e) => {
                 const agent = e.currentTarget.dataset.agent;
-                this.openGodcoreModal(agent);
+                const entity = e.currentTarget.dataset.entity;
+                this.openStatusDetailModal(agent, entity);
             });
         });
-        // Godcore modal close
-        const gcModalClose = document.getElementById('godcoreModalClose');
-        const gcModalBackdrop = document.getElementById('godcoreModalBackdrop');
-        if (gcModalClose) gcModalClose.addEventListener('click', () => this.closeGodcoreModal());
-        if (gcModalBackdrop) gcModalBackdrop.addEventListener('click', () => this.closeGodcoreModal());
-        const gcModalChat = document.getElementById('gcModalChat');
-        if (gcModalChat) gcModalChat.addEventListener('click', () => {
-            const a = this._gcActiveAgent;
-            this.closeGodcoreModal();
-            if (a) this.openAgentChat(a);
+        // Status Detail Modal close
+        const statusDetailClose = document.getElementById('statusDetailClose');
+        const statusDetailBackdrop = document.getElementById('statusDetailBackdrop');
+        const statusDetailClose2 = document.getElementById('statusDetailClose2');
+        if (statusDetailClose) statusDetailClose.addEventListener('click', () => this.closeStatusDetailModal());
+        if (statusDetailBackdrop) statusDetailBackdrop.addEventListener('click', () => this.closeStatusDetailModal());
+        if (statusDetailClose2) statusDetailClose2.addEventListener('click', () => this.closeStatusDetailModal());
+        const statusDetailRefresh = document.getElementById('statusDetailRefresh');
+        if (statusDetailRefresh) statusDetailRefresh.addEventListener('click', () => {
+            const agent = this._statusDetailAgent;
+            const entity = this._statusDetailEntity;
+            if (agent) this.loadStatusDetailData(agent, entity);
         });
-        const gcModalLog = document.getElementById('gcModalLog');
-        if (gcModalLog) gcModalLog.addEventListener('click', () => {
-            const a = this._gcActiveAgent;
-            this.closeGodcoreModal();
-            if (a) this.openAgentLog(a);
+        
+        // Ollama VM modal close
+        const ollamaModalClose = document.getElementById('ollamaModalClose');
+        const ollamaModalBackdrop = document.getElementById('ollamaModalBackdrop');
+        if (ollamaModalClose) ollamaModalClose.addEventListener('click', () => this.closeOllamaModal());
+        if (ollamaModalBackdrop) ollamaModalBackdrop.addEventListener('click', () => this.closeOllamaModal());
+        const ollamaModalDetails = document.getElementById('ollamaModalDetails');
+        if (ollamaModalDetails) ollamaModalDetails.addEventListener('click', () => {
+            const c = this._ollamaActiveComponent;
+            this.closeOllamaModal();
+            if (c) this.openOllamaComponent(c);
         });
-        const gcModalFull = document.getElementById('gcModalFull');
-        if (gcModalFull) gcModalFull.addEventListener('click', () => {
-            this.closeGodcoreModal();
-            this.switchView('godcore');
+        const ollamaModalLog = document.getElementById('ollamaModalLog');
+        if (ollamaModalLog) ollamaModalLog.addEventListener('click', () => {
+            const c = this._ollamaActiveComponent;
+            this.closeOllamaModal();
+            if (c) this.openOllamaLog(c);
+        });
+        const ollamaModalFull = document.getElementById('ollamaModalFull');
+        if (ollamaModalFull) ollamaModalFull.addEventListener('click', () => {
+            this.closeOllamaModal();
+            this.switchView('ollama');
         });
         
         // Home climate tile opens overlay
@@ -683,15 +698,15 @@ class JarvisPWA {
         if (viewName === 'einstellungen') {
             this.renderConversationLog();
         }
-        // Godcore agent dashboard
-        if (viewName === 'godcore') {
-            this.loadGodcoreData();
+        // Ollama VM dashboard data laden
+        if (viewName === 'ollama') {
+            this.loadOllamaData();
         }
     }
 
-    async loadGodcoreData() {
-        const setStatus = (agent, state) => {
-            const el = document.getElementById(`gc-${agent}-status`);
+    async loadOllamaData() {
+        const setStatus = (component, state) => {
+            const el = document.getElementById(`gc-ollama-${component}-status`);
             if (el) {
                 el.className = `gc-status ${state}`;
                 el.textContent = state.toUpperCase();
@@ -701,57 +716,43 @@ class JarvisPWA {
             const el = document.getElementById(id);
             if (el) el.textContent = val;
         };
-        const haState = async (entity) => {
+        const ollamaApi = async (endpoint) => {
             try {
-                const data = await this.haFetch(`/api/states/${entity}`);
-                return data;
+                const response = await fetch(`http://192.168.1.170:11434/api/${endpoint}`);
+                return await response.json();
             } catch(e) { return null; }
         };
         try {
-            // HAOS health + integrations
-            const haHealth = await haState('sensor.system_ha_global_health_score');
-            if (haHealth) setVal('gc-haos-health', `${haHealth.state}/100`);
-            const haInt = await haState('sensor.ha_integrations') || await haState('sensor.integrations');
-            if (haInt) setVal('gc-haos-int', haInt.state);
-            // NAS
-            const nasVol = await haState('sensor.nas_volume_1_volume_used');
-            if (nasVol) setVal('gc-nas-vol', `${nasVol.state}%`);
-            const nasTemp = await haState('sensor.nas_temperature');
-            if (nasTemp) setVal('gc-nas-temp', `${nasTemp.state}°C`);
-            // Status via HA binary sensors
-            const px = await haState('binary_sensor.jarvis_status_proxmox');
-            setStatus('proxmox', px && px.state === 'on' ? 'online' : 'offline');
-            const nasB = await haState('binary_sensor.jarvis_status_nas');
-            setStatus('nas', nasB && nasB.state === 'on' ? 'online' : 'offline');
-            const haB = await haState('binary_sensor.jarvis_status_haos');
-            setStatus('haos', haB && haB.state === 'on' ? 'online' : 'offline');
-            // JARVIS host (this machine) lokal abfragen
-            setStatus('jarvis', 'online');
-            setStatus('ollama', 'online');
-            setStatus('frigate', 'online');
-
-            // JARVIS CPU/RAM lokal (nur Node-Kontext)
-            try {
-                const os = require('os');
-                const cpus = os.cpus().length;
-                const load = os.loadavg()[0].toFixed(2);
-                setVal('gc-jarvis-cpu', `${load} (${cpus} cores)`);
-                const tot = (os.totalmem()/1073741824).toFixed(1);
-                const free = (os.freemem()/1073741824).toFixed(1);
-                setVal('gc-jarvis-ram', `${free}/${tot} GB`);
-            } catch(e) { /* browser context: skip */ }
-
-            // Ollama models
-            const models = await haState('sensor.jarvis_ollama_models');
-            if (models) setVal('gc-ollama-models', models.state);
-            // Proxmox VMs
-            const vms = await haState('sensor.proxmox_vms_anzahl');
-            if (vms) setVal('gc-proxmox-vms', vms.state);
-            // Frigate cameras
-            const cams = await haState('sensor.frigate_cameras_aktiv');
-            if (cams) setVal('gc-frigate-cams', cams.state);
+            // Modelle
+            const models = await ollamaApi('tags');
+            if (models && models.models) {
+                setVal('gc-ollama-models-count', models.models.length.toString());
+                setStatus('models', 'online');
+            } else {
+                setStatus('models', 'offline');
+            }
+            // Performance (simuliert)
+            setVal('gc-ollama-perf-tokens', '—');
+            setVal('gc-ollama-perf-latency', '—');
+            setStatus('perf', 'online');
+            // API
+            setVal('gc-ollama-api-reqs', '—');
+            setVal('gc-ollama-api-errors', '—');
+            setStatus('api', 'online');
+            // Storage (simuliert)
+            setVal('gc-ollama-storage-used', '—');
+            setVal('gc-ollama-storage-free', '—');
+            setStatus('storage', 'online');
+            // Netzwerk (simuliert)
+            setVal('gc-ollama-net-clients', '—');
+            setVal('gc-ollama-net-bandwidth', '—');
+            setStatus('net', 'online');
+            // Health (simuliert)
+            setVal('gc-ollama-health-uptime', '—');
+            setVal('gc-ollama-health-errors', '—');
+            setStatus('health', 'online');
         } catch (e) {
-            console.warn('[Godcore] load error', e);
+            console.error('Ollama Data Load Error:', e);
         }
     }
 
@@ -776,87 +777,233 @@ class JarvisPWA {
         }
     }
 
-    // Godcore Agent-Konfiguration (zentral gepfegt)
-    getGodcoreAgents() {
-        return {
-            jarvis: { icon: '🛰️', name: 'J.A.R.V.I.S.', meta: 'Rolle: Steuerungs-KI · Modell: tencent/hy3 · Workspace: lokal', host: '192.168.1.81' },
-            ollama: { icon: '🧠', name: 'Ollama LLM', meta: 'Rolle: Lokale KI · Modell: llama3.2:3b · Embed: nomic-embed', host: '192.168.1.170:11434' },
-            proxmox: { icon: '🖥️', name: 'Proxmox VE', meta: 'Rolle: Virtualisierung · VMs: Hermes, OpenClaw (optional)', host: '192.168.1.130' },
-            nas: { icon: '💾', name: 'Synology NAS', meta: 'Rolle: Storage · Paperless, Backups, Portainer', host: '192.168.1.159' },
-            haos: { icon: '🏠', name: 'Home Assistant OS', meta: 'Rolle: Smart Home Hub · 13 Alexa, Frigate, 2023 Entities', host: '192.168.1.91' },
-            frigate: { icon: '📹', name: 'Frigate NVR', meta: 'Rolle: KI-Kamera-Auswertung · Doorbird, Einfahrt', host: '192.168.1.176' }
-        };
-    }
-
-    async openGodcoreModal(agent) {
-        const agents = this.getGodcoreAgents();
-        const cfg = agents[agent];
-        if (!cfg) return;
-        this._gcActiveAgent = agent;
-        const iconEl = document.getElementById('gcModalIcon');
-        const nameEl = document.getElementById('gcModalName');
-        const statusEl = document.getElementById('gcModalStatus');
-        const metaEl = document.getElementById('gcModalMeta');
-        const rowsEl = document.getElementById('gcModalRows');
+    // Ollama VM Modal Methoden
+    openOllamaModal(component) {
+        const cfg = this.getOllamaComponentConfig(component);
+        const iconEl = document.getElementById('ollamaModalIcon');
+        const nameEl = document.getElementById('ollamaModalName');
+        const metaEl = document.getElementById('ollamaModalMeta');
+        const statusEl = document.getElementById('ollamaModalStatus');
+        const rowsEl = document.getElementById('ollamaModalRows');
+        
         if (iconEl) iconEl.textContent = cfg.icon;
         if (nameEl) nameEl.textContent = cfg.name;
         if (metaEl) metaEl.textContent = cfg.meta;
         if (statusEl) {
-            const dot = document.getElementById(`status-${agent === 'jarvis' ? 'jarvis' : agent}-dot`);
-            const online = dot && dot.classList.contains('onine');
-            statusEl.className = `gc-status ${online ? 'online' : 'offline'}`;
-            statusEl.textContent = online ? 'ONLINE' : 'OFFLINE';
+            statusEl.className = 'gc-status online';
+            statusEl.textContent = 'ONLINE';
         }
-        // Live-Daten via HA-Proxy laden
+        
         if (rowsEl) {
             rowsEl.innerHTML = '<div class="gc-row"><span>Host</span><span>' + cfg.host + '</span></div><div class="gc-row"><span>Status</span><span>Lade…</span></div>';
         }
-        const modal = document.getElementById('godcoreModal');
+        
+        const modal = document.getElementById('ollamaModal');
         if (modal) modal.style.display = 'flex';
-        // Daten asynchron nachladen
+        
+        this._ollamaActiveComponent = component;
+        this.loadOllamaComponentData(component, rowsEl);
+    }
+
+    async loadOllamaComponentData(component, rowsEl) {
         try {
             const haState = async (entity) => {
                 try { return await this.haFetch(`/api/states/${entity}`); } catch(e) { return null; }
             };
             const rows = [];
-            rows.push(['Host', cfg.host]);
-            if (agent === 'jarvis') {
-                try {
-                    const os = require('os');
-                    rows.push(['CPU', `${os.loadavg()[0].toFixed(2)} (${os.cpus().length} cores)`]);
-                    rows.push(['RAM', `${ (os.freemem()/1073741824).toFixed(1) }/${(os.totalmem()/1073741824).toFixed(1)} GB`]);
-                } catch(e) { rows.push(['CPU', 'n/a (Browser)']); }
-            } else if (agent === 'haos') {
-                const h = await haState('sensor.system_ha_global_health_score');
-                if (h) rows.push(['Health', `${h.state}/100`]);
-                const i = await haState('sensor.ha_integrations');
-                if (i) rows.push(['Integrations', i.state]);
-            } else if (agent === 'nas') {
-                const v = await haState('sensor.nas_volume_1_volume_used');
-                if (v) rows.push(['Vol. 1', `${v.state}%`]);
-                const t = await haState('sensor.nas_temperature');
-                if (t) rows.push(['Temp', `${t.state}°C`]);
-            } else if (agent === 'ollama') {
-                const m = await haState('sensor.jarvis_ollama_models');
+            
+            if (component === 'models') {
+                rows.push(['Host', '192.168.1.170:11434']);
+                const m = await haState('sensor.ollama_models_count');
                 if (m) rows.push(['Modelle', m.state]);
-            } else if (agent === 'proxmox') {
-                const v = await haState('sensor.proxmox_vms_anzahl');
-                if (v) rows.push(['VMs', v.state]);
-            } else if (agent === 'frigate') {
-                const c = await haState('sensor.frigate_cameras_aktiv');
-                if (c) rows.push(['Kameras', c.state]);
+                const v = await haState('sensor.ollama_vram_usage');
+                if (v) rows.push(['VRAM', v.state]);
+            } else if (component === 'performance') {
+                rows.push(['Host', '192.168.1.170']);
+                const t = await haState('sensor.ollama_tokens_per_second');
+                if (t) rows.push(['Tokens/s', t.state]);
+                const l = await haState('sensor.ollama_latency');
+                if (l) rows.push(['Latenz', l.state]);
+            } else if (component === 'api') {
+                rows.push(['Host', '192.168.1.170:11434']);
+                rows.push(['Endpoints', '/api/generate, /api/chat, /api/embeddings']);
+            } else if (component === 'storage') {
+                rows.push(['Host', '192.168.1.170']);
+                const u = await haState('sensor.ollama_storage_used');
+                if (u) rows.push(['Genutzt', u.state]);
+                const f = await haState('sensor.ollama_storage_free');
+                if (f) rows.push(['Frei', f.state]);
+            } else if (component === 'network') {
+                rows.push(['Host', '192.168.1.170']);
+                rows.push(['Clients', 'Aktiv']);
+            } else if (component === 'health') {
+                rows.push(['Host', '192.168.1.170']);
+                rows.push(['Status', 'OK']);
             }
+            
             if (rowsEl) {
                 rowsEl.innerHTML = rows.map(r => `<div class="gc-row"><span>${r[0]}</span><span>${r[1]}</span></div>`).join('');
             }
         } catch(e) {
-            if (rowsEl) rowsEl.innerHTML += '<div class="gc-row"><span>Fehler</span><span>HA-Daten nicht erreichbar</span></div>';
+            if (rowsEl) rowsEl.innerHTML += '<div class="gc-row"><span>Fehler</span><span>Daten nicht erreichbar</span></div>';
         }
     }
 
-    closeGodcoreModal() {
-        const modal = document.getElementById('godcoreModal');
+    getOllamaComponentConfig(component) {
+        const configs = {
+            'models': { icon: '🧠', name: 'Modelle', meta: 'Aktive Modelle: Kimi K3, Qwen3.5:397B, DeepSeek-V4', host: '192.168.1.170:11434' },
+            'performance': { icon: '⚡', name: 'Performance', meta: 'Token/s, Latenz, GPU/CPU Auslastung', host: '192.168.1.170' },
+            'api': { icon: '🔌', name: 'API Endpoints', meta: '/api/generate, /api/chat, /api/embeddings', host: '192.168.1.170:11434' },
+            'storage': { icon: '💾', name: 'Storage', meta: 'Model Storage, Cache, RAG Index', host: '192.168.1.170' },
+            'network': { icon: '🌐', name: 'Netzwerk', meta: 'Verbindungen, Bandbreite, Latenz zu Clients', host: '192.168.1.170' },
+            'health': { icon: '❤️', name: 'Health', meta: 'System Health, Uptime, Errors, Warnings', host: '192.168.1.170' }
+        };
+        return configs[component] || { icon: '❓', name: component, meta: 'Ollama VM Komponente', host: '192.168.1.170' };
+    }
+
+    openOllamaComponent(component) {
+        console.log('Opening Ollama component:', component);
+        this.switchView('ollama');
+    }
+
+    openOllamaLog(component) {
+        console.log('Opening Ollama log:', component);
+        alert(`Logs für ${component} werden geladen...`);
+    }
+
+    closeOllamaModal() {
+        const modal = document.getElementById('ollamaModal');
         if (modal) modal.style.display = 'none';
+        this._ollamaActiveComponent = null;
+    }
+
+    // Status Detail Modal Methoden
+    openStatusDetailModal(agent, entity) {
+        this._statusDetailAgent = agent;
+        this._statusDetailEntity = entity;
+        
+        const modal = document.getElementById('statusDetailModal');
+        const iconEl = document.getElementById('statusDetailIcon');
+        const nameEl = document.getElementById('statusDetailName');
+        const metaEl = document.getElementById('statusDetailMeta');
+        const statusEl = document.getElementById('statusDetailStatus');
+        const rowsEl = document.getElementById('statusDetailRows');
+        
+        // Konfiguration pro Agent
+        const configs = {
+            'haos': { icon: '🏠', name: 'Home Assistant OS', ip: '192.168.1.91' },
+            'proxmox': { icon: '🖥️', name: 'Proxmox VE', ip: '192.168.1.130' },
+            'nas': { icon: '💾', name: 'Synology NAS', ip: '192.168.1.159' },
+            'gateway': { icon: '🌐', name: 'Fritz!Box Gateway', ip: '192.168.1.1' },
+            'solar': { icon: '☀️', name: 'Solaranlage', ip: '192.168.1.28' },
+            'zigbee': { icon: '📡', name: 'Zigbee Netzwerk', ip: '192.168.1.91' },
+            'opendtu': { icon: '🔌', name: 'OpenDTU', ip: '192.168.1.28' },
+            'jarvis': { icon: '🤖', name: 'J.A.R.V.I.S. API', ip: '192.168.1.81' },
+            'paperless': { icon: '📄', name: 'Paperless-ngx', ip: '192.168.1.159:8777' }
+        };
+        
+        const cfg = configs[agent] || { icon: '❓', name: agent, ip: 'unknown' };
+        
+        if (iconEl) iconEl.textContent = cfg.icon;
+        if (nameEl) nameEl.textContent = cfg.name;
+        if (metaEl) metaEl.textContent = `IP: ${cfg.ip}`;
+        if (statusEl) {
+            statusEl.className = 'gc-status online';
+            statusEl.textContent = 'LADEN...';
+        }
+        if (rowsEl) rowsEl.innerHTML = '<div class="placeholder-text">Lade Daten...</div>';
+        
+        if (modal) modal.style.display = 'flex';
+        
+        // Daten laden
+        this.loadStatusDetailData(agent, entity);
+    }
+
+    async loadStatusDetailData(agent, entity) {
+        const rowsEl = document.getElementById('statusDetailRows');
+        const statusEl = document.getElementById('statusDetailStatus');
+        const rows = [];
+        
+        try {
+            const haState = async (entityId) => {
+                try {
+                    const data = await this.haFetch(`/api/states/${entityId}`);
+                    return data;
+                } catch(e) { return null; }
+            };
+            
+            // Agent-spezifische Daten laden
+            if (agent === 'haos') {
+                const version = await haState('sensor.home_assistant_version');
+                const entities = await haState('sensor.home_assistant_entities');
+                const integrations = await haState('sensor.home_assistant_integrations');
+                const uptime = await haState('sensor.system_uptime');
+                rows.push(['Version', version ? version.state : '—']);
+                rows.push(['Entitäten', entities ? entities.state : '—']);
+                rows.push(['Integrationen', integrations ? integrations.state : '—']);
+                rows.push(['Uptime', uptime ? uptime.state : '—']);
+                rows.push(['CPU', '—']);
+                rows.push(['RAM', '—']);
+            } else if (agent === 'proxmox') {
+                const vms = await haState('sensor.proxmox_vms_anzahl');
+                const lxcs = await haState('sensor.proxmox_lxc_anzahl');
+                const cpu = await haState('sensor.proxmox_cpu_usage');
+                const ram = await haState('sensor.proxmox_ram_usage');
+                rows.push(['VMs', vms ? vms.state : '—']);
+                rows.push(['LXCs', lxcs ? lxcs.state : '—']);
+                rows.push(['CPU', cpu ? `${cpu.state}%` : '—']);
+                rows.push(['RAM', ram ? ram.state : '—']);
+                rows.push(['Storage', '—']);
+            } else if (agent === 'nas') {
+                const volumeUsed = await haState('sensor.nas_volume_1_volume_used');
+                const volumeTotal = await haState('sensor.nas_volume_1_size');
+                const ram = await haState('sensor.nas_memory_used');
+                const temp = await haState('sensor.nas_temperature');
+                rows.push(['Volume', volumeUsed ? `${volumeUsed.state}%` : '—']);
+                rows.push(['Gesamt', volumeTotal ? volumeTotal.state : '—']);
+                rows.push(['RAM', ram ? ram.state : '—']);
+                rows.push(['Temperatur', temp ? `${temp.state}°C` : '—']);
+            } else if (agent === 'paperless') {
+                const docCount = await haState('sensor.paperless_document_count');
+                const storage = await haState('sensor.paperless_storage');
+                rows.push(['Dokumente', docCount ? docCount.state : '—']);
+                rows.push(['Storage', storage ? storage.state : '—']);
+                rows.push(['IP', '192.168.1.159:8777']);
+                rows.push(['Status', '—']);
+            } else {
+                // Generic fallback
+                const state = await haState(entity);
+                rows.push(['Status', state ? state.state : 'unknown']);
+                rows.push(['IP', '—']);
+                rows.push(['Details', '—']);
+            }
+            
+            if (statusEl) {
+                statusEl.className = 'gc-status online';
+                statusEl.textContent = 'ONLINE';
+            }
+            
+            // Render rows
+            if (rowsEl) {
+                rowsEl.innerHTML = rows.map(([k, v]) => 
+                    `<div class="gc-row"><span>${k}</span><span>${v}</span></div>`
+                ).join('');
+            }
+        } catch (e) {
+            console.error(`Status Detail Load Error for ${agent}:`, e);
+            if (statusEl) {
+                statusEl.className = 'gc-status offline';
+                statusEl.textContent = 'OFFLINE';
+            }
+            if (rowsEl) rowsEl.innerHTML = '<div class="placeholder-text">Fehler beim Laden der Daten</div>';
+        }
+    }
+
+    closeStatusDetailModal() {
+        const modal = document.getElementById('statusDetailModal');
+        if (modal) modal.style.display = 'none';
+        this._statusDetailAgent = null;
+        this._statusDetailEntity = null;
     }
 
     startCameraFeeds() {
@@ -895,10 +1042,10 @@ class JarvisPWA {
         if (this.dashboardInterval) clearInterval(this.dashboardInterval);
         this.dashboardInterval = setInterval(() => {
             this.refreshDashboardData();
-            // Godcore live updaten falls aktiv
-            const gcView = document.getElementById('view-godcore');
-            if (gcView && gcView.classList.contains('active')) {
-                this.loadGodcoreData();
+            // Ollama VM live updaten falls aktiv
+            const ollamaView = document.getElementById('view-ollama');
+            if (ollamaView && ollamaView.classList.contains('active')) {
+                this.loadOllamaData();
             }
         }, 30000);
         
@@ -1532,12 +1679,54 @@ class JarvisPWA {
         
         this.recognition.onerror = (event) => {
             this.logDebug('recognition.onerror', {error: event.error});
-            // Bei "no-speech" nicht als Fehler werten, sondern einfach bereit sein
+            
+            // Retry-Logic für verschiedene Error-Typen
+            let retryDelay = 0;
+            let retryMessage = null;
+            
             if (event.error === 'no-speech') {
-                this.updateVoiceStatus('Bereit', 'ready');
+                // Keine Sprache erkannt - kein echter Fehler, einfach bereit bleiben
+                this.updateVoiceStatus('Keine Sprache erkannt. Bitte wiederholen.', 'ready');
+                retryDelay = 500;
+            } else if (event.error === 'audio-capture') {
+                // Mikrofon nicht gefunden
+                this.updateVoiceStatus('Kein Mikrofon gefunden. Bitte prüfen.', 'error');
+                retryMessage = 'Mikrofon nicht verfügbar';
+            } else if (event.error === 'not-allowed') {
+                // Zugriff verweigert
+                this.updateVoiceStatus('Mikrofon-Zugriff verweigert.', 'error');
+                retryMessage = 'Zugriff verweigert';
+            } else if (event.error === 'aborted') {
+                // Abgebrochen (z.B. durch Stop) - einfach bereit bleiben
+                this.updateVoiceStatus('BEREIT', 'ready');
+                return;
+            } else if (event.error === 'network') {
+                // Netzwerkfehler bei Cloud-Spracherkennung
+                this.updateVoiceStatus('Netzwerkfehler. Bitte versuchen Sie es erneut.', 'error');
+                retryDelay = 1000;
             } else {
-                this.isListening = false;
-                this.updateVoiceStatus('FEHLER - TIPPEN', 'error');
+                // Unbekannter Fehler
+                console.warn('Unbekannter Speech-Error:', event.error);
+                this.updateVoiceStatus(`Sprachfehler: ${event.error}`, 'error');
+                retryMessage = event.error;
+            }
+            
+            // Auto-Retry nach Delay (nur für bestimmte Errors)
+            if (retryDelay > 0 && this.isListening) {
+                setTimeout(() => {
+                    if (this.isListening) {
+                        try {
+                            this.recognition.start();
+                        } catch (e) {
+                            console.warn('Auto-Retry fehlgeschlagen:', e);
+                        }
+                    }
+                }, retryDelay);
+            }
+            
+            // Logging für Error-Analyse
+            if (retryMessage) {
+                this.logConversation(`[ERROR] ${retryMessage}`, 'system');
             }
         };
     }

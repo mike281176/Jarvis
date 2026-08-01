@@ -141,8 +141,8 @@
                     <button class="hud-button icon" id="dashboardRefresh" title="Aktualisieren">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
                     </button>
-                    <button class="hud-button icon godcore-btn" id="godcoreBtn" title="Godcore - Agenten Dashboard">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path></svg>
+                    <button class="hud-button icon" id="ollamaBtn" title="Ollama VM Dashboard">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6v6l4 2"></path></svg>
                     </button>
                     <button class="logout-btn" id="logoutBtn">×</button>
                 </div>
@@ -183,7 +183,7 @@
                 <main class="main-stage">
 
                     <!-- AI Core Globe -->
-                    <div class="cc-core" id="aiCoreContainer">
+                    <div class="cc-core" id="aiCoreContainer" role="region" aria-label="Sprachsteuerung">
                         <div class="pcb-traces"></div>
                         <div class="globe-wrapper">
                             <div class="voice-waves">
@@ -195,7 +195,7 @@
                             <div class="orbit orbit-1"><span class="orbit-dot"></span></div>
                             <div class="orbit orbit-2"><span class="orbit-dot dot-1"></span><span class="orbit-dot dot-2"></span></div>
                             <div class="orbit orbit-3"><span class="orbit-dot"></span></div>
-                            <div class="globe" id="voiceCore">
+                            <div class="globe" id="voiceCore" role="button" aria-label="Spracheingabe aktivieren" aria-live="polite" tabindex="0">
                                 <div class="globe-mesh">
                                     <div class="meridian"></div>
                                     <div class="meridian"></div>
@@ -209,7 +209,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="core-status" id="voiceStatusCenter">BEREIT</div>
+                        <div class="core-status" id="voiceStatusCenter" role="status" aria-live="polite" aria-atomic="true">BEREIT</div>
                         <div class="core-hint">Zum Sprechen antippen</div>
                     </div>
 
@@ -412,102 +412,102 @@
 
                 </main>
 
-                <!-- Godcore Agent Dashboard View -->
-                <div class="view-container" id="view-godcore">
-                    <div class="godcore-header">
+                <!-- Ollama VM Dashboard View (ersetzt GodCore) -->
+                <div class="view-container" id="view-ollama">
+                    <div class="ollama-header">
                         <span class="tile-line"></span>
-                        <span class="tile-title">GODCORE — AGENTEN KONTROLLE</span>
-                        <span class="godcore-live" id="godcoreLive">LIVE</span>
+                        <span class="tile-title">OLLAMA VM — LOKALE KI INFRASTRUKTUR</span>
+                        <span class="ollama-live" id="ollamaLive">LIVE</span>
                     </div>
-                    <div class="godcore-grid" id="godcoreGrid">
-                        <div class="godcore-card" data-agent="jarvis">
-                            <div class="gc-card-top">
-                                <span class="gc-icon">🛰️</span>
-                                <span class="gc-name">J.A.R.V.I.S.</span>
-                                <span class="gc-status online" id="gc-jarvis-status">ONLINE</span>
-                            </div>
-                            <div class="gc-meta">Rolle: Steuerungs-KI · Modell: tencent/hy3 · Workspace: lokal</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-jarvis-host">192.168.1.81</span></div>
-                            <div class="gc-row"><span>CPU</span><span id="gc-jarvis-cpu">—</span></div>
-                            <div class="gc-row"><span>RAM</span><span id="gc-jarvis-ram">—</span></div>
-                            <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="jarvis">Chat</button>
-                                <button class="hud-button small gc-log" data-agent="jarvis">Logs</button>
-                            </div>
-                        </div>
-                        <div class="godcore-card" data-agent="ollama">
+                    <div class="ollama-grid" id="ollamaGrid">
+                        <div class="ollama-card" data-component="models">
                             <div class="gc-card-top">
                                 <span class="gc-icon">🧠</span>
-                                <span class="gc-name">Ollama LLM</span>
-                                <span class="gc-status online" id="gc-ollama-status">ONLINE</span>
+                                <span class="gc-name">Modelle</span>
+                                <span class="gc-status online" id="gc-ollama-models-status">ONLINE</span>
                             </div>
-                            <div class="gc-meta">Rolle: Lokale KI · Modell: llama3.2:3b · Embed: nomic-embed</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-ollama-host">192.168.1.170:11434</span></div>
-                            <div class="gc-row"><span>Modelle</span><span id="gc-ollama-models">—</span></div>
-                            <div class="gc-row"><span>VRAM</span><span id="gc-ollama-vram">—</span></div>
+                            <div class="gc-meta">Aktive Modelle: Kimi K3, Qwen3.5:397B, DeepSeek-V4</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-ollama-models-host">192.168.1.170:11434</span></div>
+                            <div class="gc-row"><span>Modellanzahl</span><span id="gc-ollama-models-count">—</span></div>
+                            <div class="gc-row"><span>VRAM Nutzung</span><span id="gc-ollama-models-vram">—</span></div>
                             <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="ollama">Chat</button>
-                                <button class="hud-button small gc-log" data-agent="ollama">Logs</button>
+                                <button class="hud-button small gc-chat" data-agent="ollama-models">Details</button>
+                                <button class="hud-button small gc-log" data-agent="ollama-models">Logs</button>
                             </div>
                         </div>
-                        <div class="godcore-card" data-agent="proxmox">
+                        <div class="ollama-card" data-component="performance">
                             <div class="gc-card-top">
-                                <span class="gc-icon">🖥️</span>
-                                <span class="gc-name">Proxmox VE</span>
-                                <span class="gc-status online" id="gc-proxmox-status">ONLINE</span>
+                                <span class="gc-icon">⚡</span>
+                                <span class="gc-name">Performance</span>
+                                <span class="gc-status online" id="gc-ollama-perf-status">ONLINE</span>
                             </div>
-                            <div class="gc-meta">Rolle: Virtualisierung · VMs: Hermes, OpenClaw (optional)</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-proxmox-host">192.168.1.130</span></div>
-                            <div class="gc-row"><span>Nodes</span><span id="gc-proxmox-nodes">—</span></div>
-                            <div class="gc-row"><span>VMs</span><span id="gc-proxmox-vms">—</span></div>
+                            <div class="gc-meta">Token/s, Latenz, GPU/CPU Auslastung</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-ollama-perf-host">192.168.1.170</span></div>
+                            <div class="gc-row"><span>Tokens/s</span><span id="gc-ollama-perf-tokens">—</span></div>
+                            <div class="gc-row"><span>Latenz</span><span id="gc-ollama-perf-latency">—</span></div>
                             <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="proxmox">Chat</button>
-                                <button class="hud-button small gc-log" data-agent="proxmox">Logs</button>
+                                <button class="hud-button small gc-chat" data-agent="ollama-perf">Benchmark</button>
+                                <button class="hud-button small gc-log" data-agent="ollama-perf">Metrics</button>
                             </div>
                         </div>
-                        <div class="godcore-card" data-agent="nas">
+                        <div class="ollama-card" data-component="api">
+                            <div class="gc-card-top">
+                                <span class="gc-icon">🔌</span>
+                                <span class="gc-name">API Endpoints</span>
+                                <span class="gc-status online" id="gc-ollama-api-status">ONLINE</span>
+                            </div>
+                            <div class="gc-meta">/api/generate, /api/chat, /api/embeddings</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-ollama-api-host">192.168.1.170:11434</span></div>
+                            <div class="gc-row"><span>Requests/min</span><span id="gc-ollama-api-reqs">—</span></div>
+                            <div class="gc-row"><span>Fehlerrate</span><span id="gc-ollama-api-errors">—</span></div>
+                            <div class="gc-actions">
+                                <button class="hud-button small gc-chat" data-agent="ollama-api">Test</button>
+                                <button class="hud-button small gc-log" data-agent="ollama-api">Logs</button>
+                            </div>
+                        </div>
+                        <div class="ollama-card" data-component="storage">
                             <div class="gc-card-top">
                                 <span class="gc-icon">💾</span>
-                                <span class="gc-name">Synology NAS</span>
-                                <span class="gc-status online" id="gc-nas-status">ONLINE</span>
+                                <span class="gc-name">Storage</span>
+                                <span class="gc-status online" id="gc-ollama-storage-status">ONLINE</span>
                             </div>
-                            <div class="gc-meta">Rolle: Storage · Paperless, Backups, Portainer</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-nas-host">192.168.1.159</span></div>
-                            <div class="gc-row"><span>Vol. 1</span><span id="gc-nas-vol">—</span></div>
-                            <div class="gc-row"><span>Temp</span><span id="gc-nas-temp">—</span></div>
+                            <div class="gc-meta">Model Storage, Cache, RAG Index</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-ollama-storage-host">192.168.1.170</span></div>
+                            <div class="gc-row"><span>Genutzt</span><span id="gc-ollama-storage-used">—</span></div>
+                            <div class="gc-row"><span>Frei</span><span id="gc-ollama-storage-free">—</span></div>
                             <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="nas">Chat</button>
-                                <button class="hud-button small gc-log" data-agent="nas">Logs</button>
+                                <button class="hud-button small gc-chat" data-agent="ollama-storage">Details</button>
+                                <button class="hud-button small gc-log" data-agent="ollama-storage">Cleanup</button>
                             </div>
                         </div>
-                        <div class="godcore-card" data-agent="haos">
+                        <div class="ollama-card" data-component="network">
                             <div class="gc-card-top">
-                                <span class="gc-icon">🏠</span>
-                                <span class="gc-name">Home Assistant OS</span>
-                                <span class="gc-status online" id="gc-haos-status">ONLINE</span>
+                                <span class="gc-icon">🌐</span>
+                                <span class="gc-name">Netzwerk</span>
+                                <span class="gc-status online" id="gc-ollama-net-status">ONLINE</span>
                             </div>
-                            <div class="gc-meta">Rolle: Smart Home Hub · 13 Alexa, Frigate, 2023 Entities</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-haos-host">192.168.1.91</span></div>
-                            <div class="gc-row"><span>Health</span><span id="gc-haos-health">—</span></div>
-                            <div class="gc-row"><span>Integrations</span><span id="gc-haos-int">—</span></div>
+                            <div class="gc-meta">Verbindungen, Bandbreite, Latenz zu Clients</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-ollama-net-host">192.168.1.170</span></div>
+                            <div class="gc-row"><span>Clients</span><span id="gc-ollama-net-clients">—</span></div>
+                            <div class="gc-row"><span>Bandbreite</span><span id="gc-ollama-net-bandwidth">—</span></div>
                             <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="haos">Chat</button>
-                                <button class="hud-button small gc-log" data-agent="haos">Logs</button>
+                                <button class="hud-button small gc-chat" data-agent="ollama-net">Topologie</button>
+                                <button class="hud-button small gc-log" data-agent="ollama-net">Traffic</button>
                             </div>
                         </div>
-                        <div class="godcore-card" data-agent="frigate">
+                        <div class="ollama-card" data-component="health">
                             <div class="gc-card-top">
-                                <span class="gc-icon">📹</span>
-                                <span class="gc-name">Frigate NVR</span>
-                                <span class="gc-status online" id="gc-frigate-status">ONLINE</span>
+                                <span class="gc-icon">❤️</span>
+                                <span class="gc-name">Health</span>
+                                <span class="gc-status online" id="gc-ollama-health-status">ONLINE</span>
                             </div>
-                            <div class="gc-meta">Rolle: KI-Kamera-Auswertung · Doorbird, Einfahrt</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-frigate-host">192.168.1.176</span></div>
-                            <div class="gc-row"><span>Kameras</span><span id="gc-frigate-cams">—</span></div>
-                            <div class="gc-row"><span>Detectors</span><span id="gc-frigate-det">—</span></div>
+                            <div class="gc-meta">System Health, Uptime, Errors, Warnings</div>
+                            <div class="gc-row"><span>Host</span><span id="gc-ollama-health-host">192.168.1.170</span></div>
+                            <div class="gc-row"><span>Uptime</span><span id="gc-ollama-health-uptime">—</span></div>
+                            <div class="gc-row"><span>Errors</span><span id="gc-ollama-health-errors">—</span></div>
                             <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="frigate">Chat</button>
-                                <button class="hud-button small gc-log" data-agent="frigate">Logs</button>
+                                <button class="hud-button small gc-chat" data-agent="ollama-health">Check</button>
+                                <button class="hud-button small gc-log" data-agent="ollama-health">Logs</button>
                             </div>
                         </div>
                     </div>
@@ -551,6 +551,10 @@
                         <div class="status-row" data-entity="binary_sensor.jarvis_status_jarvis_api" data-agent="jarvis">
                             <span class="status-dot-sm" id="status-jarvis-dot"></span>
                             <span class="status-name">Jarvis API</span>
+                        </div>
+                        <div class="status-row" data-entity="binary_sensor.paperless_status" data-agent="paperless">
+                            <span class="status-dot-sm" id="status-paperless-dot"></span>
+                            <span class="status-name">Paperless</span>
                         </div>
                     </div>
 
@@ -769,22 +773,43 @@
                 </div>
             </div>
 
-            <!-- Godcore Agent Detail Modal -->
-            <div class="godcore-modal" id="godcoreModal" style="display: none;">
-                <div class="godcore-modal-backdrop" id="godcoreModalBackdrop"></div>
-                <div class="godcore-modal-card" id="godcoreModalCard">
+            <!-- Ollama VM Detail Modal -->
+            <div class="ollama-modal" id="ollamaModal" style="display: none;">
+                <div class="ollama-modal-backdrop" id="ollamaModalBackdrop"></div>
+                <div class="ollama-modal-card" id="ollamaModalCard">
                     <div class="gc-modal-header">
-                        <span class="gc-modal-icon" id="gcModalIcon">🛰️</span>
-                        <span class="gc-modal-name" id="gcModalName">Agent</span>
-                        <span class="gc-status online" id="gcModalStatus">ONLINE</span>
-                        <button class="drawer-close" id="godcoreModalClose">×</button>
+                        <span class="gc-modal-icon" id="ollamaModalIcon">🧠</span>
+                        <span class="gc-modal-name" id="ollamaModalName">Ollama VM Komponente</span>
+                        <span class="gc-status online" id="ollamaModalStatus">ONLINE</span>
+                        <button class="drawer-close" id="ollamaModalClose">×</button>
                     </div>
-                    <div class="gc-modal-meta" id="gcModalMeta"></div>
-                    <div class="gc-modal-rows" id="gcModalRows"></div>
+                    <div class="gc-modal-meta" id="ollamaModalMeta"></div>
+                    <div class="gc-modal-rows" id="ollamaModalRows"></div>
                     <div class="gc-modal-actions">
-                        <button class="hud-button small" id="gcModalChat">Chat öffnen</button>
-                        <button class="hud-button small" id="gcModalLog">Log ansehen</button>
-                        <button class="hud-button small secondary" id="gcModalFull">Godcore-View öffnen</button>
+                        <button class="hud-button small" id="ollamaModalDetails">Details öffnen</button>
+                        <button class="hud-button small" id="ollamaModalLog">Log ansehen</button>
+                        <button class="hud-button small secondary" id="ollamaModalFull">Dashboard öffnen</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status Detail Modal (generisch für alle Status-Einträge) -->
+            <div class="ollama-modal" id="statusDetailModal" style="display: none;">
+                <div class="ollama-modal-backdrop" id="statusDetailBackdrop"></div>
+                <div class="ollama-modal-card" id="statusDetailCard">
+                    <div class="gc-modal-header">
+                        <span class="gc-modal-icon" id="statusDetailIcon">🖥️</span>
+                        <span class="gc-modal-name" id="statusDetailName">System</span>
+                        <span class="gc-status online" id="statusDetailStatus">ONLINE</span>
+                        <button class="drawer-close" id="statusDetailClose">×</button>
+                    </div>
+                    <div class="gc-modal-meta" id="statusDetailMeta">IP: -- · Status: --</div>
+                    <div class="gc-modal-rows" id="statusDetailRows">
+                        <div class="placeholder-text">Lade Daten...</div>
+                    </div>
+                    <div class="gc-modal-actions">
+                        <button class="hud-button small" id="statusDetailRefresh">Aktualisieren</button>
+                        <button class="hud-button small secondary" id="statusDetailClose2">Schließen</button>
                     </div>
                 </div>
             </div>
