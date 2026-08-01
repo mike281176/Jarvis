@@ -82,7 +82,7 @@ with socketserver.TCPServer((HOST, PORT), Handler) as httpd:
     httpd.socket = context.wrap_socket(httpd.socket, server_side=True)
     
     print(f"Server running on https://{HOST}:{PORT}")
-    print(f"Serving from: {os.path.abspath(DIRECTORY)}")
+    print(f"Serving from: {os.getcwd()}")
     print("")
     
     try:
