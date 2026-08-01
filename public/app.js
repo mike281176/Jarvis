@@ -5,13 +5,27 @@
 
 class JarvisPWA {
     constructor() {
+        // Automatische API URL Erkennung (lokal vs cloud)
+        const isLocalhost = window.location.hostname === 'localhost' || 
+                           window.location.hostname === '127.0.0.1' ||
+                           window.location.hostname.startsWith('192.168.');
+        
         this.config = this.loadConfig();
         this.user = this.config.user || null;
         this.recognition = null;
         this.synthesis = window.speechSynthesis;
         this.isListening = false;
         this.conversation = [];
-        this.apiBaseUrl = this.config.apiUrl || '';
+        
+        // API Basis-URL: Lokal direkt, Cloud über Proxy
+        if (isLocalhost && !this.config.apiUrl) {
+            this.apiBaseUrl = 'http://192.168.1.81:8124';
+            console.log('🔧 LOKALER MODUS: API direkt auf', this.apiBaseUrl);
+        } else {
+            this.apiBaseUrl = this.config.apiUrl || '';
+            console.log('☁️  CLOUD MODUS: API', this.apiBaseUrl || '(konfiguriert)');
+        }
+        
         this.apiKey = this.config.apiKey || 'fb74aee26654c46e06e8b82158e1eb12991fb866f0300435fd9c34d0e67634d3';
         
         this.init();
