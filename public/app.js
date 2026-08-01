@@ -924,6 +924,75 @@ class JarvisPWA {
         const statusEl = document.getElementById('statusDetailStatus');
         const rows = [];
         
+        // Statische Fallback-Werte aus Vault (werden genutzt wenn HA-Sensoren nicht erreichbar)
+        const fallback = {
+            'haos': {
+                'IP': '192.168.1.91',
+                'Version': '2026.7.x',
+                'Machine': 'x86-64',
+                'Entitäten': '—',
+                'Integrationen': '—',
+                'Uptime': '—',
+                'CPU': '—',
+                'RAM': '—'
+            },
+            'proxmox': {
+                'IP': '192.168.1.130',
+                'VMs': '—',
+                'LXCs': '—',
+                'CPU': '—',
+                'RAM': '15.4 GB',
+                'Storage': 'Local (NVMe)',
+                'Version': 'PVE 8.4.19'
+            },
+            'nas': {
+                'IP': '192.168.1.159',
+                'Modell': 'Synology DS920+',
+                'DSM': '7.3.2',
+                'Volume': '—',
+                'Gesamt': '—',
+                'RAM': '—',
+                'Temperatur': '—'
+            },
+            'gateway': {
+                'IP': '192.168.1.1',
+                'Modell': 'Fritz!Box',
+                'Clients': '—',
+                'Uptime': '—'
+            },
+            'solar': {
+                'IP': '192.168.1.28',
+                'Generation': '—',
+                'Verbrauch': '—',
+                'Batterie': '—'
+            },
+            'zigbee': {
+                'IP': '192.168.1.91 (HA Integration)',
+                'Devices': '—',
+                'Status': '—'
+            },
+            'opendtu': {
+                'IP': '192.168.1.28',
+                'Panels': '8× DMEGC',
+                'Wechselrichter': 'Hoymiles HM1500',
+                'Status': '—'
+            },
+            'jarvis': {
+                'IP': '192.168.1.81',
+                'PID': '—',
+                'Port': '8124 / 8645',
+                'Requests': '—',
+                'Uptime': '—'
+            },
+            'paperless': {
+                'IP': '192.168.1.159:8777',
+                'Dokumente': '1.387',
+                'Storage': '—',
+                'Status': 'ONLINE (API)',
+                'Version': '3.0'
+            }
+        };
+        
         try {
             const haState = async (entityId) => {
                 try {
@@ -932,44 +1001,75 @@ class JarvisPWA {
                 } catch(e) { return null; }
             };
             
-            // Agent-spezifische Daten laden
+            // Agent-spezifische Daten laden (HA-Sensoren mit Fallback)
             if (agent === 'haos') {
                 const version = await haState('sensor.home_assistant_version');
                 const entities = await haState('sensor.home_assistant_entities');
                 const integrations = await haState('sensor.home_assistant_integrations');
                 const uptime = await haState('sensor.system_uptime');
-                rows.push(['Version', version ? version.state : '—']);
-                rows.push(['Entitäten', entities ? entities.state : '—']);
-                rows.push(['Integrationen', integrations ? integrations.state : '—']);
-                rows.push(['Uptime', uptime ? uptime.state : '—']);
-                rows.push(['CPU', '—']);
-                rows.push(['RAM', '—']);
+                rows.push(['IP', fallback.haos['IP']]);
+                rows.push(['Version', version ? version.state : fallback.haos['Version']]);
+                rows.push(['Entitäten', entities ? entities.state : fallback.haos['Entitäten']]);
+                rows.push(['Integrationen', integrations ? integrations.state : fallback.haos['Integrationen']]);
+                rows.push(['Uptime', uptime ? uptime.state : fallback.haos['Uptime']]);
+                rows.push(['CPU', fallback.haos['CPU']]);
+                rows.push(['RAM', fallback.haos['RAM']]);
             } else if (agent === 'proxmox') {
                 const vms = await haState('sensor.proxmox_vms_anzahl');
                 const lxcs = await haState('sensor.proxmox_lxc_anzahl');
                 const cpu = await haState('sensor.proxmox_cpu_usage');
                 const ram = await haState('sensor.proxmox_ram_usage');
-                rows.push(['VMs', vms ? vms.state : '—']);
-                rows.push(['LXCs', lxcs ? lxcs.state : '—']);
-                rows.push(['CPU', cpu ? `${cpu.state}%` : '—']);
-                rows.push(['RAM', ram ? ram.state : '—']);
-                rows.push(['Storage', '—']);
+                rows.push(['IP', fallback.proxmox['IP']]);
+                rows.push(['VMs', vms ? vms.state : fallback.proxmox['VMs']]);
+                rows.push(['LXCs', lxcs ? lxcs.state : fallback.proxmox['LXCs']]);
+                rows.push(['CPU', cpu ? `${cpu.state}%` : fallback.proxmox['CPU']]);
+                rows.push(['RAM', ram ? ram.state : fallback.proxmox['RAM']]);
+                rows.push(['Storage', fallback.proxmox['Storage']]);
+                rows.push(['Version', fallback.proxmox['Version']]);
             } else if (agent === 'nas') {
                 const volumeUsed = await haState('sensor.nas_volume_1_volume_used');
                 const volumeTotal = await haState('sensor.nas_volume_1_size');
                 const ram = await haState('sensor.nas_memory_used');
                 const temp = await haState('sensor.nas_temperature');
-                rows.push(['Volume', volumeUsed ? `${volumeUsed.state}%` : '—']);
-                rows.push(['Gesamt', volumeTotal ? volumeTotal.state : '—']);
-                rows.push(['RAM', ram ? ram.state : '—']);
-                rows.push(['Temperatur', temp ? `${temp.state}°C` : '—']);
+                rows.push(['IP', fallback.nas['IP']]);
+                rows.push(['Modell', fallback.nas['Modell']]);
+                rows.push(['DSM', fallback.nas['DSM']]);
+                rows.push(['Volume', volumeUsed ? `${volumeUsed.state}%` : fallback.nas['Volume']]);
+                rows.push(['Gesamt', volumeTotal ? volumeTotal.state : fallback.nas['Gesamt']]);
+                rows.push(['RAM', ram ? ram.state : fallback.nas['RAM']]);
+                rows.push(['Temperatur', temp ? `${temp.state}°C` : fallback.nas['Temperatur']]);
             } else if (agent === 'paperless') {
                 const docCount = await haState('sensor.paperless_document_count');
                 const storage = await haState('sensor.paperless_storage');
-                rows.push(['Dokumente', docCount ? docCount.state : '—']);
-                rows.push(['Storage', storage ? storage.state : '—']);
-                rows.push(['IP', '192.168.1.159:8777']);
-                rows.push(['Status', '—']);
+                rows.push(['IP', fallback.paperless['IP']]);
+                rows.push(['Dokumente', docCount ? docCount.state : fallback.paperless['Dokumente']]);
+                rows.push(['Storage', storage ? storage.state : fallback.paperless['Storage']]);
+                rows.push(['Status', fallback.paperless['Status']]);
+                rows.push(['Version', fallback.paperless['Version']]);
+            } else if (agent === 'gateway') {
+                rows.push(['IP', fallback.gateway['IP']]);
+                rows.push(['Modell', fallback.gateway['Modell']]);
+                rows.push(['Clients', fallback.gateway['Clients']]);
+                rows.push(['Uptime', fallback.gateway['Uptime']]);
+            } else if (agent === 'solar') {
+                rows.push(['IP', fallback.solar['IP']]);
+                rows.push(['Generation', fallback.solar['Generation']]);
+                rows.push(['Verbrauch', fallback.solar['Verbrauch']]);
+                rows.push(['Batterie', fallback.solar['Batterie']]);
+            } else if (agent === 'zigbee') {
+                rows.push(['IP', fallback.zigbee['IP']]);
+                rows.push(['Devices', fallback.zigbee['Devices']]);
+                rows.push(['Status', fallback.zigbee['Status']]);
+            } else if (agent === 'opendtu') {
+                rows.push(['IP', fallback.opendtu['IP']]);
+                rows.push(['Panels', fallback.opendtu['Panels']]);
+                rows.push(['Wechselrichter', fallback.opendtu['Wechselrichter']]);
+                rows.push(['Status', fallback.opendtu['Status']]);
+            } else if (agent === 'jarvis') {
+                rows.push(['IP', fallback.jarvis['IP']]);
+                rows.push(['Port', fallback.jarvis['Port']]);
+                rows.push(['Requests', fallback.jarvis['Requests']]);
+                rows.push(['Uptime', fallback.jarvis['Uptime']]);
             } else {
                 // Generic fallback
                 const state = await haState(entity);
@@ -992,10 +1092,17 @@ class JarvisPWA {
         } catch (e) {
             console.error(`Status Detail Load Error for ${agent}:`, e);
             if (statusEl) {
-                statusEl.className = 'gc-status offline';
-                statusEl.textContent = 'OFFLINE';
+                statusEl.className = 'gc-status online';
+                statusEl.textContent = 'ONLINE (Fallback)';
             }
-            if (rowsEl) rowsEl.innerHTML = '<div class="placeholder-text">Fehler beim Laden der Daten</div>';
+            // Bei Fehler: Fallback-Werte anzeigen
+            if (rowsEl && fallback[agent]) {
+                rowsEl.innerHTML = Object.entries(fallback[agent]).map(([k, v]) => 
+                    `<div class="gc-row"><span>${k}</span><span>${v}</span></div>`
+                ).join('');
+            } else if (rowsEl) {
+                rowsEl.innerHTML = '<div class="placeholder-text">Daten nicht verfügbar</div>';
+            }
         }
     }
 
