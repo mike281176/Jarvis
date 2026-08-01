@@ -1277,6 +1277,24 @@ class JarvisPWA {
     }
 
     async haFetch(path) {
+        // LOKALER MODUS: Direkter HA-Zugriff ohne Proxy
+        const isLocalhost = window.location.hostname === 'localhost' || 
+                           window.location.hostname === '127.0.0.1' ||
+                           window.location.hostname.startsWith('192.168.');
+        
+        if (isLocalhost) {
+            // Direkt zu Home Assistant (kein Proxy)
+            const url = `http://192.168.1.91:8123${path}`;
+            const headers = {
+                'Authorization': `Bearer ${this.apiKey}`,
+                'Content-Type': 'application/json'
+            };
+            const response = await fetch(url, { headers });
+            if (!response.ok) throw new Error(`HA ${response.status}`);
+            return response.json();
+        }
+        
+        // CLOUD MODUS: Über Proxy
         const url = `${this.apiBaseUrl}/api/jarvis/ha-proxy${path}`;
         const headers = {
             'Authorization': `Bearer ${this.apiKey}`,
