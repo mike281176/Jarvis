@@ -251,7 +251,26 @@ class JarvisPWA {
         const errorDiv = document.getElementById('passwordError');
         const userId = this.selectedUser;
         
-        if (!userId || !input) {
+        if (!userId) {
+            errorDiv.style.display = 'flex';
+            return;
+        }
+        
+        // LOKALER MODUS: Kein Passwort erforderlich für localhost/192.168.x.x
+        const isLocalhost = window.location.hostname === 'localhost' || 
+                           window.location.hostname === '127.0.0.1' ||
+                           window.location.hostname.startsWith('192.168.');
+        
+        if (isLocalhost) {
+            console.log('Lokaler Modus: Login ohne Passwort');
+            // Simuliere erfolgreichen Login mit Dummy-Token
+            const mockToken = btoa(`${userId}:local:${Date.now()}`);
+            const mockUser = { id: userId, name: userId.charAt(0).toUpperCase() + userId.slice(1), role: 'admin' };
+            this.login(userId, mockToken, mockUser);
+            return;
+        }
+        
+        if (!input) {
             errorDiv.style.display = 'flex';
             return;
         }
