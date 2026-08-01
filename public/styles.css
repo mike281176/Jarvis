@@ -59,11 +59,11 @@ html, body {
     position: absolute; border-radius: 50%; border: 2px solid var(--jarvis-blue);
     top: 50%; left: 50%; transform: translate(-50%, -50%);
 }
-.ring-1 { width: 340px; height: 340px; animation: rotate-slow 24s linear infinite; border-style: dashed; opacity: 0.3; }
-.ring-2 { width: 260px; height: 260px; animation: rotate 14s linear infinite reverse; opacity: 0.45; }
-.ring-3 { width: 180px; height: 180px; animation: rotate-slow 18s linear infinite; border: 1px solid var(--jarvis-blue); opacity: 0.6; }
+.ring-1 { width: 800px; height: 800px; animation: rotate-slow 24s linear infinite; border-style: dashed; opacity: 0.3; }
+.ring-2 { width: 600px; height: 600px; animation: rotate 14s linear infinite reverse; opacity: 0.45; }
+.ring-3 { width: 400px; height: 400px; animation: rotate-slow 18s linear infinite; border: 1px solid var(--jarvis-blue); opacity: 0.6; }
 .center-core {
-    position: absolute; width: 80px; height: 80px; border-radius: 50%;
+    position: absolute; width: 200px; height: 200px; border-radius: 50%;
     top: 50%; left: 50%; transform: translate(-50%, -50%);
     background: radial-gradient(circle, rgba(0, 212, 255, 0.3) 0%, transparent 70%);
     box-shadow: var(--glow-blue-strong);
@@ -713,10 +713,10 @@ html, body {
     .hud-button.small { padding: 0.2rem 0.4rem; font-size: 0.65rem; }
     .phase-row { font-size: 0.6rem; }
     .hologram-container { width: 200px; height: 200px; top: 35%; }
-    .ring-1 { width: 190px; height: 190px; }
-    .ring-2 { width: 150px; height: 150px; }
-    .ring-3 { width: 110px; height: 110px; }
-    .center-core { width: 50px; height: 50px; }
+    .ring-1 { width: 480px; height: 480px; }
+    .ring-2 { width: 360px; height: 360px; }
+    .ring-3 { width: 240px; height: 240px; }
+    .center-core { width: 120px; height: 120px; }
     .jarvis-title { font-size: 2rem; }
     .login-header { margin-top: 80px; }
     .user-card { width: 120px; padding: 0.6rem; }
@@ -797,10 +797,10 @@ html, body {
     .hud-button.small { padding: 0.15rem 0.3rem; font-size: 0.55rem; }
     .phase-row { font-size: 0.5rem; }
     .hologram-container { width: 150px; height: 150px; top: 30%; }
-    .ring-1 { width: 140px; height: 140px; }
-    .ring-2 { width: 110px; height: 110px; }
-    .ring-3 { width: 80px; height: 80px; }
-    .center-core { width: 36px; height: 36px; }
+    .ring-1 { width: 360px; height: 360px; }
+    .ring-2 { width: 280px; height: 280px; }
+    .ring-3 { width: 200px; height: 200px; }
+    .center-core { width: 90px; height: 90px; }
     .jarvis-title { font-size: 1.5rem; }
     .subtitle { font-size: 0.65rem; }
     .login-header { margin-top: 60px; }
