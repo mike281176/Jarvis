@@ -50,8 +50,8 @@ echo ""
 echo "🚀 Starte lokalen HTTPS-Server..."
 echo ""
 echo "📱 URLs:"
-echo "   Local:  https://localhost:$PORT"
-echo "   LAN:    https://192.168.1.81:$PORT"
+echo "   Local:  http://localhost:$PORT"
+echo "   LAN:    http://192.168.1.81:$PORT"
 echo "   (IP automatisch anpassen falls anders)"
 echo ""
 echo "🔧 API-Endpoints direkt nutzen (kein Proxy):"
@@ -62,11 +62,10 @@ echo ""
 echo "⏹️  Stoppen mit STRG+C"
 echo ""
 
-# Python3 HTTPS Server
+# Python3 HTTP Server (kein HTTPS für lokale Entwicklung)
 cd "$PUBLIC_DIR"
 python3 << EOF
 import http.server
-import ssl
 import socketserver
 import os
 
@@ -76,12 +75,7 @@ HOST = "$HOST"
 Handler = http.server.SimpleHTTPRequestHandler
 
 with socketserver.TCPServer((HOST, PORT), Handler) as httpd:
-    # HTTPS Context
-    context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-    context.load_cert_chain('../certs/server.crt', '../certs/server.key')
-    httpd.socket = context.wrap_socket(httpd.socket, server_side=True)
-    
-    print(f"Server running on https://{HOST}:{PORT}")
+    print(f"Server running on http://{HOST}:{PORT}")
     print(f"Serving from: {os.getcwd()}")
     print("")
     

@@ -20,6 +20,7 @@ class JarvisPWA {
         // API Basis-URL: Lokal direkt, Cloud über Proxy
         if (isLocalhost && !this.config.apiUrl) {
             this.apiBaseUrl = 'http://192.168.1.81:8124';
+            console.log('Lokaler Modus:', this.apiBaseUrl);
         } else {
             this.apiBaseUrl = this.config.apiUrl || '';
         }
