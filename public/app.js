@@ -2628,16 +2628,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /**
  * Telefon finden - Sendet Alarm an Mobile App
- * @param {string} device - 'mike', 'tanja', oder 'watch'
+ * @param {string} device - 'mike' oder 'tanja'
  * @param {string} mode - 'quiet', 'loud', oder 'announce'
  */
 async function findPhone(device, mode) {
     const devices = {
         'mike': 'notify.pixel_9_pro_xl',
-        'tanja': 'notify.iphone_von_tanja',
-        'watch': 'notify.xiaomi_watch_2_pro'
+        'tanja': 'notify.iphone_von_tanja'
     };
-    
+
     const modes = {
         'quiet': {
             message: 'play_sound',
@@ -2715,7 +2714,7 @@ async function findPhone(device, mode) {
  */
 function stopAlarm(device) {
     console.log(`⏹️ Alarm gestoppt für ${device}`);
-    const deviceName = device === 'mike' ? 'Pixel 9 Pro XL' : device === 'tanja' ? 'iPhone von Tanja' : 'Xiaomi Watch';
+    const deviceName = device === 'mike' ? 'Pixel 9 Pro XL' : 'iPhone von Tanja';
     alert(`ℹ️ Alarm-Stopp für ${deviceName} gesendet.\n\nHinweis: Der Alarm muss ggf. direkt am Gerät bestätigt werden.`);
 }
 

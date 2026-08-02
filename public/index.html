@@ -414,91 +414,47 @@
                         </div>
                     </div>
 
-                </main>
-
+                
                 <!-- Geräte View: Telefon finden -->
-                <div class="view-container" id="view-geraete">
-                    <div class="ollama-header">
-                        <span class="tile-line"></span>
-                        <span class="tile-title">GERÄTE & TELEFON FINDEN</span>
-                        <span class="ollama-live" id="devicesLive">LIVE</span>
-                    </div>
-                    
-                    <!-- Telefon finden Widget -->
-                    <div class="ollama-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-md);">
-                        
-                        <!-- Mike's Pixel -->
-                        <div class="ollama-card" data-device="mike">
-                            <div class="gc-card-top">
-                                <span class="gc-icon">📱</span>
-                                <span class="gc-name">Pixel 9 Pro XL</span>
-                                <span class="gc-status online" id="mike-status">ONLINE</span>
-                            </div>
-                            <div class="gc-meta">Mike's Android Smartphone</div>
-                            <div class="gc-row"><span>Batterie</span><span id="mike-battery">100%</span></div>
-                            <div class="gc-row"><span>Bluetooth</span><span id="mike-bluetooth">0 Geräte</span></div>
-                            <div class="gc-row"><span>Standort</span><span id="mike-location">Zuhause</span></div>
-                            <div class="gc-actions">
-                                <button class="hud-button small" onclick="findPhone('mike', 'quiet')">🔔 Leise</button>
-                                <button class="hud-button small" onclick="findPhone('mike', 'loud')">🚨 Laut</button>
-                                <button class="hud-button small" onclick="findPhone('mike', 'announce')">📢 Durchsage</button>
-                                <button class="hud-button small stop" onclick="stopAlarm('mike')">⏹️ Stopp</button>
-                            </div>
+                <div class="view-container devices-view" id="view-geraete">
+                    <div class="device-card device-left" data-device="mike">
+                        <div class="device-header">
+                            <span class="device-icon">📱</span>
+                            <span class="device-name">Pixel 9 Pro XL</span>
+                            <span class="device-status online" id="mike-status">ONLINE</span>
                         </div>
-                        
-                        <!-- Tanja's iPhone -->
-                        <div class="ollama-card" data-device="tanja">
-                            <div class="gc-card-top">
-                                <span class="gc-icon">📱</span>
-                                <span class="gc-name">iPhone von Tanja</span>
-                                <span class="gc-status online" id="tanja-status">ONLINE</span>
-                            </div>
-                            <div class="gc-meta">Tanja's iPhone</div>
-                            <div class="gc-row"><span>Batterie</span><span id="tanja-battery">100%</span></div>
-                            <div class="gc-row"><span>Bluetooth</span><span id="tanja-bluetooth">—</span></div>
-                            <div class="gc-row"><span>Standort</span><span id="tanja-location">Unterwegs</span></div>
-                            <div class="gc-actions">
-                                <button class="hud-button small" onclick="findPhone('tanja', 'quiet')">🔔 Leise</button>
-                                <button class="hud-button small" onclick="findPhone('tanja', 'loud')">🚨 Laut</button>
-                                <button class="hud-button small" onclick="findPhone('tanja', 'announce')">📢 Durchsage</button>
-                                <button class="hud-button small stop" onclick="stopAlarm('tanja')">⏹️ Stopp</button>
-                            </div>
+                        <div class="device-meta">Mike's Android Smartphone</div>
+                        <div class="device-row"><span>Batterie</span><span id="mike-battery">100%</span></div>
+                        <div class="device-row"><span>Bluetooth</span><span id="mike-bluetooth">0 Geräte</span></div>
+                        <div class="device-row"><span>Standort</span><span id="mike-location">Zuhause</span></div>
+                        <div class="device-actions">
+                            <button class="hud-button small" onclick="findPhone('mike', 'quiet')">🔔 Leise</button>
+                            <button class="hud-button small" onclick="findPhone('mike', 'loud')">🚨 Laut</button>
+                            <button class="hud-button small" onclick="findPhone('mike', 'announce')">📢 Durchsage</button>
+                            <button class="hud-button small stop" onclick="stopAlarm('mike')">⏹️ Stopp</button>
                         </div>
-                        
-                        <!-- Xiaomi Watch -->
-                        <div class="ollama-card" data-device="watch">
-                            <div class="gc-card-top">
-                                <span class="gc-icon">⌚</span>
-                                <span class="gc-name">Xiaomi Watch 2 Pro</span>
-                                <span class="gc-status online" id="watch-status">ONLINE</span>
-                            </div>
-                            <div class="gc-meta">Mike's Smartwatch</div>
-                            <div class="gc-row"><span>Batterie</span><span id="watch-battery">93%</span></div>
-                            <div class="gc-row"><span>Laden</span><span id="watch-charging">Nein</span></div>
-                            <div class="gc-actions">
-                                <button class="hud-button small" onclick="findPhone('watch', 'quiet')">🔔 Finden</button>
-                                <button class="hud-button small stop" onclick="stopAlarm('watch')">⏹️ Stopp</button>
-                            </div>
+                    </div>
+
+                    <div class="device-card device-right" data-device="tanja">
+                        <div class="device-header">
+                            <span class="device-icon">📱</span>
+                            <span class="device-name">iPhone von Tanja</span>
+                            <span class="device-status online" id="tanja-status">ONLINE</span>
                         </div>
-                        
-                    </div>
-                    
-                    <!-- Anleitung -->
-                    <div class="ollama-header" style="margin-top: var(--space-lg);">
-                        <span class="tile-line"></span>
-                        <span class="tile-title">ANLEITUNG</span>
-                    </div>
-                    <div class="gc-meta" style="padding: var(--space-md); background: rgba(0, 20, 40, 0.4); border-radius: 8px; margin-top: var(--space-md);">
-                        <strong>Telefon finden:</strong> Wählen Sie ein Gerät und klicken Sie auf eine Alarm-Stufe.
-                        Das Gerät spielt einen Ton (auch bei Stummschaltung).<br><br>
-                        <strong>Alarm-Stufen:</strong>
-                        <ul style="margin-top: var(--space-sm); margin-left: var(--space-md);">
-                            <li>🔔 <strong>Leise:</strong> Kurzer Ton, 30% Lautstärke</li>
-                            <li>🚨 <strong>Laut:</strong> Wiederholender Alarm, 100% Lautstärke</li>
-                            <li>📢 <strong>Durchsage:</strong> Sprachansage "J.A.R.V.I.S. ruft an!"</li>
-                        </ul>
+                        <div class="device-meta">Tanja's iPhone</div>
+                        <div class="device-row"><span>Batterie</span><span id="tanja-battery">100%</span></div>
+                        <div class="device-row"><span>Bluetooth</span><span id="tanja-bluetooth">—</span></div>
+                        <div class="device-row"><span>Standort</span><span id="tanja-location">Unterwegs</span></div>
+                        <div class="device-actions">
+                            <button class="hud-button small" onclick="findPhone('tanja', 'quiet')">🔔 Leise</button>
+                            <button class="hud-button small" onclick="findPhone('tanja', 'loud')">🚨 Laut</button>
+                            <button class="hud-button small" onclick="findPhone('tanja', 'announce')">📢 Durchsage</button>
+                            <button class="hud-button small stop" onclick="stopAlarm('tanja')">⏹️ Stopp</button>
+                        </div>
                     </div>
                 </div>
+
+</main>
 
                 <!-- Ollama VM Dashboard View (ersetzt GodCore) -->
                 <div class="view-container" id="view-ollama">
