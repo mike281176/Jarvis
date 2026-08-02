@@ -2693,7 +2693,7 @@ async function findPhone(device, mode) {
             await window.jarvis.callService(
                 `notify.${target}`,
                 'notify.send_message',
-                { message: config.message, title: config.title, data: config.data }
+                { message: config.message, title: config.title }
             );
             const deviceName = device === 'mike' ? 'Pixel 9 Pro XL' : 'iPhone von Tanja';
             console.log(`✅ Alarm erfolgreich gesendet an ${device}`);
@@ -2713,8 +2713,7 @@ async function findPhone(device, mode) {
             body: JSON.stringify({
                 entity_id: `notify.${target}`,
                 message: config.message,
-                title: config.title,
-                data: config.data
+                title: config.title
             })
         });
 
