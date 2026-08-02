@@ -1632,20 +1632,26 @@ class JarvisPWA {
             const dot = document.getElementById(id);
             if (!dot) continue;
             
-            // Paperless: Fallback API-Check wenn Sensor nicht verfügbar
+            // Paperless: Fallback API-Check nur im lokalen HTTP-Modus, nie von HTTPS
             if (id === 'status-paperless-dot' && (!state || state.state === 'unavailable' || state.state === 'unknown')) {
-                try {
-                    const response = await fetch('http://192.168.1.159:8777/api/documents/', {
-                        method: 'HEAD',
-                        headers: { 'Authorization': 'Token 44568e6750650f79836f5cb18f5f76b0fe1eb29f' },
-                        signal: AbortSignal.timeout(3000)
-                    });
-                    const isOnline = response.ok;
-                    dot.className = isOnline ? 'status-dot-sm online' : 'status-dot-sm offline';
-                    if (isOnline) onlineCount++;
-                    continue;
-                } catch (e) {
-                    console.warn('Paperless API Check failed:', e);
+                const isLocalHttp = window.location.protocol === 'http:' && (window.location.hostname === 'localhost' || window.location.hostname.startsWith('192.168.') || window.location.hostname.startsWith('jarvis.local'));
+                if (isLocalHttp) {
+                    try {
+                        const response = await fetch('http://192.168.1.159:8777/api/documents/', {
+                            method: 'HEAD',
+                            headers: { 'Authorization': 'Token 44568e6750650f79836f5cb18f5f76b0fe1eb29f' },
+                            signal: AbortSignal.timeout(3000)
+                        });
+                        const isOnline = response.ok;
+                        dot.className = isOnline ? 'status-dot-sm online' : 'status-dot-sm offline';
+                        if (isOnline) onlineCount++;
+                        continue;
+                    } catch (e) {
+                        console.warn('Paperless API Check failed:', e);
+                        dot.className = 'status-dot-sm offline';
+                        continue;
+                    }
+                } else {
                     dot.className = 'status-dot-sm offline';
                     continue;
                 }
@@ -2633,68 +2639,71 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 async function findPhone(device, mode) {
     const devices = {
-        'mike': 'notify.pixel_9_pro_xl',
-        'tanja': 'notify.iphone_von_tanja'
+        'mike': 'pixel_9_pro_xl',
+        'tanja': 'iphone_von_tanja'
     };
 
     const modes = {
         'quiet': {
-            message: 'play_sound',
-            title: '🔔 Telefon finden (leise)',
-            data: { 
+            message: '🔔 Jarvis Leise-Alarm',
+            title: 'Telefon finden',
+            data: {
+                priority: 'normal',
+                channel: 'alarm',
                 ttl: 0,
-                priority: 'high',
-                channel: 'alarm'
+                importance: 'high'
             }
         },
         'loud': {
-            message: 'play_sound',
-            title: '🚨 TELEFON FINDEN (LAUT)',
-            data: { 
-                ttl: 0,
+            message: '🚨 Jarvis Laut-Alarm! Bitte bestätigen.',
+            title: 'Telefon finden',
+            data: {
                 priority: 'high',
-                channel: 'alarm'
+                channel: 'alarm',
+                ttl: 0,
+                importance: 'high'
             }
         },
         'announce': {
-            message: 'TTS:J.A.R.V.I.S. ruft an! Dies ist ein Test des Telefon finden Systems.',
-            title: '📢 Sprachansage',
+            message: '📢 J.A.R.V.I.S. ruft an. Bitte antworten.',
+            title: 'Durchsage',
             data: {
-                ttl: 0,
                 priority: 'high',
-                channel: 'alarm'
+                channel: 'alarm',
+                ttl: 0,
+                importance: 'high'
             }
         }
     };
-    
+
     const target = devices[device];
     const config = modes[mode];
-    
+
     if (!target || !config) {
         console.error('Ungültiges Gerät oder Modus:', device, mode);
         alert('❌ Ungültiges Gerät oder Modus');
         return;
     }
-    
-    console.log(`📱 Sende Alarm an ${device} (${target}): ${mode}`);
-    
+
+    console.log(`📱 Sende Alarm an ${device} (notify.${target}): ${mode}`);
+
     try {
-        const response = await fetch('/api/jarvis/ha-proxy/api/services/notify/send_message', {
+        const serviceUrl = `${this.apiBaseUrl || ''}/api/jarvis/ha-proxy/api/services/notify/${target}`;
+        const response = await fetch(serviceUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + (window.jarvis?.apiKey || '')
             },
             body: JSON.stringify({
-                target: target,
                 message: config.message,
                 title: config.title,
                 data: config.data
             })
         });
-        
+
         if (response.ok) {
-            const deviceName = device === 'mike' ? 'Pixel 9 Pro XL' : device === 'tanja' ? 'iPhone von Tanja' : 'Xiaomi Watch';
+            const deviceName = device === 'mike' ? 'Pixel 9 Pro XL' : 'iPhone von Tanja';
             console.log(`✅ Alarm erfolgreich gesendet an ${device}`);
             alert(`✅ Alarm gesendet an ${deviceName}!\n\nModus: ${mode}\n\nBitte prüfen Sie ob das Gerät klingelt.`);
         } else {
@@ -2710,7 +2719,7 @@ async function findPhone(device, mode) {
 
 /**
  * Alarm stoppen
- * @param {string} device - 'mike', 'tanja', oder 'watch'
+ * @param {string} device - 'mike' oder 'tanja'
  */
 function stopAlarm(device) {
     console.log(`⏹️ Alarm gestoppt für ${device}`);
