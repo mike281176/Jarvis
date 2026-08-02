@@ -2688,7 +2688,8 @@ async function findPhone(device, mode) {
     console.log(`📱 Sende Alarm an ${device} (notify.${target}): ${mode}`);
 
     try {
-        const serviceUrl = `${this.apiBaseUrl || ''}/api/jarvis/ha-proxy/api/services/notify/${target}`;
+        const apiBase = (typeof window !== 'undefined' && window.jarvis?.apiBaseUrl) ? window.jarvis.apiBaseUrl : '';
+        const serviceUrl = `${apiBase}/api/jarvis/ha-proxy/api/services/notify/${target}`;
         const response = await fetch(serviceUrl, {
             method: 'POST',
             headers: {
