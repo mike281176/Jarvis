@@ -2688,6 +2688,20 @@ async function findPhone(device, mode) {
     console.log(`📱 Sende Alarm an ${device} (notify.${target}): ${mode}`);
 
     try {
+        // Nutze die existierende callService-Methode der App, falls verfügbar
+        if (typeof window !== 'undefined' && window.jarvis?.callService) {
+            await window.jarvis.callService(
+                `notify.${target}`,
+                'notify.send_message',
+                { message: config.message, title: config.title, data: config.data }
+            );
+            const deviceName = device === 'mike' ? 'Pixel 9 Pro XL' : 'iPhone von Tanja';
+            console.log(`✅ Alarm erfolgreich gesendet an ${device}`);
+            alert(`✅ Alarm gesendet an ${deviceName}!\n\nModus: ${mode}\n\nBitte prüfen Sie ob das Gerät klingelt.`);
+            return;
+        }
+
+        // Fallback für den Fall, dass window.jarvis noch nicht initialisiert ist
         const apiBase = (typeof window !== 'undefined' && window.jarvis?.apiBaseUrl) ? window.jarvis.apiBaseUrl : '';
         const serviceUrl = `${apiBase}/api/jarvis/ha-proxy/api/services/notify/${target}`;
         const response = await fetch(serviceUrl, {
