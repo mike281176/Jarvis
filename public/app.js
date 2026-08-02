@@ -2655,13 +2655,17 @@ async function findPhone(device, mode) {
             }
         },
         'loud': {
-            message: '🚨 Jarvis Laut-Alarm! Bitte bestätigen.',
-            title: 'Telefon finden',
+            message: '🚨 J.A.R.V.I.S. Laut-Alarm! Bitte bestätigen, um den Alarm zu stoppen.',
+            title: 'TELEFON FINDEN',
             data: {
                 priority: 'high',
                 channel: 'alarm',
                 ttl: 0,
-                importance: 'high'
+                importance: 'high',
+                // Android-Companion: dauerhafter Alarm bis Bestätigung
+                media_stream: 'alarm_stream_max',
+                // iOS: kritische Benachrichtigung
+                push: { sound: { name: 'default', critical: 1, volume: 1.0 } }
             }
         },
         'announce': {
@@ -2671,7 +2675,10 @@ async function findPhone(device, mode) {
                 priority: 'high',
                 channel: 'alarm',
                 ttl: 0,
-                importance: 'high'
+                importance: 'high',
+                // Android/Companion TTS via Home Assistant
+                tts_text: 'J.A.R.V.I.S. ruft an. Bitte antworten.',
+                media_stream: 'alarm_stream_max'
             }
         }
     };
@@ -2693,11 +2700,10 @@ async function findPhone(device, mode) {
             await window.jarvis.callService(
                 `notify.${target}`,
                 'notify.send_message',
-                { message: config.message, title: config.title }
+                { message: config.message, title: config.title, data: config.data }
             );
             const deviceName = device === 'mike' ? 'Pixel 9 Pro XL' : 'iPhone von Tanja';
             console.log(`✅ Alarm erfolgreich gesendet an ${device}`);
-            alert(`✅ Alarm gesendet an ${deviceName}!\n\nModus: ${mode}\n\nBitte prüfen Sie ob das Gerät klingelt.`);
             return;
         }
 
@@ -2713,14 +2719,14 @@ async function findPhone(device, mode) {
             body: JSON.stringify({
                 entity_id: `notify.${target}`,
                 message: config.message,
-                title: config.title
+                title: config.title,
+                data: config.data
             })
         });
 
         if (response.ok) {
             const deviceName = device === 'mike' ? 'Pixel 9 Pro XL' : 'iPhone von Tanja';
             console.log(`✅ Alarm erfolgreich gesendet an ${device}`);
-            alert(`✅ Alarm gesendet an ${deviceName}!\n\nModus: ${mode}\n\nBitte prüfen Sie ob das Gerät klingelt.`);
         } else {
             const error = await response.text();
             console.error('Alarm fehlgeschlagen:', error);
