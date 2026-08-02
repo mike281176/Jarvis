@@ -2697,6 +2697,7 @@ async function findPhone(device, mode) {
                 'Authorization': 'Bearer ' + (window.jarvis?.apiKey || '')
             },
             body: JSON.stringify({
+                entity_id: `notify.${target}`,
                 message: config.message,
                 title: config.title,
                 data: config.data
