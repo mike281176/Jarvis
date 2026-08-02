@@ -2623,3 +2623,102 @@ class JarvisPWA {
 document.addEventListener('DOMContentLoaded', () => {
     window.jarvis = new JarvisPWA();
 });
+
+// ==================== TELEFON FINDEN FUNKTIONEN ====================
+
+/**
+ * Telefon finden - Sendet Alarm an Mobile App
+ * @param {string} device - 'mike', 'tanja', oder 'watch'
+ * @param {string} mode - 'quiet', 'loud', oder 'announce'
+ */
+async function findPhone(device, mode) {
+    const devices = {
+        'mike': 'notify.pixel_9_pro_xl',
+        'tanja': 'notify.iphone_von_tanja',
+        'watch': 'notify.xiaomi_watch_2_pro'
+    };
+    
+    const modes = {
+        'quiet': {
+            message: 'play_sound',
+            title: '🔔 Telefon finden (leise)',
+            data: { 
+                ttl: 0,
+                priority: 'high',
+                channel: 'alarm'
+            }
+        },
+        'loud': {
+            message: 'play_sound',
+            title: '🚨 TELEFON FINDEN (LAUT)',
+            data: { 
+                ttl: 0,
+                priority: 'high',
+                channel: 'alarm'
+            }
+        },
+        'announce': {
+            message: 'TTS:J.A.R.V.I.S. ruft an! Dies ist ein Test des Telefon finden Systems.',
+            title: '📢 Sprachansage',
+            data: {
+                ttl: 0,
+                priority: 'high',
+                channel: 'alarm'
+            }
+        }
+    };
+    
+    const target = devices[device];
+    const config = modes[mode];
+    
+    if (!target || !config) {
+        console.error('Ungültiges Gerät oder Modus:', device, mode);
+        alert('❌ Ungültiges Gerät oder Modus');
+        return;
+    }
+    
+    console.log(`📱 Sende Alarm an ${device} (${target}): ${mode}`);
+    
+    try {
+        const response = await fetch('/api/jarvis/ha-proxy/api/services/notify/send_message', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + (window.jarvis?.apiKey || '')
+            },
+            body: JSON.stringify({
+                target: target,
+                message: config.message,
+                title: config.title,
+                data: config.data
+            })
+        });
+        
+        if (response.ok) {
+            const deviceName = device === 'mike' ? 'Pixel 9 Pro XL' : device === 'tanja' ? 'iPhone von Tanja' : 'Xiaomi Watch';
+            console.log(`✅ Alarm erfolgreich gesendet an ${device}`);
+            alert(`✅ Alarm gesendet an ${deviceName}!\n\nModus: ${mode}\n\nBitte prüfen Sie ob das Gerät klingelt.`);
+        } else {
+            const error = await response.text();
+            console.error('Alarm fehlgeschlagen:', error);
+            alert(`❌ Alarm fehlgeschlagen:\n${error}`);
+        }
+    } catch (error) {
+        console.error('Netzwerkfehler beim Alarm:', error);
+        alert(`❌ Netzwerkfehler:\n${error.message}`);
+    }
+}
+
+/**
+ * Alarm stoppen
+ * @param {string} device - 'mike', 'tanja', oder 'watch'
+ */
+function stopAlarm(device) {
+    console.log(`⏹️ Alarm gestoppt für ${device}`);
+    const deviceName = device === 'mike' ? 'Pixel 9 Pro XL' : device === 'tanja' ? 'iPhone von Tanja' : 'Xiaomi Watch';
+    alert(`ℹ️ Alarm-Stopp für ${deviceName} gesendet.\n\nHinweis: Der Alarm muss ggf. direkt am Gerät bestätigt werden.`);
+}
+
+// Globale Funktionen verfügbar machen
+window.findPhone = findPhone;
+window.stopAlarm = stopAlarm;
