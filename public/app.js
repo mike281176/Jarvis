@@ -2892,8 +2892,10 @@ class ImoKalkulator {
         const afaModell = document.getElementById('imoAfaModell')?.value || 'linear_2';
         const kaltmiete = this.getValue('imoKaltmiete');
         const nebekosten = this.getValue('imoNebenkosten');
-        const hausgeld = this.getValue('imoHausgeld');
-        const instandhaltung = this.getValue('imoInstandhaltung');
+        const hausgeldGesamt = this.getValue('imoHausgeldGesamt') || 0;
+        const hausgeldUmlagefaehig = this.getValue('imoHausgeldUmlagefaehig') || 0;
+        const eigeneInstandhaltung = this.getValue('imoEigeneInstandhaltung') || 0;
+        const mietausfall = this.getValue('imoMietausfall') || 0;
         const mietsteigerung = this.getValue('imoMietsteigerung') || 1.5;
         const kostensteigerung = this.getValue('imoKostensteigerung') || 2.0;
         
@@ -2918,75 +2920,85 @@ class ImoKalkulator {
             case 'degressiv_5': afaSatz = 5.0; break;
         }
         const afaJahr = afaBemessungsgrundlage * (afaSatz / 100);
+        const afaMonat = afaJahr / 12;
         
-        // 4. Monatliche Rate (Annuität)
-        const zinsMonat = zins / 100 / 12;
-        const tilgungMonat = tilgung / 100 / 12;
-        const rateMonat = finanzierung * (zinsMonat + tilgungMonat);
-        const rateJahr = rateMonat * 12;
+        // === 5. FINANZIERUNG (Excel-kompatibel) ===
+        const zinsenMonat = finanzierung * (zins / 100) / 12;
+        const tilgungMonat = finanzierung * (tilgung / 100) / 12;
+        const rateMonat = zinsenMonat + tilgungMonat;
+        const zinsenJahr = zinsenMonat * 12;
+        const tilgungJahr = tilgungMonat * 12;
         
-        // 5. Jahresmiete & Kosten
-        const jahresmiete = kaltmiete * 12;
-        const jahresNebenkosten = nebekosten * 12;
-        const jahresHausgeld = hausgeld * 12;
-        const jahresInstandhaltung = instandhaltung;
-        const jahresKosten = jahresNebenkosten + jahresHausgeld + jahresInstandhaltung;
+        // === 6. EINNAHMEN (Excel: H15, P19) ===
+        // Warmmiete = Kaltmiete + Nebenkosten + umlagefähiges Hausgeld
+        const einnahmenMonat = kaltmiete + nebekosten + hausgeldUmlagefaehig;
+        const einnahmenJahr = einnahmenMonat * 12;
         
-        // 6. Cashflow vor Steuern
-        const cashflowMonat = (kaltmiete + nebekosten) - rateMonat - hausgeld - (instandhaltung / 12);
-        const cashflowJahr = cashflowMonat * 12;
+        // === 7. BEWIRTSCHAFTUNGSKOSTEN (Excel: K12, K29) ===
+        // Nicht-umlagefähiger Hausgeld-Anteil
+        const hausgeldNichtUmlagefaehig = hausgeldGesamt - hausgeldUmlagefaehig;
         
-        // 7. Renditen
-        const bruttorendite = gesamtinvest > 0 ? (jahresmiete / gesamtinvest) * 100 : 0;
-        const nettorendite = eigenkapital > 0 ? ((jahresmiete - jahresKosten) / eigenkapital) * 100 : 0;
+        // Gesamte Bewirtschaftungskosten (nicht-umlagefähig)
+        const bewirtschaftungskostenMonat = hausgeldNichtUmlagefaehig + eigeneInstandhaltung + mietausfall;
+        const bewirtschaftungskostenJahr = bewirtschaftungskostenMonat * 12;
         
-        // 8. Steuerliches Ergebnis & Steuerersparnis
-        const steuerlichesErgebnis = jahresmiete - afaJahr - (finanzierung * zins / 100) - jahresKosten;
-        const grenzsteuersatz = 0.42; // könnte aus Eingabe kommen
-        const steuerersparnis = steuerlichesErgebnis < 0 ? Math.abs(steuerlichesErgebnis) * grenzsteuersatz : -steuerlichesErgebnis * grenzsteuersatz;
+        // === 8. CASHFLOW OPERATIV (Excel: P23) ===
+        const cashflowOperativMonat = einnahmenMonat - bewirtschaftungskostenMonat - rateMonat;
+        const cashflowOperativJahr = cashflowOperativMonat * 12;
         
-        // 9. Cashflow nach Steuern
-        const cashflowNachSteuernMonat = cashflowMonat + (steuerersparnis / 12);
-        const cashflowNachSteuernJahr = cashflowJahr + steuerersparnis;
+        // === 9. STEUERLICHES ERGEBNIS ===
+        // Zu versteuern: Mieteinnahmen - Zinsen - AfA - Bewirtungskosten (ohne eigene Rücklage!)
+        const steuerlicheEinnahmen = kaltmiete + nebekosten + hausgeldUmlagefaehig;
+        const steuerlicheKosten = (bewirtschaftungskostenMonat - eigeneInstandhaltung - mietausfall) + zinsenMonat + afaMonat;
+        const steuerlichesErgebnis = steuerlicheEinnahmen - steuerlicheKosten;
         
-        // 10. Eigenkapitalrendite (Modul 5)
-        const ekRenditeVor = eigenkapital > 0 ? (cashflowJahr / eigenkapital) * 100 : 0;
-        const ekRenditeNach = eigenkapital > 0 ? (cashflowNachSteuernJahr / eigenkapital) * 100 : 0;
+        // Grenzsteuersatz (vereinfacht 42%)
+        const grenzsteuersatz = 0.42;
+        const steuerersparnisMonat = steuerlichesErgebnis < 0 ? Math.abs(steuerlichesErgebnis) * grenzsteuersatz : -steuerlichesErgebnis * grenzsteuersatz;
+        const steuerersparnisJahr = steuerersparnisMonat * 12;
         
-        // 11. Restschuld & Anschlussfinanzierung (Modul 1)
-        // Restschuld nach zinsbindung Jahren berechnen
-        const zinsJahr = zins / 100;
-        const tilgungJahr = tilgung / 100;
+        // === 10. CASHFLOW NACH STEUERN (Excel: P26) ===
+        const cashflowNachSteuernMonat = cashflowOperativMonat + steuerersparnisMonat;
+        const cashflowNachSteuernJahr = cashflowOperativJahr + steuerersparnisJahr;
+        
+        // === 11. RENDITEN ===
+        const bruttorendite = gesamtinvest > 0 ? ((kaltmiete * 12) / gesamtinvest) * 100 : 0;
+        const nettorendite = eigenkapital > 0 ? (cashflowOperativJahr / eigenkapital) * 100 : 0;
+        
+        // === 12. EIGENKAPITALRENDITE (Modul 5) ===
+        const ekRenditeVorSteuern = eigenkapital > 0 ? (cashflowOperativJahr / eigenkapital) * 100 : 0;
+        const ekRenditeNachSteuern = eigenkapital > 0 ? (cashflowNachSteuernJahr / eigenkapital) * 100 : 0;
+        
+        // === 13. RESTSCHULD & ANSCHLUSSFINANZIERUNG (Modul 1) ===
         let restschuld = finanzierung;
         for (let jahr = 1; jahr <= zinsbindung; jahr++) {
-            const zinsenJahr = restschuld * zinsJahr;
-            const tilgungJahrEuro = restschuld * tilgungJahr;
+            const zinsenJahr = restschuld * (zins / 100);
+            const tilgungJahrEuro = restschuld * (tilgung / 100);
             restschuld = restschuld - tilgungJahrEuro;
         }
         
-        // Neue Rate bei Anschlussfinanzierung
-        const anschlussZinsMonat = anschlussZins / 100 / 12;
-        const neueRateMonat = restschuld * anschlussZinsMonat; // Nur Zins, keine Tilgung
-        const cashflowDelta = cashflowMonat - (neueRateMonat + (kaltmiete + nebekosten) - hausgeld - (instandhaltung / 12));
+        const anschlussRateMonat = restschuld * (anschlussZins / 100) / 12;
+        const cashflowDelta = cashflowOperativMonat - anschlussRateMonat - bewirtschaftungskostenMonat;
         
-        // 12. Preis pro m²
+        // === 14. PREIS PRO M² ===
         const preisProQm = flaeche > 0 ? kaufpreis / flaeche : 0;
         
-        // Ergebnisse anzeigen
+        // === 15. ERGEBNISSE ANZEIGEN ===
         this.setValue('imoGesamtinvest', gesamtinvest, 'currency');
         this.setValue('imoFinanzierung', finanzierung, 'currency');
         this.setValue('imoMonatsrate', rateMonat, 'currency');
-        this.setValue('imoJahresmiete', jahresmiete, 'currency');
+        this.setValue('imoJahresmiete', kaltmiete * 12, 'currency');
         this.setValue('imoBruttorendite', bruttorendite, 'percent');
         this.setValue('imoNettorendite', nettorendite, 'percent');
-        this.setValue('imoCashflow', cashflowMonat, 'currency');
+        this.setValue('imoCashflowOperativ', cashflowOperativMonat, 'currency');
+        this.setValue('imoCashflowNachSteuern', cashflowNachSteuernMonat, 'currency');
+        this.setValue('imoSteuerersparnis', steuerersparnisMonat, 'currency');
         this.setValue('imoPreisProQm', preisProQm, 'currency');
-        this.setValue('imoEkRenditeVor', ekRenditeVor, 'percent');
-        this.setValue('imoEkRenditeNach', ekRenditeNach, 'percent');
+        this.setValue('imoEkRenditeVor', ekRenditeVorSteuern, 'percent');
+        this.setValue('imoEkRenditeNach', ekRenditeNachSteuern, 'percent');
         this.setValue('imoRestschuld', restschuld, 'currency');
-        this.setValue('imoNeueRate', neueRateMonat, 'currency');
+        this.setValue('imoAnschlussRate', anschlussRateMonat, 'currency');
         this.setValue('imoCashflowDelta', cashflowDelta, 'currency');
-        this.setValue('imoSteuerersparnis', steuerersparnis, 'currency');
         
         // Stresstest Values
         const stressZinsbindungEl = document.getElementById('stressZinsbindungJahre');
@@ -2997,7 +3009,7 @@ class ImoKalkulator {
         
         if (stressZinsbindungEl) stressZinsbindungEl.textContent = zinsbindung + ' Jahre';
         if (stressRestschuldEl) this.setValueElement(stressRestschuldEl, restschuld, 'currency');
-        if (stressNeueRateEl) this.setValueElement(stressNeueRateEl, neueRateMonat, 'currency');
+        if (stressNeueRateEl) this.setValueElement(stressNeueRateEl, anschlussRateMonat, 'currency');
         if (stressCashflowDeltaEl) {
             this.setValueElement(stressCashflowDeltaEl, Math.abs(cashflowDelta), 'currency');
             stressCashflowDeltaEl.style.color = cashflowDelta < 0 ? 'var(--jarvis-red)' : 'var(--jarvis-green)';
@@ -3008,16 +3020,39 @@ class ImoKalkulator {
         }
         
         // Cashflow farbig markieren
-        const cashflowEl = document.getElementById('imoCashflow');
-        if (cashflowEl) {
-            if (cashflowMonat > 0) {
-                cashflowEl.style.color = 'var(--jarvis-green)';
-                cashflowEl.style.textShadow = 'var(--glow-green)';
+        const cashflowOperativEl = document.getElementById('imoCashflowOperativ');
+        if (cashflowOperativEl) {
+            if (cashflowOperativMonat > 0) {
+                cashflowOperativEl.style.color = 'var(--jarvis-green)';
+                cashflowOperativEl.style.textShadow = 'var(--glow-green)';
             } else {
-                cashflowEl.style.color = 'var(--jarvis-red)';
-                cashflowEl.style.textShadow = 'var(--glow-orange)';
+                cashflowOperativEl.style.color = 'var(--jarvis-red)';
+                cashflowOperativEl.style.textShadow = 'var(--glow-orange)';
             }
         }
+        
+        // Warnungen anzeigen
+        const warnungen = [];
+        if (cashflowOperativMonat < 0) {
+            warnungen.push({
+                type: 'warning',
+                message: `Negativer Cashflow: ${cashflowOperativMonat.toFixed(2)} €/Monat vor Steuern`
+            });
+        }
+        if (cashflowNachSteuernMonat < 0) {
+            warnungen.push({
+                type: 'info',
+                message: `Nach Steuern: ${cashflowNachSteuernMonat.toFixed(2)} €/Monat`
+            });
+        }
+        if (hausgeldGesamt > 0 && hausgeldUmlagefaehig === 0) {
+            warnungen.push({
+                type: 'warning',
+                message: 'Hausgeld eingetragen, aber kein umlagefähiger Anteil! Bitte ca. 65% als umlagefähig markieren.'
+            });
+        }
+        
+        this.showWarnings(warnungen);
         
         // Diagramme aktualisieren
         this.updateCharts({

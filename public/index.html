@@ -519,31 +519,49 @@
                                     </div>
 
                                     <div class="imo-section">
-                                        <h3 class="imo-section-title">📈 Miete & Rendite</h3>
-                                        <div class="imo-form-grid">
-                                            <div class="input-group">
-                                                <label class="hud-label">Kaltmiete (€/Monat)</label>
-                                                <input type="number" id="imoKaltmiete" class="hud-input" placeholder="1200" step="50">
+                                        <h3 class="imo-section-title">🏠 Miete & Bewirtschaftung</h3>
+                                        <div class="imo-input-grid">
+                                            <div class="imo-input-group">
+                                                <label for="imoKaltmiete">📈 Kaltmiete (€/Monat)</label>
+                                                <input type="number" id="imoKaltmiete" placeholder="z.B. 450" step="0.01">
                                             </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Nebenkosten (€/Monat)</label>
-                                                <input type="number" id="imoNebenkosten" class="hud-input" placeholder="300" step="50">
+                                            <div class="imo-input-group">
+                                                <label for="imoNebenkosten">💶 Nebenkosten (€/Monat)</label>
+                                                <input type="number" id="imoNebenkosten" placeholder="z.B. 150" step="0.01">
                                             </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Hausgeld (€/Monat)</label>
-                                                <input type="number" id="imoHausgeld" class="hud-input" placeholder="250" step="50">
+                                            <div class="imo-input-group">
+                                                <label for="imoHausgeldGesamt">🏢 Hausgeld gesamt (€/Monat)</label>
+                                                <input type="number" id="imoHausgeldGesamt" placeholder="z.B. 139" step="0.01" value="0">
+                                                <small class="imo-hint">Inkl. WEG-Rücklage</small>
                                             </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Instandhaltung (€/Jahr)</label>
-                                                <input type="number" id="imoInstandhaltung" class="hud-input" placeholder="1000" step="100">
+                                            <div class="imo-input-group">
+                                                <label for="imoHausgeldUmlagefaehig">↗️ Davon umlagefähig (€/Monat)</label>
+                                                <input type="number" id="imoHausgeldUmlagefaehig" placeholder="z.B. 90" step="0.01" value="0">
+                                                <small class="imo-hint">Wird vom Mieter erstattet (ca. 65%)</small>
                                             </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Mietsteigerung p.a. (%)</label>
-                                                <input type="number" id="imoMietsteigerung" class="hud-input" placeholder="1.5" step="0.1" value="1.5">
+                                            <div class="imo-input-group">
+                                                <label for="imoEigeneInstandhaltung">🔧 Eigene Instandhaltung (€/Monat)</label>
+                                                <input type="number" id="imoEigeneInstandhaltung" placeholder="z.B. 36" step="0.01" value="0">
+                                                <small class="imo-hint">Fläche × 10€/m² ÷ 12 (Empfehlung)</small>
                                             </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Kostensteigerung p.a. (%)</label>
-                                                <input type="number" id="imoKostensteigerung" class="hud-input" placeholder="2.0" step="0.1" value="2.0">
+                                            <div class="imo-input-group">
+                                                <label for="imoMietausfall">⚠️ Mietausfall-Rücklage (€/Monat)</label>
+                                                <input type="number" id="imoMietausfall" placeholder="z.B. 14" step="0.01" value="0">
+                                                <small class="imo-hint">3% der Kaltmiete (Empfehlung)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="imo-section">
+                                        <h3 class="imo-section-title">📈 Inflation & Verlauf</h3>
+                                        <div class="imo-input-grid">
+                                            <div class="imo-input-group">
+                                                <label for="imoMietsteigerung">Mietsteigerung p.a. (%)</label>
+                                                <input type="number" id="imoMietsteigerung" placeholder="1.5" step="0.1" value="1.5">
+                                            </div>
+                                            <div class="imo-input-group">
+                                                <label for="imoKostensteigerung">Kostensteigerung p.a. (%)</label>
+                                                <input type="number" id="imoKostensteigerung" placeholder="2.0" step="0.1" value="2.0">
                                             </div>
                                         </div>
                                     </div>
@@ -582,22 +600,32 @@
                                             <div class="imo-kpi-card highlight">
                                                 <div class="kpi-label">Netto-Rendite</div>
                                                 <div class="kpi-value" id="imoNettorendite">0 %</div>
-                                                <div class="kpi-sub">(Miete - Kosten) ÷ EK</div>
+                                                <div class="kpi-sub">Operativer Cashflow ÷ EK</div>
+                                            </div>
+                                            <div class="imo-kpi-card highlight">
+                                                <div class="kpi-label">Cashflow operativ</div>
+                                                <div class="kpi-value" id="imoCashflowOperativ">0 €/Monat</div>
+                                                <div class="kpi-sub">Vor Steuern</div>
+                                            </div>
+                                            <div class="imo-kpi-card highlight">
+                                                <div class="kpi-label">Cashflow nach Steuern</div>
+                                                <div class="kpi-value" id="imoCashflowNachSteuern">0 €/Monat</div>
+                                                <div class="kpi-sub">Inkl. Steuerersparnis</div>
                                             </div>
                                             <div class="imo-kpi-card">
-                                                <div class="kpi-label">Cashflow (Monat)</div>
-                                                <div class="kpi-value" id="imoCashflow">0 €</div>
-                                                <div class="kpi-sub">Miete - Rate - Kosten</div>
-                                            </div>
-                                            <div class="imo-kpi-card">
-                                                <div class="kpi-label">Preis pro m²</div>
-                                                <div class="kpi-value" id="imoPreisProQm">0 €</div>
-                                                <div class="kpi-sub">Kaufpreis ÷ Fläche</div>
+                                                <div class="kpi-label">Steuerersparnis</div>
+                                                <div class="kpi-value" id="imoSteuerersparnis">0 €/Monat</div>
+                                                <div class="kpi-sub">Bei Verlust</div>
                                             </div>
                                             <div class="imo-kpi-card highlight">
                                                 <div class="kpi-label">EK-Rendite vor Steuern</div>
                                                 <div class="kpi-value" id="imoEkRenditeVor">0 %</div>
-                                                <div class="kpi-sub">Cashflow vor St. ÷ EK</div>
+                                                <div class="kpi-sub">Cashflow ÷ Eigenkapital</div>
+                                            </div>
+                                            <div class="imo-kpi-card highlight">
+                                                <div class="kpi-label">EK-Rendite nach Steuern</div>
+                                                <div class="kpi-value" id="imoEkRenditeNach">0 %</div>
+                                                <div class="kpi-sub">Inkl. Steuer-Effekt</div>
                                             </div>
                                             <div class="imo-kpi-card highlight">
                                                 <div class="kpi-label">EK-Rendite nach Steuern</div>
