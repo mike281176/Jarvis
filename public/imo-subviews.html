@@ -1,0 +1,259 @@
+<!-- ===========================
+     IMO SUB-VIEWS (Bankgespräch, Diagramme, Verlauf, Haushalt, Vermögen)
+     =========================== -->
+
+<!-- Bankgespräch Sub-View -->
+<div class="imo-subview" id="imo-subview-bankgespräch" style="display: none;">
+    <div class="imo-content">
+        <div class="imo-bankgespräch">
+            <h2 class="imo-subview-title">🏦 Bankgespräch - Investitionsübersicht</h2>
+            
+            <div class="bankgespräch-grid">
+                <!-- Linke Spalte: Objekt & Investition -->
+                <div class="bankgespräch-section">
+                    <h3>📍 Objekt</h3>
+                    <table class="bankgespräch-table">
+                        <tr><td>Adresse:</td><td id="bgAdresse">-</td></tr>
+                        <tr><td>Wohnfläche:</td><td id="bgFlaeche">0 m²</td></tr>
+                        <tr><td>Zimmer:</td><td id="bgZimmer">0</td></tr>
+                        <tr><td>Baujahr:</td><td id="bgBaujahr">-</td></tr>
+                    </table>
+                </div>
+                
+                <!-- Mitte: Finanzierung -->
+                <div class="bankgespräch-section">
+                    <h3>💰 Finanzierung</h3>
+                    <table class="bankgespräch-table">
+                        <tr><td>Gesamtinvest:</td><td id="bgGesamtinvest">0 €</td></tr>
+                        <tr><td>Eigenkapital:</td><td id="bgEigenkapital">0 €</td></tr>
+                        <tr><td>Finanzierungssumme:</td><td id="bgFinanzierung">0 €</td></tr>
+                        <tr><td>EK-Quote:</td><td id="bgEKQuote">0 %</td></tr>
+                    </table>
+                </div>
+                
+                <!-- Rechte Spalte: Rendite -->
+                <div class="bankgespräch-section">
+                    <h3>📈 Rendite</h3>
+                    <table class="bankgespräch-table">
+                        <tr><td>Brutto-Rendite:</td><td id="bgBruttorendite">0 %</td></tr>
+                        <tr><td>Netto-Rendite:</td><td id="bgNettorendite">0 %</td></tr>
+                        <tr><td>Cashflow operativ:</td><td id="bgCashflow">0 €/Monat</td></tr>
+                        <tr><td>Cashflow nach Steuern:</td><td id="bgCashflowSteuern">0 €/Monat</td></tr>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Cashflow-Übersicht -->
+            <div class="bankgespräch-section full-width">
+                <h3>💵 Monatlicher Cashflow</h3>
+                <table class="bankgespräch-table cashflow-table">
+                    <thead>
+                        <tr><th>Einnahmen</th><th>€</th><th>Ausgaben</th><th>€</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Kaltmiete</td><td id="bgEinnahmenMiete">0 €</td><td>Rate (Zins+Tilgung)</td><td id="bgAusgabenRate">0 €</td></tr>
+                        <tr><td>Nebenkosten</td><td id="bgEinnahmenNK">0 €</td><td>Hausgeld (nicht-umlagefähig)</td><td id="bgAusgabenHausgeld">0 €</td></tr>
+                        <tr><td>Umlagefähiges Hausgeld</td><td id="bgEinnahmenHausgeld">0 €</td><td>Eigene Instandhaltung</td><td id="bgAusgabenInstandhaltung">0 €</td></tr>
+                        <tr><td></td><td></td><td>Mietausfall-Rücklage</td><td id="bgAusgabenMietausfall">0 €</td></tr>
+                        <tr class="total-row"><td><strong>Summe Einnahmen</strong></td><td id="bgSummeEinnahmen">0 €</td><td><strong>Summe Ausgaben</strong></td><td id="bgSummeAusgaben">0 €</td></tr>
+                        <tr class="cashflow-row"><td colspan="2"><strong>= Cashflow operativ</strong></td><td colspan="2" id="bgCashflowOperativ">0 €</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- PDF Export Button -->
+            <div class="bankgespräch-actions">
+                <button class="hud-button primary" id="bgExportPdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    PDF für Bankgespräch exportieren
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Diagramme Sub-View -->
+<div class="imo-subview" id="imo-subview-diagramme" style="display: none;">
+    <div class="imo-content">
+        <h2 class="imo-subview-title">📈 Diagramme & Visualisierung</h2>
+        
+        <div class="diagramme-grid">
+            <!-- Cashflow Verteilung -->
+            <div class="diagramm-card">
+                <h3>💵 Cashflow Verteilung</h3>
+                <canvas id="diagCashflowChart"></canvas>
+            </div>
+            
+            <!-- Finanzierungstruktur -->
+            <div class="diagramm-card">
+                <h3>🏦 Finanzierungsstruktur</h3>
+                <canvas id="diagFinanzierungChart"></canvas>
+            </div>
+            
+            <!-- Einnahmen vs Ausgaben -->
+            <div class="diagramm-card full-width">
+                <h3>📊 Einnahmen vs. Ausgaben</h3>
+                <canvas id="diagEinnahmenAusgabenChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Verlauf Sub-View -->
+<div class="imo-subview" id="imo-subview-verlauf" style="display: none;">
+    <div class="imo-content">
+        <h2 class="imo-subview-title">📉 30-Jahre Verlaufsprognose</h2>
+        
+        <div class="verlauf-controls">
+            <label>Betrachtungszeitraum:
+                <select id="verlaufJahre">
+                    <option value="10">10 Jahre</option>
+                    <option value="20">20 Jahre</option>
+                    <option value="30" selected>30 Jahre</option>
+                </select>
+            </label>
+        </div>
+        
+        <div class="verlauf-tabelle-container">
+            <table class="verlauf-tabelle" id="verlaufTabelle">
+                <thead>
+                    <tr>
+                        <th>Jahr</th>
+                        <th>Alter</th>
+                        <th>Mieteinnahmen p.a.</th>
+                        <th>Kosten p.a.</th>
+                        <th>Rate p.a.</th>
+                        <th>Cashflow p.a.</th>
+                        <th>Restschuld</th>
+                        <th>Wert Immobilie</th>
+                        <th>Nettovermögen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Wird dynamisch gefüllt -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Haushalt Sub-View -->
+<div class="imo-subview" id="imo-subview-haushalt" style="display: none;">
+    <div class="imo-content">
+        <h2 class="imo-subview-title">🏠 Haushaltsrechnung</h2>
+        
+        <div class="haushalt-grid">
+            <!-- Private Einnahmen -->
+            <div class="haushalt-section">
+                <h3>💰 Private Einnahmen (monatlich)</h3>
+                <div class="haushalt-input-group">
+                    <label>Nettogehalt 1:</label>
+                    <input type="number" id="hhNetto1" placeholder="€" class="haushalt-input">
+                </div>
+                <div class="haushalt-input-group">
+                    <label>Nettogehalt 2:</label>
+                    <input type="number" id="hhNetto2" placeholder="€" class="haushalt-input">
+                </div>
+                <div class="haushalt-input-group">
+                    <label>Sonstige Einnahmen:</label>
+                    <input type="number" id="hhSonstigeEinnahmen" placeholder="€" class="haushalt-input">
+                </div>
+                <div class="haushalt-total">
+                    <strong>Summe Einnahmen:</strong>
+                    <span id="hhSummeEinnahmen">0 €</span>
+                </div>
+            </div>
+            
+            <!-- Private Ausgaben -->
+            <div class="haushalt-section">
+                <h3>💸 Private Ausgaben (monatlich)</h3>
+                <div class="haushalt-input-group">
+                    <label>Miete aktuell:</label>
+                    <input type="number" id="hhMiete" placeholder="€" class="haushalt-input">
+                </div>
+                <div class="haushalt-input-group">
+                    <label>Lebensmittel:</label>
+                    <input type="number" id="hhLebensmittel" placeholder="€" class="haushalt-input">
+                </div>
+                <div class="haushalt-input-group">
+                    <label>Transport:</label>
+                    <input type="number" id="hhTransport" placeholder="€" class="haushalt-input">
+                </div>
+                <div class="haushalt-input-group">
+                    <label>Versicherungen:</label>
+                    <input type="number" id="hhVersicherungen" placeholder="€" class="haushalt-input">
+                </div>
+                <div class="haushalt-input-group">
+                    <label>Freizeit:</label>
+                    <input type="number" id="hhFreizeit" placeholder="€" class="haushalt-input">
+                </div>
+                <div class="haushalt-input-group">
+                    <label>Sonstige Ausgaben:</label>
+                    <input type="number" id="hhSonstigeAusgaben" placeholder="€" class="haushalt-input">
+                </div>
+                <div class="haushalt-total">
+                    <strong>Summe Ausgaben:</strong>
+                    <span id="hhSummeAusgaben">0 €</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Haushalts-Saldo -->
+        <div class="haushalt-saldo">
+            <h3>📊 Monatlicher Haushalts-Saldo</h3>
+            <div class="saldo-display">
+                <span>Einnahmen - Ausgaben =</span>
+                <span id="hhSaldo" class="saldo-value">0 €</span>
+            </div>
+            <p class="haushalt-hint">Zeigt ob die Immobilie aus dem Haushalt finanzierbar ist</p>
+        </div>
+    </div>
+</div>
+
+<!-- Vermögen Sub-View -->
+<div class="imo-subview" id="imo-subview-vermoegen" style="display: none;">
+    <div class="imo-content">
+        <h2 class="imo-subview-title">💰 Vermögensaufstellung</h2>
+        
+        <div class="vermoegen-grid">
+            <!-- Aktiva -->
+            <div class="vermoegen-section">
+                <h3>📈 Aktiva (Vermögenswerte)</h3>
+                <table class="vermoegen-table">
+                    <tr><td>Immobilienwert (heute):</td><td id="vmImmobilieWert">0 €</td></tr>
+                    <tr><td>Guthaben auf Konten:</td><td><input type="number" id="vmKonten" placeholder="€" class="vermoegen-input"></td></tr>
+                    <tr><td>Wertpapiere/Aktien:</td><td><input type="number" id="vmWertpapiere" placeholder="€" class="vermoegen-input"></td></tr>
+                    <tr><td>Lebensversicherungen:</td><td><input type="number" id="vmVersicherungen" placeholder="€" class="vermoegen-input"></td></tr>
+                    <tr><td>Sonstige Vermögenswerte:</td><td><input type="number" id="vmSonstigeAktiva" placeholder="€" class="vermoegen-input"></td></tr>
+                    <tr class="total-row"><td><strong>Summe Aktiva</strong></td><td id="vmSummeAktiva">0 €</td></tr>
+                </table>
+            </div>
+            
+            <!-- Passiva -->
+            <div class="vermoegen-section">
+                <h3>📉 Passiva (Schulden)</h3>
+                <table class="vermoegen-table">
+                    <tr><td>Hypothek/Immobilienkredit:</td><td id="vmHypothek">0 €</td></tr>
+                    <tr><td>Ratenkredite:</td><td><input type="number" id="vmRatenkredite" placeholder="€" class="vermoegen-input"></td></tr>
+                    <tr><td>Dispokredit:</td><td><input type="number" id="vmDispo" placeholder="€" class="vermoegen-input"></td></tr>
+                    <tr><td>Sonstige Schulden:</td><td><input type="number" id="vmSonstigeSchulden" placeholder="€" class="vermoegen-input"></td></tr>
+                    <tr class="total-row"><td><strong>Summe Passiva</strong></td><td id="vmSummePassiva">0 €</td></tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Nettovermögen -->
+        <div class="vermoegen-saldo">
+            <h3>💎 Nettovermögen</h3>
+            <div class="saldo-display">
+                <span>Aktiva - Passiva =</span>
+                <span id="vmNettovermoegen" class="saldo-value">0 €</span>
+            </div>
+            <p class="haushalt-hint">Gesamtvermögen nach Abzug aller Schulden</p>
+        </div>
+    </div>
+</div>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="imo-module.js"></script>
+    <script src="imo-subviews.js"></script>
 </head>
 <body>
     <div id="app">
@@ -381,7 +382,17 @@
                                     <!-- Wird dynamisch gefüllt -->
                                 </div>
                             </div>
-
+                            
+                            <!-- IMO Sub-Navigation -->
+                            <div class="imo-subnav">
+                                <button class="imo-subnav-btn active" data-subview="cockpit">📊 Cockpit</button>
+                                <button class="imo-subnav-btn" data-subview="bankgespräch">🏦 Bankgespräch</button>
+                                <button class="imo-subnav-btn" data-subview="diagramme">📈 Diagramme</button>
+                                <button class="imo-subnav-btn" data-subview="verlauf">📉 Verlauf</button>
+                                <button class="imo-subnav-btn" data-subview="haushalt">🏠 Haushalt</button>
+                                <button class="imo-subnav-btn" data-subview="vermoegen">💰 Vermögen</button>
+                            </div>
+                            
                             <div class="imo-content">
                                 <!-- Linke Spalte: Eingaben -->
                                 <div class="imo-inputs">
@@ -1118,6 +1129,19 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- IMO Sub-Views (Bankgespräch, Diagramme, Verlauf, Haushalt, Vermögen) -->
+                    <script>
+                        // Sub-Views dynamisch laden
+                        fetch('imo-subviews.html')
+                            .then(response => response.text())
+                            .then(html => {
+                                const container = document.querySelector('.imo-container');
+                                const content = container.querySelector('.imo-content');
+                                content.insertAdjacentHTML('afterend', html);
+                            })
+                            .catch(err => console.error('Fehler beim Laden der Sub-Views:', err));
+                    </script>
                 </div>
             </div>
 

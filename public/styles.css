@@ -2091,3 +2091,455 @@ html, body {
         justify-content: flex-end;
     }
 }
+/* ===========================
+   IMO SUB-NAVIGATION
+   =========================== */
+
+.imo-subnav {
+    display: flex;
+    gap: 8px;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--jarvis-blue) var(--hud-surface);
+}
+
+.imo-subnav::-webkit-scrollbar {
+    height: 6px;
+}
+
+.imo-subnav::-webkit-scrollbar-track {
+    background: var(--hud-surface);
+    border-radius: 3px;
+}
+
+.imo-subnav::-webkit-scrollbar-thumb {
+    background: var(--jarvis-blue);
+    border-radius: 3px;
+}
+
+.imo-subnav-btn {
+    flex: 0 0 auto;
+    padding: 10px 16px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 6px;
+    color: var(--jarvis-blue);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.imo-subnav-btn:hover {
+    background: rgba(0, 212, 255, 0.2);
+    border-color: var(--jarvis-blue);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+.imo-subnav-btn.active {
+    background: var(--jarvis-blue);
+    color: #000;
+    border-color: var(--jarvis-blue);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+}
+
+/* ===========================
+   IMO SUB-VIEWS
+   =========================== */
+
+.imo-subview {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.imo-subview.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.imo-subview-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--jarvis-blue);
+    margin-bottom: 24px;
+    text-shadow: var(--glow-blue);
+}
+
+/* ===========================
+   BANKGESPRÄCH STYLES
+   =========================== */
+
+.bankgespräch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.bankgespräch-section {
+    background: rgba(0, 212, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.bankgespräch-section.full-width {
+    grid-column: 1 / -1;
+}
+
+.bankgespräch-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--jarvis-blue);
+    margin-bottom: 12px;
+    text-shadow: var(--glow-blue);
+}
+
+.bankgespräch-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bankgespräch-table td {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.bankgespräch-table td:first-child {
+    font-weight: 600;
+    color: var(--text-primary);
+    padding-right: 12px;
+}
+
+.bankgespräch-table td:last-child {
+    text-align: right;
+    color: var(--jarvis-blue);
+    font-weight: 700;
+}
+
+.bankgespräch-table tr:last-child td {
+    border-bottom: none;
+}
+
+.cashflow-table thead th {
+    background: rgba(0, 212, 255, 0.2);
+    color: var(--jarvis-blue);
+    padding: 12px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.cashflow-table tbody td {
+    padding: 10px 12px;
+}
+
+.cashflow-table .total-row {
+    background: rgba(0, 212, 255, 0.1);
+    font-weight: 700;
+}
+
+.cashflow-table .total-row td {
+    border-top: 2px solid var(--jarvis-blue);
+    padding-top: 14px;
+}
+
+.cashflow-table .cashflow-row td {
+    background: rgba(0, 212, 255, 0.15);
+    font-size: 16px;
+    padding: 14px 12px;
+}
+
+.bankgespräch-actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* ===========================
+   DIAGRAMME STYLES
+   =========================== */
+
+.diagramme-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.diagramm-card {
+    background: rgba(0, 212, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.diagramm-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.diagramm-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--jarvis-blue);
+    margin-bottom: 16px;
+    text-shadow: var(--glow-blue);
+}
+
+/* ===========================
+   VERLAUF STYLES
+   =========================== */
+
+.verlauf-controls {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: rgba(0, 212, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 8px;
+}
+
+.verlauf-controls label {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-right: 12px;
+}
+
+.verlauf-controls select {
+    background: var(--hud-surface);
+    border: 1px solid var(--jarvis-blue);
+    color: var(--jarvis-blue);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.verlauf-tabelle-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.verlauf-tabelle {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.verlauf-tabelle thead th {
+    background: rgba(0, 212, 255, 0.2);
+    color: var(--jarvis-blue);
+    padding: 12px 8px;
+    text-align: right;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.verlauf-tabelle thead th:first-child {
+    text-align: left;
+}
+
+.verlauf-tabelle tbody td {
+    padding: 10px 8px;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    text-align: right;
+}
+
+.verlauf-tabelle tbody td:first-child {
+    text-align: left;
+    font-weight: 600;
+}
+
+.verlauf-tabelle tbody tr:hover {
+    background: rgba(0, 212, 255, 0.05);
+}
+
+/* ===========================
+   HAUSHALT STYLES
+   =========================== */
+
+.haushalt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.haushalt-section {
+    background: rgba(0, 212, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.haushalt-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--jarvis-blue);
+    margin-bottom: 16px;
+    text-shadow: var(--glow-blue);
+}
+
+.haushalt-input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.haushalt-input-group label {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.haushalt-input {
+    width: 120px;
+    background: var(--hud-surface);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    color: var(--jarvis-blue);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.haushalt-total {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 2px solid var(--jarvis-blue);
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.haushalt-total strong {
+    color: var(--text-primary);
+}
+
+.haushalt-saldo {
+    background: rgba(0, 212, 255, 0.1);
+    border: 2px solid var(--jarvis-blue);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+}
+
+.haushalt-saldo h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--jarvis-blue);
+    margin-bottom: 16px;
+    text-shadow: var(--glow-blue);
+}
+
+.saldo-display {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.saldo-value {
+    display: inline-block;
+    padding: 8px 24px;
+    background: rgba(0, 212, 255, 0.2);
+    border-radius: 6px;
+    color: var(--jarvis-green);
+    text-shadow: var(--glow-green);
+}
+
+.saldo-value.negative {
+    color: var(--jarvis-red);
+    text-shadow: var(--glow-red);
+    background: rgba(255, 82, 82, 0.2);
+}
+
+.haushalt-hint {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 12px;
+}
+
+/* ===========================
+   VERMÖGEN STYLES
+   =========================== */
+
+.vermoegen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.vermoegen-section {
+    background: rgba(0, 212, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.vermoegen-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--jarvis-blue);
+    margin-bottom: 16px;
+    text-shadow: var(--glow-blue);
+}
+
+.vermoegen-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.vermoegen-table td {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.vermoegen-table td:first-child {
+    font-weight: 600;
+    color: var(--text-primary);
+    padding-right: 12px;
+}
+
+.vermoegen-table td:last-child {
+    text-align: right;
+}
+
+.vermoegen-input {
+    width: 140px;
+    background: var(--hud-surface);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    color: var(--jarvis-blue);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.vermoegen-table .total-row td {
+    border-top: 2px solid var(--jarvis-blue);
+    padding-top: 14px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.vermoegen-saldo {
+    background: rgba(0, 212, 255, 0.1);
+    border: 2px solid var(--jarvis-blue);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+}
+
+.vermoegen-saldo h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--jarvis-blue);
+    margin-bottom: 16px;
+    text-shadow: var(--glow-blue);
+}
