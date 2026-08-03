@@ -2751,3 +2751,434 @@ function stopAlarm(device) {
 // Globale Funktionen verfügbar machen
 window.findPhone = findPhone;
 window.stopAlarm = stopAlarm;
+
+/**
+ * ===========================
+ * IMO - IMMOBILIEN KALKULATOR
+ * ===========================
+ */
+
+class ImoKalkulator {
+    constructor() {
+        this.data = {
+            adresse: '',
+            kaufdatum: new Date().toISOString().split('T')[0],
+            kaufpreis: 0,
+            flaeche: 0,
+            zimmer: 0,
+            baujahr: 0,
+            makler: 3.57,
+            notar: 1.5,
+            grundbuch: 0.5,
+            grunderwerb: 6.5,
+            sonstige: 0,
+            eigenkapital: 0,
+            zins: 3.5,
+            tilgung: 2.0,
+            laufzeit: 30,
+            kaltmiete: 0,
+            nebekosten: 0,
+            hausgeld: 0,
+            instandhaltung: 0
+        };
+        
+        this.charts = {};
+        this.init();
+    }
+    
+    init() {
+        // Event Listener für alle Input-Felder
+        const inputs = [
+            'imoAdresse', 'imoKaufdatum', 'imoKaufpreis', 'imoFlaeche',
+            'imoZimmer', 'imoBaujahr', 'imoMakler', 'imoNotar',
+            'imoGrundbuch', 'imoGrunderwerb', 'imoSonstige',
+            'imoEigenkapital', 'imoZins', 'imoTilgung', 'imoLaufzeit',
+            'imoKaltmiete', 'imoNebenkosten', 'imoHausgeld', 'imoInstandhaltung'
+        ];
+        
+        inputs.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('input', () => this.calculate());
+            }
+        });
+        
+        // PDF Export Button
+        const exportBtn = document.getElementById('imoExportPdf');
+        if (exportBtn) {
+            exportBtn.addEventListener('click', () => this.exportPdf());
+        }
+        
+        // Initiale Berechnung
+        this.calculate();
+    }
+    
+    getValue(id) {
+        const el = document.getElementById(id);
+        if (!el) return 0;
+        const val = parseFloat(el.value);
+        return isNaN(val) ? 0 : val;
+    }
+    
+    setValue(id, value, format = 'number') {
+        const el = document.getElementById(id);
+        if (!el) return;
+        
+        if (format === 'currency') {
+            el.textContent = new Intl.NumberFormat('de-DE', {
+                style: 'currency',
+                currency: 'EUR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(value);
+        } else if (format === 'percent') {
+            el.textContent = value.toFixed(2) + ' %';
+        } else {
+            el.textContent = new Intl.NumberFormat('de-DE', {
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2
+            }).format(value);
+        }
+    }
+    
+    calculate() {
+        // Eingaben lesen
+        const kaufpreis = this.getValue('imoKaufpreis');
+        const flaeche = this.getValue('imoFlaeche');
+        const makler = this.getValue('imoMakler');
+        const notar = this.getValue('imoNotar');
+        const grundbuch = this.getValue('imoGrundbuch');
+        const grunderwerb = this.getValue('imoGrunderwerb');
+        const sonstige = this.getValue('imoSonstige');
+        const eigenkapital = this.getValue('imoEigenkapital');
+        const zins = this.getValue('imoZins');
+        const tilgung = this.getValue('imoTilgung');
+        const kaltmiete = this.getValue('imoKaltmiete');
+        const nebekosten = this.getValue('imoNebenkosten');
+        const hausgeld = this.getValue('imoHausgeld');
+        const instandhaltung = this.getValue('imoInstandhaltung');
+        
+        // Berechnungen
+        const maklerKosten = kaufpreis * (makler / 100);
+        const notarkosten = kaufpreis * (notar / 100);
+        const grundbuchKosten = kaufpreis * (grundbuch / 100);
+        const grunderwerbKosten = kaufpreis * (grunderwerb / 100);
+        
+        const gesamtinvest = kaufpreis + maklerKosten + notarkosten + grundbuchKosten + grunderwerbKosten + sonstige;
+        const finanzierung = gesamtinvest - eigenkapital;
+        
+        // Monatliche Rate (Annuität)
+        const zinsMonat = zins / 100 / 12;
+        const tilgungMonat = tilgung / 100 / 12;
+        const rateMonat = finanzierung * (zinsMonat + tilgungMonat);
+        
+        // Jahresmiete
+        const jahresmiete = kaltmiete * 12;
+        
+        // Jährliche Kosten
+        const jahresNebenkosten = nebekosten * 12;
+        const jahresHausgeld = hausgeld * 12;
+        
+        // Netto-Einnahmen pro Jahr
+        const nettoEinnahmen = jahresmiete - jahresNebenkosten - jahresHausgeld - instandhaltung;
+        
+        // Monatlicher Cashflow
+        const cashflowMonat = (kaltmiete + nebekosten) - rateMonat - hausgeld - (instandhaltung / 12);
+        
+        // Rendite
+        const bruttorendite = gesamtinvest > 0 ? (jahresmiete / gesamtinvest) * 100 : 0;
+        const nettorendite = eigenkapital > 0 ? (nettoEinnahmen / eigenkapital) * 100 : 0;
+        
+        // Preis pro m²
+        const preisProQm = flaeche > 0 ? kaufpreis / flaeche : 0;
+        
+        // Ergebnisse anzeigen
+        this.setValue('imoGesamtinvest', gesamtinvest, 'currency');
+        this.setValue('imoFinanzierung', finanzierung, 'currency');
+        this.setValue('imoMonatsrate', rateMonat, 'currency');
+        this.setValue('imoJahresmiete', jahresmiete, 'currency');
+        this.setValue('imoBruttorendite', bruttorendite, 'percent');
+        this.setValue('imoNettorendite', nettorendite, 'percent');
+        this.setValue('imoCashflow', cashflowMonat, 'currency');
+        this.setValue('imoPreisProQm', preisProQm, 'currency');
+        
+        // Cashflow farbig markieren
+        const cashflowEl = document.getElementById('imoCashflow');
+        if (cashflowEl) {
+            if (cashflowMonat > 0) {
+                cashflowEl.style.color = 'var(--jarvis-green)';
+                cashflowEl.style.textShadow = 'var(--glow-green)';
+            } else {
+                cashflowEl.style.color = 'var(--jarvis-red)';
+                cashflowEl.style.textShadow = 'var(--glow-orange)';
+            }
+        }
+        
+        // Diagramme aktualisieren
+        this.updateCharts({
+            kaufpreis, maklerKosten, notarkosten, grundbuchKosten, grunderwerbKosten, sonstige,
+            eigenkapital, finanzierung,
+            kaltmiete, nebekosten, hausgeld, instandhaltung, rateMonat,
+            jahresmiete, nettoEinnahmen, cashflowMonat, bruttorendite, nettorendite
+        });
+    }
+    
+    updateCharts(data) {
+        // Chart.js laden falls nicht vorhanden
+        if (typeof Chart === 'undefined') {
+            console.warn('Chart.js nicht geladen, überspringe Diagramme');
+            return;
+        }
+        
+        // Cashflow Verteilung (Monatlich)
+        const cashflowCtx = document.getElementById('imoChartCashflow');
+        if (cashflowCtx) {
+            if (this.charts.cashflow) {
+                this.charts.cashflow.destroy();
+            }
+            
+            this.charts.cashflow = new Chart(cashflowCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Mieteinnahmen', 'Nebenkosten', 'Hausgeld', 'Rate', 'Instandhaltung'],
+                    datasets: [{
+                        data: [
+                            data.kaltmiete + data.nebekosten,
+                            data.nebekosten,
+                            data.hausgeld,
+                            data.rateMonat,
+                            data.instandhaltung / 12
+                        ],
+                        backgroundColor: [
+                            'rgba(0, 255, 136, 0.7)',
+                            'rgba(255, 153, 0, 0.7)',
+                            'rgba(255, 153, 0, 0.5)',
+                            'rgba(0, 212, 255, 0.7)',
+                            'rgba(255, 51, 51, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(0, 255, 136, 1)',
+                            'rgba(255, 153, 0, 1)',
+                            'rgba(255, 153, 0, 1)',
+                            'rgba(0, 212, 255, 1)',
+                            'rgba(255, 51, 51, 1)'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                color: '#E0F7FF',
+                                font: { size: 10 }
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Monatliche Cashflow Verteilung',
+                            color: '#00D4FF',
+                            font: { size: 14, weight: 'bold' }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Rendite Vergleich
+        const renditeCtx = document.getElementById('imoChartRendite');
+        if (renditeCtx) {
+            if (this.charts.rendite) {
+                this.charts.rendite.destroy();
+            }
+            
+            this.charts.rendite = new Chart(renditeCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Brutto-Rendite', 'Netto-Rendite'],
+                    datasets: [{
+                        label: 'Rendite (%)',
+                        data: [data.bruttorendite, data.nettorendite],
+                        backgroundColor: [
+                            'rgba(0, 212, 255, 0.7)',
+                            'rgba(0, 255, 136, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(0, 212, 255, 1)',
+                            'rgba(0, 255, 136, 1)'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Rendite Vergleich',
+                            color: '#00D4FF',
+                            font: { size: 14, weight: 'bold' }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    color: '#88AABB',
+                                    callback: (value) => value + '%'
+                                },
+                                grid: {
+                                    color: 'rgba(0, 212, 255, 0.1)'
+                                }
+                            },
+                            x: {
+                                ticks: {
+                                    color: '#88AABB'
+                                },
+                                grid: {
+                                    display: false
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    }
+    
+    async exportPdf() {
+        // Einfacher PDF Export via Browser Print
+        const printWindow = window.open('', '_blank');
+        if (!printWindow) {
+            alert('❌ Popup-Blocker verhindert PDF Export. Bitte Popups für diese Seite erlauben.');
+            return;
+        }
+        
+        // Daten sammeln
+        const datum = new Date().toLocaleDateString('de-DE');
+        const adresse = document.getElementById('imoAdresse').value || 'N/A';
+        const kaufpreis = document.getElementById('imoKaufpreis').value || '0';
+        const flaeche = document.getElementById('imoFlaeche').value || '0';
+        const gesamtinvest = document.getElementById('imoGesamtinvest').textContent;
+        const finanzierung = document.getElementById('imoFinanzierung').textContent;
+        const monatsrate = document.getElementById('imoMonatsrate').textContent;
+        const jahresmiete = document.getElementById('imoJahresmiete').textContent;
+        const bruttorendite = document.getElementById('imoBruttorendite').textContent;
+        const nettorendite = document.getElementById('imoNettorendite').textContent;
+        const cashflow = document.getElementById('imoCashflow').textContent;
+        
+        const html = `
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Immobilien Kalkulation - ${adresse}</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 40px; color: #333; }
+        h1 { color: #0088CC; border-bottom: 2px solid #0088CC; padding-bottom: 10px; }
+        h2 { color: #0088CC; margin-top: 30px; }
+        .section { margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #0088CC; color: white; }
+        .highlight { background: #e6f7ff; font-weight: bold; }
+        .footer { margin-top: 40px; font-size: 12px; color: #666; text-align: center; }
+        @media print {
+            body { padding: 20px; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <h1>🏠 Immobilien Kalkulation</h1>
+    <p><strong>Datum:</strong> ${datum}</p>
+    
+    <div class="section">
+        <h2>📍 Objekt</h2>
+        <table>
+            <tr><th>Adresse</th><td>${adresse}</td></tr>
+            <tr><th>Kaufpreis</th><td>${kaufpreis} €</td></tr>
+            <tr><th>Wohnfläche</th><td>${flaeche} m²</td></tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>💰 Investition</h2>
+        <table>
+            <tr class="highlight"><th>Gesamtinvestition</th><td>${gesamtinvest}</td></tr>
+            <tr><th>Finanzierungssumme</th><td>${finanzierung}</td></tr>
+            <tr><th>Monatliche Rate</th><td>${monatsrate}</td></tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>📈 Rendite & Cashflow</h2>
+        <table>
+            <tr><th>Jahresmiete (Netto-Kalt)</th><td>${jahresmiete}</td></tr>
+            <tr class="highlight"><th>Brutto-Rendite</th><td>${bruttorendite}</td></tr>
+            <tr class="highlight"><th>Netto-Rendite</th><td>${nettorendite}</td></tr>
+            <tr><th>Cashflow (Monat)</th><td>${cashflow}</td></tr>
+        </table>
+    </div>
+    
+    <div class="footer no-print">
+        <p>Erstellt mit J.A.R.V.I.S. Immobilien Kalkulator</p>
+        <button onclick="window.print()" style="padding: 10px 20px; background: #0088CC; color: white; border: none; cursor: pointer; margin-top: 20px;">
+            🖨️ Drucken / Als PDF speichern
+        </button>
+    </div>
+    
+    <script>
+        // Auto-print wenn nicht im Print-Modus
+        if (window.location.search !== '?noauto') {
+            // window.print(); // Optional: Automatischer Druckdialog
+        }
+    </script>
+</body>
+</html>
+        `;
+        
+        printWindow.document.write(html);
+        printWindow.document.close();
+    }
+}
+
+// IMO Kalkulator initialisieren wenn View geladen wird
+document.addEventListener('DOMContentLoaded', () => {
+    // Menu Item Listener für IMO View
+    const imoMenuBtn = document.querySelector('[data-view="imo"]');
+    const imoView = document.getElementById('view-imo');
+    
+    if (imoMenuBtn && imoView) {
+        imoMenuBtn.addEventListener('click', () => {
+            // Alle Menu Items deaktivieren
+            document.querySelectorAll('.menu-item').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // IMO Menu Item aktivieren
+            imoMenuBtn.classList.add('active');
+            
+            // Alle Views ausblenden
+            document.querySelectorAll('.view-container').forEach(view => {
+                view.classList.remove('active');
+                view.style.display = 'none';
+            });
+            
+            // IMO View anzeigen
+            imoView.classList.add('active');
+            imoView.style.display = 'block';
+            
+            // IMO Kalkulator initialisieren falls noch nicht geschehen
+            if (!window.imoKalkulator) {
+                window.imoKalkulator = new ImoKalkulator();
+            }
+        });
+    }
+});

@@ -8,6 +8,7 @@
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%2300D4FF' stroke-width='3'/><circle cx='50' cy='50' r='25' fill='%2300D4FF' opacity='0.3'/><circle cx='50' cy='50' r='10' fill='%2300D4FF'/></svg>">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
     <div id="app">
@@ -156,6 +157,10 @@
                     <button class="menu-item active" data-view="home" data-label="HOME">
                         <span class="menu-line"></span>
                         <span class="menu-text">HOME</span>
+                    </button>
+                    <button class="menu-item" data-view="imo" data-label="IMO">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">IMO</span>
                     </button>
                     <button class="menu-item" data-view="cameras" data-label="KAMERAS">
                         <span class="menu-line"></span>
@@ -330,6 +335,189 @@
                                 <div class="phase-row"><span>Haus Phase A</span><span class="phase-value" id="stromPhaseA">– W</span></div>
                                 <div class="phase-row"><span>Haus Phase B</span><span class="phase-value" id="stromPhaseB">– W</span></div>
                                 <div class="phase-row"><span>Haus Phase C</span><span class="phase-value" id="stromPhaseC">– W</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMO View Container (Immobilien Kalkulator) -->
+                    <div class="view-container" id="view-imo">
+                        <div class="imo-container">
+                            <div class="imo-header">
+                                <h2 class="imo-title">🏠 Immobilien Kalkulator</h2>
+                                <div class="imo-actions">
+                                    <button class="hud-button primary" id="imoExportPdf">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                            <polyline points="7 10 12 15 17 10"></polyline>
+                                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                                        </svg>
+                                        PDF Export
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="imo-content">
+                                <!-- Linke Spalte: Eingaben -->
+                                <div class="imo-inputs">
+                                    <div class="imo-section">
+                                        <h3 class="imo-section-title">📍 Objekt & Investition</h3>
+                                        <div class="imo-form-grid">
+                                            <div class="input-group">
+                                                <label class="hud-label">Adresse</label>
+                                                <input type="text" id="imoAdresse" class="hud-input" placeholder="Musterstr. 1, 12345 Musterstadt">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Kaufdatum</label>
+                                                <input type="date" id="imoKaufdatum" class="hud-input">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Kaufpreis (€)</label>
+                                                <input type="number" id="imoKaufpreis" class="hud-input" placeholder="250000" step="1000">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Wohnfläche (m²)</label>
+                                                <input type="number" id="imoFlaeche" class="hud-input" placeholder="80" step="0.1">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Zimmer</label>
+                                                <input type="number" id="imoZimmer" class="hud-input" placeholder="3" step="1">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Baujahr</label>
+                                                <input type="number" id="imoBaujahr" class="hud-input" placeholder="1990" step="1">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="imo-section">
+                                        <h3 class="imo-section-title">💰 Kaufnebenkosten</h3>
+                                        <div class="imo-form-grid">
+                                            <div class="input-group">
+                                                <label class="hud-label">Makler (%)</label>
+                                                <input type="number" id="imoMakler" class="hud-input" value="3.57" step="0.01">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Notar (%)</label>
+                                                <input type="number" id="imoNotar" class="hud-input" value="1.5" step="0.01">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Grundbuch (%)</label>
+                                                <input type="number" id="imoGrundbuch" class="hud-input" value="0.5" step="0.01">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Grunderwerbsteuer (%)</label>
+                                                <input type="number" id="imoGrunderwerb" class="hud-input" value="6.5" step="0.01">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Sonstige (€)</label>
+                                                <input type="number" id="imoSonstige" class="hud-input" value="0" step="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="imo-section">
+                                        <h3 class="imo-section-title">🏦 Finanzierung</h3>
+                                        <div class="imo-form-grid">
+                                            <div class="input-group">
+                                                <label class="hud-label">Eigenkapital (€)</label>
+                                                <input type="number" id="imoEigenkapital" class="hud-input" placeholder="50000" step="1000">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Zinssatz (%)</label>
+                                                <input type="number" id="imoZins" class="hud-input" placeholder="3.5" step="0.1">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Tilgung (%)</label>
+                                                <input type="number" id="imoTilgung" class="hud-input" placeholder="2.0" step="0.1">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Laufzeit (Jahre)</label>
+                                                <input type="number" id="imoLaufzeit" class="hud-input" placeholder="30" step="1">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="imo-section">
+                                        <h3 class="imo-section-title">📈 Miete & Rendite</h3>
+                                        <div class="imo-form-grid">
+                                            <div class="input-group">
+                                                <label class="hud-label">Kaltmiete (€/Monat)</label>
+                                                <input type="number" id="imoKaltmiete" class="hud-input" placeholder="1200" step="50">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Nebenkosten (€/Monat)</label>
+                                                <input type="number" id="imoNebenkosten" class="hud-input" placeholder="300" step="50">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Hausgeld (€/Monat)</label>
+                                                <input type="number" id="imoHausgeld" class="hud-input" placeholder="250" step="50">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Instandhaltung (€/Jahr)</label>
+                                                <input type="number" id="imoInstandhaltung" class="hud-input" placeholder="1000" step="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Rechte Spalte: Ergebnisse & Diagramme -->
+                                <div class="imo-results">
+                                    <div class="imo-section">
+                                        <h3 class="imo-section-title">📊 Kennzahlen</h3>
+                                        <div class="imo-kpi-grid">
+                                            <div class="imo-kpi-card">
+                                                <div class="kpi-label">Gesamtinvestition</div>
+                                                <div class="kpi-value" id="imoGesamtinvest">0 €</div>
+                                                <div class="kpi-sub">Kaufpreis + Nebenkosten</div>
+                                            </div>
+                                            <div class="imo-kpi-card">
+                                                <div class="kpi-label">Finanzierungssumme</div>
+                                                <div class="kpi-value" id="imoFinanzierung">0 €</div>
+                                                <div class="kpi-sub">Gesamtinvest - Eigenkapital</div>
+                                            </div>
+                                            <div class="imo-kpi-card">
+                                                <div class="kpi-label">Monatliche Rate</div>
+                                                <div class="kpi-value" id="imoMonatsrate">0 €</div>
+                                                <div class="kpi-sub">Zins + Tilgung</div>
+                                            </div>
+                                            <div class="imo-kpi-card highlight">
+                                                <div class="kpi-label">Netto-Kaltmiete (Jahr)</div>
+                                                <div class="kpi-value" id="imoJahresmiete">0 €</div>
+                                                <div class="kpi-sub">12 × Kaltmiete</div>
+                                            </div>
+                                            <div class="imo-kpi-card highlight">
+                                                <div class="kpi-label">Brutto-Rendite</div>
+                                                <div class="kpi-value" id="imoBruttorendite">0 %</div>
+                                                <div class="kpi-sub">Jahresmiete ÷ Gesamtinvest</div>
+                                            </div>
+                                            <div class="imo-kpi-card highlight">
+                                                <div class="kpi-label">Netto-Rendite</div>
+                                                <div class="kpi-value" id="imoNettorendite">0 %</div>
+                                                <div class="kpi-sub">(Miete - Kosten) ÷ EK</div>
+                                            </div>
+                                            <div class="imo-kpi-card">
+                                                <div class="kpi-label">Cashflow (Monat)</div>
+                                                <div class="kpi-value" id="imoCashflow">0 €</div>
+                                                <div class="kpi-sub">Miete - Rate - Kosten</div>
+                                            </div>
+                                            <div class="imo-kpi-card">
+                                                <div class="kpi-label">Preis pro m²</div>
+                                                <div class="kpi-value" id="imoPreisProQm">0 €</div>
+                                                <div class="kpi-sub">Kaufpreis ÷ Fläche</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="imo-section">
+                                        <h3 class="imo-section-title">📈 Diagramme</h3>
+                                        <div class="imo-chart-container">
+                                            <canvas id="imoChartCashflow"></canvas>
+                                        </div>
+                                        <div class="imo-chart-container">
+                                            <canvas id="imoChartRendite"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

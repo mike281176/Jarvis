@@ -1630,3 +1630,227 @@ html, body {
         font-size: 0.5rem;
     }
 }
+/* ===========================
+   IMO - IMMOBILIEN KALKULATOR
+   =========================== */
+
+/* IMO Container Layout */
+.imo-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 140px);
+    padding: var(--space-md);
+    gap: var(--space-md);
+}
+
+.imo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--hud-surface);
+    border: 1px solid var(--jarvis-blue);
+    border-radius: 4px;
+    box-shadow: var(--glow-blue);
+}
+
+.imo-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--jarvis-blue-light);
+    text-shadow: var(--glow-blue);
+    margin: 0;
+}
+
+.imo-actions {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.imo-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    flex: 1;
+    overflow: hidden;
+}
+
+.imo-inputs,
+.imo-results {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    overflow-y: auto;
+    padding-right: var(--space-sm);
+}
+
+/* Scrollbar Styling */
+.imo-inputs::-webkit-scrollbar,
+.imo-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+.imo-inputs::-webkit-scrollbar-track,
+.imo-results::-webkit-scrollbar-track {
+    background: rgba(0, 212, 255, 0.1);
+    border-radius: 3px;
+}
+
+.imo-inputs::-webkit-scrollbar-thumb,
+.imo-results::-webkit-scrollbar-thumb {
+    background: var(--jarvis-blue);
+    border-radius: 3px;
+}
+
+/* IMO Sections */
+.imo-section {
+    background: var(--hud-surface);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 6px;
+    padding: var(--space-md);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.1);
+}
+
+.imo-section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--jarvis-blue-light);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* IMO Form Grid */
+.imo-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-sm);
+}
+
+/* KPI Grid */
+.imo-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-sm);
+}
+
+.imo-kpi-card {
+    background: rgba(0, 20, 40, 0.6);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 6px;
+    padding: var(--space-md);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.imo-kpi-card:hover {
+    border-color: var(--jarvis-blue-light);
+    box-shadow: var(--glow-blue);
+    transform: translateY(-2px);
+}
+
+.imo-kpi-card.highlight {
+    background: rgba(0, 255, 136, 0.05);
+    border-color: var(--jarvis-green);
+}
+
+.kpi-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-xs);
+}
+
+.kpi-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--jarvis-blue-light);
+    text-shadow: var(--glow-blue);
+    margin-bottom: var(--space-xs);
+    font-family: var(--font-hud);
+}
+
+.imo-kpi-card.highlight .kpi-value {
+    color: var(--jarvis-green);
+    text-shadow: var(--glow-green);
+}
+
+.kpi-sub {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Chart Containers */
+.imo-chart-container {
+    background: rgba(0, 20, 40, 0.6);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 6px;
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    height: 250px;
+    position: relative;
+}
+
+.imo-chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .imo-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .imo-inputs,
+    .imo-results {
+        overflow-y: visible;
+    }
+    
+    .imo-container {
+        height: auto;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .imo-header {
+        flex-direction: column;
+        gap: var(--space-sm);
+        text-align: center;
+    }
+    
+    .imo-title {
+        font-size: 1.2rem;
+    }
+    
+    .imo-form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .imo-kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .kpi-value {
+        font-size: 1.2rem;
+    }
+    
+    .imo-chart-container {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imo-kpi-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .imo-title {
+        font-size: 1rem;
+    }
+}
