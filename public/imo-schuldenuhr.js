@@ -144,11 +144,12 @@ class ImoSchuldenuhr {
                 gesamt: gesamtRestschuld,
                 restschuld: gesamtRestschuld,
                 kredite: data.kredite,
-                lender: data.lender || 'LVM Versicherung'
+                lender: data.lender || 'LVM Versicherung',
+                einzelKredite: data.kredite
             };
         } catch (e) {
             console.warn('⚠️ LVM-Kredite konnten nicht geladen werden:', e.message);
-            return { gesamt: 0, restschuld: 0, kredite: [], lender: 'LVM' };
+            return { gesamt: 0, restschuld: 0, kredite: [], lender: 'LVM', einzelKredite: [] };
         }
     }
     
@@ -159,17 +160,25 @@ class ImoSchuldenuhr {
         // LVM-Kredite laden
         const lvmData = await this.loadLvmKredite();
         
+        // Einzelne Kredite extrahieren
+        const kredit1 = lvmData.einzelKredite.find(k => k.vertragsnummer === '01617662210');
+        const kredit2 = lvmData.einzelKredite.find(k => k.vertragsnummer === '01500132210');
+        
+        const restschuld1 = kredit1 ? kredit1.restschuld_aktuell : 0;
+        const restschuld2 = kredit2 ? kredit2.restschuld_aktuell : 0;
+        const gesamtRestschuld = restschuld1 + restschuld2;
+        
         // Moselstraße Gesamt
         this.data.mosel.gesamt = this.data.mosel.kaufpreis + this.data.mosel.nebenkosten;
         
         // Wenn keine manuelle Restschuld eingegeben, nutze LVM-Daten
-        if (this.data.mosel.restschuld === 0 && lvmData.restschuld > 0) {
-            this.data.mosel.restschuld = lvmData.restschuld;
+        if (this.data.mosel.restschuld === 0 && gesamtRestschuld > 0) {
+            this.data.mosel.restschuld = gesamtRestschuld;
         }
         
         // === VARIANT 1: IST ===
         const aktivaIst = this.data.mosel.wertAktuell + this.data.kontoTanja + this.data.kontoMike;
-        const passivaIst = this.data.mosel.restschuld + this.data.ratenkredite + this.data.dispo + this.data.sonstige;
+        const passivaIst = gesamtRestschuld + this.data.ratenkredite + this.data.dispo + this.data.sonstige;
         const nettoIst = aktivaIst - passivaIst;
         
         // Anzeige Variante 1

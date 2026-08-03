@@ -23,7 +23,8 @@
       "referenznummer": "48.511.360.6",
       "auszahlung": "2021-09-01",
       "urspruengliche_summe": 0,
-      "restschuld_aktuell": 0,
+      "restschuld_aktuell": 91729.24,
+      "restschuld_stand": "2025-12-31",
       "zinssatz": 0,
       "tilgung": 0,
       "monatliche_rate": 1118.54,
@@ -36,6 +37,35 @@
         "bestaetigung_2025": 1541,
         "bestaetigung_2024": 1289,
         "bestaetigung_2023": 594
+      }
+    },
+    {
+      "id": "lvm_mosel_2",
+      "name": "LVM Immobilienfinanzierung Moselstraße (Zweites Darlehen)",
+      "typ": "Annuitätendarlehen",
+      "kreditnehmer": [
+        "Mike Schiller",
+        "Tanja Schiller"
+      ],
+      "objekt": "Moselstraße 46, 53842 Troisdorf",
+      "vertragsnummer": "01500132210",
+      "referenznummer": "47.023.145.9",
+      "auszahlung": "2021-09-01",
+      "urspruengliche_summe": 0,
+      "restschuld_aktuell": 68230.47,
+      "restschuld_stand": "2023-12-31",
+      "zinssatz": 0,
+      "tilgung": 0,
+      "monatliche_rate": 0,
+      "zins_2023": 0,
+      "tilgung_2023": 0,
+      "zinsbindung_bis": "UNBEKANNT",
+      "volltilgung_voraussichtlich": "UNBEKANNT",
+      "sonderbedingungen": "UNBEKANNT",
+      "dokumente": {
+        "bestaetigung_2025": 1540,
+        "bestaetigung_2024": 1425,
+        "bestaetigung_2023": 610
       }
     }
   ],

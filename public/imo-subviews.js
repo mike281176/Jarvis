@@ -379,8 +379,13 @@ class ImoSubViews {
         
         // LVM-Kredite laden
         this.loadLvmKredite().then(lvmData => {
-            const hypotekLVM = lvmData.restschuld || 0;
-            const weitereLVM = 0; // Platz für weitere Darlehen
+            // Einzelne Kredite anzeigen
+            const kredit1 = lvmData.einzelKredite.find(k => k.vertragsnummer === '01617662210');
+            const kredit2 = lvmData.einzelKredite.find(k => k.vertragsnummer === '01500132210');
+            
+            const restschuld1 = kredit1 ? kredit1.restschuld_aktuell : 0;
+            const restschuld2 = kredit2 ? kredit2.restschuld_aktuell : 0;
+            const gesamtRestschuld = restschuld1 + restschuld2;
             
             const aktiva = 
                 (data.gesamtinvest || 0) + // Immobilienwert
@@ -390,8 +395,7 @@ class ImoSubViews {
                 (parseFloat(document.getElementById('vmSonstigeAktiva')?.value) || 0);
             
             const passiva = 
-                hypotekLVM + // LVM Hypothek
-                weitereLVM + // Weitere LVM
+                gesamtRestschuld + // Alle LVM Hypotheken
                 (parseFloat(document.getElementById('vmRatenkredite')?.value) || 0) +
                 (parseFloat(document.getElementById('vmDispo')?.value) || 0) +
                 (parseFloat(document.getElementById('vmSonstigeSchulden')?.value) || 0);
@@ -399,8 +403,12 @@ class ImoSubViews {
             const nettovermoegen = aktiva - passiva;
             
             // Anzeige aktualisieren
-            document.getElementById('vmHypothekLVM').textContent = this.formatCurrency(hypotekLVM);
-            document.getElementById('vmWeitereLVM').textContent = this.formatCurrency(weitereLVM);
+            if (kredit1) {
+                document.getElementById('vmHypothekLVM').textContent = this.formatCurrency(restschuld1) + ' (01617662210)';
+            }
+            if (kredit2) {
+                document.getElementById('vmWeitereLVM').textContent = this.formatCurrency(restschuld2) + ' (01500132210)';
+            }
             document.getElementById('vmSummeAktiva').textContent = this.formatCurrency(aktiva);
             document.getElementById('vmSummePassiva').textContent = this.formatCurrency(passiva);
             
@@ -426,19 +434,21 @@ class ImoSubViews {
             if (!response.ok) throw new Error('LVM-Daten nicht gefunden');
             
             const data = await response.json();
+            // Alle Restschulden summieren
             const gesamtRestschuld = data.kredite.reduce((sum, kredit) => sum + (kredit.restschuld_aktuell || 0), 0);
             
             return {
                 gesamt: gesamtRestschuld,
                 restschuld: gesamtRestschuld,
-                kredite: data.kredite
+                kredite: data.kredite,
+                lender: data.lender || 'LVM Versicherung',
+                einzelKredite: data.kredite
             };
         } catch (e) {
             console.warn('⚠️ LVM-Kredite konnten nicht geladen werden:', e.message);
-            return { gesamt: 0, restschuld: 0, kredite: [] };
+            return { gesamt: 0, restschuld: 0, kredite: [], lender: 'LVM', einzelKredite: [] };
         }
     }
-    
     /**
      * PDF Export für Bankgespräch
      */
