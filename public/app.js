@@ -3437,6 +3437,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!window.imoKalkulator) {
                 window.imoKalkulator = new ImoKalkulator();
             }
+            
+            // IMO Module initialisieren (Modul 1 & 2)
+            if (!window.imoModule) {
+                window.imoModule = new ImoModule(window.imoKalkulator);
+            }
         });
     }
 });

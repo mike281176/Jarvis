@@ -9,6 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%2300D4FF' stroke-width='3'/><circle cx='50' cy='50' r='25' fill='%2300D4FF' opacity='0.3'/><circle cx='50' cy='50' r='10' fill='%2300D4FF'/></svg>">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="imo-module.js"></script>
 </head>
 <body>
     <div id="app">
@@ -345,6 +346,20 @@
                             <div class="imo-header">
                                 <h2 class="imo-title">🏠 Immobilien Kalkulator</h2>
                                 <div class="imo-actions">
+                                    <button class="hud-button secondary" id="imoObjektSpeichern" title="Objekt speichern">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                                            <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                                            <polyline points="7 3 7 8 15 8"></polyline>
+                                        </svg>
+                                        Speichern
+                                    </button>
+                                    <button class="hud-button secondary" id="imoObjektLaden" title="Objekt laden">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                        Laden
+                                    </button>
                                     <button class="hud-button primary" id="imoExportPdf">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
                                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -356,21 +371,46 @@
                                 </div>
                             </div>
 
+                            <!-- Objekt-Liste (Modul 2) -->
+                            <div class="imo-objekt-liste" id="imoObjektListe" style="display: none;">
+                                <div class="objekt-liste-header">
+                                    <h3>💾 Gespeicherte Objekte</h3>
+                                    <button class="hud-button icon" id="imoObjektListeSchliessen">×</button>
+                                </div>
+                                <div class="objekt-liste-content" id="imoObjektListeContent">
+                                    <!-- Wird dynamisch gefüllt -->
+                                </div>
+                            </div>
+
                             <div class="imo-content">
                                 <!-- Linke Spalte: Eingaben -->
                                 <div class="imo-inputs">
                                     <div class="imo-section">
                                         <h3 class="imo-section-title">📍 Objekt & Investition</h3>
                                         <div class="imo-form-grid">
-                                            <div class="input-group">
+                                            <div class="input-group full-width">
                                                 <label class="hud-label">Adresse</label>
                                                 <input type="text" id="imoAdresse" class="hud-input" placeholder="Musterstr. 1, 12345 Musterstadt">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">PLZ</label>
+                                                <input type="text" id="imoPLZ" class="hud-input" placeholder="53840" maxlength="5">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Stadtteil</label>
+                                                <select id="imoStadtteil" class="hud-input">
+                                                    <option value="">Bitte wählen...</option>
+                                                    <option value="troisdorf_mitte">Troisdorf-Mitte</option>
+                                                    <option value="sieglar">Sieglar</option>
+                                                    <option value="eschmar">Eschmar</option>
+                                                    <option value="spich">Spich</option>
+                                                </select>
                                             </div>
                                             <div class="input-group">
                                                 <label class="hud-label">Kaufdatum</label>
                                                 <input type="date" id="imoKaufdatum" class="hud-input">
                                             </div>
-                                            <div class="input-group">
+                                            <div class="input-group full-width">
                                                 <label class="hud-label">Kaufpreis (€)</label>
                                                 <input type="number" id="imoKaufpreis" class="hud-input" placeholder="250000" step="1000">
                                             </div>
@@ -386,6 +426,31 @@
                                                 <label class="hud-label">Baujahr</label>
                                                 <input type="number" id="imoBaujahr" class="hud-input" placeholder="1990" step="1">
                                             </div>
+                                        </div>
+                                        
+                                        <!-- Mietspiegel-Empfehlung (Modul 1) -->
+                                        <div class="mietspiegel-hint" id="mietspiegelHint" style="display: none;">
+                                            <div class="hint-header">
+                                                <span class="hint-icon">📊</span>
+                                                <strong>Mietspiegel-Empfehlung</strong>
+                                            </div>
+                                            <div class="hint-content">
+                                                <div class="mietspiegel-row">
+                                                    <span>Ortsübliche Kaltmiete:</span>
+                                                    <span id="mietspiegelMiete">-- €/m²</span>
+                                                </div>
+                                                <div class="mietspiegel-row">
+                                                    <span>Empfohlene Miete:</span>
+                                                    <span id="mietspiegelEmpfehlung">-- €/Monat</span>
+                                                </div>
+                                                <div class="mietspiegel-row warning" id="mietspiegelWarnung" style="display: none;">
+                                                    <span>⚠️ Hinweis:</span>
+                                                    <span id="mietspiegelWarnText">--</span>
+                                                </div>
+                                            </div>
+                                            <button class="hud-button small" id="mietspiegelUebernehmen">
+                                                Empfehlung übernehmen
+                                            </button>
                                         </div>
                                     </div>
 

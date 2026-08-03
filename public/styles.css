@@ -1948,3 +1948,146 @@ html, body {
         grid-template-columns: 1fr;
     }
 }
+/* ===========================
+   IMO - MIETSPIEGEL & OBJEKT-LISTE
+   =========================== */
+
+/* Objekt-Liste Panel */
+.imo-objekt-liste {
+    background: var(--hud-surface);
+    border: 1px solid var(--jarvis-blue);
+    border-radius: 6px;
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    box-shadow: var(--glow-blue);
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.objekt-liste-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.objekt-liste-header h3 {
+    margin: 0;
+    color: var(--jarvis-blue-light);
+    font-size: 1.1rem;
+}
+
+.objekt-liste-content {
+    display: grid;
+    gap: var(--space-sm);
+}
+
+.objekt-item {
+    background: rgba(0, 20, 40, 0.6);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 4px;
+    padding: var(--space-sm);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.objekt-item:hover {
+    border-color: var(--jarvis-blue-light);
+    box-shadow: var(--glow-blue);
+    transform: translateX(4px);
+}
+
+.objekt-item-info {
+    flex: 1;
+}
+
+.objekt-item-address {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.objekt-item-meta {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.objekt-item-actions {
+    display: flex;
+    gap: var(--space-xs);
+}
+
+/* Mietspiegel Hint Box */
+.mietspiegel-hint {
+    margin-top: var(--space-md);
+    background: rgba(0, 255, 136, 0.05);
+    border: 1px solid var(--jarvis-green);
+    border-radius: 6px;
+    padding: var(--space-md);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.1);
+}
+
+.hint-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    color: var(--jarvis-green);
+    font-size: 0.95rem;
+}
+
+.hint-icon {
+    font-size: 1.2rem;
+}
+
+.hint-content {
+    margin-bottom: var(--space-sm);
+}
+
+.mietspiegel-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.mietspiegel-row:last-child {
+    border-bottom: none;
+}
+
+.mietspiegel-row.warning {
+    color: var(--jarvis-orange);
+    background: rgba(255, 153, 0, 0.05);
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: var(--space-sm);
+}
+
+.mietspiegel-row span:last-child {
+    font-weight: 600;
+    color: var(--jarvis-blue-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .imo-objekt-liste {
+        max-height: 250px;
+    }
+    
+    .objekt-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-sm);
+    }
+    
+    .objekt-item-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

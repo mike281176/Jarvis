@@ -1,0 +1,169 @@
+{
+  "version": "2025-2026",
+  "updated": "2026-08-03",
+  "regions": {
+    "troisdorf": {
+      "name": "Troisdorf",
+      "bundesland": "Nordrhein-Westfalen",
+      "kreis": "Rhein-Sieg-Kreis",
+      "mieter": {
+        "gesamt": {
+          "min": 10.79,
+          "max": 13.01,
+          "mittel": 11.90,
+          "trend": "+0.7% YoY"
+        },
+        "wohnung": {
+          "min": 10.50,
+          "max": 12.50,
+          "mittel": 11.50
+        },
+        "haus": {
+          "min": 12.00,
+          "max": 14.50,
+          "mittel": 13.25
+        }
+      },
+      "kaufpreise": {
+        "wohnung": {
+          "min": 2800,
+          "max": 3800,
+          "mittel": 3300
+        },
+        "haus": {
+          "min": 3200,
+          "max": 4500,
+          "mittel": 3850
+        },
+        "mehrfamilienhaus": {
+          "min": 2500,
+          "max": 3500,
+          "mittel": 3000
+        }
+      },
+      "stadtteile": {
+        "troisdorf_mitte": {
+          "name": "Troisdorf-Mitte",
+          "mieter_wohnung": 11.80,
+          "mieter_haus": 13.40,
+          "kauf_wohnung": 3400,
+          "kauf_haus": 3900
+        },
+        "sieglar": {
+          "name": "Sieglar",
+          "mieter_wohnung": 11.84,
+          "mieter_haus": 13.40,
+          "kauf_wohnung": 3500,
+          "kauf_haus": 4000
+        },
+        "eschmar": {
+          "name": "Eschmar",
+          "mieter_wohnung": 11.50,
+          "mieter_haus": 13.00,
+          "kauf_wohnung": 3300,
+          "kauf_haus": 3800
+        },
+        "spich": {
+          "name": "Spich",
+          "mieter_wohnung": 12.50,
+          "mieter_haus": 14.50,
+          "kauf_wohnung": 3800,
+          "kauf_haus": 4500
+        }
+      },
+      "infrastruktur_score": 8.5,
+      "nachfrage": "Hoch",
+      "zielgruppe": "Pendler Köln/Bonn"
+    },
+    "rhein_sieg_kreis": {
+      "name": "Rhein-Sieg-Kreis",
+      "bundesland": "Nordrhein-Westfalen",
+      "mieter": {
+        "gesamt": {
+          "min": 10.50,
+          "max": 14.00,
+          "mittel": 12.25,
+          "trend": "+1.2% YoY"
+        }
+      },
+      "kaufpreise": {
+        "wohnung": {
+          "min": 2500,
+          "max": 4000,
+          "mittel": 3250
+        },
+        "haus": {
+          "min": 3000,
+          "max": 5000,
+          "mittel": 4000
+        }
+      },
+      "infrastruktur_score": 8.0,
+      "nachfrage": "Sehr Hoch"
+    },
+    "koeln": {
+      "name": "Köln",
+      "bundesland": "Nordrhein-Westfalen",
+      "mieter": {
+        "gesamt": {
+          "min": 13.50,
+          "max": 18.00,
+          "mittel": 15.75,
+          "trend": "+2.1% YoY"
+        }
+      },
+      "kaufpreise": {
+        "wohnung": {
+          "min": 4000,
+          "max": 7000,
+          "mittel": 5500
+        },
+        "haus": {
+          "min": 5000,
+          "max": 9000,
+          "mittel": 7000
+        }
+      },
+      "infrastruktur_score": 9.5,
+      "nachfrage": "Exzellent"
+    },
+    "bonn": {
+      "name": "Bonn",
+      "bundesland": "Nordrhein-Westfalen",
+      "mieter": {
+        "gesamt": {
+          "min": 12.50,
+          "max": 16.50,
+          "mittel": 14.50,
+          "trend": "+1.8% YoY"
+        }
+      },
+      "kaufpreise": {
+        "wohnung": {
+          "min": 3800,
+          "max": 6500,
+          "mittel": 5150
+        },
+        "haus": {
+          "min": 4500,
+          "max": 8500,
+          "mittel": 6500
+        }
+      },
+      "infrastruktur_score": 9.0,
+      "nachfrage": "Sehr Hoch"
+    }
+  },
+  "quellen": [
+    "Mietspiegel Troisdorf 2025/2026",
+    "vdp-Immobilienpreisindex Q1 2025",
+    "Immowelt Mietpreisspiegel",
+    "ImmoScout24 Marktbericht",
+    "Statistisches Bundesamt"
+  ],
+  "hinweise": {
+    "warnung_untergrenze": "Miete unter 80% des Mietspiegels ist unrealistisch niedrig",
+    "warnung_obergrenze": "Miete über 120% des Mietspiegels ist schwer vermietbar",
+    "empfehlung": "Zielmiete: 95-105% des ortsüblichen Mietspiegels"
+  }
+}
