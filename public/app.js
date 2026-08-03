@@ -2794,6 +2794,20 @@ class ImoKalkulator {
             kaufdatumInput.value = heute;
         }
         
+        // Standardwerte setzen
+        const standardwerte = {
+            'imoZins': '3.5',           // Aktueller Marktzins
+            'imoTilgung': '1.0',        // Standard 1% Tilgung
+            'imoLaufzeit': '10'         // Zinsbindung 10 Jahre
+        };
+        
+        for (const [id, wert] of Object.entries(standardwerte)) {
+            const el = document.getElementById(id);
+            if (el && !el.value) {
+                el.value = wert;
+            }
+        }
+        
         // Event Listener für alle Input-Felder
         const inputs = [
             'imoAdresse', 'imoKaufdatum', 'imoKaufpreis', 'imoFlaeche',
