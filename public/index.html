@@ -432,7 +432,23 @@
                                             </div>
                                             <div class="input-group">
                                                 <label class="hud-label">Zinsbindung (Jahre)</label>
-                                                <input type="number" id="imoLaufzeit" class="hud-input" placeholder="10" step="1" value="10">
+                                                <input type="number" id="imoZinsbindung" class="hud-input" placeholder="10" step="1" value="10">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Anschluss-Zinssatz (%)</label>
+                                                <input type="number" id="imoAnschlussZins" class="hud-input" placeholder="5.0" step="0.1" value="5.0">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Bodenwert-Anteil (%)</label>
+                                                <input type="number" id="imoBodenwert" class="hud-input" placeholder="25" step="1" value="25">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">AfA-Modell</label>
+                                                <select id="imoAfaModell" class="hud-input">
+                                                    <option value="linear_2">Linear 2,0% (Bestand)</option>
+                                                    <option value="linear_3">Linear 3,0% (Neubau)</option>
+                                                    <option value="degressiv_5">Degressiv 5,0% (Sonder)</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -455,6 +471,14 @@
                                             <div class="input-group">
                                                 <label class="hud-label">Instandhaltung (€/Jahr)</label>
                                                 <input type="number" id="imoInstandhaltung" class="hud-input" placeholder="1000" step="100">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Mietsteigerung p.a. (%)</label>
+                                                <input type="number" id="imoMietsteigerung" class="hud-input" placeholder="1.5" step="0.1" value="1.5">
+                                            </div>
+                                            <div class="input-group">
+                                                <label class="hud-label">Kostensteigerung p.a. (%)</label>
+                                                <input type="number" id="imoKostensteigerung" class="hud-input" placeholder="2.0" step="0.1" value="2.0">
                                             </div>
                                         </div>
                                     </div>
@@ -505,6 +529,36 @@
                                                 <div class="kpi-value" id="imoPreisProQm">0 €</div>
                                                 <div class="kpi-sub">Kaufpreis ÷ Fläche</div>
                                             </div>
+                                            <div class="imo-kpi-card highlight">
+                                                <div class="kpi-label">EK-Rendite vor Steuern</div>
+                                                <div class="kpi-value" id="imoEkRenditeVor">0 %</div>
+                                                <div class="kpi-sub">Cashflow vor St. ÷ EK</div>
+                                            </div>
+                                            <div class="imo-kpi-card highlight">
+                                                <div class="kpi-label">EK-Rendite nach Steuern</div>
+                                                <div class="kpi-value" id="imoEkRenditeNach">0 %</div>
+                                                <div class="kpi-sub">Cashflow n. St. ÷ EK</div>
+                                            </div>
+                                            <div class="imo-kpi-card">
+                                                <div class="kpi-label">Restschuld (Zinsende)</div>
+                                                <div class="kpi-value" id="imoRestschuld">0 €</div>
+                                                <div class="kpi-sub">Nach X Jahren Zinsbindung</div>
+                                            </div>
+                                            <div class="imo-kpi-card">
+                                                <div class="kpi-label">Neue Rate (Anschluss)</div>
+                                                <div class="kpi-value" id="imoNeueRate">0 €</div>
+                                                <div class="kpi-sub">Bei Anschlussfinanzierung</div>
+                                            </div>
+                                            <div class="imo-kpi-card">
+                                                <div class="kpi-label">Cashflow Δ (Anschluss)</div>
+                                                <div class="kpi-value" id="imoCashflowDelta">0 €</div>
+                                                <div class="kpi-sub">Änderung zur aktuellen Rate</div>
+                                            </div>
+                                            <div class="imo-kpi-card">
+                                                <div class="kpi-label">Steuerersparnis (Jahr)</div>
+                                                <div class="kpi-value" id="imoSteuerersparnis">0 €</div>
+                                                <div class="kpi-sub">Durch Verlustverrechnung</div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -515,6 +569,36 @@
                                         </div>
                                         <div class="imo-chart-container">
                                             <canvas id="imoChartRendite"></canvas>
+                                        </div>
+                                        <div class="imo-chart-container">
+                                            <canvas id="imoChartVerlauf"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <!-- Stresstest / Zinsrisiko Card -->
+                                    <div class="imo-section">
+                                        <h3 class="imo-section-title">⚠️ Stresstest & Zinsrisiko</h3>
+                                        <div class="imo-stresstest-grid">
+                                            <div class="stress-item">
+                                                <div class="stress-label">Zinsbindung endet in</div>
+                                                <div class="stress-value" id="stressZinsbindungJahre">10 Jahre</div>
+                                            </div>
+                                            <div class="stress-item">
+                                                <div class="stress-label">Restschuld dann</div>
+                                                <div class="stress-value" id="stressRestschuld">0 €</div>
+                                            </div>
+                                            <div class="stress-item">
+                                                <div class="stress-label">Neue Monatsrate</div>
+                                                <div class="stress-value" id="stressNeueRate">0 €</div>
+                                            </div>
+                                            <div class="stress-item warning">
+                                                <div class="stress-label">Cashflow-Änderung</div>
+                                                <div class="stress-value" id="stressCashflowDelta">0 €</div>
+                                            </div>
+                                        </div>
+                                        <div class="stress-hint">
+                                            💡 Bei Zinsauslauf erhöht sich Ihre monatliche Belastung um <strong id="stressDeltaHighlight">0 €</strong>. 
+                                            Planen Sie rechtzeitig für die Anschlussfinanzierung!
                                         </div>
                                     </div>
                                 </div>

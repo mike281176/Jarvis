@@ -1854,3 +1854,97 @@ html, body {
         font-size: 1rem;
     }
 }
+/* ===========================
+   IMO - STRESSTEST & VERLAUF
+   =========================== */
+
+/* Stresstest Grid */
+.imo-stresstest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.stress-item {
+    background: rgba(0, 20, 40, 0.6);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 6px;
+    padding: var(--space-md);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stress-item.warning {
+    background: rgba(255, 153, 0, 0.1);
+    border-color: var(--jarvis-orange);
+}
+
+.stress-item:hover {
+    border-color: var(--jarvis-blue-light);
+    box-shadow: var(--glow-blue);
+    transform: translateY(-2px);
+}
+
+.stress-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-xs);
+}
+
+.stress-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--jarvis-blue-light);
+    text-shadow: var(--glow-blue);
+    font-family: var(--font-hud);
+}
+
+.stress-item.warning .stress-value {
+    color: var(--jarvis-orange);
+    text-shadow: var(--glow-orange);
+}
+
+.stress-hint {
+    background: rgba(255, 153, 0, 0.05);
+    border-left: 3px solid var(--jarvis-orange);
+    padding: var(--space-md);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.stress-hint strong {
+    color: var(--jarvis-orange);
+    font-size: 1.1rem;
+}
+
+/* Verlauf Chart Container */
+#imoChartVerlauf {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .imo-stresstest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stress-value {
+        font-size: 1.1rem;
+    }
+    
+    .stress-hint {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .imo-stresstest-grid {
+        grid-template-columns: 1fr;
+    }
+}

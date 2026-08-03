@@ -2798,7 +2798,11 @@ class ImoKalkulator {
         const standardwerte = {
             'imoZins': '3.5',           // Aktueller Marktzins
             'imoTilgung': '1.0',        // Standard 1% Tilgung
-            'imoLaufzeit': '10'         // Zinsbindung 10 Jahre
+            'imoZinsbindung': '10',     // Zinsbindung 10 Jahre
+            'imoAnschlussZins': '5.0',  // Anschlusszinssatz
+            'imoBodenwert': '25',       // Bodenwertanteil 25%
+            'imoMietsteigerung': '1.5', // Mietsteigerung p.a.
+            'imoKostensteigerung': '2.0' // Kostensteigerung p.a.
         };
         
         for (const [id, wert] of Object.entries(standardwerte)) {
@@ -2808,13 +2812,21 @@ class ImoKalkulator {
             }
         }
         
+        // AfA-Modell Default setzen
+        const afaModellSelect = document.getElementById('imoAfaModell');
+        if (afaModellSelect && !afaModellSelect.value) {
+            afaModellSelect.value = 'linear_2';
+        }
+        
         // Event Listener für alle Input-Felder
         const inputs = [
             'imoAdresse', 'imoKaufdatum', 'imoKaufpreis', 'imoFlaeche',
             'imoZimmer', 'imoBaujahr', 'imoMakler', 'imoNotar',
             'imoGrundbuch', 'imoGrunderwerb', 'imoSonstige',
-            'imoEigenkapital', 'imoZins', 'imoTilgung', 'imoLaufzeit',
-            'imoKaltmiete', 'imoNebenkosten', 'imoHausgeld', 'imoInstandhaltung'
+            'imoEigenkapital', 'imoZins', 'imoTilgung', 'imoZinsbindung',
+            'imoAnschlussZins', 'imoBodenwert', 'imoAfaModell',
+            'imoKaltmiete', 'imoNebenkosten', 'imoHausgeld', 'imoInstandhaltung',
+            'imoMietsteigerung', 'imoKostensteigerung'
         ];
         
         inputs.forEach(id => {
@@ -2874,12 +2886,18 @@ class ImoKalkulator {
         const eigenkapital = this.getValue('imoEigenkapital');
         const zins = this.getValue('imoZins');
         const tilgung = this.getValue('imoTilgung');
+        const zinsbindung = this.getValue('imoZinsbindung') || 10;
+        const anschlussZins = this.getValue('imoAnschlussZins') || 5.0;
+        const bodenwertAnteil = this.getValue('imoBodenwert') || 25;
+        const afaModell = document.getElementById('imoAfaModell')?.value || 'linear_2';
         const kaltmiete = this.getValue('imoKaltmiete');
         const nebekosten = this.getValue('imoNebenkosten');
         const hausgeld = this.getValue('imoHausgeld');
         const instandhaltung = this.getValue('imoInstandhaltung');
+        const mietsteigerung = this.getValue('imoMietsteigerung') || 1.5;
+        const kostensteigerung = this.getValue('imoKostensteigerung') || 2.0;
         
-        // Berechnungen
+        // 1. Investitionsberechnung
         const maklerKosten = kaufpreis * (makler / 100);
         const notarkosten = kaufpreis * (notar / 100);
         const grundbuchKosten = kaufpreis * (grundbuch / 100);
@@ -2888,29 +2906,70 @@ class ImoKalkulator {
         const gesamtinvest = kaufpreis + maklerKosten + notarkosten + grundbuchKosten + grunderwerbKosten + sonstige;
         const finanzierung = gesamtinvest - eigenkapital;
         
-        // Monatliche Rate (Annuität)
+        // 2. Dynamischer Gebäudeanteil (Modul 2)
+        const gebaeudeAnteil = (100 - bodenwertAnteil) / 100;
+        const afaBemessungsgrundlage = (kaufpreis + maklerKosten + notarkosten + grundbuchKosten + grunderwerbKosten) * gebaeudeAnteil;
+        
+        // 3. AfA-Modell (Modul 3)
+        let afaSatz = 2.0; // Default: linear 2%
+        switch (afaModell) {
+            case 'linear_2': afaSatz = 2.0; break;
+            case 'linear_3': afaSatz = 3.0; break;
+            case 'degressiv_5': afaSatz = 5.0; break;
+        }
+        const afaJahr = afaBemessungsgrundlage * (afaSatz / 100);
+        
+        // 4. Monatliche Rate (Annuität)
         const zinsMonat = zins / 100 / 12;
         const tilgungMonat = tilgung / 100 / 12;
         const rateMonat = finanzierung * (zinsMonat + tilgungMonat);
+        const rateJahr = rateMonat * 12;
         
-        // Jahresmiete
+        // 5. Jahresmiete & Kosten
         const jahresmiete = kaltmiete * 12;
-        
-        // Jährliche Kosten
         const jahresNebenkosten = nebekosten * 12;
         const jahresHausgeld = hausgeld * 12;
+        const jahresInstandhaltung = instandhaltung;
+        const jahresKosten = jahresNebenkosten + jahresHausgeld + jahresInstandhaltung;
         
-        // Netto-Einnahmen pro Jahr
-        const nettoEinnahmen = jahresmiete - jahresNebenkosten - jahresHausgeld - instandhaltung;
-        
-        // Monatlicher Cashflow
+        // 6. Cashflow vor Steuern
         const cashflowMonat = (kaltmiete + nebekosten) - rateMonat - hausgeld - (instandhaltung / 12);
+        const cashflowJahr = cashflowMonat * 12;
         
-        // Rendite
+        // 7. Renditen
         const bruttorendite = gesamtinvest > 0 ? (jahresmiete / gesamtinvest) * 100 : 0;
-        const nettorendite = eigenkapital > 0 ? (nettoEinnahmen / eigenkapital) * 100 : 0;
+        const nettorendite = eigenkapital > 0 ? ((jahresmiete - jahresKosten) / eigenkapital) * 100 : 0;
         
-        // Preis pro m²
+        // 8. Steuerliches Ergebnis & Steuerersparnis
+        const steuerlichesErgebnis = jahresmiete - afaJahr - (finanzierung * zins / 100) - jahresKosten;
+        const grenzsteuersatz = 0.42; // könnte aus Eingabe kommen
+        const steuerersparnis = steuerlichesErgebnis < 0 ? Math.abs(steuerlichesErgebnis) * grenzsteuersatz : -steuerlichesErgebnis * grenzsteuersatz;
+        
+        // 9. Cashflow nach Steuern
+        const cashflowNachSteuernMonat = cashflowMonat + (steuerersparnis / 12);
+        const cashflowNachSteuernJahr = cashflowJahr + steuerersparnis;
+        
+        // 10. Eigenkapitalrendite (Modul 5)
+        const ekRenditeVor = eigenkapital > 0 ? (cashflowJahr / eigenkapital) * 100 : 0;
+        const ekRenditeNach = eigenkapital > 0 ? (cashflowNachSteuernJahr / eigenkapital) * 100 : 0;
+        
+        // 11. Restschuld & Anschlussfinanzierung (Modul 1)
+        // Restschuld nach zinsbindung Jahren berechnen
+        const zinsJahr = zins / 100;
+        const tilgungJahr = tilgung / 100;
+        let restschuld = finanzierung;
+        for (let jahr = 1; jahr <= zinsbindung; jahr++) {
+            const zinsenJahr = restschuld * zinsJahr;
+            const tilgungJahrEuro = restschuld * tilgungJahr;
+            restschuld = restschuld - tilgungJahrEuro;
+        }
+        
+        // Neue Rate bei Anschlussfinanzierung
+        const anschlussZinsMonat = anschlussZins / 100 / 12;
+        const neueRateMonat = restschuld * anschlussZinsMonat; // Nur Zins, keine Tilgung
+        const cashflowDelta = cashflowMonat - (neueRateMonat + (kaltmiete + nebekosten) - hausgeld - (instandhaltung / 12));
+        
+        // 12. Preis pro m²
         const preisProQm = flaeche > 0 ? kaufpreis / flaeche : 0;
         
         // Ergebnisse anzeigen
@@ -2922,6 +2981,31 @@ class ImoKalkulator {
         this.setValue('imoNettorendite', nettorendite, 'percent');
         this.setValue('imoCashflow', cashflowMonat, 'currency');
         this.setValue('imoPreisProQm', preisProQm, 'currency');
+        this.setValue('imoEkRenditeVor', ekRenditeVor, 'percent');
+        this.setValue('imoEkRenditeNach', ekRenditeNach, 'percent');
+        this.setValue('imoRestschuld', restschuld, 'currency');
+        this.setValue('imoNeueRate', neueRateMonat, 'currency');
+        this.setValue('imoCashflowDelta', cashflowDelta, 'currency');
+        this.setValue('imoSteuerersparnis', steuerersparnis, 'currency');
+        
+        // Stresstest Values
+        const stressZinsbindungEl = document.getElementById('stressZinsbindungJahre');
+        const stressRestschuldEl = document.getElementById('stressRestschuld');
+        const stressNeueRateEl = document.getElementById('stressNeueRate');
+        const stressCashflowDeltaEl = document.getElementById('stressCashflowDelta');
+        const stressDeltaHighlightEl = document.getElementById('stressDeltaHighlight');
+        
+        if (stressZinsbindungEl) stressZinsbindungEl.textContent = zinsbindung + ' Jahre';
+        if (stressRestschuldEl) this.setValueElement(stressRestschuldEl, restschuld, 'currency');
+        if (stressNeueRateEl) this.setValueElement(stressNeueRateEl, neueRateMonat, 'currency');
+        if (stressCashflowDeltaEl) {
+            this.setValueElement(stressCashflowDeltaEl, Math.abs(cashflowDelta), 'currency');
+            stressCashflowDeltaEl.style.color = cashflowDelta < 0 ? 'var(--jarvis-red)' : 'var(--jarvis-green)';
+        }
+        if (stressDeltaHighlightEl) {
+            stressDeltaHighlightEl.textContent = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(Math.abs(cashflowDelta));
+            stressDeltaHighlightEl.style.color = cashflowDelta < 0 ? 'var(--jarvis-red)' : 'var(--jarvis-green)';
+        }
         
         // Cashflow farbig markieren
         const cashflowEl = document.getElementById('imoCashflow');
@@ -2940,8 +3024,28 @@ class ImoKalkulator {
             kaufpreis, maklerKosten, notarkosten, grundbuchKosten, grunderwerbKosten, sonstige,
             eigenkapital, finanzierung,
             kaltmiete, nebekosten, hausgeld, instandhaltung, rateMonat,
-            jahresmiete, nettoEinnahmen, cashflowMonat, bruttorendite, nettorendite
+            jahresmiete, jahresKosten, cashflowMonat, bruttorendite, nettorendite,
+            mietsteigerung, kostensteigerung, zinsbindung
         });
+    }
+    
+    setValueElement(el, value, format) {
+        if (!el) return;
+        if (format === 'currency') {
+            el.textContent = new Intl.NumberFormat('de-DE', {
+                style: 'currency',
+                currency: 'EUR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(value);
+        } else if (format === 'percent') {
+            el.textContent = value.toFixed(2) + ' %';
+        } else {
+            el.textContent = new Intl.NumberFormat('de-DE', {
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2
+            }).format(value);
+        }
     }
     
     updateCharts(data) {
@@ -3065,6 +3169,133 @@ class ImoKalkulator {
                                 grid: {
                                     display: false
                                 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Verlaufsprognose mit Inflation (Modul 4)
+        const verlaufCtx = document.getElementById('imoChartVerlauf');
+        if (verlaufCtx) {
+            if (this.charts.verlauf) {
+                this.charts.verlauf.destroy();
+            }
+            
+            // 30 Jahre Verlauf berechnen
+            const jahre = 30;
+            const mieteStart = data.kaltmiete || 0;
+            const kostenStart = (data.nebekosten + data.hausgeld) || 0;
+            const rateStart = data.rateMonat || 0;
+            const mietSteigerung = (data.mietsteigerung || 1.5) / 100;
+            const kostenSteigerung = (data.kostensteigerung || 2.0) / 100;
+            const zinsbindung = data.zinsbindung || 10;
+            
+            const mieteVerlauf = [];
+            const kostenVerlauf = [];
+            const rateVerlauf = [];
+            
+            for (let jahr = 0; jahr < jahre; jahr++) {
+                // Miete steigt jährlich
+                const mieteJahr = mieteStart * Math.pow(1 + mietSteigerung, jahr);
+                mieteVerlauf.push(mieteJahr);
+                
+                // Kosten steigen jährlich
+                const kostenJahr = kostenStart * Math.pow(1 + kostenSteigerung, jahr);
+                kostenVerlauf.push(kostenJahr);
+                
+                // Rate bleibt gleich bis Zinsbindung endet, dann nur Zins auf Restschuld (vereinfacht)
+                if (jahr < zinsbindung) {
+                    rateVerlauf.push(rateStart);
+                } else {
+                    // Nach Zinsbindung: höhere Rate (vereinfachte Annahme)
+                    rateVerlauf.push(rateStart * 1.5);
+                }
+            }
+            
+            this.charts.verlauf = new Chart(verlaufCtx, {
+                type: 'line',
+                data: {
+                    labels: Array.from({length: jahre}, (_, i) => 'Jahr ' + (i + 1)),
+                    datasets: [
+                        {
+                            label: 'Mieteinnahmen (€)',
+                            data: mieteVerlauf,
+                            borderColor: 'rgba(0, 255, 136, 1)',
+                            backgroundColor: 'rgba(0, 255, 136, 0.1)',
+                            borderWidth: 2,
+                            fill: true,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Kosten (€)',
+                            data: kostenVerlauf,
+                            borderColor: 'rgba(255, 153, 0, 1)',
+                            backgroundColor: 'rgba(255, 153, 0, 0.1)',
+                            borderWidth: 2,
+                            fill: true,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Rate (€)',
+                            data: rateVerlauf,
+                            borderColor: 'rgba(0, 212, 255, 1)',
+                            backgroundColor: 'rgba(0, 212, 255, 0.1)',
+                            borderWidth: 2,
+                            fill: false,
+                            tension: 0.4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                color: '#E0F7FF',
+                                font: { size: 10 }
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: '30-Jahre Verlaufsprognose (mit Inflation)',
+                            color: '#00D4FF',
+                            font: { size: 14, weight: 'bold' }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => {
+                                    const value = context.parsed.y;
+                                    return context.dataset.label + ': ' + new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(value);
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            ticks: {
+                                color: '#88AABB',
+                                callback: (value) => new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', notation: 'compact' }).format(value)
+                            },
+                            grid: {
+                                color: 'rgba(0, 212, 255, 0.1)'
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                color: '#88AABB',
+                                maxRotation: 45,
+                                minRotation: 45
+                            },
+                            grid: {
+                                display: false
                             }
                         }
                     }
