@@ -130,11 +130,42 @@ class ImoSchuldenuhr {
     }
     
     /**
+     * LVM-Kredite laden (wird in berechnen() verwendet)
+     */
+    async loadLvmKredite() {
+        try {
+            const response = await fetch('lvm-kredite.json');
+            if (!response.ok) throw new Error('LVM-Daten nicht gefunden');
+            
+            const data = await response.json();
+            const gesamtRestschuld = data.kredite.reduce((sum, kredit) => sum + (kredit.restschuld_aktuell || 0), 0);
+            
+            return {
+                gesamt: gesamtRestschuld,
+                restschuld: gesamtRestschuld,
+                kredite: data.kredite,
+                lender: data.lender || 'LVM Versicherung'
+            };
+        } catch (e) {
+            console.warn('⚠️ LVM-Kredite konnten nicht geladen werden:', e.message);
+            return { gesamt: 0, restschuld: 0, kredite: [], lender: 'LVM' };
+        }
+    }
+    
+    /**
      * Hauptberechnung
      */
-    berechnen() {
+    async berechnen() {
+        // LVM-Kredite laden
+        const lvmData = await this.loadLvmKredite();
+        
         // Moselstraße Gesamt
         this.data.mosel.gesamt = this.data.mosel.kaufpreis + this.data.mosel.nebenkosten;
+        
+        // Wenn keine manuelle Restschuld eingegeben, nutze LVM-Daten
+        if (this.data.mosel.restschuld === 0 && lvmData.restschuld > 0) {
+            this.data.mosel.restschuld = lvmData.restschuld;
+        }
         
         // === VARIANT 1: IST ===
         const aktivaIst = this.data.mosel.wertAktuell + this.data.kontoTanja + this.data.kontoMike;

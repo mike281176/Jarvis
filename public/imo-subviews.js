@@ -377,35 +377,65 @@ class ImoSubViews {
     updateVermoegen() {
         const data = this.imoKalkulator.getState();
         
-        const aktiva = 
-            (data.gesamtinvest || 0) + // Immobilienwert
-            (parseFloat(document.getElementById('vmKonten')?.value) || 0) +
-            (parseFloat(document.getElementById('vmWertpapiere')?.value) || 0) +
-            (parseFloat(document.getElementById('vmVersicherungen')?.value) || 0) +
-            (parseFloat(document.getElementById('vmSonstigeAktiva')?.value) || 0);
-        
-        const passiva = 
-            (data.finanzierung || 0) + // Hypothek
-            (parseFloat(document.getElementById('vmRatenkredite')?.value) || 0) +
-            (parseFloat(document.getElementById('vmDispo')?.value) || 0) +
-            (parseFloat(document.getElementById('vmSonstigeSchulden')?.value) || 0);
-        
-        const nettovermoegen = aktiva - passiva;
-        
-        document.getElementById('vmImmobilieWert').textContent = this.formatCurrency(data.gesamtinvest);
-        document.getElementById('vmHypothek').textContent = this.formatCurrency(data.finanzierung);
-        document.getElementById('vmSummeAktiva').textContent = this.formatCurrency(aktiva);
-        document.getElementById('vmSummePassiva').textContent = this.formatCurrency(passiva);
-        
-        const saldoEl = document.getElementById('vmNettovermoegen');
-        saldoEl.textContent = this.formatCurrency(nettovermoegen);
-        
-        if (nettovermoegen >= 0) {
-            saldoEl.style.color = 'var(--jarvis-green)';
-            saldoEl.style.textShadow = 'var(--glow-green)';
-        } else {
-            saldoEl.style.color = 'var(--jarvis-red)';
-            saldoEl.style.textShadow = 'var(--glow-red)';
+        // LVM-Kredite laden
+        this.loadLvmKredite().then(lvmData => {
+            const hypotekLVM = lvmData.restschuld || 0;
+            const weitereLVM = 0; // Platz für weitere Darlehen
+            
+            const aktiva = 
+                (data.gesamtinvest || 0) + // Immobilienwert
+                (parseFloat(document.getElementById('vmKonten')?.value) || 0) +
+                (parseFloat(document.getElementById('vmWertpapiere')?.value) || 0) +
+                (parseFloat(document.getElementById('vmVersicherungen')?.value) || 0) +
+                (parseFloat(document.getElementById('vmSonstigeAktiva')?.value) || 0);
+            
+            const passiva = 
+                hypotekLVM + // LVM Hypothek
+                weitereLVM + // Weitere LVM
+                (parseFloat(document.getElementById('vmRatenkredite')?.value) || 0) +
+                (parseFloat(document.getElementById('vmDispo')?.value) || 0) +
+                (parseFloat(document.getElementById('vmSonstigeSchulden')?.value) || 0);
+            
+            const nettovermoegen = aktiva - passiva;
+            
+            // Anzeige aktualisieren
+            document.getElementById('vmHypothekLVM').textContent = this.formatCurrency(hypotekLVM);
+            document.getElementById('vmWeitereLVM').textContent = this.formatCurrency(weitereLVM);
+            document.getElementById('vmSummeAktiva').textContent = this.formatCurrency(aktiva);
+            document.getElementById('vmSummePassiva').textContent = this.formatCurrency(passiva);
+            
+            const saldoEl = document.getElementById('vmNettovermoegen');
+            saldoEl.textContent = this.formatCurrency(nettovermoegen);
+            
+            if (nettovermoegen >= 0) {
+                saldoEl.style.color = 'var(--jarvis-green)';
+                saldoEl.style.textShadow = 'var(--glow-green)';
+            } else {
+                saldoEl.style.color = 'var(--jarvis-red)';
+                saldoEl.style.textShadow = 'var(--glow-red)';
+            }
+        });
+    }
+    
+    /**
+     * LVM-Kredite laden
+     */
+    async loadLvmKredite() {
+        try {
+            const response = await fetch('lvm-kredite.json');
+            if (!response.ok) throw new Error('LVM-Daten nicht gefunden');
+            
+            const data = await response.json();
+            const gesamtRestschuld = data.kredite.reduce((sum, kredit) => sum + (kredit.restschuld_aktuell || 0), 0);
+            
+            return {
+                gesamt: gesamtRestschuld,
+                restschuld: gesamtRestschuld,
+                kredite: data.kredite
+            };
+        } catch (e) {
+            console.warn('⚠️ LVM-Kredite konnten nicht geladen werden:', e.message);
+            return { gesamt: 0, restschuld: 0, kredite: [] };
         }
     }
     

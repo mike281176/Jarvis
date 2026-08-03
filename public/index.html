@@ -1132,25 +1132,39 @@
                         </div>
                     </div>
                     
-                    <!-- IMO Sub-Views (Bankgespräch, Diagramme, Verlauf, Haushalt, Vermögen, Schuldenuhr) -->
-                    <script>
-                        // Sub-Views dynamisch laden
-                        Promise.all([
-                            fetch('imo-subviews.html').then(r => r.text()),
-                            fetch('imo-schuldenuhr.html').then(r => r.text())
-                        ])
-                        .then(([subviewsHtml, schuldenuhrHtml]) => {
-                            const container = document.querySelector('.imo-container');
-                            const content = container.querySelector('.imo-content');
-                            content.insertAdjacentHTML('afterend', subviewsHtml + schuldenuhrHtml);
+                            <!-- IMO Sub-Views (Bankgespräch, Diagramme, Verlauf, Haushalt, Vermögen, Schuldenuhr) -->
+                            <!-- Wird direkt aus den HTML-Dateien eingefügt -->
+                            <div id="imo-subviews-container"></div>
+                            <div id="imo-schuldenuhr-container"></div>
                             
-                            // Nach dem Laden: Sub-View Switcher neu initialisieren wenn nötig
-                            if (window.imoSubViews) {
-                                window.imoSubViews.init();
-                            }
-                        })
-                        .catch(err => console.error('Fehler beim Laden der Sub-Views:', err));
-                    </script>
+                            <script>
+                                // Sub-Views dynamisch laden
+                                Promise.all([
+                                    fetch('imo-subviews.html').then(r => {
+                                        if (!r.ok) throw new Error('imo-subviews.html nicht gefunden: ' + r.status);
+                                        return r.text();
+                                    }),
+                                    fetch('imo-schuldenuhr.html').then(r => {
+                                        if (!r.ok) throw new Error('imo-schuldenuhr.html nicht gefunden: ' + r.status);
+                                        return r.text();
+                                    })
+                                ])
+                                .then(([subviewsHtml, schuldenuhrHtml]) => {
+                                    document.getElementById('imo-subviews-container').innerHTML = subviewsHtml;
+                                    document.getElementById('imo-schuldenuhr-container').innerHTML = schuldenuhrHtml;
+                                    
+                                    // Scripts neu initialisieren
+                                    setTimeout(() => {
+                                        if (window.imoSubViews) window.imoSubViews.init();
+                                        if (window.imoSchuldenuhr) window.imoSchuldenuhr.init();
+                                    }, 100);
+                                })
+                                .catch(err => {
+                                    console.error('❌ FEHLER beim Laden der IMO Sub-Views:', err);
+                                    document.getElementById('imo-subviews-container').innerHTML = 
+                                        '<div style="padding:20px;color:var(--jarvis-red)">⚠️ Fehler: Sub-Views konnten nicht geladen werden. Bitte prüfen Sie ob imo-subviews.html und imo-schuldenuhr.html im public/ Ordner existieren.</div>';
+                                });
+                            </script>
                 </div>
             </div>
 

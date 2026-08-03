@@ -1,0 +1,34 @@
+{
+  "version": "2026-08-03",
+  "owner": "Mike & Tanja Schiller",
+  "object": "Moselstraße 46, Troisdorf",
+  "lender": "LVM Versicherung (Agentur Eschmann)",
+  "kredite": [
+    {
+      "id": "lvm_1",
+      "name": "LVM Immobilienfinanzierung 1",
+      "typ": "Annuitätendarlehen",
+      "kreditnehmer": ["Mike Schiller", "Tanja Schiller"],
+      "objekt": "Moselstraße 46, Troisdorf",
+      "auszahlung": "2023-01-15",
+      "urspruengliche_summe": 0,
+      "restschuld_aktuell": 0,
+      "zinssatz": 0,
+      "tilgung": 0,
+      "monatliche_rate": 0,
+      "zinsbindung_bis": "2033-01-15",
+      "volltilgung_voraussichtlich": "2053"
+    }
+  ],
+  "hinweise": {
+    "beschreibung": "Bitte tragen Sie hier Ihre tatsächlichen LVM-Kreditdaten ein",
+    "felder": {
+      "urspruengliche_summe": "Originaler Kreditbetrag bei Auszahlung",
+      "restschuld_aktuell": "Aktuelle Restschuld (kann bei LVM erfragt werden)",
+      "zinssatz": "Aktueller Sollzinssatz in %",
+      "tilgung": "Aktuelle Tilgung in %",
+      "monatliche_rate": "Gesamtrate (Zins + Tilgung) pro Monat"
+    },
+    "quelle": "Kreditvertrag, LVM Online-Banking, oder Agentur Eschmann"
+  }
+}

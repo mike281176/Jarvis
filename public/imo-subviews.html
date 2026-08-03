@@ -233,16 +233,20 @@
                 </table>
             </div>
             
-            <!-- Passiva -->
+            <!-- PASSIVA -->
             <div class="vermoegen-section">
                 <h3>📉 Passiva (Schulden)</h3>
                 <table class="vermoegen-table">
-                    <tr><td>Hypothek/Immobilienkredit:</td><td id="vmHypothek">0 €</td></tr>
+                    <tr><td>Hypothek/Immobilienkredit (LVM):</td><td id="vmHypothekLVM">0 €</td></tr>
+                    <tr><td>Weitere LVM-Darlehen:</td><td id="vmWeitereLVM">0 €</td></tr>
                     <tr><td>Ratenkredite:</td><td><input type="number" id="vmRatenkredite" placeholder="€" class="vermoegen-input"></td></tr>
                     <tr><td>Dispokredit:</td><td><input type="number" id="vmDispo" placeholder="€" class="vermoegen-input"></td></tr>
                     <tr><td>Sonstige Schulden:</td><td><input type="number" id="vmSonstigeSchulden" placeholder="€" class="vermoegen-input"></td></tr>
                     <tr class="total-row"><td><strong>Summe Passiva</strong></td><td id="vmSummePassiva">0 €</td></tr>
                 </table>
+                <p class="haushalt-hint" style="margin-top:12px">
+                    💡 LVM-Daten werden automatisch geladen. Klicken Sie auf die Felder für andere Schulden.
+                </p>
             </div>
         </div>
         
