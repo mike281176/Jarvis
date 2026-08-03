@@ -1,34 +1,62 @@
 {
   "version": "2026-08-03",
   "owner": "Mike & Tanja Schiller",
-  "object": "Moselstraße 46, Troisdorf",
-  "lender": "LVM Versicherung (Agentur Eschmann)",
+  "object": "Moselstraße 46 (bzw. Steinackerstraße 35), Troisdorf",
+  "lender": "LVM Versicherung - Agentur Eschmann",
+  "kontakt": {
+    "agentur": "Stephan Eschmann",
+    "adresse": "Agentur Eschmann, Troisdorf",
+    "telefon": "Bitte ergänzen",
+    "email": "s.eschmann@agentur.lvm.de"
+  },
   "kredite": [
     {
-      "id": "lvm_1",
-      "name": "LVM Immobilienfinanzierung 1",
+      "id": "lvm_mosel_1",
+      "name": "LVM Immobilienfinanzierung Moselstraße",
       "typ": "Annuitätendarlehen",
-      "kreditnehmer": ["Mike Schiller", "Tanja Schiller"],
-      "objekt": "Moselstraße 46, Troisdorf",
-      "auszahlung": "2023-01-15",
+      "kreditnehmer": [
+        "Mike Schiller",
+        "Tanja Schiller"
+      ],
+      "objekt": "Moselstraße 46, Troisdorf (bzw. Steinackerstraße 35)",
+      "vertragsnummer": "BITTE ERGÄNZEN",
+      "auszahlung": "BITTE ERGÄNZEN (z.B. 2023-01-15)",
       "urspruengliche_summe": 0,
       "restschuld_aktuell": 0,
       "zinssatz": 0,
       "tilgung": 0,
       "monatliche_rate": 0,
-      "zinsbindung_bis": "2033-01-15",
-      "volltilgung_voraussichtlich": "2053"
+      "zinsbindung_bis": "BITTE ERGÄNZEN",
+      "volltilgung_voraussichtlich": "BITTE ERGÄNZEN",
+      "sonderbedingungen": "BITTE ERGÄNZEN (z.B. Sondertilgung 5% p.a.)"
     }
   ],
   "hinweise": {
-    "beschreibung": "Bitte tragen Sie hier Ihre tatsächlichen LVM-Kreditdaten ein",
-    "felder": {
-      "urspruengliche_summe": "Originaler Kreditbetrag bei Auszahlung",
-      "restschuld_aktuell": "Aktuelle Restschuld (kann bei LVM erfragt werden)",
-      "zinssatz": "Aktueller Sollzinssatz in %",
-      "tilgung": "Aktuelle Tilgung in %",
-      "monatliche_rate": "Gesamtrate (Zins + Tilgung) pro Monat"
+    "beschreibung": "Diese Datei enthält Ihre LVM-Kreditdaten für die automatische Anzeige in J.A.R.V.I.S. Vermögensaufstellung und Schuldenuhr",
+    "naechste_schritte": [
+      "1. LVM Online-Banking öffnen ODER Agentur Eschmann kontaktieren",
+      "2. Aktuelle Restschuld erfragen (Stand heute)",
+      "3. Vertragsnummer aus Kreditvertrag ablesen",
+      "4. Alle 'BITTE ERGÄNZEN' Felder ausfüllen",
+      "5. Datei speichern - J.A.R.V.I.S. übernimmt automatisch"
+    ],
+    "woher_daten": {
+      "online_banking": "LVM Kundenportal: https://www.lvm.de/kundenportal",
+      "agentur": "Stephan Eschmann, Troisdorf - Telefon oder E-Mail",
+      "unterlagen": "Kreditvertrag, Auszahlungsbestätigung, Jahresabrechnung"
     },
-    "quelle": "Kreditvertrag, LVM Online-Banking, oder Agentur Eschmann"
+    "felder_erklarung": {
+      "vertragsnummer": "Eindeutige Nummer Ihres Darlehensvertrags (z.B. 12345678)",
+      "urspruengliche_summe": "Kreditbetrag bei Auszahlung (ohne Nebenkosten)",
+      "restschuld_aktuell": "Aktuelle Restschuld heute (kann sich monatlich ändern)",
+      "zinssatz": "Aktueller Sollzinssatz in % (z.B. 2.8 für 2,8%)",
+      "tilgung": "Aktuelle Tilgung in % (z.B. 2.0 für 2%)",
+      "monatliche_rate": "Gesamtrate = Zins + Tilgung (z.B. 1200 €)",
+      "zinsbindung_bis": "Datum bis Zinsbindung läuft (z.B. 2033-01-15)",
+      "volltilgung_voraussichtlich": "Jahr der vollständigen Tilgung (z.B. 2053)"
+    }
+  },
+  "historie": {
+    "2026-08-03": "Datei von J.A.R.V.I.S. erstellt - Daten müssen noch ergänzt werden"
   }
 }
