@@ -2787,6 +2787,13 @@ class ImoKalkulator {
     }
     
     init() {
+        // Kaufdatum auf heute setzen
+        const heute = new Date().toISOString().split('T')[0];
+        const kaufdatumInput = document.getElementById('imoKaufdatum');
+        if (kaufdatumInput) {
+            kaufdatumInput.value = heute;
+        }
+        
         // Event Listener für alle Input-Felder
         const inputs = [
             'imoAdresse', 'imoKaufdatum', 'imoKaufpreis', 'imoFlaeche',
