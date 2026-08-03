@@ -3154,6 +3154,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Menu Item Listener für IMO View
     const imoMenuBtn = document.querySelector('[data-view="imo"]');
     const imoView = document.getElementById('view-imo');
+    const aiCoreContainer = document.getElementById('aiCoreContainer');
     
     if (imoMenuBtn && imoView) {
         imoMenuBtn.addEventListener('click', () => {
@@ -3175,9 +3176,26 @@ document.addEventListener('DOMContentLoaded', () => {
             imoView.classList.add('active');
             imoView.style.display = 'block';
             
+            // AI Core Button ausblenden auf IMO-Seite
+            if (aiCoreContainer) {
+                aiCoreContainer.style.display = 'none';
+            }
+            
             // IMO Kalkulator initialisieren falls noch nicht geschehen
             if (!window.imoKalkulator) {
                 window.imoKalkulator = new ImoKalkulator();
+            }
+        });
+    }
+});
+
+// AI Core Button wieder anzeigen wenn andere Views gewechselt werden
+document.querySelectorAll('.menu-item').forEach(btn => {
+    if (btn.dataset.view !== 'imo') {
+        btn.addEventListener('click', () => {
+            const aiCoreContainer = document.getElementById('aiCoreContainer');
+            if (aiCoreContainer) {
+                aiCoreContainer.style.display = 'block';
             }
         });
     }
