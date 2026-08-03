@@ -18,17 +18,25 @@
         "Mike Schiller",
         "Tanja Schiller"
       ],
-      "objekt": "Moselstraße 46, Troisdorf (bzw. Steinackerstraße 35)",
-      "vertragsnummer": "BITTE ERGÄNZEN",
-      "auszahlung": "BITTE ERGÄNZEN (z.B. 2023-01-15)",
+      "objekt": "Moselstraße 46, 53842 Troisdorf",
+      "vertragsnummer": "01617662210",
+      "referenznummer": "48.511.360.6",
+      "auszahlung": "2021-09-01",
       "urspruengliche_summe": 0,
       "restschuld_aktuell": 0,
       "zinssatz": 0,
       "tilgung": 0,
-      "monatliche_rate": 0,
-      "zinsbindung_bis": "BITTE ERGÄNZEN",
-      "volltilgung_voraussichtlich": "BITTE ERGÄNZEN",
-      "sonderbedingungen": "BITTE ERGÄNZEN (z.B. Sondertilgung 5% p.a.)"
+      "monatliche_rate": 1118.54,
+      "zins_2025": 1698.65,
+      "tilgung_2025": 10605.29,
+      "zinsbindung_bis": "UNBEKANNT",
+      "volltilgung_voraussichtlich": "UNBEKANNT",
+      "sonderbedingungen": "UNBEKANNT",
+      "dokumente": {
+        "bestaetigung_2025": 1541,
+        "bestaetigung_2024": 1289,
+        "bestaetigung_2023": 594
+      }
     }
   ],
   "hinweise": {
