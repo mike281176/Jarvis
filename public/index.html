@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="imo-module.js"></script>
     <script src="imo-subviews.js"></script>
+    <script src="imo-schuldenuhr.js"></script>
 </head>
 <body>
     <div id="app">
@@ -391,6 +392,7 @@
                                 <button class="imo-subnav-btn" data-subview="verlauf">📉 Verlauf</button>
                                 <button class="imo-subnav-btn" data-subview="haushalt">🏠 Haushalt</button>
                                 <button class="imo-subnav-btn" data-subview="vermoegen">💰 Vermögen</button>
+                                <button class="imo-subnav-btn" data-subview="schuldenuhr">⏰ Schuldenuhr</button>
                             </div>
                             
                             <div class="imo-content">
@@ -1130,17 +1132,24 @@
                         </div>
                     </div>
                     
-                    <!-- IMO Sub-Views (Bankgespräch, Diagramme, Verlauf, Haushalt, Vermögen) -->
+                    <!-- IMO Sub-Views (Bankgespräch, Diagramme, Verlauf, Haushalt, Vermögen, Schuldenuhr) -->
                     <script>
                         // Sub-Views dynamisch laden
-                        fetch('imo-subviews.html')
-                            .then(response => response.text())
-                            .then(html => {
-                                const container = document.querySelector('.imo-container');
-                                const content = container.querySelector('.imo-content');
-                                content.insertAdjacentHTML('afterend', html);
-                            })
-                            .catch(err => console.error('Fehler beim Laden der Sub-Views:', err));
+                        Promise.all([
+                            fetch('imo-subviews.html').then(r => r.text()),
+                            fetch('imo-schuldenuhr.html').then(r => r.text())
+                        ])
+                        .then(([subviewsHtml, schuldenuhrHtml]) => {
+                            const container = document.querySelector('.imo-container');
+                            const content = container.querySelector('.imo-content');
+                            content.insertAdjacentHTML('afterend', subviewsHtml + schuldenuhrHtml);
+                            
+                            // Nach dem Laden: Sub-View Switcher neu initialisieren wenn nötig
+                            if (window.imoSubViews) {
+                                window.imoSubViews.init();
+                            }
+                        })
+                        .catch(err => console.error('Fehler beim Laden der Sub-Views:', err));
                     </script>
                 </div>
             </div>

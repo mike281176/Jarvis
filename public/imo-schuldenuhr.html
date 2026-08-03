@@ -1,0 +1,313 @@
+<!-- ===========================
+     IMO SUB-VIEW: SCHULDENUHR
+     Nach Vorbild der deutschen Steuerzahler-Schuldenuhr
+     =========================== -->
+
+<div class="imo-subview" id="imo-subview-schuldenuhr" style="display: none;">
+    <div class="imo-content">
+        <h2 class="imo-subview-title">⏰ Schuldenuhr</h2>
+        <p class="schuldenuhr-intro">
+            Live-Einblick in die aktuelle Verschuldung und zukünftige Belastungen – 
+            nach dem Vorbild der <strong>Steuerzahler-Schuldenuhr</strong>.
+        </p>
+        
+        <!-- Tabs für Variante 1 und 2 -->
+        <div class="schuldenuhr-tabs">
+            <button class="schuldenuhr-tab active" data-variant="ist">
+                📊 Variante 1: IST-Zustand<br>
+                <small>Moselstraße + aktuelle Konten & Kredite</small>
+            </button>
+            <button class="schuldenuhr-tab" data-variant="zukunft">
+                🚀 Variante 2: MIT Zukunft<br>
+                <small>Wie Variante 1 + geplante Immobilien</small>
+            </button>
+        </div>
+        
+        <!-- VARIANT 1: IST-ZUSTAND -->
+        <div class="schuldenuhr-variant active" id="schuldenuhr-ist">
+            <!-- Haupt-Schuldenuhr Display -->
+            <div class="schuldenuhr-display">
+                <div class="schuldenuhr-main">
+                    <div class="schuldenuhr-label">🔴 Gesamtschulden (Privat, ohne Quixx24)</div>
+                    <div class="schuldenuhr-value" id="suGesamtschuldenIst">0,00 €</div>
+                    <div class="schuldenuhr-sub">Stand: <span id="suStandIst">-</span></div>
+                </div>
+            </div>
+            
+            <!-- Aufschlüsselung -->
+            <div class="schuldenuhr-grid">
+                <!-- AKTIVA -->
+                <div class="schuldenuhr-section aktiva">
+                    <h3>🟢 AKTIVA (Guthaben)</h3>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">🏠 Moselstraße 46 (Wert)</div>
+                        <div class="item-value" id="suMoselWert">0,00 €</div>
+                        <div class="item-sub">Aktueller Marktwert</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">👤 Bankkonto Tanja</div>
+                        <div class="item-value editable" contenteditable="true" id="suKontoTanja">0,00 €</div>
+                        <div class="item-sub">Klicken zum Bearbeiten</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">👤 Bankkonto Mike</div>
+                        <div class="item-value editable" contenteditable="true" id="suKontoMike">0,00 €</div>
+                        <div class="item-sub">Klicken zum Bearbeiten</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-total">
+                        <strong>Summe Aktiva:</strong>
+                        <span id="suSummeAktivaIst">0,00 €</span>
+                    </div>
+                </div>
+                
+                <!-- PASSIVA -->
+                <div class="schuldenuhr-section passiva">
+                    <h3>🔴 PASSIVA (Schulden)</h3>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">🏦 Hypothek Moselstraße 46</div>
+                        <div class="item-value" id="suHypothekMosel">0,00 €</div>
+                        <div class="item-sub">Restschuld (alle Kredite auf Moselstr.)</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">💳 Ratenkredite</div>
+                        <div class="item-value editable" contenteditable="true" id="suRatenkredite">0,00 €</div>
+                        <div class="item-sub">Klicken zum Bearbeiten</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">📉 Dispo</div>
+                        <div class="item-value editable" contenteditable="true" id="suDispo">0,00 €</div>
+                        <div class="item-sub">Klicken zum Bearbeiten</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">📋 Sonstige Verbindlichkeiten</div>
+                        <div class="item-value editable" contenteditable="true" id="suSonstige">0,00 €</div>
+                        <div class="item-sub">Klicken zum Bearbeiten</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-total">
+                        <strong>Summe Passiva:</strong>
+                        <span id="suSummePassivaIst">0,00 €</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nettovermögen -->
+            <div class="schuldenuhr-saldo">
+                <h3>💎 Nettovermögen (Aktiva - Passiva)</h3>
+                <div class="saldo-display large">
+                    <span id="suNettovermoegenIst">0,00 €</span>
+                </div>
+                <p class="schuldenuhr-hint">
+                    Positiv = Vermögen aufgebaut | Negativ = Noch im Aufbau
+                </p>
+            </div>
+            
+            <!-- Details Moselstraße -->
+            <div class="schuldenuhr-details">
+                <h3>🏠 Details: Moselstraße 46</h3>
+                <table class="schuldenuhr-table">
+                    <tr>
+                        <td>Kaufpreis:</td>
+                        <td class="editable" contenteditable="true" id="suMoselKaufpreis">0,00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Kaufnebenkosten:</td>
+                        <td class="editable" contenteditable="true" id="suMoselNebenkosten">0,00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Gesamtinvestition:</td>
+                        <td id="suMoselGesamt">0,00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Aktueller Wert:</td>
+                        <td id="suMoselWertAktuell">0,00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Restschuld gesamt:</td>
+                        <td id="suMoselRestschuld">0,00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Eigenkapital-Anteil:</td>
+                        <td id="suMoselEKQuote">0 %</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- VARIANT 2: MIT ZUKUNFT -->
+        <div class="schuldenuhr-variant" id="schuldenuhr-zukunft">
+            <!-- Haupt-Schuldenuhr Display -->
+            <div class="schuldenuhr-display">
+                <div class="schuldenuhr-main">
+                    <div class="schuldenuhr-label">🔴 Gesamtschulden (MIT geplanten Immobilien)</div>
+                    <div class="schuldenuhr-value" id="suGesamtschuldenZukunft">0,00 €</div>
+                    <div class="schuldenuhr-sub">Stand: <span id="suStandZukunft">-</span></div>
+                </div>
+            </div>
+            
+            <!-- Geplante Immobilien -->
+            <div class="schuldenuhr-section full-width">
+                <h3>🚀 Geplante Immobilien-Investments</h3>
+                <div id="suGeplanteImmobilien">
+                    <p class="schuldenuhr-hint">
+                        Keine geplanten Immobilien eingetragen. 
+                        <br>Nutzen Sie das <strong>Cockpit</strong> um neue Objekte zu analysieren und zu speichern.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Aufschlüsselung wie Variante 1 -->
+            <div class="schuldenuhr-grid">
+                <!-- AKTIVA -->
+                <div class="schuldenuhr-section aktiva">
+                    <h3>🟢 AKTIVA (Guthaben + Zukunft)</h3>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">🏠 Moselstraße 46 (Wert)</div>
+                        <div class="item-value" id="suMoselWertZ">0,00 €</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">👤 Bankkonto Tanja</div>
+                        <div class="item-value" id="suKontoTanjaZ">0,00 €</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">👤 Bankkonto Mike</div>
+                        <div class="item-value" id="suKontoMikeZ">0,00 €</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">🏢 Geplante Immobilien (Wert)</div>
+                        <div class="item-value" id="suZukunftImmobilien">0,00 €</div>
+                        <div class="item-sub">Basierend auf Cockpit-Analysen</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-total">
+                        <strong>Summe Aktiva:</strong>
+                        <span id="suSummeAktivaZ">0,00 €</span>
+                    </div>
+                </div>
+                
+                <!-- PASSIVA -->
+                <div class="schuldenuhr-section passiva">
+                    <h3>🔴 PASSIVA (Schulden + Zukunft)</h3>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">🏦 Hypothek Moselstraße 46</div>
+                        <div class="item-value" id="suHypothekMoselZ">0,00 €</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">💳 Ratenkredite</div>
+                        <div class="item-value" id="suRatenkrediteZ">0,00 €</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">📉 Dispo</div>
+                        <div class="item-value" id="suDispoZ">0,00 €</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item">
+                        <div class="item-label">📋 Sonstige Verbindlichkeiten</div>
+                        <div class="item-value" id="suSonstigeZ">0,00 €</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-item highlight">
+                        <div class="item-label">🏗️ Geplante Finanzierungen</div>
+                        <div class="item-value" id="suZukunftFinanzierung">0,00 €</div>
+                        <div class="item-sub">70% FK-Quote angenommen</div>
+                    </div>
+                    
+                    <div class="schuldenuhr-total">
+                        <strong>Summe Passiva:</strong>
+                        <span id="suSummePassivaZ">0,00 €</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nettovermögen -->
+            <div class="schuldenuhr-saldo">
+                <h3>💎 Nettovermögen (MIT Zukunft)</h3>
+                <div class="saldo-display large">
+                    <span id="suNettovermoegenZ">0,00 €</span>
+                </div>
+                <p class="schuldenuhr-hint">
+                    Projektion: So sieht Ihr Vermögen NACH den geplanten Käufen aus
+                </p>
+            </div>
+            
+            <!-- Vergleich -->
+            <div class="schuldenuhr-vergleich">
+                <h3>📊 Vergleich: HEUTE vs. ZUKUNFT</h3>
+                <table class="schuldenuhr-table vergleich">
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Heute (Variante 1)</th>
+                            <th>Mit Zukunft (Variante 2)</th>
+                            <th>Δ Veränderung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gesamtschulden</td>
+                            <td id="suVglSchuldenIst">0,00 €</td>
+                            <td id="suVglSchuldenZ">0,00 €</td>
+                            <td id="suVglSchuldenDelta" class="delta">0,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Aktiva</td>
+                            <td id="suVglAktivaIst">0,00 €</td>
+                            <td id="suVglAktivaZ">0,00 €</td>
+                            <td id="suVglAktivaDelta" class="delta">0,00 €</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nettovermögen</strong></td>
+                            <td id="suVglNettoIst">0,00 €</td>
+                            <td id="suVglNettoZ">0,00 €</td>
+                            <td id="suVglNettoDelta" class="delta"><strong>0,00 €</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Einstellungen -->
+        <div class="schuldenuhr-settings">
+            <h3>⚙️ Einstellungen & Datenpflege</h3>
+            <div class="settings-grid">
+                <div class="setting-item">
+                    <label>Datenquelle für Moselstraße:</label>
+                    <select id="suMoselDatenquelle">
+                        <option value="manual">Manuelle Eingabe</option>
+                        <option value="cockpit">Aus Cockpit (gespeichertes Objekt)</option>
+                        <option value="rag">Aus Vault/RAG</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label>Automatische Aktualisierung:</label>
+                    <select id="suAutoUpdate">
+                        <option value="daily">Täglich</option>
+                        <option value="weekly">Wöchentlich</option>
+                        <option value="manual">Manuell</option>
+                    </select>
+                </div>
+            </div>
+            <button class="hud-button primary" id="suDatenSpeichern">
+                💾 Aktuelle Werte speichern
+            </button>
+            <button class="hud-button secondary" id="suDatenZuruecksetzen">
+                🔄 Auf Standard zurücksetzen
+            </button>
+        </div>
+    </div>
+</div>
