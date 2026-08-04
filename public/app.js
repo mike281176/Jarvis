@@ -1150,10 +1150,11 @@ class JarvisPWA {
         
         // Kamera-Konfiguration: WebRTC/go2rtc优先，fallback auf camera_proxy
         // Entities aus HAOS: camera.back_door_standardauflosung, camera.doorstation_* etc.
+        // Frontdoor暂时禁用 (Entity existiert nicht)
         const cams = [
-            { id: 'camFrontImg', entity: 'camera.back_door_standardauflosung', webrtc: false },
+            // { id: 'camFrontImg', entity: 'camera.front_door', webrtc: false }, // ❌ DEAKTIVIERT - keine Entity
             { id: 'camBackImg', entity: 'camera.back_door_standardauflosung', webrtc: false },
-            { id: 'camEinfahrtImg', entity: 'camera.einfahrt_hochauflosung', webrtc: false },
+            { id: 'camEinfahrtImg', entity: 'camera.einfahrt_hochauflosung', webrtc: false }, // ❌ unavailable in HA
             { id: 'camDoorbirdImg', entity: 'camera.doorstation_1ccae371de47_live', webrtc: false }
         ];
         
@@ -1161,6 +1162,10 @@ class JarvisPWA {
             cams.forEach(cam => {
                 const img = document.getElementById(cam.id);
                 if (!img) return;
+                
+                // Klick auf Bild → vergrößern (Modal)
+                img.style.cursor = 'pointer';
+                img.onclick = () => this.showCameraModal(cam.id, cam.entity);
                 
                 // Versuch: go2rtc WebRTC Stream (schneller, zuverlässiger)
                 // Fallback: HA camera_proxy (langsam, aber kompatibel)
@@ -1177,6 +1182,7 @@ class JarvisPWA {
                 img.onerror = () => {
                     img.alt = 'Kamera nicht verfügbar';
                     img.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240"><rect fill="%231a1a2e" width="320" height="240"/><text fill="%23666" font-family="Arial" font-size="16" x="160" y="120" text-anchor="middle">Kamera offline</text></svg>';
+                    img.title = 'Klick zum Vergrößern (offline)';
                 };
             });
         };
@@ -1187,6 +1193,45 @@ class JarvisPWA {
 
     stopCameraFeeds() {
         if (this.cameraInterval) clearInterval(this.cameraInterval);
+    }
+    
+    /**
+     * Kamera-Bild im Modal vergrößern
+     */
+    showCameraModal(imgId, entity) {
+        const img = document.getElementById(imgId);
+        if (!img) return;
+        
+        // Modal erstellen wenn nicht vorhanden
+        let modal = document.getElementById('cameraModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'cameraModal';
+            modal.className = 'camera-modal';
+            modal.style.cssText = 'display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;cursor:pointer;';
+            modal.innerHTML = '<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:90%;max-height:90%;">' +
+                '<img id="cameraModalImg" src="" style="max-width:100%;max-height:100%;box-shadow:0 0 20px rgba(0,212,255,0.5);">' +
+                '<button id="cameraModalClose" style="position:absolute;top:20px;right:20px;background:rgba(255,82,82,0.8);color:#fff;border:none;padding:10px 20px;font-size:16px;cursor:pointer;">×</button>' +
+                '</div>';
+            document.body.appendChild(modal);
+            
+            // Schließen beim Klick
+            modal.onclick = (e) => {
+                if (e.target !== document.getElementById('cameraModalImg')) {
+                    modal.style.display = 'none';
+                }
+            };
+            
+            // Schließen Button
+            document.getElementById('cameraModalClose').onclick = () => {
+                modal.style.display = 'none';
+            };
+        }
+        
+        // Aktuelles Bild anzeigen
+        const modalImg = document.getElementById('cameraModalImg');
+        modalImg.src = img.src;
+        modal.style.display = 'block';
     }
 
     initDashboard() {
@@ -2842,6 +2887,30 @@ class ImoKalkulator {
             exportBtn.addEventListener('click', () => this.exportPdf());
         }
         
+        // Objekt speichern Button
+        const speichernBtn = document.getElementById('imoObjektSpeichern');
+        if (speichernBtn) {
+            speichernBtn.addEventListener('click', () => this.objektSpeichern());
+        }
+        
+        // Objekt laden Button
+        const ladenBtn = document.getElementById('imoObjektLaden');
+        if (ladenBtn) {
+            ladenBtn.addEventListener('click', () => this.objektLaden());
+        }
+        
+        // Mietspiegel übernehmen Button
+        const mietspiegelBtn = document.getElementById('mietspiegelUebernehmen');
+        if (mietspiegelBtn) {
+            mietspiegelBtn.addEventListener('click', () => this.mietspiegelUebernehmen());
+        }
+        
+        // Objekt-Liste schließen Button
+        const listeSchliessenBtn = document.getElementById('imoObjektListeSchliessen');
+        if (listeSchliessenBtn) {
+            listeSchliessenBtn.addEventListener('click', () => this.objektListeSchliessen());
+        }
+        
         // Initiale Berechnung
         this.calculate();
     }
@@ -3434,61 +3503,130 @@ class ImoKalkulator {
         printWindow.document.write(html);
         printWindow.document.close();
     }
-}
 
-// IMO Kalkulator initialisieren wenn View geladen wird
-document.addEventListener('DOMContentLoaded', () => {
-    // Menu Item Listener für IMO View
-    const imoMenuBtn = document.querySelector('[data-view="imo"]');
-    const imoView = document.getElementById('view-imo');
-    const aiCoreContainer = document.getElementById('aiCoreContainer');
+    }
+// ============================================
+// IMO ZUSATZFUNKTIONEN (fehlende Buttons)
+// ============================================
+
+/**
+ * Objekt speichern (localStorage)
+ */
+if (window.imoKalkulator) {
+    window.imoKalkulator.objektSpeichern = function() {
+        const data = this.getState();
+        const name = prompt('Name für dieses Objekt:', data.adresse || 'Objekt_' + new Date().getTime());
+        if (!name) return;
+        
+        // In localStorage speichern
+        const objekte = JSON.parse(localStorage.getItem('jarvis_imo_objekte') || '[]');
+        objekte.push({ ...data, name, savedAt: new Date().toISOString() });
+        localStorage.setItem('jarvis_imo_objekte', JSON.stringify(objekte));
+        
+        alert('✅ Objekt "' + name + '" gespeichert!');
+    };
     
-    if (imoMenuBtn && imoView) {
-        imoMenuBtn.addEventListener('click', () => {
-            // Alle Menu Items deaktivieren
-            document.querySelectorAll('.menu-item').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // IMO Menu Item aktivieren
-            imoMenuBtn.classList.add('active');
-            
-            // Alle Views ausblenden
-            document.querySelectorAll('.view-container').forEach(view => {
-                view.classList.remove('active');
-                view.style.display = 'none';
-            });
-            
-            // IMO View anzeigen
-            imoView.classList.add('active');
-            imoView.style.display = 'block';
-            
-            // AI Core Button ausblenden auf IMO-Seite
-            if (aiCoreContainer) {
-                aiCoreContainer.style.display = 'none';
-            }
-            
-            // IMO Kalkulator initialisieren falls noch nicht geschehen
-            if (!window.imoKalkulator) {
-                window.imoKalkulator = new ImoKalkulator();
-            }
-            
-            // IMO Module initialisieren (Modul 1 & 2)
-            if (!window.imoModule) {
-                window.imoModule = new ImoModule(window.imoKalkulator);
+    /**
+     * Objekt laden (aus localStorage)
+     */
+    window.imoKalkulator.objektLaden = function() {
+        const objekte = JSON.parse(localStorage.getItem('jarvis_imo_objekte') || '[]');
+        
+        if (objekte.length === 0) {
+            alert('❌ Keine gespeicherten Objekte gefunden!');
+            return;
+        }
+        
+        // Liste anzeigen
+        const liste = document.getElementById('imoObjektListe');
+        const content = document.getElementById('imoObjektListeContent');
+        
+        if (!liste || !content) return;
+        
+        let html = '<h3>Gespeicherte Objekte</h3><div class="objekt-liste">';
+        objekte.forEach((obj, idx) => {
+            const date = new Date(obj.savedAt).toLocaleDateString('de-DE');
+            html += '<div class="objekt-item" onclick="window.imoKalkulator.ladeObjekt(' + idx + ')">';
+            html += '<strong>' + (obj.name || ('Objekt ' + (idx + 1))) + '</strong><br>';
+            html += '<small>' + (obj.adresse || 'Keine Adresse') + ' • Gespeichert: ' + date + '</small><br>';
+            html += '<small>€' + (obj.kaufpreis || 0) + ' • ' + (obj.flaeche || 0) + 'm²</small>';
+            html += '</div>';
+        });
+        html += '</div>';
+        
+        content.innerHTML = html;
+        liste.style.display = 'block';
+    };
+    
+    /**
+     * Einzelnes Objekt laden und Formular füllen
+     */
+    window.imoKalkulator.ladeObjekt = function(index) {
+        const objekte = JSON.parse(localStorage.getItem('jarvis_imo_objekte') || '[]');
+        const obj = objekte[index];
+        
+        if (!obj) return;
+        
+        // Formular füllen
+        const fields = [
+            'imoKaufpreis', 'imoFlaeche', 'imoZimmer', 'imoBaujahr',
+            'imoKaltmiete', 'imoNebenkosten', 'imoHausgeldGesamt',
+            'imoEigenkapital', 'imoZins', 'imoTilgung'
+        ];
+        
+        fields.forEach(field => {
+            const el = document.getElementById(field);
+            const key = field.replace('imo', '').toLowerCase();
+            if (el && obj[key]) {
+                el.value = obj[key];
             }
         });
-    }
-});
-
-// AI Core Button wieder anzeigen wenn andere Views gewechselt werden
-document.querySelectorAll('.menu-item').forEach(btn => {
-    if (btn.dataset.view !== 'imo') {
-        btn.addEventListener('click', () => {
-            const aiCoreContainer = document.getElementById('aiCoreContainer');
-            if (aiCoreContainer) {
-                aiCoreContainer.style.display = 'block';
+        
+        // Liste schließen
+        this.objektListeSchliessen();
+        
+        // Neu berechnen
+        this.calculate();
+        
+        alert('✅ Objekt "' + (obj.name || 'geladen') + '" geladen!');
+    };
+    
+    /**
+     * Objekt-Liste schließen
+     */
+    window.imoKalkulator.objektListeSchliessen = function() {
+        const liste = document.getElementById('imoObjektListe');
+        if (liste) {
+            liste.style.display = 'none';
+        }
+    };
+    
+    /**
+     * Mietspiegel übernehmen
+     */
+    window.imoKalkulator.mietspiegelUebernehmen = function() {
+        const plzEl = document.getElementById('imoPlz');
+        if (!plzEl || !plzEl.value) {
+            alert('❌ Bitte zuerst PLZ eingeben!');
+            return;
+        }
+        
+        const plz = plzEl.value;
+        
+        // Mietspiegel aus imo-module.js laden
+        if (window.imoModule && window.imoModule.getMietspiegel) {
+            const data = window.imoModule.getMietspiegel(plz);
+            if (data) {
+                const kaltmieteField = document.getElementById('imoKaltmiete');
+                const flaecheEl = document.getElementById('imoFlaeche');
+                const flaeche = flaecheEl ? parseFloat(flaecheEl.value) : 0;
+                
+                if (kaltmieteField && flaeche > 0) {
+                    kaltmieteField.value = (data.miete * flaeche).toFixed(2);
+                    this.calculate();
+                    alert('✅ Mietspiegel übernommen: ' + data.miete + ' €/m² = ' + (data.miete * flaeche).toFixed(2) + ' €/Monat');
+                }
             }
-        });
-    }
-});
+        }
+    };
+}
