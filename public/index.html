@@ -12,6 +12,7 @@
     <script src="imo-module.js"></script>
     <script src="imo-subviews.js"></script>
     <script src="imo-schuldenuhr.js"></script>
+    <script src="imo-debug.js"></script>
 </head>
 <body>
     <div id="app">
@@ -1153,10 +1154,17 @@
                                     document.getElementById('imo-subviews-container').innerHTML = subviewsHtml;
                                     document.getElementById('imo-schuldenuhr-container').innerHTML = schuldenuhrHtml;
                                     
+                                    if (window.imoDebugLog) {
+                                        window.imoDebugLog('✅ Sub-View HTML geladen');
+                                        window.imoDebugLog(`  imo-subviews.html: ${subviewsHtml.length} Zeichen`);
+                                        window.imoDebugLog(`  imo-schuldenuhr.html: ${schuldenuhrHtml.length} Zeichen`);
+                                    }
+                                    
                                     // Scripts neu initialisieren
                                     setTimeout(() => {
                                         if (window.imoSubViews) window.imoSubViews.init();
                                         if (window.imoSchuldenuhr) window.imoSchuldenuhr.init();
+                                        if (window.imoDebugLog) window.imoDebugLog('🔄 Init abgeschlossen');
                                     }, 100);
                                 })
                                 .catch(err => {

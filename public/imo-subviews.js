@@ -38,6 +38,8 @@ class ImoSubViews {
      * Sub-View wechseln
      */
     switchSubview(subviewName) {
+        if (window.imoDebugLog) window.imoDebugLog(`switchSubview('${subviewName}') aufgerufen`);
+        
         // Buttons aktualisieren
         document.querySelectorAll('.imo-subnav-btn').forEach(btn => {
             btn.classList.remove('active');
@@ -53,6 +55,8 @@ class ImoSubViews {
         });
         
         const activeView = document.getElementById(`imo-subview-${subviewName}`);
+        if (window.imoDebugLog) window.imoDebugLog(`View 'imo-subview-${subviewName}': ${activeView ? 'GEFUNDEN' : 'NICHT GEFUNDEN ❌'}`);
+        
         if (activeView) {
             activeView.classList.add('active');
             activeView.style.display = 'block';
