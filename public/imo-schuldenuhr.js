@@ -204,7 +204,8 @@ class ImoSchuldenuhr {
         const ekQuoteMosel = this.data.mosel.gesamt > 0 
             ? ((this.data.mosel.gesamt - this.data.mosel.restschuld) / this.data.mosel.gesamt) * 100 
             : 0;
-        document.getElementById('suMoselEKQuote').textContent = ekQuoteMosel.toFixed(1) + ' %';
+        const ekQuoteEl = document.getElementById('suMoselEKQuote');
+        if (ekQuoteEl) ekQuoteEl.textContent = ekQuoteMosel.toFixed(1) + ' %';
         
         // Stand aktualisieren
         const jetzt = new Date();
@@ -212,7 +213,8 @@ class ImoSchuldenuhr {
             day: '2-digit', month: '2-digit', year: 'numeric',
             hour: '2-digit', minute: '2-digit'
         });
-        document.getElementById('suStandIst').textContent = standString;
+        const standIstEl = document.getElementById('suStandIst');
+        if (standIstEl) standIstEl.textContent = standString;
         
         // Farbe für Nettovermögen
         this.setColor('suNettovermoegenIst', nettoIst);
@@ -241,7 +243,8 @@ class ImoSchuldenuhr {
         this.setCurrency('suSummeAktivaZ', aktivaZ);
         this.setCurrency('suSummePassivaZ', passivaZ);
         this.setCurrency('suNettovermoegenZ', nettoZ);
-        document.getElementById('suStandZukunft').textContent = standString;
+        const standZukunftEl = document.getElementById('suStandZukunft');
+        if (standZukunftEl) standZukunftEl.textContent = standString;
         
         // Farbe für Nettovermögen Zukunft
         this.setColor('suNettovermoegenZ', nettoZ);
@@ -404,14 +407,14 @@ class ImoSchuldenuhr {
      */
     setColor(elementId, value) {
         const el = document.getElementById(elementId);
-        if (el) {
-            if (value >= 0) {
-                el.style.color = 'var(--jarvis-green)';
-                el.style.textShadow = 'var(--glow-green)';
-            } else {
-                el.style.color = 'var(--jarvis-red)';
-                el.style.textShadow = 'var(--glow-red)';
-            }
+        if (!el) return;
+        
+        if (value >= 0) {
+            el.style.color = 'var(--jarvis-green)';
+            el.style.textShadow = 'var(--glow-green)';
+        } else {
+            el.style.color = 'var(--jarvis-red)';
+            el.style.textShadow = 'var(--glow-red)';
         }
     }
     
@@ -423,7 +426,7 @@ class ImoSchuldenuhr {
         if (!el) return;
         
         let isPositive = delta >= 0;
-        if (invert) isPositive = !isPositive; // Bei Schulden: positiv = schlecht
+        if (invert) isPositive = !isPositive;
         
         if (isPositive) {
             el.style.color = 'var(--jarvis-green)';

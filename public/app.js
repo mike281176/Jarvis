@@ -3147,13 +3147,37 @@ class ImoKalkulator {
         this.showWarnings(warnungen);
         
         // Diagramme aktualisieren
-        this.updateCharts({
-            kaufpreis, maklerKosten, notarkosten, grundbuchKosten, grunderwerbKosten, sonstige,
-            eigenkapital, finanzierung,
-            kaltmiete, nebekosten, hausgeld, instandhaltung, rateMonat,
-            jahresmiete, jahresKosten, cashflowMonat, bruttorendite, nettorendite,
-            mietsteigerung, kostensteigerung, zinsbindung
+        try {
+            this.updateCharts({
+                kaufpreis, maklerKosten, notarkosten, grundbuchKosten, grunderwerbKosten, sonstige,
+                eigenkapital, finanzierung,
+                kaltmiete, nebekosten, hausgeld, instandhaltung, rateMonat,
+                jahresmiete, jahresKosten, cashflowMonat, bruttorendite, nettorendite,
+                mietsteigerung, kostensteigerung, zinsbindung
+            });
+        } catch (e) {}
+    }
+    
+    /**
+     * Warnungen anzeigen
+     */
+    showWarnings(warnings) {
+        const container = document.getElementById('imoWarnings');
+        if (!container) return;
+        
+        if (!warnings || warnings.length === 0) {
+            container.style.display = 'none';
+            return;
+        }
+        
+        let html = '';
+        warnings.forEach(w => {
+            const icon = w.type === 'warning' ? '⚠️' : '💡';
+            html += `<div class="imo-warning ${w.type}">${icon} ${w.message}</div>`;
         });
+        
+        container.innerHTML = html;
+        container.style.display = 'block';
     }
     
     setValueElement(el, value, format) {
