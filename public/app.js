@@ -742,12 +742,11 @@ class JarvisPWA {
         // IMO Sub-Views initialisieren
         if (viewName === 'imo') {
             setTimeout(() => {
-                if (window.imoSubViews) window.imoSubViews.init();
-                if (window.imoSchuldenuhr) window.imoSchuldenuhr.init();
                 // IMO Kalkulator initialisieren falls nicht vorhanden
                 if (!window.imoKalkulator) {
                     if (typeof ImoKalkulator !== 'undefined') {
                         window.imoKalkulator = new ImoKalkulator();
+                        if (window.imoDebugLog) window.imoDebugLog('✅ ImoKalkulator erstellt');
                     }
                 }
                 if (!window.imoModule) {
@@ -755,6 +754,16 @@ class JarvisPWA {
                         window.imoModule = new ImoModule(window.imoKalkulator);
                     }
                 }
+                // ImoSubViews initialisieren (braucht imoKalkulator)
+                if (window.imoKalkulator && !window.imoSubViews) {
+                    if (typeof ImoSubViews !== 'undefined') {
+                        window.imoSubViews = new ImoSubViews(window.imoKalkulator);
+                        if (window.imoDebugLog) window.imoDebugLog('✅ ImoSubViews erstellt');
+                    }
+                } else if (window.imoSubViews) {
+                    window.imoSubViews.init();
+                }
+                if (window.imoSchuldenuhr) window.imoSchuldenuhr.init();
             }, 200);
         }
     }
@@ -3677,3 +3686,11 @@ if (window.imoKalkulator) {
         }
     };
 }
+
+
+// ============================================
+// GLOBALE EXPORTS (für normale Scripts zugänglich)
+// Module-Scope macht Klassen nicht global verfügbar!
+// ============================================
+window.ImoKalkulator = ImoKalkulator;
+window.JarvisPWA = JarvisPWA;

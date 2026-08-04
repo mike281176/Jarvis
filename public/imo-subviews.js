@@ -496,7 +496,25 @@ class ImoSubViews {
 
 // Auto-init wenn DOM geladen
 document.addEventListener('DOMContentLoaded', () => {
-    if (window.imoKalkulator && !window.imoSubViews) {
-        window.imoSubViews = new ImoSubViews(window.imoKalkulator);
+    // Warte auf ImoKalkulator (wird von app.js Modul erstellt)
+    const tryInit = () => {
+        const kalk = window.imoKalkulator;
+        if (kalk && !window.imoSubViews) {
+            window.imoSubViews = new ImoSubViews(kalk);
+            if (window.imoDebugLog) window.imoDebugLog('✅ ImoSubViews initialisiert');
+            return true;
+        }
+        return false;
+    };
+    
+    // Sofort versuchen + alle 500ms bis zu 20x (10 Sekunden)
+    if (!tryInit()) {
+        let attempts = 0;
+        const interval = setInterval(() => {
+            attempts++;
+            if (tryInit() || attempts >= 20) {
+                clearInterval(interval);
+            }
+        }, 500);
     }
 });
