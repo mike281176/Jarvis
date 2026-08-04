@@ -73,6 +73,14 @@ class ImoSubViews {
             } else if (subviewName === 'vermoegen') {
                 this.updateVermoegen();
             }
+        } else if (subviewName === 'cockpit') {
+            // Cockpit = Standard-Inhalt direkt im HTML
+            // Alle Sub-Views verstecken, Cockpit-Inhalt zeigen
+            const cockpit = document.querySelector('.imo-content');
+            if (cockpit) {
+                cockpit.style.display = 'block';
+            }
+            if (window.imoDebugLog) window.imoDebugLog('Cockpit: Standard-Inhalt sichtbar');
         }
         
         // Schuldenuhr-Update via ImoSchuldenuhr-Klasse
