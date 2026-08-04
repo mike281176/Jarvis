@@ -71,8 +71,18 @@ class ImoSubViews {
             }
         }
         
+        // Schuldenuhr-Update via ImoSchuldenuhr-Klasse
+        if (subviewName === 'schuldenuhr') {
+            if (window.imoSchuldenuhr) {
+                window.imoSchuldenuhr.init();
+                window.imoSchuldenuhr.laden();
+                window.imoSchuldenuhr.berechnen();
+            }
+        }
+        
         // Scroll nach oben
-        document.querySelector('.imo-container').scrollTop = 0;
+        const container = document.querySelector('.imo-container');
+        if (container) container.scrollTop = 0;
     }
     
     /**

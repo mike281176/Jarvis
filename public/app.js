@@ -734,6 +734,29 @@ class JarvisPWA {
         if (viewName === 'ollama') {
             this.loadOllamaData();
         }
+        // IMO: Sprachbutton ausblenden für mehr Platz
+        const aiCore = document.getElementById('aiCoreContainer');
+        if (aiCore) {
+            aiCore.style.display = (viewName === 'imo') ? 'none' : 'flex';
+        }
+        // IMO Sub-Views initialisieren
+        if (viewName === 'imo') {
+            setTimeout(() => {
+                if (window.imoSubViews) window.imoSubViews.init();
+                if (window.imoSchuldenuhr) window.imoSchuldenuhr.init();
+                // IMO Kalkulator initialisieren falls nicht vorhanden
+                if (!window.imoKalkulator) {
+                    if (typeof ImoKalkulator !== 'undefined') {
+                        window.imoKalkulator = new ImoKalkulator();
+                    }
+                }
+                if (!window.imoModule) {
+                    if (typeof ImoModule !== 'undefined') {
+                        window.imoModule = new ImoModule(window.imoKalkulator);
+                    }
+                }
+            }, 200);
+        }
     }
 
     async loadOllamaData() {
