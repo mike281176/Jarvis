@@ -2954,6 +2954,79 @@ class ImoKalkulator {
         return isNaN(val) ? 0 : val;
     }
     
+    /**
+     * Alle aktuellen Werte als State-Objekt zurückgeben
+     * Wird von ImoSubViews für Bankgespräch/Diagramme/etc. benötigt
+     */
+    getState() {
+        const state = {
+            // Objekt-Daten
+            imoadresse: document.getElementById('imoAdresse')?.value || '',
+            imoflaeche: this.getValue('imoFlaeche'),
+            imozimmer: this.getValue('imoZimmer'),
+            imobaujahr: this.getValue('imoBaujahr'),
+            // Investition
+            kaufpreis: this.getValue('imoKaufpreis'),
+            eigenkapital: this.getValue('imoEigenkapital'),
+            // Finanzierung
+            zins: this.getValue('imoZins') || 3.5,
+            tilgung: this.getValue('imoTilgung') || 1.0,
+            zinsbindung: this.getValue('imoZinsbindung') || 10,
+            // Miete
+            kaltmiete: this.getValue('imoKaltmiete'),
+            nebekosten: this.getValue('imoNebenkosten'),
+            hausgeldGesamt: this.getValue('imoHausgeldGesamt') || 0,
+            hausgeldUmlagefaehig: this.getValue('imoHausgeldUmlagefaehig') || 0,
+            eigeneInstandhaltung: this.getValue('imoEigeneInstandhaltung') || 0,
+            mietausfall: this.getValue('imoMietausfall') || 0,
+            // Verlauf
+            mietsteigerung: this.getValue('imoMietsteigerung') || 1.5,
+            kostensteigerung: this.getValue('imoKostensteigerung') || 2.0,
+            // Berechnete Werte
+            hausgeld: this.getValue('imoHausgeldGesamt') || 0,
+            instandhaltung: this.getValue('imoEigeneInstandhaltung') || 0
+        };
+        
+        // Berechnungen für Sub-Views
+        const makler = this.getValue('imoMakler') || 3.57;
+        const notar = this.getValue('imoNotar') || 1.5;
+        const grundbuch = this.getValue('imoGrundbuch') || 0.5;
+        const grunderwerb = this.getValue('imoGrunderwerb') || 6.5;
+        const sonstige = this.getValue('imoSonstige') || 0;
+        
+        state.maklerKosten = state.kaufpreis * (makler / 100);
+        state.notarkosten = state.kaufpreis * (notar / 100);
+        state.grundbuchKosten = state.kaufpreis * (grundbuch / 100);
+        state.grunderwerbKosten = state.kaufpreis * (grunderwerb / 100);
+        state.gesamtinvest = state.kaufpreis + state.maklerKosten + state.notarkosten + state.grundbuchKosten + state.grunderwerbKosten + sonstige;
+        state.finanzierung = state.gesamtinvest - state.eigenkapital;
+        
+        const zinsenMonat = state.finanzierung * (state.zins / 100) / 12;
+        const tilgungMonat = state.finanzierung * (state.tilgung / 100) / 12;
+        state.rateMonat = zinsenMonat + tilgungMonat;
+        
+        state.hausgeldNichtUmlagefaehig = state.hausgeldGesamt - state.hausgeldUmlagefaehig;
+        state.bewirtschaftungskostenMonat = state.hausgeldNichtUmlagefaehig + state.eigeneInstandhaltung + state.mietausfall;
+        state.einnahmenMonat = state.kaltmiete + state.nebekosten + state.hausgeldUmlagefaehig;
+        state.cashflowOperativMonat = state.einnahmenMonat - state.bewirtschaftungskostenMonat - state.rateMonat;
+        state.cashflowOperativJahr = state.cashflowOperativMonat * 12;
+        
+        // Renditen
+        state.bruttorendite = state.gesamtinvest > 0 ? ((state.kaltmiete * 12) / state.gesamtinvest) * 100 : 0;
+        state.nettorendite = state.eigenkapital > 0 ? (state.cashflowOperativJahr / state.eigenkapital) * 100 : 0;
+        state.ekRenditeVorSteuern = state.nettorendite;
+        state.ekRenditeNachSteuern = state.nettorendite;
+        
+        // Steuer (vereinfacht 42%)
+        const afaMonat = 0; // Wird in calculate() berechnet
+        const steuerlichesErgebnis = state.einnahmenMonat - state.bewirtschaftungskostenMonat - zinsenMonat - afaMonat;
+        state.steuerersparnisMonat = steuerlichesErgebnis < 0 ? Math.abs(steuerlichesErgebnis) * 0.42 : 0;
+        state.cashflowNachSteuernMonat = state.cashflowOperativMonat + state.steuerersparnisMonat;
+        state.cashflowNachSteuernJahr = state.cashflowNachSteuernMonat * 12;
+        
+        return state;
+    }
+    
     setValue(id, value, format = 'number') {
         const el = document.getElementById(id);
         if (!el) return;
