@@ -1735,7 +1735,7 @@ class JarvisPWA {
                 }
             }
             
-            // Immich: Direkter API-Ping auf den Server (auch von HTTPS wegen CORS?)
+            // Immich: Direkter API-Ping auf den Server
             if (id === 'status-immich-dot') {
                 try {
                     const response = await fetch('http://192.168.1.159:22833/api/server/ping', {
@@ -1753,6 +1753,24 @@ class JarvisPWA {
                 }
             }
             
+            // Fredy: Direkter HTTP-Ping auf Port 9998
+            if (id === 'status-fredy-dot') {
+                try {
+                    const response = await fetch('http://192.168.1.159:9998/', {
+                        method: 'HEAD',
+                        signal: AbortSignal.timeout(3000)
+                    });
+                    const isOnline = response.ok;
+                    dot.className = isOnline ? 'status-dot-sm online' : 'status-dot-sm offline';
+                    if (isOnline) onlineCount++;
+                    continue;
+                } catch (e) {
+                    console.warn('Fredy API Check failed:', e);
+                    dot.className = 'status-dot-sm offline';
+                    continue;
+                }
+            }
+            
             // Normale Logik für andere Sensoren
             if (!state || state.state === 'unavailable' || state.state === 'unknown') {
                 dot.className = 'status-dot-sm offline';
@@ -1765,8 +1783,8 @@ class JarvisPWA {
         
         const footer = document.getElementById('footerConnection');
         if (footer) {
-            footer.innerHTML = `● ${onlineCount}/9 Systeme online`;
-            footer.className = onlineCount === 9 ? 'connection-status online' : 'connection-status offline';
+            footer.innerHTML = `● ${onlineCount}/11 Systeme online`;
+            footer.className = onlineCount === 11 ? 'connection-status online' : 'connection-status offline';
         }
     }
 
