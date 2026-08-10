@@ -1699,7 +1699,8 @@ class JarvisPWA {
             'status-zigbee-dot': 'binary_sensor.jarvis_status_zigbee',
             'status-opendtu-dot': 'binary_sensor.jarvis_status_opendtu',
             'status-jarvis-dot': 'binary_sensor.jarvis_status_jarvis_api',
-            'status-paperless-dot': 'binary_sensor.paperless_status'
+            'status-paperless-dot': 'binary_sensor.paperless_status',
+            'status-immich-dot': 'binary_sensor.immich_status'
         };
         let onlineCount = 0;
         
@@ -1729,6 +1730,24 @@ class JarvisPWA {
                         continue;
                     }
                 } else {
+                    dot.className = 'status-dot-sm offline';
+                    continue;
+                }
+            }
+            
+            // Immich: Direkter API-Ping auf den Server (auch von HTTPS wegen CORS?)
+            if (id === 'status-immich-dot') {
+                try {
+                    const response = await fetch('http://192.168.1.159:22833/api/server/ping', {
+                        method: 'GET',
+                        signal: AbortSignal.timeout(3000)
+                    });
+                    const isOnline = response.ok;
+                    dot.className = isOnline ? 'status-dot-sm online' : 'status-dot-sm offline';
+                    if (isOnline) onlineCount++;
+                    continue;
+                } catch (e) {
+                    console.warn('Immich API Check failed:', e);
                     dot.className = 'status-dot-sm offline';
                     continue;
                 }
