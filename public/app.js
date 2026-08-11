@@ -1699,8 +1699,9 @@ class JarvisPWA {
             'status-zigbee-dot': 'binary_sensor.jarvis_status_zigbee',
             'status-opendtu-dot': 'binary_sensor.jarvis_status_opendtu',
             'status-jarvis-dot': 'binary_sensor.jarvis_status_jarvis_api',
-            'status-paperless-dot': 'binary_sensor.paperless_status',
-            'status-immich-dot': 'binary_sensor.immich_status'
+            'status-paperless-dot': 'binary_sensor.jarvis_status_paperless',
+            'status-immich-dot': 'binary_sensor.jarvis_status_immich',
+            'status-fredy-dot': 'binary_sensor.jarvis_status_fredy'
         };
         let onlineCount = 0;
         
@@ -1710,68 +1711,7 @@ class JarvisPWA {
             const dot = document.getElementById(id);
             if (!dot) continue;
             
-            // Paperless: Fallback API-Check nur im lokalen HTTP-Modus, nie von HTTPS
-            if (id === 'status-paperless-dot' && (!state || state.state === 'unavailable' || state.state === 'unknown')) {
-                const isLocalHttp = window.location.protocol === 'http:' && (window.location.hostname === 'localhost' || window.location.hostname.startsWith('192.168.') || window.location.hostname.startsWith('jarvis.local'));
-                if (isLocalHttp) {
-                    try {
-                        const response = await fetch('http://192.168.1.159:8777/api/documents/', {
-                            method: 'HEAD',
-                            headers: { 'Authorization': 'Token 44568e6750650f79836f5cb18f5f76b0fe1eb29f' },
-                            signal: AbortSignal.timeout(3000)
-                        });
-                        const isOnline = response.ok;
-                        dot.className = isOnline ? 'status-dot-sm online' : 'status-dot-sm offline';
-                        if (isOnline) onlineCount++;
-                        continue;
-                    } catch (e) {
-                        console.warn('Paperless API Check failed:', e);
-                        dot.className = 'status-dot-sm offline';
-                        continue;
-                    }
-                } else {
-                    dot.className = 'status-dot-sm offline';
-                    continue;
-                }
-            }
-            
-            // Immich: Direkter API-Ping auf den Server
-            if (id === 'status-immich-dot') {
-                try {
-                    const response = await fetch('http://192.168.1.159:22833/api/server/ping', {
-                        method: 'GET',
-                        signal: AbortSignal.timeout(3000)
-                    });
-                    const isOnline = response.ok;
-                    dot.className = isOnline ? 'status-dot-sm online' : 'status-dot-sm offline';
-                    if (isOnline) onlineCount++;
-                    continue;
-                } catch (e) {
-                    console.warn('Immich API Check failed:', e);
-                    dot.className = 'status-dot-sm offline';
-                    continue;
-                }
-            }
-            
-            // Fredy: Direkter HTTP-Ping auf Port 9998
-            if (id === 'status-fredy-dot') {
-                try {
-                    const response = await fetch('http://192.168.1.159:9998/', {
-                        method: 'HEAD',
-                        signal: AbortSignal.timeout(3000)
-                    });
-                    const isOnline = response.ok;
-                    dot.className = isOnline ? 'status-dot-sm online' : 'status-dot-sm offline';
-                    if (isOnline) onlineCount++;
-                    continue;
-                } catch (e) {
-                    console.warn('Fredy API Check failed:', e);
-                    dot.className = 'status-dot-sm offline';
-                    continue;
-                }
-            }
-            
-            // Normale Logik für andere Sensoren
+            // Normale Logik für alle HA-Sensoren (auch Paperless, Immich, Fredy)
             if (!state || state.state === 'unavailable' || state.state === 'unknown') {
                 dot.className = 'status-dot-sm offline';
                 continue;
