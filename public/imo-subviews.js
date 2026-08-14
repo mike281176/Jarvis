@@ -58,6 +58,12 @@ class ImoSubViews {
         if (window.imoDebugLog) window.imoDebugLog(`View 'imo-subview-${subviewName}': ${activeView ? 'GEFUNDEN' : 'NICHT GEFUNDEN ❌'}`);
         
         if (activeView) {
+            // Cockpit-Content ausblenden (überdeckt sonst die Sub-View)
+            const cockpit = document.querySelector('#imo-cockpit-area .imo-content, .imo-wrapper .imo-content');
+            if (cockpit) {
+                cockpit.style.display = 'none';
+            }
+            
             activeView.classList.add('active');
             activeView.style.display = 'block';
             
@@ -80,6 +86,10 @@ class ImoSubViews {
             if (cockpit) {
                 cockpit.style.display = 'block';
             }
+            // Auch andere mögliche Cockpit-Container einblenden
+            document.querySelectorAll('#imo-cockpit-area .imo-content, .imo-cockpit, .imo-calculator').forEach(el => {
+                if (el) el.style.display = 'block';
+            });
             if (window.imoDebugLog) window.imoDebugLog('Cockpit: Standard-Inhalt sichtbar');
         }
         
