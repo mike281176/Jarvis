@@ -59,7 +59,7 @@ class ImoSubViews {
         
         if (activeView) {
             // Cockpit-Content ausblenden (überdeckt sonst die Sub-View)
-            const cockpit = document.querySelector('#imo-cockpit-area .imo-content, .imo-wrapper .imo-content');
+            const cockpit = document.getElementById('imo-cockpit-content');
             if (cockpit) {
                 cockpit.style.display = 'none';
             }
