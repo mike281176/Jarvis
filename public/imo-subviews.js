@@ -58,11 +58,12 @@ class ImoSubViews {
         if (window.imoDebugLog) window.imoDebugLog(`View 'imo-subview-${subviewName}': ${activeView ? 'GEFUNDEN' : 'NICHT GEFUNDEN ❌'}`);
         
         if (activeView) {
-            // Cockpit-Content ausblenden (überdeckt sonst die Sub-View)
-            const cockpit = document.getElementById('imo-cockpit-content');
-            if (cockpit) {
-                cockpit.style.display = 'none';
-            }
+            // ALLES unter der .imo-subnav ausblenden, was nicht die Sub-View ist
+            document.querySelectorAll('#imo-cockpit-content, .imo-inputs, .imo-kennzahlen, .imo-diagramme-section').forEach(el => {
+                if (el && el.id !== activeView.id && !el.classList.contains('imo-subview')) {
+                    el.style.display = 'none';
+                }
+            });
             
             activeView.classList.add('active');
             activeView.style.display = 'block';
@@ -82,12 +83,11 @@ class ImoSubViews {
         } else if (subviewName === 'cockpit') {
             // Cockpit = Standard-Inhalt direkt im HTML
             // Alle Sub-Views verstecken, Cockpit-Inhalt zeigen
-            const cockpit = document.querySelector('.imo-content');
-            if (cockpit) {
-                cockpit.style.display = 'block';
-            }
-            // Auch andere mögliche Cockpit-Container einblenden
-            document.querySelectorAll('#imo-cockpit-area .imo-content, .imo-cockpit, .imo-calculator').forEach(el => {
+            document.querySelectorAll('.imo-subview').forEach(v => {
+                v.style.display = 'none';
+                v.classList.remove('active');
+            });
+            document.querySelectorAll('#imo-cockpit-content, .imo-inputs, .imo-kennzahlen, .imo-diagramme-section').forEach(el => {
                 if (el) el.style.display = 'block';
             });
             if (window.imoDebugLog) window.imoDebugLog('Cockpit: Standard-Inhalt sichtbar');
