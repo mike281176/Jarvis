@@ -96,9 +96,12 @@ class ImoSubViews {
         // Schuldenuhr-Update via ImoSchuldenuhr-Klasse
         if (subviewName === 'schuldenuhr') {
             if (window.imoSchuldenuhr) {
-                window.imoSchuldenuhr.init();
                 window.imoSchuldenuhr.laden();
-                window.imoSchuldenuhr.berechnen();
+                window.imoSchuldenuhr.berechnen().then(() => {
+                    // Sicherstellen, dass die IST-Variante sichtbar ist
+                    document.getElementById('schuldenuhr-ist').style.display = 'block';
+                    document.getElementById('schuldenuhr-ist').classList.add('active');
+                });
             }
         }
         
