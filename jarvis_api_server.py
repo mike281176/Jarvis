@@ -189,6 +189,10 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             self.handle_ha_proxy(self.path, 'POST', body)
             return
 
+        if self.path == '/api/jarvis/location-log':
+            self.handle_location_log_trigger()
+            return
+
         if self.path.startswith('/api/jarvis/auth/'):
             content_length = int(self.headers.get('Content-Length', 0))
             body = self.rfile.read(content_length)
@@ -199,6 +203,30 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             self.handle_ask()
         else:
             self.send_json_response({'status': 'error', 'message': 'Endpunkt nicht gefunden'}, 404)
+
+    def handle_location_log_trigger(self):
+        """Trigger für Location Logger - führt das Script sofort aus"""
+        try:
+            import subprocess
+            script_path = '/home/mike/.hermes/scripts/location_logger.py'
+            result = subprocess.run(
+                ['python3', script_path],
+                capture_output=True,
+                text=True,
+                timeout=60
+            )
+            success = result.returncode == 0
+            self.send_json_response({
+                'status': 'ok' if success else 'error',
+                'stdout': result.stdout,
+                'stderr': result.stderr,
+                'returncode': result.returncode,
+                'timestamp': datetime.now().isoformat()
+            })
+            print(f"[LOCATION-LOG] Triggered: success={success}, stdout={result.stdout.strip()}")
+        except Exception as e:
+            print(f"❌ Location-Log Trigger Error: {e}")
+            self.send_json_response({'status': 'error', 'message': str(e)}, 500)
     
     def handle_ask(self):
         try:

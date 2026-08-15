@@ -77,8 +77,8 @@ class ImoModule {
         const empfohleneMiete = ortsueblich * flaeche;
         const eingabeMiete = kaltmiete;
         
-        document.getElementById('mietspiegelMiete').textContent = ortsueblich.toFixed(2) + ' €/m²';
-        document.getElementById('mietspiegelEmpfehlung').textContent = empfohleneMiete.toFixed(0) + ' €/Monat';
+        document.getElementById('mietspiegelMiete').textContent = ortsueblich.toLocaleString('de-DE', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + ' €/m²';
+        document.getElementById('mietspiegelEmpfehlung').textContent = empfohleneMiete.toLocaleString('de-DE', {maximumFractionDigits: 0}) + ' €/Monat';
         
         // Warnung wenn Miete zu niedrig/hoch
         const warnungElement = document.getElementById('mietspiegelWarnung');
