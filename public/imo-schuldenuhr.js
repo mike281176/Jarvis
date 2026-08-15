@@ -168,13 +168,12 @@ class ImoSchuldenuhr {
         const restschuld2 = kredit2 ? kredit2.restschuld_aktuell : 0;
         const gesamtRestschuld = restschuld1 + restschuld2;
         
+        // Restschulden in die editierbaren Felder schreiben (NICHT data.mosel.restschuld! Das ist für die Mosel-Hypothek separat)
+        this.data.ratenkredite = restschuld2; // LVM Privatdarlehen als Ratenkredit
+        this.data.mosel.restschuld = restschuld1; // Nur die Hypothek auf Moselstr.
+        
         // Moselstraße Gesamt
         this.data.mosel.gesamt = this.data.mosel.kaufpreis + this.data.mosel.nebenkosten;
-        
-        // Wenn keine manuelle Restschuld eingegeben, nutze LVM-Daten
-        if (this.data.mosel.restschuld === 0 && gesamtRestschuld > 0) {
-            this.data.mosel.restschuld = gesamtRestschuld;
-        }
         
         // === VARIANT 1: IST ===
         const aktivaIst = this.data.mosel.wertAktuell + this.data.kontoTanja + this.data.kontoMike;

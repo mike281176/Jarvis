@@ -66,7 +66,7 @@ class ImoSubViews {
             });
             
             activeView.classList.add('active');
-            activeView.style.display = 'block';
+            activeView.style.setProperty('display', 'block', 'important');
             
             // View-spezifische Updates
             if (subviewName === 'bankgespräch') {
