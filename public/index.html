@@ -1170,6 +1170,22 @@
                                     
                                     // Scripts neu initialisieren
                                     setTimeout(() => {
+                                        // IMO Kalkulator erstellen falls noch nicht vorhanden
+                                        if (!window.imoKalkulator && typeof ImoKalkulator !== 'undefined') {
+                                            window.imoKalkulator = new ImoKalkulator();
+                                            if (window.imoDebugLog) window.imoDebugLog('✅ ImoKalkulator erstellt (nach HTML Load)');
+                                        }
+                                        // ImoModule erstellen falls noch nicht vorhanden
+                                        if (!window.imoModule && window.imoKalkulator && typeof ImoModule !== 'undefined') {
+                                            window.imoModule = new ImoModule(window.imoKalkulator);
+                                            if (window.imoDebugLog) window.imoDebugLog('✅ ImoModule erstellt (nach HTML Load)');
+                                        }
+                                        // ImoSubViews erstellen falls noch nicht vorhanden
+                                        if (!window.imoSubViews && window.imoKalkulator && typeof ImoSubViews !== 'undefined') {
+                                            window.imoSubViews = new ImoSubViews(window.imoKalkulator);
+                                            if (window.imoDebugLog) window.imoDebugLog('✅ ImoSubViews erstellt (nach HTML Load)');
+                                        }
+                                        // Init aufrufen (bei allen Klassen)
                                         if (window.imoSubViews) window.imoSubViews.init();
                                         if (window.imoSchuldenuhr) window.imoSchuldenuhr.init();
                                         if (window.imoDebugLog) window.imoDebugLog('🔄 Init abgeschlossen');
