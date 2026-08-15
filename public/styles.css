@@ -1686,7 +1686,7 @@ html, body {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-md);
     flex: 1;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .imo-inputs,
@@ -2169,6 +2169,9 @@ html, body {
 .imo-subview {
     display: none;
     animation: fadeIn 0.3s ease;
+    max-height: calc(100vh - 280px);
+    overflow-y: auto;
+    padding-right: 8px;
 }
 
 .imo-subview.active {
