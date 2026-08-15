@@ -82,7 +82,7 @@ html, body {
     background: rgba(0, 20, 40, 0.6); border: 1px solid rgba(0, 212, 255, 0.25);
     border-radius: 12px; color: var(--text-primary); cursor: pointer;
     display: flex; flex-direction: column; align-items: center; gap: var(--space-xs);
-    position: relative; transition: all 0.3s ease;
+    position: relative; transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .user-card:hover { border-color: var(--jarvis-blue); transform: translateY(-3px); box-shadow: var(--glow-blue); }
 .user-avatar { width: 60px; height: 60px; border-radius: 50%; position: relative; display: flex; align-items: center; justify-content: center; }
@@ -101,11 +101,25 @@ html, body {
     color: var(--text-primary); font-size: 0.9rem;
 }
 .hud-input:focus { outline: none; border-color: var(--jarvis-blue); box-shadow: var(--glow-blue); }
+
+/* Fokus-Sichtbarkeit für Tastatur-Nutzer (make-interfaces-feel-better) */
+.hud-button:focus-visible,
+.menu-item:focus-visible,
+.user-card:focus-visible,
+.settings-toggle:focus-visible,
+.close-panel:focus-visible,
+.imo-subnav-btn:focus-visible,
+.logout-btn:focus-visible {
+    outline: 2px solid var(--jarvis-blue-light);
+    outline-offset: 2px;
+    border-color: var(--jarvis-blue-light);
+    box-shadow: var(--glow-blue);
+}
 .password-actions { display: flex; gap: var(--space-sm); justify-content: flex-end; margin-top: var(--space-md); }
 .hud-button {
     background: rgba(0, 212, 255, 0.1); border: 1px solid rgba(0, 212, 255, 0.4);
     color: var(--jarvis-blue); padding: var(--space-xs) var(--space-sm);
-    border-radius: 6px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s;
+    border-radius: 6px; cursor: pointer; font-size: 0.85rem; transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
     display: inline-flex; align-items: center; gap: var(--space-xs);
 }
 .hud-button:hover { background: rgba(0, 212, 255, 0.2); box-shadow: var(--glow-blue); }
@@ -158,7 +172,7 @@ html, body {
 .system-date { font-size: 0.65rem; color: var(--text-secondary); letter-spacing: 0.1em; }
 .header-right { display: flex; align-items: center; gap: var(--space-xs); justify-content: flex-end; }
 .user-badge { width: 30px; height: 30px; border-radius: 50%; background: var(--jarvis-blue); color: var(--hud-bg); display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem; }
-.logout-btn { background: transparent; border: 1px solid rgba(255, 100, 100, 0.3); color: rgba(255, 100, 100, 0.7); width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; transition: all 0.2s; }
+.logout-btn { background: transparent; border: 1px solid rgba(255, 100, 100, 0.3); color: rgba(255, 100, 100, 0.7); width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; transition: background 0.2s, border-color 0.2s, color 0.2s; }
 .logout-btn:hover { background: rgba(255, 100, 100, 0.2); border-color: rgba(255, 100, 100, 0.5); color: #ff6464; }
 
 /* Close panel buttons (chat, climate, camera overlays) */
@@ -175,7 +189,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s;
+    transition: transform 0.2s, opacity 0.2s, border-color 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
     padding: 0;
 }
 .close-panel:hover {
@@ -215,7 +229,7 @@ html, body {
     font-family: var(--font-hud); font-size: 0.7rem; letter-spacing: 0.08em;
     text-align: left;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: transform 0.2s, opacity 0.2s, border-color 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
     position: relative;
 }
 .menu-item:hover { color: var(--jarvis-blue); border-color: rgba(0, 212, 255, 0.25); }
@@ -711,7 +725,7 @@ html, body {
     overflow: hidden;
     opacity: 0;
     transform: translateY(20px) scale(0.96);
-    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1) 0.25s;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), background 0.35s cubic-bezier(0.22, 1, 0.36, 1), color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .climate-panel::before {
@@ -1050,7 +1064,7 @@ html, body {
     border-radius: 2px;
     background: rgba(0, 212, 255, 0.4);
     box-shadow: 0 0 8px rgba(0, 212, 255, 0.2);
-    transition: all 0.3s;
+    transition: transform 0.3s, opacity 0.3s, border-color 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
 }
 
 .voice-drawer-handle .drawer-label {
@@ -1138,7 +1152,7 @@ html, body {
     font-size: 0.8rem;
     letter-spacing: 0.08em;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: transform 0.2s, opacity 0.2s, border-color 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
 }
 
 .voice-drawer-body .drawer-menu-item:hover,
@@ -1742,7 +1756,7 @@ html, body {
     border-radius: 6px;
     padding: var(--space-md);
     text-align: center;
-    transition: all 0.3s ease;
+    transition: transform 0.3s, opacity 0.3s, border-color 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
 }
 
 .imo-kpi-card:hover {
@@ -1770,6 +1784,7 @@ html, body {
     color: var(--jarvis-blue-light);
     text-shadow: var(--glow-blue);
     margin-bottom: var(--space-xs);
+    font-variant-numeric: tabular-nums;
     font-family: var(--font-hud);
 }
 
@@ -1872,7 +1887,7 @@ html, body {
     border-radius: 6px;
     padding: var(--space-md);
     text-align: center;
-    transition: all 0.3s ease;
+    transition: transform 0.3s, opacity 0.3s, border-color 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
 }
 
 .stress-item.warning {
@@ -1990,7 +2005,7 @@ html, body {
     border-radius: 4px;
     padding: var(--space-sm);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s, opacity 0.3s, border-color 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2130,7 +2145,7 @@ html, body {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s, opacity 0.3s, border-color 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
     white-space: nowrap;
 }
 
@@ -2157,7 +2172,7 @@ html, body {
 }
 
 .imo-subview.active {
-    display: block;
+    display: block !important;
 }
 
 @keyframes fadeIn {
@@ -2575,7 +2590,7 @@ html, body {
     border: 2px solid rgba(0, 212, 255, 0.3);
     border-radius: 12px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s, opacity 0.3s, border-color 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
     text-align: left;
     font-size: 16px;
     font-weight: 700;
