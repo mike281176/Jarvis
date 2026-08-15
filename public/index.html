@@ -396,6 +396,10 @@
                                 <button class="imo-subnav-btn" data-subview="schuldenuhr">⏰ Schuldenuhr</button>
                             </div>
                             
+                            <!-- IMO Sub-Views Container (werden per Fetch gefüllt) -->
+                            <div id="imo-subviews-container"></div>
+                            <div id="imo-schuldenuhr-container"></div>
+                            
                             <div class="imo-content" id="imo-cockpit-content">
                                 <!-- Linke Spalte: Eingaben -->
                                 <div class="imo-inputs">
@@ -1141,12 +1145,7 @@
                         </div>
                     </div>
                     
-                            <!-- IMO Sub-Views (Bankgespräch, Diagramme, Verlauf, Haushalt, Vermögen, Schuldenuhr) -->
-                            <!-- Wird direkt aus den HTML-Dateien eingefügt -->
-                            <div id="imo-subviews-container"></div>
-                            <div id="imo-schuldenuhr-container"></div>
-                            
-                            <script>
+                    <script>
                                 // Sub-Views dynamisch laden
                                 Promise.all([
                                     fetch('imo-subviews.html').then(r => {
