@@ -26,7 +26,8 @@ class ImoSchuldenuhr {
             geplanteImmobilien: []
         };
         
-        this.init();
+        // Init wird nach HTML Load aufgerufen, nicht im Constructor
+        // this.init();
     }
     
     init() {

@@ -1185,9 +1185,17 @@
                                             window.imoSubViews = new ImoSubViews(window.imoKalkulator);
                                             if (window.imoDebugLog) window.imoDebugLog('✅ ImoSubViews erstellt (nach HTML Load)');
                                         }
+                                        // ImoSchuldenuhr erstellen falls noch nicht vorhanden (wichtig: nach HTML Load!)
+                                        if (!window.imoSchuldenuhr && typeof ImoSchuldenuhr !== 'undefined') {
+                                            window.imoSchuldenuhr = new ImoSchuldenuhr();
+                                            if (window.imoDebugLog) window.imoDebugLog('✅ ImoSchuldenuhr erstellt (nach HTML Load)');
+                                        }
                                         // Init aufrufen (bei allen Klassen)
                                         if (window.imoSubViews) window.imoSubViews.init();
-                                        if (window.imoSchuldenuhr) window.imoSchuldenuhr.init();
+                                        if (window.imoSchuldenuhr) {
+                                            window.imoSchuldenuhr.init();
+                                            if (window.imoDebugLog) window.imoDebugLog('✅ ImoSchuldenuhr.init() aufgerufen');
+                                        }
                                         if (window.imoDebugLog) window.imoDebugLog('🔄 Init abgeschlossen');
                                     }, 100);
                                 })
