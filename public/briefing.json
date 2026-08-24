@@ -1,4 +1,75 @@
 {
-  "datum": "Noch kein Briefing",
-  "bereiche": []
+  "datum": "Montag, 24.08.2026",
+  "bereiche": [
+    {
+      "titel": "Regional/Überregional",
+      "artikel": [
+        {
+          "titel": "Sternenschule Spich: Schulstart trotz Vandalismus gesichert",
+          "aufmacher": "Die nach dem Vandalismus-Schaden von über 400.000 Euro verwüstete Sternenschule in Troisdorf-Spich ist zum Schulstart wieder einsatzbereit.",
+          "fakten": "Die von Bürgermeister Alexander Biber eingesetzte Projektgruppe meldet, dass die Trocknung der Böden gut voranschreitet und die Elektrik wieder funktioniert. Zerstörtes oder durchnässtes Mobiliar wird in den kommenden Wochen ersetzt. Der Unterricht kann laut Schulverwaltungsamtsleiterin Simone Duggan in den Klassenräumen stattfinden; auch die Betreuung im i-Punkt (rund 70 Kinder) ist wieder möglich. Die Trocknung einzelner Gebäudeteile läuft noch bis zu den Herbstferien.",
+          "einordnung": "Der Einbruch Anfang August in die Grundschule an der Kriegsdorfer Straße hatte einen Sachschaden von mehr als 400.000 Euro verursacht; die Polizei ermittelt gegen fünf Tatverdächtige.",
+          "quellen": [
+            {"name": "treffpunkt-troisdorf (Stadt Troisdorf, PM Nr. 400)", "url": "https://treffpunkt-troisdorf.de/sternenschule/"},
+            {"name": "Presseportal – Kreispolizeibehörde Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6334953"}
+          ]
+        },
+        {
+          "titel": "Rotter See: Tote Enten starben durch natürliches Nervengift",
+          "aufmacher": "Die 17 am Rotter See in Troisdorf verendeten Wasservögel starben an Botulismus – für Menschen besteht keine Gefahr.",
+          "fakten": "Das Friedrich-Löffler-Institut wies Clostridium botulinum Neurotoxin Typ C nach. Das Toxin ist laut Rhein-Sieg-Kreis vor allem für Wasservögel, Geflügel und Rinder gefährlich, für Menschen nicht. Das Veterinäramt warnt: Tote Tiere nicht berühren, Hunde von Kadavern fernhalten und nicht aus dem See trinken lassen – bei Verstößen drohen bis zu 500 Euro Bußgeld. Der See war nach dem Fund am 17. Juli zeitweise gesperrt, wurde aber nach einer Woche wieder freigegeben.",
+          "einordnung": "Das Bakterium vermehrt sich bei Wärme, Nährstoffreichtum und Sauerstoffmangel – typische Sommerbedingungen an stehenden Gewässern.",
+          "quellen": [
+            {"name": "WDR – Rhein-Sieg-Kreis", "url": "https://www1.wdr.de/nrw/rheinland/rhein-sieg-kreis/tote-enten-troisdorf-rotter-see-100.html"},
+            {"name": "treffpunkt-troisdorf", "url": "https://treffpunkt-troisdorf.de/rotter-see/"}
+          ]
+        }
+      ]
+    },
+    {
+      "titel": "Immobilien",
+      "artikel": [
+        {
+          "titel": "Bauzinsen pendeln sich um die 4-Prozent-Marke ein",
+          "aufmacher": "Die Zinsen für zehnjährige Immobilienkredite liegen im August 2026 stabil bei rund 4 Prozent – ein moderater Anstieg bis Jahresende gilt als wahrscheinlich.",
+          "fakten": "Interhyp nennt für 10-jährige Darlehen effektive Jahreszinsen von 3,82 % (Beleihungsauslauf unter 70 %) bis 4,22 % (über 90 %); bei 15 Jahren liegen sie zwischen 4,06 % und 4,45 %. Dr. Klein meldet einen Topzins von 3,71 % für 10 Jahre (Stand 3. August). 67 % des Interhyp-Expertenpanels erwarten kurzfristig gleichbleibende Zinsen, 50 % rechnen bis Jahresende mit einem moderaten Anstieg.",
+          "einordnung": "Für Mikes Hebel-Strategie (maximale Fremdfinanzierung, nur Kaufnebenkosten aus Eigenkapital) bedeutet das Niveau um 4 %: Die Zinslast bleibt kalkulierbar, aber eine frühzeitige Zinsbindung und nachträgliche Refinanzierung bei mehreren Banken lohnen sich umso mehr, solange die EZB weitere Anhebungen signalisiert.",
+          "quellen": [
+            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Dr. Klein – Zinsentwicklung", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"}
+          ]
+        }
+      ]
+    },
+    {
+      "titel": "Finanzen",
+      "artikel": [
+        {
+          "titel": "EZB hält Leitzins bei 2,25 % – Inflation zieht auf 2,8 % an",
+          "aufmacher": "Die EZB hat ihren Einlagesatz seit Juni 2026 auf 2,25 % angehoben; die deutsche Inflation stieg im Juli auf 2,8 %.",
+          "fakten": "Der EZB-Rat hob am 11. Juni 2026 alle drei Leitzinssätze um 25 Basispunkte an – der Einlagesatz liegt seither bei 2,25 %, der Hauptrefinanzierungssatz bei 2,40 %. Grund ist der Inflationsdruck durch den Krieg im Nahen Osten. Die EZB-Projektionen erwarten eine Gesamtinflation von 3,0 % (2026), 2,3 % (2027) und 2,0 % (2028). In Deutschland lag die Inflationsrate im Juli 2026 laut Destatis bei +2,8 % (Juni: +2,3 %), getrieben vor allem von Energie (+8,3 %).",
+          "einordnung": "Die steigende Inflation und die Aussicht auf weitere Zinsschritte der EZB wirken direkt auf Mikes Finanzierungskosten: Höhere Leitzinsen stützen tendenziell auch die Bauzinsen, was die Konditionen für neue MFH-Darlehen beeinflusst.",
+          "quellen": [
+            {"name": "EZB – Geldpolitische Beschlüsse (11.06.2026)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.de.html"},
+            {"name": "Destatis – Inflationsrate Juli 2026", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_283_611.html"}
+          ]
+        }
+      ]
+    },
+    {
+      "titel": "IT/Server",
+      "artikel": [
+        {
+          "titel": "Hermes Agent: Update verfügbar (0.20.5 → 0.21.0)",
+          "aufmacher": "Für den Hermes Agent liegt ein Update bereit – die kommende Version 0.21.0 bündelt die kuratierten Release-Notes seit 0.20.0.",
+          "fakten": "Der Update-Scan meldet Hermes Agent 0.20.5 mit ausstehenden Commits. Das letzte Release-Fenster (v0.20.4) umfasste rund 146 Commits und 74 gemergte PRs, darunter die Desktop-Glas-/Transluzenz-Oberfläche, eine tabbed SESSIONS|BOTS-Sidebar, Bot-Mode-Gruppenchat-Fixes, NVIDIA SkillEvaluator-Sicherheitsprüfungen bei Skill-Installationen sowie Härtungen beim Cron-Medienversand. Die vollständigen kuratierten Release-Notes erscheinen mit v0.21.0.",
+          "einordnung": "Das Update betrifft direkt die eigene Hermes-Instanz (VM 107) – ein Einspielen lohnt sich, sobald 0.21.0 offiziell getaggt ist, um die Desktop- und Cron-Verbesserungen zu übernehmen.",
+          "quellen": [
+            {"name": "GitHub – NousResearch/hermes-agent Releases", "url": "https://github.com/NousResearch/hermes-agent/releases"},
+            {"name": "Hermes Agent Changelog", "url": "https://hermes-ai.net/changelog/"}
+          ]
+        }
+      ]
+    }
+  ]
 }
