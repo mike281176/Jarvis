@@ -734,10 +734,14 @@ class JarvisPWA {
         if (viewName === 'ollama') {
             this.loadOllamaData();
         }
+        // Briefing-Daten laden
+        if (viewName === 'briefing') {
+            this.loadBriefingData();
+        }
         // IMO: Sprachbutton ausblenden für mehr Platz
         const aiCore = document.getElementById('aiCoreContainer');
         if (aiCore) {
-            aiCore.style.display = (viewName === 'imo') ? 'none' : 'flex';
+            aiCore.style.display = (viewName === 'imo' || viewName === 'briefing') ? 'none' : 'flex';
         }
         // IMO Sub-Views initialisieren
         if (viewName === 'imo') {
@@ -818,6 +822,55 @@ class JarvisPWA {
         } catch (e) {
             console.error('Ollama Data Load Error:', e);
         }
+    }
+
+    async loadBriefingData() {
+        // Lädt das Redaktions-Briefing als JSON (vom täglichen Cron erzeugt).
+        // Quelle: briefing.json im public/-Verzeichnis (lokal) bzw. Vercel (HTTPS).
+        const dateEl = document.getElementById('briefingDate');
+        const contentEl = document.getElementById('briefingContent');
+        if (!contentEl) return;
+        try {
+            const resp = await fetch('briefing.json', { cache: 'no-store' });
+            if (!resp.ok) throw new Error('HTTP ' + resp.status);
+            const data = await resp.json();
+            if (dateEl) dateEl.textContent = data.datum || '';
+            const bereiche = data.bereiche || [];
+            if (!bereiche.length) {
+                contentEl.innerHTML = '<p class="placeholder-text">Noch kein Briefing verfügbar.</p>';
+                return;
+            }
+            let html = '';
+            for (const b of bereiche) {
+                const artikel = (b.artikel || []).map(a => {
+                    const quellen = (a.quellen || []).map(q =>
+                        `<a href="${this._esc(q.url)}" target="_blank" rel="noopener">${this._esc(q.name || q.url)}</a>`
+                    ).join(' · ');
+                    return `<article class="briefing-artikel">
+                        <h3>${this._esc(a.titel)}</h3>
+                        <p class="briefing-aufmacher">${this._esc(a.aufmacher)}</p>
+                        <p class="briefing-fakten">${this._esc(a.fakten)}</p>
+                        ${a.einordnung ? `<p class="briefing-einordnung">${this._esc(a.einordnung)}</p>` : ''}
+                        ${quellen ? `<p class="briefing-quellen">Quellen: ${quellen}</p>` : ''}
+                    </article>`;
+                }).join('');
+                html += `<section class="briefing-bereich">
+                    <h2 class="briefing-bereich-titel">${this._esc(b.titel)}</h2>
+                    ${artikel}
+                </section>`;
+            }
+            contentEl.innerHTML = html;
+        } catch (e) {
+            console.warn('Briefing Load Error:', e);
+            if (dateEl) dateEl.textContent = '';
+            contentEl.innerHTML = '<p class="placeholder-text">Briefing konnte nicht geladen werden. Es wird täglich um 07:00 Uhr erzeugt.</p>';
+        }
+    }
+
+    _esc(s) {
+        const d = document.createElement('div');
+        d.textContent = (s == null ? '' : String(s));
+        return d.innerHTML;
     }
 
     openAgentChat(agent) {

@@ -162,6 +162,10 @@
                         <span class="menu-line"></span>
                         <span class="menu-text">HOME</span>
                     </button>
+                    <button class="menu-item" data-view="briefing" data-label="BRIEFING">
+                        <span class="menu-line"></span>
+                        <span class="menu-text">BRIEFING</span>
+                    </button>
                     <button class="menu-item" data-view="imo" data-label="IMO">
                         <span class="menu-line"></span>
                         <span class="menu-text">IMO</span>
@@ -256,6 +260,19 @@
                             <div class="tile-body">
                                 <div class="metric" id="homeHousePower">0 <span>W</span></div>
                                 <div class="tile-sub" id="homeGridStatus">Netzbezug</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-container" id="view-briefing">
+                        <div class="briefing-wrap">
+                            <div class="briefing-header">
+                                <span class="briefing-kicker">📰 REDAKTIONS-BRIEFING</span>
+                                <h2 class="briefing-title">Dein täglicher Überblick</h2>
+                                <p class="briefing-date" id="briefingDate">—</p>
+                            </div>
+                            <div class="briefing-content" id="briefingContent">
+                                <p class="placeholder-text">Noch kein Briefing verfügbar. Das Redaktions-Briefing läuft täglich um 07:00 Uhr.</p>
                             </div>
                         </div>
                     </div>
@@ -1238,6 +1255,11 @@
                     <button class="drawer-menu-item" data-view="home">
                         <span class="menu-icon">⌂</span>
                         <span>Home</span>
+                        <span class="menu-arrow">›</span>
+                    </button>
+                    <button class="drawer-menu-item" data-view="briefing">
+                        <span class="menu-icon">📰</span>
+                        <span>Briefing</span>
                         <span class="menu-arrow">›</span>
                     </button>
                     <button class="drawer-menu-item" data-view="cameras">
