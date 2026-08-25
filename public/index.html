@@ -266,13 +266,27 @@
 
                     <div class="view-container" id="view-briefing">
                         <div class="briefing-wrap">
-                            <div class="briefing-header">
-                                <span class="briefing-kicker">📰 REDAKTIONS-BRIEFING</span>
-                                <h2 class="briefing-title">Dein täglicher Überblick</h2>
-                                <p class="briefing-date" id="briefingDate">—</p>
+                            <div class="briefing-tabs">
+                                <button class="briefing-tab active" id="tabRedaktions" data-target="redaktions">📰 Redaktions-Briefing</button>
+                                <button class="briefing-tab" id="tabLokalpost" data-target="lokalpost">🗞️ Lokalpost</button>
                             </div>
-                            <div class="briefing-content" id="briefingContent">
-                                <p class="placeholder-text">Noch kein Briefing verfügbar. Das Redaktions-Briefing läuft täglich um 07:00 Uhr.</p>
+                            <div class="briefing-pane" id="pane-redaktions">
+                                <div class="briefing-header">
+                                    <span class="briefing-kicker">📰 REDAKTIONS-BRIEFING</span>
+                                    <h2 class="briefing-title">Dein täglicher Überblick</h2>
+                                    <p class="briefing-date" id="briefingDate">—</p>
+                                </div>
+                                <div class="briefing-content" id="briefingContent">
+                                    <p class="placeholder-text">Noch kein Briefing verfügbar. Das Redaktions-Briefing läuft täglich um 07:00 Uhr.</p>
+                                </div>
+                            </div>
+                            <div class="briefing-pane" id="pane-lokalpost" style="display:none;">
+                                <div class="briefing-header">
+                                    <span class="briefing-kicker">🗞️ LOKALPOST</span>
+                                    <h2 class="briefing-title">Deine Tageszeitung</h2>
+                                    <p class="briefing-date" id="lokalpostDate">—</p>
+                                </div>
+                                <iframe class="lokalpost-frame" id="lokalpostFrame" src="http://192.168.1.81:8130/" title="Lokalpost Tageszeitung"></iframe>
                             </div>
                         </div>
                     </div>

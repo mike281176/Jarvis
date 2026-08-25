@@ -3090,3 +3090,44 @@ html, body {
 .briefing-quellen a:hover {
     color: #d4af37;
 }
+.briefing-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.briefing-tab {
+    background: #151a22;
+    border: 1px solid #232a35;
+    color: #a8a8a8;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: .85rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: .3px;
+    transition: all .15s;
+}
+.briefing-tab:hover {
+    color: #fff;
+    border-color: #d4af37;
+}
+.briefing-tab.active {
+    background: #d4af37;
+    color: #0e1116;
+    border-color: #d4af37;
+}
+.briefing-pane {
+    width: 100%;
+}
+.lokalpost-frame {
+    width: 100%;
+    height: 72vh;
+    border: 1px solid #232a35;
+    border-radius: 10px;
+    background: #0e1116;
+    min-height: 400px;
+}
+@media (max-width: 767px) {
+    .lokalpost-frame { height: 60vh; }
+}
+

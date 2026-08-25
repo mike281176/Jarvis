@@ -829,6 +829,19 @@ class JarvisPWA {
         // Quelle: briefing.json im public/-Verzeichnis (lokal) bzw. Vercel (HTTPS).
         const dateEl = document.getElementById('briefingDate');
         const contentEl = document.getElementById('briefingContent');
+        // Tabs (Redaktions-Briefing ⇄ Lokalpost) einmal verdrahten
+        if (!this._briefingTabsBound) {
+            this._briefingTabsBound = true;
+            document.querySelectorAll('.briefing-tab').forEach(tab => {
+                tab.addEventListener('click', () => this.switchBriefingTab(tab));
+            });
+        }
+        // Lokalpost-Datum setzen (aktuelles Datum)
+        const lpDate = document.getElementById('lokalpostDate');
+        if (lpDate) {
+            const wt = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'][new Date().getDay()];
+            lpDate.textContent = `${wt}, ${new Date().toLocaleDateString('de-DE')}`;
+        }
         if (!contentEl) return;
         try {
             const resp = await fetch('briefing.json', { cache: 'no-store' });
@@ -864,6 +877,21 @@ class JarvisPWA {
             console.warn('Briefing Load Error:', e);
             if (dateEl) dateEl.textContent = '';
             contentEl.innerHTML = '<p class="placeholder-text">Briefing konnte nicht geladen werden. Es wird täglich um 07:00 Uhr erzeugt.</p>';
+        }
+    }
+
+    switchBriefingTab(tab) {
+        // Umschalten zwischen Redaktions-Briefing und Lokalpost-Iframe
+        document.querySelectorAll('.briefing-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const target = tab.dataset.target;
+        document.querySelectorAll('.briefing-pane').forEach(p => {
+            p.style.display = (p.id === 'pane-' + target) ? 'block' : 'none';
+        });
+        // Iframe neu laden, damit die heutige Lokalpost sicher steht
+        if (target === 'lokalpost') {
+            const frame = document.getElementById('lokalpostFrame');
+            if (frame) frame.src = frame.src;
         }
     }
 
