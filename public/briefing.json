@@ -75,7 +75,8 @@
           "fakten": "Das aktuelle Release ist v0.20.5 (v2026.8.19). Seitdem sind weitere Commits auf dem Hauptzweig eingegangen, die noch nicht in einem Release-Tag gebündelt sind. Die kuratierten Release-Notes für das gesamte Fenster seit v0.20.0 werden mit v0.21.0 veröffentlicht. Highlights aus dem 0.20.5-Fenster: Bot-Mode-Gruppenraum-Threads, faltbare Gesprächszusammenfassungen, PDF- und Datei-Anhänge mit Drag & Drop, ein keyless Web-Tier mit 5-Vendor-Rotation sowie Cron-Jobs mit persistentem Speicher.",
           "einordnung": "Für Mike: Das Update bringt vor allem Stabilitäts- und Komfortverbesserungen. Da noch kein Release-Tag vorliegt, ist ein Update derzeit nicht zwingend — sinnvoll, sobald v0.21.0 erscheint.",
           "quellen": [
-            {"name": "Hermes Agent Releases GitHub", "url": "https://github.com/NousResearch/hermes-agent/releases"}
+            {"name": "Hermes Agent Releases GitHub", "url": "https://github.com/NousResearch/hermes-agent/releases"},
+            {"name": "Hermes Agent Dokumentation", "url": "https://hermes-agent.nousresearch.com/docs/"}
           ]
         }
       ]
