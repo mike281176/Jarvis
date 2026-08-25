@@ -1,27 +1,26 @@
 {
-  "datum": "Montag, 24.08.2026",
+  "datum": "Montag, 25.08.2026",
   "bereiche": [
     {
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Sternenschule Spich: Schulstart trotz Vandalismus gesichert",
-          "aufmacher": "Die nach dem Vandalismus-Schaden von über 400.000 Euro verwüstete Sternenschule in Troisdorf-Spich ist zum Schulstart wieder einsatzbereit.",
-          "fakten": "Die von Bürgermeister Alexander Biber eingesetzte Projektgruppe meldet, dass die Trocknung der Böden gut voranschreitet und die Elektrik wieder funktioniert. Zerstörtes oder durchnässtes Mobiliar wird in den kommenden Wochen ersetzt. Der Unterricht kann laut Schulverwaltungsamtsleiterin Simone Duggan in den Klassenräumen stattfinden; auch die Betreuung im i-Punkt (rund 70 Kinder) ist wieder möglich. Die Trocknung einzelner Gebäudeteile läuft noch bis zu den Herbstferien.",
-          "einordnung": "Der Einbruch Anfang August in die Grundschule an der Kriegsdorfer Straße hatte einen Sachschaden von mehr als 400.000 Euro verursacht; die Polizei ermittelt gegen fünf Tatverdächtige.",
+          "titel": "Verwüstete Grundschule in Troisdorf-Spich: Polizei ermittelt gegen fünf Jugendliche",
+          "aufmacher": "Nach der Verwüstung einer Grundschule in Troisdorf-Spich mit einem Schaden von über 400.000 Euro ermittelt die Polizei gegen fünf Jugendliche im Alter von 12 bis 15 Jahren.",
+          "fakten": "Die Jugendlichen sollen die Schule an der Kriegsdorfer Straße Anfang August verwüstet haben. Durch aufgedrehte Wasserhähne und verstopfte Abflüsse wurden mehrere Klassenräume geflutet, das Wasser drang bis in den Keller und beschädigte Teile der Gebäudeelektronik. Zerstört wurden Smartboards, Fensterscheiben und Glastüren. Die Polizei durchsuchte vier Wohnungen und sicherte Beweismittel; die Jugendlichen sind inzwischen wieder bei ihren Eltern.",
+          "einordnung": "Für Mike als Eigentümer von Mietobjekten ein anschauliches Beispiel dafür, wie schnell Vandalismus hohe Schäden verursacht — und wie wichtig ein passender Versicherungsschutz für Gebäude und Technik ist.",
           "quellen": [
-            {"name": "treffpunkt-troisdorf (Stadt Troisdorf, PM Nr. 400)", "url": "https://treffpunkt-troisdorf.de/sternenschule/"},
-            {"name": "Presseportal – Kreispolizeibehörde Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6334953"}
+            {"name": "Presseportal Blaulicht Troisdorf", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"},
+            {"name": "Tagesschau: Ermittlungen gegen Jugendliche", "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-grundschule-verwuestet-hoher-sechsstelliger-schaden-in-troisdorf-100.html"}
           ]
         },
         {
-          "titel": "Rotter See: Tote Enten starben durch natürliches Nervengift",
-          "aufmacher": "Die 17 am Rotter See in Troisdorf verendeten Wasservögel starben an Botulismus – für Menschen besteht keine Gefahr.",
-          "fakten": "Das Friedrich-Löffler-Institut wies Clostridium botulinum Neurotoxin Typ C nach. Das Toxin ist laut Rhein-Sieg-Kreis vor allem für Wasservögel, Geflügel und Rinder gefährlich, für Menschen nicht. Das Veterinäramt warnt: Tote Tiere nicht berühren, Hunde von Kadavern fernhalten und nicht aus dem See trinken lassen – bei Verstößen drohen bis zu 500 Euro Bußgeld. Der See war nach dem Fund am 17. Juli zeitweise gesperrt, wurde aber nach einer Woche wieder freigegeben.",
-          "einordnung": "Das Bakterium vermehrt sich bei Wärme, Nährstoffreichtum und Sauerstoffmangel – typische Sommerbedingungen an stehenden Gewässern.",
+          "titel": "Tag des offenen Denkmals: Rote Kolonie präsentiert sich in Troisdorf",
+          "aufmacher": "Am 13. September 2026 öffnet die historische Siedlung „Rote Kolonie“ in Troisdorf zum bundesweiten Tag des offenen Denkmals ihre Türen.",
+          "fakten": "Der neu gegründete Verein „Rote Kolonie e. V.“ stellt sich vor Ort vor. Das diesjährige Motto lautet „Netzwerke: Denkmal & Infrastruktur“; die Infrastruktur der Siedlung bilden ihre Straßen und Wege. Der Aktionstag wird von der Deutschen Stiftung Denkmalschutz veranstaltet.",
+          "einordnung": "Für Mike als Immobilieninteressierten in der Region interessant: historische Siedlungsstrukturen und Denkmalschutz prägen das lokale Wohnumfeld und können bei Bestandsimmobilien eine Rolle spielen.",
           "quellen": [
-            {"name": "WDR – Rhein-Sieg-Kreis", "url": "https://www1.wdr.de/nrw/rheinland/rhein-sieg-kreis/tote-enten-troisdorf-rotter-see-100.html"},
-            {"name": "treffpunkt-troisdorf", "url": "https://treffpunkt-troisdorf.de/rotter-see/"}
+            {"name": "Stadt Troisdorf Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"}
           ]
         }
       ]
@@ -30,13 +29,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen pendeln sich um die 4-Prozent-Marke ein",
-          "aufmacher": "Die Zinsen für zehnjährige Immobilienkredite liegen im August 2026 stabil bei rund 4 Prozent – ein moderater Anstieg bis Jahresende gilt als wahrscheinlich.",
-          "fakten": "Interhyp nennt für 10-jährige Darlehen effektive Jahreszinsen von 3,82 % (Beleihungsauslauf unter 70 %) bis 4,22 % (über 90 %); bei 15 Jahren liegen sie zwischen 4,06 % und 4,45 %. Dr. Klein meldet einen Topzins von 3,71 % für 10 Jahre (Stand 3. August). 67 % des Interhyp-Expertenpanels erwarten kurzfristig gleichbleibende Zinsen, 50 % rechnen bis Jahresende mit einem moderaten Anstieg.",
-          "einordnung": "Für Mikes Hebel-Strategie (maximale Fremdfinanzierung, nur Kaufnebenkosten aus Eigenkapital) bedeutet das Niveau um 4 %: Die Zinslast bleibt kalkulierbar, aber eine frühzeitige Zinsbindung und nachträgliche Refinanzierung bei mehreren Banken lohnen sich umso mehr, solange die EZB weitere Anhebungen signalisiert.",
+          "titel": "Bauzinsen stabil um die 4-Prozent-Marke",
+          "aufmacher": "Die Bauzinsen verharren Anfang August 2026 auf einem Plateau knapp über der 4-Prozent-Marke — mit leicht steigender Tendenz zum Jahresende.",
+          "fakten": "Interhyp meldet für 10-jährige Darlehen je nach Beleihungsauslauf 3,82 bis 4,22 Prozent, für 15 Jahre 4,06 bis 4,45 Prozent. Dr. Klein sieht die Topkonditionen zwischen 3,71 und 4,33 Prozent; im Juli stiegen die Zinsen deutlich um rund 0,3 bis 0,4 Prozentpunkte. Beide Häuser erwarten kurzfristig eine Seitwärtsbewegung, mittelfristig einen moderaten Anstieg — Dr. Klein rechnet für das zweite Halbjahr mit einer Topzins-Spanne von 3,3 bis 3,9 Prozent.",
+          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel bleibt die Finanzierung bei stabilen Zinsen um 4 Prozent kalkulierbar. Die Tendenz ist jedoch leicht steigend — ein Argument, Konditionen frühzeitig zu sichern und bei mehreren Banken zu vergleichen.",
           "quellen": [
-            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Dr. Klein – Zinsentwicklung", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"}
+            {"name": "Interhyp Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Dr. Klein Zinsentwicklung 2026", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"}
           ]
         }
       ]
@@ -45,13 +44,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hält Leitzins bei 2,25 % – Inflation zieht auf 2,8 % an",
-          "aufmacher": "Die EZB hat ihren Einlagesatz seit Juni 2026 auf 2,25 % angehoben; die deutsche Inflation stieg im Juli auf 2,8 %.",
-          "fakten": "Der EZB-Rat hob am 11. Juni 2026 alle drei Leitzinssätze um 25 Basispunkte an – der Einlagesatz liegt seither bei 2,25 %, der Hauptrefinanzierungssatz bei 2,40 %. Grund ist der Inflationsdruck durch den Krieg im Nahen Osten. Die EZB-Projektionen erwarten eine Gesamtinflation von 3,0 % (2026), 2,3 % (2027) und 2,0 % (2028). In Deutschland lag die Inflationsrate im Juli 2026 laut Destatis bei +2,8 % (Juni: +2,3 %), getrieben vor allem von Energie (+8,3 %).",
-          "einordnung": "Die steigende Inflation und die Aussicht auf weitere Zinsschritte der EZB wirken direkt auf Mikes Finanzierungskosten: Höhere Leitzinsen stützen tendenziell auch die Bauzinsen, was die Konditionen für neue MFH-Darlehen beeinflusst.",
+          "titel": "EZB hält Zinspause: Leitzins bleibt bei 2,25 Prozent",
+          "aufmacher": "Die Europäische Zentralbank lässt die Leitzinsen nach der ersten Erhöhung seit drei Jahren im Juni vorerst unverändert.",
+          "fakten": "Am 23. Juli 2026 entschied die EZB, den Einlagesatz bei 2,25 Prozent zu belassen. Im Juni hatte sie erstmals seit September 2023 um 25 Basispunkte angehoben. Die Inflation in der Eurozone lag im Juni bei 2,80 Prozent. Die EZB rechnet in ihrer Projektion für 2026 mit einer Gesamtinflation von 3,0 Prozent, für 2027 von 2,3 Prozent.",
+          "einordnung": "Für Mike relevant: Höhere Zinsen verteuern die Baufinanzierung, machen aber auch Tagesgeld und Festgeld attraktiver — ein Umfeld, das bei der Liquiditätsplanung für das MFH zu berücksichtigen ist.",
           "quellen": [
-            {"name": "EZB – Geldpolitische Beschlüsse (11.06.2026)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.de.html"},
-            {"name": "Destatis – Inflationsrate Juli 2026", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_283_611.html"}
+            {"name": "Raisin EZB-Leitzins", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"},
+            {"name": "EZB Geldpolitische Beschlüsse", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.de.html"}
+          ]
+        },
+        {
+          "titel": "DAX erreicht neues Rekordhoch",
+          "aufmacher": "Der deutsche Leitindex DAX hat Mitte August 2026 ein neues Rekordhoch von 26.504 Punkten erreicht.",
+          "fakten": "Zum Handelsschluss am 11. August lag der DAX bei 26.391 Punkten, ein Plus von 0,26 Prozent. Im Jahresverlauf 2026 steht der Index bei einem Plus von rund 6,7 Prozent. Treiber ist die Hoffnung auf eine geopolitische Entspannung im Nahen Osten.",
+          "einordnung": "Für Mikes geplante Welt-ETF-Anlage nach dem Firmenverkauf ein positives Signal: Die Aktienmärkte zeigen sich trotz geopolitischer Unsicherheiten robust.",
+          "quellen": [
+            {"name": "Tagesschau Marktbericht DAX", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-jones-brent-100.html"},
+            {"name": "boerse.de DAX Historie", "url": "https://www.boerse.de/historische-kurse/Dax/DE0008469008"}
           ]
         }
       ]
@@ -60,13 +69,12 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Hermes Agent: Update verfügbar (0.20.5 → 0.21.0)",
-          "aufmacher": "Für den Hermes Agent liegt ein Update bereit – die kommende Version 0.21.0 bündelt die kuratierten Release-Notes seit 0.20.0.",
-          "fakten": "Der Update-Scan meldet Hermes Agent 0.20.5 mit ausstehenden Commits. Das letzte Release-Fenster (v0.20.4) umfasste rund 146 Commits und 74 gemergte PRs, darunter die Desktop-Glas-/Transluzenz-Oberfläche, eine tabbed SESSIONS|BOTS-Sidebar, Bot-Mode-Gruppenchat-Fixes, NVIDIA SkillEvaluator-Sicherheitsprüfungen bei Skill-Installationen sowie Härtungen beim Cron-Medienversand. Die vollständigen kuratierten Release-Notes erscheinen mit v0.21.0.",
-          "einordnung": "Das Update betrifft direkt die eigene Hermes-Instanz (VM 107) – ein Einspielen lohnt sich, sobald 0.21.0 offiziell getaggt ist, um die Desktop- und Cron-Verbesserungen zu übernehmen.",
+          "titel": "Hermes Agent: Update verfügbar (commits behind)",
+          "aufmacher": "Der Update-Scan meldet für Hermes Agent 0.20.5 neue Commits nach dem letzten Release — das nächste Release v0.21.0 steht noch aus.",
+          "fakten": "Das aktuelle Release ist v0.20.5 (v2026.8.19). Seitdem sind weitere Commits auf dem Hauptzweig eingegangen, die noch nicht in einem Release-Tag gebündelt sind. Die kuratierten Release-Notes für das gesamte Fenster seit v0.20.0 werden mit v0.21.0 veröffentlicht. Highlights aus dem 0.20.5-Fenster: Bot-Mode-Gruppenraum-Threads, faltbare Gesprächszusammenfassungen, PDF- und Datei-Anhänge mit Drag & Drop, ein keyless Web-Tier mit 5-Vendor-Rotation sowie Cron-Jobs mit persistentem Speicher.",
+          "einordnung": "Für Mike: Das Update bringt vor allem Stabilitäts- und Komfortverbesserungen. Da noch kein Release-Tag vorliegt, ist ein Update derzeit nicht zwingend — sinnvoll, sobald v0.21.0 erscheint.",
           "quellen": [
-            {"name": "GitHub – NousResearch/hermes-agent Releases", "url": "https://github.com/NousResearch/hermes-agent/releases"},
-            {"name": "Hermes Agent Changelog", "url": "https://hermes-ai.net/changelog/"}
+            {"name": "Hermes Agent Releases GitHub", "url": "https://github.com/NousResearch/hermes-agent/releases"}
           ]
         }
       ]
