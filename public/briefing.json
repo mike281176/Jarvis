@@ -1,27 +1,63 @@
 {
-  "datum": "Montag, 25.08.2026",
+  "datum": "Dienstag, 25.08.2026",
   "bereiche": [
+    {
+      "titel": "🌤️ Wetter heute",
+      "artikel": [
+        {
+          "titel": "21°C · Regen 59% · UV 5",
+          "aufmacher": "Bedeckt bei 20,9 °C, Höchstwert 21,4 °C, Tiefstwert 12,5 °C.",
+          "fakten": "Regenwahrscheinlichkeit 59 Prozent, UV-Index 5,35.",
+          "einordnung": "",
+          "quellen": []
+        }
+      ]
+    },
+    {
+      "titel": "📅 Termine",
+      "artikel": [
+        {
+          "titel": "25.08.2026 14:35: Termin (Therapiezentrum Snoek GmbH)",
+          "aufmacher": "Manuelle Therapie, Sporttherapie, Osteopathie – 14:35 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "25.08.2026 15:00: Termin (Therapiezentrum Snoek GmbH)",
+          "aufmacher": "Weiterer Termin im Therapiezentrum Snoek GmbH – 15:00 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "26.08.2026 10:00: Quixx-Meeting",
+          "aufmacher": "Quixx-Meeting morgen um 10:00 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        }
+      ]
+    },
     {
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Verwüstete Grundschule in Troisdorf-Spich: Polizei ermittelt gegen fünf Jugendliche",
-          "aufmacher": "Nach der Verwüstung einer Grundschule in Troisdorf-Spich mit einem Schaden von über 400.000 Euro ermittelt die Polizei gegen fünf Jugendliche im Alter von 12 bis 15 Jahren.",
-          "fakten": "Die Jugendlichen sollen die Schule an der Kriegsdorfer Straße Anfang August verwüstet haben. Durch aufgedrehte Wasserhähne und verstopfte Abflüsse wurden mehrere Klassenräume geflutet, das Wasser drang bis in den Keller und beschädigte Teile der Gebäudeelektronik. Zerstört wurden Smartboards, Fensterscheiben und Glastüren. Die Polizei durchsuchte vier Wohnungen und sicherte Beweismittel; die Jugendlichen sind inzwischen wieder bei ihren Eltern.",
-          "einordnung": "Für Mike als Eigentümer von Mietobjekten ein anschauliches Beispiel dafür, wie schnell Vandalismus hohe Schäden verursacht — und wie wichtig ein passender Versicherungsschutz für Gebäude und Technik ist.",
+          "titel": "Streifenwagen kollidiert auf Troisdorfer Kreuzung mit Skoda",
+          "aufmacher": "Am Montagabend kurz vor Mitternacht ist ein Streifenwagen in Troisdorf auf dem Weg zu einem Einsatz mit einem zivilen Pkw zusammengestoßen – verletzt wurde niemand.",
+          "fakten": "Gegen 23:50 Uhr fuhr der Einsatzwagen auf der Poststraße Richtung Theodor-Heuss-Ring und bog an der Kreuzung Poststraße/Wilhelmstraße bei Rot mit Blaulicht nach links ab. Zeitgleich überquerte ein 41-jähriger Mann mit seinem Skoda die Kreuzung bei Grün aus Richtung Kölner Straße. Bei der Kollision wurde niemand verletzt, der Skoda musste jedoch abgeschleppt werden. Das Verkehrskommissariat des Rhein-Sieg-Kreises ermittelt zum Unfallhergang.",
+          "einordnung": "Für die Region ist der Vorfall ein Hinweis auf die alltägliche Einsatzrealität der Polizei in Troisdorf – und zugleich ein Beispiel dafür, dass selbst Einsatzfahrten mit Blaulicht nicht frei von Unfallrisiken sind.",
           "quellen": [
-            {"name": "Presseportal Blaulicht Troisdorf", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"},
-            {"name": "Tagesschau: Ermittlungen gegen Jugendliche", "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-grundschule-verwuestet-hoher-sechsstelliger-schaden-in-troisdorf-100.html"}
+            {"name": "Presseportal Blaulicht Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6339366"}
           ]
         },
         {
-          "titel": "Tag des offenen Denkmals: Rote Kolonie präsentiert sich in Troisdorf",
-          "aufmacher": "Am 13. September 2026 öffnet die historische Siedlung „Rote Kolonie“ in Troisdorf zum bundesweiten Tag des offenen Denkmals ihre Türen.",
-          "fakten": "Der neu gegründete Verein „Rote Kolonie e. V.“ stellt sich vor Ort vor. Das diesjährige Motto lautet „Netzwerke: Denkmal & Infrastruktur“; die Infrastruktur der Siedlung bilden ihre Straßen und Wege. Der Aktionstag wird von der Deutschen Stiftung Denkmalschutz veranstaltet.",
-          "einordnung": "Für Mike als Immobilieninteressierten in der Region interessant: historische Siedlungsstrukturen und Denkmalschutz prägen das lokale Wohnumfeld und können bei Bestandsimmobilien eine Rolle spielen.",
+          "titel": "Vollausbau in Eschmar-West: Stadtteil wächst weiter",
+          "aufmacher": "Die Stadt Troisdorf startet Anfang September den Vollausbau mehrerer Straßen im Wohnquartier Eschmar-West – die Arbeiten laufen bis Sommer 2028.",
+          "fakten": "Betroffen sind die Klara-Engels-Straße, die Margareta-Stelten-Straße und die Max-Ernst-Straße. Im Zuge der Arbeiten wird auch der Peggy-Guggenheim-Platz hergerichtet und die Grünfläche im Süden zu einem kleinen Park umgestaltet. Die Stadt hat eine eigene Informationsseite unter troisdorf.de/E65 eingerichtet.",
+          "einordnung": "Ein wachsendes, gut erschlossenes Wohngebiet mit neuer Grüninfrastruktur – für Mikes MFH-Strategie in der Region ein Signal, dass hier städtebauliche Entwicklung und damit Wohnnachfrage stattfinden.",
           "quellen": [
-            {"name": "Stadt Troisdorf Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"},
-            {"name": "Tag des offenen Denkmals: Rote Kolonie", "url": "https://www.tag-des-offenen-denkmals.de/denkmal/cmqhvmv490000l8043q6n0i1g"}
+            {"name": "Stadt Troisdorf – Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/august/eschmar-west-waechst/"}
           ]
         }
       ]
@@ -30,13 +66,21 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen stabil um die 4-Prozent-Marke",
-          "aufmacher": "Die Bauzinsen verharren Anfang August 2026 auf einem Plateau knapp über der 4-Prozent-Marke — mit leicht steigender Tendenz zum Jahresende.",
-          "fakten": "Interhyp meldet für 10-jährige Darlehen je nach Beleihungsauslauf 3,82 bis 4,22 Prozent, für 15 Jahre 4,06 bis 4,45 Prozent. Dr. Klein sieht die Topkonditionen zwischen 3,71 und 4,33 Prozent; im Juli stiegen die Zinsen deutlich um rund 0,3 bis 0,4 Prozentpunkte. Beide Häuser erwarten kurzfristig eine Seitwärtsbewegung, mittelfristig einen moderaten Anstieg — Dr. Klein rechnet für das zweite Halbjahr mit einer Topzins-Spanne von 3,3 bis 3,9 Prozent.",
-          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel bleibt die Finanzierung bei stabilen Zinsen um 4 Prozent kalkulierbar. Die Tendenz ist jedoch leicht steigend — ein Argument, Konditionen frühzeitig zu sichern und bei mehreren Banken zu vergleichen.",
+          "titel": "Bauzinsen verharren stabil um die 4-Prozent-Marke",
+          "aufmacher": "Die Bauzinsen liegen Anfang August 2026 weiter auf einem Plateau knapp über 4 Prozent – kurzfristig flach, zum Jahresende hin rechnet etwa die Hälfte der Experten mit leicht steigenden Zinsen.",
+          "fakten": "Interhyp nennt für 10-jährige Darlehen je nach Beleihungsauslauf 3,82 bis 4,22 Prozent, für 15 Jahre 4,06 bis 4,45 Prozent (Stand 13.08.2026). 67 Prozent des Interhyp-Expertenpanels erwarten in den kommenden 1 bis 2 Monaten gleichbleibende Zinsen; rund 50 Prozent sehen bis Jahresende einen leichten Anstieg. Hohe Inflation und robuste Konjunktur halten die Markterwartung an eine EZB-Zinsanhebung im September aufrecht.",
+          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel bleibt die Finanzierung bei stabilen Zinsen um 4 Prozent weiter kalkulierbar. Die Tendenz Richtung Jahresende ist jedoch leicht steigend – ein Argument, Konditionen frühzeitig zu sichern und bei mehreren Banken zu vergleichen.",
           "quellen": [
-            {"name": "Interhyp Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Dr. Klein Zinsentwicklung 2026", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"}
+            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"}
+          ]
+        },
+        {
+          "titel": "Mietpreise im Rhein-Sieg-Kreis steigen weiter",
+          "aufmacher": "Die durchschnittliche Kaltmiete im Rhein-Sieg-Kreis ist im zweiten Quartal 2026 um rund 3,4 Prozent gegenüber dem Vorjahr auf 9,92 Euro pro Quadratmeter gestiegen.",
+          "fakten": "In Troisdorf liegt der durchschnittliche Mietpreis mit 10,41 €/m² über dem Kreisdurchschnitt; höher sind Siegburg (10,80 €/m²), Niederkassel (10,71 €/m²) und Alfter (10,61 €/m²). Günstiger sind Windeck (7,70 €/m²), Ruppichteroth (8,05 €/m²) und Eitorf (8,20 €/m²). Der Kreis liegt mit 9,92 €/m² über dem bundesweiten Schnitt von 9,23 €/m².",
+          "einordnung": "Steigende Mieten in der Region sprechen für die Cashflow-Strategie von Mikes MFH: Sinkt die Auslastung nicht, können Mieteinnahmen über die Zeit nachziehen und die Rendite stabilisieren – ein Argument für den Kauf im Kreis.",
+          "quellen": [
+            {"name": "ImmobilienScout24 – Mietspiegel Rhein-Sieg-Kreis", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"}
           ]
         }
       ]
@@ -45,23 +89,22 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hält Zinspause: Leitzins bleibt bei 2,25 Prozent",
-          "aufmacher": "Die Europäische Zentralbank lässt die Leitzinsen nach der ersten Erhöhung seit drei Jahren im Juni vorerst unverändert.",
-          "fakten": "Am 23. Juli 2026 entschied die EZB, den Einlagesatz bei 2,25 Prozent zu belassen. Im Juni hatte sie erstmals seit September 2023 um 25 Basispunkte angehoben. Die Inflation in der Eurozone lag im Juni bei 2,80 Prozent. Die EZB rechnet in ihrer Projektion für 2026 mit einer Gesamtinflation von 3,0 Prozent, für 2027 von 2,3 Prozent.",
-          "einordnung": "Für Mike relevant: Höhere Zinsen verteuern die Baufinanzierung, machen aber auch Tagesgeld und Festgeld attraktiver — ein Umfeld, das bei der Liquiditätsplanung für das MFH zu berücksichtigen ist.",
+          "titel": "EZB: Einlagezins bei 2,25 Prozent – September-Anhebung eingepreist",
+          "aufmacher": "Die EZB hält die Leitzinsen nach der Anhebung im Juni aktuell auf dem erhöhten Niveau – die Inflation in der Eurozone erreichte im Juli 2,9 Prozent, eine weitere Zinsanhebung im September ist mit hoher Wahrscheinlichkeit eingepreist.",
+          "fakten": "Seit 17.06.2026 gelten: Einlagefazilität 2,25 Prozent, Hauptrefinanzierung 2,40 Prozent, Spitzenrefinanzierung 2,65 Prozent. Nach dem Juni-Beschluss (je +25 Bpkt) hielt die EZB im Juli die Zinsen unverändert. Die Inflation im Euroraum stieg im Juli auf 2,9 Prozent, die Kerninflation auf 2,5 Prozent. EZB-Projektion: Gesamtinflation 2026 3,0 Prozent, 2027 2,3 Prozent, 2028 2,0 Prozent; Wachstum 2026 0,8 Prozent. Die Finanzmärkte preisen eine Anhebung am 10. September mit rund 80 Prozent Wahrscheinlichkeit ein.",
+          "einordnung": "Höhere Zinsen verteuern Mikes Baufinanzierung für das MFH, machen aber auch Tages- und Festgeld attraktiver. Für die Liquiditätsplanung ist das Umfeld – restriktive EZB, Inflation über Ziel – bei der Swoberechnung zu berücksichtigen.",
           "quellen": [
-            {"name": "Raisin EZB-Leitzins", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"},
-            {"name": "EZB Geldpolitische Beschlüsse", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.de.html"}
+            {"name": "EZB – Geldpolitische Beschlüsse (11.06.2026)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.de.html"},
+            {"name": "Morningstar – EZB-Leitzins 2026", "url": "https://global.morningstar.com/de/wirtschaft/ezb-leitzins-steigen-die-zinsen-2026-erneut-und-fallen-2027-wieder"}
           ]
         },
         {
-          "titel": "DAX erreicht neues Rekordhoch",
-          "aufmacher": "Der deutsche Leitindex DAX hat Mitte August 2026 ein neues Rekordhoch von 26.504 Punkten erreicht.",
-          "fakten": "Zum Handelsschluss am 11. August lag der DAX bei 26.391 Punkten, ein Plus von 0,26 Prozent. Im Jahresverlauf 2026 steht der Index bei einem Plus von rund 6,7 Prozent. Treiber ist die Hoffnung auf eine geopolitische Entspannung im Nahen Osten.",
-          "einordnung": "Für Mikes geplante Welt-ETF-Anlage nach dem Firmenverkauf ein positives Signal: Die Aktienmärkte zeigen sich trotz geopolitischer Unsicherheiten robust.",
+          "titel": "DAX fällt unter 26.000 – Rückzug vom Rekordhoch",
+          "aufmacher": "Der deutsche Leitindex DAX hat sich nach seinem Rekordhoch von 26.573 Punkten deutlich zurückgezogen und ist zuletzt unter die Marke von 26.000 Punkten gerutscht.",
+          "fakten": "Am 20.08. schloss der DAX bei 25.983 Punkten, ein Minus von 0,4 Prozent und der vierte Verlusttag in Folge. Hintergrund sind gestiegene Ölpreise und hohe Anleiherenditen, die Aktien unattraktiv machen. Zum Wochenende erholte sich der Index leicht, blieb aber auf Wochensicht im Minus.",
+          "einordnung": "Für Mikes geplante Welt-ETF-Anlage nach dem Firmenverkauf zeigt sich: Die Märkte sind nach dem starken Rekordlauf nervös geworden und korrigieren. Für eine langfristige Anlage in ETF ist eine solche Phase normal – ein Argument, breit gestreut und langfristig zu bleiben.",
           "quellen": [
-            {"name": "Tagesschau Marktbericht DAX", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-jones-brent-100.html"},
-            {"name": "boerse.de DAX Historie", "url": "https://www.boerse.de/historische-kurse/Dax/DE0008469008"}
+            {"name": "Tagesschau – Marktbericht DAX", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nikkei-staatsverschuldung-100.html"}
           ]
         }
       ]
@@ -70,13 +113,12 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Hermes Agent: Update verfügbar (commits behind)",
-          "aufmacher": "Der Update-Scan meldet für Hermes Agent 0.20.5 neue Commits nach dem letzten Release — das nächste Release v0.21.0 steht noch aus.",
-          "fakten": "Das aktuelle Release ist v0.20.5 (v2026.8.19). Seitdem sind weitere Commits auf dem Hauptzweig eingegangen, die noch nicht in einem Release-Tag gebündelt sind. Die kuratierten Release-Notes für das gesamte Fenster seit v0.20.0 werden mit v0.21.0 veröffentlicht. Highlights aus dem 0.20.5-Fenster: Bot-Mode-Gruppenraum-Threads, faltbare Gesprächszusammenfassungen, PDF- und Datei-Anhänge mit Drag & Drop, ein keyless Web-Tier mit 5-Vendor-Rotation sowie Cron-Jobs mit persistentem Speicher.",
-          "einordnung": "Für Mike: Das Update bringt vor allem Stabilitäts- und Komfortverbesserungen. Da noch kein Release-Tag vorliegt, ist ein Update derzeit nicht zwingend — sinnvoll, sobald v0.21.0 erscheint.",
+          "titel": "Hermes Agent: Update auf 0.20.5 (v2026.8.19) verfügbar",
+          "aufmacher": "Der Update-Scan meldet für Hermes Agent einen Stand von 0.20.5; das nächste vollständig kuratierte Release v0.21.0 steht noch aus.",
+          "fakten": "Die lokale Installation läuft auf v0.20.5 (2026.8.19) und ist laut Prüfung 514 Commits hinter dem Hauptzweig. Das Release v0.20.5 bündelt seit v0.20.4 rund 323 Pull-Requests, darunter Bot-Mode-Gruppenraum-Threads, faltbare Gesprächszusammenfassungen, PDF-/Datei-Anhänge mit Drag & Drop, ein schlüssel-loser Web-Tier mit 5-Vendor-Rotation sowie Cron-Jobs mit persistentem Speicher. Die vollständige Release-Notes-Dokumentation erscheint mit v0.21.0.",
+          "einordnung": "Für Mike: Das Update bringt vor allem Stabilität und Komfort. Da v0.21.0 mit der vollständigen Dokumentation noch aussieht, ist ein Update aktuell nicht zwingend – sinnvoll, sobald das nächste Release-Tag erscheint.",
           "quellen": [
-            {"name": "Hermes Agent Releases GitHub", "url": "https://github.com/NousResearch/hermes-agent/releases"},
-            {"name": "Hermes Agent Dokumentation", "url": "https://hermes-agent.nousresearch.com/docs/"}
+            {"name": "Hermes Agent Releases (GitHub)", "url": "https://github.com/NousResearch/hermes-agent/releases"}
           ]
         }
       ]
