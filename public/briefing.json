@@ -1,13 +1,13 @@
 {
-  "datum": "Dienstag, 25.08.2026",
+  "datum": "Mittwoch, 26.08.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "21°C · Regen 59% · UV 5",
-          "aufmacher": "Bedeckt bei 20,9 °C, Höchstwert 21,4 °C, Tiefstwert 12,5 °C.",
-          "fakten": "Regenwahrscheinlichkeit 59 Prozent, UV-Index 5,35.",
+          "titel": "15°C · Regen 38% · UV 6",
+          "aufmacher": "Bedeckt bei 15,0 °C, Höchstwert 27,2 °C, Tiefstwert 15,0 °C.",
+          "fakten": "Regenwahrscheinlichkeit 38 Prozent, UV-Index 5,65.",
           "einordnung": "",
           "quellen": []
         }
@@ -17,22 +17,8 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "25.08.2026 14:35: Termin (Therapiezentrum Snoek GmbH)",
-          "aufmacher": "Manuelle Therapie, Sporttherapie, Osteopathie – 14:35 Uhr.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "25.08.2026 15:00: Termin (Therapiezentrum Snoek GmbH)",
-          "aufmacher": "Weiterer Termin im Therapiezentrum Snoek GmbH – 15:00 Uhr.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
           "titel": "26.08.2026 10:00: Quixx-Meeting",
-          "aufmacher": "Quixx-Meeting morgen um 10:00 Uhr.",
+          "aufmacher": "Quixx-Meeting heute um 10:00 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -43,21 +29,21 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Streifenwagen kollidiert auf Troisdorfer Kreuzung mit Skoda",
-          "aufmacher": "Am Montagabend kurz vor Mitternacht ist ein Streifenwagen in Troisdorf auf dem Weg zu einem Einsatz mit einem zivilen Pkw zusammengestoßen – verletzt wurde niemand.",
-          "fakten": "Gegen 23:50 Uhr fuhr der Einsatzwagen auf der Poststraße Richtung Theodor-Heuss-Ring und bog an der Kreuzung Poststraße/Wilhelmstraße bei Rot mit Blaulicht nach links ab. Zeitgleich überquerte ein 41-jähriger Mann mit seinem Skoda die Kreuzung bei Grün aus Richtung Kölner Straße. Bei der Kollision wurde niemand verletzt, der Skoda musste jedoch abgeschleppt werden. Das Verkehrskommissariat des Rhein-Sieg-Kreises ermittelt zum Unfallhergang.",
-          "einordnung": "Für die Region ist der Vorfall ein Hinweis auf die alltägliche Einsatzrealität der Polizei in Troisdorf – und zugleich ein Beispiel dafür, dass selbst Einsatzfahrten mit Blaulicht nicht frei von Unfallrisiken sind.",
+          "titel": "Rikscha-Unfall in Niederkassel: Mitfahrer schwer verletzt",
+          "aufmacher": "Beim Kippen einer Rikscha in Niederkassel ist am Montag ein 83-jähriger Mitfahrer schwer verletzt worden – Fahrer und weitere Mitfahrerin blieben unverletzt.",
+          "fakten": "Gegen 13:30 Uhr touchierte der 83-jährige Fahrer auf der Straße „Hummerich“ in Höhe Hausnummer 2 mit dem rechten Vorderrad den Bordstein, das Gefährt kippte nach links auf die Fahrbahn. Ein ebenfalls 83-Jähriger auf der vorderen Sitzbank erlitt schwere Verletzungen und kam ins Krankenhaus; die 72-jährige Mitfahrerin und der Fahrer blieben unverletzt. Der Sachschaden wird auf rund 300 Euro geschätzt. Der Fahrer muss sich wegen des Verdachts der fahrlässigen Körperverletzung verantworten.[1]",
+          "einordnung": "Die Meldung zeigt, dass auch ungewöhnliche Fahrzeuge – wie die hier in der Region beliebten Rikschas – Unfallrisiken bergen und zeigt zugleich die routinierte Unfallaufnahme der Kreispolizei Rhein-Sieg.[1]",
           "quellen": [
-            {"name": "Presseportal Blaulicht Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6339366"}
+            {"name": "Presseportal Blaulicht Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6339424"}
           ]
         },
         {
-          "titel": "Vollausbau in Eschmar-West: Stadtteil wächst weiter",
-          "aufmacher": "Die Stadt Troisdorf startet Anfang September den Vollausbau mehrerer Straßen im Wohnquartier Eschmar-West – die Arbeiten laufen bis Sommer 2028.",
-          "fakten": "Betroffen sind die Klara-Engels-Straße, die Margareta-Stelten-Straße und die Max-Ernst-Straße. Im Zuge der Arbeiten wird auch der Peggy-Guggenheim-Platz hergerichtet und die Grünfläche im Süden zu einem kleinen Park umgestaltet. Die Stadt hat eine eigene Informationsseite unter troisdorf.de/E65 eingerichtet.",
-          "einordnung": "Ein wachsendes, gut erschlossenes Wohngebiet mit neuer Grüninfrastruktur – für Mikes MFH-Strategie in der Region ein Signal, dass hier städtebauliche Entwicklung und damit Wohnnachfrage stattfinden.",
+          "titel": "Rote Kolonie Troisdorf präsentiert sich zum Tag des offenen Denkmals",
+          "aufmacher": "Der neugegründete Verein „Rote Kolonie“ lädt am 12. und 13. September zu Führung, Film und Garagenflohmarkt ein – rund um den Tag des offenen Denkmals.",
+          "fakten": "Motto 2026: „Netzwerke: Denkmal & Infrastruktur“. Am Samstag, 12.09.26, gibt es um 17 Uhr eine Führung (Treffpunkt Roonstraße 28), um 19:30 Uhr die Filmvorführung „Die Geschichte der Roten Kolonie Troisdorf von 1913 bis 2024“ (Anmeldung, max. 40 Personen). Am Sonntag, 13.09.26, findet ein Garagenflohmarkt von 10 bis 16 Uhr statt; der Verein stellt sich am Infostand Roonstraße vor. Der Verein gründete sich am 27.04.2026 mit neun Gründungsmitgliedern.[2]",
+          "einordnung": "Ein Beispiel für bürgerschaftliches Engagement und Denkmalpflege direkt vor Ort – zeigt die gelebte Lokalgeschichte Troisdorfs, die für die Attraktivität der Stadt und damit auch für das Wohnumfeld von Mikes Bestand relevant ist.[2]",
           "quellen": [
-            {"name": "Stadt Troisdorf – Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/august/eschmar-west-waechst/"}
+            {"name": "Stadt Troisdorf – Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/august/rote-kolonie-e-v-praesentiert-sich-vor-ort/"}
           ]
         }
       ]
@@ -66,19 +52,20 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen verharren stabil um die 4-Prozent-Marke",
-          "aufmacher": "Die Bauzinsen liegen Anfang August 2026 weiter auf einem Plateau knapp über 4 Prozent – kurzfristig flach, zum Jahresende hin rechnet etwa die Hälfte der Experten mit leicht steigenden Zinsen.",
-          "fakten": "Interhyp nennt für 10-jährige Darlehen je nach Beleihungsauslauf 3,82 bis 4,22 Prozent, für 15 Jahre 4,06 bis 4,45 Prozent (Stand 13.08.2026). 67 Prozent des Interhyp-Expertenpanels erwarten in den kommenden 1 bis 2 Monaten gleichbleibende Zinsen; rund 50 Prozent sehen bis Jahresende einen leichten Anstieg. Hohe Inflation und robuste Konjunktur halten die Markterwartung an eine EZB-Zinsanhebung im September aufrecht.",
-          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel bleibt die Finanzierung bei stabilen Zinsen um 4 Prozent weiter kalkulierbar. Die Tendenz Richtung Jahresende ist jedoch leicht steigend – ein Argument, Konditionen frühzeitig zu sichern und bei mehreren Banken zu vergleichen.",
+          "titel": "Bauzinsen: 10-jährige Darlehen stabil um 4 Prozent",
+          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen pendeln weiter um die 4-Prozent-Marke – Interhyp nennt je nach Beleihung 3,82 bis 4,22 Prozent, Dr. Klein einen Top-Sollzins von 3,63 Prozent.",
+          "fakten": "Interhyp weist für 10-jährige Darlehen einen Effektivzins von 3,82 % (Beleihung <70 %), 3,90 % (=80) und 4,22 % (>90) aus, für 15 Jahre 4,06 bis 4,45 Prozent (Stand 13.08.2026).[3] Dr. Klein nennt für 10 Jahre einen Top-Sollzins von 3,63 % (Effektiv 3,71 %), für 15 Jahre 3,88 % (Effektiv 3,97 %) (Stand 26.08.2026); der Expertenrat erwartet für das 2. Halbjahr einen Korridor von 3,3 bis 3,9 %.[4] Seit Beginn des Iran-Krieges (Ende Februar) sind die Bauzinsen laut Dr. Klein um etwa 0,3 bis 0,5 Prozentpunkte gestiegen.[4]",
+          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel bleiben die Zinsen um 4 Prozent kalkulierbar. Die leicht steigende Tendenz und die unruhigen Kapitalmärkte sprechen dafür, Konditionen frühzeitig zu sichern und bei mehreren Banken zu vergleichen – der Expertenrat warnt vor zu langem Abwarten.[3][4]",
           "quellen": [
-            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"}
+            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Dr. Klein – Bauzinsen aktuell 2026", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"}
           ]
         },
         {
-          "titel": "Mietpreise im Rhein-Sieg-Kreis steigen weiter",
-          "aufmacher": "Die durchschnittliche Kaltmiete im Rhein-Sieg-Kreis ist im zweiten Quartal 2026 um rund 3,4 Prozent gegenüber dem Vorjahr auf 9,92 Euro pro Quadratmeter gestiegen.",
-          "fakten": "In Troisdorf liegt der durchschnittliche Mietpreis mit 10,41 €/m² über dem Kreisdurchschnitt; höher sind Siegburg (10,80 €/m²), Niederkassel (10,71 €/m²) und Alfter (10,61 €/m²). Günstiger sind Windeck (7,70 €/m²), Ruppichteroth (8,05 €/m²) und Eitorf (8,20 €/m²). Der Kreis liegt mit 9,92 €/m² über dem bundesweiten Schnitt von 9,23 €/m².",
-          "einordnung": "Steigende Mieten in der Region sprechen für die Cashflow-Strategie von Mikes MFH: Sinkt die Auslastung nicht, können Mieteinnahmen über die Zeit nachziehen und die Rendite stabilisieren – ein Argument für den Kauf im Kreis.",
+          "titel": "Mietpreise Rhein-Sieg-Kreis: Nachfrage bleibt robust",
+          "aufmacher": "Die Mieten im Rhein-Sieg-Kreis ziehen weiter an – Troisdorf liegt mit über 10 Euro pro Quadratmeter über dem Kreisdurchschnitt.",
+          "fakten": "Der durchschnittliche Kaltmietpreis im Kreis liegt laut ImmobilienScout24-Mietspiegel bei rund 9,92 €/m² und damit über dem bundesweiten Schnitt von 9,23 €/m². In Troisdorf sind es durchschnittlich 10,41 €/m²; höher liegen Siegburg (10,80 €/m²), Niederkassel (10,71 €/m²) und Alfter (10,61 €/m²), günstiger Windeck (7,70 €/m²) und Ruppichteroth (8,05 €/m²).",
+          "einordnung": "Steigende Mieten in der Region stützen die Cashflow-Strategie von Mikes MFH: Bei stabiler Auslastung können die Mieteinnahmen über die Zeit nachziehen und die Rendite stabilisieren – ein Argument für den Zukauf im Kreis.",
           "quellen": [
             {"name": "ImmobilienScout24 – Mietspiegel Rhein-Sieg-Kreis", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"}
           ]
@@ -89,22 +76,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB: Einlagezins bei 2,25 Prozent – September-Anhebung eingepreist",
-          "aufmacher": "Die EZB hält die Leitzinsen nach der Anhebung im Juni aktuell auf dem erhöhten Niveau – die Inflation in der Eurozone erreichte im Juli 2,9 Prozent, eine weitere Zinsanhebung im September ist mit hoher Wahrscheinlichkeit eingepreist.",
-          "fakten": "Seit 17.06.2026 gelten: Einlagefazilität 2,25 Prozent, Hauptrefinanzierung 2,40 Prozent, Spitzenrefinanzierung 2,65 Prozent. Nach dem Juni-Beschluss (je +25 Bpkt) hielt die EZB im Juli die Zinsen unverändert. Die Inflation im Euroraum stieg im Juli auf 2,9 Prozent, die Kerninflation auf 2,5 Prozent. EZB-Projektion: Gesamtinflation 2026 3,0 Prozent, 2027 2,3 Prozent, 2028 2,0 Prozent; Wachstum 2026 0,8 Prozent. Die Finanzmärkte preisen eine Anhebung am 10. September mit rund 80 Prozent Wahrscheinlichkeit ein.",
-          "einordnung": "Höhere Zinsen verteuern Mikes Baufinanzierung für das MFH, machen aber auch Tages- und Festgeld attraktiver. Für die Liquiditätsplanung ist das Umfeld – restriktive EZB, Inflation über Ziel – bei der Swoberechnung zu berücksichtigen.",
+          "titel": "EZB: Inflation im Euroraum bei 2,9 Prozent – September-Anhebung eingepreist",
+          "aufmacher": "Die Inflation im Euroraum stieg im Juli auf 2,9 Prozent, angetrieben vor allem von Energie – der Markt preist eine EZB-Zinsanhebung im September mit rund 80 Prozent Wahrscheinlichkeit ein.",
+          "fakten": "Nach der Eurostat-Schnellschätzung erreichte die Jahresinflation im Euroraum im Juli 2026 2,9 Prozent (Juni: 2,8 %); Energie stieg auf 10,0 Prozent.[5] Seit dem 17.06.2026 gelten bei der EZB: Einlagefazilität 2,25 %, Hauptrefinanzierung 2,40 %, Spitzenrefinanzierung 2,65 %.[6] Der nächste EZB-Zinsentscheid ist am 10. September 2026; eine Anhebung um 25 Basispunkte ist zu rund 80 Prozent eingepreist.[7]",
+          "einordnung": "Höhere Leitzinsen verteuern Mikes Baufinanzierung für das MFH, machen aber Tages- und Festgeld attraktiver. Für die Liquiditäts- und Swoberechnung ist das restriktive Umfeld mit Inflation über Ziel zu berücksichtigen.[6][7]",
           "quellen": [
-            {"name": "EZB – Geldpolitische Beschlüsse (11.06.2026)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.de.html"},
+            {"name": "Eurostat – Euro area annual inflation up to 2.9%", "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-31072026-ap"},
+            {"name": "EZB – Geldpolitische Beschlüsse", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.de.html"},
             {"name": "Morningstar – EZB-Leitzins 2026", "url": "https://global.morningstar.com/de/wirtschaft/ezb-leitzins-steigen-die-zinsen-2026-erneut-und-fallen-2027-wieder"}
           ]
         },
         {
-          "titel": "DAX fällt unter 26.000 – Rückzug vom Rekordhoch",
-          "aufmacher": "Der deutsche Leitindex DAX hat sich nach seinem Rekordhoch von 26.573 Punkten deutlich zurückgezogen und ist zuletzt unter die Marke von 26.000 Punkten gerutscht.",
-          "fakten": "Am 20.08. schloss der DAX bei 25.983 Punkten, ein Minus von 0,4 Prozent und der vierte Verlusttag in Folge. Hintergrund sind gestiegene Ölpreise und hohe Anleiherenditen, die Aktien unattraktiv machen. Zum Wochenende erholte sich der Index leicht, blieb aber auf Wochensicht im Minus.",
-          "einordnung": "Für Mikes geplante Welt-ETF-Anlage nach dem Firmenverkauf zeigt sich: Die Märkte sind nach dem starken Rekordlauf nervös geworden und korrigieren. Für eine langfristige Anlage in ETF ist eine solche Phase normal – ein Argument, breit gestreut und langfristig zu bleiben.",
+          "titel": "DAX: 0,6 Prozent Plus dank starker Konjunkturdaten",
+          "aufmacher": "Robuste Wirtschaftsdaten haben den DAX am Dienstag aus der Lethargie gerissen – der Leitindex schloss 0,6 Prozent höher bei 26.266 Punkten.",
+          "fakten": "Der deutsche Leitindex gewann am 25.08.2026 0,6 Prozent auf 26.266 Punkte und rückte damit wieder Richtung Rekord bei 26.573 Zählern. Stützend wirkten der vierte ifo-Anstieg in Folge und ein BIP-Plus von 0,3 Prozent im zweiten Quartal (zuvor 0,2 % geschätzt). Die Stimmung bleibt vor wichtigen Terminen angespannt: Am Mittwoch legt Nvidia seine Bilanz vor, am Freitag spricht der US-Notenbankchef auf dem Jackson-Hole-Treffen.[8]",
+          "einordnung": "Für Mikes geplante Welt-ETF-Anlage nach dem Firmenverkauf: Der Markt zeigt sich nach dem Rekordlauf nervös und schwankt. Eine langfristige, breit gestreute ETF-Anlage sollte solche Korrekturphasen als normal einpreisen – und der anstehende Nvidia-Bericht kann die KI-Fantasie kurzfristig bewegen.[8]",
           "quellen": [
-            {"name": "Tagesschau – Marktbericht DAX", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nikkei-staatsverschuldung-100.html"}
+            {"name": "Tagesschau – Marktbericht DAX (25.08.2026)", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zinsen-rendite-100.html"}
           ]
         }
       ]
@@ -114,9 +102,9 @@
       "artikel": [
         {
           "titel": "Hermes Agent: Update auf 0.20.5 (v2026.8.19) verfügbar",
-          "aufmacher": "Der Update-Scan meldet für Hermes Agent einen Stand von 0.20.5; das nächste vollständig kuratierte Release v0.21.0 steht noch aus.",
-          "fakten": "Die lokale Installation läuft auf v0.20.5 (2026.8.19) und ist laut Prüfung 514 Commits hinter dem Hauptzweig. Das Release v0.20.5 bündelt seit v0.20.4 rund 323 Pull-Requests, darunter Bot-Mode-Gruppenraum-Threads, faltbare Gesprächszusammenfassungen, PDF-/Datei-Anhänge mit Drag & Drop, ein schlüssel-loser Web-Tier mit 5-Vendor-Rotation sowie Cron-Jobs mit persistentem Speicher. Die vollständige Release-Notes-Dokumentation erscheint mit v0.21.0.",
-          "einordnung": "Für Mike: Das Update bringt vor allem Stabilität und Komfort. Da v0.21.0 mit der vollständigen Dokumentation noch aussieht, ist ein Update aktuell nicht zwingend – sinnvoll, sobald das nächste Release-Tag erscheint.",
+          "aufmacher": "Der Update-Scan meldet für Hermes Agent einen Stand von 0.20.5 – das neueste Release v0.20.5 bündelt rund 323 Pull-Requests; die vollständige Release-Doku folgt mit v0.21.0.",
+          "fakten": "Die lokale Installation läuft auf v0.20.5 (v2026.8.19), das als Patch-Release die seit v0.20.4 gemergten ~323 PRs bündelt. Zu den Neuerungen gehören Bot-Mode-Gruppenraum-Threads, faltbare Gesprächszusammenfassungen, PDF-/Datei-Anhänge mit Drag & Drop, ein schlüsselloser Web-Tier mit 5-Vendor-Rotation sowie Cron-Jobs mit persistentem Speicher und pro-Job Reasoning-Effort.[9]",
+          "einordnung": "Für Mike: Das Update bringt vor allem Stabilität und Komfort. Da die vollständige kuratierte Dokumentation erst mit v0.21.0 erscheint, ist ein Update aktuell nicht zwingend – sinnvoll, sobald das nächste Release-Tag verfügbar ist.",
           "quellen": [
             {"name": "Hermes Agent Releases (GitHub)", "url": "https://github.com/NousResearch/hermes-agent/releases"}
           ]
