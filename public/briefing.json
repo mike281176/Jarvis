@@ -1,12 +1,12 @@
 {
-  "datum": "Freitag, 28.08.2026",
+  "datum": "Samstag, 29.08.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "22°C · Regen 100% · UV 5.3",
-          "aufmacher": "Bedeckter Tag mit durchgehendem Regen, Höchstwerte um 26,6°C, Tiefstwerte 18,1°C.",
+          "titel": "16°C · Regen 95% · UV 5.3",
+          "aufmacher": "Leicht bewölkter Tag mit sehr hoher Regenwahrscheinlichkeit, Höchstwerte um 24°C, Tiefstwerte 15,4°C.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -29,22 +29,30 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Eschmar-West: Vollausbau startet Anfang September",
-          "aufmacher": "In Troisdorf-Eschmar beginnt der Vollausbau der Straßen in der Klara-Engels-, Margareta-Stelten- und Max-Ernst-Straße.",
-          "fakten": "Die Stadt Troisdorf meldet, dass der Vollausbau in Eschmar-West Anfang September startet. Die Findlinge für die Grünanlage sind bereits geliefert. Die Maßnahme betrifft die Anwohnerinnen und Anwohner der drei genannten Straßen.",
-          "einordnung": "Für Mike als Eigentümer in der Region relevant: Ausbaugebiete wie Eschmar-West stärken die Infrastruktur und damit langfristig die Attraktivität des Standorts für Mietobjekte.",
-          "quellen": [
-            {"name": "Stadt Troisdorf", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/august/eschmar-west-waechst/"},
-            {"name": "treffpunkt-troisdorf", "url": "https://treffpunkt-troisdorf.de/eschmar-west-waechst/"}
-          ]
-        },
-        {
           "titel": "Gullydeckel in Troisdorf ausgehoben – Polizei ermittelt",
           "aufmacher": "Jugendliche haben an der Mozartstraße in Troisdorf mehrere Gullydeckel ausgehoben, die Polizei ermittelt wegen gefährlichen Eingriffs in den Straßenverkehr.",
           "fakten": "Am Mittwochmorgen (26. August) entdeckte der Hausmeister der Grundschule an der Mozartstraße die ausgehobenen Gullydeckel. Ein Nachbar gab an, gegen 3.45 Uhr etwas bemerkt zu haben. Die Polizei Rhein-Sieg-Kreis ermittelt wegen gefährlichen Eingriffs in den Straßenverkehr.",
           "einordnung": "Sicherheitslage im Stadtgebiet – für Mike als Anwohner und Vermieter in Troisdorf ein Hinweis auf Vandalismus, der in der Nachbarschaft wachsam bleiben lässt.",
           "quellen": [
             {"name": "Presseportal Polizei Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6340693"}
+          ]
+        },
+        {
+          "titel": "Zusammenstoß auf Kreuzung – Streifenwagen beteiligt",
+          "aufmacher": "Kurz vor Mitternacht kollidierte in Troisdorf ein Streifenwagen auf dem Weg zu einem Einsatz mit einem anderen Fahrzeug.",
+          "fakten": "Am Montagabend (24. August) fuhr der Streifenwagen gegen 23.50 Uhr auf der Poststraße Richtung Theodor-Heuss-Ring, als es an der Kreuzung Poststraße/Wilhelmstraße zum Zusammenstoß kam. Die Beamten waren mit Blaulicht auf dem Weg zu einem Einsatz wegen einer randalierenden Person.",
+          "einordnung": "Verkehrsunfall im Troisdorfer Stadtgebiet – für Mike als Pendler und Anwohner relevant, da die Kreuzung Poststraße/Wilhelmstraße im Zentrum liegt.",
+          "quellen": [
+            {"name": "Presseportal Polizei Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6339366"}
+          ]
+        },
+        {
+          "titel": "Sauna in Siegburger Wellness-Park ausgebrannt",
+          "aufmacher": "In der Nacht zu Freitag brannte eine große Blockbohlensauna im Außengelände eines Wellness-Parks an der Zeithstraße in Siegburg.",
+          "fakten": "Gegen 4.00 Uhr ging die Meldung ein, die Feuerwehr löschte bis in die Morgenstunden. Verletzt wurde niemand. Der Brandort wurde von der Polizei zur Ermittlung der Ursache beschlagnahmt.",
+          "einordnung": "Einsatz im Nachbarkreis – für Mike als Heizungsbauer interessant, da Brandursachenermittlungen oft auf technische Defekte an Heiz- oder Saunaanlagen zurückgehen.",
+          "quellen": [
+            {"name": "Presseportal Polizei Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6341537"}
           ]
         }
       ]
@@ -61,16 +69,6 @@
             {"name": "Interhyp", "url": "https://www.interhyp.de/zinsen/"},
             {"name": "Baufi24", "url": "https://www.baufi24.de/bauzinsen/"}
           ]
-        },
-        {
-          "titel": "Mietpreise: Anstieg verlangsamt sich, Bonn bei 13,86 €/m²",
-          "aufmacher": "Die Mietpreise in Deutschland steigen nur noch moderat, im Schnitt 11,44 €/m² – in Bonn liegt die Angebotsmiete bei 13,86 €/m².",
-          "fakten": "Laut Miet-Check liegt der bundesweite Durchschnitt 2026 bei 11,44 €/m² (+0,4% gegenüber 2025). Engel & Völkers nennt für Bonn 14,02 €/m² (Wohnungen) bzw. 14,87 €/m² (Häuser). In Köln liegt die Miete bei 15,13 €/m².",
-          "einordnung": "Für Mikes Cashflow-Strategie: Stabile bis leicht steigende Mieten in der Region Rhein-Sieg/Bonn stützen die Rendite bestehender und geplanter MFH-Objekte.",
-          "quellen": [
-            {"name": "Engel & Völkers Mietspiegel", "url": "https://www.engelvoelkers.com/de-de/mietspiegel/"},
-            {"name": "Miet-Check", "url": "https://www.miet-check.de/Mietblog/2026/07/28/mietpreise-deutschland-2026-staedte-ranking/"}
-          ]
         }
       ]
     },
@@ -78,9 +76,9 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB-Leitzins bei 2,40% – weitere Anhebung im September eingepreist",
-          "aufmacher": "Die EZB hält den Leitzins bei 2,40%, eine weitere Anhebung im September ist an den Finanzmärkten bereits eingepreist.",
-          "fakten": "Nach der ersten Zinserhöhung seit 2023 im Juni (auf 2,40%) ließ die EZB im Juli den Zins unverändert. Die Inflation im Euroraum stieg laut Eurostat-Flash auf 2,9% im Juli (Juni: 2,8%), getrieben vor allem von Energie mit 10,0%. Trading Economics erwartet bis Quartalsende 2,65%.",
+          "titel": "EZB-Leitzins bei 2,40% – Inflation steigt auf 2,9%",
+          "aufmacher": "Die EZB hält den Leitzins bei 2,40%, die Inflation im Euroraum kletterte im Juli auf 2,9% – getrieben vor allem von den Energiepreisen.",
+          "fakten": "Nach der ersten Zinserhöhung seit 2023 im Juni (auf 2,40%) ließ die EZB im Juli den Zins unverändert. Laut Eurostat-Flash stieg die Inflation im Juli auf 2,9% (Juni: 2,8%), Energie verteuerte sich um 10,0%. Trading Economics erwartet bis Quartalsende 2,65%.",
           "einordnung": "Für Mikes ETF-Planung: Steigende Leitzinsen belasten kurzfristig die Aktienmärkte, langfristig bleibt der Welt-ETF-Ansatz für den geplanten Firmenverkauf 2027 die bevorzugte Anlage.",
           "quellen": [
             {"name": "Eurostat", "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-31072026-ap"},
@@ -93,12 +91,12 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent 0.20.5 → 0.20.6: Patch-Release mit ~525 PRs",
-          "aufmacher": "Für Hermes Agent ist ein Update auf 0.20.6 verfügbar – ein Patch-Release, das rund 525 Pull Requests seit 0.20.5 bündelt.",
-          "fakten": "Das Release vom 27. August 2026 rollt die seit v0.20.5 gemergten ~525 PRs in einen stabilen Tag für Docker-Images, gehostete Deployments und frische Installationen zusammen. Es ist ein reines Stabilitäts- und Konsolidierungs-Release ohne neue Kernfunktionen.",
-          "einordnung": "Für Mikes JARVIS-System: Das Update hält die eigene Hermes-Instanz auf dem neuesten Stand und behebt die seit dem letzten Release gesammelten Fehler – ein Update lohnt sich.",
+          "titel": "🤖 Hermes Agent 0.20.5 → 0.20.6: CLI-Fix für Pet-Kitty-Flush",
+          "aufmacher": "Für Hermes Agent ist ein Update auf 0.20.6 verfügbar – ein Patch, der einen CLI-Fehler beim Pet-Kitty-Flush behebt.",
+          "fakten": "Das Update (1 Commit hinter origin/main) behebt: ColorDepth ist lazy, sodass MagicMock-prompt_toolkit-Stubs weiterhin importieren können. Der Redraw/Resize-Kitty-Requeue no-opt, wenn das Pet-Pane nie initialisiert wurde.",
+          "einordnung": "Für Mikes JARVIS-System: Ein kleines Stabilitäts-Update, das den CLI-Start robuster macht – ein Update lohnt sich, ist aber nicht dringend.",
           "quellen": [
-            {"name": "Hermes Agent Releases (GitHub)", "url": "https://github.com/NousResearch/hermes-agent/releases"}
+            {"name": "Hermes Agent Commit (GitHub)", "url": "https://github.com/hermes-agent/hermes-agent/commit/9f90cd438cb"}
           ]
         }
       ]
