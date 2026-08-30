@@ -1,14 +1,14 @@
 {
-  "datum": "Samstag, 29.08.2026",
+  "datum": "Sonntag, 30.08.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "16°C · Regen 95% · UV 5.3",
-          "aufmacher": "Leicht bewölkter Tag mit sehr hoher Regenwahrscheinlichkeit, Höchstwerte um 24°C, Tiefstwerte 15,4°C.",
-          "fakten": "",
-          "einordnung": "",
+          "titel": "18,5°C · Regen 75% · UV 5,4",
+          "aufmacher": "☁️ Bedeckt, mit hoher Regenwahrscheinlichkeit und mäßiger UV-Belastung.",
+          "fakten": "Tageshöchstwert 23,7°C, Tiefstwert 18,4°C. Regenwahrscheinlichkeit 75%, UV-Index 5,4.",
+          "einordnung": "Bei 75% Regenrisiko lohnt sich ein Schirm für unterwegs; der UV-Wert 5,4 erfordert bei Aufenthalten im Freien trotz Bewölkung Sonnenschutz.",
           "quellen": []
         }
       ]
@@ -17,8 +17,15 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Keine Termine in den nächsten 3 Tagen",
-          "aufmacher": "Der Google-Kalender zeigt für die kommenden drei Tage keine Einträge.",
+          "titel": "02.09.2026 10:00: Quixx-Meeting",
+          "aufmacher": "Quixx-Meeting am Mittwoch, 02.09.2026 um 10:00 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "02.09.2026 14:15: Dr. med. Ulrich Huber - Orthopädie",
+          "aufmacher": "Orthopädischer Termin bei Dr. med. Ulrich Huber am Mittwoch, 02.09.2026 um 14:15 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -29,30 +36,22 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Gullydeckel in Troisdorf ausgehoben – Polizei ermittelt",
-          "aufmacher": "Jugendliche haben an der Mozartstraße in Troisdorf mehrere Gullydeckel ausgehoben, die Polizei ermittelt wegen gefährlichen Eingriffs in den Straßenverkehr.",
-          "fakten": "Am Mittwochmorgen (26. August) entdeckte der Hausmeister der Grundschule an der Mozartstraße die ausgehobenen Gullydeckel. Ein Nachbar gab an, gegen 3.45 Uhr etwas bemerkt zu haben. Die Polizei Rhein-Sieg-Kreis ermittelt wegen gefährlichen Eingriffs in den Straßenverkehr.",
-          "einordnung": "Sicherheitslage im Stadtgebiet – für Mike als Anwohner und Vermieter in Troisdorf ein Hinweis auf Vandalismus, der in der Nachbarschaft wachsam bleiben lässt.",
+          "titel": "Troisdorf: Polizei meldet Zusammenstoß mit Streifenwagen auf Kreuzung",
+          "aufmacher": "Bei einem Zusammenstoß auf einer Troisdorfer Kreuzung war auch ein Streifenwagen beteiligt.",
+          "fakten": "Die Kreispolizeibehörde Rhein-Sieg-Kreis meldete den Vorfall am 25.08.2026. Details zu Verletzten und Unfallhergang sind der Meldung zufolge noch nicht abschließend verifiziert.",
+          "einordnung": "Für Mike als Anwohner relevant: Unfälle mit Beteiligung von Einsatzfahrzeugen können kurzzeitig zu Verkehrsbehinderungen im Stadtgebiet führen.",
           "quellen": [
-            {"name": "Presseportal Polizei Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6340693"}
+            {"name": "Troisdorf City – Aktuelle Meldungen", "url": "https://www.troisdorf.city/News/Aktuelle-Meldungen"},
+            {"name": "Polizei Presseportal Troisdorf", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
           ]
         },
         {
-          "titel": "Zusammenstoß auf Kreuzung – Streifenwagen beteiligt",
-          "aufmacher": "Kurz vor Mitternacht kollidierte in Troisdorf ein Streifenwagen auf dem Weg zu einem Einsatz mit einem anderen Fahrzeug.",
-          "fakten": "Am Montagabend (24. August) fuhr der Streifenwagen gegen 23.50 Uhr auf der Poststraße Richtung Theodor-Heuss-Ring, als es an der Kreuzung Poststraße/Wilhelmstraße zum Zusammenstoß kam. Die Beamten waren mit Blaulicht auf dem Weg zu einem Einsatz wegen einer randalierenden Person.",
-          "einordnung": "Verkehrsunfall im Troisdorfer Stadtgebiet – für Mike als Pendler und Anwohner relevant, da die Kreuzung Poststraße/Wilhelmstraße im Zentrum liegt.",
+          "titel": "Troisdorf: Stadtwerke laden zum Mitmachen & Erfrischen ein",
+          "aufmacher": "Die Stadtwerke Troisdorf beteiligen sich mit einem Mitmach- und Erfrischungsangebot an der Aktion „Troisdorf Verein(t)“.",
+          "fakten": "Die Meldung datiert vom 24.08.2026. Die Aktion richtet sich an Vereine und Bürger in Troisdorf; konkrete Uhrzeiten und Orte sind nicht verifiziert.",
+          "einordnung": "Für Mike als Unternehmer in Troisdorf ein Hinweis auf lokale Netzwerk- und Vereinsaktivitäten, die auch für Quixx24 relevant sein könnten.",
           "quellen": [
-            {"name": "Presseportal Polizei Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6339366"}
-          ]
-        },
-        {
-          "titel": "Sauna in Siegburger Wellness-Park ausgebrannt",
-          "aufmacher": "In der Nacht zu Freitag brannte eine große Blockbohlensauna im Außengelände eines Wellness-Parks an der Zeithstraße in Siegburg.",
-          "fakten": "Gegen 4.00 Uhr ging die Meldung ein, die Feuerwehr löschte bis in die Morgenstunden. Verletzt wurde niemand. Der Brandort wurde von der Polizei zur Ermittlung der Ursache beschlagnahmt.",
-          "einordnung": "Einsatz im Nachbarkreis – für Mike als Heizungsbauer interessant, da Brandursachenermittlungen oft auf technische Defekte an Heiz- oder Saunaanlagen zurückgehen.",
-          "quellen": [
-            {"name": "Presseportal Polizei Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6341537"}
+            {"name": "Troisdorf City – Aktuelle Meldungen", "url": "https://www.troisdorf.city/News/Aktuelle-Meldungen"}
           ]
         }
       ]
@@ -61,13 +60,12 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen stabil um 4% – Seitwärtsbewegung erwartet",
-          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen verharren knapp über der 4-Prozent-Marke, kurzfristig rechnen die Experten mit keiner großen Bewegung.",
-          "fakten": "Interhyp nennt für zehnjährige Darlehen (Beleihungsauslauf <70%) 3,82% effektiv, Baufi24 listet 3,68–3,77%. Rund 67% der befragten Marktexperten erwarten in den nächsten ein bis zwei Monaten gleichbleibende Zinsen, bis Jahresende rechnet die Hälfte mit einem moderaten Anstieg.",
-          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel bleibt das Zinsniveau um 4% tragbar – die Kaufnebenkosten aus Eigenkapital zu finanzieren und den Rest zu beleihen, ist bei stabilen Zinsen weiterhin attraktiv.",
+          "titel": "Bauzinsen stabil um die 4-Prozent-Marke – Experten erwarten leichten Anstieg",
+          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen verharren seitwärts um die 4-Prozent-Marke, mittelfristig rechnet die Hälfte der Experten mit einem moderaten Anstieg.",
+          "fakten": "Laut Interhyp-Zinstabelle (Stand 17.–23.08.2026) liegen die effektiven Jahreszinsen bei 10 Jahren Zinsbindung zwischen 3,82% (Beleihung <70%) und 4,22% (>90%). 67% der befragten Marktexperten erwarten kurzfristig gleichbleibende Zinsen, 50% bis Jahresende einen Anstieg.",
+          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel (nur Kaufnebenkosten aus Eigenkapital) bleibt das Zinsniveau um 4% ein relevanter Kostenfaktor – ein moderater Anstieg spricht für frühzeitige Zinssicherung.",
           "quellen": [
-            {"name": "Interhyp", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Baufi24", "url": "https://www.baufi24.de/bauzinsen/"}
+            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"}
           ]
         }
       ]
@@ -76,27 +74,26 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB-Leitzins bei 2,40% – Inflation steigt auf 2,9%",
-          "aufmacher": "Die EZB hält den Leitzins bei 2,40%, die Inflation im Euroraum kletterte im Juli auf 2,9% – getrieben vor allem von den Energiepreisen.",
-          "fakten": "Nach der ersten Zinserhöhung seit 2023 im Juni (auf 2,40%) ließ die EZB im Juli den Zins unverändert. Laut Eurostat-Flash stieg die Inflation im Juli auf 2,9% (Juni: 2,8%), Energie verteuerte sich um 10,0%. Trading Economics erwartet bis Quartalsende 2,65%.",
-          "einordnung": "Für Mikes ETF-Planung: Steigende Leitzinsen belasten kurzfristig die Aktienmärkte, langfristig bleibt der Welt-ETF-Ansatz für den geplanten Firmenverkauf 2027 die bevorzugte Anlage.",
+          "titel": "EZB hält Leitzins bei 2,25% – Zinspause nach Juni-Erhöhung",
+          "aufmacher": "Die EZB lässt den Einlagesatz vorerst bei 2,25% – nach der ersten Zinserhöhung seit drei Jahren im Juni 2026 folgt eine Zinspause.",
+          "fakten": "Am 11.06.2026 hob die EZB die Leitzinsen erstmals seit September 2023 um 25 Basispunkte an. Am 23.07.2026 blieb der Einlagesatz bei 2,25%, der Hauptrefinanzierungssatz bei 2,40%. Die Inflation im Euroraum schwächte sich im Juni auf 2,80% ab.",
+          "einordnung": "Für Mikes Finanzplanung relevant: Das hohe Zinsniveau bleibt Sparern erhalten (Festgeld bis 3,70%), während die Inflation über dem EZB-Ziel von 2% weiter Druck auf die Kaufkraft ausübt.",
           "quellen": [
-            {"name": "Eurostat", "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-31072026-ap"},
-            {"name": "Trading Economics", "url": "https://tradingeconomics.com/euro-area/interest-rate"}
+            {"name": "Raisin – EZB-Leitzins Entwicklung", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"}
           ]
         }
       ]
     },
     {
-      "titel": "IT/Server",
+      "titel": "IT / Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent 0.20.5 → 0.20.6: CLI-Fix für Pet-Kitty-Flush",
-          "aufmacher": "Für Hermes Agent ist ein Update auf 0.20.6 verfügbar – ein Patch, der einen CLI-Fehler beim Pet-Kitty-Flush behebt.",
-          "fakten": "Das Update (1 Commit hinter origin/main) behebt: ColorDepth ist lazy, sodass MagicMock-prompt_toolkit-Stubs weiterhin importieren können. Der Redraw/Resize-Kitty-Requeue no-opt, wenn das Pet-Pane nie initialisiert wurde.",
-          "einordnung": "Für Mikes JARVIS-System: Ein kleines Stabilitäts-Update, das den CLI-Start robuster macht – ein Update lohnt sich, ist aber nicht dringend.",
+          "titel": "🤖 Hermes Agent 0.20.5 → 0.20.6: Patch-Release mit Browser-Profil, MCP-Erweiterung und TTL-Caching",
+          "aufmacher": "Für Hermes Agent steht ein Update auf v0.20.6 bereit – ein Patch-Release, das rund 525 PRs bündelt.",
+          "fakten": "Das Update (v2026.8.27) bringt u.a. consent-gated real-profile browsing, eine große Erweiterung des Remote-MCP-Katalogs (50+ verifizierte Server inkl. Cloudflare, Grafana Cloud), TTL-Ergebnis-Caching für web_search/web_extract sowie opt-in OS-Keychain-Verschlüsselung für gespeicherte Secrets.",
+          "einordnung": "Für Mikes JARVIS-Setup relevant: Das TTL-Caching beschleunigt wiederholte Recherchen, die Keychain-Verschlüsselung erhöht die Sicherheit der gespeicherten Credentials.",
           "quellen": [
-            {"name": "Hermes Agent Commit (GitHub)", "url": "https://github.com/hermes-agent/hermes-agent/commit/9f90cd438cb"}
+            {"name": "Hermes Agent v0.20.6 Release Notes", "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.27"}
           ]
         }
       ]
