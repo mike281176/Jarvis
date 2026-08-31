@@ -1,14 +1,14 @@
 {
-  "datum": "Sonntag, 30.08.2026",
+  "datum": "Montag, 31.08.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "18,5°C · Regen 75% · UV 5,4",
-          "aufmacher": "☁️ Bedeckt, mit hoher Regenwahrscheinlichkeit und mäßiger UV-Belastung.",
-          "fakten": "Tageshöchstwert 23,7°C, Tiefstwert 18,4°C. Regenwahrscheinlichkeit 75%, UV-Index 5,4.",
-          "einordnung": "Bei 75% Regenrisiko lohnt sich ein Schirm für unterwegs; der UV-Wert 5,4 erfordert bei Aufenthalten im Freien trotz Bewölkung Sonnenschutz.",
+          "titel": "18°C · Regen 100% · UV 5",
+          "aufmacher": "Sonnig-klar bei 18°C, Höchstwert 21°C — doch die Regenwahrscheinlichkeit liegt laut Wetterdienst bei 100 Prozent.",
+          "fakten": "Aktuell 17,4°C, Tiefstwert 16°C, Höchstwert 20,8°C. Bewölkungszustand: klar. UV-Index 4,75 (mittel).",
+          "einordnung": "Bei Regenrisiko lohnt ein Blick auf die Photovoltaik-Erzeugung an diesem Morgen.",
           "quellen": []
         }
       ]
@@ -17,15 +17,15 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "02.09.2026 10:00: Quixx-Meeting",
-          "aufmacher": "Quixx-Meeting am Mittwoch, 02.09.2026 um 10:00 Uhr.",
+          "titel": "Mittwoch, 02.09.2026 10:00: Quixx-Meeting",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "02.09.2026 14:15: Dr. med. Ulrich Huber - Orthopädie",
-          "aufmacher": "Orthopädischer Termin bei Dr. med. Ulrich Huber am Mittwoch, 02.09.2026 um 14:15 Uhr.",
+          "titel": "Mittwoch, 02.09.2026 14:15: 🩻 Dr. med. Ulrich Huber - Orthopädie",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -33,25 +33,30 @@
       ]
     },
     {
-      "titel": "Regional/Überregional",
+      "titel": "Regional / Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Polizei meldet Zusammenstoß mit Streifenwagen auf Kreuzung",
-          "aufmacher": "Bei einem Zusammenstoß auf einer Troisdorfer Kreuzung war auch ein Streifenwagen beteiligt.",
-          "fakten": "Die Kreispolizeibehörde Rhein-Sieg-Kreis meldete den Vorfall am 25.08.2026. Details zu Verletzten und Unfallhergang sind der Meldung zufolge noch nicht abschließend verifiziert.",
-          "einordnung": "Für Mike als Anwohner relevant: Unfälle mit Beteiligung von Einsatzfahrzeugen können kurzzeitig zu Verkehrsbehinderungen im Stadtgebiet führen.",
+          "titel": "Troisdorf: Jugendliche heben Gullydeckel aus",
+          "aufmacher": "In Troisdorf entdeckte der Hausmeister einer Grundschule an der Mozartstraße mehrere ausgehobene Gullydeckel — die Polizei ermittelt wegen gefährlichen Eingriffs in den Straßenverkehr.",
+          "fakten": "Am Mittwochmorgen (26.08.) gegen 3:45 Uhr waren die Deckel offenbar durch Jugendliche ausgehoben worden, wodurch gefährliche Stellen auf der Straße entstanden. Ein Nachbar gab Hinweise.",
+          "einordnung": "Sachbeschädigung und Straßengefährdung im direkten Umfeld — für Mikes Troisdorfer Immobilien ein Hinweis auf die Sicherheitslage im Stadtgebiet.",
           "quellen": [
-            {"name": "Troisdorf City – Aktuelle Meldungen", "url": "https://www.troisdorf.city/News/Aktuelle-Meldungen"},
-            {"name": "Polizei Presseportal Troisdorf", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
+            {
+              "name": "Polizei Rhein-Sieg-Kreis (Presseportal)",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6340693"
+            }
           ]
         },
         {
-          "titel": "Troisdorf: Stadtwerke laden zum Mitmachen & Erfrischen ein",
-          "aufmacher": "Die Stadtwerke Troisdorf beteiligen sich mit einem Mitmach- und Erfrischungsangebot an der Aktion „Troisdorf Verein(t)“.",
-          "fakten": "Die Meldung datiert vom 24.08.2026. Die Aktion richtet sich an Vereine und Bürger in Troisdorf; konkrete Uhrzeiten und Orte sind nicht verifiziert.",
-          "einordnung": "Für Mike als Unternehmer in Troisdorf ein Hinweis auf lokale Netzwerk- und Vereinsaktivitäten, die auch für Quixx24 relevant sein könnten.",
+          "titel": "Troisdorf: Busfahrer nach Streit schwer verletzt",
+          "aufmacher": "Zwei Unbekannte haben einen 32-jährigen Busfahrer in Troisdorf nach einem Streit im Straßenverkehr zusammengeschlagen.",
+          "fakten": "Nach einer verbalen Auseinandersetzung in der Brunnenstraße trafen die Täter den Busfahrer erneut auf einem Parkplatz an der Heerstraße und schlugen auf ihn ein. Der Mann kam mit Verletzungen ins Krankenhaus; die Kriminalpolizei ermittelt wegen gefährlicher Körperverletzung und sucht Zeugen.",
+          "einordnung": "Gewalttäter in Troisdorf — relevant für die Sicherheitswahrnehmung im Stadtbild, auch im Kontext der vermieteten Objekte.",
           "quellen": [
-            {"name": "Troisdorf City – Aktuelle Meldungen", "url": "https://www.troisdorf.city/News/Aktuelle-Meldungen"}
+            {
+              "name": "WDR (Rhein-Sieg-Kreis)",
+              "url": "https://www1.wdr.de/nrw/rheinland/rhein-sieg-kreis/busfahrer-troisdorf-angriff-100.html"
+            }
           ]
         }
       ]
@@ -60,12 +65,19 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen stabil um die 4-Prozent-Marke – Experten erwarten leichten Anstieg",
-          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen verharren seitwärts um die 4-Prozent-Marke, mittelfristig rechnet die Hälfte der Experten mit einem moderaten Anstieg.",
-          "fakten": "Laut Interhyp-Zinstabelle (Stand 17.–23.08.2026) liegen die effektiven Jahreszinsen bei 10 Jahren Zinsbindung zwischen 3,82% (Beleihung <70%) und 4,22% (>90%). 67% der befragten Marktexperten erwarten kurzfristig gleichbleibende Zinsen, 50% bis Jahresende einen Anstieg.",
-          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel (nur Kaufnebenkosten aus Eigenkapital) bleibt das Zinsniveau um 4% ein relevanter Kostenfaktor – ein moderater Anstieg spricht für frühzeitige Zinssicherung.",
+          "titel": "Bauzinsen: wieder Richtung 4 Prozent",
+          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen liegen wieder bei gut 4 Prozent — ein moderater Anstieg nach der jüngsten Markterholung.",
+          "fakten": "Laut Interhyp (Stand 13.08.2026) bewegen sich zehnjährige Darlehen seitwärts um die 4-Prozent-Marke; Statista beziffert den Durchschnitt für August 2026 auf 4,03 Prozent (10 Jahre) bzw. 4,24 Prozent (15 Jahre) — nach 3,62 Prozent im März. Ein Anstieg der EZB-Leitzinsen im September ist bereits eingepreist.",
+          "einordnung": "Für die Refinanzierungsstrategie nach dem MFH-Kauf wichtig: Höhere Bauzinsen drücken die Rendite bei Anschlussfinanzierung — frühzeitig mehrere Banken vergleichen.",
           "quellen": [
-            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"}
+            {
+              "name": "Interhyp (Bauzinsen aktuell)",
+              "url": "https://www.interhyp.de/zinsen/"
+            },
+            {
+              "name": "Statista (Bauzinsen Deutschland)",
+              "url": "https://de.statista.com/statistik/daten/studie/1347565/umfrage/entwicklung-der-bauzinsen-in-deutschland/"
+            }
           ]
         }
       ]
@@ -74,12 +86,15 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hält Leitzins bei 2,25% – Zinspause nach Juni-Erhöhung",
-          "aufmacher": "Die EZB lässt den Einlagesatz vorerst bei 2,25% – nach der ersten Zinserhöhung seit drei Jahren im Juni 2026 folgt eine Zinspause.",
-          "fakten": "Am 11.06.2026 hob die EZB die Leitzinsen erstmals seit September 2023 um 25 Basispunkte an. Am 23.07.2026 blieb der Einlagesatz bei 2,25%, der Hauptrefinanzierungssatz bei 2,40%. Die Inflation im Euroraum schwächte sich im Juni auf 2,80% ab.",
-          "einordnung": "Für Mikes Finanzplanung relevant: Das hohe Zinsniveau bleibt Sparern erhalten (Festgeld bis 3,70%), während die Inflation über dem EZB-Ziel von 2% weiter Druck auf die Kaufkraft ausübt.",
+          "titel": "EZB: Zinserhöhung im September erwartet",
+          "aufmacher": "Die EZB hat im Juni die Wende eingeleitet — die Märkte erwarten bei der Sitzung am 10. September eine weitere Anhebung des Einlagensatzes.",
+          "fakten": "Seit dem 17. Juni gilt ein Einlagensatz von 2,25 Prozent (vorher 2,00 Prozent). Die Öl- und Gaspreise nach dem Nahost-Konflikt treiben die Inflation im Euroraum auf 2,9 Prozent im Juli; die Kerninflation stieg leicht auf 2,5 Prozent. An den Terminmärkten ist eine Anhebung im September mit ~80 Prozent Wahrscheinlichkeit eingepreist.",
+          "einordnung": "Steigende Leitzinsen verteuern Kredite, aber auch Dispo-Kreditzinsen — bei Mikes 11,99-Prozent-Dispo ein Argument, Liquidität zügig zu räumen.",
           "quellen": [
-            {"name": "Raisin – EZB-Leitzins Entwicklung", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"}
+            {
+              "name": "Morningstar (EZB-Leitzins 2026)",
+              "url": "https://global.morningstar.com/de/wirtschaft/ezb-leitzins-steigen-die-zinsen-2026-erneut-und-fallen-2027-wieder"
+            }
           ]
         }
       ]
@@ -88,12 +103,15 @@
       "titel": "IT / Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent 0.20.5 → 0.20.6: Patch-Release mit Browser-Profil, MCP-Erweiterung und TTL-Caching",
-          "aufmacher": "Für Hermes Agent steht ein Update auf v0.20.6 bereit – ein Patch-Release, das rund 525 PRs bündelt.",
-          "fakten": "Das Update (v2026.8.27) bringt u.a. consent-gated real-profile browsing, eine große Erweiterung des Remote-MCP-Katalogs (50+ verifizierte Server inkl. Cloudflare, Grafana Cloud), TTL-Ergebnis-Caching für web_search/web_extract sowie opt-in OS-Keychain-Verschlüsselung für gespeicherte Secrets.",
-          "einordnung": "Für Mikes JARVIS-Setup relevant: Das TTL-Caching beschleunigt wiederholte Recherchen, die Keychain-Verschlüsselung erhöht die Sicherheit der gespeicherten Credentials.",
+          "titel": "🤖 Hermes Agent: Update verfügbar",
+          "aufmacher": "Für Hermes Agent ist ein Update verfügbar — die letzte getaggte Version 0.20.6 bündelt rund 525 zusammengeführte Pull Requests.",
+          "fakten": "Der Update-Scan meldet Version 0.20.6 mit ausstehenden Commits. Das Release v0.20.6 (27.08.2026) umfasst u.a. TTL-Ergebnis-Caching für web_search/web_extract, Mehrfach-Query tool_search mit Stemming, opt-in OS-Keychain-Verschlüsselung für gespeicherte Geheimnisse sowie einen erweiterten Remote-MCP-Katalog mit 50+ verifizierten Server-Angeboten.",
+          "einordnung": "Betrifft direkt JARVIS' Arbeitsumgebung: schnellere Web-Recherche (Caching) und sicherere Secret-Verwaltung sind für den täglichen Briefing-Workflow relevant.",
           "quellen": [
-            {"name": "Hermes Agent v0.20.6 Release Notes", "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.27"}
+            {
+              "name": "Hermes Agent Releases (GitHub)",
+              "url": "https://github.com/NousResearch/hermes-agent/releases"
+            }
           ]
         }
       ]
