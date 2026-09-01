@@ -1,14 +1,14 @@
 {
-  "datum": "Montag, 31.08.2026",
+  "datum": "Dienstag, 01.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "18°C · Regen 100% · UV 5",
-          "aufmacher": "Sonnig-klar bei 18°C, Höchstwert 21°C — doch die Regenwahrscheinlichkeit liegt laut Wetterdienst bei 100 Prozent.",
-          "fakten": "Aktuell 17,4°C, Tiefstwert 16°C, Höchstwert 20,8°C. Bewölkungszustand: klar. UV-Index 4,75 (mittel).",
-          "einordnung": "Bei Regenrisiko lohnt ein Blick auf die Photovoltaik-Erzeugung an diesem Morgen.",
+          "titel": "15°C · Regen 67% · UV 5",
+          "aufmacher": "☁️ Bedeckter Tag in Troisdorf, Höchstwerte um 23°C, am Nachmittag steigende Regenwahrscheinlichkeit.",
+          "fakten": "Aktuell 15,4°C, Tagesminimum 14,8°C, Maximum 23,2°C. Regenwahrscheinlichkeit 67%, UV-Index 5,3.",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -17,15 +17,15 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Mittwoch, 02.09.2026 10:00: Quixx-Meeting",
-          "aufmacher": "",
+          "titel": "Mi 02.09.2026 10:00: Quixx-Meeting",
+          "aufmacher": "Quixx-Meeting am Mittwoch um 10:00 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "Mittwoch, 02.09.2026 14:15: 🩻 Dr. med. Ulrich Huber - Orthopädie",
-          "aufmacher": "",
+          "titel": "Mi 02.09.2026 14:15: Dr. med. Ulrich Huber - Orthopädie",
+          "aufmacher": "Termin beim Orthopäden Dr. med. Ulrich Huber am Mittwoch um 14:15 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -33,30 +33,24 @@
       ]
     },
     {
-      "titel": "Regional / Überregional",
+      "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Jugendliche heben Gullydeckel aus",
-          "aufmacher": "In Troisdorf entdeckte der Hausmeister einer Grundschule an der Mozartstraße mehrere ausgehobene Gullydeckel — die Polizei ermittelt wegen gefährlichen Eingriffs in den Straßenverkehr.",
-          "fakten": "Am Mittwochmorgen (26.08.) gegen 3:45 Uhr waren die Deckel offenbar durch Jugendliche ausgehoben worden, wodurch gefährliche Stellen auf der Straße entstanden. Ein Nachbar gab Hinweise.",
-          "einordnung": "Sachbeschädigung und Straßengefährdung im direkten Umfeld — für Mikes Troisdorfer Immobilien ein Hinweis auf die Sicherheitslage im Stadtgebiet.",
+          "titel": "Eschmar-West: Vollausbau startet Anfang September",
+          "aufmacher": "In Troisdorf-Eschmar beginnt der Vollausbau des Wohngebiets Eschmar-West — Anwohner mehrerer Straßen bekommen endlich fertige Wege und Grünanlagen.",
+          "fakten": "Der Ausbau startet Anfang September in der Klara-Engels-, Margareta-Stelten- und Max-Ernst-Straße. Auch der Peggy-Guggenheim-Platz wird hergerichtet, im Süden entsteht aus einer Grünfläche ein kleiner Park. Die Bauarbeiten sollen im Sommer 2028 abgeschlossen sein.",
+          "einordnung": "Für Mike als Investor in der Region relevant: Neubaugebiete wie Eschmar-West treiben die Nachfrage nach Wohnraum und Handwerksleistungen in Troisdorf — ein Indikator für die lokale Marktdynamik.",
           "quellen": [
-            {
-              "name": "Polizei Rhein-Sieg-Kreis (Presseportal)",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6340693"
-            }
+            {"name": "Stadt Troisdorf: Eschmar-West wächst", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/august/eschmar-west-waechst/"}
           ]
         },
         {
-          "titel": "Troisdorf: Busfahrer nach Streit schwer verletzt",
-          "aufmacher": "Zwei Unbekannte haben einen 32-jährigen Busfahrer in Troisdorf nach einem Streit im Straßenverkehr zusammengeschlagen.",
-          "fakten": "Nach einer verbalen Auseinandersetzung in der Brunnenstraße trafen die Täter den Busfahrer erneut auf einem Parkplatz an der Heerstraße und schlugen auf ihn ein. Der Mann kam mit Verletzungen ins Krankenhaus; die Kriminalpolizei ermittelt wegen gefährlicher Körperverletzung und sucht Zeugen.",
-          "einordnung": "Gewalttäter in Troisdorf — relevant für die Sicherheitswahrnehmung im Stadtbild, auch im Kontext der vermieteten Objekte.",
+          "titel": "Tag des offenen Denkmals: Rote Kolonie präsentiert sich",
+          "aufmacher": "Am 13. September öffnet die historische Rote Kolonie in Troisdorf ihre Türen — mit Führung, Film und Garagenflohmarkt.",
+          "fakten": "Unter dem Motto „Netzwerke: Denkmal & Infrastruktur“ lädt der neugegründete Verein Rote Kolonie am 12.9. (Führung 17:00 Uhr, Film 19:30 Uhr) und 13.9. (Garagenflohmarkt 10–16 Uhr) ein. Der Verein wurde am 27.04.2026 von neun Gründungsmitgliedern ins Leben gerufen.",
+          "einordnung": "Kulturelles Highlight in Troisdorf — zeigt, wie lebendig die Stadtteile sind. Für Mike ein Stück lokale Identität, das auch die Attraktivität der Region für Mieter und Käufer stützt.",
           "quellen": [
-            {
-              "name": "WDR (Rhein-Sieg-Kreis)",
-              "url": "https://www1.wdr.de/nrw/rheinland/rhein-sieg-kreis/busfahrer-troisdorf-angriff-100.html"
-            }
+            {"name": "Stadt Troisdorf: Rote Kolonie e.V. präsentiert sich", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/august/rote-kolonie-e-v-praesentiert-sich-vor-ort/"}
           ]
         }
       ]
@@ -65,19 +59,12 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen: wieder Richtung 4 Prozent",
-          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen liegen wieder bei gut 4 Prozent — ein moderater Anstieg nach der jüngsten Markterholung.",
-          "fakten": "Laut Interhyp (Stand 13.08.2026) bewegen sich zehnjährige Darlehen seitwärts um die 4-Prozent-Marke; Statista beziffert den Durchschnitt für August 2026 auf 4,03 Prozent (10 Jahre) bzw. 4,24 Prozent (15 Jahre) — nach 3,62 Prozent im März. Ein Anstieg der EZB-Leitzinsen im September ist bereits eingepreist.",
-          "einordnung": "Für die Refinanzierungsstrategie nach dem MFH-Kauf wichtig: Höhere Bauzinsen drücken die Rendite bei Anschlussfinanzierung — frühzeitig mehrere Banken vergleichen.",
+          "titel": "Bauzinsen: Juli-Sprung, Prognose stabil bis leicht steigend",
+          "aufmacher": "Die Bauzinsen sind im Juli 2026 deutlich gestiegen — der Topzins für 10-jährige Darlehen kletterte von 3,3% auf rund 3,7%.",
+          "fakten": "Die Topkonditionen für Baufinanzierungen liegen aktuell zwischen 3,71% und 4,33% (Stand 03.08.2026, 5–30 Jahre Zinsbindung). Dr. Klein erwartet für das 2. Halbjahr 2026 eine Seitwärtsbewegung mit leichter Aufwärtstendenz, Topzins-Spanne 3,3% bis 3,9%. Treiber sind der Iran-Konflikt und dessen Wirkung auf Ölpreise und Inflation.",
+          "einordnung": "Für Mikes MFH-Strategie (max. Hebel, nur Kaufnebenkosten aus EK) bleibt die Zinslage moderat — bei 3,7–4,3% lohnt sich weiterhin, Konditionen bei mehreren Banken auszuhandeln und günstige Zinsbindungen zu sichern.",
           "quellen": [
-            {
-              "name": "Interhyp (Bauzinsen aktuell)",
-              "url": "https://www.interhyp.de/zinsen/"
-            },
-            {
-              "name": "Statista (Bauzinsen Deutschland)",
-              "url": "https://de.statista.com/statistik/daten/studie/1347565/umfrage/entwicklung-der-bauzinsen-in-deutschland/"
-            }
+            {"name": "Dr. Klein: Zinsentwicklung Baufinanzierung 2026", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"}
           ]
         }
       ]
@@ -86,15 +73,13 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB: Zinserhöhung im September erwartet",
-          "aufmacher": "Die EZB hat im Juni die Wende eingeleitet — die Märkte erwarten bei der Sitzung am 10. September eine weitere Anhebung des Einlagensatzes.",
-          "fakten": "Seit dem 17. Juni gilt ein Einlagensatz von 2,25 Prozent (vorher 2,00 Prozent). Die Öl- und Gaspreise nach dem Nahost-Konflikt treiben die Inflation im Euroraum auf 2,9 Prozent im Juli; die Kerninflation stieg leicht auf 2,5 Prozent. An den Terminmärkten ist eine Anhebung im September mit ~80 Prozent Wahrscheinlichkeit eingepreist.",
-          "einordnung": "Steigende Leitzinsen verteuern Kredite, aber auch Dispo-Kreditzinsen — bei Mikes 11,99-Prozent-Dispo ein Argument, Liquidität zügig zu räumen.",
+          "titel": "EZB: Zinserhöhung im September wahrscheinlich",
+          "aufmacher": "Die EZB dürfte am 10. September den Einlagensatz von 2,25% auf 2,50% anheben — die Inflation steigt wieder.",
+          "fakten": "Seit dem 17.06.2026 liegt der Einlagensatz bei 2,25%, der Hauptrefinanzierungssatz bei 2,40%. Die Juli-Inflation im Euroraum stieg auf 2,9%, die Kerninflation auf 2,5%. Futures-Märkte preisen eine 80%ige Wahrscheinlichkeit für eine September-Erhöhung ein. Nächste EZB-Sitzungen: 10.09., 29.10., 17.12.2026.",
+          "einordnung": "Steigende Zinsen erhöhen die Finanzierungskosten für Immobilien — für Mikes Hebel-Strategie ein Faktor, den es bei der Zinsbindung zu berücksichtigen gilt. Höhere Zinsen können aber auch die Mietrenditen relativ attraktiver machen.",
           "quellen": [
-            {
-              "name": "Morningstar (EZB-Leitzins 2026)",
-              "url": "https://global.morningstar.com/de/wirtschaft/ezb-leitzins-steigen-die-zinsen-2026-erneut-und-fallen-2027-wieder"
-            }
+            {"name": "Morningstar: Will the ECB raise rates again in 2026?", "url": "https://www.morningstar.com/economy/will-ecb-raise-interest-rates-again-2026-cut-them-2027"},
+            {"name": "EZB: Monetary policy decisions", "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.mp250911~6afb7a9490.en.html"}
           ]
         }
       ]
@@ -103,15 +88,12 @@
       "titel": "IT / Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent: Update verfügbar",
-          "aufmacher": "Für Hermes Agent ist ein Update verfügbar — die letzte getaggte Version 0.20.6 bündelt rund 525 zusammengeführte Pull Requests.",
-          "fakten": "Der Update-Scan meldet Version 0.20.6 mit ausstehenden Commits. Das Release v0.20.6 (27.08.2026) umfasst u.a. TTL-Ergebnis-Caching für web_search/web_extract, Mehrfach-Query tool_search mit Stemming, opt-in OS-Keychain-Verschlüsselung für gespeicherte Geheimnisse sowie einen erweiterten Remote-MCP-Katalog mit 50+ verifizierten Server-Angeboten.",
-          "einordnung": "Betrifft direkt JARVIS' Arbeitsumgebung: schnellere Web-Recherche (Caching) und sicherere Secret-Verwaltung sind für den täglichen Briefing-Workflow relevant.",
+          "titel": "🤖 Hermes Agent 0.20.6 → 0.21.0: Das „Pantheon“-Release",
+          "aufmacher": "Für Hermes Agent steht ein großes Update an: Version 0.21.0 (v2026.8.31) bringt Bot Mode, Agenten-zu-Agenten-Kommunikation und lernende Cron-Jobs.",
+          "fakten": "Das „Pantheon“-Release (31.08.2026) umfasst seit v0.20.0 rund 5.800 Commits und 2.475 gemergte PRs. Highlights: Bot Mode mit benannten Agenten und Gruppen-Chats, `hermes peer` für Bot-zu-Bot-Nachrichten, Cron-Jobs mit persistentem Gedächtnis und Continuity, Live-Steuerung von Subagenten, ein MCP-Kommandocenter sowie sechs neue Provider.",
+          "einordnung": "Für Mikes JARVIS-Setup besonders relevant: Cron-Jobs lernen künftig zwischen Läufen — das tägliche Briefing und die Monitore werden schlauer und deduplizieren besser. Das Update sollte zeitnah aufgespielt werden.",
           "quellen": [
-            {
-              "name": "Hermes Agent Releases (GitHub)",
-              "url": "https://github.com/NousResearch/hermes-agent/releases"
-            }
+            {"name": "Hermes Agent v0.21.0 Release Notes", "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.31"}
           ]
         }
       ]
