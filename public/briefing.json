@@ -1,14 +1,14 @@
 {
-  "datum": "Dienstag, 01.09.2026",
+  "datum": "Mittwoch, 02.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "15°C · Regen 67% · UV 5",
-          "aufmacher": "☁️ Bedeckter Tag in Troisdorf, Höchstwerte um 23°C, am Nachmittag steigende Regenwahrscheinlichkeit.",
-          "fakten": "Aktuell 15,4°C, Tagesminimum 14,8°C, Maximum 23,2°C. Regenwahrscheinlichkeit 67%, UV-Index 5,3.",
-          "einordnung": "",
+          "titel": "23°C · Regen 4% · UV 5",
+          "aufmacher": "Bedeckt, aber trocken: Bei maximal 23,4°C und nur 4% Regenwahrscheinlichkeit bleibt es heute in Troisdorf angenehm mild.",
+          "fakten": "Aktuell 14,6°C, Tageshöchstwert 23,4°C, Tiefstwert 14,2°C. UV-Index 5,05 (moderate Sonnenintensität).",
+          "einordnung": "Ideales Wetter für Außentermine und kurze Wege ohne Regenschutz.",
           "quellen": []
         }
       ]
@@ -17,15 +17,15 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Mi 02.09.2026 10:00: Quixx-Meeting",
-          "aufmacher": "Quixx-Meeting am Mittwoch um 10:00 Uhr.",
+          "titel": "02.09.2026 10:00: Quixx-Meeting",
+          "aufmacher": "Heute Vormittag steht das Quixx-Meeting an.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "Mi 02.09.2026 14:15: Dr. med. Ulrich Huber - Orthopädie",
-          "aufmacher": "Termin beim Orthopäden Dr. med. Ulrich Huber am Mittwoch um 14:15 Uhr.",
+          "titel": "02.09.2026 14:15: 🩻 Dr. med. Ulrich Huber - Orthopädie",
+          "aufmacher": "Nachmittags Termin beim Orthopäden Dr. med. Ulrich Huber.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -36,21 +36,21 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Eschmar-West: Vollausbau startet Anfang September",
-          "aufmacher": "In Troisdorf-Eschmar beginnt der Vollausbau des Wohngebiets Eschmar-West — Anwohner mehrerer Straßen bekommen endlich fertige Wege und Grünanlagen.",
-          "fakten": "Der Ausbau startet Anfang September in der Klara-Engels-, Margareta-Stelten- und Max-Ernst-Straße. Auch der Peggy-Guggenheim-Platz wird hergerichtet, im Süden entsteht aus einer Grünfläche ein kleiner Park. Die Bauarbeiten sollen im Sommer 2028 abgeschlossen sein.",
-          "einordnung": "Für Mike als Investor in der Region relevant: Neubaugebiete wie Eschmar-West treiben die Nachfrage nach Wohnraum und Handwerksleistungen in Troisdorf — ein Indikator für die lokale Marktdynamik.",
+          "titel": "Eschmar-West wächst: Vollausbau startet Anfang September",
+          "aufmacher": "In Troisdorf-Eschmar beginnt der Vollausbau der Straßen im Wohngebiet Eschmar-West – die Bauarbeiten laufen bis Sommer 2028.",
+          "fakten": "Betroffen sind die Klara-Engels-Straße, die Margareta-Stelten-Straße und die Max-Ernst-Straße. Auch der Peggy-Guggenheim-Platz wird hergerichtet, im Süden entsteht aus einer Grünfläche ein kleiner Park. Die Stadt hat eine eigene Infoseite unter troisdorf.de/E65 eingerichtet.",
+          "einordnung": "Für Mike als Immobilienbesitzer in der Region relevant: Ausbaugebiete wie Eschmar-West steigern die Attraktivität und damit langfristig die Miet- und Kaufpreise im Umfeld.",
           "quellen": [
             {"name": "Stadt Troisdorf: Eschmar-West wächst", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/august/eschmar-west-waechst/"}
           ]
         },
         {
-          "titel": "Tag des offenen Denkmals: Rote Kolonie präsentiert sich",
-          "aufmacher": "Am 13. September öffnet die historische Rote Kolonie in Troisdorf ihre Türen — mit Führung, Film und Garagenflohmarkt.",
-          "fakten": "Unter dem Motto „Netzwerke: Denkmal & Infrastruktur“ lädt der neugegründete Verein Rote Kolonie am 12.9. (Führung 17:00 Uhr, Film 19:30 Uhr) und 13.9. (Garagenflohmarkt 10–16 Uhr) ein. Der Verein wurde am 27.04.2026 von neun Gründungsmitgliedern ins Leben gerufen.",
-          "einordnung": "Kulturelles Highlight in Troisdorf — zeigt, wie lebendig die Stadtteile sind. Für Mike ein Stück lokale Identität, das auch die Attraktivität der Region für Mieter und Käufer stützt.",
+          "titel": "Jazz trifft Kunst: Konzert im Kunsthaus Troisdorf am 11. September",
+          "aufmacher": "Das Kunsthaus Troisdorf lädt am 11. September zu einem Kulturevent mit Jazztrompeter Maik Krahl und zeitgenössischer Kunst.",
+          "fakten": "Ab 19.00 Uhr präsentiert Maik Krahl anlässlich seines neuen Albums „Rain, Flowers and New Beginnings“ ein Konzert mit Quartett. Parallel werden Werke der Künstler Thomas Heger und weiterer gezeigt.",
+          "einordnung": "Kulturelle Veranstaltungen stärken die Lebensqualität in Troisdorf – ein Standortfaktor, der auch für die Vermietbarkeit von Wohnraum in der Stadt spricht.",
           "quellen": [
-            {"name": "Stadt Troisdorf: Rote Kolonie e.V. präsentiert sich", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/august/rote-kolonie-e-v-praesentiert-sich-vor-ort/"}
+            {"name": "Stadt Troisdorf: Jazz trifft zeitgenössische Kunst", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/jazz-trifft-zeitgenoessische-kunst-im-kunsthaus-troisdorf/"}
           ]
         }
       ]
@@ -59,12 +59,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen: Juli-Sprung, Prognose stabil bis leicht steigend",
-          "aufmacher": "Die Bauzinsen sind im Juli 2026 deutlich gestiegen — der Topzins für 10-jährige Darlehen kletterte von 3,3% auf rund 3,7%.",
-          "fakten": "Die Topkonditionen für Baufinanzierungen liegen aktuell zwischen 3,71% und 4,33% (Stand 03.08.2026, 5–30 Jahre Zinsbindung). Dr. Klein erwartet für das 2. Halbjahr 2026 eine Seitwärtsbewegung mit leichter Aufwärtstendenz, Topzins-Spanne 3,3% bis 3,9%. Treiber sind der Iran-Konflikt und dessen Wirkung auf Ölpreise und Inflation.",
-          "einordnung": "Für Mikes MFH-Strategie (max. Hebel, nur Kaufnebenkosten aus EK) bleibt die Zinslage moderat — bei 3,7–4,3% lohnt sich weiterhin, Konditionen bei mehreren Banken auszuhandeln und günstige Zinsbindungen zu sichern.",
+          "titel": "Bauzinsen stabil um die 4-Prozent-Marke",
+          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen verharren weiterhin knapp über der 4-Prozent-Marke – kurzfristig ist keine große Bewegung in Sicht.",
+          "fakten": "Laut Interhyp-Zinstabelle (Stand 24.–30.08.2026) liegen die effektiven Jahreszinsen bei 10-jähriger Zinsbindung zwischen 3,88% (Beleihung <70%) und 4,24% (Beleihung >90%). Dr. Klein erwartet für das zweite Halbjahr 2026 einen Topzins für 10-jährige Darlehen in einer Spanne von 3,3% bis 3,9%. Rund die Hälfte der Interhyp-Experten rechnet bis Jahresende mit leicht steigenden Zinsen.",
+          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel (nur Kaufnebenkosten aus Eigenkapital) bleibt das Zinsniveau um 4% ein relevanter Kostenfaktor – eine frühzeitige Zinssicherung über mehrere Banken lohnt sich, bevor ein möglicher Anstieg greift.",
           "quellen": [
-            {"name": "Dr. Klein: Zinsentwicklung Baufinanzierung 2026", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"}
+            {"name": "Interhyp: Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Dr. Klein: Zinsentwicklung 2026", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"}
           ]
         }
       ]
@@ -73,27 +74,27 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB: Zinserhöhung im September wahrscheinlich",
-          "aufmacher": "Die EZB dürfte am 10. September den Einlagensatz von 2,25% auf 2,50% anheben — die Inflation steigt wieder.",
-          "fakten": "Seit dem 17.06.2026 liegt der Einlagensatz bei 2,25%, der Hauptrefinanzierungssatz bei 2,40%. Die Juli-Inflation im Euroraum stieg auf 2,9%, die Kerninflation auf 2,5%. Futures-Märkte preisen eine 80%ige Wahrscheinlichkeit für eine September-Erhöhung ein. Nächste EZB-Sitzungen: 10.09., 29.10., 17.12.2026.",
-          "einordnung": "Steigende Zinsen erhöhen die Finanzierungskosten für Immobilien — für Mikes Hebel-Strategie ein Faktor, den es bei der Zinsbindung zu berücksichtigen gilt. Höhere Zinsen können aber auch die Mietrenditen relativ attraktiver machen.",
+          "titel": "EZB hält Leitzins bei 2,25% – nächster Zinsentscheid im September",
+          "aufmacher": "Die EZB hat die Leitzinsen im Juni 2026 um 25 Basispunkte angehoben und sie im Juli unverändert gelassen – der Einlagenzins liegt aktuell bei 2,25%.",
+          "fakten": "Seit dem 17. Juni 2026 gelten: Einlagenzinssatz 2,25%, Hauptrefinanzierungssatz 2,40%, Spitzenrefinanzierungssatz 2,65%. Am 23. Juli 2026 ließ der EZB-Rat alle drei Sätze unverändert. Der nächste Zinsentscheid steht am 10. September 2026 an – an den Finanzmärkten ist eine weitere Anhebung bereits eingepreist.",
+          "einordnung": "Für Mikes Finanzplanung relevant: Steigende Leitzinsen erhöhen tendenziell auch die Bauzinsen und die Renditechancen bei Tagesgeld/Anleihen – bei der MFH-Finanzierung gilt es, die Zinsentwicklung im Blick zu behalten.",
           "quellen": [
-            {"name": "Morningstar: Will the ECB raise rates again in 2026?", "url": "https://www.morningstar.com/economy/will-ecb-raise-interest-rates-again-2026-cut-them-2027"},
-            {"name": "EZB: Monetary policy decisions", "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.mp250911~6afb7a9490.en.html"}
+            {"name": "EZB: Geldpolitische Beschlüsse Juni 2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.de.html"},
+            {"name": "Raisin: EZB-Leitzins aktuell", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"}
           ]
         }
       ]
     },
     {
-      "titel": "IT / Server",
+      "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent 0.20.6 → 0.21.0: Das „Pantheon“-Release",
-          "aufmacher": "Für Hermes Agent steht ein großes Update an: Version 0.21.0 (v2026.8.31) bringt Bot Mode, Agenten-zu-Agenten-Kommunikation und lernende Cron-Jobs.",
-          "fakten": "Das „Pantheon“-Release (31.08.2026) umfasst seit v0.20.0 rund 5.800 Commits und 2.475 gemergte PRs. Highlights: Bot Mode mit benannten Agenten und Gruppen-Chats, `hermes peer` für Bot-zu-Bot-Nachrichten, Cron-Jobs mit persistentem Gedächtnis und Continuity, Live-Steuerung von Subagenten, ein MCP-Kommandocenter sowie sechs neue Provider.",
-          "einordnung": "Für Mikes JARVIS-Setup besonders relevant: Cron-Jobs lernen künftig zwischen Läufen — das tägliche Briefing und die Monitore werden schlauer und deduplizieren besser. Das Update sollte zeitnah aufgespielt werden.",
+          "titel": "🤖 Hermes Agent 0.21.0: Update verfügbar",
+          "aufmacher": "Für Hermes Agent steht Version 0.21.0 („The Pantheon Release“) bereit – das Update bringt Bot Mode, bessere Cron-Erinnerungen und live steuerbare Subagenten.",
+          "fakten": "Seit v0.20.0 kamen rund 5.800 Commits und 2.475 gemergte PRs zusammen. Neu: Bot Mode in der Desktop-App (benannte Agenten mit eigenen Gesichtern und Gruppen-Chats), Cron-Jobs mit Gedächtnis und Kontinuität, live steuerbare Subagenten, ein ausgebautes MCP-Kommandozentrum und die Fähigkeit, den Desktop-Browser zu steuern.",
+          "einordnung": "Für JARVIS relevant: Die Cron-Gedächtnis-Funktion und die live steuerbaren Subagenten verbessern genau die täglichen Briefing- und Automatisierungs-Workflows, die Mike nutzt.",
           "quellen": [
-            {"name": "Hermes Agent v0.21.0 Release Notes", "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.31"}
+            {"name": "Hermes Agent v0.21.0 Release Notes", "url": "https://github.com/NousResearch/hermes-agent/releases"}
           ]
         }
       ]
