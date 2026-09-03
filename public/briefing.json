@@ -1,14 +1,14 @@
 {
-  "datum": "Mittwoch, 02.09.2026",
+  "datum": "Donnerstag, 03.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "23°C · Regen 4% · UV 5",
-          "aufmacher": "Bedeckt, aber trocken: Bei maximal 23,4°C und nur 4% Regenwahrscheinlichkeit bleibt es heute in Troisdorf angenehm mild.",
-          "fakten": "Aktuell 14,6°C, Tageshöchstwert 23,4°C, Tiefstwert 14,2°C. UV-Index 5,05 (moderate Sonnenintensität).",
-          "einordnung": "Ideales Wetter für Außentermine und kurze Wege ohne Regenschutz.",
+          "titel": "15,8°C · Regen 57% · UV 1,4",
+          "aufmacher": "🌤️ Überwiegend sonnig: Heute bleibt es in Troisdorf überwiegend freundlich, mit vereinzelten Schauern im Tagesverlauf.",
+          "fakten": "Aktuell 15,8°C, Tageshöchstwert 20,7°C, Tiefstwert 15,8°C. Regenwahrscheinlichkeit 57%, UV-Index 1,4 (niedrige Sonnenintensität).",
+          "einordnung": "Milde, teils wechselhafte Bedingungen — für Außenarbeiten die sonnigen Stunden vormittags nutzen, Regenschutz dabei behalten.",
           "quellen": []
         }
       ]
@@ -17,15 +17,8 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "02.09.2026 10:00: Quixx-Meeting",
-          "aufmacher": "Heute Vormittag steht das Quixx-Meeting an.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "02.09.2026 14:15: 🩻 Dr. med. Ulrich Huber - Orthopädie",
-          "aufmacher": "Nachmittags Termin beim Orthopäden Dr. med. Ulrich Huber.",
+          "titel": "Keine Termine in den nächsten 3 Tagen",
+          "aufmacher": "Für die kommenden drei Tage sind keine Kalendereinträge hinterlegt.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -36,21 +29,21 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Eschmar-West wächst: Vollausbau startet Anfang September",
-          "aufmacher": "In Troisdorf-Eschmar beginnt der Vollausbau der Straßen im Wohngebiet Eschmar-West – die Bauarbeiten laufen bis Sommer 2028.",
-          "fakten": "Betroffen sind die Klara-Engels-Straße, die Margareta-Stelten-Straße und die Max-Ernst-Straße. Auch der Peggy-Guggenheim-Platz wird hergerichtet, im Süden entsteht aus einer Grünfläche ein kleiner Park. Die Stadt hat eine eigene Infoseite unter troisdorf.de/E65 eingerichtet.",
-          "einordnung": "Für Mike als Immobilienbesitzer in der Region relevant: Ausbaugebiete wie Eschmar-West steigern die Attraktivität und damit langfristig die Miet- und Kaufpreise im Umfeld.",
+          "titel": "Diebstahl aus gemeinnützigem Verein in Troisdorf",
+          "aufmacher": "Zwischen Sonntag und Dienstag wurde in Troisdorf aus den Räumen eines gemeinnützigen Vereins am Wilhelm-Hamacher-Platz gestohlen.",
+          "fakten": "Der oder die unbekannten Tatverdächtigen verschafften sich im Zeitraum zwischen Sonntag (30. August), 21:00 Uhr, und Dienstag (1. September), 16:30 Uhr, durch Manipulation der Eingangstür unberechtigt Zutritt. Vermutlich entkamen sie auf gleichem Weg. Die Polizei Rhein-Sieg bittet um Hinweise.",
+          "einordnung": "Regionale Sicherheitslage — relevant für die Absicherung von Gewerbe- und Vereinsliegenschaften. Einbruchschutz an Zutrittstüren bleibt ein handfester Punkt für eigene Objekte.",
           "quellen": [
-            {"name": "Stadt Troisdorf: Eschmar-West wächst", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/august/eschmar-west-waechst/"}
+            {"name": "Polizei Rhein-Sieg-Kreis: Diebstahl aus gemeinnützigem Verein", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
           ]
         },
         {
-          "titel": "Jazz trifft Kunst: Konzert im Kunsthaus Troisdorf am 11. September",
-          "aufmacher": "Das Kunsthaus Troisdorf lädt am 11. September zu einem Kulturevent mit Jazztrompeter Maik Krahl und zeitgenössischer Kunst.",
-          "fakten": "Ab 19.00 Uhr präsentiert Maik Krahl anlässlich seines neuen Albums „Rain, Flowers and New Beginnings“ ein Konzert mit Quartett. Parallel werden Werke der Künstler Thomas Heger und weiterer gezeigt.",
-          "einordnung": "Kulturelle Veranstaltungen stärken die Lebensqualität in Troisdorf – ein Standortfaktor, der auch für die Vermietbarkeit von Wohnraum in der Stadt spricht.",
+          "titel": "Lesementor Troisdorf: Probephase erfolgreich abgeschlossen",
+          "aufmacher": "Die rund dreimonatige Probephase des Leseförderprogramms „Lesementor Troisdorf“ bringt laut Evaluation ein positives Ergebnis.",
+          "fakten": "Beteiligt waren sechs Schulen sowie alle 27 Lesementorinnen und Lesementoren, die zu ihrer Arbeit befragt wurden. Die Bilanz der Probephase fällt positiv aus.",
+          "einordnung": "Gute schulische Förderlandschaft ist ein Standortplus für Troisdorf — es stärkt die Attraktivität von Wohnlagen und damit langfristig die Vermietbarkeit im Bestand.",
           "quellen": [
-            {"name": "Stadt Troisdorf: Jazz trifft zeitgenössische Kunst", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/jazz-trifft-zeitgenoessische-kunst-im-kunsthaus-troisdorf/"}
+            {"name": "Stadt Troisdorf: Lesementor Troisdorf — Evaluation erfolgreich", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/evaluation-unter-den-lesementorinnen-und-lesementoren-bringt-positives-ergebnis/"}
           ]
         }
       ]
@@ -60,12 +53,12 @@
       "artikel": [
         {
           "titel": "Bauzinsen stabil um die 4-Prozent-Marke",
-          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen verharren weiterhin knapp über der 4-Prozent-Marke – kurzfristig ist keine große Bewegung in Sicht.",
-          "fakten": "Laut Interhyp-Zinstabelle (Stand 24.–30.08.2026) liegen die effektiven Jahreszinsen bei 10-jähriger Zinsbindung zwischen 3,88% (Beleihung <70%) und 4,24% (Beleihung >90%). Dr. Klein erwartet für das zweite Halbjahr 2026 einen Topzins für 10-jährige Darlehen in einer Spanne von 3,3% bis 3,9%. Rund die Hälfte der Interhyp-Experten rechnet bis Jahresende mit leicht steigenden Zinsen.",
-          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel (nur Kaufnebenkosten aus Eigenkapital) bleibt das Zinsniveau um 4% ein relevanter Kostenfaktor – eine frühzeitige Zinssicherung über mehrere Banken lohnt sich, bevor ein möglicher Anstieg greift.",
+          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen verharren weiterhin um die 4 Prozent — kurzfristig ist keine große Bewegung in Sicht, bis Jahresende rechnet ein Teil der Experten mit leicht steigenden Notierungen.",
+          "fakten": "Laut Interhyp-Zinstabelle (Stand 24.–30.08.2026) liegen die effektiven Jahreszinsen bei 10-jähriger Zinsbindung zwischen 3,88 % (Beleihung <70 %) und 4,24 % (Beleihung >90 %). Baufi24 nennt für 10 Jahre einen Top-Sollzins von 4,03 % und einen effektiven Jahreszins von 3,82 % (Stand 03.09.2026). Rund die Hälfte der Interhyp-Marktexperten erwartet in den kommenden 6–12 Monaten einen moderaten Zinsanstieg.",
+          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel (nur Kaufnebenkosten aus Eigenkapital) bleibt das Zinsniveau um 4 % der entscheidende Kostenfaktor. Angesichts des erwarteten moderaten Anstiegs lohnt es, Konditionen über mehrere Banken frühzeitig zu sichern.",
           "quellen": [
             {"name": "Interhyp: Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Dr. Klein: Zinsentwicklung 2026", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"}
+            {"name": "Baufi24: Aktuelle Bauzinsen 2026", "url": "https://www.baufi24.de/bauzinsen/"}
           ]
         }
       ]
@@ -74,13 +67,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hält Leitzins bei 2,25% – nächster Zinsentscheid im September",
-          "aufmacher": "Die EZB hat die Leitzinsen im Juni 2026 um 25 Basispunkte angehoben und sie im Juli unverändert gelassen – der Einlagenzins liegt aktuell bei 2,25%.",
-          "fakten": "Seit dem 17. Juni 2026 gelten: Einlagenzinssatz 2,25%, Hauptrefinanzierungssatz 2,40%, Spitzenrefinanzierungssatz 2,65%. Am 23. Juli 2026 ließ der EZB-Rat alle drei Sätze unverändert. Der nächste Zinsentscheid steht am 10. September 2026 an – an den Finanzmärkten ist eine weitere Anhebung bereits eingepreist.",
-          "einordnung": "Für Mikes Finanzplanung relevant: Steigende Leitzinsen erhöhen tendenziell auch die Bauzinsen und die Renditechancen bei Tagesgeld/Anleihen – bei der MFH-Finanzierung gilt es, die Zinsentwicklung im Blick zu behalten.",
+          "titel": "EZB-Leitzins bei 2,25 % — Zinsentscheid und steigende Inflation",
+          "aufmacher": "Der Einlagenzins der EZB liegt bei 2,25 Prozent, der nächste Zinsentscheid am 10. September 2026 rückt eine weitere Anhebung in greifbare Nähe.",
+          "fakten": "Seit dem 17. Juni 2026 gelten: Einlagenzinssatz 2,25 %, Hauptrefinanzierungssatz 2,40 %, Spitzenrefinanzierungssatz 2,65 %. An den Terminmärkten ist eine Anhebung um 0,25 Prozentpunkte im September mit hoher Wahrscheinlichkeit (rund 80 %) eingepreist. Destatis erwartet für August 2026 eine Inflation von +2,9 % (Juli: +2,8 %), getrieben vor allem von Energie (+10,5 % ggü. Vorjahr); die Kernrate liegt bei +2,4 %.",
+          "einordnung": "Für Mikes Zinshebel bei Immobilien relevant: Weitere EZB-Erhöhung und steigende Energieinflation sprechen für ein eher festeres Zinsumfeld — bei Baufinanzierungen und Anschlussfinanzierungen Zeitfenster für Konditionssicherung nutzen.",
           "quellen": [
-            {"name": "EZB: Geldpolitische Beschlüsse Juni 2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.de.html"},
+            {"name": "Destatis: Inflation +2,9 % erwartet (August 2026)", "url": "https://www.destatis.de/EN/Themes/Economy/Prices/Consumer-Price-Index/_node.html"},
+            {"name": "Morningstar: EZB-Leitzins — Steigen die Zinsen 2026 erneut?", "url": "https://global.morningstar.com/de/wirtschaft/ezb-leitzins-steigen-die-zinsen-2026-erneut-und-fallen-2027-wieder"},
             {"name": "Raisin: EZB-Leitzins aktuell", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"}
+          ]
+        },
+        {
+          "titel": "DAX verliert dritten Tag in Folge",
+          "aufmacher": "Der DAX ist am 2. September auf 25.834 Punkte gefallen (−0,52 %) und verzeichnet damit den dritten Verlusttag in Folge.",
+          "fakten": "Belastet wird der Markt vor allem von hohen Ölpreisen infolge des Konflikts im Nahen Osten, die erneut auf die Stimmung drücken. Der Leitindex gab nach seinem zwischenzeitlichen Rekordhoch entsprechend nach.",
+          "einordnung": "Für Mikes ETF-Strategie relevant: Ein volatiles Umfeld bei steigender Inflation ist kein Anlass für Umschichtungen, sondern spricht für die konsequente Fortführung des langfristigen Sparplans.",
+          "quellen": [
+            {"name": "finanzen.net: DAX heute aktuell", "url": "https://www.finanzen.net/index/dax"}
           ]
         }
       ]
@@ -89,13 +92,11 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent 0.21.0: Update verfügbar",
-          "aufmacher": "Für Hermes Agent steht Version 0.21.0 („The Pantheon Release“) bereit – das Update bringt Bot Mode, bessere Cron-Erinnerungen und live steuerbare Subagenten.",
-          "fakten": "Seit v0.20.0 kamen rund 5.800 Commits und 2.475 gemergte PRs zusammen. Neu: Bot Mode in der Desktop-App (benannte Agenten mit eigenen Gesichtern und Gruppen-Chats), Cron-Jobs mit Gedächtnis und Kontinuität, live steuerbare Subagenten, ein ausgebautes MCP-Kommandozentrum und die Fähigkeit, den Desktop-Browser zu steuern.",
-          "einordnung": "Für JARVIS relevant: Die Cron-Gedächtnis-Funktion und die live steuerbaren Subagenten verbessern genau die täglichen Briefing- und Automatisierungs-Workflows, die Mike nutzt.",
-          "quellen": [
-            {"name": "Hermes Agent v0.21.0 Release Notes", "url": "https://github.com/NousResearch/hermes-agent/releases"}
-          ]
+          "titel": "Alle Systeme aktuell — kein Update erforderlich",
+          "aufmacher": "Der Update-Scan meldet: Alle geprüften Systeme sind auf dem aktuellen Stand, es stehen derzeit keine Updates aus.",
+          "fakten": "Hermes Agent läuft auf v0.21.0 (Stand 31.08.2026), keine ausstehenden Commits. apt meldet 0 aktualisierbare Pakete; Home Assistant und die laufenden Docker-Container melden keine neue Version beziehungsweise keine gestoppten Container.",
+          "einordnung": "Systeme stabil — aktuell kein Handlungsbedarf. Als Nächstes relevant: der EZB-Zinsentscheid am 10. September und die anstehenden System-Wartungsfenster.",
+          "quellen": []
         }
       ]
     }
