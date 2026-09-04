@@ -1,14 +1,14 @@
 {
-  "datum": "Donnerstag, 03.09.2026",
+  "datum": "Freitag, 04.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "15,8°C · Regen 57% · UV 1,4",
-          "aufmacher": "🌤️ Überwiegend sonnig: Heute bleibt es in Troisdorf überwiegend freundlich, mit vereinzelten Schauern im Tagesverlauf.",
-          "fakten": "Aktuell 15,8°C, Tageshöchstwert 20,7°C, Tiefstwert 15,8°C. Regenwahrscheinlichkeit 57%, UV-Index 1,4 (niedrige Sonnenintensität).",
-          "einordnung": "Milde, teils wechselhafte Bedingungen — für Außenarbeiten die sonnigen Stunden vormittags nutzen, Regenschutz dabei behalten.",
+          "titel": "19°C · Regen 98% · UV 4",
+          "aufmacher": "Bedeckter Tag in Troisdorf, hohe Regenwahrscheinlichkeit.",
+          "fakten": "Aktuell 19,4°C, Tageshöchstwert 25°C, Tiefstwert 17,7°C. Regenwahrscheinlichkeit 98%, UV-Index 4,1.",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -18,7 +18,7 @@
       "artikel": [
         {
           "titel": "Keine Termine in den nächsten 3 Tagen",
-          "aufmacher": "Für die kommenden drei Tage sind keine Kalendereinträge hinterlegt.",
+          "aufmacher": "Der Google-Kalender liefert für die kommenden drei Tage keine Einträge.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -26,24 +26,24 @@
       ]
     },
     {
-      "titel": "Regional/Überregional",
+      "titel": "Regional / Überregional",
       "artikel": [
         {
-          "titel": "Diebstahl aus gemeinnützigem Verein in Troisdorf",
-          "aufmacher": "Zwischen Sonntag und Dienstag wurde in Troisdorf aus den Räumen eines gemeinnützigen Vereins am Wilhelm-Hamacher-Platz gestohlen.",
-          "fakten": "Der oder die unbekannten Tatverdächtigen verschafften sich im Zeitraum zwischen Sonntag (30. August), 21:00 Uhr, und Dienstag (1. September), 16:30 Uhr, durch Manipulation der Eingangstür unberechtigt Zutritt. Vermutlich entkamen sie auf gleichem Weg. Die Polizei Rhein-Sieg bittet um Hinweise.",
-          "einordnung": "Regionale Sicherheitslage — relevant für die Absicherung von Gewerbe- und Vereinsliegenschaften. Einbruchschutz an Zutrittstüren bleibt ein handfester Punkt für eigene Objekte.",
+          "titel": "Troisdorf: Softwareupdate legt Bibliotheksdienste am 9. und 10. September lahm",
+          "aufmacher": "Die digitalen Dienste der Troisdorfer Stadtbibliotheken und die TrOpen-Library stehen am 9. und 10. September wegen eines geplanten Softwareupdates vorübergehend nicht zur Verfügung.",
+          "fakten": "Auch vor Ort in den Bibliotheken kann es an beiden Tagen zu Einschränkungen und Ausfällen bei einzelnen Services kommen. Die Stadt empfiehlt, Bibliotheksservices möglichst an anderen Tagen zu nutzen, um Wartezeiten zu vermeiden.",
+          "einordnung": "Für Mike relevant als Beispiel, wie Softwareupdates auch bei öffentlichen Einrichtungen geplant laufen — analog zu den eigenen Systemen, die JARVIS überwacht.",
           "quellen": [
-            {"name": "Polizei Rhein-Sieg-Kreis: Diebstahl aus gemeinnützigem Verein", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
+            {"name": "Stadt Troisdorf", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/eingeschraenkter-bibliotheksservice-am-9-und-10-september/"}
           ]
         },
         {
-          "titel": "Lesementor Troisdorf: Probephase erfolgreich abgeschlossen",
-          "aufmacher": "Die rund dreimonatige Probephase des Leseförderprogramms „Lesementor Troisdorf“ bringt laut Evaluation ein positives Ergebnis.",
-          "fakten": "Beteiligt waren sechs Schulen sowie alle 27 Lesementorinnen und Lesementoren, die zu ihrer Arbeit befragt wurden. Die Bilanz der Probephase fällt positiv aus.",
-          "einordnung": "Gute schulische Förderlandschaft ist ein Standortplus für Troisdorf — es stärkt die Attraktivität von Wohnlagen und damit langfristig die Vermietbarkeit im Bestand.",
+          "titel": "Rhein-Sieg-Kreis: 31 neue Beamtinnen und Beamte für die Polizei",
+          "aufmacher": "Die Kreispolizeibehörde Rhein-Sieg-Kreis hat zum 1. September 31 neue Beamtinnen und Beamte in ihren Reihen begrüßt.",
+          "fakten": "Die Verstärkung wurde am 1. September 2026 gemeldet. Die neuen Kräfte sollen die Polizeipräsenz im Kreis stärken.",
+          "einordnung": "Regionale Sicherheitslage im Rhein-Sieg-Kreis — relevant für Mikes Umfeld in Troisdorf.",
           "quellen": [
-            {"name": "Stadt Troisdorf: Lesementor Troisdorf — Evaluation erfolgreich", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/evaluation-unter-den-lesementorinnen-und-lesementoren-bringt-positives-ergebnis/"}
+            {"name": "Presseportal / Kreispolizeibehörde Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6343665"}
           ]
         }
       ]
@@ -52,13 +52,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen stabil um die 4-Prozent-Marke",
-          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen verharren weiterhin um die 4 Prozent — kurzfristig ist keine große Bewegung in Sicht, bis Jahresende rechnet ein Teil der Experten mit leicht steigenden Notierungen.",
-          "fakten": "Laut Interhyp-Zinstabelle (Stand 24.–30.08.2026) liegen die effektiven Jahreszinsen bei 10-jähriger Zinsbindung zwischen 3,88 % (Beleihung <70 %) und 4,24 % (Beleihung >90 %). Baufi24 nennt für 10 Jahre einen Top-Sollzins von 4,03 % und einen effektiven Jahreszins von 3,82 % (Stand 03.09.2026). Rund die Hälfte der Interhyp-Marktexperten erwartet in den kommenden 6–12 Monaten einen moderaten Zinsanstieg.",
-          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel (nur Kaufnebenkosten aus Eigenkapital) bleibt das Zinsniveau um 4 % der entscheidende Kostenfaktor. Angesichts des erwarteten moderaten Anstiegs lohnt es, Konditionen über mehrere Banken frühzeitig zu sichern.",
+          "titel": "Bauzinsen steigen weiter: 10-Jahres-Darlehen bei rund 3,7 bis 3,9 Prozent",
+          "aufmacher": "Die Bauzinsen für Immobilienkredite ziehen im September weiter an, getrieben von der erwarteten EZB-Zinserhöhung.",
+          "fakten": "Laut Baufi24 liegen die effektiven Zinsen für 10 Jahre bei 3,73 bis 3,82 Prozent, für 15 Jahre bei 4,04 bis 4,14 Prozent (Stand 03.09.2026). Interhyp nennt für 10 Jahre 3,88 bis 4,24 Prozent je nach Beleihungsauslauf. Die hohe Inflation spricht laut Interhyp für eine weitere Leitzinserhöhung durch die EZB, die an den Finanzmärkten für September bereits eingepreist ist.",
+          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel bedeutet der Zinsanstieg höhere Finanzierungskosten — Kaufnebenkosten aus Eigenkapital und Bankdarlehen werden teurer, was die Cashflow-Kalkulation belastet.",
           "quellen": [
-            {"name": "Interhyp: Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Baufi24: Aktuelle Bauzinsen 2026", "url": "https://www.baufi24.de/bauzinsen/"}
+            {"name": "Baufi24", "url": "https://www.baufi24.de/bauzinsen/"},
+            {"name": "Interhyp", "url": "https://www.interhyp.de/zinsen/"}
           ]
         }
       ]
@@ -67,36 +67,28 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB-Leitzins bei 2,25 % — Zinsentscheid und steigende Inflation",
-          "aufmacher": "Der Einlagenzins der EZB liegt bei 2,25 Prozent, der nächste Zinsentscheid am 10. September 2026 rückt eine weitere Anhebung in greifbare Nähe.",
-          "fakten": "Seit dem 17. Juni 2026 gelten: Einlagenzinssatz 2,25 %, Hauptrefinanzierungssatz 2,40 %, Spitzenrefinanzierungssatz 2,65 %. An den Terminmärkten ist eine Anhebung um 0,25 Prozentpunkte im September mit hoher Wahrscheinlichkeit (rund 80 %) eingepreist. Destatis erwartet für August 2026 eine Inflation von +2,9 % (Juli: +2,8 %), getrieben vor allem von Energie (+10,5 % ggü. Vorjahr); die Kernrate liegt bei +2,4 %.",
-          "einordnung": "Für Mikes Zinshebel bei Immobilien relevant: Weitere EZB-Erhöhung und steigende Energieinflation sprechen für ein eher festeres Zinsumfeld — bei Baufinanzierungen und Anschlussfinanzierungen Zeitfenster für Konditionssicherung nutzen.",
+          "titel": "EZB vor weiterer Zinserhöhung: Einlagesatz könnte im September auf 2,50 Prozent steigen",
+          "aufmacher": "Die EZB hat im Juni erstmals seit drei Jahren die Leitzinsen angehoben und dürfte im September nachlegen — die Inflation bleibt hartnäckig hoch.",
+          "fakten": "Aktuell liegt der Einlagesatz bei 2,25 Prozent, der Hauptrefinanzierungssatz bei 2,40 Prozent (Stand 09/2026). Die Inflation im Euroraum stieg im Juli auf 2,9 Prozent, getrieben von hohen Treibstoffpreisen. Analysten erwarten mit großer Mehrheit eine weitere Erhöhung um 25 Basispunkte auf 2,50 Prozent bei der Sitzung am 10. September 2026. Die Bundesbank-Projektionen gehen für 2026 von einer Gesamtinflation von 3,0 Prozent aus.",
+          "einordnung": "Für Mike: Höhere Zinsen verteuern Kredite (Dispo 11,99%, Immobilienfinanzierung), bringen aber auch bessere Zinsen auf Tages- und Festgeld — relevant für die ~600k liquiden Mittel für das MFH.",
           "quellen": [
-            {"name": "Destatis: Inflation +2,9 % erwartet (August 2026)", "url": "https://www.destatis.de/EN/Themes/Economy/Prices/Consumer-Price-Index/_node.html"},
-            {"name": "Morningstar: EZB-Leitzins — Steigen die Zinsen 2026 erneut?", "url": "https://global.morningstar.com/de/wirtschaft/ezb-leitzins-steigen-die-zinsen-2026-erneut-und-fallen-2027-wieder"},
-            {"name": "Raisin: EZB-Leitzins aktuell", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"}
-          ]
-        },
-        {
-          "titel": "DAX verliert dritten Tag in Folge",
-          "aufmacher": "Der DAX ist am 2. September auf 25.834 Punkte gefallen (−0,52 %) und verzeichnet damit den dritten Verlusttag in Folge.",
-          "fakten": "Belastet wird der Markt vor allem von hohen Ölpreisen infolge des Konflikts im Nahen Osten, die erneut auf die Stimmung drücken. Der Leitindex gab nach seinem zwischenzeitlichen Rekordhoch entsprechend nach.",
-          "einordnung": "Für Mikes ETF-Strategie relevant: Ein volatiles Umfeld bei steigender Inflation ist kein Anlass für Umschichtungen, sondern spricht für die konsequente Fortführung des langfristigen Sparplans.",
-          "quellen": [
-            {"name": "finanzen.net: DAX heute aktuell", "url": "https://www.finanzen.net/index/dax"}
+            {"name": "Deutsche Bundesbank", "url": "https://www.bundesbank.de/de/aufgaben/themen/ezb-rat-leitzinsen-angehoben-999316"},
+            {"name": "Raisin", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"}
           ]
         }
       ]
     },
     {
-      "titel": "IT/Server",
+      "titel": "IT / Server",
       "artikel": [
         {
-          "titel": "Alle Systeme aktuell — kein Update erforderlich",
-          "aufmacher": "Der Update-Scan meldet: Alle geprüften Systeme sind auf dem aktuellen Stand, es stehen derzeit keine Updates aus.",
-          "fakten": "Hermes Agent läuft auf v0.21.0 (Stand 31.08.2026), keine ausstehenden Commits. apt meldet 0 aktualisierbare Pakete; Home Assistant und die laufenden Docker-Container melden keine neue Version beziehungsweise keine gestoppten Container.",
-          "einordnung": "Systeme stabil — aktuell kein Handlungsbedarf. Als Nächstes relevant: der EZB-Zinsentscheid am 10. September und die anstehenden System-Wartungsfenster.",
-          "quellen": []
+          "titel": "🤖 Hermes Agent: Update verfügbar — 839 Commits hinter upstream",
+          "aufmacher": "Die installierte Hermes-Agent-Version v0.21.0 liegt 839 Commits hinter der aktuellen upstream-Version.",
+          "fakten": "Installiert ist v0.21.0 (2026.8.31), upstream zeigt 839 Commits behind. Ein Update ist über 'hermes update' möglich. System-Pakete (apt) sind aktuell, keine weiteren Updates gemeldet.",
+          "einordnung": "Ein Update würde die neuesten Funktionen und Fixes von Hermes Agent bringen. Empfehlung: Update bei nächster Gelegenheit durchführen, da 839 Commits ein erheblicher Rückstand sind.",
+          "quellen": [
+            {"name": "Hermes Agent (lokal)", "url": "https://hermes-agent.nousresearch.com/docs"}
+          ]
         }
       ]
     }
