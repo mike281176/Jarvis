@@ -1,14 +1,14 @@
 {
-  "datum": "Freitag, 04.09.2026",
+  "datum": "Samstag, 05.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "19°C · Regen 98% · UV 4",
-          "aufmacher": "Bedeckter Tag in Troisdorf, hohe Regenwahrscheinlichkeit.",
-          "fakten": "Aktuell 19,4°C, Tageshöchstwert 25°C, Tiefstwert 17,7°C. Regenwahrscheinlichkeit 98%, UV-Index 4,1.",
-          "einordnung": "",
+          "titel": "22°C max · Regen 88% · UV 5",
+          "aufmacher": "Heute meist bedeckt mit sehr hoher Regenwahrscheinlichkeit und mäßiger UV-Strahlung.",
+          "fakten": "Tageshöchstwert 22°C, zuletzt aktuell 16°C. Regenwahrscheinlichkeit 88%, UV-Index 5 (mäßig).",
+          "einordnung": "Trotz Regen eignet sich der Tag für den Innenbereich; bei UV 5 im Außeneinsatz Sonnenschutz beachten.",
           "quellen": []
         }
       ]
@@ -18,32 +18,32 @@
       "artikel": [
         {
           "titel": "Keine Termine in den nächsten 3 Tagen",
-          "aufmacher": "Der Google-Kalender liefert für die kommenden drei Tage keine Einträge.",
-          "fakten": "",
+          "aufmacher": "Der Kalender zeigt für die kommenden drei Tage keine Einträge.",
+          "fakten": "Google-Kalender: keine bevorstehenden Termine im Zeitraum 05.–07.09.2026.",
           "einordnung": "",
           "quellen": []
         }
       ]
     },
     {
-      "titel": "Regional / Überregional",
+      "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Softwareupdate legt Bibliotheksdienste am 9. und 10. September lahm",
-          "aufmacher": "Die digitalen Dienste der Troisdorfer Stadtbibliotheken und die TrOpen-Library stehen am 9. und 10. September wegen eines geplanten Softwareupdates vorübergehend nicht zur Verfügung.",
-          "fakten": "Auch vor Ort in den Bibliotheken kann es an beiden Tagen zu Einschränkungen und Ausfällen bei einzelnen Services kommen. Die Stadt empfiehlt, Bibliotheksservices möglichst an anderen Tagen zu nutzen, um Wartezeiten zu vermeiden.",
-          "einordnung": "Für Mike relevant als Beispiel, wie Softwareupdates auch bei öffentlichen Einrichtungen geplant laufen — analog zu den eigenen Systemen, die JARVIS überwacht.",
+          "titel": "Troisdorf: Radfahrer erfasst Fußgängerin – Polizei sucht Unfallfahrer",
+          "aufmacher": "Bei einem Zusammenstoß in Troisdorf-West wurde Ende August eine Fußgängerin verletzt, der unfallverursachende Radfahrer ist bislang flüchtig.",
+          "fakten": "Der Unfall ereignete sich am 29. August. Der Radfahrer stieß mit einer Fußgängerin zusammen. Diese wurde verletzt und musste kurzzeitig in einem Krankenhaus behandelt werden, konnte es aber inzwischen wieder verlassen. Die Polizei Rhein-Sieg-Kreis sucht nun Zeugen.",
+          "einordnung": "Für die Region Troisdorf ein typischer Fall im Alltagsverkehr – relevant für die Verkehrssicherheit vor Ort.",
           "quellen": [
-            {"name": "Stadt Troisdorf", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/eingeschraenkter-bibliotheksservice-am-9-und-10-september/"}
+            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis via presseportal.de", "url": "https://www.presseportal.de/blaulicht/pm/65853/6345674"}
           ]
         },
         {
-          "titel": "Rhein-Sieg-Kreis: 31 neue Beamtinnen und Beamte für die Polizei",
-          "aufmacher": "Die Kreispolizeibehörde Rhein-Sieg-Kreis hat zum 1. September 31 neue Beamtinnen und Beamte in ihren Reihen begrüßt.",
-          "fakten": "Die Verstärkung wurde am 1. September 2026 gemeldet. Die neuen Kräfte sollen die Polizeipräsenz im Kreis stärken.",
-          "einordnung": "Regionale Sicherheitslage im Rhein-Sieg-Kreis — relevant für Mikes Umfeld in Troisdorf.",
+          "titel": "Troisdorf: Mehrgenerationenhaus lädt zum bunten Aktionsnachmittag",
+          "aufmacher": "Am 11. September 2026 lädt das Mehrgenerationenhaus der Stadt Troisdorf gemeinsam mit den „Therapielotsen“ zu einem Nachmittag unter dem Motto „Gemeinsam etwas bewegen“ ein.",
+          "fakten": "Der Aktionsnachmittag findet am Freitag, 11. September 2026, von 14:00 bis 17:00 Uhr im Stadtteilpark Friedrich-Wilhelms-Hütte statt. Veranstalter sind das Mehrgenerationenhaus der Stadt Troisdorf und die Praxis für Ergotherapie, Logopädie & Physiotherapie „Therapielotsen“.",
+          "einordnung": "Ein lokales Angebot, das die Nachbarschaft im Stadtteil stärkt – typisch für das soziale Engagement in Troisdorf.",
           "quellen": [
-            {"name": "Presseportal / Kreispolizeibehörde Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6343665"}
+            {"name": "Stadt Troisdorf – Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"}
           ]
         }
       ]
@@ -52,13 +52,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen steigen weiter: 10-Jahres-Darlehen bei rund 3,7 bis 3,9 Prozent",
-          "aufmacher": "Die Bauzinsen für Immobilienkredite ziehen im September weiter an, getrieben von der erwarteten EZB-Zinserhöhung.",
-          "fakten": "Laut Baufi24 liegen die effektiven Zinsen für 10 Jahre bei 3,73 bis 3,82 Prozent, für 15 Jahre bei 4,04 bis 4,14 Prozent (Stand 03.09.2026). Interhyp nennt für 10 Jahre 3,88 bis 4,24 Prozent je nach Beleihungsauslauf. Die hohe Inflation spricht laut Interhyp für eine weitere Leitzinserhöhung durch die EZB, die an den Finanzmärkten für September bereits eingepreist ist.",
-          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel bedeutet der Zinsanstieg höhere Finanzierungskosten — Kaufnebenkosten aus Eigenkapital und Bankdarlehen werden teurer, was die Cashflow-Kalkulation belastet.",
+          "titel": "Bauzinsen stabil bei rund 4 Prozent – weitere Schwankungen erwartet",
+          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen haben sich seitwärts um die 4-Prozent-Marke eingependelt und dürften kurzfristig stabil bleiben.",
+          "fakten": "Baufi24 nennt als Top-Sollzins für 10 Jahre Zinsbindung aktuell 4,03% (bei 300.000 € Darlehen). Interhyp beziffert den 10-Jahreszins bei Beleihung <70% auf 3,88%, bei >90% auf 4,24%. Der effektive Jahreszins liegt laut Baufi24 bei einem Monatsvergleich bei 3,82% (vor einem Monat 3,77%) – also leicht steigend.",
+          "einordnung": "Für Mikes MFH-Strategie bleibt das Zinsniveau um 4% ein Faktor: Bei Kaufnebenkosten aus Eigenkapital und anstehender Refinanzierung über mehrere Banken lohnt es sich, Konditionen jetzt zu sichern.",
           "quellen": [
-            {"name": "Baufi24", "url": "https://www.baufi24.de/bauzinsen/"},
-            {"name": "Interhyp", "url": "https://www.interhyp.de/zinsen/"}
+            {"name": "Baufi24 – Bauzinsen 2026", "url": "https://www.baufi24.de/bauzinsen/"},
+            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"}
           ]
         }
       ]
@@ -67,28 +67,26 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB vor weiterer Zinserhöhung: Einlagesatz könnte im September auf 2,50 Prozent steigen",
-          "aufmacher": "Die EZB hat im Juni erstmals seit drei Jahren die Leitzinsen angehoben und dürfte im September nachlegen — die Inflation bleibt hartnäckig hoch.",
-          "fakten": "Aktuell liegt der Einlagesatz bei 2,25 Prozent, der Hauptrefinanzierungssatz bei 2,40 Prozent (Stand 09/2026). Die Inflation im Euroraum stieg im Juli auf 2,9 Prozent, getrieben von hohen Treibstoffpreisen. Analysten erwarten mit großer Mehrheit eine weitere Erhöhung um 25 Basispunkte auf 2,50 Prozent bei der Sitzung am 10. September 2026. Die Bundesbank-Projektionen gehen für 2026 von einer Gesamtinflation von 3,0 Prozent aus.",
-          "einordnung": "Für Mike: Höhere Zinsen verteuern Kredite (Dispo 11,99%, Immobilienfinanzierung), bringen aber auch bessere Zinsen auf Tages- und Festgeld — relevant für die ~600k liquiden Mittel für das MFH.",
+          "titel": "EZB-Leitzins: Einlagensatz 2,25% – September-Anhebung wahrscheinlich",
+          "aufmacher": "Die EZB hatte im Juni 2026 erstmals seit drei Jahren die Leitzinsen um 0,25 Prozentpunkte angehoben; der Einlagensatz liegt aktuell bei 2,25%.",
+          "fakten": "Seit dem Beschluss vom 11.06.2026 beträgt der Einlagesatz 2,25%, der Hauptrefinanzierungssatz 2,40% und der Spitzenrefinanzierungssatz 2,65%. Angesichts der im Juli auf 2,9% gestiegenen Inflation (u.a. durch hohe Treibstoffpreise) gilt eine weitere Anhebung um 25 Basispunkte im September als sehr wahrscheinlich; die nächste Zinsentscheidung steht am 10.09.2026 an.",
+          "einordnung": "Für Mike wichtig: Höhere Leitzinsen stützen das Zinsniveau für Tages- und Festgeld sowie Baufinanzierungen – die Rendite auf liquide Mittel (~600k) profitiert, während Kreditkosten für MFH-Finanzierungen steigen.",
           "quellen": [
-            {"name": "Deutsche Bundesbank", "url": "https://www.bundesbank.de/de/aufgaben/themen/ezb-rat-leitzinsen-angehoben-999316"},
-            {"name": "Raisin", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"}
+            {"name": "Raisin – EZB-Leitzins: Aktuelle Entwicklung (09/2026)", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"},
+            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"}
           ]
         }
       ]
     },
     {
-      "titel": "IT / Server",
+      "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent: Update verfügbar — 839 Commits hinter upstream",
-          "aufmacher": "Die installierte Hermes-Agent-Version v0.21.0 liegt 839 Commits hinter der aktuellen upstream-Version.",
-          "fakten": "Installiert ist v0.21.0 (2026.8.31), upstream zeigt 839 Commits behind. Ein Update ist über 'hermes update' möglich. System-Pakete (apt) sind aktuell, keine weiteren Updates gemeldet.",
-          "einordnung": "Ein Update würde die neuesten Funktionen und Fixes von Hermes Agent bringen. Empfehlung: Update bei nächster Gelegenheit durchführen, da 839 Commits ein erheblicher Rückstand sind.",
-          "quellen": [
-            {"name": "Hermes Agent (lokal)", "url": "https://hermes-agent.nousresearch.com/docs"}
-          ]
+          "titel": "Alle Systeme aktuell – keine Updates verfügbar",
+          "aufmacher": "Der Update-Scan meldet für alle JARVIS-Systeme aktuell keinerlei ausstehende Updates.",
+          "fakten": "Hermes Agent läuft auf Version 0.21.0 (vom 31.08.2026) – aktuellste Version. Keine apt-Pakete aktualisierbar (0). Keine gestoppten Container gemeldet.",
+          "einordnung": "Systeme sind zeitnah gepflegt; ein manueller Eingriff ist heute nicht nötig.",
+          "quellen": []
         }
       ]
     }
