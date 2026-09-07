@@ -1,14 +1,14 @@
 {
-  "datum": "Sonntag, 06.09.2026",
+  "datum": "Montag, 07.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "15°C · Regen 0% · UV 5",
-          "aufmacher": "☁️ bedeckt — trockener, ruhiger Spätsommertag in Troisdorf.",
-          "fakten": "Aktuell 15°C, Tageshöchstwert 24,8°C, Tiefstwert 10,9°C. Regenwahrscheinlichkeit 0%, UV-Index 5 (mäßig).",
-          "einordnung": "Ideal für Außenaktivitäten; bei UV 5 im Freien dennoch Sonnenschutz einplanen.",
+          "titel": "18,5°C · Regen 31% · UV 5,1",
+          "aufmacher": "☁️ Bedeckt, Höchstwerte bis 32,5°C.",
+          "fakten": "",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -18,8 +18,15 @@
       "artikel": [
         {
           "titel": "09.09.2026 10:00: Quixx-Meeting",
-          "aufmacher": "Am Mittwoch, 09.09.2026, um 10:00 Uhr steht das Quixx-Meeting an.",
-          "fakten": "Google-Kalender: Quixx-Meeting am Mittwoch, 09.09.2026, 10:00 Uhr.",
+          "aufmacher": "Quixx-Meeting am Mittwoch um 10:00 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "10.09.2026 15:00: Therapiezentrum Snoek (Manuelle Therapie, Sporttherapie, Osteopathie)",
+          "aufmacher": "Termin am Donnerstag um 15:00 Uhr.",
+          "fakten": "",
           "einordnung": "",
           "quellen": []
         }
@@ -29,21 +36,21 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Diebstahl aus gemeinnützigem Verein am Wilhelm-Hamacher-Platz",
-          "aufmacher": "Unbekannte verschafften sich über das Wochenende gewaltsam Zutritt zu den Räumen eines gemeinnützigen Vereins in Troisdorf und entwendeten Wertgegenstände.",
-          "fakten": "Die Tat ereignete sich zwischen Sonntag, 30. August, 21:00 Uhr und Dienstag, 1. September, 16:30 Uhr. Die Täter manipulierten die Eingangstür und entkamen vermutlich auf demselben Weg. Die Polizei Rhein-Sieg-Kreis sucht Zeugen.",
-          "einordnung": "Ein typischer Fall von Einbruchskriminalität im Troisdorfer Stadtgebiet — für Vereine ein Anlass, Sicherung und Versicherung zu prüfen.",
+          "titel": "Troisdorf: Softwareupdate legt Bibliotheksdienste am 9. und 10. September lahm",
+          "aufmacher": "Die digitalen Dienste der Troisdorfer Stadtbibliothek sowie die TrOpen-Library stehen am 9. und 10. September wegen eines geplanten Softwareupdates vorübergehend nicht zur Verfügung.",
+          "fakten": "Die Stadt Troisdorf kündigt an, dass die digitalen Bibliotheksdienste an diesen beiden Tagen eingeschränkt sind. Betroffen sind die Online-Angebote der Stadtbibliothek im City Center und der TrOpen-Library.",
+          "einordnung": "Für Mike relevant, falls er digitale Bibliotheksdienste nutzt — ansonsten ein kurzer Hinweis auf die lokale Digitalisierung.",
           "quellen": [
-            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis via presseportal.de", "url": "https://www.presseportal.de/blaulicht/pm/65853/6344125"}
+            {"name": "Stadt Troisdorf Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"}
           ]
         },
         {
-          "titel": "Troisdorf: Softwareupdate legt Bibliotheksdienste am 9. und 10. September lahm",
-          "aufmacher": "Wegen eines geplanten Softwareupdates stehen die digitalen Dienste der Stadtbibliothek sowie die TrOpen-Library am 9. und 10. September vorübergehend nicht zur Verfügung.",
-          "fakten": "Die Stadt Troisdorf kündigt für den 9. und 10. September 2026 einen eingeschränkten Bibliotheksservice an. Betroffen sind die digitalen Dienste der Bibliotheken und die TrOpen-Library.",
-          "einordnung": "Für Nutzer der Stadtbibliothek relevant: Ausleihe und digitale Angebote sind an diesen zwei Tagen nur eingeschränkt nutzbar.",
+          "titel": "Troisdorf: Radfahrer erfasst Fußgängerin — Polizei sucht Unfallfahrer",
+          "aufmacher": "Bereits am 29. August stieß in Troisdorf-West ein Radfahrer mit einer Fußgängerin zusammen; die Frau wurde verletzt und kurzzeitig im Krankenhaus behandelt.",
+          "fakten": "Die Polizei Rhein-Sieg-Kreis sucht nach dem Unfallfahrer. Die Fußgängerin hat das Krankenhaus inzwischen wieder verlassen. Der Unfall ereignete sich in Troisdorf-West.",
+          "einordnung": "Lokale Sicherheitslage in Troisdorf — für Mike als Anwohner relevant.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/eingeschraenkter-bibliotheksservice-am-9-und-10-september/"}
+            {"name": "Polizei Rhein-Sieg-Kreis Troisdorf", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
           ]
         }
       ]
@@ -52,14 +59,21 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen stabil um 4 Prozent – EZB-Entscheid im September eingepreist",
-          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen haben sich um die 4-Prozent-Marke eingependelt; eine mögliche EZB-Anhebung im September ist an den Finanzmärkten bereits eingepreist.",
-          "fakten": "Baufi24 nennt als Top-Sollzins für 10 Jahre Zinsbindung aktuell 4,03% (bei 300.000 € Darlehen). Interhyp beziffert den 10-Jahreszins bei Beleihung <70% auf 3,88%, bei >90% auf 4,24%. Dr. Klein berichtet, dass die Bauzinsen im Juli 2026 um rund 0,3 bis 0,4 Prozentpunkte gestiegen sind. Die Interhyp-Panel-Mehrheit erwartet kurzfristig keine Veränderung, mittelfristig einen moderaten Anstieg.",
-          "einordnung": "Für Mikes MFH-Strategie bleibt das Zinsniveau um 4% ein zentraler Faktor: Bei Kaufnebenkosten aus Eigenkapital und anstehender Refinanzierung über mehrere Banken lohnt es sich, Konditionen jetzt zu sichern, bevor eine mögliche EZB-Anhebung die Zinsen weiter treibt.",
+          "titel": "Bauzinsen: 10-jährige Darlehen bei rund 3,9 bis 4,2 Prozent",
+          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen liegen aktuell bei einem Topzins von rund 4,03 Prozent, mit Schwankungen je nach Beleihungsauslauf.",
+          "fakten": "Baufi24 nennt für den 07.09.2026 einen Top-Sollzins von 4,18 % bei 10 Jahren Zinsbindung (300.000 €, 90 % Beleihung). Der effektive Jahreszins liegt bei 3,98 %. Vor einem Monat lag er noch bei 3,77 % — ein Anstieg um 0,21 Prozentpunkte.",
+          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel relevant: Steigende Bauzinsen erhöhen die Finanzierungskosten. Bei geplanten Käufen lohnt sich ein zeitnahes Sichern der Konditionen, da die EZB-Zinsentscheidung im September die Zinsen weiter beeinflussen dürfte.",
           "quellen": [
-            {"name": "Baufi24 – Bauzinsen 2026", "url": "https://www.baufi24.de/bauzinsen/"},
-            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Dr. Klein – Zinsentwicklung Baufinanzierung", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"}
+            {"name": "Baufi24 Bauzinsen", "url": "https://www.baufi24.de/bauzinsen/"}
+          ]
+        },
+        {
+          "titel": "Mietpreise: Deutschland im Schnitt 12,8 €/m², Köln 15,95 €/m²",
+          "aufmacher": "Die Mietpreise in Deutschland steigen weiter leicht — im Schnitt 12,8 €/m², in Köln 15,95 €/m².",
+          "fakten": "Laut Engel & Völkers liegt der durchschnittliche Mietpreis für Wohnungen in Deutschland bei 12,8 €/m², ein Anstieg von 0,23 % im Vergleich zum Vorjahr. In Köln liegen die Mieten bei 15,95 €/m², in Bonn bei 14,02 €/m².",
+          "einordnung": "Für Mikes MFH-Cashflow-Strategie relevant: Steigende Mieten in der Region Rhein-Sieg/Köln/Bonn stützen die Einnahmenseite bei Bestandsimmobilien.",
+          "quellen": [
+            {"name": "Engel & Völkers Mietspiegel", "url": "https://www.engelvoelkers.com/de-de/mietspiegel/"}
           ]
         }
       ]
@@ -68,13 +82,13 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB-Leitzins: Einlagensatz 2,25% – weitere Anhebung im September sehr wahrscheinlich",
-          "aufmacher": "Die EZB hatte im Juni 2026 erstmals seit drei Jahren die Leitzinsen um 0,25 Prozentpunkte angehoben; der Einlagensatz liegt aktuell bei 2,25%, eine weitere Erhöhung im September gilt als sehr wahrscheinlich.",
-          "fakten": "Seit dem Beschluss vom 11.06.2026 beträgt der Einlagesatz 2,25%, der Hauptrefinanzierungssatz 2,40% und der Spitzenrefinanzierungssatz 2,65%. Angesichts der im Juli auf 2,9% gestiegenen Inflation (u.a. durch hohe Treibstoffpreise) erwarten Märkte und Ökonomen mit großer Mehrheit eine letzte Anhebung um 25 Basispunkte im September; die nächste Zinsentscheidung steht am 10.09.2026 an.",
-          "einordnung": "Für Mike wichtig: Höhere Leitzinsen stützen das Zinsniveau für Tages- und Festgeld sowie Baufinanzierungen – die Rendite auf liquide Mittel (~600k) profitiert, während die Kreditkosten für MFH-Finanzierungen steigen.",
+          "titel": "EZB: Zinserhöhung am 10. September auf 2,50 % erwartet",
+          "aufmacher": "Die EZB dürfte am 10. September den Einlagensatz um 0,25 Prozentpunkte auf 2,50 % anheben, da die Inflation im Euroraum auf 3,3 % gestiegen ist.",
+          "fakten": "Die Inflation im Euroraum beschleunigte sich im August auf 3,3 % (nach 2,9 % im Juli), getrieben von Energiepreisen (+14,3 %). Die Kerninflation sank dagegen von 2,5 % auf 2,4 %. An den Swap-Märkten ist eine Zinserhöhung um 0,25 Prozentpunkte mit rund 99 % Wahrscheinlichkeit eingepreist.",
+          "einordnung": "Für Mikes Finanzen relevant: Höhere EZB-Zinsen stützen die Bauzinsen (siehe Immobilien-Bereich) und beeinflussen die Rendite von Tagesgeld/ETF-Anlagen. Mikes Dispo von 11,99 % bleibt teuer — ein Zinsanstieg verschärft das.",
           "quellen": [
-            {"name": "Raisin – EZB-Leitzins: Aktuelle Entwicklung (09/2026)", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"},
-            {"name": "Morningstar – Eurozone Inflation Set to Rise as ECB Rate Hike Looms", "url": "https://global.morningstar.com/en-gb/economy/eurozone-inflation-set-rise-ecb-rate-hike-looms-september"}
+            {"name": "Morningstar EZB-Zinsentscheid", "url": "https://global.morningstar.com/de/wirtschaft/ezb-zinsentscheid-was-am-donnerstag-zu-erwarten-ist"},
+            {"name": "Raisin EZB-Leitzins", "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"}
           ]
         }
       ]
@@ -83,13 +97,11 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent 0.21.0: Update verfügbar – „Pantheon Release“",
-          "aufmacher": "Der Update-Scan meldet für Hermes Agent ein verfügbares Update auf Version 0.21.0 („Pantheon Release“).",
-          "fakten": "Hermes Agent 0.21.0 (v2026.8.31) bringt Bot Mode in die Desktop-App: benannte Agenten mit eigenen Gesichtern und Gruppen-Chats, die wie ein Team zusammenarbeiten. Zudem erhalten Cron-Jobs Memory und Kontinuität, Subagenten lassen sich live steuern, die MCP-Oberfläche wird zum Command Center und der Agent kann den Desktop-Browser selbst bedienen.",
-          "einordnung": "Für JARVIS relevant: Bot Mode und Cron-Memory könnten die automatisierte Zustellung und das Lernen zwischen Läufen weiter verbessern – ein Update lohnt sich.",
-          "quellen": [
-            {"name": "NousResearch/hermes-agent – Releases (GitHub)", "url": "https://github.com/NousResearch/hermes-agent/releases"}
-          ]
+          "titel": "Update-Scan: Alle Systeme aktuell",
+          "aufmacher": "Der Update-Scan vom 07.09.2026 meldet keine verfügbaren Updates — alle Systeme sind auf dem neuesten Stand.",
+          "fakten": "Hermes Agent, Home Assistant, Docker-Container, apt-Pakete und Synology NAS sind aktuell. Keine ausstehenden Updates.",
+          "einordnung": "Kein Handlungsbedarf — die Systeme laufen stabil.",
+          "quellen": []
         }
       ]
     }
