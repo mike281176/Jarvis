@@ -1,12 +1,12 @@
 {
-  "datum": "Dienstag, 08.09.2026",
+  "datum": "Mittwoch, 09.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "20,2°C · Regen 75% · UV 4,8",
-          "aufmacher": "☁️ Bedeckt, Höchstwerte bis 26,9°C, Tiefstwerte um 20°C.",
+          "titel": "15°C · Regen 50% · UV 4.3",
+          "aufmacher": "Bedeckt, Höchstwerte um 21°C, Tiefstwerte 14,9°C.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -18,14 +18,14 @@
       "artikel": [
         {
           "titel": "09.09.2026 10:00: Quixx-Meeting",
-          "aufmacher": "Quixx-Meeting am Mittwoch um 10:00 Uhr.",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "10.09.2026 15:00: Therapiezentrum Snoek (Manuelle Therapie, Sporttherapie, Osteopathie)",
-          "aufmacher": "Termin am Donnerstag um 15:00 Uhr.",
+          "titel": "10.09.2026 15:00: Termin (Therapiezentrum Snoek GmbH, Manuelle Therapie Sporttherapie, Osteopathie)",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -36,21 +36,21 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: 56 DLRG-Einsatzkräfte für Fluthilfe 2021 geehrt",
-          "aufmacher": "Am Rotter See in Troisdorf wurden am Sonntag 56 Einsatzkräfte der DLRG Rhein-Sieg mit der „Einsatzmedaille Fluthilfe 2021“ der Bundesrepublik ausgezeichnet.",
-          "fakten": "Die Medaille ehrt Helfer, die bei der Flutkatastrophe im Juli 2021 im direkten oder indirekten Einsatz waren. Über mehrere Tage halfen die Einsatzkräfte betroffenen Menschen und Tieren im RBRS-Land. Neben der Medaille erhielten sie eine Urkunde.",
-          "einordnung": "Lokale Anerkennung für ehrenamtliches Engagement in der Region — für Mike als Anwohner ein positives Signal der lokalen Gemeinschaft.",
+          "titel": "Sommerleseclub 2026 endet mit Rekord: 566 Teilnehmer in Troisdorf",
+          "aufmacher": "Der Sommerleseclub der Stadtbibliothek Troisdorf verzeichnet mit 566 Teilnehmern einen neuen Rekord.",
+          "fakten": "Insgesamt 566 Personen haben in diesem Jahr am Sommerleseclub teilgenommen – so viele wie nie zuvor. Das Angebot umfasste Lesen, Hören und kreative Aktionen. Die Stadtbibliothek wertet den Abschluss als vollen Erfolg.",
+          "einordnung": "Regionales Kulturangebot mit wachsender Resonanz – ein positives Signal für die Lebensqualität in Troisdorf.",
           "quellen": [
-            {"name": "Radio Bonn/Rhein-Sieg", "url": "https://www.radiobonn.de/artikel/dlrg-kraefte-fuer-fluthilfe-in-troisdorf-geehrt-2747778"}
+            {"name": "Stadt Troisdorf Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"}
           ]
         },
         {
-          "titel": "Troisdorf: Radfahrer erfasst Fußgängerin — Polizei sucht Unfallfahrer",
-          "aufmacher": "Bereits am 29. August stieß in Troisdorf-West ein Radfahrer mit einer Fußgängerin zusammen; die Polizei Rhein-Sieg-Kreis sucht nun nach dem Unfallfahrer.",
-          "fakten": "Die Fußgängerin wurde bei dem Zusammenstoß verletzt und kurzzeitig im Krankenhaus behandelt, das sie inzwischen wieder verlassen hat. Der Unfall ereignete sich in Troisdorf-West.",
-          "einordnung": "Lokale Sicherheitslage in Troisdorf — für Mike als Anwohner relevant.",
+          "titel": "Polizei warnt: Betrüger erbeuten Goldschmuck in Troisdorf-Spich",
+          "aufmacher": "Zwei Unbekannte gaben sich als Handwerker aus und erbeuteten in einer Troisdorfer Wohnung Goldschmuck.",
+          "fakten": "Am 4. September klingelten zwei Männer an einer Erdgeschosswohnung in der Straße 'Im Kreuzfeld' in Spich und gaben sich als Handwerker aus. Sie betraten die Räume und entwendeten Goldschmuck. Die Polizei Rhein-Sieg-Kreis ermittelt.",
+          "einordnung": "Warnung für die Nachbarschaft: Bei unangemeldeten 'Handwerkern' Vorsicht walten lassen – gerade in Mehrparteienhäusern.",
           "quellen": [
-            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis (Presseportal)", "url": "https://www.presseportal.de/blaulicht/nr/65853"}
+            {"name": "Polizei Rhein-Sieg-Kreis / Presseportal", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
           ]
         }
       ]
@@ -59,21 +59,12 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen: 10-jährige Darlehen bei rund 3,9 bis 4,2 Prozent",
-          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen liegen aktuell bei einem Topzins von rund 4,18 Prozent und steigen weiter an.",
-          "fakten": "Baufi24 nennt für den 08.09.2026 einen Top-Sollzins von 4,18 % bei 10 Jahren Zinsbindung (300.000 €, 90 % Beleihung), effektiver Jahreszins 3,98 %. Vor einem Monat lag der effektive Zins noch bei 3,77 % — ein Anstieg um 0,21 Prozentpunkte. Die Rendite der zehnjährigen Bundesanleihe stieg auf rund 3,31 %, den höchsten Stand seit 15 Jahren.",
-          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel relevant: Steigende Bauzinsen erhöhen die Finanzierungskosten. Bei geplanten Käufen lohnt sich ein zeitnahes Sichern der Konditionen, da die EZB-Zinsentscheidung im September die Zinsen weiter beeinflussen dürfte.",
+          "titel": "Bauzinsen ziehen wieder an: 10 Jahre Zinsbindung bei rund 3,9–4,2 %",
+          "aufmacher": "Die Bauzinsen steigen nach einer kurzen Verschnaufpause im August wieder an – der Topzins für 10 Jahre liegt aktuell bei rund 4,18 %.",
+          "fakten": "Laut Baufi24 liegt der Top-Sollzins für 10 Jahre Zinsbindung bei 4,18 % (effektiv 3,98 %). Die Rendite der zehnjährigen Bundesanleihe stieg im August auf rund 3,31 % – der höchste Stand seit 15 Jahren. Im Monatsvergleich stieg der effektive Jahreszins von 3,77 % auf 3,98 %.",
+          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel bedeutet das: Zinsbindung und Konditionen jetzt sorgfältig vergleichen, da steigende Zinsen die monatliche Rate direkt belasten.",
           "quellen": [
             {"name": "Baufi24 Bauzinsen", "url": "https://www.baufi24.de/bauzinsen/"}
-          ]
-        },
-        {
-          "titel": "Region: Immobilienpreise in Bonn und Rhein-Sieg-Kreis weiter gestiegen",
-          "aufmacher": "Die meisten Immobilien in Bonn und im Rhein-Sieg-Kreis sind im ersten Halbjahr 2026 nochmal teurer geworden — besonders Reihenhäuser.",
-          "fakten": "Laut Landesbausparkasse LBS Nordwest stiegen in Bonn die Preise für freistehende Häuser, Reihenhäuser und Eigentumswohnungen im Schnitt um zwei bis vier Prozent. Im Rhein-Sieg-Kreis legten Reihenhäuser mit plus fünf Prozent deutlich zu, Eigentumswohnungen wurden dagegen rund ein Prozent günstiger. Die Mieten steigen derzeit deutlicher als die Immobilienpreise.",
-          "einordnung": "Für Mikes MFH-Cashflow-Strategie relevant: Steigende Mieten in der Region stützen die Einnahmenseite bei Bestandsimmobilien, während höhere Kaufpreise die Rendite bei Neukäufen drücken.",
-          "quellen": [
-            {"name": "Radio Bonn/Rhein-Sieg (LBS Nordwest)", "url": "https://www.radiobonn.de/artikel/lbs-immobilienpreise-in-bonn-und-im-kreis-nochmal-gestiegen-2748154"}
           ]
         }
       ]
@@ -82,13 +73,13 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB: Zinserhöhung am 10. September auf 2,50 % erwartet",
-          "aufmacher": "Die EZB dürfte am 10. September den Einlagensatz um 0,25 Prozentpunkte auf 2,50 % anheben, da die Inflation im Euroraum auf 3,3 % gestiegen ist.",
-          "fakten": "Die Inflation im Euroraum beschleunigte sich im August auf 3,3 % (nach 2,9 % im Juli), getrieben von Energiepreisen (+14,3 %). Die Kerninflation sank dagegen von 2,5 % auf 2,4 %. An den Terminmärkten ist eine Zinserhöhung um 0,25 Prozentpunkte mit rund 80 bis 99 % Wahrscheinlichkeit eingepreist. Eine weitere Anhebung bis Dezember gilt als möglich.",
-          "einordnung": "Für Mikes Finanzen relevant: Höhere EZB-Zinsen stützen die Bauzinsen (siehe Immobilien-Bereich) und beeinflussen die Rendite von Tagesgeld/ETF-Anlagen. Mikes Dispo von 11,99 % bleibt teuer — ein Zinsanstieg verschärft das.",
+          "titel": "EZB vor Zinserhöhung: Inflation im Euroraum wieder über 3 %",
+          "aufmacher": "Die Inflation im Euroraum ist im August auf 3,3 % gestiegen – die EZB dürfte am 10. September die Zinsen erneut anheben.",
+          "fakten": "Die Teuerung stieg von 2,9 % im Juli auf 3,3 % im August, getrieben vor allem von Energiepreisen (14,3 %). Die Kerninflation sank dagegen leicht auf 2,4 %. Die Märkte preisen eine Erhöhung um 0,25 Prozentpunkte auf 2,5 % am 10. September mit hoher Wahrscheinlichkeit ein.",
+          "einordnung": "Steigende Zinsen erhöhen die Finanzierungskosten für Immobilien und belasten die freie Liquidität – relevant für Mikes MFH-Planung und die Dispo-Zinsen.",
           "quellen": [
-            {"name": "Morningstar EZB-Leitzins", "url": "https://global.morningstar.com/de/wirtschaft/ezb-leitzins-steigen-die-zinsen-2026-erneut-und-fallen-2027-wieder"},
-            {"name": "CNBC Eurozone Inflation", "url": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html"}
+            {"name": "CNBC Eurozone Inflation", "url": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html"},
+            {"name": "Morningstar EZB-Zinsentscheid", "url": "https://global.morningstar.com/de/wirtschaft/ezb-zinsentscheid-was-am-donnerstag-zu-erwarten-ist"}
           ]
         }
       ]
@@ -97,10 +88,10 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Update-Scan: Alle Systeme aktuell",
-          "aufmacher": "Der Update-Scan vom 08.09.2026 meldet keine verfügbaren Updates — alle Systeme sind auf dem neuesten Stand.",
-          "fakten": "Hermes Agent, Home Assistant, Docker-Container, apt-Pakete und Synology NAS sind aktuell. Keine ausstehenden Updates.",
-          "einordnung": "Kein Handlungsbedarf — die Systeme laufen stabil.",
+          "titel": "Keine relevanten Updates verfügbar",
+          "aufmacher": "Der Update-Scan meldet aktuell keine relevanten Updates für Hermes, Home Assistant oder Docker-Container.",
+          "fakten": "Alle geprüften Systeme sind auf dem aktuellen Stand.",
+          "einordnung": "",
           "quellen": []
         }
       ]
