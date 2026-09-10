@@ -1,12 +1,12 @@
 {
-  "datum": "Mittwoch, 09.09.2026",
+  "datum": "Donnerstag, 10.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "15°C · Regen 50% · UV 4.3",
-          "aufmacher": "Bedeckt, Höchstwerte um 21°C, Tiefstwerte 14,9°C.",
+          "titel": "13.6°C · Regen 4% · UV 4.9",
+          "aufmacher": "Bedeckt, Höchstwerte um 21,8°C, Tiefstwerte 13,6°C.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -16,13 +16,6 @@
     {
       "titel": "📅 Termine",
       "artikel": [
-        {
-          "titel": "09.09.2026 10:00: Quixx-Meeting",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
         {
           "titel": "10.09.2026 15:00: Termin (Therapiezentrum Snoek GmbH, Manuelle Therapie Sporttherapie, Osteopathie)",
           "aufmacher": "",
@@ -36,21 +29,21 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Sommerleseclub 2026 endet mit Rekord: 566 Teilnehmer in Troisdorf",
-          "aufmacher": "Der Sommerleseclub der Stadtbibliothek Troisdorf verzeichnet mit 566 Teilnehmern einen neuen Rekord.",
-          "fakten": "Insgesamt 566 Personen haben in diesem Jahr am Sommerleseclub teilgenommen – so viele wie nie zuvor. Das Angebot umfasste Lesen, Hören und kreative Aktionen. Die Stadtbibliothek wertet den Abschluss als vollen Erfolg.",
-          "einordnung": "Regionales Kulturangebot mit wachsender Resonanz – ein positives Signal für die Lebensqualität in Troisdorf.",
+          "titel": "Lieferwagen aufgebrochen und Pakete gestohlen in Troisdorf-Spich",
+          "aufmacher": "In Troisdorf-Spich wurde ein Lieferwagen aufgebrochen und Pakete daraus gestohlen.",
+          "fakten": "Zwischen Montagabend (07.09.), 21:00 Uhr, und Dienstagmorgen (08.09.), 08:00 Uhr, wurde ein Citroën Jumper an der Spichbuschstraße in Spich aufgebrochen. Das Schloss der Hecktür wurde beschädigt, Pakete entwendet. Die Polizei Rhein-Sieg-Kreis ermittelt.",
+          "einordnung": "Warnung für Gewerbetreibende und Anwohner in Spich: Lieferfahrzeuge nachts nicht ungesichert abstellen.",
           "quellen": [
-            {"name": "Stadt Troisdorf Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"}
+            {"name": "Polizei Rhein-Sieg-Kreis / Presseportal", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
           ]
         },
         {
-          "titel": "Polizei warnt: Betrüger erbeuten Goldschmuck in Troisdorf-Spich",
-          "aufmacher": "Zwei Unbekannte gaben sich als Handwerker aus und erbeuteten in einer Troisdorfer Wohnung Goldschmuck.",
-          "fakten": "Am 4. September klingelten zwei Männer an einer Erdgeschosswohnung in der Straße 'Im Kreuzfeld' in Spich und gaben sich als Handwerker aus. Sie betraten die Räume und entwendeten Goldschmuck. Die Polizei Rhein-Sieg-Kreis ermittelt.",
-          "einordnung": "Warnung für die Nachbarschaft: Bei unangemeldeten 'Handwerkern' Vorsicht walten lassen – gerade in Mehrparteienhäusern.",
+          "titel": "„Backstage op Kölsch!“ – Musikszene hautnah in der Stadtbibliothek",
+          "aufmacher": "Am 26. September geben zwei Insider der rheinischen Musikszene in der Stadtbibliothek Troisdorf Einblicke hinter die Kulissen der Karnevals-Hits.",
+          "fakten": "Die Veranstaltung „Backstage op Kölsch!“ findet am 26. September in der Stadtbibliothek Troisdorf statt. Zwei renommierte Insider beantworten Fragen zur Entstehung von Karnevals-Hits und zum Geschehen hinter den Kulissen der rheinischen Musikszene.",
+          "einordnung": "Kulturelles Highlight im September – ein weiteres Angebot, das Troisdorf als Wohn- und Lebensstandort attraktiv macht.",
           "quellen": [
-            {"name": "Polizei Rhein-Sieg-Kreis / Presseportal", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
+            {"name": "Stadt Troisdorf Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"}
           ]
         }
       ]
@@ -59,12 +52,23 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen ziehen wieder an: 10 Jahre Zinsbindung bei rund 3,9–4,2 %",
-          "aufmacher": "Die Bauzinsen steigen nach einer kurzen Verschnaufpause im August wieder an – der Topzins für 10 Jahre liegt aktuell bei rund 4,18 %.",
-          "fakten": "Laut Baufi24 liegt der Top-Sollzins für 10 Jahre Zinsbindung bei 4,18 % (effektiv 3,98 %). Die Rendite der zehnjährigen Bundesanleihe stieg im August auf rund 3,31 % – der höchste Stand seit 15 Jahren. Im Monatsvergleich stieg der effektive Jahreszins von 3,77 % auf 3,98 %.",
-          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel bedeutet das: Zinsbindung und Konditionen jetzt sorgfältig vergleichen, da steigende Zinsen die monatliche Rate direkt belasten.",
+          "titel": "Bauzinsen um 4 % – EZB-Entscheid heute im Blick",
+          "aufmacher": "Die Bauzinsen bleiben um die 4-Prozent-Marke, während die EZB heute über eine weitere Zinserhöhung entscheidet.",
+          "fakten": "Laut Baufi24 liegt der Top-Sollzins für 10 Jahre Zinsbindung bei 3,88 % (effektiv 3,98 %). Interhyp meldet stabile Zinsen um 4 % (10 Jahre: 3,88–4,24 % je nach Beleihungsauslauf). Die Rendite der zehnjährigen Bundesanleihe stieg im August auf rund 3,31 % – der höchste Stand seit 15 Jahren.",
+          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel: Bei erwarteter EZB-Zinserhöhung sollten Konditionen frühzeitig gesichert werden, da steigende Zinsen die monatliche Rate direkt belasten.",
           "quellen": [
-            {"name": "Baufi24 Bauzinsen", "url": "https://www.baufi24.de/bauzinsen/"}
+            {"name": "Baufi24 Bauzinsen", "url": "https://www.baufi24.de/bauzinsen/"},
+            {"name": "Interhyp Bauzinsen", "url": "https://www.interhyp.de/zinsen/"}
+          ]
+        },
+        {
+          "titel": "Mietpreise im Rhein-Sieg-Kreis steigen weiter – Troisdorf über dem Schnitt",
+          "aufmacher": "Die Mieten im Rhein-Sieg-Kreis steigen weiter – Troisdorf liegt mit rund 10,80 €/m² über dem Kreisdurchschnitt.",
+          "fakten": "Im Q2 2026 liegt der Mietspiegel im Rhein-Sieg-Kreis bei Ø 9,92 €/m², ein Anstieg von 3,4 % gegenüber Q2 2025. Troisdorf liegt bei rund 10,80 €/m² (ImmoScout24). Der Troisdorfer Mietspiegel 2026 wird mit durchschnittlich rund 11,9 €/m² angegeben (mietspiegeltabelle.de).",
+          "einordnung": "Steigende Mieten stützen den Cashflow von Bestandsimmobilien – relevant für Mikes MFH-Strategie und die Bewertung von Ankaufsobjekten.",
+          "quellen": [
+            {"name": "ImmoScout24 Mietspiegel Rhein-Sieg-Kreis", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"},
+            {"name": "Mietspiegeltabelle Troisdorf", "url": "https://mietspiegeltabelle.de/mietspiegel-troisdorf/"}
           ]
         }
       ]
@@ -73,13 +77,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB vor Zinserhöhung: Inflation im Euroraum wieder über 3 %",
-          "aufmacher": "Die Inflation im Euroraum ist im August auf 3,3 % gestiegen – die EZB dürfte am 10. September die Zinsen erneut anheben.",
-          "fakten": "Die Teuerung stieg von 2,9 % im Juli auf 3,3 % im August, getrieben vor allem von Energiepreisen (14,3 %). Die Kerninflation sank dagegen leicht auf 2,4 %. Die Märkte preisen eine Erhöhung um 0,25 Prozentpunkte auf 2,5 % am 10. September mit hoher Wahrscheinlichkeit ein.",
+          "titel": "EZB entscheidet heute über Leitzins – Erhöhung um 0,25 Prozentpunkte erwartet",
+          "aufmacher": "Die EZB entscheidet heute über die Leitzinsen – eine Anhebung um 0,25 Prozentpunkte auf 2,50 % gilt als so gut wie sicher.",
+          "fakten": "Die Inflation im Euroraum stieg im August auf 3,3 % (Juli: 2,9 %), getrieben vor allem von Energiepreisen (+14,3 %). Die Kerninflation sank leicht auf 2,4 %. Die Märkte preisen eine Erhöhung des Einlagensatzes auf 2,50 % mit rund 99 % Wahrscheinlichkeit ein. Ob weitere Schritte folgen, ist umstritten.",
           "einordnung": "Steigende Zinsen erhöhen die Finanzierungskosten für Immobilien und belasten die freie Liquidität – relevant für Mikes MFH-Planung und die Dispo-Zinsen.",
           "quellen": [
-            {"name": "CNBC Eurozone Inflation", "url": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html"},
-            {"name": "Morningstar EZB-Zinsentscheid", "url": "https://global.morningstar.com/de/wirtschaft/ezb-zinsentscheid-was-am-donnerstag-zu-erwarten-ist"}
+            {"name": "Morningstar EZB-Zinsentscheid", "url": "https://global.morningstar.com/de/wirtschaft/ezb-zinsentscheid-was-am-donnerstag-zu-erwarten-ist"},
+            {"name": "Berliner Morgenpost EZB-Prognose", "url": "https://www.morgenpost.de/ratgeber-wissen/finanzen/article413084050/ezb-zinsentscheid-klare-prognose-leitzins-september-2026-sparer.html"}
+          ]
+        },
+        {
+          "titel": "Inflation in Deutschland steigt auf 2,9 % – Energie treibt die Preise",
+          "aufmacher": "Die Inflation in Deutschland ist im August auf 2,9 % gestiegen – vor allem Energie verteuert sich deutlich.",
+          "fakten": "Laut Destatis stiegen die Verbraucherpreise im August um 2,9 % gegenüber dem Vorjahr (Juli: 2,8 %). Die Kerninflation liegt bei 2,4 %. Energiepreise stiegen um 10,5 % (Juli: 8,3 %).",
+          "einordnung": "Die anhaltende Teuerung bei Energie stützt die Erwartung weiterer EZB-Zinserhöhungen – mit direkten Folgen für Bauzinsen und Finanzierungskosten.",
+          "quellen": [
+            {"name": "Destatis Inflationsrate", "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html"},
+            {"name": "Tagesschau Inflation August", "url": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-august-anstieg-100.html"}
           ]
         }
       ]
