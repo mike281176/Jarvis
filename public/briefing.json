@@ -1,13 +1,13 @@
 {
-  "datum": "Donnerstag, 10.09.2026",
+  "datum": "Freitag, 11.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "13.6°C · Regen 4% · UV 4.9",
-          "aufmacher": "Bedeckt, Höchstwerte um 21,8°C, Tiefstwerte 13,6°C.",
-          "fakten": "",
+          "titel": "12,5°C · Regen 10% · UV 4,65",
+          "aufmacher": "☁️ bedeckt — Tagesmax 23,7°C, Tiefst 12,1°C",
+          "fakten": "Aktuell 12,5°C, Tagesmax 23,7°C, Tiefst 12,1°C. Regenwahrscheinlichkeit 10%, UV-Index 4,65.",
           "einordnung": "",
           "quellen": []
         }
@@ -17,8 +17,8 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "10.09.2026 15:00: Termin (Therapiezentrum Snoek GmbH, Manuelle Therapie Sporttherapie, Osteopathie)",
-          "aufmacher": "",
+          "titel": "Keine Kalendertermine",
+          "aufmacher": "Keine Termine in den nächsten 3 Tagen im Google-Kalender.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -29,21 +29,21 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Lieferwagen aufgebrochen und Pakete gestohlen in Troisdorf-Spich",
-          "aufmacher": "In Troisdorf-Spich wurde ein Lieferwagen aufgebrochen und Pakete daraus gestohlen.",
-          "fakten": "Zwischen Montagabend (07.09.), 21:00 Uhr, und Dienstagmorgen (08.09.), 08:00 Uhr, wurde ein Citroën Jumper an der Spichbuschstraße in Spich aufgebrochen. Das Schloss der Hecktür wurde beschädigt, Pakete entwendet. Die Polizei Rhein-Sieg-Kreis ermittelt.",
-          "einordnung": "Warnung für Gewerbetreibende und Anwohner in Spich: Lieferfahrzeuge nachts nicht ungesichert abstellen.",
+          "titel": "Betrunkene Frau greift in Troisdorf-Altenrath Polizisten an",
+          "aufmacher": "Kurz vor Mitternacht am 9. September meldete eine Zeugin eine hilflose Frau auf der Straße „Zum Düffenbroich“ – der Einsatz eskalierte.",
+          "fakten": "Die 31-Jährige aus Düsseldorf saß laut Polizei nach einem Streit mit ihrem Freund am Straßenrand; dieser habe sie aus dem Auto geworfen. Bei Ansprache leistete die Frau Widerstand und griff die Beamten an, woraufhin sie in die Ausnüchterungszelle kam.",
+          "einordnung": "Einsätze mit Widerstand gegen Einsatzkräfte häufen sich im Kreis – für Dich als Anwohner in Troisdorf vor allem relevant, um die lokale Lage im Blick zu behalten.",
           "quellen": [
-            {"name": "Polizei Rhein-Sieg-Kreis / Presseportal", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
+            {"name": "Polizei Rhein-Sieg-Kreis (Presseportal)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6349470"}
           ]
         },
         {
-          "titel": "„Backstage op Kölsch!“ – Musikszene hautnah in der Stadtbibliothek",
-          "aufmacher": "Am 26. September geben zwei Insider der rheinischen Musikszene in der Stadtbibliothek Troisdorf Einblicke hinter die Kulissen der Karnevals-Hits.",
-          "fakten": "Die Veranstaltung „Backstage op Kölsch!“ findet am 26. September in der Stadtbibliothek Troisdorf statt. Zwei renommierte Insider beantworten Fragen zur Entstehung von Karnevals-Hits und zum Geschehen hinter den Kulissen der rheinischen Musikszene.",
-          "einordnung": "Kulturelles Highlight im September – ein weiteres Angebot, das Troisdorf als Wohn- und Lebensstandort attraktiv macht.",
+          "titel": "TLG-Läufer Michael Irrgang läuft Weltrekord über 1.133 km",
+          "aufmacher": "Der über 60-jährige Troisdorfer Ausdauerläufer stellt einen neuen Weltrekord im 10-Tageslauf auf.",
+          "fakten": "In 240 Laufstunden legte Michael Irrgang 1.133 Kilometer zurück – neuer Weltrekord in seiner Altersklasse und Platz 2 der deutschen ewigen Bestenliste. Trotz Schmerzen an Füßen und Sprunggelenken lief er die historische 1.000-km-Marke nach achteinhalb Tagen.",
+          "einordnung": "Ein sportlicher Höhepunkt für Troisdorf – regionaler Stolz, der zeigt, dass die Stadt auch jenseits von Kriminalität positiv in den Meldungen steht.",
           "quellen": [
-            {"name": "Stadt Troisdorf Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"}
+            {"name": "Troisdorf City / TLG 1966", "url": "https://www.troisdorf.city/Unternehmen-Geschaefte-mehr/Troisdorfer-Leichtathletik-Gemeinschaft-1966-e.-V/New-articleTLG-Laeufer-Irrgang-schafft-Weltrekord"}
           ]
         }
       ]
@@ -52,23 +52,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen um 4 % – EZB-Entscheid heute im Blick",
-          "aufmacher": "Die Bauzinsen bleiben um die 4-Prozent-Marke, während die EZB heute über eine weitere Zinserhöhung entscheidet.",
-          "fakten": "Laut Baufi24 liegt der Top-Sollzins für 10 Jahre Zinsbindung bei 3,88 % (effektiv 3,98 %). Interhyp meldet stabile Zinsen um 4 % (10 Jahre: 3,88–4,24 % je nach Beleihungsauslauf). Die Rendite der zehnjährigen Bundesanleihe stieg im August auf rund 3,31 % – der höchste Stand seit 15 Jahren.",
-          "einordnung": "Für Mikes MFH-Strategie mit maximalem Hebel: Bei erwarteter EZB-Zinserhöhung sollten Konditionen frühzeitig gesichert werden, da steigende Zinsen die monatliche Rate direkt belasten.",
+          "titel": "EZB-Zinserhöhung treibt Bauzinsen über 4 Prozent",
+          "aufmacher": "Die Europäische Zentralbank erhöhte den Leitzins am 10. September um 0,25 Punkte – Bauzinsen für 10 Jahre liegen nun bei rund 4,0 bis 4,2 Prozent.",
+          "fakten": "Der Einlagesatz stieg von 2,25 auf 2,50 Prozent. Interhyp nennt für 10-jährige Darlehen 4,2 Prozent, Dr. Klein einen effektiven Topzins um 4,04 Prozent (3,94 fester Sollzins). Steigende Staatsanleiherenditen und hohe Energiepreise ziehen die Baufi-Zinsen nach oben.",
+          "einordnung": "Für Deine MFH- und Cashflow-Kalkulation zählt: Höhere Finanzierungskosten drücken die Marge, machen aber Objekte mit starker Mietrendite attraktiver. Bei Kauf zögern lohnt sich laut Dr. Klein nicht – Warten wird teurer. Refinanzierung frühzeitig anbahnen, nicht auf schnelle Zinssenkung hoffen.",
           "quellen": [
-            {"name": "Baufi24 Bauzinsen", "url": "https://www.baufi24.de/bauzinsen/"},
-            {"name": "Interhyp Bauzinsen", "url": "https://www.interhyp.de/zinsen/"}
-          ]
-        },
-        {
-          "titel": "Mietpreise im Rhein-Sieg-Kreis steigen weiter – Troisdorf über dem Schnitt",
-          "aufmacher": "Die Mieten im Rhein-Sieg-Kreis steigen weiter – Troisdorf liegt mit rund 10,80 €/m² über dem Kreisdurchschnitt.",
-          "fakten": "Im Q2 2026 liegt der Mietspiegel im Rhein-Sieg-Kreis bei Ø 9,92 €/m², ein Anstieg von 3,4 % gegenüber Q2 2025. Troisdorf liegt bei rund 10,80 €/m² (ImmoScout24). Der Troisdorfer Mietspiegel 2026 wird mit durchschnittlich rund 11,9 €/m² angegeben (mietspiegeltabelle.de).",
-          "einordnung": "Steigende Mieten stützen den Cashflow von Bestandsimmobilien – relevant für Mikes MFH-Strategie und die Bewertung von Ankaufsobjekten.",
-          "quellen": [
-            {"name": "ImmoScout24 Mietspiegel Rhein-Sieg-Kreis", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"},
-            {"name": "Mietspiegeltabelle Troisdorf", "url": "https://mietspiegeltabelle.de/mietspiegel-troisdorf/"}
+            {"name": "Interhyp Bauzinsen", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Dr. Klein Bauzinsen", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"}
           ]
         }
       ]
@@ -77,35 +67,34 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB entscheidet heute über Leitzins – Erhöhung um 0,25 Prozentpunkte erwartet",
-          "aufmacher": "Die EZB entscheidet heute über die Leitzinsen – eine Anhebung um 0,25 Prozentpunkte auf 2,50 % gilt als so gut wie sicher.",
-          "fakten": "Die Inflation im Euroraum stieg im August auf 3,3 % (Juli: 2,9 %), getrieben vor allem von Energiepreisen (+14,3 %). Die Kerninflation sank leicht auf 2,4 %. Die Märkte preisen eine Erhöhung des Einlagensatzes auf 2,50 % mit rund 99 % Wahrscheinlichkeit ein. Ob weitere Schritte folgen, ist umstritten.",
-          "einordnung": "Steigende Zinsen erhöhen die Finanzierungskosten für Immobilien und belasten die freie Liquidität – relevant für Mikes MFH-Planung und die Dispo-Zinsen.",
+          "titel": "EZB hebt Leitzins auf 2,50 Prozent – zweiter Schritt 2026",
+          "aufmacher": "Am 10. September erhöhte die EZB den Einlagenzins um 0,25 Prozentpunkte auf 2,50 Prozent – getrieben von Energiepreisen infolge des Iran-Kriegs.",
+          "fakten": "Es war die zweite Zinserhöhung in diesem Jahr (zuvor Mitte Juni). Die Inflation im Euroraum kletterte laut Eurostat-Flash auf 3,3 Prozent im August (Juli: 2,9 Prozent) und liegt damit deutlich über dem EZB-Ziel von 2 Prozent. Volkswirte sind uneinig, ob die EZB es bei 2,50 Prozent belässt oder im Dezember weiter anzieht.",
+          "einordnung": "Höhere Leitzinsen stützen Tagesgeld- und Anleiherenditen, belasten aber Kredit- und Aktienmärkte. Für Dein ETF-Portfolio: weiter oben auf den Geldmarktzins schauen, der nun wieder attraktiver wird.",
           "quellen": [
-            {"name": "Morningstar EZB-Zinsentscheid", "url": "https://global.morningstar.com/de/wirtschaft/ezb-zinsentscheid-was-am-donnerstag-zu-erwarten-ist"},
-            {"name": "Berliner Morgenpost EZB-Prognose", "url": "https://www.morgenpost.de/ratgeber-wissen/finanzen/article413084050/ezb-zinsentscheid-klare-prognose-leitzins-september-2026-sparer.html"}
+            {"name": "LBBW Research", "url": "https://www.lbbw.de/artikel/maerkte-verstehen/ezb-zinsentscheid-leitzins-prognosen_ait4bfmrfe_d.html"},
+            {"name": "Eurostat (EC)", "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-01092026-ap"}
           ]
         },
         {
-          "titel": "Inflation in Deutschland steigt auf 2,9 % – Energie treibt die Preise",
-          "aufmacher": "Die Inflation in Deutschland ist im August auf 2,9 % gestiegen – vor allem Energie verteuert sich deutlich.",
-          "fakten": "Laut Destatis stiegen die Verbraucherpreise im August um 2,9 % gegenüber dem Vorjahr (Juli: 2,8 %). Die Kerninflation liegt bei 2,4 %. Energiepreise stiegen um 10,5 % (Juli: 8,3 %).",
-          "einordnung": "Die anhaltende Teuerung bei Energie stützt die Erwartung weiterer EZB-Zinserhöhungen – mit direkten Folgen für Bauzinsen und Finanzierungskosten.",
+          "titel": "Inflation im Euroraum springt auf 3,3 Prozent",
+          "aufmacher": "Die Teuerung im August 2026 steigt deutlich auf 3,3 Prozent – vor allem Energie treibt die Preise.",
+          "fakten": "Laut Eurostat-Flash-Schätzung kletterte die jährliche Inflation im Euroraum von 2,9 Prozent (Juli) auf 3,3 Prozent (August). Energiepreise stiegen im Jahresvergleich um mehr als 14 Prozent. Kerninflation ohne Energie und Nahrung: rund 2,4 Prozent (Deutschland).",
+          "einordnung": "Steigende Inflation und höhere Zinsen engen den Spielraum für Fremdfinanzierung weiter ein – ein Faktor, der Deine MFH-Kalkulation über die Zinsseite direkt betrifft.",
           "quellen": [
-            {"name": "Destatis Inflationsrate", "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html"},
-            {"name": "Tagesschau Inflation August", "url": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-august-anstieg-100.html"}
+            {"name": "Eurostat (EC)", "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-01092026-ap"}
           ]
         }
       ]
     },
     {
-      "titel": "IT/Server",
+      "titel": "IT / Server",
       "artikel": [
         {
-          "titel": "Keine relevanten Updates verfügbar",
-          "aufmacher": "Der Update-Scan meldet aktuell keine relevanten Updates für Hermes, Home Assistant oder Docker-Container.",
-          "fakten": "Alle geprüften Systeme sind auf dem aktuellen Stand.",
-          "einordnung": "",
+          "titel": "Alle Systeme aktuell – keine Updates verfügbar",
+          "aufmacher": "Der Update-Scan für Hermes, Home Assistant, Docker, das System und die Synology-NAS fand kein ausstehendes Update.",
+          "fakten": "Alle eigenen Systeme sind nach aktuellem Stand auf dem neuesten Stand – kein Handlungsbedarf (Stand: 11.09.2026).",
+          "einordnung": "Ein ruhiger Tag in der Infrastruktur – nichts zu tun, alles stabil.",
           "quellen": []
         }
       ]
