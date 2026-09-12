@@ -1,13 +1,13 @@
 {
-  "datum": "Freitag, 11.09.2026",
+  "datum": "Samstag, 12.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "12,5°C · Regen 10% · UV 4,65",
-          "aufmacher": "☁️ bedeckt — Tagesmax 23,7°C, Tiefst 12,1°C",
-          "fakten": "Aktuell 12,5°C, Tagesmax 23,7°C, Tiefst 12,1°C. Regenwahrscheinlichkeit 10%, UV-Index 4,65.",
+          "titel": "16,1°C · Regen 27% · UV 4,2",
+          "aufmacher": "☁️ bedeckt — Tagesmax 23,8°C, Tiefst 16,1°C, nur geringe Regenneigung",
+          "fakten": "Aktuell 16,1°C, Tagesmax 23,8°C, Tiefst 16,1°C. Regenwahrscheinlichkeit 27%, UV-Index 4,2.",
           "einordnung": "",
           "quellen": []
         }
@@ -29,21 +29,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Betrunkene Frau greift in Troisdorf-Altenrath Polizisten an",
-          "aufmacher": "Kurz vor Mitternacht am 9. September meldete eine Zeugin eine hilflose Frau auf der Straße „Zum Düffenbroich“ – der Einsatz eskalierte.",
-          "fakten": "Die 31-Jährige aus Düsseldorf saß laut Polizei nach einem Streit mit ihrem Freund am Straßenrand; dieser habe sie aus dem Auto geworfen. Bei Ansprache leistete die Frau Widerstand und griff die Beamten an, woraufhin sie in die Ausnüchterungszelle kam.",
-          "einordnung": "Einsätze mit Widerstand gegen Einsatzkräfte häufen sich im Kreis – für Dich als Anwohner in Troisdorf vor allem relevant, um die lokale Lage im Blick zu behalten.",
+          "titel": "Mehrere Straßensperrungen in Troisdorf: von Eschmar bis Spich",
+          "aufmacher": "Bauarbeiten und Rennveranstaltungen sorgen quer durch Troisdorf für volle Sperrungen — teils bis weit ins nächste Jahr.",
+          "fakten": "In Eschmar sind die Noldestraße und Max-Ernst-Straße für den Straßenausbau bis 31. Oktober 2026 voll gesperrt. In Kriegsdorf ist die Offenbachstraße zwischen Birklestraße und Im Schonsfeld von 14. September 2026 bis 16. April 2027 wegen Leitungsverlegung (Kanal, Strom, Gas, Wasser, Glasfaser) dicht. Am 19. September sperrt die Stadt für das internationale Radrennen „Rund in Spich“ die Telegrafstraße, den Wacholderweg, die Josef-Frank- und die Freiheitsstraße, Haltverbote gelten von 8 bis 20 Uhr.",
+          "einordnung": "Wer regelmäßig durch diese Ortschaften pendelt, sollte Umleitungen einplanen — besonders die langlaufende Offenbachstraße in Kriegsdorf bis 2027 betrifft den Alltagsverkehr nachhaltig.",
           "quellen": [
-            {"name": "Polizei Rhein-Sieg-Kreis (Presseportal)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6349470"}
+            {"name": "Stadt Troisdorf – Verkehrsmeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/aktuelle-verkehrsmeldungen-fuer-troisdorf/"},
+            {"name": "Stadt Troisdorf – Pressemeldungen September", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/"}
           ]
         },
         {
-          "titel": "TLG-Läufer Michael Irrgang läuft Weltrekord über 1.133 km",
-          "aufmacher": "Der über 60-jährige Troisdorfer Ausdauerläufer stellt einen neuen Weltrekord im 10-Tageslauf auf.",
-          "fakten": "In 240 Laufstunden legte Michael Irrgang 1.133 Kilometer zurück – neuer Weltrekord in seiner Altersklasse und Platz 2 der deutschen ewigen Bestenliste. Trotz Schmerzen an Füßen und Sprunggelenken lief er die historische 1.000-km-Marke nach achteinhalb Tagen.",
-          "einordnung": "Ein sportlicher Höhepunkt für Troisdorf – regionaler Stolz, der zeigt, dass die Stadt auch jenseits von Kriminalität positiv in den Meldungen steht.",
+          "titel": "Kreispolizei Rhein-Sieg: 31 neue Beamtinnen und Beamte im Nachersatz",
+          "aufmacher": "Am 1. September nahm die Kreispolizeibehörde 31 neue Kolleginnen und Kollegen im Kreishaus offiziell in Empfang.",
+          "fakten": "25 von ihnen schlossen ihr dreijähriges duales Studium an der HSPV NRW ab und starten in ihre erste polizeiliche Verwendung; sechs erfahrene Kräfte wechselten aus anderen Behörden in den Rhein-Sieg-Kreis. Landrat Sebastian Schuster begrüßte den Jahrgang im Rahmen des jährlichen Nachersatzes, der ausgeschiedene Kolleginnen und Kollegen ersetzt.",
+          "einordnung": "Für die Region bedeutet der Zuwachs kurz- bis mittelfristig stabilere Präsenz vor Ort — relevant für die Sicherheitslage um Troisdorf.",
           "quellen": [
-            {"name": "Troisdorf City / TLG 1966", "url": "https://www.troisdorf.city/Unternehmen-Geschaefte-mehr/Troisdorfer-Leichtathletik-Gemeinschaft-1966-e.-V/New-articleTLG-Laeufer-Irrgang-schafft-Weltrekord"}
+            {"name": "Polizei Rhein-Sieg-Kreis (Presseportal)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6343665"},
+            {"name": "Polizei Rhein-Sieg-Kreis (Übersicht)", "url": "https://www.presseportal.de/blaulicht/nr/65853"}
           ]
         }
       ]
@@ -52,13 +54,24 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "EZB-Zinserhöhung treibt Bauzinsen über 4 Prozent",
-          "aufmacher": "Die Europäische Zentralbank erhöhte den Leitzins am 10. September um 0,25 Punkte – Bauzinsen für 10 Jahre liegen nun bei rund 4,0 bis 4,2 Prozent.",
-          "fakten": "Der Einlagesatz stieg von 2,25 auf 2,50 Prozent. Interhyp nennt für 10-jährige Darlehen 4,2 Prozent, Dr. Klein einen effektiven Topzins um 4,04 Prozent (3,94 fester Sollzins). Steigende Staatsanleiherenditen und hohe Energiepreise ziehen die Baufi-Zinsen nach oben.",
-          "einordnung": "Für Deine MFH- und Cashflow-Kalkulation zählt: Höhere Finanzierungskosten drücken die Marge, machen aber Objekte mit starker Mietrendite attraktiver. Bei Kauf zögern lohnt sich laut Dr. Klein nicht – Warten wird teurer. Refinanzierung frühzeitig anbahnen, nicht auf schnelle Zinssenkung hoffen.",
+          "titel": "Bauzinsen steigen wieder – 10-Jahres-Darlehen bei rund 4 Prozent",
+          "aufmacher": "Der Trend der letzten Monate dreht: Bauzinsen für zehnjährige Darlehen liegen Anfang September 2026 bei knapp 4 Prozent und damit spürbar höher als im Vorjahr.",
+          "fakten": "Interhyp nennt für 10-jährige Darlehen rund 4,2 % (Stand 10.09.2026); Baufi24 listet für 10 Jahre 3,88 % (Soll) bis 3,98 % (Effektiv); Dr. Klein vergleicht im September 2026 gegen 0,90 % Effektivzins von September 2016. Die Monatsrate für eine 100.000-Euro-Finanzierung stieg laut Dr. Klein-Beispiel von 845,83 € (2016) auf 1.921,43 € (2026).",
+          "einordnung": "Für Deine Cashflow-Rechnung bei MFH-Käufen heißt das: Die Zinslast pro Objekt wächst, der maximal realisierbare Hebel (nur Kaufnebenkosten aus Eigenkapital, Rest Bankdarlehen) wird teurer — umso wichtiger, Zinsbindungen und Anschlussfinanzierung aktiv zu verhandeln.",
           "quellen": [
-            {"name": "Interhyp Bauzinsen", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Dr. Klein Bauzinsen", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"}
+            {"name": "Interhyp – Bauzinsen", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Dr. Klein – Bauzinsen", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"},
+            {"name": "Baufi24 – Bauzinsen", "url": "https://www.baufi24.de/bauzinsen/"}
+          ]
+        },
+        {
+          "titel": "Mietpreis Troisdorf: Kaltmiete klettert auf 10,41 €/m²",
+          "aufmacher": "Die durchschnittliche Kaltmiete in Troisdorf steigt im zweiten Quartal 2026 leicht an und notiert bei rund 10,41 € pro Quadratmeter.",
+          "fakten": "Laut ImmoScout24 liegt die Kaltmiete im Q2 2026 bei durchschnittlich 10,41 €/m², nach 10,38 €/m² im ersten Quartal. Die Spanne über die Stadtteile reicht laut Immoportal etwa von 9,89 €/m² bis 14,83 €/m²; der neue qualifizierte Mietspiegel der Stadt gilt seit 1. Oktober 2025.",
+          "einordnung": "Steigende Mieten stärken den Mieteinnahmen-Heber auf der Cashflow-Seite — bei gleichzeitig höheren Bauzinsen der entscheidende Puffer für die Tragfähigkeit Deiner MFH-Objekte.",
+          "quellen": [
+            {"name": "ImmoScout24 – Mietspiegel Troisdorf", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"},
+            {"name": "Stadt Troisdorf – Mietspiegel", "url": "https://www.troisdorf.de/de/rathaus-service/buergerservice/wohnungsamt/mietspiegel/"}
           ]
         }
       ]
@@ -67,35 +80,29 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hebt Leitzins auf 2,50 Prozent – zweiter Schritt 2026",
-          "aufmacher": "Am 10. September erhöhte die EZB den Einlagenzins um 0,25 Prozentpunkte auf 2,50 Prozent – getrieben von Energiepreisen infolge des Iran-Kriegs.",
-          "fakten": "Es war die zweite Zinserhöhung in diesem Jahr (zuvor Mitte Juni). Die Inflation im Euroraum kletterte laut Eurostat-Flash auf 3,3 Prozent im August (Juli: 2,9 Prozent) und liegt damit deutlich über dem EZB-Ziel von 2 Prozent. Volkswirte sind uneinig, ob die EZB es bei 2,50 Prozent belässt oder im Dezember weiter anzieht.",
-          "einordnung": "Höhere Leitzinsen stützen Tagesgeld- und Anleiherenditen, belasten aber Kredit- und Aktienmärkte. Für Dein ETF-Portfolio: weiter oben auf den Geldmarktzins schauen, der nun wieder attraktiver wird.",
+          "titel": "EZB hebt Leitzins um 25 Basispunkte an – Einlagesatz jetzt 2,50 %",
+          "aufmacher": "Die Europäische Zentralbank hat am 10. September 2026 ihre Leitzinsen erneut um 25 Basispunkte erhöht und reagiert damit auf anhaltenden Inflationsdruck.",
+          "fakten": "Der Einlagesatz stieg von 2,25 % auf 2,50 %, Hauptrefinanzierungs- und Spitzenrefinanzierungssatz auf 2,40 % bzw. 2,65 %. Die EZB rechnet laut Staff-Projektionen mit einer durchschnittlichen Inflation von 3,0 % in 2026, 2,3 % in 2027 und 2,0 % in 2028 bei einem BIP-Wachstum von 0,8 % (2026). Die nächste Ratssitzung findet am 29. Oktober 2026 statt.",
+          "einordnung": "Höhere Zinsen dämpfen Konjunktur und Immobiliennachfrage, verteuern aber auch Finanzierungskosten — für Deine MFH-Pläne eine direkte Zinsentscheidung, die Du bei der Konditionenverhandlung im Hinterkopf behalten solltest.",
           "quellen": [
-            {"name": "LBBW Research", "url": "https://www.lbbw.de/artikel/maerkte-verstehen/ezb-zinsentscheid-leitzins-prognosen_ait4bfmrfe_d.html"},
-            {"name": "Eurostat (EC)", "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-01092026-ap"}
-          ]
-        },
-        {
-          "titel": "Inflation im Euroraum springt auf 3,3 Prozent",
-          "aufmacher": "Die Teuerung im August 2026 steigt deutlich auf 3,3 Prozent – vor allem Energie treibt die Preise.",
-          "fakten": "Laut Eurostat-Flash-Schätzung kletterte die jährliche Inflation im Euroraum von 2,9 Prozent (Juli) auf 3,3 Prozent (August). Energiepreise stiegen im Jahresvergleich um mehr als 14 Prozent. Kerninflation ohne Energie und Nahrung: rund 2,4 Prozent (Deutschland).",
-          "einordnung": "Steigende Inflation und höhere Zinsen engen den Spielraum für Fremdfinanzierung weiter ein – ein Faktor, der Deine MFH-Kalkulation über die Zinsseite direkt betrifft.",
-          "quellen": [
-            {"name": "Eurostat (EC)", "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-01092026-ap"}
+            {"name": "EZB – Monetary policy decisions 11.06.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.en.html"},
+            {"name": "LBBW Research – EZB-Zinsentscheid September 2026", "url": "https://www.lbbw.de/artikel/maerkte-verstehen/ezb-zinsentscheid-leitzins-prognosen_ait4bfmrfe_d.html"}
           ]
         }
       ]
     },
     {
-      "titel": "IT / Server",
+      "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Alle Systeme aktuell – keine Updates verfügbar",
-          "aufmacher": "Der Update-Scan für Hermes, Home Assistant, Docker, das System und die Synology-NAS fand kein ausstehendes Update.",
-          "fakten": "Alle eigenen Systeme sind nach aktuellem Stand auf dem neuesten Stand – kein Handlungsbedarf (Stand: 11.09.2026).",
-          "einordnung": "Ein ruhiger Tag in der Infrastruktur – nichts zu tun, alles stabil.",
-          "quellen": []
+          "titel": "🤖 Hermes Agent: Update verfügbar – 37 Commits hinter origin/main",
+          "aufmacher": "Für den lokalen Hermes Agent liegt ein Update an: installiert ist v0.21.2 (Stand 11.09.2026), die Installation ist 37 Commits hinter der aktuellen main.",
+          "fakten": "Das aktuelle Release v0.21.2 („The state.db Patch Release“) brachte Bugfixes: ein nackter display:-Key crasht Gateways nicht mehr, ein Websocket-Send blockiert nicht mehr spätere Events, und bei bots_require_mention verlangen Telegram-Bots konsequent die @-Erwähnung. Die 37 Commits darüber hinaus umfassen u.a. einen geführten Erststart (Guided first launch) und Connector-Karten im Desktop sowie Multiplex-Fixes für Cron/Kanban-Pfade. Update ausführen mit: hermes update.",
+          "einordnung": "Das Update stabilisiert die laufenden Bot- und Gateway-Pfade dieser Umgebung und baut den Desktop-Erststart um — vor dem Update kurz prüfen, ob der lokale Cron und das Briefing-Setup davon profitieren.",
+          "quellen": [
+            {"name": "Hermes Agent Releases (GitHub)", "url": "https://github.com/NousResearch/hermes-agent/releases"},
+            {"name": "Hermes Agent Dokumentation", "url": "https://hermes-agent.nousresearch.com/docs/"}
+          ]
         }
       ]
     }
