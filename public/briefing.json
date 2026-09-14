@@ -1,14 +1,14 @@
 {
-  "datum": "Sonntag, 13.09.2026",
+  "datum": "Montag, 14.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "18°C · Regen 100% · UV 1",
-          "aufmacher": "Bedeckter, nasser Sonntag in Troisdorf.",
-          "fakten": "Bei maximal 18,8°C (Tiefst 16,9°C) ist es ganztägig bedeckt mit durchgehender Regenwahrscheinlichkeit von 100%. Der UV-Index bleibt mit 1,1 sehr niedrig.",
-          "einordnung": "Regenwetter — guter Tag, um drinnen zu bleiben.",
+          "titel": "21.8°C max · Regen 34% · UV 4.4",
+          "aufmacher": "Bedeckt, kühl und unbeständig — aktuell 17.6°C, tagsüber max. 21.8°C, min. 17.6°C.",
+          "fakten": "Regenwahrscheinlichkeit heute bei 34%, UV-Index 4.4 (moderat).",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -17,34 +17,34 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Mittwoch, 16.09.2026 10:00: Quixx-Meeting",
+          "titel": "16.09.2026 10:00: Quixx-Meeting",
           "aufmacher": "Quixx-Meeting am Mittwoch um 10:00 Uhr.",
-          "fakten": "Nächster anstehender Kalendereintrag ist das Quixx-Meeting am Mittwoch, 16. September um 10:00 Uhr.",
-          "einordnung": "Planung für die Quixx24-Woche.",
+          "fakten": "",
+          "einordnung": "",
           "quellen": []
         }
       ]
     },
     {
-      "titel": "Regional / Überregional",
+      "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Einbrecher stehlen Pakete aus Lieferwagen",
-          "aufmacher": "In Troisdorf ist ein geparkter Lieferwagen aufgebrochen worden.",
-          "fakten": "Zwischen Montagabend (07.09.), 21:00 Uhr, und Dienstagmorgen (08.09.), 08:00 Uhr, wurde in Troisdorf ein Lieferwagen aufgebrochen und Pakete entwendet. Die Polizei Rhein-Sieg-Kreis hat Ermittlungen aufgenommen und sucht Zeugen.",
-          "einordnung": "Serienartige Paket- und Fahrzeugdiebstähle sind im Kreis ein wiederkehrendes Thema — für Mikes Logistik-/Fahrzeugthemen (Quixx24) ist das Meldeverhalten der Polizei relevant.",
+          "titel": "Sommerleseclub 2026 endet mit Rekord: 566 Leserinnen und Leser in Troisdorf",
+          "aufmacher": "Die Stadtbibliothek Troisdorf meldet für den Sommerleseclub 2026 einen Teilnahmerekord: 566 Personen haben mitgemacht — so viele wie nie zuvor.",
+          "fakten": "Gegenüber den Vorjahren stieg die Zahl der Teilnehmerinnen und Teilnehmer deutlich. Mitgemacht haben Kinder, Jugendliche und Erwachsene, die in den Ferien Bücher lasen, hörten und kreative Aufgaben lösten.",
+          "einordnung": "Ein Beleg dafür, dass Troisdorfs Stadtbibliothek und ihre Angebote gut angenommen werden — für den Standort und die Lebensqualität der Stadt ein positives Zeichen.",
           "quellen": [
-            { "name": "Polizei NRW Rhein-Sieg-Kreis", "url": "https://www.facebook.com/polizei.nrw.su" },
-            { "name": "Presseportal Blaulicht Troisdorf", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf" }
+            {"name": "Stadt Troisdorf – Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/sommerleseclub-2026-endet-mit-neuem-teilnahmerekord/"},
+            {"name": "Stadt Troisdorf – Übersicht Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"}
           ]
         },
         {
-          "titel": "„Troisdorf vereint“: Stadtfest mit Bibliothek und Bühnenprogramm",
-          "aufmacher": "Am Sonntag lädt die Stadt Troisdorf wieder zum Gemeinschaftsfest „Troisdorf vereint“.",
-          "fakten": "Am Sonntag, 6. September, öffnete die Stadtbibliothek im Rahmen des Festes von 13 Uhr an und beteiligte sich am Programm. Die Stadt richtet die Veranstaltung als Zeichen der Verbundenheit der Stadtgesellschaft aus.",
-          "einordnung": "Regionales Stadtleben — kein direkter Projektbezug, aber Teil des lokalen Kalenders.",
+          "titel": "Polizei-Razzia in Siegburg: 41-Jähriger soll mit Drogen gehandelt haben",
+          "aufmacher": "Ermittler haben in Siegburg einen mutmaßlichen Drogenhändler festgenommen und dabei rund 700 Gramm Marihuana, 600 Gramm Amphetamin und 30 Gramm Kokain sichergestellt.",
+          "fakten": "Die Durchsuchung fand am 9. September in der Wohnung des 41-Jährigen statt. Zuvor waren beim Kontrollieren zweier Besucher geringe Mengen Kokain gefunden worden. Die Polizei sucht außerdem nach den Eigentümern sichergestellter Gegenstände wie Briefmarkenalben, Uhren und Schmuck, deren Herkunft ungeklärt ist.",
+          "einordnung": "Für die Region Rhein-Sieg-Kreis ein deutliches Signal der Polizeiarbeit gegen Drogenkriminalität — auch im Umfeld Troisdorfs ein relevantes Thema.",
           "quellen": [
-            { "name": "Stadt Troisdorf – Pressemeldungen 2026", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026" }
+            {"name": "Presseportal – Kreispolizeibehörde Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6350119"}
           ]
         }
       ]
@@ -53,14 +53,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen weiter über der 4-Prozent-Marke",
-          "aufmacher": "Die Bauzinsen für 10-jährige Darlehen bleiben trotz EZB-Signalen über der 4%-Marke.",
-          "fakten": "Der effektive Jahreszins für ein 10-jähriges Darlehen liegt laut Dr. Klein bei rund 4,04% (fester Sollzins 3,94%), bei Interhyp bei 4,2%. Steigende Renditen langfristiger Staatsanleihen halten die Bauzinsen oben; das Interhyp-Panel rechnet kurzfristig mit Seitwärtsbewegung bis leichtem Anstieg (50/50), Banken wie Commerzbank sehen langfristig sogar wieder fallende Zinsen.",
-          "einordnung": "Für Mikes Cashflow-Modell (max. Fremdkapital, Refi nach Erwerb) bleiben die Zinsen ein Kostenfaktor: Bei ~4% effektiv lohnt sich die Suche nach günstigeren Anschlusskonditionen und mehrere Bankenvergleiche weiterhin.",
+          "titel": "Bauzinsen steigen: 10-Jahres-Darlehen wieder über 4 Prozent",
+          "aufmacher": "Die Bauzinsen ziehen wieder an: Für zehnjährige Darlehen liegt der Topzins aktuell bei rund 4 Prozent, für längere Laufzeiten teils deutlich darüber.",
+          "fakten": "Nach Baufi24 lag der Topzins für 10-jährige Darlehen Ende August/Anfang September bei 3,88 % Sollzins (4,21 % effektiv bei 5 Jahren, 4,19 % bei 15 Jahren). Finanztip und Interhyp bestätigen eine Bewegung über der 4-Prozent-Marke — gestützt durch gestiegene Renditen von Bundesanleihen.",
+          "einordnung": "Für Mikes Finanzierungsstrategie (max. Hebel, nur Kaufnebenkosten aus eigenem Kapital) sind höhere Bauzinsen ein Faktor: Die Monatsbelastung steigt, was beim Verhandeln der Konditionen und bei der Refinanzierungsplanung berücksichtigt werden sollte.",
           "quellen": [
-            { "name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen" },
-            { "name": "Dr. Klein – Bauzinsen 2026", "url": "https://www.drklein.de/aktuelle-bauzinsen.html" },
-            { "name": "Baufi24 – Bauzinsen 2026", "url": "https://www.baufi24.de/bauzinsen" }
+            {"name": "Baufi24 – Bauzinsen 2026", "url": "https://www.baufi24.de/bauzinsen/"},
+            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"}
           ]
         }
       ]
@@ -69,27 +68,26 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hebt Leitzins an, Inflation klettert auf 3,3%",
-          "aufmacher": "Die EZB hat die Zinsen erneut angehoben, während die Inflation im Euroraum wieder über 3% gestiegen ist.",
-          "fakten": "Die EZB hat am 10. September die Leitzinsen erhöht — der Einlagenzins steigt auf 2,50%, es ist die zweite Anhebung 2026 nach dem Juni-Schritt. Der Einlagenzins (Hauptindikator) liegt damit bei 2,50%. Die Inflation im Euroraum beschleunigte sich im August auf 3,3% (Juli: 2,9%), getrieben fast ausschließlich von gestiegenen Energiepreisen; die Kerninflation fiel dagegen leicht auf 2,4%. Wirtschaftswachstum bleibt mit rund 1% schwach.",
-          "einordnung": "Höhere Zinsen belasten Kreditzinsen (und damit MFH-Finanzierung), die Kerninflation unter 2,5% bremst weitere aggressive Schritte — die Märkte erwarten bis 2027 wieder fallende Zinsen. Für Tagesgeld-/ETF-Strategien bleibt Anleihe-Rendite attraktiv.",
+          "titel": "EZB hebt Zinsen an: Einlagesatz steigt auf 2,50 Prozent",
+          "aufmacher": "Die EZB hat am 10. September ihre drei Leitzinsen um jeweils 25 Basispunkte angehoben — der Einlagesatz steigt auf 2,50 Prozent.",
+          "fakten": "Der neue Einlagesatz gilt ab 16. September 2026. Die EZB begründet den Schritt mit anhaltendem Inflationsdruck durch den Nahost-Konflikt; die Gesamtinflation soll 2026 bei 3,0 % liegen. Damit setzt sich die erstmals seit Jahren begonnene Zinswende fort.",
+          "einordnung": "Für Mike: Höhere EZB-Zinsen bedeuten tendenziell weiter steigende Bauzinsen und damit eine Verteuerung von Neufinanzierungen; gleichzeitig steigen die Zinserträge auf frei verfügbaren Liquiditätsanteilen.",
           "quellen": [
-            { "name": "Reuters – Eurozone Inflation/ECB", "url": "https://www.reuters.com/business/euro-zone-inflation-rises-above-3-cementing-ecb-rate-hike-bets-2026-09-01" },
-            { "name": "Tagesschau – EZB-Zinsen", "url": "https://www.tagesschau.de/ezb-zinsen-114.html" }
+            {"name": "EZB – Geldpolitische Beschlüsse", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"}
           ]
         }
       ]
     },
     {
-      "titel": "IT / Server",
+      "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent 0.21.2 verfügbar (Patch-Release „state.db“)",
-          "aufmacher": "Für Hermes Agent liegt ein Update auf 0.21.2 vor — ein reines Stabilitäts-Patch.",
-          "fakten": "Das Update 0.21.2 (v2026.9.11) behebt Bugfixes rund um den state.db: Kein gestoppter periodischer Callback blockiert mehr die Leasing-Erneuerung, lokale Inferenz-Memory-Grenzen führen zu Backoff statt History-Kompression, und der Oberflächenwechsel Desktop↔TUI reißt den Prompt-Cache nicht mehr neu auf. Der Scan meldet „Update verfügbar (commits behind)“.",
-          "einordnung": "Empfohlen — beseitigt Stabilitätsprobleme bei langen Sitzungen und lokaler Inferenz. Installieren bei nächster Gelegenheit.",
+          "titel": "Hermes Agent: Update auf 0.21.2 verfügbar",
+          "aufmacher": "Für Hermes Agent liegt ein Update auf Version 0.21.2 vor.",
+          "fakten": "Das Update bringt Verbesserungen für den Betrieb der eigenen Agenten-Umgebung, schließt Fehler und erweitert die Stabilität beim Ausführen von Cron-Jobs und Sub-Agenten.",
+          "einordnung": "Das Update ist empfohlen, lässt sich aber jederzeit nachgeziehen. Ein sofortiger Umstieg ist nicht erforderlich.",
           "quellen": [
-            { "name": "Hermes Agent – Releases (GitHub)", "url": "https://github.com/NousResearch/hermes-agent/releases" }
+            {"name": "Hermes Agent – Releases (GitHub)", "url": "https://github.com/NousResearch/hermes-agent/releases"}
           ]
         }
       ]
