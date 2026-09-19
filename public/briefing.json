@@ -1,13 +1,13 @@
 {
-  "datum": "Freitag, 18.09.2026",
+  "datum": "Samstag, 19.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "14–21°C · Regen 86% · UV 4,4",
-          "aufmacher": "⛅ Leicht bewölkt mit hoher Regenwahrscheinlichkeit — der Tag startet mit 13,9°C, die Höchstwerte erreichen rund 20,5°C.",
-          "fakten": "Der UV-Index liegt bei 4,35 (moderat). Bei 86 % Regenwahrscheinlichkeit ist ein Schirm heute eher Pflicht denn Kür.",
+          "titel": "16–21°C · Regen 4% · UV 3,9",
+          "aufmacher": "☁️ Bedeckt, aber weitgehend trocken — aktuell 15,9°C, die Höchstwerte erreichen rund 21°C, nachts kühlt es auf 14,5°C ab.",
+          "fakten": "Die Regenwahrscheinlichkeit liegt nur bei 4 %, der UV-Index bei 3,85 (moderat). Ein trockener, ruhiger Samstag.",
           "einordnung": "",
           "quellen": []
         }
@@ -17,8 +17,15 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "21.09.2026 14:25: Termin (Therapiezentrum Snoek GmbH)",
-          "aufmacher": "Montag, 21.09.: Therapie-Termin um 14:25 Uhr (Therapiezentrum Snoek, Manuelle Therapie/Sporttherapie/Osteopathie).",
+          "titel": "Montag 21.09. 12:10: Therapie (Therapiezentrum Snoek)",
+          "aufmacher": "Montag, 21.09., um 12:10 Uhr Therapie-Termin beim Therapiezentrum Snoek (Manuelle Therapie, Sporttherapie, Osteopathie).",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "Montag 21.09. 15:30: Termin",
+          "aufmacher": "Montag, 21.09., um 15:30 Uhr weiterer Termin im Kalender.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -29,26 +36,26 @@
       "titel": "🏘️ Regional / Überregional",
       "artikel": [
         {
-          "titel": "Betrunkener Radfahrer sorgt in Troisdorf-Spich für Polizeieinsatz",
-          "aufmacher": "Ein 65-jähriger Mann aus Niederkassel fuhr am Dienstagabend in Troisdorf-Spich betrunken durch die Gegend — zwei Beinahe-Kollisionen und ein aggressiver Auftritt gegenüber Helfern und Polizei waren die Folge.",
-          "fakten": "Der Mann hatte laut Atemalkoholtest rund 1,8 Promille. Er stürzte in einen Grünstreifen und zog sich leichte Verletzungen zu; gegen ihn laufen nun Strafanzeigen u. a. wegen Straßenverkehrsgefährdung, Körperverletzung, Beleidigung und Widerstands gegen Vollstreckungsbeamte.",
-          "einordnung": "Der Einsatz in Spich zeigt, wie Alkohol im Straßenverkehr auch abseits des Autos zur Gefahr wird — ein konkretes Beispiel der lokalen Sicherheitslage direkt vor der Haustür.",
+          "titel": "Geheime SpaceX-Rakete zieht nachts über Troisdorf hinweg",
+          "aufmacher": "In der Nacht haben Spezialkameras am Wettergarten Troisdorf und am Wetterpark Weißer Stein gegen vier Uhr eine leuchtende Spur am Nachthimmel aufgezeichnet — nach ersten Einordnungen eine geheime SpaceX-Rakete.",
+          "fakten": "Beobachtet wurde die Lichtspur rund um 4 Uhr früh. Offiziell als Raketenstart bestätigt ist nach aktuellem Stand nichts; die Einschätzung als SpaceX-Flug basiert auf den Aufzeichnungen der Wetterexperten.",
+          "einordnung": "Ein kurioser Himmelsblick direkt über dem Kreisgebiet — ein seltenes, weil mitten in der Nacht gesichtetes Schauspiel.",
           "quellen": [
             {
-              "name": "Polizei Rhein-Sieg-Kreis / Presseportal",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6353168"
+              "name": "Radio Bonn / Rhein-Sieg",
+              "url": "https://www.radiobonn.de/artikel/geheime-spacex-rakete-am-himmel-ueber-dem-rbrs-land-2758367"
             }
           ]
         },
         {
-          "titel": "Troisdorfer Orgeltage werden in Sieglar fortgesetzt",
-          "aufmacher": "Nach dem Auftakt gastieren die Troisdorfer Orgeltage am Sonntag, 27. September, um 17 Uhr in der Kirche St. Johannes in Sieglar.",
-          "fakten": "Der Konzertchor Bonn präsentiert Duruflés „Requiem“ und Bachs „Jesu, meine Freude“ an der Meindorfer Straße 5. Parallel meldet die Stadtbibliothek beim Sommer Lese Club 2026 einen Teilnehmerrekord von 563 Teilnehmerinnen und Teilnehmern.",
-          "einordnung": "Veranstaltungen wie die Orgeltage und der Lese-Club halten Troisdorf kulturell lebendig — abseits des eigenen Fokus auf Immobilien ein Blick auf die Angebote vor Ort.",
+          "titel": "Bonn: Nordbrücke hat für den Verkehrsminister oberste Priorität",
+          "aufmacher": "Bundesverkehrsminister Steffen Bilger hat sich die Baustelle der neuen Bonner Nordbrücke angeschaut und dem Projekt das Prädikat läuft wie am Schnürchen verliehen — es sei das Projekt mit oberster Priorität.",
+          "fakten": "Von den rund 660 Metern der Vorlandbrücke seien bereits über 350 abgebrochen, so die Autobahn GmbH. Der Neubau ersetzt die baufällige A565-Rheinquerung nahe Bonn-Nord, die für den Pendlerverkehr in die Region zentral ist.",
+          "einordnung": "Für die Region bleibt die Nordbrücke ein wichtiger Verkehrsengpass-Faktor — relevant für Pendler, aber auch für Handwerker- und Lieferlogistik rund um Bonn/Troisdorf.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/troisdorfer-orgeltage-werden-in-sieglar-fortgesetzt/"
+              "name": "Radio Bonn / Rhein-Sieg",
+              "url": "https://www.radiobonn.de/artikel/verkehrsminister-in-bonn-nordbruecke-hat-oberste-prioritaet-2758439"
             }
           ]
         }
@@ -58,15 +65,11 @@
       "titel": "🏗️ Immobilien",
       "artikel": [
         {
-          "titel": "EZB-Zinserhöhung stützt Bauzinsen nahe der 4-Prozent-Marke",
-          "aufmacher": "Die Europäische Zentralbank hat den Einlagenzins am 10. September um 0,25 Prozentpunkte auf 2,50 Prozent angehoben — die zweite Zinserhöhung in diesem Jahr.",
-          "fakten": "Als Grund nennt die EZB den Inflationsdruck durch die gestiegenen Energiepreise im Zuge des Iran-Kriegs; die Inflationsrate im Euroraum lag im August bei 3,3 Prozent. Bauzinsen für 10-jährige Darlehen liegen aktuell bei rund 4,2 Prozent (Interhyp, Stand 10.09.), der effektive Topzins bei Dr. Klein bei 3,97 Prozent. Experten erwarten eine Stabilisierung zwischen 3,6 und 3,8 Prozent, bis die höheren Kapitalmarktrenditen voll eingepreist sind.",
-          "einordnung": "Für deine MFH-Strategie relevant: Das höhere Zinsniveau dürfte länger anhalten. Wer Refinanzierungen früh anstößt, statt auf sinkende Zinsen zu warten, sichert bessere Konditionen und hält den Cashflow stabil.",
+          "titel": "Bauzinsen stabil knapp unter der 4-Prozent-Marke",
+          "aufmacher": "Bauzinsen für 10-jährige Darlehen bleiben trotz der jüngsten EZB-Zinserhöhung nahe 4 % — Experten rechnen kurzfristig mit Seitwärtsbewegung statt weiterem Sprung.",
+          "fakten": "Interhyp nennt für 10-jährige Darlehen aktuell rund 4,2 % (Stand 10.09.), der effektive Topzins bei Dr. Klein liegt zwischen 3,93 % und 4,48 % mit einer kurzfristig erwarteten Seitwärtsbewegung im Korridor 3,6 bis 3,8 %. Grund für den Anstieg sind die höheren Renditen von Staatsanleihen, angetrieben von Iran-Krieg, EZB-Zinserhöhung und hohen Energiepreisen.",
+          "einordnung": "Für deine MFH-Finanzierung: Das Niveau bleibt vorerst hoch. Wer jetzt eine Anschluss- oder Teilrefinanzierung über mehrere Banken ausschreibt statt auf fallende Zinsen zu warten, hält den Cashflow stabil — ganz nach deiner Maxime, Refinanzierungen früh anzustoßen.",
           "quellen": [
-            {
-              "name": "Haufe / EZB-Zinsentscheid",
-              "url": "https://www.haufe.de/immobilien/wirtschaft-politik/immobilienkredit-zinsanstieg-nach-ezb-entscheidung_84342_429476.html"
-            },
             {
               "name": "Interhyp Bauzinsen",
               "url": "https://www.interhyp.de/zinsen/"
@@ -83,22 +86,18 @@
       "titel": "💰 Finanzen",
       "artikel": [
         {
-          "titel": "EZB hebt Leitzins auf 2,50 % — Inflation bleibt länger über dem Ziel",
-          "aufmacher": "Die EZB hat den Leitzins (Einlagensatz) am 10. September auf 2,50 Prozent angehoben, weil die Inflation durch steigende Energiepreise deutlich über dem 2-Prozent-Ziel liegt.",
-          "fakten": "Die Teuerungsrate im Euroraum lag im August bei 3,3 Prozent, die Kerninflation (ohne Energie und Lebensmittel) bei 2,4 Prozent. Die EZB korrigierte ihre Wachstumsprognose für 2026 auf 0,9 Prozent nach oben und hob die Inflationserwartungen für die Folgejahre an. Volkswirte warnen, dass allein der Energie-„Angebotsschock“ nicht per Zinspolitik zu kurieren sei, und hoffen auf ein Ende der Straffung.",
-          "einordnung": "Für deinen Dispo (11,99 %) und laufende Kredite heißt das: Das Zinsumfeld bleibt vorerst hoch. Sparseitig profitieren Tages- und Festgeld von den höheren Einlagenzinsen.",
+          "titel": "EZB hebt Leitzins auf 2,50 % — Inflation bleibt über dem Ziel",
+          "aufmacher": "Die EZB hat die Leitzinsen am 10. September um 0,25 Prozentpunkte angehoben (Einlagensatz auf 2,50 %), weil die Inflation durch die Energiepreise deutlich über dem 2-Prozent-Ziel bleiben dürfte.",
+          "fakten": "Die Inflationsrate im Euroraum lag im August laut Eurostat bei 3,3 % (nach 2,9 % im Juli), getrieben fast ausschließlich von höheren Energie- und Rohölpreisen. Die EZB rechnet in ihrer neuen Projektion für 2026 mit durchschnittlich 3,0 % Inflation und revidiert das Wirtschaftswachstum auf 0,9 % nach oben.",
+          "einordnung": "Für deinen Dispo (11,99 %) und laufende Kredite heißt das: Das Zinsumfeld bleibt erstmal hoch. Auf der Sparseite profitieren Tages- und Festgeld weiter von den gestiegenen Einlagenzinsen.",
           "quellen": [
             {
-              "name": "Haufe / EZB-Zinsentscheid",
-              "url": "https://www.haufe.de/immobilien/wirtschaft-politik/immobilienkredit-zinsanstieg-nach-ezb-entscheidung_84342_429476.html"
+              "name": "EZB — Geldpolitische Beschlüsse",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
             },
             {
-              "name": "Morningstar / EZB-Zinserhöhung",
-              "url": "https://global.morningstar.com/de/wirtschaft/ezb-erhht-die-zinsen-und-hebt-inflations-und-wachstumsprognosen-an"
-            },
-            {
-              "name": "JustTrade / EZB",
-              "url": "https://www.justtrade.com/news/ezb-reagiert-auf-inflation-und-erhoeht-den-leitzins"
+              "name": "Reuters — Eurozone Inflation",
+              "url": "https://www.reuters.com/business/euro-zone-inflation-rises-above-3-cementing-ecb-rate-hike-bets-2026-09-01/"
             }
           ]
         }
@@ -108,11 +107,20 @@
       "titel": "🤖 IT / Server",
       "artikel": [
         {
-          "titel": "Update-Scan: Alle Systeme aktuell",
-          "aufmacher": "Der tägliche Update-Scan meldet keinerlei verfügbare Updates — Hermes Agent, Home Assistant, Docker-Container, apt-Pakete und das NAS laufen auf dem aktuellen Stand.",
-          "fakten": "Es gibt aktuell nichts zu installieren oder zu prüfen, keine veralteten Container oder gestoppten Dienste.",
-          "einordnung": "Kurz gemeldet, wie du es magst: nichts zu tun, keine Maßnahme nötig.",
-          "quellen": []
+          "titel": "Paperless-ngx 3.1.3 → 3.2.0: Schnellere Suche und sauberes Parsen",
+          "aufmacher": "Für Paperless-ngx ist ein Update auf 3.2.0 verfügbar — es bringt vor allem die neue Tantivy-Suchmaschine, die die alte Whoosh-Suche ablöst.",
+          "fakten": "Die Version 3.2.0 ersetzt den Whoosh-Index durch Tantivy für schnellere und bessere Volltextsuche, ergänzt ein Parser-Plugin-Framework für Dokumente und vereinfacht das Management von Share-Links. Dazu kommen zahlreiche Bugfixes rund um E-Mail-Workflows und Massenbearbeitung.",
+          "einordnung": "Für den täglichen Posteingang (OCR, Sortierung nach Absender, ZUGFeRD-Belege): Die schnellere Suche macht sich beim Durchsuchen des Archivs bemerkbar. Update-Installation bleibt wie immer ruhig angehen lassen.",
+          "quellen": [
+            {
+              "name": "Paperless-ngx Changelog",
+              "url": "https://docs.paperless-ngx.com/changelog/"
+            },
+            {
+              "name": "Paperless-ngx Releases (GitHub)",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
+            }
+          ]
         }
       ]
     }
