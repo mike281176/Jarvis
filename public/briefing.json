@@ -1,13 +1,13 @@
 {
-  "datum": "Samstag, 19.09.2026",
+  "datum": "Sonntag, 20.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "16–21°C · Regen 4% · UV 3,9",
-          "aufmacher": "☁️ Bedeckt, aber weitgehend trocken — aktuell 15,9°C, die Höchstwerte erreichen rund 21°C, nachts kühlt es auf 14,5°C ab.",
-          "fakten": "Die Regenwahrscheinlichkeit liegt nur bei 4 %, der UV-Index bei 3,85 (moderat). Ein trockener, ruhiger Samstag.",
+          "titel": "13–19°C · Regen 100% · UV 1,9",
+          "aufmacher": "☁️ Dicht bewölkt und zeitweise regnerisch — am Morgen um die 13°C, am Nachmittag maximal rund 19°C.",
+          "fakten": "Regenwahrscheinlichkeit heute bei 100 %, der UV-Index bleibt mit 1,9 niedrig. Insgesamt ein eher grauer, wechselhafter Sonntag.",
           "einordnung": "",
           "quellen": []
         }
@@ -29,6 +29,13 @@
           "fakten": "",
           "einordnung": "",
           "quellen": []
+        },
+        {
+          "titel": "Mittwoch 23.09. 10:00: Quixx-Meeting",
+          "aufmacher": "Mittwoch, 23.09., um 10:00 Uhr Quixx-Meeting.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     },
@@ -36,26 +43,34 @@
       "titel": "🏘️ Regional / Überregional",
       "artikel": [
         {
-          "titel": "Geheime SpaceX-Rakete zieht nachts über Troisdorf hinweg",
-          "aufmacher": "In der Nacht haben Spezialkameras am Wettergarten Troisdorf und am Wetterpark Weißer Stein gegen vier Uhr eine leuchtende Spur am Nachthimmel aufgezeichnet — nach ersten Einordnungen eine geheime SpaceX-Rakete.",
-          "fakten": "Beobachtet wurde die Lichtspur rund um 4 Uhr früh. Offiziell als Raketenstart bestätigt ist nach aktuellem Stand nichts; die Einschätzung als SpaceX-Flug basiert auf den Aufzeichnungen der Wetterexperten.",
-          "einordnung": "Ein kurioser Himmelsblick direkt über dem Kreisgebiet — ein seltenes, weil mitten in der Nacht gesichtetes Schauspiel.",
+          "titel": "Troisdorf: A59-Anschlussstelle wegen Fahrbahnsanierung gesperrt",
+          "aufmacher": "Die Anschlussstelle Troisdorf der A59 in Richtung Bonn ist seit Freitagabend (18.09., 20 Uhr) bis Montagfrüh (21.09., 6 Uhr) wegen Sanierung gesperrt — Umleitungen sind ausgeschildert.",
+          "fakten": "Neben der A59-Nadelöhre listet die Stadt weitere Sperrungen: Die Bessemerstraße (Friedrich-Wilhelms-Hütte) ist bis 25.09. wegen Schachtabdeckungs-Reparatur voll gesperrt, ebenso „Am Seerosenteich\" (21.–25.09.). In Müllekoven bleibt „Am Scheibelsberg 2–12\" bis 2.10. gesperrt; der Krähenweg folgt ab 21.09. Zusätzlich sperrt Spich am 19.09. mehrere Straßen für das Radrennen „Rund in Spich\".",
+          "einordnung": "A59-Anschlussstelle und die Innenstadt-Umleitungen betreffen Berufspendler Richtung Bonn direkt — am Montagmorgen mit längerer Fahrtzeit rechnen.",
           "quellen": [
             {
-              "name": "Radio Bonn / Rhein-Sieg",
-              "url": "https://www.radiobonn.de/artikel/geheime-spacex-rakete-am-himmel-ueber-dem-rbrs-land-2758367"
+              "name": "Treffpunkt Troisdorf — Aktuelle Verkehrsmeldungen",
+              "url": "https://www.treffpunkt-troisdorf.de/aktuelle-verkehrsmeldungen-7/"
+            },
+            {
+              "name": "Stadt Troisdorf — Pressemeldungen",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"
             }
           ]
         },
         {
-          "titel": "Bonn: Nordbrücke hat für den Verkehrsminister oberste Priorität",
-          "aufmacher": "Bundesverkehrsminister Steffen Bilger hat sich die Baustelle der neuen Bonner Nordbrücke angeschaut und dem Projekt das Prädikat läuft wie am Schnürchen verliehen — es sei das Projekt mit oberster Priorität.",
-          "fakten": "Von den rund 660 Metern der Vorlandbrücke seien bereits über 350 abgebrochen, so die Autobahn GmbH. Der Neubau ersetzt die baufällige A565-Rheinquerung nahe Bonn-Nord, die für den Pendlerverkehr in die Region zentral ist.",
-          "einordnung": "Für die Region bleibt die Nordbrücke ein wichtiger Verkehrsengpass-Faktor — relevant für Pendler, aber auch für Handwerker- und Lieferlogistik rund um Bonn/Troisdorf.",
+          "titel": "Troisdorf-Spich: Betrunkener Radfahrer gefährdet Verkehr — mehrere Anzeigen",
+          "aufmacher": "Ein 65-jähriger Mann hat am Dienstagabend in Spich unter deutlichem Alkoholeinfluss (1,8 Promille) mehrfach fast Unfälle verursacht und wurde nach Widerstand festgenommen.",
+          "fakten": "Gegen 21:15 Uhr fuhr er ohne auf den Verkehr zu achten auf Geh- und Radweg sowie Fahrbahn, wobei ihm zwei Personen nur knapp auswichen. Beim Versuch, ihn zu stoppen, beleidigte und schlug er Helfer, bedrohte sie mit Tierabwehrspray und leistete bei der Blutprobenentnahme Widerstand. Es drohen Anzeigen wegen Gefährdung des Straßenverkehrs, Körperverletzung, Bedrohung und Widerstands.",
+          "einordnung": "Ein kurioser nächtlicher Polizeieinsatz im Kreisgebiet — zeigt die anhaltende Belastung der Beamten durch Alkohol im Straßenverkehr.",
           "quellen": [
             {
-              "name": "Radio Bonn / Rhein-Sieg",
-              "url": "https://www.radiobonn.de/artikel/verkehrsminister-in-bonn-nordbruecke-hat-oberste-prioritaet-2758439"
+              "name": "Treffpunkt Troisdorf — Polizeimeldung",
+              "url": "https://www.treffpunkt-troisdorf.de/betrunkener-radfahrer/"
+            },
+            {
+              "name": "Stadt Troisdorf — Pressemeldungen",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"
             }
           ]
         }
@@ -65,18 +80,18 @@
       "titel": "🏗️ Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen stabil knapp unter der 4-Prozent-Marke",
-          "aufmacher": "Bauzinsen für 10-jährige Darlehen bleiben trotz der jüngsten EZB-Zinserhöhung nahe 4 % — Experten rechnen kurzfristig mit Seitwärtsbewegung statt weiterem Sprung.",
-          "fakten": "Interhyp nennt für 10-jährige Darlehen aktuell rund 4,2 % (Stand 10.09.), der effektive Topzins bei Dr. Klein liegt zwischen 3,93 % und 4,48 % mit einer kurzfristig erwarteten Seitwärtsbewegung im Korridor 3,6 bis 3,8 %. Grund für den Anstieg sind die höheren Renditen von Staatsanleihen, angetrieben von Iran-Krieg, EZB-Zinserhöhung und hohen Energiepreisen.",
-          "einordnung": "Für deine MFH-Finanzierung: Das Niveau bleibt vorerst hoch. Wer jetzt eine Anschluss- oder Teilrefinanzierung über mehrere Banken ausschreibt statt auf fallende Zinsen zu warten, hält den Cashflow stabil — ganz nach deiner Maxime, Refinanzierungen früh anzustoßen.",
+          "titel": "Bauzinsen steigen nach EZB-Entscheid weiter — 10 Jahre um 4,4 %",
+          "aufmacher": "Die Bauzinsen ziehen nach der EZB-Zinserhöhung erneut an: Der Top-Sollzins für 10-jährige Zinsbindung liegt aktuell bei rund 4,4 %, einzelne Anbieter wie die Allianz verlangen teils deutlich mehr.",
+          "fakten": "Baufi24 beziffert den Top-Sollzins (20.09.) für 10 Jahre auf 4,38 % effektiv 4,19 %; der Zinskorridor liegt bei 3,8–4,3 %. Die Allianz erhöhte ihren effektiven Jahreszins Mitte September auf 5,13 % (vorher 4,97 %). Als Treiber nennt der Markt die steigende Rendite der zehnjährigen Bundesanleihe (rund 3,31 %, 15-Jahres-Hoch) sowie die EZB-Entscheidung.",
+          "einordnung": "Für die MFH-Finanzierung bleibt das Niveau hoch — deine Maxime zählt: Anschluss- und Teilrefinanzierungen über mehrere Banken parallel ausschreiben statt auf fallende Zinsen zu warten, hält den Cashflow stabil.",
           "quellen": [
             {
-              "name": "Interhyp Bauzinsen",
-              "url": "https://www.interhyp.de/zinsen/"
+              "name": "Baufi24 — Aktuelle Bauzinsen",
+              "url": "https://www.baufi24.de/bauzinsen/"
             },
             {
-              "name": "Dr. Klein Zinsprognose",
-              "url": "https://www.drklein.de/zinsentwicklung-prognose.html"
+              "name": "Berliner Morgenpost — Kredit-Zinsen aktuell",
+              "url": "https://www.morgenpost.de/ratgeber-wissen/finanzen/article406511094/kredit-zinsen-aktuell-bauzinsen-zinsbindung-0704.html"
             }
           ]
         }
@@ -87,17 +102,17 @@
       "artikel": [
         {
           "titel": "EZB hebt Leitzins auf 2,50 % — Inflation bleibt über dem Ziel",
-          "aufmacher": "Die EZB hat die Leitzinsen am 10. September um 0,25 Prozentpunkte angehoben (Einlagensatz auf 2,50 %), weil die Inflation durch die Energiepreise deutlich über dem 2-Prozent-Ziel bleiben dürfte.",
-          "fakten": "Die Inflationsrate im Euroraum lag im August laut Eurostat bei 3,3 % (nach 2,9 % im Juli), getrieben fast ausschließlich von höheren Energie- und Rohölpreisen. Die EZB rechnet in ihrer neuen Projektion für 2026 mit durchschnittlich 3,0 % Inflation und revidiert das Wirtschaftswachstum auf 0,9 % nach oben.",
-          "einordnung": "Für deinen Dispo (11,99 %) und laufende Kredite heißt das: Das Zinsumfeld bleibt erstmal hoch. Auf der Sparseite profitieren Tages- und Festgeld weiter von den gestiegenen Einlagenzinsen.",
+          "aufmacher": "Die EZB hat die Leitzinsen am 10. September um 0,25 Prozentpunkte angehoben; der Einlagensatz steigt auf 2,50 %, weil die Inflation im Zuge des Nahost-Konflikts länger über dem Zielwert bleiben dürfte.",
+          "fakten": "Ab 16.09. gelten: Einlagensatz 2,50 %, Hauptrefinanzierungssatz 2,65 %, Spitzenrefinanzierung 2,90 %. Die EZB projiziert für 2026 eine Gesamtinflation von 3,0 % (2027: 2,5 %) und ein Wirtschaftswachstum von 0,9 % — beides als Aufwärtsrevision.",
+          "einordnung": "Für deinen Dispo (11,99 %) und laufende Kredite bleibt das Zinsumfeld hoch; auf der Sparseite profitieren Tages- und Festgeld von den gestiegenen Einlagenzinsen weiter.",
           "quellen": [
             {
               "name": "EZB — Geldpolitische Beschlüsse",
               "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
             },
             {
-              "name": "Reuters — Eurozone Inflation",
-              "url": "https://www.reuters.com/business/euro-zone-inflation-rises-above-3-cementing-ecb-rate-hike-bets-2026-09-01/"
+              "name": "Raisin — EZB-Leitzins Stand 09/2026",
+              "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"
             }
           ]
         }
@@ -107,20 +122,11 @@
       "titel": "🤖 IT / Server",
       "artikel": [
         {
-          "titel": "Paperless-ngx 3.1.3 → 3.2.0: Schnellere Suche und sauberes Parsen",
-          "aufmacher": "Für Paperless-ngx ist ein Update auf 3.2.0 verfügbar — es bringt vor allem die neue Tantivy-Suchmaschine, die die alte Whoosh-Suche ablöst.",
-          "fakten": "Die Version 3.2.0 ersetzt den Whoosh-Index durch Tantivy für schnellere und bessere Volltextsuche, ergänzt ein Parser-Plugin-Framework für Dokumente und vereinfacht das Management von Share-Links. Dazu kommen zahlreiche Bugfixes rund um E-Mail-Workflows und Massenbearbeitung.",
-          "einordnung": "Für den täglichen Posteingang (OCR, Sortierung nach Absender, ZUGFeRD-Belege): Die schnellere Suche macht sich beim Durchsuchen des Archivs bemerkbar. Update-Installation bleibt wie immer ruhig angehen lassen.",
-          "quellen": [
-            {
-              "name": "Paperless-ngx Changelog",
-              "url": "https://docs.paperless-ngx.com/changelog/"
-            },
-            {
-              "name": "Paperless-ngx Releases (GitHub)",
-              "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
-            }
-          ]
+          "titel": "Alle Systeme aktuell — keine Updates verfügbar",
+          "aufmacher": "Der Update-Scan aller relevanten Systeme (Hermes, Home Assistant, Docker-Stack) läuft fehlerfrei durch — aktuell steht kein Update an.",
+          "fakten": "Hermes Agent läuft bereits auf v0.21.3 (2026.9.14); Home Assistant und die Container im Docker-Stack sind gleichfalls auf dem neuesten Stand.",
+          "einordnung": "Nichts zu tun — Systeme sind sauber und aktuell.",
+          "quellen": []
         }
       ]
     }
