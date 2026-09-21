@@ -1,14 +1,14 @@
 {
-  "datum": "Sonntag, 20.09.2026",
+  "datum": "Montag, 21.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "13–19°C · Regen 100% · UV 1,9",
-          "aufmacher": "☁️ Dicht bewölkt und zeitweise regnerisch — am Morgen um die 13°C, am Nachmittag maximal rund 19°C.",
-          "fakten": "Regenwahrscheinlichkeit heute bei 100 %, der UV-Index bleibt mit 1,9 niedrig. Insgesamt ein eher grauer, wechselhafter Sonntag.",
-          "einordnung": "",
+          "titel": "11°C · Regen 0% · UV 4",
+          "aufmacher": "Bedeckter Himmel, aber trocken in Troisdorf — die Sonne bleibt heute meist hinter Wolken, Höchstwerte um 20°C.",
+          "fakten": "Aktuell 11,2°C, Tagesminimum 10,8°C, Maximum 19,6°C. Regenwahrscheinlichkeit 0%, UV-Index 4,2.",
+          "einordnung": "Trocken und mild — guter Tag für Außenarbeiten an der Immobilie; UV trotz Wolken bei 4 nicht unterschätzen.",
           "quellen": []
         }
       ]
@@ -17,22 +17,22 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Montag 21.09. 12:10: Therapie (Therapiezentrum Snoek)",
-          "aufmacher": "Montag, 21.09., um 12:10 Uhr Therapie-Termin beim Therapiezentrum Snoek (Manuelle Therapie, Sporttherapie, Osteopathie).",
+          "titel": "21.09.2026 12:10: Termin (Therapiezentrum Snoek GmbH, Manuelle Therapie Sporttherapie, Osteopathie)",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "Montag 21.09. 15:30: Termin",
-          "aufmacher": "Montag, 21.09., um 15:30 Uhr weiterer Termin im Kalender.",
+          "titel": "21.09.2026 15:30: Termin",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "Mittwoch 23.09. 10:00: Quixx-Meeting",
-          "aufmacher": "Mittwoch, 23.09., um 10:00 Uhr Quixx-Meeting.",
+          "titel": "23.09.2026 10:00: Quixx-Meeting",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -40,93 +40,91 @@
       ]
     },
     {
-      "titel": "🏘️ Regional / Überregional",
+      "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: A59-Anschlussstelle wegen Fahrbahnsanierung gesperrt",
-          "aufmacher": "Die Anschlussstelle Troisdorf der A59 in Richtung Bonn ist seit Freitagabend (18.09., 20 Uhr) bis Montagfrüh (21.09., 6 Uhr) wegen Sanierung gesperrt — Umleitungen sind ausgeschildert.",
-          "fakten": "Neben der A59-Nadelöhre listet die Stadt weitere Sperrungen: Die Bessemerstraße (Friedrich-Wilhelms-Hütte) ist bis 25.09. wegen Schachtabdeckungs-Reparatur voll gesperrt, ebenso „Am Seerosenteich\" (21.–25.09.). In Müllekoven bleibt „Am Scheibelsberg 2–12\" bis 2.10. gesperrt; der Krähenweg folgt ab 21.09. Zusätzlich sperrt Spich am 19.09. mehrere Straßen für das Radrennen „Rund in Spich\".",
-          "einordnung": "A59-Anschlussstelle und die Innenstadt-Umleitungen betreffen Berufspendler Richtung Bonn direkt — am Montagmorgen mit längerer Fahrtzeit rechnen.",
+          "titel": "Trickbetrüger erbeuten Goldschmuck in Troisdorfer Wohnung",
+          "aufmacher": "Falsche Handwerker haben Anfang September in einer Troisdorfer Wohnung in Spich Goldschmuck gestohlen.",
+          "fakten": "Am 4. September klingelten zwei unbekannte Männer gegen 15:00 Uhr an einer Erdgeschosswohnung eines Mehrparteienhauses in der Straße \"Im Kreuzfeld\" im Ortsteil Spich und gaben sich als Handwerker aus. Die Bewohner, die Besuch erwarteten, öffneten die Tür; die Täter betraten die Räume und entwendeten Schmuck.",
+          "einordnung": "Die Polizei warnt vor solchen Handwerker-Maschen — gerade in Mehrfamilienhäusern der Region sind Bewohner immer wieder Ziel von Trickbetrug.",
           "quellen": [
-            {
-              "name": "Treffpunkt Troisdorf — Aktuelle Verkehrsmeldungen",
-              "url": "https://www.treffpunkt-troisdorf.de/aktuelle-verkehrsmeldungen-7/"
-            },
-            {
-              "name": "Stadt Troisdorf — Pressemeldungen",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"
-            }
+            {"name": "Presseportal Polizei Rhein-Sieg-Kreis (Troisdorf)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6346921"},
+            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/nr/65853"}
+          ]
+        }
+      ]
+    },
+    {
+      "titel": "Immobilien",
+      "artikel": [
+        {
+          "titel": "Bauzinsen bleiben über der 4%-Marke — Nahost-Krise treibt Finanzierungskosten",
+          "aufmacher": "Die Bauzinsen in Deutschland liegen im September 2026 weiterhin über vier Prozent — getrieben von der Nahost-Krise und steigenden Kapitalmarktzinsen.",
+          "fakten": "Das beste 10-jährige Angebot liegt laut Dr. Klein bei 4,10% effektiv (Stand 20.09.). Interhyp nennt im September 4,2% für 10-jährige Darlehen, Baufi24 führt den Top-Sollzins mit 4,38% bei 10 Jahren Zinsbindung. Gegenüber dem Vormonat stiegen die Konditionen um rund 0,4 Prozentpunkte. Finanztip rechnet kurzfristig mit Stabilität oder leicht fallenden Zinsen.",
+          "einordnung": "Für Mikes MFH-Cashflow-Strategie: Höhere Zinsen drücken die anfängliche Tilgung und den anfänglichen Cashflow eines Neukredits — im aktuellen Umfeld lohnt Konditionssicherung eher als Zuwarten.",
+          "quellen": [
+            {"name": "Dr. Klein Bauzinsen", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"},
+            {"name": "Interhyp Bauzins-Entwicklung", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Finanztip Hypothekenzinsen", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
+          ]
+        }
+      ]
+    },
+    {
+      "titel": "Finanzen",
+      "artikel": [
+        {
+          "titel": "EZB hebt Leitzins auf 2,50% an — Inflation im Euroraum bleibt hoch",
+          "aufmacher": "Die Europäische Zentralbank hat am 10. September die drei Leitzinsen um je 25 Basispunkte angehoben.",
+          "fakten": "Mit Wirkung zum 16. September liegen Einlagefazilität, Hauptrefinanzierungsgeschäft und Spitzenrefinanzierungsfazilität bei 2,50%, 2,65% bzw. 2,90%. Die EZB sieht die Inflation über dem 2%-Ziel und erwartet 2026 durchschnittlich 3,0% Gesamtinflation im Euroraum. Das Wirtschaftswachstum wird für 2026 auf 0,9% geschätzt.",
+          "einordnung": "Höhere Leitzinsen stützen die Rendite auf Tagesgeld, verteuern aber gleichzeitig Kredite — für die Immobilienfinanzierung wirkt der EZB-Schritt indirekt (siehe Immobilien-Bereich).",
+          "quellen": [
+            {"name": "EZB Geldpolitische Beschlüsse", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"},
+            {"name": "Bundesbank HVPI August 2026", "url": "https://www.bundesbank.de/de/statistiken/konjunktur-und-preise/harmonisierter-verbraucherpreisindex/harmonisierter-verbraucherpreisindex-927952"}
           ]
         },
         {
-          "titel": "Troisdorf-Spich: Betrunkener Radfahrer gefährdet Verkehr — mehrere Anzeigen",
-          "aufmacher": "Ein 65-jähriger Mann hat am Dienstagabend in Spich unter deutlichem Alkoholeinfluss (1,8 Promille) mehrfach fast Unfälle verursacht und wurde nach Widerstand festgenommen.",
-          "fakten": "Gegen 21:15 Uhr fuhr er ohne auf den Verkehr zu achten auf Geh- und Radweg sowie Fahrbahn, wobei ihm zwei Personen nur knapp auswichen. Beim Versuch, ihn zu stoppen, beleidigte und schlug er Helfer, bedrohte sie mit Tierabwehrspray und leistete bei der Blutprobenentnahme Widerstand. Es drohen Anzeigen wegen Gefährdung des Straßenverkehrs, Körperverletzung, Bedrohung und Widerstands.",
-          "einordnung": "Ein kurioser nächtlicher Polizeieinsatz im Kreisgebiet — zeigt die anhaltende Belastung der Beamten durch Alkohol im Straßenverkehr.",
+          "titel": "Inflation in Deutschland steigt im August auf 2,9%",
+          "aufmacher": "Die deutsche Inflationsrate zog im August erneut an und liegt inzwischen bei 2,9 Prozent.",
+          "fakten": "Nach +2,8% im Juli stieg die Teuerung laut Destatis und Bundesbank im August auf +2,9%. Die Kerninflationsrate (ohne Energie und Nahrungsmittel) verharrte bei 2,6%. Treiber bleiben Energiepreise und die Folgen der Nahost-Krise.",
+          "einordnung": "Für Mikes Budget: Höhere Teuerung erhöht die monatlichen Ausgaben — die Kostenreserve sollte entsprechend eingeplant sein.",
           "quellen": [
-            {
-              "name": "Treffpunkt Troisdorf — Polizeimeldung",
-              "url": "https://www.treffpunkt-troisdorf.de/betrunkener-radfahrer/"
-            },
-            {
-              "name": "Stadt Troisdorf — Pressemeldungen",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"
-            }
+            {"name": "Destatis Verbraucherpreisindex", "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html"},
+            {"name": "Bundesbank HVPI August 2026", "url": "https://www.bundesbank.de/de/statistiken/konjunktur-und-preise/harmonisierter-verbraucherpreisindex/harmonisierter-verbraucherpreisindex-927952"}
+          ]
+        },
+        {
+          "titel": "DAX schließt schwächer bei 25.304 Punkten",
+          "aufmacher": "Der DAX beendete die vergangene Woche mit Verlusten — die Lage im Nahen Osten und steigende Erzeugerpreise belasteten.",
+          "fakten": "Zum Schluss am 18.09.2026 stand der deutsche Leitindex bei 25.304 Punkten, 1,6% unter dem Vortag und 1,0% unter dem Wochenstand. VW gehörte mit zwischenzeitlich -7% zu den größten Verlierern nach einer Prognosekappung. Halbleiterwerte wie Infineon legten dagegen zu.",
+          "einordnung": "Bei ETF-Sparplänen zählt für Langfristanleger nicht die Einzelwoche — der September bleibt historisch ein schwacher Börsenmonat; längerfristig sieht DWS weiterhin rund 10% DAX-Potenzial über 12 Monate.",
+          "quellen": [
+            {"name": "Tagesschau Marktbericht DAX", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-156.html"},
+            {"name": "boerse.de DAX-Historie", "url": "https://www.boerse.de/historische-kurse/Dax/DE0008469008"}
           ]
         }
       ]
     },
     {
-      "titel": "🏗️ Immobilien",
+      "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Bauzinsen steigen nach EZB-Entscheid weiter — 10 Jahre um 4,4 %",
-          "aufmacher": "Die Bauzinsen ziehen nach der EZB-Zinserhöhung erneut an: Der Top-Sollzins für 10-jährige Zinsbindung liegt aktuell bei rund 4,4 %, einzelne Anbieter wie die Allianz verlangen teils deutlich mehr.",
-          "fakten": "Baufi24 beziffert den Top-Sollzins (20.09.) für 10 Jahre auf 4,38 % effektiv 4,19 %; der Zinskorridor liegt bei 3,8–4,3 %. Die Allianz erhöhte ihren effektiven Jahreszins Mitte September auf 5,13 % (vorher 4,97 %). Als Treiber nennt der Markt die steigende Rendite der zehnjährigen Bundesanleihe (rund 3,31 %, 15-Jahres-Hoch) sowie die EZB-Entscheidung.",
-          "einordnung": "Für die MFH-Finanzierung bleibt das Niveau hoch — deine Maxime zählt: Anschluss- und Teilrefinanzierungen über mehrere Banken parallel ausschreiben statt auf fallende Zinsen zu warten, hält den Cashflow stabil.",
+          "titel": "🤖 Hermes Agent: Update auf 0.21.3 verfügbar",
+          "aufmacher": "Für Hermes Agent steht Version 0.21.3 (v2026.9.14) bereit — ein Patch-Release für Remote-Desktop- und Cloud-Nutzer.",
+          "fakten": "Der Patch behebt, dass entfernte Dashboard-Sitzungen bei Refresh-Bursts ablaufen und dass langlebige Prozesse doppelte state.db-Writer-Handles leaken. Update per 'hermes update'.",
+          "einordnung": "Stabilitätsrelevanz für den lokalen Betrieb — Empfehlung, das Update zeitnah einzuspielen.",
           "quellen": [
-            {
-              "name": "Baufi24 — Aktuelle Bauzinsen",
-              "url": "https://www.baufi24.de/bauzinsen/"
-            },
-            {
-              "name": "Berliner Morgenpost — Kredit-Zinsen aktuell",
-              "url": "https://www.morgenpost.de/ratgeber-wissen/finanzen/article406511094/kredit-zinsen-aktuell-bauzinsen-zinsbindung-0704.html"
-            }
+            {"name": "Hermes Agent Releases GitHub", "url": "https://github.com/NousResearch/hermes-agent/releases"}
           ]
-        }
-      ]
-    },
-    {
-      "titel": "💰 Finanzen",
-      "artikel": [
+        },
         {
-          "titel": "EZB hebt Leitzins auf 2,50 % — Inflation bleibt über dem Ziel",
-          "aufmacher": "Die EZB hat die Leitzinsen am 10. September um 0,25 Prozentpunkte angehoben; der Einlagensatz steigt auf 2,50 %, weil die Inflation im Zuge des Nahost-Konflikts länger über dem Zielwert bleiben dürfte.",
-          "fakten": "Ab 16.09. gelten: Einlagensatz 2,50 %, Hauptrefinanzierungssatz 2,65 %, Spitzenrefinanzierung 2,90 %. Die EZB projiziert für 2026 eine Gesamtinflation von 3,0 % (2027: 2,5 %) und ein Wirtschaftswachstum von 0,9 % — beides als Aufwärtsrevision.",
-          "einordnung": "Für deinen Dispo (11,99 %) und laufende Kredite bleibt das Zinsumfeld hoch; auf der Sparseite profitieren Tages- und Festgeld von den gestiegenen Einlagenzinsen weiter.",
+          "titel": "📦 paperless-ngx: 3.2.0 → 3.2.1 (Bugfix-Release)",
+          "aufmacher": "Für Paperless-ngx ist Version 3.2.1 erschienen — ein reines Bugfix-Release auf Basis von 3.2.0.",
+          "fakten": "Gefixt werden u.a. ein überholter Mail-Abruf-Lock, eine OCR-Verbesserung durch ocrmypdf 17.12 (Ligaturen-Textschicht) und der automatische Neuaufbau des Suchindex bei fehlenden Tantivy-Dateien.",
+          "einordnung": "Für den Paperless-Betrieb (korrespondentenbasierte Ablage) wichtig: stabilere OCR und Suche — Empfehlung, das Update einzuspielen.",
           "quellen": [
-            {
-              "name": "EZB — Geldpolitische Beschlüsse",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
-            },
-            {
-              "name": "Raisin — EZB-Leitzins Stand 09/2026",
-              "url": "https://www.raisin.com/de-de/glossar/ezb-leitzins/"
-            }
+            {"name": "Paperless-ngx Releases GitHub", "url": "https://github.com/paperless-ngx/paperless-ngx/releases"}
           ]
-        }
-      ]
-    },
-    {
-      "titel": "🤖 IT / Server",
-      "artikel": [
-        {
-          "titel": "Alle Systeme aktuell — keine Updates verfügbar",
-          "aufmacher": "Der Update-Scan aller relevanten Systeme (Hermes, Home Assistant, Docker-Stack) läuft fehlerfrei durch — aktuell steht kein Update an.",
-          "fakten": "Hermes Agent läuft bereits auf v0.21.3 (2026.9.14); Home Assistant und die Container im Docker-Stack sind gleichfalls auf dem neuesten Stand.",
-          "einordnung": "Nichts zu tun — Systeme sind sauber und aktuell.",
-          "quellen": []
         }
       ]
     }
