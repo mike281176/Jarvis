@@ -1,14 +1,14 @@
 {
-  "datum": "Montag, 21.09.2026",
+  "datum": "Dienstag, 22.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "11°C · Regen 0% · UV 4",
-          "aufmacher": "Bedeckter Himmel, aber trocken in Troisdorf — die Sonne bleibt heute meist hinter Wolken, Höchstwerte um 20°C.",
-          "fakten": "Aktuell 11,2°C, Tagesminimum 10,8°C, Maximum 19,6°C. Regenwahrscheinlichkeit 0%, UV-Index 4,2.",
-          "einordnung": "Trocken und mild — guter Tag für Außenarbeiten an der Immobilie; UV trotz Wolken bei 4 nicht unterschätzen.",
+          "titel": "12,5 °C · Regen 0 % · UV 4,3",
+          "aufmacher": "Bedeckt, trocken und mild in Troisdorf.",
+          "fakten": "Tageswerte zwischen minimal 11,3 °C und maximal 19,4 °C, aktuell 12,5 °C. Keine Regenwahrscheinlichkeit, UV-Index mittel (4,3).",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -17,22 +17,8 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "21.09.2026 12:10: Termin (Therapiezentrum Snoek GmbH, Manuelle Therapie Sporttherapie, Osteopathie)",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "21.09.2026 15:30: Termin",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
           "titel": "23.09.2026 10:00: Quixx-Meeting",
-          "aufmacher": "",
+          "aufmacher": "Morgen um 10:00 Uhr steht das Quixx-Meeting an.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -40,90 +26,129 @@
       ]
     },
     {
-      "titel": "Regional/Überregional",
+      "titel": "🏙️ Regional / Überregional",
       "artikel": [
         {
-          "titel": "Trickbetrüger erbeuten Goldschmuck in Troisdorfer Wohnung",
-          "aufmacher": "Falsche Handwerker haben Anfang September in einer Troisdorfer Wohnung in Spich Goldschmuck gestohlen.",
-          "fakten": "Am 4. September klingelten zwei unbekannte Männer gegen 15:00 Uhr an einer Erdgeschosswohnung eines Mehrparteienhauses in der Straße \"Im Kreuzfeld\" im Ortsteil Spich und gaben sich als Handwerker aus. Die Bewohner, die Besuch erwarteten, öffneten die Tür; die Täter betraten die Räume und entwendeten Schmuck.",
-          "einordnung": "Die Polizei warnt vor solchen Handwerker-Maschen — gerade in Mehrfamilienhäusern der Region sind Bewohner immer wieder Ziel von Trickbetrug.",
+          "titel": "Polizei warnt erneut vor falschen Polizeibeamten",
+          "aufmacher": "Falsche Polizeibeamte erbeuteten in Troisdorf von einer 90-Jährigen Bargeld und Schmuck im Wert von über 40.000 Euro.",
+          "fakten": "Am Freitag (18. September) rief ein angeblicher Polizist bei einer 90-jährigen Troisdorferin an, täuschte einen bevorstehenden Diebstahl vor und ließ ihre Wertgegenstände abholen. Der Gesamtschaden wird auf über 40.000 Euro geschätzt. Die Kripo Rhein-Sieg-Kreis ermittelt wegen Betrugs und rät, bei derartigen Anrufen sofort aufzulegen und selbst die 110 zu wählen.",
+          "einordnung": "Für Mike relevant: Erhöhte Vorsicht lohnt in der Region — die Masche mit falschen Polizisten ist derzeit aktiv. Wichtig für Angehörige älterer Menschen in Troisdorf.",
           "quellen": [
-            {"name": "Presseportal Polizei Rhein-Sieg-Kreis (Troisdorf)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6346921"},
-            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/nr/65853"}
+            {
+              "name": "Presseportal Polizei Rhein-Sieg-Kreis",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6355823"
+            }
+          ]
+        },
+        {
+          "titel": "Einbruch in Wohnung in Troisdorf-Sieglar",
+          "aufmacher": "Unbekannte brachen am Samstagabend in eine Erdgeschosswohnung an der Wilhelm-Busch-Straße in Troisdorf-Sieglar ein.",
+          "fakten": "Zwischen 17:20 und 21:50 Uhr (19. September) öffneten die Täter ein Gartentor und dann die Terrassentür. Ob etwas gestohlen wurde, ist noch unklar. Die Polizei bittet um Hinweise und erinnert daran, dass mit früher einsetzender Dunkelheit das Einbruchsrisiko steigt — kostenlose Beratung zum Einbruchschutz bietet die Wache Siegburg.",
+          "einordnung": "Relevanz für Mike als Vermieter: Mehrfamilienhäuser in Troisdorf sind Ziel von Einbrechern — technischer Einbruchschutz ist auch für Mietobjekte ein sinnvoller Hebel.",
+          "quellen": [
+            {
+              "name": "Presseportal Polizei Rhein-Sieg-Kreis",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6355868"
+            }
           ]
         }
       ]
     },
     {
-      "titel": "Immobilien",
+      "titel": "🏠 Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben über der 4%-Marke — Nahost-Krise treibt Finanzierungskosten",
-          "aufmacher": "Die Bauzinsen in Deutschland liegen im September 2026 weiterhin über vier Prozent — getrieben von der Nahost-Krise und steigenden Kapitalmarktzinsen.",
-          "fakten": "Das beste 10-jährige Angebot liegt laut Dr. Klein bei 4,10% effektiv (Stand 20.09.). Interhyp nennt im September 4,2% für 10-jährige Darlehen, Baufi24 führt den Top-Sollzins mit 4,38% bei 10 Jahren Zinsbindung. Gegenüber dem Vormonat stiegen die Konditionen um rund 0,4 Prozentpunkte. Finanztip rechnet kurzfristig mit Stabilität oder leicht fallenden Zinsen.",
-          "einordnung": "Für Mikes MFH-Cashflow-Strategie: Höhere Zinsen drücken die anfängliche Tilgung und den anfänglichen Cashflow eines Neukredits — im aktuellen Umfeld lohnt Konditionssicherung eher als Zuwarten.",
+          "titel": "Bauzinsen seit Mitte Juli deutlich gestiegen",
+          "aufmacher": "Baudarlehen kosten aktuell rund 4,4 bis 4,9 Prozent — nach einem Anstieg von etwa einem halben Prozentpunkt seit Mitte Juli.",
+          "fakten": "Laut Finanztip liegen die Zinsen für 10-jährige Zinsbindung aktuell bei etwa 4,4 bis 4,5 Prozent (60/80-Prozent-Belegung), für 20 Jahre bei etwa 4,9 Prozent. Das Interhyp-Panel erwartet für den kurzen Zeitraum teils Seitwärtsbewegung, teils weiter steigende Zinsen.",
+          "einordnung": "Direkter Bezug zu Mikes MFH-Strategie: Höhere Bauzinsen erhöhen die Finanzierungskosten und drücken den Cashflow bei Kauf mit Fremdkapital. Bei geplanter Refinanzierung lohnt der Zinsvergleich über mehrere Banken, um die besten Konditionen zu sichern.",
           "quellen": [
-            {"name": "Dr. Klein Bauzinsen", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"},
-            {"name": "Interhyp Bauzins-Entwicklung", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Finanztip Hypothekenzinsen", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
+            {
+              "name": "Finanztip Bauzinsen",
+              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen"
+            },
+            {
+              "name": "Interhyp Bauzinsentwicklung",
+              "url": "https://www.interhyp.de/zinsen"
+            }
+          ]
+        },
+        {
+          "titel": "Mietpreise in Deutschland weiter im Anstieg",
+          "aufmacher": "Die Mietpreise steigen seit Jahren nahezu ununterbrochen — der neue Mietenreport 2026 zeigt besondere Belastung bei Neuvermietungen.",
+          "fakten": "Laut Mieterbund-Mietenreport 2026 übersteigen die Mietquoten in Deutschland weiterhin deutlich die 50-Prozent-Marke (52,8 %); rund 13,2 % der Mieter mit Marktmiete geben mehr als 40 % ihres Einkommens fürs Wohnen aus. Regional liegen die Mietpreise teils bei über 12 Euro je Quadratmeter und mehr.",
+          "einordnung": "Für Mikes Cashflow-Strategie positiv: Steigende Mieten stützen die Mieteinnahmen und verbessern die Refinanzierbarkeit von MFH-Objekten — solange die Nachfrage nach bezahlbarem Wohnraum hoch bleibt.",
+          "quellen": [
+            {
+              "name": "Deutscher Mieterbund Mietenreport 2026",
+              "url": "https://mieterbund.de/app/uploads/2026/08/Mietenreport-2026.pdf"
+            },
+            {
+              "name": "Deutschlandfunk Mietkosten",
+              "url": "https://www.deutschlandfunk.de/steigende-wohnkosten-belasten-mehrheit-der-mieter-102.html"
+            }
           ]
         }
       ]
     },
     {
-      "titel": "Finanzen",
+      "titel": "💰 Finanzen",
       "artikel": [
         {
-          "titel": "EZB hebt Leitzins auf 2,50% an — Inflation im Euroraum bleibt hoch",
-          "aufmacher": "Die Europäische Zentralbank hat am 10. September die drei Leitzinsen um je 25 Basispunkte angehoben.",
-          "fakten": "Mit Wirkung zum 16. September liegen Einlagefazilität, Hauptrefinanzierungsgeschäft und Spitzenrefinanzierungsfazilität bei 2,50%, 2,65% bzw. 2,90%. Die EZB sieht die Inflation über dem 2%-Ziel und erwartet 2026 durchschnittlich 3,0% Gesamtinflation im Euroraum. Das Wirtschaftswachstum wird für 2026 auf 0,9% geschätzt.",
-          "einordnung": "Höhere Leitzinsen stützen die Rendite auf Tagesgeld, verteuern aber gleichzeitig Kredite — für die Immobilienfinanzierung wirkt der EZB-Schritt indirekt (siehe Immobilien-Bereich).",
+          "titel": "EZB hebt Leitzinsen erneut um 0,25 Prozentpunkte an",
+          "aufmacher": "Die Europäische Zentralbank hat die drei Leitzinsen am 10. September um je 25 Basispunkte angehoben — im Euroraum gilt nun ein höheres Zinsniveau.",
+          "fakten": "Mit Wirkung vom 16. September 2026 liegt der Einlagensatz bei 2,50 %, der Hauptrefinanzierungssatz bei 2,65 % und der Spitzenrefinanzierungssatz bei 2,90 %. Grund ist anhaltender Inflationsdruck, unter anderem durch den Konflikt im Nahen Osten. Die EZB erwartet für 2026 eine Gesamtinflation von rund 3,0 % und 2027 von 2,5 %.",
+          "einordnung": "Für Mike: Steigende Leitzinsen erhöhen tendenziell auch die Bau- und Dispozinsen. Angesichts des Dispos bei 11,99 % lohnt es sich, Kosten zu prüfen — und Festgeld/Tagesgeld wird attraktiver.",
           "quellen": [
-            {"name": "EZB Geldpolitische Beschlüsse", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"},
-            {"name": "Bundesbank HVPI August 2026", "url": "https://www.bundesbank.de/de/statistiken/konjunktur-und-preise/harmonisierter-verbraucherpreisindex/harmonisierter-verbraucherpreisindex-927952"}
+            {
+              "name": "EZB Geldpolitische Beschlüsse",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
+            },
+            {
+              "name": "Raisin EZB-Leitzins",
+              "url": "https://www.raisin.com/de-at/glossar/ezb-leitzins/zinsentscheid"
+            }
           ]
         },
         {
-          "titel": "Inflation in Deutschland steigt im August auf 2,9%",
-          "aufmacher": "Die deutsche Inflationsrate zog im August erneut an und liegt inzwischen bei 2,9 Prozent.",
-          "fakten": "Nach +2,8% im Juli stieg die Teuerung laut Destatis und Bundesbank im August auf +2,9%. Die Kerninflationsrate (ohne Energie und Nahrungsmittel) verharrte bei 2,6%. Treiber bleiben Energiepreise und die Folgen der Nahost-Krise.",
-          "einordnung": "Für Mikes Budget: Höhere Teuerung erhöht die monatlichen Ausgaben — die Kostenreserve sollte entsprechend eingeplant sein.",
+          "titel": "Inflation in Deutschland bei 2,9 Prozent",
+          "aufmacher": "Die Teuerung in Deutschland lag im August 2026 bei 2,9 Prozent — getrieben vor allem von deutlich höheren Energiepreisen.",
+          "fakten": "Laut Destatis stiegen die Verbraucherpreise im August um 2,9 % gegenüber dem Vorjahr (Energie +10,5 %). Die Kerninflation (ohne Energie und Nahrungsmittel) lag bei 2,4 %, Nettokaltmieten stiegen um 1,9 %. Gegenüber Juli ergab sich ein Plus von 0,2 %.",
+          "einordnung": "Relevanz: Eine Inflation über 2 % und steigende Wohnkosten sprechen weiter für den Absicherungscharakter realer Vermögenswerte wie Immobilien — ein Argument für Mikes MFH-Engagement.",
           "quellen": [
-            {"name": "Destatis Verbraucherpreisindex", "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html"},
-            {"name": "Bundesbank HVPI August 2026", "url": "https://www.bundesbank.de/de/statistiken/konjunktur-und-preise/harmonisierter-verbraucherpreisindex/harmonisierter-verbraucherpreisindex-927952"}
+            {
+              "name": "Destatis Inflation Aug 2026",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_320_611.html"
+            }
           ]
         },
         {
-          "titel": "DAX schließt schwächer bei 25.304 Punkten",
-          "aufmacher": "Der DAX beendete die vergangene Woche mit Verlusten — die Lage im Nahen Osten und steigende Erzeugerpreise belasteten.",
-          "fakten": "Zum Schluss am 18.09.2026 stand der deutsche Leitindex bei 25.304 Punkten, 1,6% unter dem Vortag und 1,0% unter dem Wochenstand. VW gehörte mit zwischenzeitlich -7% zu den größten Verlierern nach einer Prognosekappung. Halbleiterwerte wie Infineon legten dagegen zu.",
-          "einordnung": "Bei ETF-Sparplänen zählt für Langfristanleger nicht die Einzelwoche — der September bleibt historisch ein schwacher Börsenmonat; längerfristig sieht DWS weiterhin rund 10% DAX-Potenzial über 12 Monate.",
+          "titel": "DAX schließt am Verfallstag mit Verlusten",
+          "aufmacher": "Der deutsche Leitindex beendete die Börsenwoche am 18. September mit einem Minus von 1,6 Prozent.",
+          "fakten": "Der DAX schloss bei 25.304 Punkten (−1,6 % zum Vortag, Woche: −1,0 %). Belastend wirkten die Lage im Nahen Osten, steigende Erzeugerpreise und ein eingetrübter Ausblick bei Volkswagen. Halbleiterwerte wie Infineon legten dagegen rund drei Prozent zu.",
+          "einordnung": "Für Mike: Schwankungen sind normal auf dem Niveau. Wer langfristig in ETFs investiert, bleibt am besten diszipliniert — kurzfristige Rücksetzer sind bei der aktuellen geopolitischen Lage zu erwarten.",
           "quellen": [
-            {"name": "Tagesschau Marktbericht DAX", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-156.html"},
-            {"name": "boerse.de DAX-Historie", "url": "https://www.boerse.de/historische-kurse/Dax/DE0008469008"}
+            {
+              "name": "Tagesschau Marktbericht",
+              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-156.html"
+            }
           ]
         }
       ]
     },
     {
-      "titel": "IT/Server",
+      "titel": "🤖 IT / Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent: Update auf 0.21.3 verfügbar",
-          "aufmacher": "Für Hermes Agent steht Version 0.21.3 (v2026.9.14) bereit — ein Patch-Release für Remote-Desktop- und Cloud-Nutzer.",
-          "fakten": "Der Patch behebt, dass entfernte Dashboard-Sitzungen bei Refresh-Bursts ablaufen und dass langlebige Prozesse doppelte state.db-Writer-Handles leaken. Update per 'hermes update'.",
-          "einordnung": "Stabilitätsrelevanz für den lokalen Betrieb — Empfehlung, das Update zeitnah einzuspielen.",
+          "titel": "Paperless-ngx 3.2.0 → 3.2.1",
+          "aufmacher": "Für das DMS Paperless-ngx steht ein kleines Update bereit, das ausschließlich Bugfixes enthält.",
+          "fakten": "Version 3.2.1 behebt laut Changelog mehrere Fehler: eine stabilere Mail-Abrufkontrolle (überlappende Mail-Fetches werden verhindert), einen OCR-Fix in ocrmypdf 17.12, einen automatischen Neuaufbau des Suchindex, wenn Tantivy-Dateien fehlen, sowie einen Fix nur für flowerconfig.py.",
+          "einordnung": "Empfehlung: Update zeitnah einspielen — der Mail-Abruf-Fix und der Suchindex-Fix stabilisieren das tägliche Scannen und Archivieren.",
           "quellen": [
-            {"name": "Hermes Agent Releases GitHub", "url": "https://github.com/NousResearch/hermes-agent/releases"}
-          ]
-        },
-        {
-          "titel": "📦 paperless-ngx: 3.2.0 → 3.2.1 (Bugfix-Release)",
-          "aufmacher": "Für Paperless-ngx ist Version 3.2.1 erschienen — ein reines Bugfix-Release auf Basis von 3.2.0.",
-          "fakten": "Gefixt werden u.a. ein überholter Mail-Abruf-Lock, eine OCR-Verbesserung durch ocrmypdf 17.12 (Ligaturen-Textschicht) und der automatische Neuaufbau des Suchindex bei fehlenden Tantivy-Dateien.",
-          "einordnung": "Für den Paperless-Betrieb (korrespondentenbasierte Ablage) wichtig: stabilere OCR und Suche — Empfehlung, das Update einzuspielen.",
-          "quellen": [
-            {"name": "Paperless-ngx Releases GitHub", "url": "https://github.com/paperless-ngx/paperless-ngx/releases"}
+            {
+              "name": "Paperless-ngx Changelog",
+              "url": "https://docs.paperless-ngx.com/changelog/"
+            }
           ]
         }
       ]
