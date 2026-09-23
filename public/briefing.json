@@ -1,13 +1,13 @@
 {
-  "datum": "Dienstag, 22.09.2026",
+  "datum": "Mittwoch, 23.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "12,5 °C · Regen 0 % · UV 4,3",
-          "aufmacher": "Bedeckt, trocken und mild in Troisdorf.",
-          "fakten": "Tageswerte zwischen minimal 11,3 °C und maximal 19,4 °C, aktuell 12,5 °C. Keine Regenwahrscheinlichkeit, UV-Index mittel (4,3).",
+          "titel": "22,3°C · Regen 8% · UV 4,3",
+          "aufmacher": "Heiter bis klar, mild und trocken in Troisdorf.",
+          "fakten": "Tageswerte zwischen minimal 9,3 °C und maximal 22,3 °C, aktuell 9,3 °C. Regenwahrscheinlichkeit 8 %, UV-Index mittel (4,3).",
           "einordnung": "",
           "quellen": []
         }
@@ -18,7 +18,14 @@
       "artikel": [
         {
           "titel": "23.09.2026 10:00: Quixx-Meeting",
-          "aufmacher": "Morgen um 10:00 Uhr steht das Quixx-Meeting an.",
+          "aufmacher": "Heute um 10:00 Uhr steht das Quixx-Meeting an.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "27.09.2026: Geburtstag von Peter",
+          "aufmacher": "Am Sonntag, 27. September, ist Geburtstag von Peter.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -29,26 +36,26 @@
       "titel": "🏙️ Regional / Überregional",
       "artikel": [
         {
-          "titel": "Polizei warnt erneut vor falschen Polizeibeamten",
-          "aufmacher": "Falsche Polizeibeamte erbeuteten in Troisdorf von einer 90-Jährigen Bargeld und Schmuck im Wert von über 40.000 Euro.",
-          "fakten": "Am Freitag (18. September) rief ein angeblicher Polizist bei einer 90-jährigen Troisdorferin an, täuschte einen bevorstehenden Diebstahl vor und ließ ihre Wertgegenstände abholen. Der Gesamtschaden wird auf über 40.000 Euro geschätzt. Die Kripo Rhein-Sieg-Kreis ermittelt wegen Betrugs und rät, bei derartigen Anrufen sofort aufzulegen und selbst die 110 zu wählen.",
-          "einordnung": "Für Mike relevant: Erhöhte Vorsicht lohnt in der Region — die Masche mit falschen Polizisten ist derzeit aktiv. Wichtig für Angehörige älterer Menschen in Troisdorf.",
+          "titel": "Senior aus Troisdorf überweist 12.000 Euro an Unbekannte",
+          "aufmacher": "Ein 83-Jähriger aus Troisdorf hat 12.000 Euro an eine Unbekannte überwiesen — die Polizei ermittelt wegen Betrugs.",
+          "fakten": "Eine Frau meldete sich am Montag bei der Polizei und machte sich Sorgen um einen Bekannten; das Umfeld des 83-Jährigen vermutete, er sei Opfer einer Betrugsmasche geworden. Die Polizei nahm die Ermittlungen wegen des Verdachts des Betrugs auf.",
+          "einordnung": "Bereits die zweite große Betrugsgeschichte im Kreis binnen weniger Tage — erhöhte Vorsicht bei Anrufen/Überweisungsaufforderungen lohnt, gerade im Umfeld älterer Angehöriger.",
           "quellen": [
             {
               "name": "Presseportal Polizei Rhein-Sieg-Kreis",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6355823"
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6356739"
             }
           ]
         },
         {
-          "titel": "Einbruch in Wohnung in Troisdorf-Sieglar",
-          "aufmacher": "Unbekannte brachen am Samstagabend in eine Erdgeschosswohnung an der Wilhelm-Busch-Straße in Troisdorf-Sieglar ein.",
-          "fakten": "Zwischen 17:20 und 21:50 Uhr (19. September) öffneten die Täter ein Gartentor und dann die Terrassentür. Ob etwas gestohlen wurde, ist noch unklar. Die Polizei bittet um Hinweise und erinnert daran, dass mit früher einsetzender Dunkelheit das Einbruchsrisiko steigt — kostenlose Beratung zum Einbruchschutz bietet die Wache Siegburg.",
-          "einordnung": "Relevanz für Mike als Vermieter: Mehrfamilienhäuser in Troisdorf sind Ziel von Einbrechern — technischer Einbruchschutz ist auch für Mietobjekte ein sinnvoller Hebel.",
+          "titel": "Betrunkener Radfahrer sorgt in Troisdorf-Spich für Einsatz",
+          "aufmacher": "In der Nacht zu Dienstag hielt die Polizei einen unter Drogeneinfluss stehenden 18-Jährigen ohne Führerschein in Troisdorf an.",
+          "fakten": "Gegen 01:00 Uhr kontrollierten Beamte an der Luxemburger Straße einen BMW, dessen 18-jähriger Fahrer einräumte, keine gültige Fahrerlaubnis zu besitzen und Cannabis konsumiert zu haben. Zuvor hatte ein betrunkener 65-Jähriger in Spich einen Polizeieinsatz ausgelöst.",
+          "einordnung": "Verkehrskontrollen laufen im Kreis derzeit intensiv — vor allem Drogen- und Alkoholfahrten fallen zunehmend auf.",
           "quellen": [
             {
               "name": "Presseportal Polizei Rhein-Sieg-Kreis",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6355868"
+              "url": "https://www.presseportal.de/blaulicht/nr/65853"
             }
           ]
         }
@@ -58,34 +65,30 @@
       "titel": "🏠 Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen seit Mitte Juli deutlich gestiegen",
-          "aufmacher": "Baudarlehen kosten aktuell rund 4,4 bis 4,9 Prozent — nach einem Anstieg von etwa einem halben Prozentpunkt seit Mitte Juli.",
-          "fakten": "Laut Finanztip liegen die Zinsen für 10-jährige Zinsbindung aktuell bei etwa 4,4 bis 4,5 Prozent (60/80-Prozent-Belegung), für 20 Jahre bei etwa 4,9 Prozent. Das Interhyp-Panel erwartet für den kurzen Zeitraum teils Seitwärtsbewegung, teils weiter steigende Zinsen.",
-          "einordnung": "Direkter Bezug zu Mikes MFH-Strategie: Höhere Bauzinsen erhöhen die Finanzierungskosten und drücken den Cashflow bei Kauf mit Fremdkapital. Bei geplanter Refinanzierung lohnt der Zinsvergleich über mehrere Banken, um die besten Konditionen zu sichern.",
+          "titel": "Bauzinsen stabil über der Vier-Prozent-Marke",
+          "aufmacher": "Baudarlehen kosten aktuell zwischen 4,2 und 4,9 Prozent — nach einem Anstieg von rund einem halben Punkt seit Mitte Juli.",
+          "fakten": "Interhyp nennt 4,2 % für 10-jährige Darlehen (Stand 10.09.2026); Finanztip verortet die erste Septemberhälfte 2026 bei 4,4–4,9 % (je nach Beleihung und Zinsbindung). Das Interhyp-Expertenpanel rechnet kurzfristig mit steigenden bis seitwärts laufenden Zinsen. Ursache sind angezogenen Bund-Renditen und die Geopolitik im Nahen Osten.",
+          "einordnung": "Für Mikes MFH-Strategie: Höhere Zinsen erhöhen die Finanzierungskosten und drücken den Cashflow bei Fremdkapitaleinsatz. Refinanzierung über mehrere Banken lohnt, um Konditionen gegeneinander auszuspielen.",
           "quellen": [
             {
-              "name": "Finanztip Bauzinsen",
-              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen"
+              "name": "Interhyp Bauzinsen",
+              "url": "https://www.interhyp.de/zinsen/"
             },
             {
-              "name": "Interhyp Bauzinsentwicklung",
-              "url": "https://www.interhyp.de/zinsen"
+              "name": "Finanztip Bauzinsen",
+              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
             }
           ]
         },
         {
-          "titel": "Mietpreise in Deutschland weiter im Anstieg",
-          "aufmacher": "Die Mietpreise steigen seit Jahren nahezu ununterbrochen — der neue Mietenreport 2026 zeigt besondere Belastung bei Neuvermietungen.",
-          "fakten": "Laut Mieterbund-Mietenreport 2026 übersteigen die Mietquoten in Deutschland weiterhin deutlich die 50-Prozent-Marke (52,8 %); rund 13,2 % der Mieter mit Marktmiete geben mehr als 40 % ihres Einkommens fürs Wohnen aus. Regional liegen die Mietpreise teils bei über 12 Euro je Quadratmeter und mehr.",
-          "einordnung": "Für Mikes Cashflow-Strategie positiv: Steigende Mieten stützen die Mieteinnahmen und verbessern die Refinanzierbarkeit von MFH-Objekten — solange die Nachfrage nach bezahlbarem Wohnraum hoch bleibt.",
+          "titel": "Troisdorfer Mietpreise legen weiter zu",
+          "aufmacher": "Die Angebotsmieten in Troisdorf steigen — von 10,00 auf 10,41 Euro je Quadratmeter innerhalb eines Jahres (rund 4 %).",
+          "fakten": "Laut ImmoScout24 legte Troisdorf von Q2 2025 (10,00 €/m²) auf Q2 2026 (10,41 €/m²) zu, ein Plus von etwa 4,1 %. Andere Anbieter setzen den Durchschnitt für 2026 deutlich höher an (rund 11,9 €/m²) — die Marktlage schwankt je nach Datengrundlage und Ortsteil.",
+          "einordnung": "Steigende Mieteinnahmen stützen Mikes Cashflow und verbessern potenziell die Bewertung seines Bestands — gerade für MFH-Objekte ein positives Zeichen.",
           "quellen": [
             {
-              "name": "Deutscher Mieterbund Mietenreport 2026",
-              "url": "https://mieterbund.de/app/uploads/2026/08/Mietenreport-2026.pdf"
-            },
-            {
-              "name": "Deutschlandfunk Mietkosten",
-              "url": "https://www.deutschlandfunk.de/steigende-wohnkosten-belasten-mehrheit-der-mieter-102.html"
+              "name": "ImmoScout24 Mietspiegel Troisdorf",
+              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
             }
           ]
         }
@@ -95,42 +98,26 @@
       "titel": "💰 Finanzen",
       "artikel": [
         {
-          "titel": "EZB hebt Leitzinsen erneut um 0,25 Prozentpunkte an",
-          "aufmacher": "Die Europäische Zentralbank hat die drei Leitzinsen am 10. September um je 25 Basispunkte angehoben — im Euroraum gilt nun ein höheres Zinsniveau.",
-          "fakten": "Mit Wirkung vom 16. September 2026 liegt der Einlagensatz bei 2,50 %, der Hauptrefinanzierungssatz bei 2,65 % und der Spitzenrefinanzierungssatz bei 2,90 %. Grund ist anhaltender Inflationsdruck, unter anderem durch den Konflikt im Nahen Osten. Die EZB erwartet für 2026 eine Gesamtinflation von rund 3,0 % und 2027 von 2,5 %.",
-          "einordnung": "Für Mike: Steigende Leitzinsen erhöhen tendenziell auch die Bau- und Dispozinsen. Angesichts des Dispos bei 11,99 % lohnt es sich, Kosten zu prüfen — und Festgeld/Tagesgeld wird attraktiver.",
+          "titel": "EZB hebt Leitzinsen um 25 Basispunkte an",
+          "aufmacher": "Die Europäische Zentralbank hat ihre drei Leitzinsen am 10. September um jeweils 25 Basispunkte angehoben.",
+          "fakten": "Mit Wirkung vom 16. September gelten 2,50 % (Einlagenfazilität), 2,65 % (Hauptrefinanzierung) und 2,90 % (Spitzenrefinanzierung). Grund ist anhaltender Inflationsdruck durch den Nahost-Konflikt. Die EZB projiziert die Inflation im Schnitt auf 3,0 % (2026), 2,5 % (2027) und 2,1 % (2028).",
+          "einordnung": "Steigende Leitzinsen treffen variable Kredite und den Dispo (11,99 %) — gleichzeitig lohnt der Blick auf Tages-/Festgeld für freie Liquidität.",
           "quellen": [
             {
               "name": "EZB Geldpolitische Beschlüsse",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
-            },
-            {
-              "name": "Raisin EZB-Leitzins",
-              "url": "https://www.raisin.com/de-at/glossar/ezb-leitzins/zinsentscheid"
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"
             }
           ]
         },
         {
-          "titel": "Inflation in Deutschland bei 2,9 Prozent",
-          "aufmacher": "Die Teuerung in Deutschland lag im August 2026 bei 2,9 Prozent — getrieben vor allem von deutlich höheren Energiepreisen.",
-          "fakten": "Laut Destatis stiegen die Verbraucherpreise im August um 2,9 % gegenüber dem Vorjahr (Energie +10,5 %). Die Kerninflation (ohne Energie und Nahrungsmittel) lag bei 2,4 %, Nettokaltmieten stiegen um 1,9 %. Gegenüber Juli ergab sich ein Plus von 0,2 %.",
-          "einordnung": "Relevanz: Eine Inflation über 2 % und steigende Wohnkosten sprechen weiter für den Absicherungscharakter realer Vermögenswerte wie Immobilien — ein Argument für Mikes MFH-Engagement.",
+          "titel": "Eurozone-Inflation steigt auf 3,3 Prozent",
+          "aufmacher": "Die Teuerung im Euroraum kletterte im August auf 3,3 Prozent — deutlich über dem EZB-Ziel von 2 Prozent.",
+          "fakten": "Laut Eurostat-Flashschätzung stieg die Jahresinflation von 2,9 % (Juli) auf 3,3 % (August). Treiber ist Energie mit 14,3 % annualisiert; Deutschland liegt bei 2,9 %. Der EZB-Rat sieht die Teuerung „deutlich über dem Zielwert“ für längere Zeit.",
+          "einordnung": "Höhere Inflation schmälert die Realrendite großer Liquiditätspositionen — ein Argument, Mikes freies Kapital nicht dauerhaft unverzinst zu halten, sondern ins MFH-Objekt zu lenken.",
           "quellen": [
             {
-              "name": "Destatis Inflation Aug 2026",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_320_611.html"
-            }
-          ]
-        },
-        {
-          "titel": "DAX schließt am Verfallstag mit Verlusten",
-          "aufmacher": "Der deutsche Leitindex beendete die Börsenwoche am 18. September mit einem Minus von 1,6 Prozent.",
-          "fakten": "Der DAX schloss bei 25.304 Punkten (−1,6 % zum Vortag, Woche: −1,0 %). Belastend wirkten die Lage im Nahen Osten, steigende Erzeugerpreise und ein eingetrübter Ausblick bei Volkswagen. Halbleiterwerte wie Infineon legten dagegen rund drei Prozent zu.",
-          "einordnung": "Für Mike: Schwankungen sind normal auf dem Niveau. Wer langfristig in ETFs investiert, bleibt am besten diszipliniert — kurzfristige Rücksetzer sind bei der aktuellen geopolitischen Lage zu erwarten.",
-          "quellen": [
-            {
-              "name": "Tagesschau Marktbericht",
-              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-156.html"
+              "name": "Eurostat Eurozone Inflation August 2026",
+              "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-01092026-ap"
             }
           ]
         }
@@ -140,10 +127,10 @@
       "titel": "🤖 IT / Server",
       "artikel": [
         {
-          "titel": "Paperless-ngx 3.2.0 → 3.2.1",
-          "aufmacher": "Für das DMS Paperless-ngx steht ein kleines Update bereit, das ausschließlich Bugfixes enthält.",
-          "fakten": "Version 3.2.1 behebt laut Changelog mehrere Fehler: eine stabilere Mail-Abrufkontrolle (überlappende Mail-Fetches werden verhindert), einen OCR-Fix in ocrmypdf 17.12, einen automatischen Neuaufbau des Suchindex, wenn Tantivy-Dateien fehlen, sowie einen Fix nur für flowerconfig.py.",
-          "einordnung": "Empfehlung: Update zeitnah einspielen — der Mail-Abruf-Fix und der Suchindex-Fix stabilisieren das tägliche Scannen und Archivieren.",
+          "titel": "Paperless-ngx 3.2.0 → 3.2.1: Bugfix-Release",
+          "aufmacher": "Für das Dokumentenmanagementsystem Paperless-ngx steht ein reines Wartungsupdate bereit.",
+          "fakten": "Version 3.2.1 behebt einen OCR-Fix über ocrmypdf 17.12 (Ligaturen-Textebene), den automatischen Neuaufbau des Suchindex bei fehlenden Tantivy-Dateien sowie einen stabileren Mail-Abruf (self-expiring Lock statt überlappendem Check).",
+          "einordnung": "Sinnvoll zeitnah einzuspielen — stabilisiert das tägliche Scannen und Archivieren (Paperless-Import läuft 05:00).",
           "quellen": [
             {
               "name": "Paperless-ngx Changelog",
