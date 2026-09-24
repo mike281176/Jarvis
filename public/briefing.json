@@ -1,14 +1,14 @@
 {
-  "datum": "Mittwoch, 23.09.2026",
+  "datum": "Donnerstag, 24.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "22,3°C · Regen 8% · UV 4,3",
-          "aufmacher": "Heiter bis klar, mild und trocken in Troisdorf.",
-          "fakten": "Tageswerte zwischen minimal 9,3 °C und maximal 22,3 °C, aktuell 9,3 °C. Regenwahrscheinlichkeit 8 %, UV-Index mittel (4,3).",
-          "einordnung": "",
+          "titel": "15°C · Regen 82% · UV 4",
+          "aufmacher": "Bedeckt bei 15,3°C, Tageswerte zwischen 14,8°C und 20,3°C.",
+          "fakten": "Heute in Troisdorf bedeckt: aktuell 15,3 °C, Minimum 14,8 °C, Maximum 20,3 °C. Regenwahrscheinlichkeit 82 %, UV-Index mittel (3,75). Regenschirm nicht vergessen.",
+          "einordnung": "Regnerischer Herbsttag — gut, um den Papierkram zu erledigen, bevor die Wochenaufgabe ansteht.",
           "quellen": []
         }
       ]
@@ -16,13 +16,6 @@
     {
       "titel": "📅 Termine",
       "artikel": [
-        {
-          "titel": "23.09.2026 10:00: Quixx-Meeting",
-          "aufmacher": "Heute um 10:00 Uhr steht das Quixx-Meeting an.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
         {
           "titel": "27.09.2026: Geburtstag von Peter",
           "aufmacher": "Am Sonntag, 27. September, ist Geburtstag von Peter.",
@@ -36,26 +29,26 @@
       "titel": "🏙️ Regional / Überregional",
       "artikel": [
         {
-          "titel": "Senior aus Troisdorf überweist 12.000 Euro an Unbekannte",
-          "aufmacher": "Ein 83-Jähriger aus Troisdorf hat 12.000 Euro an eine Unbekannte überwiesen — die Polizei ermittelt wegen Betrugs.",
-          "fakten": "Eine Frau meldete sich am Montag bei der Polizei und machte sich Sorgen um einen Bekannten; das Umfeld des 83-Jährigen vermutete, er sei Opfer einer Betrugsmasche geworden. Die Polizei nahm die Ermittlungen wegen des Verdachts des Betrugs auf.",
-          "einordnung": "Bereits die zweite große Betrugsgeschichte im Kreis binnen weniger Tage — erhöhte Vorsicht bei Anrufen/Überweisungsaufforderungen lohnt, gerade im Umfeld älterer Angehöriger.",
+          "titel": "Großer Sicherheitstag in Troisdorf und Niederkassel",
+          "aufmacher": "Mehr als 130 Einsatzkräfte von Polizei, Bundespolizei, Ordnungsämtern, RSVG und Feuerwehr kontrollierten am Dienstag die beiden Stadtgebiete.",
+          "fakten": "Bei der Aktion wurden u.a. 20 E-Scooter-Verstöße geahndet, 49 illegale Vapes an einem Kiosk sichergestellt, rund 3.000 RSVG-Fahrgäste kontrolliert (68× erhöhtes Beförderungsentgelt) sowie über 100 Geschwindigkeitsverstöße festgestellt. Ein Fahrzeugführer wurde mit 67 km/h in der 30er-Zone erwischt und erwartet ein Fahrverbot.",
+          "einordnung": "Deutlich sichtbare Polizeipräsenz stärkt das Sicherheitsgefühl in der Region — auch ein Faktor für die Attraktivität von Wohnlagen und damit für die Mietnachfrage in Troisdorf.",
           "quellen": [
             {
               "name": "Presseportal Polizei Rhein-Sieg-Kreis",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6356739"
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6357850"
             }
           ]
         },
         {
-          "titel": "Betrunkener Radfahrer sorgt in Troisdorf-Spich für Einsatz",
-          "aufmacher": "In der Nacht zu Dienstag hielt die Polizei einen unter Drogeneinfluss stehenden 18-Jährigen ohne Führerschein in Troisdorf an.",
-          "fakten": "Gegen 01:00 Uhr kontrollierten Beamte an der Luxemburger Straße einen BMW, dessen 18-jähriger Fahrer einräumte, keine gültige Fahrerlaubnis zu besitzen und Cannabis konsumiert zu haben. Zuvor hatte ein betrunkener 65-Jähriger in Spich einen Polizeieinsatz ausgelöst.",
-          "einordnung": "Verkehrskontrollen laufen im Kreis derzeit intensiv — vor allem Drogen- und Alkoholfahrten fallen zunehmend auf.",
+          "titel": "Bankmitarbeiter stoppen Kautions-Betrug in zwei Fällen",
+          "aufmacher": "Aufmerksame Angestellte in Sankt Augustin-Hangelar verhinderten am Montag zwei Betrugsversuche zum Nachteil älterer Menschen.",
+          "fakten": "Ein Unbekannter behauptete einem 88-Jährigen, sein Sohn sitze nach einem Verkehrsunfall in Untersuchungshaft und brauche 60.000 Euro Kaution. Die Bank verweigerte die Auszahlung, die Polizei wurde gerufen. Auch eine 80-Jährige wurde dank eines bankinternen Checks vor einem Verlust bewahrt.",
+          "einordnung": "Die Polizei erhebt in Deutschland nie Kautionen am Telefon. Gerade im Umfeld älterer Angehöriger lohnt ein offenes Gespräch über Betrugsmaschen — ein Thema, das auch in Mietverhältnissen präventiv sensibilisiert.",
           "quellen": [
             {
               "name": "Presseportal Polizei Rhein-Sieg-Kreis",
-              "url": "https://www.presseportal.de/blaulicht/nr/65853"
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6356649"
             }
           ]
         }
@@ -65,30 +58,18 @@
       "titel": "🏠 Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen stabil über der Vier-Prozent-Marke",
-          "aufmacher": "Baudarlehen kosten aktuell zwischen 4,2 und 4,9 Prozent — nach einem Anstieg von rund einem halben Punkt seit Mitte Juli.",
-          "fakten": "Interhyp nennt 4,2 % für 10-jährige Darlehen (Stand 10.09.2026); Finanztip verortet die erste Septemberhälfte 2026 bei 4,4–4,9 % (je nach Beleihung und Zinsbindung). Das Interhyp-Expertenpanel rechnet kurzfristig mit steigenden bis seitwärts laufenden Zinsen. Ursache sind angezogenen Bund-Renditen und die Geopolitik im Nahen Osten.",
-          "einordnung": "Für Mikes MFH-Strategie: Höhere Zinsen erhöhen die Finanzierungskosten und drücken den Cashflow bei Fremdkapitaleinsatz. Refinanzierung über mehrere Banken lohnt, um Konditionen gegeneinander auszuspielen.",
+          "titel": "Bauzinsen weiter über vier Prozent",
+          "aufmacher": "Die Top-Zinsen für 10-jährige Baudarlehen liegen bei 3,96 % Sollzins (4,06 % effektiv) — das Niveau ist seit dem Iran-Krieg spürbar gestiegen.",
+          "fakten": "Der Zins für 10-jährige Kredite stieg Anfang März von ca. 3,3 % auf 3,7 % innerhalb weniger Wochen und pendelt seither höher; Anfang August lag der durchschnittliche Sollzins bei 4,03 %. Die Prognose für das zweite Halbjahr 2026 erwartet einen Korridor von 3,3 bis 3,9 %.",
+          "einordnung": "Höhere Zinsen erhöhen die Finanzierungskosten und drücken den Cashflow bei Fremdkapitaleinsatz (Mikes Hebel-Strategie). Refinanzierung über mehrere Banken lohnt, um Konditionen gegeneinander auszuspielen.",
           "quellen": [
             {
-              "name": "Interhyp Bauzinsen",
-              "url": "https://www.interhyp.de/zinsen/"
+              "name": "Dr. Klein Bauzinsen",
+              "url": "https://www.drklein.de/aktuelle-bauzinsen.html"
             },
             {
-              "name": "Finanztip Bauzinsen",
-              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
-            }
-          ]
-        },
-        {
-          "titel": "Troisdorfer Mietpreise legen weiter zu",
-          "aufmacher": "Die Angebotsmieten in Troisdorf steigen — von 10,00 auf 10,41 Euro je Quadratmeter innerhalb eines Jahres (rund 4 %).",
-          "fakten": "Laut ImmoScout24 legte Troisdorf von Q2 2025 (10,00 €/m²) auf Q2 2026 (10,41 €/m²) zu, ein Plus von etwa 4,1 %. Andere Anbieter setzen den Durchschnitt für 2026 deutlich höher an (rund 11,9 €/m²) — die Marktlage schwankt je nach Datengrundlage und Ortsteil.",
-          "einordnung": "Steigende Mieteinnahmen stützen Mikes Cashflow und verbessern potenziell die Bewertung seines Bestands — gerade für MFH-Objekte ein positives Zeichen.",
-          "quellen": [
-            {
-              "name": "ImmoScout24 Mietspiegel Troisdorf",
-              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
+              "name": "Statista Bauzinsen-Entwicklung",
+              "url": "https://de.statista.com/statistik/daten/studie/1347565/umfrage/entwicklung-der-bauzinsen-in-deutschland"
             }
           ]
         }
@@ -112,8 +93,8 @@
         {
           "titel": "Eurozone-Inflation steigt auf 3,3 Prozent",
           "aufmacher": "Die Teuerung im Euroraum kletterte im August auf 3,3 Prozent — deutlich über dem EZB-Ziel von 2 Prozent.",
-          "fakten": "Laut Eurostat-Flashschätzung stieg die Jahresinflation von 2,9 % (Juli) auf 3,3 % (August). Treiber ist Energie mit 14,3 % annualisiert; Deutschland liegt bei 2,9 %. Der EZB-Rat sieht die Teuerung „deutlich über dem Zielwert“ für längere Zeit.",
-          "einordnung": "Höhere Inflation schmälert die Realrendite großer Liquiditätspositionen — ein Argument, Mikes freies Kapital nicht dauerhaft unverzinst zu halten, sondern ins MFH-Objekt zu lenken.",
+          "fakten": "Laut Eurostat-Flashschätzung stieg die Jahresinflation von 2,9 % (Juli) auf 3,3 % (August). Treiber ist Energie mit +14,3 % annualisiert; Deutschland liegt bei 2,9 %. Der EZB-Rat sieht die Teuerung „deutlich über dem Zielwert“ für längere Zeit.",
+          "einordnung": "Höhere Inflation schmälert die Realrendite großer Liquiditätspositionen — ein Argument, Mikes freies Kapital nicht dauerhaft unverzinst zu halten, sondern gezielt ins MFH-Objekt zu lenken.",
           "quellen": [
             {
               "name": "Eurostat Eurozone Inflation August 2026",
