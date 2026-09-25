@@ -1,14 +1,14 @@
 {
-  "datum": "Donnerstag, 24.09.2026",
+  "datum": "Freitag, 25.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "15°C · Regen 82% · UV 4",
-          "aufmacher": "Bedeckt bei 15,3°C, Tageswerte zwischen 14,8°C und 20,3°C.",
-          "fakten": "Heute in Troisdorf bedeckt: aktuell 15,3 °C, Minimum 14,8 °C, Maximum 20,3 °C. Regenwahrscheinlichkeit 82 %, UV-Index mittel (3,75). Regenschirm nicht vergessen.",
-          "einordnung": "Regnerischer Herbsttag — gut, um den Papierkram zu erledigen, bevor die Wochenaufgabe ansteht.",
+          "titel": "23.5°C · Regen 0% · UV 4",
+          "aufmacher": "☁️ Bedeckt und mild — es wird angenehm warm.",
+          "fakten": "Höchsttemperatur 23.5°C, Tiefstwert 8.9°C. Kein Regen zu erwarten, UV-Index 4. Ein trockener, freundlicher Herbsttag.",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -17,8 +17,8 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "27.09.2026: Geburtstag von Peter",
-          "aufmacher": "Am Sonntag, 27. September, ist Geburtstag von Peter.",
+          "titel": "So. 27.09.2026 00:00: Geburtstag von Peter",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -26,97 +26,80 @@
       ]
     },
     {
-      "titel": "🏙️ Regional / Überregional",
+      "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Großer Sicherheitstag in Troisdorf und Niederkassel",
-          "aufmacher": "Mehr als 130 Einsatzkräfte von Polizei, Bundespolizei, Ordnungsämtern, RSVG und Feuerwehr kontrollierten am Dienstag die beiden Stadtgebiete.",
-          "fakten": "Bei der Aktion wurden u.a. 20 E-Scooter-Verstöße geahndet, 49 illegale Vapes an einem Kiosk sichergestellt, rund 3.000 RSVG-Fahrgäste kontrolliert (68× erhöhtes Beförderungsentgelt) sowie über 100 Geschwindigkeitsverstöße festgestellt. Ein Fahrzeugführer wurde mit 67 km/h in der 30er-Zone erwischt und erwartet ein Fahrverbot.",
-          "einordnung": "Deutlich sichtbare Polizeipräsenz stärkt das Sicherheitsgefühl in der Region — auch ein Faktor für die Attraktivität von Wohnlagen und damit für die Mietnachfrage in Troisdorf.",
+          "titel": "Troisdorf: Drei Festnahmen nach Paketdiebstahl aus Lieferwagen",
+          "aufmacher": "Dank eines Live-Trackers hat die Polizei drei mutmaßliche Paketdiebe in Troisdorf festgenommen.",
+          "fakten": "Am Mittwochabend (23.09.) fiel dem Inhaber einer Firma auf, dass sein Lieferwagen im Auslieferungsbetrieb längere Zeit stillstand. Vor Ort waren mehrere Pakete geöffnet und leer geräumt. Mit Zeugenhilfe lokalisierten die Beamten ein weiteres Fahrzeug mit drei Tatverdächtigen, in deren Gepäck diverses Diebesgut im Wert von rund 3.500 Euro sichergestellt wurde. Die drei 20- und 21-Jährigen ohne festen Wohnsitz in Deutschland wurden vorläufig festgenommen.",
+          "einordnung": "",
           "quellen": [
-            {
-              "name": "Presseportal Polizei Rhein-Sieg-Kreis",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6357850"
-            }
+            {"name": "Polizei Rhein-Sieg-Kreis (Presseportal)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6358406"},
+            {"name": "Blaulicht-Übersicht Troisdorf", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
           ]
         },
         {
-          "titel": "Bankmitarbeiter stoppen Kautions-Betrug in zwei Fällen",
-          "aufmacher": "Aufmerksame Angestellte in Sankt Augustin-Hangelar verhinderten am Montag zwei Betrugsversuche zum Nachteil älterer Menschen.",
-          "fakten": "Ein Unbekannter behauptete einem 88-Jährigen, sein Sohn sitze nach einem Verkehrsunfall in Untersuchungshaft und brauche 60.000 Euro Kaution. Die Bank verweigerte die Auszahlung, die Polizei wurde gerufen. Auch eine 80-Jährige wurde dank eines bankinternen Checks vor einem Verlust bewahrt.",
-          "einordnung": "Die Polizei erhebt in Deutschland nie Kautionen am Telefon. Gerade im Umfeld älterer Angehöriger lohnt ein offenes Gespräch über Betrugsmaschen — ein Thema, das auch in Mietverhältnissen präventiv sensibilisiert.",
+          "titel": "Troisdorf schreibt Smart City fort: 20 Impulsgeber gesucht",
+          "aufmacher": "Die Stadt sucht 20 Bürger und Organisationen, um ihre digitale Zukunftsstrategie gemeinsam weiterzuentwickeln.",
+          "fakten": "Bewerben kann man sich bis zum 5. Oktober 2026 über das Online-Portal. Geplant ist ein Workshop am 3. November bei der KESKIN Fensterbau in Troisdorf. Hintergrund: Seit 2023 hat die Stadt rund 30 digitale Angebote eingeführt, darunter über 100 digitalisierte Antragsverfahren, einen KI-Chatbot und die smarT:app mit mehr als 9.000 Downloads. Allein im Sommer 2026 brachten sich über 500 Bürger in Umfragen ein.",
+          "einordnung": "",
           "quellen": [
-            {
-              "name": "Presseportal Polizei Rhein-Sieg-Kreis",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6356649"
-            }
+            {"name": "Stadt Troisdorf", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/stadt-troisdorf-sucht-20-impulsgeber-innen-fuer-smart-city/"},
+            {"name": "Stadt Troisdorf Pressemeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/"}
           ]
         }
       ]
     },
     {
-      "titel": "🏠 Immobilien",
+      "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen weiter über vier Prozent",
-          "aufmacher": "Die Top-Zinsen für 10-jährige Baudarlehen liegen bei 3,96 % Sollzins (4,06 % effektiv) — das Niveau ist seit dem Iran-Krieg spürbar gestiegen.",
-          "fakten": "Der Zins für 10-jährige Kredite stieg Anfang März von ca. 3,3 % auf 3,7 % innerhalb weniger Wochen und pendelt seither höher; Anfang August lag der durchschnittliche Sollzins bei 4,03 %. Die Prognose für das zweite Halbjahr 2026 erwartet einen Korridor von 3,3 bis 3,9 %.",
-          "einordnung": "Höhere Zinsen erhöhen die Finanzierungskosten und drücken den Cashflow bei Fremdkapitaleinsatz (Mikes Hebel-Strategie). Refinanzierung über mehrere Banken lohnt, um Konditionen gegeneinander auszuspielen.",
+          "titel": "Bauzinsen ziehen weiter an – 10 Jahre um 4,1 Prozent",
+          "aufmacher": "Im Zuge der EZB-Zinswende steigen auch die Hypothekenzinsen spürbar.",
+          "fakten": "Laut Baufi24 liegt der Sollzins für 10-jährige Zinsbindung aktuell bei 4,08 Prozent (eff. 4,19 Prozent), für 20 Jahre bei 4,50 Prozent. Finanztip beziffert die Spanne in der ersten Septemberhälfte auf 4,4 bis 4,9 Prozent — die Angaben streuen je nach Anbieter. Interhyp sieht die Zinsen kurzfristig steigend bis seitwärts, mittel- bis langfristig uneinheitlich.",
+          "einordnung": "Frisch relevant für die MFH-Strategie: Jeder Zinsanstieg erhöht die Finanzierungskosten eines Neuankaufs. Bei der Verhandlung mit mehreren Banken sind die aktuell leicht auseinanderlaufenden Angebote ein Hebel — die 10-Jahres-Variante bleibt günstiger als 15 oder 20 Jahre.",
           "quellen": [
-            {
-              "name": "Dr. Klein Bauzinsen",
-              "url": "https://www.drklein.de/aktuelle-bauzinsen.html"
-            },
-            {
-              "name": "Statista Bauzinsen-Entwicklung",
-              "url": "https://de.statista.com/statistik/daten/studie/1347565/umfrage/entwicklung-der-bauzinsen-in-deutschland"
-            }
+            {"name": "Baufi24", "url": "https://www.baufi24.de/bauzinsen/"},
+            {"name": "Interhyp", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Finanztip", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
           ]
         }
       ]
     },
     {
-      "titel": "💰 Finanzen",
+      "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hebt Leitzinsen um 25 Basispunkte an",
-          "aufmacher": "Die Europäische Zentralbank hat ihre drei Leitzinsen am 10. September um jeweils 25 Basispunkte angehoben.",
-          "fakten": "Mit Wirkung vom 16. September gelten 2,50 % (Einlagenfazilität), 2,65 % (Hauptrefinanzierung) und 2,90 % (Spitzenrefinanzierung). Grund ist anhaltender Inflationsdruck durch den Nahost-Konflikt. Die EZB projiziert die Inflation im Schnitt auf 3,0 % (2026), 2,5 % (2027) und 2,1 % (2028).",
-          "einordnung": "Steigende Leitzinsen treffen variable Kredite und den Dispo (11,99 %) — gleichzeitig lohnt der Blick auf Tages-/Festgeld für freie Liquidität.",
+          "titel": "EZB hebt Leitzins erneut an – auf 2,5 Prozent",
+          "aufmacher": "Die gestiegene Inflation zwingt die Europäische Zentralbank zu einer zweiten Zinserhöhung in diesem Jahr.",
+          "fakten": "Der Einlagenzins steigt am 16.09. von 2,25 auf 2,50 Prozent, zusätzlich steigen Haupt- und Spitzenrefinanzierungssatz auf 2,65 bzw. 2,90 Prozent. Treiber ist der Ölpreisschock (Barrel wieder über 100 Dollar) infolge des Nahost-Konflikts: Die Inflation im Euroraum lag im August bei 3,3 Prozent, in Deutschland bei 2,9 Prozent. Die EZB rechnet für 2026 mit 3,0, für 2027 mit 2,5 Prozent Teuerung.",
+          "einordnung": "Für Sparer sind Tagesgeld- und Festgeldangebote wieder attraktiver, wenn Banken die Zinsen weitergeben. Finanzierungskosten und Bauzinsen steigen dagegen — relevant für jede neue Kreditaufnahme bei der MFH-Planung.",
           "quellen": [
-            {
-              "name": "EZB Geldpolitische Beschlüsse",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"
-            }
+            {"name": "EZB (offiziell)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"},
+            {"name": "tagesschau", "url": "https://www.tagesschau.de/wirtschaft/finanzen/ezb-sitzung-leitzins-100.html"}
+          ]
+        }
+      ]
+    },
+    {
+      "titel": "IT/Server",
+      "artikel": [
+        {
+          "titel": "🤖 Hermes Agent 0.21.4 → 0.21.5: Update verfügbar",
+          "aufmacher": "Ein umfangreicher Release mit 1.610 Commits und einem Schwerpunkt auf Desktop-Plugins und Performance.",
+          "fakten": "Die neue Version (v2026.9.24) umfasst 460 gemergte Pull-Requests. Zu den Highlights zählen ein neues Desktop-Plugin-SDK, ein Connectors-Bereich statt des bisherigen MCP-Tabs, neue Modelle (u.a. GPT-6 Sol/Terra/Luna, Claude Opus 5.5) sowie viele Performance-Verbesserungen in Konfig-Loading und Tool-Registry.",
+          "einordnung": "",
+          "quellen": [
+            {"name": "NousResearch Releases (GitHub)", "url": "https://github.com/NousResearch/hermes-agent/releases"}
           ]
         },
         {
-          "titel": "Eurozone-Inflation steigt auf 3,3 Prozent",
-          "aufmacher": "Die Teuerung im Euroraum kletterte im August auf 3,3 Prozent — deutlich über dem EZB-Ziel von 2 Prozent.",
-          "fakten": "Laut Eurostat-Flashschätzung stieg die Jahresinflation von 2,9 % (Juli) auf 3,3 % (August). Treiber ist Energie mit +14,3 % annualisiert; Deutschland liegt bei 2,9 %. Der EZB-Rat sieht die Teuerung „deutlich über dem Zielwert“ für längere Zeit.",
-          "einordnung": "Höhere Inflation schmälert die Realrendite großer Liquiditätspositionen — ein Argument, Mikes freies Kapital nicht dauerhaft unverzinst zu halten, sondern gezielt ins MFH-Objekt zu lenken.",
+          "titel": "📦 paperless-ngx 3.2.0 → 3.2.1: kleiner Bugfix-Release",
+          "aufmacher": "Der Patch behebt mehrere Stabilitätsprobleme im Dokumenten-Archiv.",
+          "fakten": "Neu ist eine selbstauflösende Sperre beim E-Mail-Abruf (statt der überholten Prüfung), ein OCR-Ligatur-Fix über ocrmypdf 17.12 sowie eine automatische Neu-Erstellung des Suchindex, wenn die Tantivy-Dateien fehlen.",
+          "einordnung": "",
           "quellen": [
-            {
-              "name": "Eurostat Eurozone Inflation August 2026",
-              "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-01092026-ap"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "titel": "🤖 IT / Server",
-      "artikel": [
-        {
-          "titel": "Paperless-ngx 3.2.0 → 3.2.1: Bugfix-Release",
-          "aufmacher": "Für das Dokumentenmanagementsystem Paperless-ngx steht ein reines Wartungsupdate bereit.",
-          "fakten": "Version 3.2.1 behebt einen OCR-Fix über ocrmypdf 17.12 (Ligaturen-Textebene), den automatischen Neuaufbau des Suchindex bei fehlenden Tantivy-Dateien sowie einen stabileren Mail-Abruf (self-expiring Lock statt überlappendem Check).",
-          "einordnung": "Sinnvoll zeitnah einzuspielen — stabilisiert das tägliche Scannen und Archivieren (Paperless-Import läuft 05:00).",
-          "quellen": [
-            {
-              "name": "Paperless-ngx Changelog",
-              "url": "https://docs.paperless-ngx.com/changelog/"
-            }
+            {"name": "Paperless-ngx Changelog", "url": "https://docs.paperless-ngx.com/changelog/"}
           ]
         }
       ]
