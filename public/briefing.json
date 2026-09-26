@@ -31,20 +31,29 @@
         {
           "titel": "Live-Tracker überführt Paketdiebe in Troisdorf — drei Festnahmen",
           "aufmacher": "Ein Ortungssignal aus dem eigenen Lieferwagen hat am Mittwochabend in Troisdorf zur Festnahme von drei mutmaßlichen Paketdieben geführt.",
-          "fakten": "Der Inhaber einer Firma stellte am 23. September gegen 17:10 Uhr über einen Live-Tracker fest, dass sein Firmenfahrzeug längere Zeit unbewegt stand, obwohl es sich in der Paketauslieferung befinden sollte. Vor Ort fand er mehrere geöffnete und geleerte Pakete, der Fahrer war nicht anwesend. Mit Hilfe eines Mitarbeitenden wurde ein zweites Fahrzeug lokalisiert, in dem sich der Tatverdächtige und zwei mutmaßliche Mittäter befanden. Das in den Gepäckstücken festgestellte Diebesgut hat einen geschätzten Wert von rund 3.500 Euro. Die drei 20 und 21 Jahre alten Tatverdächtigen ohne festen Wohnsitz in Deutschland wurden wegen des Verdachts des gewerbsmäßigen Diebstahls vorläufig festgenommen; die Ermittlungen der Kreispolizeibehörde Rhein-Sieg-Kreis dauern an.[1]",
+          "fakten": "Der Inhaber einer Firma stellte am 23. September gegen 17:10 Uhr über einen Live-Tracker fest, dass sein Firmenfahrzeug längere Zeit unbewegt stand, obwohl es sich in der Paketauslieferung befinden sollte. Vor Ort fand er mehrere geöffnete und geleerte Pakete, der Fahrer war nicht anwesend. Mit Hilfe eines Mitarbeitenden wurde ein zweites Fahrzeug lokalisiert, in dem sich der Tatverdächtige und zwei mutmaßliche Mittäter befanden. Das in den Gepäckstücken festgestellte Diebesgut hat einen geschätzten Wert von rund 3.500 Euro. Die drei 20 und 21 Jahre alten Tatverdächtigen ohne festen Wohnsitz in Deutschland wurden wegen des Verdachts des gewerbsmäßigen Diebstahls vorläufig festgenommen; die Ermittlungen der Kreispolizeibehörde Rhein-Sieg-Kreis dauern an.",
           "einordnung": "Für Quixx24 mit Werkstatt- und Fuhrparkbetrieb ein direkter Hinweis: Fahrzeugortung zahlt sich nicht nur in der Disposition aus, sondern auch als Diebstahlschutz. Der gewerbliche Waren- und Paketverkehr im Stadtgebiet bleibt ein Risikofeld.",
           "quellen": [
-            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis, Presseportal (24.09.2026)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6358406"}
+            {
+              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis, Presseportal (24.09.2026)",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6358406"
+            }
           ]
         },
         {
           "titel": "Troisdorf sucht 20 Bürger für die Fortschreibung der Smart-City-Strategie",
           "aufmacher": "Die Stadt Troisdorf schreibt ihre Smart-City-Strategie fort und sucht dafür 20 Engagierte aus der Stadtgesellschaft.",
-          "fakten": "Bewerbungen sind bis zum 5. Oktober 2026 möglich, der Workshop der Impulsgruppe findet am 3. November 2026 um 16 Uhr statt; das Beteiligungsverfahren auf dem Landesportal läuft seit dem 24. August 2026.[2][3] Die Teilnehmenden erhalten Einblick in die bisherigen Ergebnisse des Strategieprozesses und entwickeln gemeinsam Impulse für die Handlungsfelder Verwaltung, Mobilität, Leben und Freizeit, Klimaschutz, Wirtschaft, Soziales, Gesundheit und Pflege sowie Bildung und Lernen.[2] Bei der Auswahl achtet die Stadt auf eine möglichst vielfältige Zusammensetzung nach Alter, Wohnort sowie beruflichem und ehrenamtlichem Bezug zu Troisdorf.[2] Eine Angabe zur Zahl bereits eingeführter digitaler Angebote ließ sich in den Primärquellen nicht verifizieren und wird daher nicht genannt.",
+          "fakten": "Bewerbungen sind bis zum 5. Oktober 2026 möglich, der Workshop der Impulsgruppe findet am 3. November 2026 um 16 Uhr statt; das Beteiligungsverfahren auf dem Landesportal läuft seit dem 24. August 2026. Die Teilnehmenden erhalten Einblick in die bisherigen Ergebnisse des Strategieprozesses und entwickeln gemeinsam Impulse für die Handlungsfelder Verwaltung, Mobilität, Leben und Freizeit, Klimaschutz, Wirtschaft, Soziales, Gesundheit und Pflege sowie Bildung und Lernen. Bei der Auswahl achtet die Stadt auf eine möglichst vielfältige Zusammensetzung nach Alter, Wohnort sowie beruflichem und ehrenamtlichem Bezug zu Troisdorf. Eine Angabe zur Zahl bereits eingeführter digitaler Angebote ließ sich in den Primärquellen nicht verifizieren und wird daher nicht genannt.",
           "einordnung": "Das Handlungsfeld Wirtschaft und der Standort Troisdorf betreffen Quixx24 unmittelbar — eine Stimme aus dem Mittelstand im Strategieprozess wäre kein Nachteil. Bewerbungsschluss ist der 5. Oktober, also in neun Tagen.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Pressemeldung (22.09.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/stadt-troisdorf-sucht-20-impulsgeber-innen-fuer-smart-city/"},
-            {"name": "Beteiligung NRW – Stadt Troisdorf, Workshop Impulsgruppe", "url": "https://beteiligung.nrw.de/portal/troisdorf/beteiligung/themen/1030762"}
+            {
+              "name": "Stadt Troisdorf – Pressemeldung (22.09.2026)",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/stadt-troisdorf-sucht-20-impulsgeber-innen-fuer-smart-city/"
+            },
+            {
+              "name": "Beteiligung NRW – Stadt Troisdorf, Workshop Impulsgruppe",
+              "url": "https://beteiligung.nrw.de/portal/troisdorf/beteiligung/themen/1030762"
+            }
           ]
         }
       ]
@@ -55,23 +64,41 @@
         {
           "titel": "Bauzinsen über der Vier-Prozent-Marke — 10 Jahre Fix bei rund 4,0 bis 4,2 Prozent",
           "aufmacher": "Die Bauzinsen sind seit Mitte Juli um etwa einen halben Prozentpunkt gestiegen und liegen für zehnjährige Darlehen wieder über vier Prozent.",
-          "fakten": "Bei Interhyp kostet ein Darlehen mit 10 Jahren Zinsbindung aktuell 4,08 Prozent bei unter 70 Prozent Beleihung, 4,20 Prozent bei 80 Prozent und 4,49 Prozent bei über 90 Prozent Beleihungsauslauf; 15 Jahre liegen bei 4,30/4,40/4,70 Prozent, 20 Jahre bei 4,36/4,53/4,70 Prozent (Konditionen aus der Woche 14. bis 20. September 2026).[4] Dr. Klein nennt als Topzins für 10 Jahre 3,97 Prozent und für 20 Jahre 4,30 Prozent; im September 2025 waren es 3,43 beziehungsweise 3,95 Prozent.[5] Finanztip beziffert das Niveau in der ersten Septemberhälfte auf meist 4,4 bis 4,9 Prozent und hält Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen für jederzeit möglich.[6] Das Interhyp-Bankenpanel ist gespalten: kurzfristig rechnen 50 Prozent mit weiter steigenden Zinsen und 50 Prozent mit Seitwärtsbewegung, mittelfristig jeweils rund 33 Prozent mit steigenden, gleichbleibenden oder fallenden Zinsen.[4] Als Treiber nennt Interhyp die höheren Renditen für Staatsanleihen.[4]",
+          "fakten": "Bei Interhyp kostet ein Darlehen mit 10 Jahren Zinsbindung aktuell 4,08 Prozent bei unter 70 Prozent Beleihung, 4,20 Prozent bei 80 Prozent und 4,49 Prozent bei über 90 Prozent Beleihungsauslauf; 15 Jahre liegen bei 4,30/4,40/4,70 Prozent, 20 Jahre bei 4,36/4,53/4,70 Prozent (Konditionen aus der Woche 14. bis 20. September 2026). Dr. Klein nennt als Topzins für 10 Jahre 3,97 Prozent und für 20 Jahre 4,30 Prozent; im September 2025 waren es 3,43 beziehungsweise 3,95 Prozent. Finanztip beziffert das Niveau in der ersten Septemberhälfte auf meist 4,4 bis 4,9 Prozent und hält Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen für jederzeit möglich. Das Interhyp-Bankenpanel ist gespalten: kurzfristig rechnen 50 Prozent mit weiter steigenden Zinsen und 50 Prozent mit Seitwärtsbewegung, mittelfristig jeweils rund 33 Prozent mit steigenden, gleichbleibenden oder fallenden Zinsen. Als Treiber nennt Interhyp die höheren Renditen für Staatsanleihen.",
           "einordnung": "Für die MFH-Strategie heißt das: Die Nullzins-Phase ist endgültig vorbei, Eigenkapital ist wieder der günstigste Baustein. Beim Ansatz, nur die Kaufnebenkosten aus EK zu decken und den Rest über Bankdarlehen zu finanzieren, verteuert jeder weitere Zinsschritt den Hebel spürbar — 0,5 Prozentpunkte auf ein Darlehen von einer Million Euro kosten rund 5.000 Euro Zinsen pro Jahr und drücken den Cashflow. Vor einer Refinanzierungsrunde lohnt es sich, mehrere Banken parallel anzufragen und die Zinsbindung aktiv zu verhandeln, solange die Prognose uneinheitlich ist — ein Fall für Petra.",
           "quellen": [
-            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Dr. Klein – Zinsentwicklung Baufinanzierung 2026", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"},
-            {"name": "Finanztip – Aktuelle Bauzinsen (Stand 18.09.2026)", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
+            {
+              "name": "Interhyp – Bauzinsen aktuell",
+              "url": "https://www.interhyp.de/zinsen/"
+            },
+            {
+              "name": "Dr. Klein – Zinsentwicklung Baufinanzierung 2026",
+              "url": "https://www.drklein.de/zinsentwicklung-prognose.html"
+            },
+            {
+              "name": "Finanztip – Aktuelle Bauzinsen (Stand 18.09.2026)",
+              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
+            }
           ]
         },
         {
           "titel": "Troisdorfer Mietniveau steigt weiter — Mietspiegel 2025 gilt bis zur nächsten Fortschreibung",
           "aufmacher": "In Troisdorf liegen die Angebotsmieten inzwischen deutlich über dem Landes- und Bundesschnitt, fortgeschrieben ist der städtische Mietspiegel aber noch nicht.",
-          "fakten": "Die Stadt Troisdorf hat ihren neuen qualifizierten Mietspiegel 2025 veröffentlicht, gültig ab 1. Oktober 2025; er wurde nach anerkannten wissenschaftlichen Grundsätzen erstellt und berücksichtigt Wohnwertmerkmale wie Ausstattung und Lage.[7] Qualifizierte Mietspiegel müssen seit der Mietrechtsreform 2001 alle zwei Jahre aktualisiert und alle vier Jahre neu erstellt werden, Rechtsgrundlage ist § 558d Absatz 2 BGB.[7] Für den Rhein-Sieg-Kreis weist ImmoScout24 für Q2/2026 eine durchschnittliche Kaltmiete von 9,92 Euro pro Quadratmeter aus, ein Plus von rund 0,4 Prozent gegenüber dem Vorquartal mit 9,88 Euro.[8] Für Troisdorf selbst nennt eine Marktauswertung im Q2/2026 durchschnittlich 12,26 Euro pro Quadratmeter nach 11,55 Euro im Q1/2026; für eine 50-Quadratmeter-Wohnung rund 12,13 Euro.[9] Die drei genannten Mietwerte stammen aus unterschiedlichen Erhebungsmethoden und sind daher nicht direkt vergleichbar.",
+          "fakten": "Die Stadt Troisdorf hat ihren neuen qualifizierten Mietspiegel 2025 veröffentlicht, gültig ab 1. Oktober 2025; er wurde nach anerkannten wissenschaftlichen Grundsätzen erstellt und berücksichtigt Wohnwertmerkmale wie Ausstattung und Lage. Qualifizierte Mietspiegel müssen seit der Mietrechtsreform 2001 alle zwei Jahre aktualisiert und alle vier Jahre neu erstellt werden, Rechtsgrundlage ist § 558d Absatz 2 BGB. Für den Rhein-Sieg-Kreis weist ImmoScout24 für Q2/2026 eine durchschnittliche Kaltmiete von 9,92 Euro pro Quadratmeter aus, ein Plus von rund 0,4 Prozent gegenüber dem Vorquartal mit 9,88 Euro. Für Troisdorf selbst nennt eine Marktauswertung im Q2/2026 durchschnittlich 12,26 Euro pro Quadratmeter nach 11,55 Euro im Q1/2026; für eine 50-Quadratmeter-Wohnung rund 12,13 Euro. Die drei genannten Mietwerte stammen aus unterschiedlichen Erhebungsmethoden und sind daher nicht direkt vergleichbar.",
           "einordnung": "Steigende Angebotsmieten bei hohen Bauzinsen verbessern die Rendite im Bestand, verteuern aber die Kalkulation neuer MFH-Käufe — das Verhältnis von Kaufpreis zu Jahresnettokaltmiete bleibt der entscheidende Prüfstein. Für Vermietung im Bestand gilt: Solange die Fortschreibung des Troisdorfer Mietspiegels aussteht, ist weiter die Fassung 2025 die belastbare Vergleichsbasis bei Mieterhöhungen, nicht die Angebotsmieten aus Portalen.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Mietspiegel", "url": "https://www.troisdorf.de/de/rathaus-service/buergerservice/wohnungsamt/mietspiegel/"},
-            {"name": "ImmoScout24 – Mietspiegel Rhein-Sieg-Kreis 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"},
-            {"name": "Mietspiegeltabelle – Mietspiegel Troisdorf 2026", "url": "https://mietspiegeltabelle.de/mietspiegel-troisdorf/"}
+            {
+              "name": "Stadt Troisdorf – Mietspiegel",
+              "url": "https://www.troisdorf.de/de/rathaus-service/buergerservice/wohnungsamt/mietspiegel/"
+            },
+            {
+              "name": "ImmoScout24 – Mietspiegel Rhein-Sieg-Kreis 2026",
+              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"
+            },
+            {
+              "name": "Mietspiegeltabelle – Mietspiegel Troisdorf 2026",
+              "url": "https://mietspiegeltabelle.de/mietspiegel-troisdorf/"
+            }
           ]
         }
       ]
@@ -82,21 +109,33 @@
         {
           "titel": "EZB hebt Leitzins erneut an — Einlagensatz steigt auf 2,50 Prozent",
           "aufmacher": "Die Europäische Zentralbank hat am 10. September die drei Leitzinssätze um jeweils 0,25 Prozentpunkte angehoben.",
-          "fakten": "Mit Wirkung vom 16. September 2026 liegt der Zinssatz für die Einlagefazilität bei 2,50 Prozent, der Hauptrefinanzierungssatz bei 2,65 Prozent und der Spitzenrefinanzierungssatz bei 2,90 Prozent.[10] Die EZB begründet den Schritt mit anhaltendem Inflationsdruck durch den Konflikt im Nahen Osten und erwartet, dass die Inflation längere Zeit deutlich über dem Zielwert bleibt.[10] Die neuen Projektionen der EZB-Fachleute sehen die Gesamtinflation bei 3,0 Prozent für 2026, 2,5 Prozent für 2027 und 2,1 Prozent für 2028; bei der Inflation ohne Energie und Nahrungsmittel bei 2,5, 2,6 und 2,3 Prozent. Das Wirtschaftswachstum wird auf 0,9 Prozent (2026), 1,4 (2027) und 1,5 Prozent (2028) geschätzt, wobei die Risiken für die Inflation aufwärts- und für das Wachstum abwärtsgerichtet sind.[10] Der EZB-Rat legt sich laut eigener Aussage nicht im Voraus auf einen Zinspfad fest, sondern entscheidet von Sitzung zu Sitzung nach Datenlage.[10] Die nächste Zinssitzung findet am 29. Oktober 2026 statt.[12]",
+          "fakten": "Mit Wirkung vom 16. September 2026 liegt der Zinssatz für die Einlagefazilität bei 2,50 Prozent, der Hauptrefinanzierungssatz bei 2,65 Prozent und der Spitzenrefinanzierungssatz bei 2,90 Prozent. Die EZB begründet den Schritt mit anhaltendem Inflationsdruck durch den Konflikt im Nahen Osten und erwartet, dass die Inflation längere Zeit deutlich über dem Zielwert bleibt. Die neuen Projektionen der EZB-Fachleute sehen die Gesamtinflation bei 3,0 Prozent für 2026, 2,5 Prozent für 2027 und 2,1 Prozent für 2028; bei der Inflation ohne Energie und Nahrungsmittel bei 2,5, 2,6 und 2,3 Prozent. Das Wirtschaftswachstum wird auf 0,9 Prozent (2026), 1,4 (2027) und 1,5 Prozent (2028) geschätzt, wobei die Risiken für die Inflation aufwärts- und für das Wachstum abwärtsgerichtet sind. Der EZB-Rat legt sich laut eigener Aussage nicht im Voraus auf einen Zinspfad fest, sondern entscheidet von Sitzung zu Sitzung nach Datenlage. Die nächste Zinssitzung findet am 29. Oktober 2026 statt.",
           "einordnung": "Doppelt relevant: Anschlussfinanzierungen werden teurer, solange die EZB im Erhöhungsmodus bleibt — gleichzeitig liegt der Dispo-Zins von 11,99 Prozent jetzt noch deutlicher über dem Markt, sodass Umschichten in Tages- oder Festgeld stärker lohnt als früher. Bei rund 600.000 Euro liquiden Mitteln für ein MFH ist die Frage, welcher Teil bis zur Objektentscheidung sinnvoll geparkt wird, derzeit einer der größten Einzelposten im Cashflow — Laufzeiten gehören auf den Tisch des Steuerberaters.",
           "quellen": [
-            {"name": "Europäische Zentralbank – Geldpolitische Beschlüsse (10.09.2026)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"},
-            {"name": "Raisin – EZB-Zinsentscheid: Termine & Prognosen", "url": "https://www.raisin.com/de-at/glossar/ezb-leitzins/zinsentscheid/"},
-            {"name": "tagesschau – EZB erhöht Leitzins auf 2,5 Prozent (10.09.2026)", "url": "https://www.tagesschau.de/wirtschaft/finanzen/ezb-sitzung-leitzins-100.html"}
+            {
+              "name": "Europäische Zentralbank – Geldpolitische Beschlüsse (10.09.2026)",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
+            },
+            {
+              "name": "Raisin – EZB-Zinsentscheid: Termine & Prognosen",
+              "url": "https://www.raisin.com/de-at/glossar/ezb-leitzins/zinsentscheid/"
+            },
+            {
+              "name": "tagesschau – EZB erhöht Leitzins auf 2,5 Prozent (10.09.2026)",
+              "url": "https://www.tagesschau.de/wirtschaft/finanzen/ezb-sitzung-leitzins-100.html"
+            }
           ]
         },
         {
           "titel": "Inflationsrate bleibt bei 2,9 Prozent — ohne Energie nur 2,2 Prozent",
           "aufmacher": "Die Teuerung in Deutschland hat sich im August 2026 nicht weiter abgeschwächt und liegt weiter bei 2,9 Prozent.",
-          "fakten": "Wie das Statistische Bundesamt mitteilte, lag die Inflationsrate im August 2026 — gemessen als Veränderung des Verbraucherpreisindex zum Vorjahresmonat — bei +2,9 Prozent, nach +2,8 Prozent im Juli.[13] Die Inflationsrate ohne Energie betrug +2,2 Prozent, ohne Heizöl und Kraftstoffe +2,0 Prozent.[13] Die Deutsche Bundesbank bestätigt den Wert für den harmonisierten Verbraucherpreisindex: +2,9 Prozent nach +2,8 Prozent im Juli.[13]",
+          "fakten": "Wie das Statistische Bundesamt mitteilte, lag die Inflationsrate im August 2026 — gemessen als Veränderung des Verbraucherpreisindex zum Vorjahresmonat — bei +2,9 Prozent, nach +2,8 Prozent im Juli. Die Inflationsrate ohne Energie betrug +2,2 Prozent, ohne Heizöl und Kraftstoffe +2,0 Prozent. Die Deutsche Bundesbank bestätigt den Wert für den harmonisierten Verbraucherpreisindex: +2,9 Prozent nach +2,8 Prozent im Juli.",
           "einordnung": "Der Energieanteil treibt die Rate — die Kerninflation nähert sich dem EZB-Ziel von 2 Prozent bereits an. Für die Immobilienkalkulation stützt das die Annahme, dass die Erhöhungsphase nicht beliebig lange weitergeht und sich mittelfristig wieder bessere Refinanzierungsfenster öffnen. Bei Bau- und Sanierungskosten ist dagegen weiterhin mit Preisauftrieb zu rechnen — die Rate ohne Energie liegt über der Gesamtrate.",
           "quellen": [
-            {"name": "Statistisches Bundesamt (Destatis) – Pressemitteilung Nr. 320 (10.09.2026)", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_320_611.html"}
+            {
+              "name": "Statistisches Bundesamt (Destatis) – Pressemitteilung Nr. 320 (10.09.2026)",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_320_611.html"
+            }
           ]
         }
       ]
@@ -107,10 +146,13 @@
         {
           "titel": "🤖 Hermes Agent 0.21.4 → 0.21.5: Patch-Release mit 460 gemergten PRs",
           "aufmacher": "Der Update-Scan meldet Rückstand: installiert ist v0.21.4 (21.09.), als neuestes Tag ist v0.21.5 vom 24. September 2026 verfügbar.",
-          "fakten": "Die Version 0.21.5 rollt rund 460 gemergte Pull Requests seit v0.21.4 zusammen: 1.610 Nicht-Merge-Commits über 4.828 geänderte Dateien (+164.132 / -149.440 Zeilen), 460 PRs und 475 geschlossene Issues.[15] Inhaltlich nennt das Release unter anderem eine Desktop-Plugin-SDK-Welle (Composer-Draft-API, Session-List- und Row-Decoration-Slots, typisierte Bridges für Settings, Skills, Toolsets und Profile, ein sandboxed Embed-Primitive), einen einfachen und einen erweiterten Interface-Modus für Desktop, eine neue Connectors-Seite als Ersatz für den MCP-Tab mit der Schaltfläche Connect now, vollständige französische, deutsche und spanische Desktop-Kataloge samt RTL/LTR-Textrichtungseinstellung, die Live-Anzeige des stehenden /goal und wartender Prompts in CLI und TUI — sowie eine lange Reihe von Performance-Arbeiten an Config-Laden, Tool-Registry, Gateway-Nachrichtenverarbeitung und Modellauswahl.[15] Vollständige kuratierte Notes erscheinen erst mit v0.22.0.[15]",
+          "fakten": "Die Version 0.21.5 rollt rund 460 gemergte Pull Requests seit v0.21.4 zusammen: 1.610 Nicht-Merge-Commits über 4.828 geänderte Dateien (+164.132 / -149.440 Zeilen), 460 PRs und 475 geschlossene Issues. Inhaltlich nennt das Release unter anderem eine Desktop-Plugin-SDK-Welle (Composer-Draft-API, Session-List- und Row-Decoration-Slots, typisierte Bridges für Settings, Skills, Toolsets und Profile, ein sandboxed Embed-Primitive), einen einfachen und einen erweiterten Interface-Modus für Desktop, eine neue Connectors-Seite als Ersatz für den MCP-Tab mit der Schaltfläche Connect now, vollständige französische, deutsche und spanische Desktop-Kataloge samt RTL/LTR-Textrichtungseinstellung, die Live-Anzeige des stehenden /goal und wartender Prompts in CLI und TUI — sowie eine lange Reihe von Performance-Arbeiten an Config-Laden, Tool-Registry, Gateway-Nachrichtenverarbeitung und Modellauswahl. Vollständige kuratierte Notes erscheinen erst mit v0.22.0.",
           "einordnung": "Für den Dauerbetrieb auf dem Server zählen vor allem die Performance-Arbeiten am Gateway und die Profil-/Multiplex-Isolation — genau die Baustellen, die bei Always-on-Setups mit vielen Cron-Jobs auffallen. Update wie üblich in einer ruhigen Minute und erst nach Abschluss laufender Agent-Sessions einspielen.",
           "quellen": [
-            {"name": "GitHub – NousResearch/hermes-agent, Release v0.21.5 (v2026.9.24)", "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.24"}
+            {
+              "name": "GitHub – NousResearch/hermes-agent, Release v0.21.5 (v2026.9.24)",
+              "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.24"
+            }
           ]
         }
       ]
