@@ -1,14 +1,14 @@
 {
-  "datum": "Sonntag, 27.09.2026",
+  "datum": "Montag, 28.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "28,9°C · Regen 0% · UV 4",
-          "aufmacher": "Bedeckter Start, dann ein warmer Spätsommertag mit bis zu 28,9 Grad in Troisdorf — Regen ist nicht zu erwarten.",
-          "fakten": "Aktuell 14,8°C, Tageshöchstwert 28,9°C, Tiefstwert 14,8°C. Niederschlagswahrscheinlichkeit 0%, UV-Index 4,1 (mittlere Belastung). Himmel aktuell bedeckt.",
-          "einordnung": "Trockener, warmer Sonntag — brauchbar für Außenarbeiten an Fassade, Dach oder Außenanlage. Bei UV 4 ab längerer Mittagszeit Sonnenschutz mitnehmen.",
+          "titel": "27,9°C · Regen 4% · UV 3,5",
+          "aufmacher": "Bedeckter Start, danach ein warmer Spätsommertag mit bis zu 27,9 Grad in Troisdorf — das Regenrisiko liegt nur bei 4 %.",
+          "fakten": "Aktuell 17,5 °C, Tageshöchstwert 27,9 °C, Tiefstwert 17,3 °C. Niederschlagswahrscheinlichkeit 4 %, UV-Index 3,5 (mittlere Belastung), Himmel bedeckt.",
+          "einordnung": "Trockener, warmer Tag — gut für Außenarbeiten an Fassade, Dach oder Außenanlage. Bei UV 3,5 ab der Mittagszeit Sonnenschutz einplanen.",
           "quellen": []
         }
       ]
@@ -17,24 +17,24 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Sonntag, 27.09.2026 · ganztägig — Geburtstag von Peter",
-          "aufmacher": "Der heutige Sonntag ist mit dem Geburtstag von Peter im Kalender belegt.",
-          "fakten": "Termin aus dem Google-Kalender: Sonntag, 27.09.2026, ganztägig (00:00 Uhr).",
-          "einordnung": "Heute noch Gelegenheit für Karte oder Anruf.",
-          "quellen": []
-        },
-        {
           "titel": "Mittwoch, 30.09.2026 · 10:00 — Quixx-Meeting",
           "aufmacher": "Am Mittwochvormittag steht das Quixx-Meeting an.",
           "fakten": "Termin aus dem Google-Kalender: Mittwoch, 30.09.2026, 10:00 Uhr.",
-          "einordnung": "Drei Tage Vorlauf — Unterlagen und offene Vorgänge lassen sich bis dahin zusammenstellen.",
+          "einordnung": "Zwei Tage Vorlauf — Unterlagen und offene Vorgänge lassen sich bis dahin zusammenstellen.",
           "quellen": []
         },
         {
-          "titel": "Mittwoch, 30.09.2026 · 15:25 — Therapiezentrum Snoek (Manuelle Therapie/Sporttherapie/Osteopathie)",
+          "titel": "Mittwoch, 30.09.2026 · 15:25 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
           "aufmacher": "Am Mittwochnachmittag folgt der Termin im Therapiezentrum Snoek.",
           "fakten": "Termin aus dem Google-Kalender: Mittwoch, 30.09.2026, 15:25 Uhr.",
           "einordnung": "Direkt im Anschluss an das Quixx-Meeting am Vormittag — Fahrtzeit einplanen.",
+          "quellen": []
+        },
+        {
+          "titel": "Donnerstag, 01.10.2026 · 15:00 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "aufmacher": "Am Donnerstag folgt der zweite Termin im Therapiezentrum Snoek.",
+          "fakten": "Termin aus dem Google-Kalender: Donnerstag, 01.10.2026, 15:00 Uhr.",
+          "einordnung": "Zwei Behandlungen in derselben Woche — Nachmittage sind entsprechend blockiert.",
           "quellen": []
         }
       ]
@@ -43,43 +43,21 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorfer Doppelhaushalt steht — Sparprogramm trifft Infrastruktur, Grundsteuer-Debatte geht weiter",
-          "aufmacher": "Nach zwei gescheiterten Anläufen hat der Troisdorfer Stadtrat den Doppelhaushalt 2026/27 am 25. August mehrheitlich beschlossen — unter strengem Spardiktat und mit gekürzten Infrastrukturmitteln.",
-          "fakten": "In geheimer Abstimmung stimmten 26 Ratsmitglieder für den Haushalt, elf dagegen und 14 enthielten sich. Kämmerin Sabine Wendt begründete die Kürzungen auch damit, dass die Gewerbesteuereinnahmen weiter hinter den Erwartungen zurückbleiben. Im Plan stehen unter anderem 300.000 Euro weniger für Substanzerhaltung Infrastruktur (2026) und 100.000 Euro weniger für 2027, 50.000 Euro weniger für Straßenbegleitgrün sowie 200.000 Euro weniger Straßenbau im laufenden und 400.000 Euro weniger im kommenden Jahr. Das Naherholungskonzept Rotter See ist gestrichen, das Integrierte Handlungskonzept Oberlar auf Null gesetzt. Parallel läuft die Grundsteuer-Debatte: Die Stadt erklärt in ihrer eigenen Pressemitteilung, ohne Anpassung der Grundsteuer B verliere Troisdorf 2026 rund 4,2 Millionen Euro und ab 2027 jährlich etwa 5,5 Millionen Euro an eigener Einnahme plus Schlüsselzuweisungen; der Kämmerer nennt eine Erhöhung auf 640 Punkte 'zwingend erforderlich', Bürgermeister Alexander Biber beziffert den Verlust bei Verzicht auf 9,7 Millionen Euro. Die Oppositionsfraktion SPD erklärt, CDU und FDP hätten im Rat eine Erhöhung von 535 auf 640 Punkte rückwirkend zum 1. Januar 2026 beschlossen; eine amtlich veröffentlichte Hebesatzung war in den geprüften Primärquellen nicht abrufbar, verbreitete Hebesatz-Datenbanken führen für Troisdorf weiterhin 555 Punkte (Datenstand 2024). Der genaue, aktuell geltende Hebesatz ist damit nicht verifiziert.",
-          "einordnung": "Zwei Hebel zugleich für den hiesigen Bestand: steigende Grundsteuer belastet die Nebenkostenabrechnung — die Grundsteuer ist nach § 2 Nr. 1 BetrKV umlagefähig und wird über die Wohnfläche verteilt —, während zugleich der städtische Investitionsstau bei Straßen und Infrastruktur wächst. Wer in Troisdorf Bestand hält, sollte den Hebesatz vor der nächsten Nebenkostenabrechnung am eigenen Grundsteuerbescheid prüfen, nicht an Vergleichsportalen. Für den Neuerwerb bleibt die Stadt ein Standort mit knapper Kasse, aber weiterhin knappem Wohnraum.",
+          "titel": "Troisdorf schreibt Smart-City-Strategie fort und sucht 20 Impulsgeber",
+          "aufmacher": "Die Stadt Troisdorf sucht 20 Bürgerinnen, Vereine und Unternehmen, die an der Fortschreibung ihrer Smart-City-Strategie mitarbeiten — Bewerbungen sind bis zum 5. Oktober 2026 möglich.",
+          "fakten": "Geplant ist ein interaktiver Workshop am Dienstag, 3. November 2026, 16:00 bis 19:00 Uhr, im Geschäftsgebäude der KESKIN Fensterbau GmbH, Junkersring 41 in Troisdorf. Die Impulsgruppe umfasst 20 ausgewählte Personen plus Vertreter der Ratsfraktionen; bearbeitet werden die Handlungsfelder Verwaltung, Mobilität, Leben und Freizeit, Klimaschutz, Wirtschaft, Soziales, Gesundheit und Pflege sowie Bildung. Rückmeldung an die Ausgewählten bis 9. Oktober 2026. Die Strategie wurde 2023 veröffentlicht; seither wurden rund 30 digitale Angebote eingeführt, darunter über 100 digitalisierte Antragsverfahren, eine Dokumentenausgabebox, ein KI-Chatbot und die smarT:app mit mehr als 9.000 Downloads. Im Sommer 2026 beteiligten sich laut Stadt mehr als 500 Bürgerinnen, Bürger und Schüler an Umfragen.",
+          "einordnung": "Für Quixx24 als Troisdorfer Unternehmen ein direkter Kanal in die kommunale Digitalisierung — und ein Signal, dass die Stadt bei E-Government und digitalen Antragswegen ernsthaft Fahrt aufnimmt. Wer dort früh mitredet, hat bei späteren Ausschreibungen und Schnittstellen einen Informationsvorsprung.",
           "quellen": [
-            {
-              "name": "Kölner Stadt-Anzeiger – Troisdorf: Stadtrat verabschiedet Haushalt im dritten Anlauf",
-              "url": "https://www.ksta.de/region/rhein-sieg-bonn/troisdorf/troisdorf-stadtrat-verabschiedet-haushalt-im-dritten-anlauf-1358066"
-            },
-            {
-              "name": "Stadt Troisdorf – Warum Troisdorf die Grundsteuer anpassen muss (20.01.2026)",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/januar/warum-troisdorf-die-grundsteuer-anpassen-muss/"
-            },
-            {
-              "name": "SPD Troisdorf – Bürgermeister will Grundsteuer erhöhen (16.01.2026)",
-              "url": "https://www.spd-troisdorf.de/2026/01/16/buergermeister-biber-grundsteuer-erhoehung/"
-            },
-            {
-              "name": "NebenkostenPro – Grundsteuer-B-Hebesatz Troisdorf (Datenstand 2024)",
-              "url": "https://nebenkostenpro.de/stadt/troisdorf/grundsteuer"
-            }
+            {"name": "Stadt Troisdorf – Pressemeldung", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/stadt-troisdorf-sucht-20-impulsgeber-innen-fuer-smart-city/"}
           ]
         },
         {
-          "titel": "Bahnstrecke Troisdorf–Wiesbaden bleibt bis 12. Dezember gesperrt",
-          "aufmacher": "Die Korridorsanierung der Bahnstrecke am rechten Rhein zwischen Troisdorf und Wiesbaden läuft seit dem 10. Juli und dauert bis zum 12. Dezember 2026.",
-          "fakten": "Die Deutsche Bahn modernisiert die Strecke über fünf Monate; betroffen ist der Korridor Troisdorf–Wiesbaden. Zusätzlich ist im Troisdorfer Stadtgebiet die Kurt-Schumacher-Straße zwischen 'In den Hecken' und Bebelstraße noch bis zum 30. September 2026 voll gesperrt — die Maßnahme dient der Herstellung von Leitungs- und Kanalarbeiten. Die Stadt veröffentlicht laufend aktualisierte Verkehrsmeldungen zu weiteren Sperrungen im Stadtgebiet.",
-          "einordnung": "Für den Fuhrpark und den Warenverkehr bedeutet der gesperrte Bahnkorridor, dass Verladungen und Ersatzlogistik weiter auf der Straße laufen — und dass die A3/Stadtstraßen bis Mitte Dezember dichter sind. Wer Lieferungen für Quixx24 oder Baumaterial für Immobilienprojekte terminiert, sollte Puffer einplanen und die städtischen Verkehrsmeldungen vor Routenfestlegung prüfen.",
+          "titel": "Rhein-Sieg-Kreis: 200.600 Berufspendler über die Kreisgrenze",
+          "aufmacher": "Rund 200.600 Beschäftigte pendeln im Rhein-Sieg-Kreis über die Kreisgrenze zur Arbeit — deutlich mehr hinaus als herein.",
+          "fakten": "Nach der aktuellen Pendlerstatistik der Bundesagentur für Arbeit kommen 66.600 Beschäftigte in den Rhein-Sieg-Kreis, um dort zu arbeiten, während 133.970 Einwohner des Kreises ihren Job außerhalb haben. Die Gewerkschaft Nahrung-Genuss-Gaststätten (NGG) Köln nennt für eine Stunde Bahnfahrt im Fernverkehr ein Verhältnis von vier Arbeitsstunden zum Mindestlohn und fordert ein Mobilitätsgeld von 17 Cent je Kilometer, einheitlich ausgezahlt oder beim Lohnsteuerabzug verrechnet. Zusätzlich bringt sie Zuschüsse der Betriebe ins Gespräch — vom Deutschland-Ticket für 63 Euro pro Monat bis zum kostenlosen Stromtanken auf dem Firmengelände.",
+          "einordnung": "Die Pendlerzahlen sind der harte Kern der Nachfrage nach Wohnraum: Wer in Bonn oder Köln arbeitet und im Kreis wohnt, braucht bezahlbare Mietwohnungen nahe der Bahnachse — genau das Segment, in dem sich MFH-Investments in Troisdorf und Umgebung rechnen. Die Forderung nach Wegegeld-Zuschüssen ist zugleich ein Frühindikator für steigende Mobilitätskosten, die bei der Standortbewertung einzelner Objekte mitlaufen sollten.",
           "quellen": [
-            {
-              "name": "Deutsche Bahn – Korridorsanierung Rechter Rhein, Troisdorf–Wiesbaden",
-              "url": "https://rechter-rhein.deutschebahn.com/"
-            },
-            {
-              "name": "Stadt Troisdorf – Arbeiten und Straßensperrungen im Stadtgebiet",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/juni/arbeiten-und-strassensperrungen-im-stadtgebiet/"
-            }
+            {"name": "NGG Köln / AusBadHonnef – Pendlerstatistik Rhein-Sieg-Kreis", "url": "https://ausbadhonnef.de/2026/09/01/rein-und-raus-aus-dem-rhein-sieg-kreis-200-600-beschaeftigte-pendeln-kritik-an-ticket-preisen-4-stunden-arbeit-zum-mindestlohn-fuer-1-stunde-bahnfahrt/"}
           ]
         }
       ]
@@ -88,39 +66,23 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen über vier Prozent — Zehnjahres-Fix zwischen 4,08 und 4,49 Prozent",
-          "aufmacher": "Die Bauzinsen haben sich seit Mitte Juli um rund einen halben Prozentpunkt nach oben bewegt und liegen für zehnjährige Darlehen wieder deutlich über vier Prozent.",
-          "fakten": "Interhyp weist für die Woche 14. bis 20. September 2026 bei zehn Jahren Zinsbindung 4,08 Prozent (unter 70 Prozent Beleihung), 4,20 Prozent (=80) und 4,49 Prozent (über 90) aus; 15 Jahre liegen bei 4,30/4,40/4,70, 20 Jahre bei 4,36/4,53/4,70. Als Treiber nennt Interhyp die höheren Renditen für Staatsanleihen; das Bankenpanel ist gespalten — kurzfristig rechnen 50 Prozent mit steigenden, 50 Prozent mit seitwärts laufenden Zinsen. Finanztip beziffert das Niveau Mitte September mit meist 4,4 bis 4,9 Prozent für 5 bis 20 Jahre Zinsbindung und hält Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen für jederzeit möglich. Dr. Klein nennt als Ausgangspunkt die Marktentwicklung 2026: Im Iran-Krieg ab Ende Februar 2026 stieg der Topzins für zehn Jahre von 3,28 auf 3,67 Prozent, im Juli von rund 3,3 auf 3,7 Prozent und im August knapp unter die Vier-Prozent-Marke.",
-          "einordnung": "Die Nullzins-Phase ist endgültig vorbei, Eigenkapital ist wieder der günstigste Baustein. Bei der Strategie, nur die Kaufnebenkosten aus EK zu decken und den Rest über Bankdarlehen zu finanzieren, verteuert jeder Zinsschritt den Hebel spürbar: 0,5 Prozentpunkte auf eine Million Euro Darlehen kosten rund 5.000 Euro Zinsen pro Jahr und drücken den Cashflow. Solange die Prognose uneinheitlich ist, lohnt sich — vor der Refinanzierungsrunde — eine parallele Anfrage bei mehreren Banken mit aktiv verhandelter Zinsbindung; ein Fall für Petra.",
+          "titel": "Bauzinsen bleiben über der Vier-Prozent-Marke",
+          "aufmacher": "Für zehnjährige Immobiliendarlehen zahlen Käufer derzeit rund 4,2 Prozent — die Experten rechnen kurzfristig nicht mit einer Entlastung.",
+          "fakten": "Interhyp nennt für den Zeitraum 14. bis 20. September 2026 effektive Jahreszinsen von 4,08 Prozent bei einem Beleihungsauslauf unter 70 Prozent, 4,20 Prozent bei 80 Prozent und 4,49 Prozent über 90 Prozent; bei 15 Jahren Zinsbindung sind es 4,30 bis 4,70 Prozent. Die kurzfristige Prognose des Interhyp-Bankenpanels ist gespalten: 50 Prozent erwarten weiter steigende, 50 Prozent seitwärts laufende Zinsen. Dr. Klein bezifferte den Topzins für zehnjährige Darlehen am 3. September mit 3,97 Prozent und erwartet für das zweite Halbjahr 2026 eine Spanne von 3,3 bis 3,9 Prozent. Treiber sind laut beiden Vermittlern die gestiegenen Renditen langfristiger Staatsanleihen — die zehnjährige Bundesanleihe erreichte nach Angaben der Deutschen Bank mit 3,27 Prozent ein zyklisches Hoch — sowie der Iran-Konflikt und die jüngste EZB-Zinserhöhung.",
+          "einordnung": "Über vier Prozent Bauzins bei 80 Prozent Beleihung bedeutet für die geplante MFH-Finanzierung maximaler Hebel: Bei rund 600.000 Euro Darlehen kostet allein der Zins über 24.000 Euro im Jahr, bevor ein Euro getilgt ist. Da die Zinsprognose gespalten und eher aufwärtsgerichtet ist, spricht mehr dafür, die Zinsbindung früh zu fixieren und die Kaufnebenkosten-Strategie nicht auf ein Absinken der Zinsen zu bauen. Wer nach der Anlaufphase ohnehin auf Refinanzierung mehrerer Banken setzt, sollte die Festschreibung bewusst kurz genug wählen, um nicht auf dem Höhepunkt zu landen.",
           "quellen": [
-            {
-              "name": "Interhyp – Bauzinsen aktuell (Konditionen 14.–20.09.2026)",
-              "url": "https://www.interhyp.de/zinsen/"
-            },
-            {
-              "name": "Finanztip – Aktuelle Bauzinsen (Stand 18.09.2026)",
-              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
-            },
-            {
-              "name": "Dr. Klein – Zinsentwicklung Baufinanzierung 2026",
-              "url": "https://www.drklein.de/zinsentwicklung-prognose.html"
-            }
+            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Dr. Klein – Zinsentwicklung Baufinanzierung 2026", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"}
           ]
         },
         {
-          "titel": "Baugenehmigungen ziehen an — Mehrfamilienhäuser legen zweistellig zu",
-          "aufmacher": "In Deutschland wurden im Juli 2026 rund 22.500 Wohnungen genehmigt — 1,9 Prozent mehr als im Vorjahresmonat, nach einem starken ersten Halbjahr.",
-          "fakten": "Wie das Statistische Bundesamt mitteilt, stieg die Zahl der Baugenehmigungen im Juli 2026 auf 22.500 Wohnungen (+1,9 Prozent oder 400 gegenüber Juli 2025). Im Neubau wurden 18.400 Wohnungen genehmigt (+0,8 Prozent), durch Umbau bestehender Gebäude 4.100 (+7,0 Prozent). Von Januar bis Juli 2026 wurden insgesamt 12,9 Prozent oder 17.000 Wohnungen mehr genehmigt als im Vorjahreszeitraum. In neuen Wohngebäuden entfielen allein 79.700 Neubauwohnungen auf Mehrfamilienhäuser — ein Anstieg um 15,1 Prozent oder 10.500 Wohnungen. Im Juni 2026 hatte der Zuwachs noch bei 13,8 Prozent gelegen; das erste Halbjahr 2026 insgesamt war der stärkste Anstieg seit 2016 (+15,1 Prozent).",
-          "einordnung": "Das Angebot an größeren Wohngebäuden wächst überdurchschnittlich — genau das Segment, in dem Mike einkauft. Kurzfristig entspannt das die Konkurrenzlage um Bestandsobjekte kaum, mittelfristig verschiebt es aber das Verhältnis von Kaufpreis zu erwartender Miete zugunsten des Käufers. Die Genehmigungszahlen sind ein Frühindikator — ob daraus Fertigstellungen werden, hängt an Baukosten und Zinsniveau, nicht an der Statistik.",
+          "titel": "Troisdorf bleibt teuerste Stadt im Kreis — Miete im Schnitt 11,93 Euro",
+          "aufmacher": "Troisdorf liegt beim Mietniveau 2026 mit durchschnittlich 11,93 Euro je Quadratmeter Kaltmiete vor dem übrigen Rhein-Sieg-Kreis — Tendenz im Jahresverlauf steigend.",
+          "fakten": "Die Auswertung von Mietinseraten weist für Troisdorf im zweiten Quartal 2026 einen Wert von 12,26 Euro je Quadratmeter aus, nach 11,55 Euro im ersten Quartal 2026 und 11,05 Euro im vierten Quartal 2025. Für Wohnungen zwischen 45 und 50 Quadratmetern nennt dieselbe Quelle 13,02 Euro je Quadratmeter im zweiten Quartal 2026. Innerhalb des Kreises reichen die Werte von 8,98 Euro in Much bis 13,86 Euro in Troisdorf. Verbindliche Referenz für bestehende Mietverhältnisse ist der qualifizierte Mietspiegel der Stadt Troisdorf, der zum 1. Oktober 2025 in Kraft getreten ist und nach § 558d BGB vor Gericht als übliche Vergleichsmiete gilt; die dort hinterlegten Euro-Werte je Quadratmeter waren über die öffentlich zugängliche Seite nicht abrufbar und sind hier nicht verifiziert.",
+          "einordnung": "Steigende Angebotsmieten bei Bauzinsen über vier Prozent heben die Rendite bestehender Bestände: Wer in Troisdorf zu alten Mietverträgen vermietet, kann bei Neuvermietung den Abstand zur Angebotsmiete nutzen. Für den geplanten MFH-Zukauf ist Troisdorf damit der teuerste, aber auch der margenträchtigste Standort im Kreis — der Ankaufspreis muss die Differenz allerdings erst wieder hereinholen. Vor jeder Mieterhöhung lohnt der Blick in den qualifizierten Mietspiegel 2025, weil er den rechtlich belastbaren Rahmen setzt.",
           "quellen": [
-            {
-              "name": "Statistisches Bundesamt (Destatis) – Pressemitteilung Nr. 330 (18.09.2026)",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_330_3111.html"
-            },
-            {
-              "name": "Statistisches Bundesamt (Destatis) – Pressemitteilung Nr. 291 (18.08.2026)",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_291_3111.html"
-            }
+            {"name": "Mietspiegeltabelle – Mietspiegel Troisdorf 2026", "url": "https://mietspiegeltabelle.de/mietspiegel-troisdorf/"},
+            {"name": "Stadt Troisdorf – Qualifizierter Mietspiegel 2025", "url": "https://www.troisdorf.de/de/rathaus-service/buergerservice/wohnungsamt/mietspiegel/"}
           ]
         }
       ]
@@ -129,39 +91,22 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hebt Leitzins auf 2,50 Prozent — Sparzinsen ziehen nach",
-          "aufmacher": "Die Europäische Zentralbank hat am 10. September die drei Leitzinssätze um jeweils 0,25 Prozentpunkte angehoben; der Einlagensatz liegt seit 16. September bei 2,50 Prozent.",
-          "fakten": "Nach Angaben der EZB gelten seit dem 16. September 2026: Einlagefazilität 2,50 Prozent, Hauptrefinanzierungsgeschäfte 2,65 Prozent, Spitzenrefinanzierungsfazilität 2,90 Prozent. Die Notenbank begründet den Schritt mit anhaltenden Inflationsimpulsen aus dem Konflikt im Nahen Osten und erwartet, dass die Inflation längere Zeit deutlich über dem Ziel bleibt. Die Projektionen der EZB-Fachleute sehen die Gesamtinflation bei 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028), ohne Energie und Nahrungsmittel bei 2,5, 2,6 und 2,3 Prozent. Beim Wachstum werden 0,9 Prozent (2026), 1,4 (2027) und 1,5 Prozent (2028) erwartet; die Risiken für die Inflation sind aufwärts-, für das Wachstum abwärtsgerichtet. Der EZB-Rat legt sich ausdrücklich nicht auf einen Zinspfad fest und entscheidet von Sitzung zu Sitzung. Finanztip hält fest, dass Tages- und Festgeldzinsen weiter steigen dürften, während auch Ratenkredite teurer werden.",
-          "einordnung": "Doppelt relevant: Anschlussfinanzierungen bleiben teuer, solange die EZB im Erhöhungsmodus ist — gleichzeitig liegt der Dispo-Zins von 11,99 Prozent damit noch deutlicher über dem Markt, sodass Umschichten in Tages- oder Festgeld stärker lohnt als zuvor. Bei rund 600.000 Euro liquiden Mitteln für ein MFH ist die Frage, welcher Teil bis zur Objektentscheidung geparkt wird, derzeit einer der größten Einzelposten im Cashflow. Laufzeiten und Aufteilung der Parkpositionen gehören auf den Tisch des Steuerberaters.",
+          "titel": "EZB hebt Leitzins um 25 Basispunkte auf 2,50 Prozent",
+          "aufmacher": "Die Europäische Zentralbank hat am 10. September 2026 alle drei Leitzinssätze um jeweils 25 Basispunkte angehoben — der Einlagensatz liegt seit dem 16. September bei 2,50 Prozent.",
+          "fakten": "Mit Wirkung vom 16. September 2026 betragen der Zinssatz für die Einlagefazilität 2,50 Prozent, der Hauptrefinanzierungssatz 2,65 Prozent und der Spitzenrefinanzierungssatz 2,90 Prozent. Der EZB-Rat begründet den Schritt mit anhaltendem Inflationsdruck durch den Konflikt im Nahen Osten und erwartet, dass die Inflation länger deutlich über dem Zielwert von 2 Prozent bleibt. Die neuen Projektionen der EZB-Fachleute sehen für 2026 eine durchschnittliche Gesamtinflation von 3,0 Prozent, für 2027 von 2,5 Prozent und für 2028 von 2,1 Prozent; die Kerninflation wird für 2026 mit 2,5 Prozent veranschlagt. Beim Wirtschaftswachstum rechnet die EZB mit 0,9 Prozent (2026), 1,4 Prozent (2027) und 1,5 Prozent (2028). Der Rat legt sich ausdrücklich nicht auf einen weiteren Zinspfad fest. Die Ankaufbestände aus APP und PEPP werden weiterhin nicht wiederangelegt.",
+          "einordnung": "Ein Einlagensatz von 2,50 Prozent macht Tages- und Festgeld wieder attraktiv und erhöht die Opportunitätskosten liquider Reserven — relevant für die Frage, wie viel Eigenkapital bis zum MFH-Kauf ungenutzt liegt. Gleichzeitig ist der Schritt der Gegenwind für die Bauzinsen: Die Erhöhung selbst ist eingepreist, die EZB-Erwartung einer Inflation von 3,0 Prozent im laufenden Jahr aber nicht. Die nächste Sitzung ist für den 29. Oktober angesetzt.",
           "quellen": [
-            {
-              "name": "Europäische Zentralbank – Monetary policy decisions (10.09.2026)",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"
-            },
-            {
-              "name": "Finanztip – Zinsentwicklung und Zinsprognose 2026",
-              "url": "https://www.finanztip.de/zinsentwicklung/"
-            },
-            {
-              "name": "ZDFheute – Höhere Zinsen: Das Comeback des Tagesgeldkontos (17.09.2026)",
-              "url": "https://www.zdfheute.de/wirtschaft/tagesgeld-zinsen-tagesgeldkonto-ezb-bank-100.html"
-            }
+            {"name": "EZB – Geldpolitische Beschlüsse vom 10.09.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"}
           ]
         },
         {
-          "titel": "Unternehmensstimmung steigt auf 89,9 Punkte — DAX schließt bei 25.396",
-          "aufmacher": "Das ifo Geschäftsklima ist im September 2026 auf 89,9 Punkte gestiegen, nach 88,8 Punkten im August; der DAX beendete die Woche bei 25.396 Punkten.",
-          "fakten": "Das ifo Institut meldet für September 2026 einen Anstieg des Geschäftsklimaindex auf 89,9 Punkte (August: 88,8). Die Unternehmen bewerteten sowohl die aktuelle Lage (89,5 nach 88,5) als auch ihre Erwartungen (90,4 nach 89,0) besser; im Verarbeitenden Gewerbe legte der Index erneut zu, im Handel stieg er, im Bauhauptgewerbe blieb er nahezu unverändert. Die Konjunkturumfrage basiert auf rund 9.000 monatlichen Meldungen. Der DAX schloss am Freitag rund 0,5 Prozent fester bei 25.396 Punkten und verbuchte damit ein Wochenplus von 0,4 Prozent; im Monatsvergleich liegt der Index 3,34 Prozent im Minus, auf Jahressicht 7,03 Prozent im Plus. Als Kurstreiber nennt der Marktbericht Hoffnungen auf eine Öffnung der Straße von Hormus und damit fallende Ölpreise sowie eine Verlängerung des US-China-Handelsabkommens um zwei Monate. Widersprüchliche Angabe: Ein im Suchindex weit oben stehender Tagesschau-Artikel meldet für September einen Rückgang auf 87,7 Punkte — dieser Wert entspricht der ifo-Zeitreihe für September 2025, nicht dem aktuellen Berichtsmonat. Maßgeblich ist hier die Primärquelle des ifo Instituts.",
-          "einordnung": "Die Stimmungserholung bei gleichzeitig hohen Zinsen ist für die Immobilienkalkulation ein zweischneidiges Signal: Die Konjunktur stützt die Mietnachfrage, die EZB-Erwartungen stützen aber auch das Zinsniveau. Für ein MFH heißt das, die Mietansätze eher konservativ und die Finanzierung eher langlaufend zu planen. Die Bau-Hauptgewerbe-Stimmung stagniert weiter — Baukosten bleiben damit die härtere Variable als die Konjunktur.",
+          "titel": "Inflation steigt auf 2,9 Prozent — Konjunkturprognose mehr als verdoppelt",
+          "aufmacher": "Die Teuerung in Deutschland ist im August 2026 auf 2,9 Prozent gestiegen, während die führenden Wirtschaftsinstitute ihre Wachstumsprognose für dieses Jahr von 0,6 auf 1,3 Prozent anhoben.",
+          "fakten": "Nach Angaben des Statistischen Bundesamtes lagen die Verbraucherpreise im August 2026 um 2,9 Prozent über dem Vorjahresmonat, nach 2,8 Prozent im Juli und 2,3 Prozent im Juni; gegenüber dem Vormonat stiegen sie um 0,2 Prozent. Haupttreiber sind die Energiepreise mit plus 10,5 Prozent binnen Jahresfrist — der stärkste Anstieg seit über drei Jahren. Leichtes Heizöl verteuerte sich um 49,6 Prozent, während Strom 5,5 Prozent und Erdgas 2,9 Prozent günstiger wurden. Nahrungsmittel blieben mit plus 0,1 Prozent nahezu unverändert. Die Kerninflation ohne Nahrungsmittel und Energie liegt bei 2,4 Prozent, Dienstleistungen verteuerten sich um 2,8 Prozent. Die Gemeinschaftsdiagnose der führenden Institute vom 24. September erwartet für 2026 ein BIP-Plus von 1,3 Prozent (Frühjahrsprognose 0,6 Prozent), für 2027 von 1,1 Prozent und für 2028 nur noch 0,4 Prozent; der Arbeitsmarkt schrumpft trotzdem. Der DAX notierte am 25. September bei rund 25.437 Punkten.",
+          "einordnung": "Die 2,9 Prozent Teuerung sind fast vollständig ein Energieschock — für Immobilien bedeutet das höhere Heizkosten, was bei Mieterhöhungen und Betriebskostenabrechnungen Spielraum schafft, aber auch die Nebenkostenlast der Mieter erhöht. Der starke Heizöl-Aufschlag relativiert sich für Objekte mit Wärmepumpe: Genau dort sinkt die Heizkostenlast gegenüber Öl deutlich. Die auf 1,3 Prozent verdoppelte Wachstumsprognose stützt die gewerbliche Nachfrage im Rhein-Sieg-Kreis, ist aber wegen der niedrigen 2028er-Prognose kein Signal für langfristig steigende Zinsen.",
           "quellen": [
-            {
-              "name": "ifo Institut – ifo Geschäftsklimaindex gestiegen (September 2026, 24.09.2026)",
-              "url": "https://www.ifo.de/fakten/2026-09-24/ifo-geschaeftsklimaindex-gestiegen-september-2026"
-            },
-            {
-              "name": "Trading Economics – Germany Stock Market Index (DE40)",
-              "url": "https://tradingeconomics.com/germany/stock-market"
-            }
+            {"name": "Destatis – Inflationsrate im August 2026", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_320_611.html"},
+            {"name": "Tagesschau – Herbstprognose der Wirtschaftsinstitute", "url": "https://www.tagesschau.de/wirtschaft/konjunktur/herbstprognose-konjunktur-aufschwung-100.html"}
           ]
         }
       ]
@@ -170,15 +115,16 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent 0.21.4 → 0.21.5: 460 gemergte PRs, Fokus Performance und Plugin-SDK",
-          "aufmacher": "Der Update-Scan meldet Rückstand: Installiert ist Hermes Agent v0.21.4 (21.09.2026, 2.696 Commits hinter upstream), das neueste Tag ist v0.21.5 vom 24. September 2026.",
-          "fakten": "Das Patch-Release v0.21.5 (GitHub-Tag v2026.9.24) bündelt rund 460 gemergte Pull Requests seit v0.21.4: 1.610 Nicht-Merge-Commits über 4.828 geänderte Dateien (+164.132 / −149.440 Zeilen) und 475 geschlossene Issues. Inhaltlich nennt das Release unter anderem eine Desktop-Plugin-SDK-Welle (Composer-Draft-API, Session-List- und Row-Decoration-Slots, typisierte Bridges für Settings, Skills, Toolsets und Profile, ein sandboxed Embed-Primitive), einen einfachen und einen erweiterten Interface-Modus für Desktop, die neue Connectors-Seite als Ersatz für den MCP-Tab samt 'Connect now', vollständige französische, deutsche und spanische Desktop-Kataloge mit RTL/LTR-Textrichtungseinstellung sowie die Live-Anzeige des stehenden /goal und wartender Prompts in CLI und TUI. Dazu kommt eine längere Reihe von Performance-Arbeiten an Config-Laden, Tool-Registry, Gateway-Nachrichtenverarbeitung und Modellauswahl. Kuratierte Release-Notes für dieses Fenster liefert erst v0.22.0. Home Assistant meldet der Scan als aktuell — dort besteht kein Update-Bedarf.",
-          "einordnung": "Für den Dauerbetrieb auf dem Server zählen vor allem die Performance-Arbeiten am Gateway und die Profil-Isolation — genau die Baustellen, die bei Always-on-Setups mit vielen Cron-Jobs auffallen. Das Update wie üblich in einer ruhigen Minute einspielen und erst nach Abschluss laufender Agent-Sessions, damit kein Cron-Job mitten im Lauf unterbrochen wird.",
+          "titel": "5 Updates auf dem Home-Assistant-Server verfügbar",
+          "aufmacher": "Der Update-Scan des eigenen Systems meldet fünf offene Aktualisierungen — betroffen sind zwei Add-ons mit Auto-Update sowie drei Komponenten, die manuell angestoßen werden müssen.",
+          "fakten": "Home Assistant Core, Supervisor, Operating System, HACS und das NAS-DSM melden keine offenen Updates, der Paketbestand des Systems ist vollständig aktuell. Offen sind: Studio Code Server 7.1.1 auf 7.2.0 (Auto-Update aktiv, im Kern ein Renovate-Sprung auf debian-base 7.8.2 und Home-Assistant-CLI 4.38.0), Glances 0.23.0 auf 0.23.1, Advanced SSH & Web Terminal 24.1.5 auf 24.1.6 (beide Add-ons aus der Community-Reihe, veröffentlicht am 27. September), Home Assistant MCP Server (Dev) 8.5.0.dev2748 auf dev2772 mit Auto-Update sowie die Bosch-SHC-Integration v0.12.25 auf v0.12.28. Die Bosch-Aktualisierung behebt nach Herstellerangabe einen seit der 0.9er-Reihe bestehenden Fehler: Der Recalibrate-Button an einem Shutter Control II hat nie kalibriert, sondern nur das Kalibrier-Flag zurückgesetzt und den Rollladen vollständig geöffnet — die echte Kalibrierung läuft jetzt über einen PUT des operationState auf CALIBRATING. Zusätzlich wurden eine Startup-Wiederholung von Bewegungsereignissen nach Neustart behoben und Abschalt-Routinen auf eine öffentliche Schnittstelle umgestellt.",
+          "einordnung": "Die Add-on-Updates sind ohne Risiko und laufen bei zwei von ihnen automatisch — nichts zu tun. Interessant ist allein Bosch: Die Rollladen-Rekalibrierung ist erst laut Release-Notes von Bosch selbst am 21. September als tatsächlich funktionierend bestätigt worden, und der Maintainer weist ausdrücklich darauf hin, dass der Lauf auf echter Shutter-Control-II-Hardware noch nicht gegengeprüft ist. Bei Rollläden, die für Verschattung und Wärmeeintrag relevant sind, lohnt daher ein Blick nach dem Update, ob die Endlagen noch stimmen. Der MCP-Server bringt als Dev-Version keine dokumentierten Release-Notes.",
           "quellen": [
-            {
-              "name": "GitHub – NousResearch/hermes-agent, Release v0.21.5 (v2026.9.24)",
-              "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.24"
-            }
+            {"name": "GitHub – boschshc-hass v0.12.28 Release Notes", "url": "https://github.com/tschamm/boschshc-hass/releases/tag/v0.12.28"},
+            {"name": "GitHub – Studio Code Server Releases", "url": "https://github.com/hassio-addons/app-vscode/releases"},
+            {"name": "GitHub – Advanced SSH & Web Terminal Releases", "url": "https://github.com/hassio-addons/app-ssh/releases"},
+            {"name": "GitHub – Glances Add-on Releases", "url": "https://github.com/hassio-addons/app-glances/releases"},
+            {"name": "GitHub – Home Assistant Community Apps", "url": "https://github.com/hassio-addons/repository"}
           ]
         }
       ]
