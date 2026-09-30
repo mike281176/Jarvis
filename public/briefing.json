@@ -1,14 +1,14 @@
 {
-  "datum": "Dienstag, 29.09.2026",
+  "datum": "Mittwoch, 30.09.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "28,8°C · Regen 0% · UV 3,4",
-          "aufmacher": "Bedeckter Morgen, dann ein trockener und warmer Spätsommertag in Troisdorf mit bis zu 28,8 Grad und keinem Regenrisiko.",
-          "fakten": "Aktuell 18,3 °C, Tageshöchstwert 28,8 °C, Tiefstwert 17,8 °C. Niederschlagswahrscheinlichkeit 0 %, UV-Index 3,4 (mittlere Belastung), Himmel bedeckt.",
-          "einordnung": "Trocken und warm — gut für Außenarbeiten an Fassade, Dach oder Außenanlage. Bei UV 3,4 ab der Mittagszeit Sonnenschutz einplanen.",
+          "titel": "28,9°C · Regen 8% · UV 3,8",
+          "aufmacher": "Bedeckter Morgen, dann ein überwiegend trockener Spätsommertag in Troisdorf mit bis zu 28,9 Grad.",
+          "fakten": "Aktuell 19,1 °C, Tageshöchstwert 28,9 °C, Tiefstwert 18,5 °C. Niederschlagswahrscheinlichkeit 8 %, UV-Index 3,8 (mittlere Belastung), Himmel bedeckt.",
+          "einordnung": "Trocken und warm — brauchbar für Arbeiten an Dach, Fassade und Außenanlage. Gegen Mittag ist der UV-Index am höchsten, Sonnenschutz einplanen.",
           "quellen": []
         }
       ]
@@ -18,22 +18,22 @@
       "artikel": [
         {
           "titel": "Mittwoch, 30.09.2026 · 10:00 — Quixx-Meeting",
-          "aufmacher": "Am Mittwochvormittag steht das Quixx-Meeting an.",
+          "aufmacher": "Heute Vormittag steht das Quixx-Meeting an.",
           "fakten": "Termin aus dem Google-Kalender: Mittwoch, 30.09.2026, 10:00 Uhr.",
-          "einordnung": "Ein Tag Vorlauf — Unterlagen und offene Vorgänge lassen sich heute zusammenstellen.",
+          "einordnung": "Der erste Termin des Tages — offene Vorgänge und Unterlagen vorher bereitlegen.",
           "quellen": []
         },
         {
-          "titel": "Mittwoch, 30.09.2026 · 15:25 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
-          "aufmacher": "Am Mittwochnachmittag folgt der Termin im Therapiezentrum Snoek.",
-          "fakten": "Termin aus dem Google-Kalender: Mittwoch, 30.09.2026, 15:25 Uhr.",
-          "einordnung": "Direkt im Anschluss an das Quixx-Meeting am Vormittag — Fahrtzeit einplanen.",
+          "titel": "Mittwoch, 30.09.2026 · 15:25 — Therapiezentrum Snoek",
+          "aufmacher": "Am Nachmittag folgt der Termin im Therapiezentrum Snoek.",
+          "fakten": "Termin aus dem Google-Kalender: Mittwoch, 30.09.2026, 15:25 Uhr (Manuelle Therapie / Sporttherapie / Osteopathie).",
+          "einordnung": "Rund fünf Stunden Abstand zum Vormittagstermin — dazwischen bleibt Zeit für Büro oder Baustelle.",
           "quellen": []
         },
         {
-          "titel": "Donnerstag, 01.10.2026 · 15:00 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "titel": "Donnerstag, 01.10.2026 · 15:00 — Therapiezentrum Snoek",
           "aufmacher": "Am Donnerstag folgt der zweite Termin im Therapiezentrum Snoek.",
-          "fakten": "Termin aus dem Google-Kalender: Donnerstag, 01.10.2026, 15:00 Uhr.",
+          "fakten": "Termin aus dem Google-Kalender: Donnerstag, 01.10.2026, 15:00 Uhr (Manuelle Therapie / Sporttherapie / Osteopathie).",
           "einordnung": "Zwei Behandlungen in derselben Woche — beide Nachmittage sind blockiert.",
           "quellen": []
         }
@@ -43,25 +43,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "A59: Letztes Sperrwochenende an der Anschlussstelle Troisdorf",
-          "aufmacher": "An vier Wochenenden im September und Oktober ist die A59-Anschlussstelle Troisdorf abschnittsweise gesperrt — das letzte fällt auf den 2. bis 5. Oktober.",
-          "fakten": "Die Autobahn GmbH des Bundes saniert die Fahrbahn an der Anschlussstelle Troisdorf an vier aufeinanderfolgenden Wochenenden. An den ersten beiden (11. bis 14. und 18. bis 21. September) waren Auf- und Ausfahrt in Fahrtrichtung Bonn gesperrt und die Fahrbahn zwischen Spich und dem Dreieck Sankt Augustin-West auf einen Fahrstreifen verengt. Am dritten (25. bis 28. September) und am vierten Wochenende (2. bis 5. Oktober, jeweils Freitag 21 Uhr bis Montag 5 Uhr) ist die Auf- und Ausfahrt in Fahrtrichtung Köln gesperrt. Die Umleitung ist ausgeschildert und läuft über die Bedarfsumleitung \"U38\" zwischen den Anschlussstellen Troisdorf und Spich. Die Stadt Troisdorf führt die Sperrungen in ihren Verkehrsmeldungen. Nach dem 5. Oktober soll die Anschlussstelle wieder uneingeschränkt nutzbar sein. Parallel bleibt die rechtsrheinische Bahnstrecke zwischen Troisdorf und Wiesbaden bis zum 12. Dezember 2026 voll gesperrt: Der Personenverkehr ist eingestellt, im Regionalverkehr fahren Busse im Ersatzverkehr, der Fernverkehr wird umgeleitet.",
-          "einordnung": "Die A59 an Troisdorf-Spich ist die Hauptachse Richtung Köln — am Wochenende 2. bis 5. Oktober kostet die gesperrte Ausfahrt zusätzliche Fahrzeit. Ausweichroute über die A3 oder das Landstraßennetz einplanen, und bei Bahnterminen Richtung Frankfurt oder Wiesbaden wegen der Korridorsanierung großzügig kalkulieren.",
+          "titel": "Troisdorf: Kellerbrand in siebenstöckigem Mehrfamilienhaus",
+          "aufmacher": "In der Nacht zum Dienstag brannte es im Keller eines siebenstöckigen Troisdorfer Mehrfamilienhauses an der Alemannenstraße — zwei Bewohnerinnen wurden verletzt.",
+          "fakten": "Um 2:50 Uhr am Morgen wurden die Einsatzkräfte in das Haus in der Alemannenstraße gerufen. Das Feuer war nach Informationen vom Einsatzort in einem hölzernen Kellerverschlag ausgebrochen, die Ursache war zunächst ungeklärt. Rauch zog aus dem Keller durch das Treppenhaus bis in die darüberliegenden Wohnungen; die Feuerwehr warnte die Nachbarschaft über Megafon, Fenster geschlossen zu halten und in den Wohnungen zu bleiben. Atemschutzträger brachten den Brand im Keller schnell unter Kontrolle, parallel wurden alle Wohnungen kontrolliert. Zwei Frauen wurden vor Ort wegen Verdachts auf Rauchgasvergiftung untersucht. Insgesamt waren 40 Rettungskräfte im Einsatz, die Kriminalpolizei hat die Ermittlungen aufgenommen.",
+          "einordnung": "Der Fall zeigt die zwei klassischen Schwachstellen im Bestand: brennbare Kellerverschläge und der offene Treppenraum als Rauchweg. Bei den eigenen Häusern lohnt der Blick auf Brandlast in Kellern und auf die Rauchabführung im Treppenhaus — und auf die Frage, ob die Hausratversicherung der Mieter Rauchgasfälle abdeckt.",
           "quellen": [
-            {"name": "Autobahn GmbH – A59 Wochenend-Sperrungen Troisdorf", "url": "https://www.autobahn.de/betrieb-verkehr/verkehrsmeldung/10-09-2026-a59-wochenend-sperrungen-in-der-anschlussstelle-troisdorf"},
-            {"name": "News on Tour – Sperrung A59 Troisdorf: Sanierung an vier Wochenenden", "url": "https://www.news-on-tour.de/241813/troisdorf-sperrung-a59/"},
-            {"name": "Stadt Troisdorf – Aktuelle Verkehrsmeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/aktuelle-verkehrsmeldungen-fuer-troisdorf-1/"},
-            {"name": "Deutsche Bahn – Korridorsanierung Troisdorf–Wiesbaden", "url": "https://generalsanierung.db-ersatzverkehr.de/ersatzverkehr/Korridorsanierungen/Rechter-Rhein"}
+            {"name": "General-Anzeiger Bonn – Zwei Frauen bei Brand in Mehrfamilienhaus verletzt", "url": "https://ga.de/region/sieg-und-rhein/troisdorf/zwei-frauen-bei-brand-in-mehrfamilienhaus-verletzt_aid-155634591"},
+            {"name": "WDR – Zwei Verletzte bei Kellerbrand in Troisdorf", "url": "https://www1.wdr.de/nrw/rheinland/rhein-sieg-kreis/verletzte-kellerbrand-troisdorf-hochhaus-100.html"}
           ]
         },
         {
-          "titel": "Troisdorf: Doppelhaushalt 2026/27 im dritten Anlauf beschlossen",
-          "aufmacher": "Nach zwei gescheiterten Versuchen hat der Troisdorfer Stadtrat am 25. August den Doppelhaushalt für 2026 und 2027 verabschiedet — Grund für das Ringen waren sinkende Gewerbesteuereinnahmen.",
-          "fakten": "Der Rat der Stadt Troisdorf beschloss die Haushaltssatzung für 2026 und 2027 in seiner Sitzung am 25. August 2026. Von 51 stimmberechtigten Mitgliedern stimmten 26 dafür, 11 dagegen, 14 enthielten sich; auf Antrag der CDU-Fraktion wurde geheim abgestimmt. Zuvor hatte der Rat das Zahlenwerk in den Sitzungen im Mai und Juli abgelehnt. Dem Beschluss lag eine Änderungsliste der Verwaltung zugrunde, die im Laufe der Beratungen auf mehr als 100 Seiten angewachsen war; der Haushalt steht laut Berichten unter strengem Spardiktat, um ein Haushaltssicherungskonzept zu vermeiden. Bürgermeister Alexander Biber wies darauf hin, dass die reguläre Haushaltsbewirtschaftung erst nach Anzeige bei der Aufsichtsbehörde und öffentlicher Bekanntmachung beginnt — bis dahin gilt die vorläufige Haushaltsführung.",
-          "einordnung": "Sinkende Gewerbesteuereinnahmen und ein Spardiktat sind für Quixx24 als Troisdorfer Unternehmen ein Frühindikator: Bei kommunalen Investitionen und Zuschüssen ist bis zur öffentlichen Bekanntmachung mit Zurückhaltung zu rechnen. Wer Ausschreibungen oder Fördertöpfe im Blick hat, sollte den Zeitpunkt der Bekanntmachung kennen.",
+          "titel": "Troisdorf sucht 20 Impulsgeber für die Smart-City-Strategie",
+          "aufmacher": "Die Stadt Troisdorf schreibt ihre Smart-City-Strategie fort und sucht dafür 20 Personen aus der Stadtgesellschaft — Bewerbung bis zum 5. Oktober 2026.",
+          "fakten": "Gesucht werden Bürgerinnen und Bürger, Vereine, Organisationen und Unternehmen mit Bezug zu Troisdorf — über Wohnort, Arbeitsplatz oder ehrenamtliches Engagement. Ein interaktiver Workshop findet am Dienstag, 3. November 2026, von 16:00 bis 19:00 Uhr im Geschäftsgebäude der KESKIN Fensterbau GmbH, Junkersring 41, statt. Die Teilnehmenden arbeiten an Impulsen für die Handlungsfelder Verwaltung, Mobilität, Leben und Freizeit, Klimaschutz, Wirtschaft, Soziales, Gesundheit und Pflege sowie Bildung und Lernen. Die Bewerbung läuft über ein Online-Formular im Beteiligungsportal NRW; zur Gruppe stoßen zusätzlich Vertreterinnen und Vertreter der Ratsfraktionen.",
+          "einordnung": "Der Handlungsbereich „Wirtschaft“ ist für Quixx24 der relevante Hebel — wer hier mit am Tisch sitzt, hört Digitalisierungs- und Gewerbeflächenthemen früh. Die Bewerbungsfrist endet am 5. Oktober, also kommende Woche.",
           "quellen": [
-            {"name": "Rheinische Anzeigenblätter – Rat beschließt Doppelhaushalt", "url": "https://www.rheinische-anzeigenblaetter.de/troisdorf/c-nachrichten/rat-beschliesst-doppelhaushalt_a378226"},
-            {"name": "General-Anzeiger Bonn – Finanzkrise in Troisdorf: Im dritten Anlauf zum Haushalt", "url": "https://ga.de/region/sieg-und-rhein/troisdorf/finanzkrise-in-troisdorf-im-dritten-anlauf-zum-haushalt_aid-153092249"}
+            {"name": "Stadt Troisdorf – Stadt Troisdorf sucht 20 Impulsgeber*innen für Smart City", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/stadt-troisdorf-sucht-20-impulsgeber-innen-fuer-smart-city/"},
+            {"name": "Stadt Troisdorf – Smart City Strategie (Fortschreibung 2026)", "url": "https://www.troisdorf.de/de/rathaus-service/digitalisierung/smart-city-strategie/"}
           ]
         }
       ]
@@ -71,24 +69,23 @@
       "artikel": [
         {
           "titel": "Bauzinsen bleiben über vier Prozent",
-          "aufmacher": "Zehnjährige Immobiliendarlehen kosten weiterhin rund 4,2 bis 4,5 Prozent — kurzfristig erwartet die Mehrheit der Vermittler keine Entlastung.",
-          "fakten": "Interhyp nennt für zehnjährige Darlehen aktuell rund 4,2 Prozent. Finanztip beziffert die Bauzinsen in der ersten Septemberhälfte 2026 mit 4,4 Prozent bei 60 Prozent Beleihung und 4,5 Prozent bei 80 Prozent; bei 15 Jahren Zinsbindung sind es 4,7 Prozent, bei 20 Jahren 4,9 Prozent. Bei der kurzfristigen Prognose ist das Interhyp-Bankenpanel gespalten: 50 Prozent rechnen mit weiter steigenden Zinsen, 50 Prozent mit einer Seitwärtsbewegung. Als Treiber gelten gestiegene Renditen langfristiger Staatsanleihen, die EZB-Zinserhöhung vom 10. September und die hohen Energiepreise.",
-          "einordnung": "Oberhalb von vier Prozent kostet ein Darlehen von 600.000 Euro allein über 24.000 Euro Zinsen im Jahr, bevor ein Euro getilgt ist. Da die Prognose eher nach oben zeigt, spricht viel dafür, die Zinsbindung früh zu fixieren, statt auf fallende Zinsen zu warten.",
+          "aufmacher": "Zehnjährige Immobiliendarlehen kosten weiterhin knapp 4,2 Prozent — Interhyp erwartet, dass das Niveau vorerst oberhalb der Vier-Prozent-Marke bleibt.",
+          "fakten": "Interhyp nennt für zehnjährige Darlehen aktuell knapp 4,2 Prozent; Dr. Klein gibt für Laufzeiten von 15 bis 30 Jahren einen Korridor von 4 bis 4,5 Prozent an. Treiber sind laut Interhyp die deutlich gestiegenen Renditen langfristiger Staatsanleihen, angeheizt durch hohe Energiepreise und die Sorge vor länger anhaltender Inflation. Das Interhyp-Bankenpanel ist kurzfristig gespalten: 50 Prozent der Experten rechnen mit weiter steigenden Zinsen, 50 Prozent mit einer Seitwärtsbewegung; zum Jahresende erwarten je rund 33 Prozent steigende, gleichbleibende oder wieder fallende Zinsen. Interhyp-Vorstand Jörg Utecht rät, sich weniger an einzelnen EZB-Schritten als am Anleihemarkt zu orientieren.",
+          "einordnung": "Bei vier Prozent Zins kostet ein Darlehen über 600.000 Euro allein rund 24.000 Euro Zinsen im Jahr, bevor der erste Euro getilgt ist — bei Mikes Modell (nur Kaufnebenkosten aus Eigenkapital, Rest Bankdarlehen) entscheidet der Zinssatz über den kompletten Cashflow. Da die Prognosen eher nach oben zeigen und das Panel uneins ist, spricht mehr für frühe Zinsbindung als für Warten.",
           "quellen": [
-            {"name": "Interhyp – Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Finanztip – Aktuelle Bauzinsen 2026 & Entwicklung", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
+            {"name": "Interhyp – Zins-Update September 2026: Bauzinsen über 4 %", "url": "https://www.interhyp.de/ueber-interhyp/presse/zinsupdate-september-2026/"},
+            {"name": "Dr. Klein – Bauzinsen aktuell 2026", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"}
           ]
         },
         {
-          "titel": "Mieten ziehen deutlich stärker als Kaufpreise — Troisdorf reguliert",
-          "aufmacher": "Die Angebotsmieten sind im zweiten Quartal 2026 bundesweit um 4,0 Prozent gestiegen, die Kaufpreise für Wohnimmobilien nur um 0,8 Prozent.",
-          "fakten": "Nach Berechnungen des Instituts der deutschen Wirtschaft (IW) legten die Angebotsmieten im zweiten Quartal 2026 um 4,0 Prozent gegenüber dem Vorjahr zu; den stärksten Zuwachs verzeichnete Köln mit 7,9 Prozent, gefolgt von Hamburg mit 5,5 Prozent. Empirica Regio ermittelte für Bestandsmieten einen Anstieg von 9,7 Prozent, im Neubau 3,5 Prozent; die Kaufpreise für Eigentumswohnungen sowie Ein- und Zweifamilienhäuser stiegen laut IW-Wohnindex jeweils nur um 0,8 Prozent. In Troisdorf gilt seit dem 1. März 2025 die NRW-Mieterschutzverordnung: Bei Neuverträgen darf die Miete höchstens 10 Prozent über der ortsüblichen Vergleichsmiete liegen, und in bestehenden Mietverhältnissen ist binnen drei Jahren nur noch eine Erhöhung um 15 statt 20 Prozent möglich. Die Verordnung gilt in 57 NRW-Kommunen, darunter Troisdorf, Siegburg, Sankt Augustin und Köln.",
-          "einordnung": "Steigende Angebotsmieten bei stagnierenden Kaufpreisen verbessern die Anfangsrendite — Troisdorf ist damit der margenträchtige, aber regulierte Standort im Rhein-Sieg-Kreis. Vor jeder Mieterhöhung lohnt der Blick in den qualifizierten Mietspiegel, weil Mietpreisbremse und abgesenkte Kappungsgrenze den rechtlichen Rahmen setzen.",
+          "titel": "Mieten in Troisdorf steigen schneller als im Kreisdurchschnitt",
+          "aufmacher": "In Troisdorf liegt die durchschnittliche Kaltmiete im zweiten Quartal 2026 bei 10,41 Euro pro Quadratmeter — 4,1 Prozent mehr als ein Jahr zuvor und über dem Schnitt des Rhein-Sieg-Kreises.",
+          "fakten": "ImmoScout24 weist für Troisdorf im Q2 2026 eine durchschnittliche Angebotskaltmiete von 10,41 Euro pro Quadratmeter aus, nach 10,00 Euro im Vorjahresquartal (plus 4,1 Prozent). Der Rhein-Sieg-Kreis liegt im gleichen Zeitraum bei 9,92 Euro pro Quadratmeter (plus 3,4 Prozent), der niedrigste Troisdorfer Wert bei 9,60, der höchste bei 16,70 Euro. Bundesweit beschreibt eine Marktübersicht vom 26. September 2026 einen gespaltenen Markt: extrem angespanntes Mietangebot bei stagnierenden Kaufpreisen, mit einem geschätzten Fehlbestand von 1,35 bis 1,4 Millionen Wohnungen. Die Kaufpreise für Eigentumswohnungen gaben in den Top-7-Metropolen im Quartalsvergleich leicht nach (minus 0,5 Prozent zum Vorquartal), während mittelgroße Städte abseits der Metropolen rund 2,0 Prozent zulegten.",
+          "einordnung": "Troisdorf liegt bei den Mieten rund fünf Prozent über dem Kreisdurchschnitt und wächst schneller — bei stagnierenden Kaufpreisen verbessert das die Anfangsrendite. Gleichzeitig gilt in Troisdorf die NRW-Mieterschutzverordnung, die Neuverträge auf maximal 10 Prozent über der ortsüblichen Vergleichsmiete begrenzt; die höheren Angebotsmieten sind also nicht automatisch durchsetzbar.",
           "quellen": [
-            {"name": "Zeit – IW-Studie: Angebotsmieten steigen im zweiten Quartal um vier Prozent", "url": "https://www.zeit.de/wirtschaft/2026-07/angebotsmieten-grossstaedte-mietpreise-iw-studie"},
-            {"name": "Börse Express – Mietpreise steigen 9,7 %, Kaufpreise stagnieren", "url": "https://www.boerse-express.com/news/articles/immobilienmarkt-mietpreise-steigen-97-kaufpreise-stagnieren-930491"},
-            {"name": "Stadt Troisdorf – Neue Mieterschutzverordnung auch in Troisdorf gültig", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2025/februar/neue-mieterschutzverordnung-auch-in-troisdorf-gueltig/"},
-            {"name": "Land NRW – Aus 18 werden 57: Mieterschutzverordnung ausgeweitet", "url": "https://www.land.nrw/pressemitteilung/ministerin-scharrenbach-aus-18-werden-57-nordrhein-westfalen-weitet"}
+            {"name": "ImmoScout24 – Mietspiegel Troisdorf 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"},
+            {"name": "ImmoScout24 – Mietspiegel Rhein-Sieg-Kreis 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"},
+            {"name": "Immobilien Henke – Lage auf dem Wohnungsmarkt September 2026", "url": "https://www.immobilien-henke.de/de/infos-zum-wohnungsmarkt/aktuelle-lage-auf-dem-wohnungsmarkt-september-2026"}
           ]
         }
       ]
@@ -97,24 +94,24 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB: Nächster Zinsentscheid am 29. Oktober",
-          "aufmacher": "Die EZB hat am 10. September alle drei Leitzinssätze um 25 Basispunkte angehoben — der Einlagensatz liegt seit dem 16. September bei 2,50 Prozent.",
-          "fakten": "Mit Wirkung vom 16. September 2026 betragen der Zinssatz für die Einlagefazilität 2,50 Prozent, der Hauptrefinanzierungssatz 2,65 Prozent und der Spitzenrefinanzierungssatz 2,90 Prozent. Der EZB-Rat begründet den Schritt mit anhaltendem Inflationsdruck durch den Konflikt im Nahen Osten und erwartet im Basisszenario eine Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028) bei einem Wirtschaftswachstum von 0,9, 1,4 und 1,5 Prozent. Der Rat legt sich ausdrücklich nicht auf einen weiteren Zinspfad fest. Die nächste Sitzung findet am 29. Oktober 2026 statt; die Preisbildung der Futures implizierte am 24. September laut EZB-Watch eine Wahrscheinlichkeit von rund 60 Prozent für eine Anhebung auf 2,75 Prozent. Die Ankaufbestände aus APP und PEPP werden weiterhin nicht wiederangelegt.",
-          "einordnung": "Für die MFH-Finanzierung heißt das: Der nächste Zinsschritt ist möglich, aber nicht ausgemacht. Bei einem Einlagensatz von 2,50 Prozent werfen Tages- und Festgeld wieder etwas ab, was die Opportunitätskosten der liquide gehaltenen Eigenkapitalreserve erhöht.",
+          "titel": "EZB-Leitzins bei 2,50 Prozent — Inflation im August 2,9 Prozent",
+          "aufmacher": "Der EZB-Rat hat am 10. September alle drei Leitzinssätze um 25 Basispunkte angehoben; der Einlagensatz liegt seit dem 16. September bei 2,50 Prozent.",
+          "fakten": "Mit Wirkung vom 16. September 2026 betragen der Zinssatz für die Einlagefazilität 2,50 Prozent, der Hauptrefinanzierungssatz 2,65 Prozent und der Spitzenrefinanzierungssatz 2,90 Prozent. Die EZB begründet den Schritt mit anhaltendem Inflationsdruck durch den Konflikt im Nahen Osten und erwartet im Basisszenario eine Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028) bei einem Wachstum von 0,9, 1,4 und 1,5 Prozent. In Deutschland lag die Inflationsrate im August 2026 bei 2,9 Prozent nach 2,8 Prozent im Juli; ohne Energie betrug sie 2,2 Prozent, die Kernrate 2,4 Prozent. Der EZB-Rat legt sich ausdrücklich nicht auf einen weiteren Zinspfad fest; die nächste Sitzung ist am 29. Oktober 2026.",
+          "einordnung": "Bei einem Einlagensatz von 2,50 Prozent werfen Tages- und Festgeld wieder etwas ab — das erhöht die Opportunitätskosten der liquide gehaltenen Eigenkapitalreserve. Für die MFH-Finanzierung bleibt der nächste Schritt eine Option, aber keine Gewissheit.",
           "quellen": [
+            {"name": "EZB – Geldpolitische Beschlüsse vom 10. September 2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"},
             {"name": "Deutsche Bundesbank – EZB-Rat hebt Leitzinsen um 25 Basispunkte an", "url": "https://www.bundesbank.de/de/aufgaben/themen/ezb-rat-hebt-leitzinsen-um-25-basispunkte-an-1008148"},
-            {"name": "Admirals – EZB-Sitzung Oktober 2026: Termine und Zinserhöhungswahrscheinlichkeit", "url": "https://admiralmarkets.com/de/analysen/traders-blog/ecb-meeting-october-2026"},
-            {"name": "Raisin – EZB-Zinsentscheid: Termine & Prognosen", "url": "https://www.raisin.com/de-at/glossar/ezb-leitzins/zinsentscheid/"}
+            {"name": "Statistisches Bundesamt – Inflationsrate im August 2026 bei +2,9 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_320_611.html"}
           ]
         },
         {
-          "titel": "ifo-Geschäftsklima steigt auf 89,9 Punkte — höchster Stand seit Mai 2023",
-          "aufmacher": "Die Stimmung der deutschen Unternehmen hat sich im September weiter verbessert — der ifo Geschäftsklimaindex stieg auf 89,9 Punkte nach 88,8 im August.",
-          "fakten": "Der ifo Geschäftsklimaindex kletterte im September auf 89,9 Punkte und damit auf den höchsten Stand seit Mai 2023 — der fünfte Anstieg in Folge. Analysten hatten laut Reuters mit 89,0 Punkten gerechnet. Die Unternehmen bewerteten ihre aktuelle Geschäftslage positiver, auch die Erwartungen hellten sich weiter auf. Im Verarbeitenden Gewerbe legte der Index erneut zu, getragen von deutlich besseren Erwartungen besonders in der Elektrobranche; die Automobilbranche bleibt auf schwierigem Terrain. Im Dienstleistungssektor drehte das Geschäftsklima wieder ins Positive. Angesichts steigender Inflation bleiben die Einzelhändler zurückhaltend.",
-          "einordnung": "Die Erholung stützt die gewerbliche Nachfrage im Rhein-Sieg-Kreis — relevant für Standortbewertung und Auslastung bei Quixx24. Der Vorbehalt bleiben die Energiepreise: Ziehen sie weiter an, kippt die Stimmung schnell wieder.",
+          "titel": "Institute verdoppeln Konjunkturprognose auf 1,3 Prozent — DAX bei 25.399 Punkten",
+          "aufmacher": "Die führenden Wirtschaftsforschungsinstitute erwarten für 2026 ein BIP-Plus von 1,3 Prozent — 0,7 Punkte mehr als im Frühjahr —, während der DAX nach seinem Rekordhoch im August deutlich zurückgekommen ist.",
+          "fakten": "In der am 24. September veröffentlichten Gemeinschaftsdiagnose Herbst 2026 heben die Institute die Prognose für 2026 um 0,7 Prozentpunkte auf 1,3 Prozent an; für 2027 erwarten sie 1,1 Prozent, für 2028 nur 0,4 Prozent. Getragen wird der Aufschwung von überraschend starken Exporten und der Industrie, begünstigt durch die robuste Weltkonjunktur, den weltweiten KI-Boom und Produktionsausfälle von Wettbewerbern aus der Golfregion infolge des Iran-Kriegs. Unternehmensinvestitionen und privater Konsum bleiben schwach, das staatliche Defizit wächst. Der DAX schloss am Dienstag, 29. September, 0,1 Prozent fester bei 25.399 Punkten; sein Rekordhoch von 26.618 Punkten liegt rund fünf Prozent darüber. Stützend wirken die KI-Fantasie — auch wegen des geplanten Börsengangs von Anthropic —, belastend die hohen Ölpreise und gestiegenen Anleiherenditen.",
+          "einordnung": "Die Erholung stützt die gewerbliche Nachfrage im Rhein-Sieg-Kreis, bleibt laut den Instituten aber auf schmalem Fundament: hohe Energiepreise und Strukturprobleme gelten als Hauptrisiken. Für die liquide Reserve heißt das: Der Aktienmarkt ist nicht mehr billig, die Zinsen sind gestiegen — und der Konsolidierungsbedarf des Staates wächst.",
           "quellen": [
-            {"name": "SHK-Journal – ifo Geschäftsklimaindex gestiegen (September 2026)", "url": "https://www.shk-journal.de/news/ifo-geschaeftsklimaindex-gestiegen-september-2026.html"},
-            {"name": "MarketScreener – ifo index at highest level since May 2023", "url": "https://in.marketscreener.com/news/ifo-index-at-highest-level-since-may-2023-recovery-gathers-momentum-ce785adedd80f420"}
+            {"name": "ifo Institut – Gemeinschaftsdiagnose Herbst 2026: Aufschwung mit Strukturproblemen", "url": "https://www.ifo.de/pressemitteilung/2026-09-24/gemeinschaftsdiagnose-herbst-2026-aufschwung-mit-strukturproblemen"},
+            {"name": "n-tv – Der Börsen-Tag, 29. September 2026", "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Dienstag-29-September-2026-id31358647.html"}
           ]
         }
       ]
@@ -123,16 +120,13 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Acht Updates auf dem Home-Assistant-Server offen",
-          "aufmacher": "Der Update-Scan vom 29. September 2026 meldet acht offene Aktualisierungen im Home-Assistant-System — darunter Core, Spook und die Bosch-SHC-Integration.",
-          "fakten": "Home Assistant Core steht von 2026.9.3 auf 2026.9.4 an; die Version bringt Fehlerbehebungen, unter anderem für Tuya-Ventilatoren bei Geschwindigkeit 0 Prozent, die Dauer zeitgesteuerter Todoist-Termine und den HomematicIP-Cloud-Config-Flow. Spook geht von v5.5.1 auf v5.6.0: Der Fix verhindert, dass Reparaturprüfungen den Event-Loop blockieren — gemessen an 2.000 Automatisierungen sank die Last von 33 Sekunden pro Runde auf 0,75 Sekunden in einem Thread; außerdem kann eine stummgeschaltete Automatisierung ihren Lauf zu Ende bringen, und das Add-on verlangt nach eigener Angabe einen Neustart von Home Assistant. Waste Collection Schedule steigt von v2.34.2 auf v2.35.0 mit einer neuen Quelle für Danderyd (Schweden) und Korrekturen an publidata_fr und sunderland_gov_uk; die Version 3.0.0 läuft weiterhin nur als Beta-Vorabversion. Die DWD-Wetterintegration geht von 5.1.1 auf 5.2.0 und verbessert die Radar-Bildfolgen. Bei Bosch Smart Home Controller steht v0.12.25 auf v0.12.28 an: Der \"Recalibrate\"-Button an einem Shutter Control II kalibriert jetzt tatsächlich, statt nur das Kalibrier-Flag zurückzusetzen und den Rollladen vollständig zu öffnen — der Maintainer weist darauf hin, dass der Lauf auf echter Hardware noch nicht bestätigt ist. Zusätzlich stehen Studio Code Server 7.1.1 auf 7.2.0 mit aktiviertem Auto-Update, Glances 0.23.0 auf 0.23.1 und der Home-Assistant-MCP-Server in der Dev-Reihe dev2748 auf dev2772 an. Der Kommandozeilen-Scan meldet außerdem, dass Hermes Agent (vgit.d25bbd0, 2026.9.24) Commits hinter dem Upstream liegt. Supervisor, Betriebssystem, HACS, Zigbee2MQTT und das NAS-DSM melden keine offenen Updates; die UniFi-Firmwarestände sind geschlossen.",
-          "einordnung": "Spook verlangt nach dem Update einen HA-Neustart, der sich mit dem Core-Sprung auf 2026.9.4 verbinden lässt. Praktisch relevant ist vor allem Bosch: Bei Rollläden, die für Verschattung und Wärmeeintrag mitlaufen, nach dem Update prüfen, ob die Endlagen noch stimmen. Die Add-on-Aktualisierungen für Studio Code Server und Glances sind unkritisch.",
+          "titel": "Spook-Update auf v5.6.1 offen — MCP-Server und Hermes Agent folgen",
+          "aufmacher": "Auf dem Home-Assistant-Server stehen zwei echte Aktualisierungen an: die Aufräum-Integration Spook und der Home-Assistant-MCP-Server in der Dev-Reihe. Home Assistant Core, Supervisor, HACS und das NAS-DSM sind aktuell.",
+          "fakten": "Spook steht von v5.5.1 auf v5.6.1 an (Release vom 28. September). Die Version 5.6.0 hat den größten bekannten Engpass behoben: Die Suche nach „Meinten Sie sensor.xy?“ verglich eine kaputte Referenz inline mit jeder Entity ihrer Domäne und verwarf das Ergebnis bei jeder Änderung erneut — auf einer Installation mit 2.000 Automatisierungen kostete das 33 Sekunden blockierten Event-Loop pro Runde, jetzt sind es 0,75 Sekunden auf einem Thread. v5.6.1 korrigiert nach, dass vier Reparaturtexte in der deutschen und weiteren Übersetzungen nicht zur englischen Vorlage passten und beim Start Validierungsfehler ins Log schrieben. Der Home-Assistant-MCP-Server (Dev) steht von 8.5.0.dev2794 auf 8.5.0.dev2803; die Dev-Builds sind Vorabversionen ohne kuratierten Änderungszettel. Home Assistant Core läuft auf 2026.9.4 und ist damit auf dem von PyPI gemeldeten Stand. Der Kommandozeilen-Scan meldet zusätzlich, dass Hermes Agent (vgit.d25bbd0, 2026.9.24) 9.418 Commits hinter dem Upstream liegt; kuratierte Release Notes dazu kommen laut Projekt erst mit v0.22.0. Unter den 23 Docker-Containern ist einer gestoppt: der Init-Container firecrawl-starter-monitor-db-init, der erwartungsgemäß mit Exit-Code 0 durchgelaufen ist.",
+          "einordnung": "Das Spook-Update ist der relevante Punkt — auf einer großen Installation kann es den stillen Lastspitzen im Event-Loop ein Ende setzen; ein HA-Neustart ist dafür einzuplanen. Der MCP-Server läuft mit Auto-Update und zieht die Dev-Builds selbst. Der Hermes-Agent-Rückstand ist groß, ein `hermes update` startet aber das Gateway neu und sollte zu einem ruhigen Zeitpunkt erfolgen.",
           "quellen": [
-            {"name": "whatsnew.fyi – Home Assistant 2026.9.4 Release Notes", "url": "https://whatsnew.fyi/product/home-assistant/releases/2026.9.4"},
-            {"name": "GitHub – Spook v5.6.0 Release Notes", "url": "https://github.com/frenck/spook/releases/v5.6.0"},
-            {"name": "GitHub – Waste Collection Schedule v2.35.0", "url": "https://github.com/mampfes/hacs_waste_collection_schedule/releases/tag/v2.35.0"},
-            {"name": "GitHub – DWD Weather Integration Releases", "url": "https://github.com/FL550/dwd_weather/releases"},
-            {"name": "GitHub – Bosch SHC Integration v0.12.28", "url": "https://github.com/tschamm/boschshc-hass/releases/tag/v0.12.28"}
+            {"name": "GitHub – Spook v5.6.1 Release Notes", "url": "https://github.com/frenck/spook/releases/tag/v5.6.1"},
+            {"name": "GitHub – homeassistant-ai/ha-mcp Releases", "url": "https://github.com/homeassistant-ai/ha-mcp/releases"}
           ]
         }
       ]
