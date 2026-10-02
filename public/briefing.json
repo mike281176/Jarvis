@@ -1,14 +1,14 @@
 {
-  "datum": "Donnerstag, 01.10.2026",
+  "datum": "Freitag, 02.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "19,7°C · Regen 93% · UV 0,5",
-          "aufmacher": "Regnerischer Herbstauftakt in Troisdorf: Dauer-Niesel bei rund 20 Grad, Tageshöchstwert 23 Grad.",
-          "fakten": "Aktuell 19,7 °C, Tageshöchstwert 23,0 °C, Tiefstwert 17,6 °C. Niederschlagswahrscheinlichkeit 93 %, UV-Index 0,5 (sehr niedrig), Wetterlage: Niesel.",
-          "einordnung": "Dauerregen — Außenarbeiten an Dach, Fassade und Hof besser verschieben. UV-Belastung praktisch null.",
+          "titel": "14,8°C · Regen 91% · UV 3,7",
+          "aufmacher": "Wechselhafter Freitag in Troisdorf: aktuell klar bei 14,8 Grad — die Regenwahrscheinlichkeit liegt aber bei 91 Prozent.",
+          "fakten": "Aktuell 14,8 °C, Tageshöchstwert 20,5 °C, Tiefstwert 14,1 °C. Niederschlagswahrscheinlichkeit 91 %, UV-Index 3,7 (mittel). Wetterlage derzeit: klar.",
+          "einordnung": "Bei UV 3,7 ist Mittagssonne relevant — Schatten oder Sonnenschutz einplanen. Der hohe Regenwert spricht für Außenarbeiten am Vormittag.",
           "quellen": []
         }
       ]
@@ -17,10 +17,10 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Donnerstag, 01.10.2026 · 15:00 — Therapiezentrum Snoek",
-          "aufmacher": "Am Nachmittag steht der Termin im Therapiezentrum Snoek an — im Drei-Tage-Fenster der einzige Eintrag.",
-          "fakten": "Termin aus dem Google-Kalender: Donnerstag, 01.10.2026, 15:00 Uhr (Manuelle Therapie / Sporttherapie / Osteopathie).",
-          "einordnung": "Der Nachmittag ist blockiert; Außentermine in den Vormittag legen.",
+          "titel": "Montag, 05.10.2026 · 19:35 — Therapiezentrum Snoek",
+          "aufmacher": "Im Drei-Tage-Fenster steht ein einziger Kalendereintrag an: Montagabend im Therapiezentrum Snoek.",
+          "fakten": "Termin aus dem Google-Kalender: Montag, 05.10.2026, 19:35 Uhr (Manuelle Therapie / Sporttherapie / Osteopathie).",
+          "einordnung": "Der Montagabend ist blockiert — Werkstatt-, Immobilien- oder Quixx24-Termine auf den Vormittag legen.",
           "quellen": []
         }
       ]
@@ -29,23 +29,22 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "A59: Anschlussstelle Troisdorf Richtung Köln vier Tage komplett gesperrt",
-          "aufmacher": "Von Freitag, 2. Oktober, 20 Uhr, bis Montag, 5. Oktober, 6 Uhr, ist die Anschlussstelle Troisdorf der A59 in Fahrtrichtung Köln voll gesperrt.",
-          "fakten": "Grund sind Sanierungsarbeiten an der Fahrbahn sowie an der Autobahnauf- und -abfahrt; der Verkehr wird über die ausgeschilderte Umleitungsstrecke U57 geführt. Parallel laufen im Stadtgebiet weitere Vollsperrungen: die Vulkanstraße 2–17 in Spich vom 1. Oktober bis 27. November (Neuverlegung von Ver- und Entsorgungsleitungen), die Friedrichstraße 34–44 in Spich bis 31. Oktober (Hauptkanal), der Falkenweg in Kriegsdorf bis 9. Oktober (Glasfaser), Noldestraße 10–55 und Max-Ernst-Straße in Eschmar bis 9. Oktober, die Stichwege Am Mühlentor in Sieglar bis 16. Oktober sowie die Kurt-Schumacher-Straße in Friedrich-Wilhelms-Hütte bis 7. Oktober. Ab dem 12. Oktober folgen nacheinander die Stichwege der Ubierstraße 1–14 und 17a–17b.",
-          "einordnung": "Wer am Wochenende nach Köln muss, plant die U57 ein. Die Spicher Sperrungen treffen die Gewerbegebietsrouten — für Quixx24-Fahrten relevant.",
+          "titel": "A59: Anschlussstelle Troisdorf Richtung Köln drei Tage voll gesperrt",
+          "aufmacher": "Von Freitag, 2. Oktober, 20 Uhr, bis Montag, 5. Oktober, 6 Uhr, ist die Anschlussstelle Troisdorf der A59 in Fahrtrichtung Köln vollständig gesperrt.",
+          "fakten": "Grund sind Sanierungsarbeiten an der Fahrbahn sowie an der Autobahnauf- und -abfahrt; der Verkehr wird über die ausgeschilderte Umleitungsstrecke U57 geführt.[16] Der ADAC bestätigt die Sperrung im A59-Verkehrsregister und nennt als Umleitungsfenster den 2. Oktober, 9:00 Uhr; weitere Bauabschnitte auf der A59 laufen bis in den Mai 2027.[17] Parallel bleibt es im Stadtgebiet voll: Vulkanstraße 2–17 in Spich bis 27. November (Leitungsneuverlegung), Friedrichstraße 34–44 in Spich bis 31. Oktober (Hauptkanal), Falkenweg in Kriegsdorf bis 9. Oktober (Glasfaser), Noldestraße 10–55 und Max-Ernst-Straße in Eschmar bis 9. Oktober, die Stichwege Am Mühlentor in Sieglar bis 16. Oktober sowie der Kreuzungsbereich Frieslandring/Hannoversche Straße am Rotter See bis 2. Oktober. Ab 12. Oktober folgen die Stichwege der Ubierstraße 1–14 und 17a–17b.[16]",
+          "einordnung": "Wer am Wochenende nach Köln muss, plant die U57 ein. Die Spicher Sperrungen treffen die Gewerbegebietsrouten — für Quixx24-Fahrten und Anlieferungen relevant.",
           "quellen": [
             {"name": "Stadt Troisdorf – Aktuelle Verkehrsmeldungen für Troisdorf (30.09.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/aktuelle-verkehrsmeldungen-fuer-troisdorf-2/"},
-            {"name": "Die Autobahn GmbH des Bundes – A59: Wochenend-Sperrungen in der Anschlussstelle Troisdorf", "url": "https://www.autobahn.de/betrieb-verkehr/verkehrsmeldung/10-09-2026-a59-wochenend-sperrungen-in-der-anschlussstelle-troisdorf"}
+            {"name": "ADAC – A59: Aktuelle Stau- und Verkehrsmeldungen", "url": "https://www.adac.de/verkehr/verkehrsinformationen/de/a59/"}
           ]
         },
         {
-          "titel": "Tag der Deutschen Einheit: Bremen richtet das Bürgerfest aus",
-          "aufmacher": "Die zentralen Feierlichkeiten zum Tag der Deutschen Einheit steigen vom 2. bis 4. Oktober in Bremen — mit rund 600 Programmpunkten und mehr als 400.000 erwarteten Gästen.",
-          "fakten": "Das Bürgerfest läuft unter dem Motto „Viele Stärken – ein Land“ und erstreckt sich über die Innenstadt vom Bahnhof über das Viertel bis zur Weser. Am 3. Oktober beginnt der Tag mit einem ökumenischen Gottesdienst im St. Petri Dom, der offizielle Festakt folgt im Konzerthaus „Die Glocke“. Bremen hat derzeit den Vorsitz im Bundesrat und richtet deshalb die bundesweit zentralen Feierlichkeiten aus.",
-          "einordnung": "Der 3. Oktober fällt 2026 auf einen Samstag — der Feiertag fällt also nicht in die Arbeitswoche, Betrieb und Baustellen laufen werktags normal weiter.",
+          "titel": "Troisdorf sucht 20 Impulsgeber für die Smart-City-Strategie",
+          "aufmacher": "Die Stadt Troisdorf schreibt ihre Smart-City-Strategie fort und sucht dafür 20 engagierte Bürger, Vereine, Organisationen und Unternehmen.",
+          "fakten": "Geplant ist ein interaktiver Workshop am Dienstag, 3. November 2026, von 16:00 bis 19:00 Uhr im Geschäftsgebäude der KESKIN Fensterbau GmbH, Junkersring 41, 53844 Troisdorf. Bewerbungen sind bis zum 5. Oktober 2026 über das Beteiligungsportal möglich; eine Rückmeldung an die Ausgewählten erfolgt bis zum 9. Oktober 2026.[2] Die Impulsgruppe setzt sich aus 20 Personen aus der Stadtgesellschaft plus Vertretern der Ratsfraktionen zusammen; Handlungsfelder sind Verwaltung, Mobilität, Leben und Freizeit, Klimaschutz, Wirtschaft, Soziales, Gesundheit und Pflege sowie Bildung und Lernen.[2]",
+          "einordnung": "Mikes Smart-Home-Setup und die JARVIS-Infrastruktur sind genau das Praxisbeispiel, das die Stadt sucht — die Bewerbungsfrist läuft über das Wochenende hinaus bis Montag.",
           "quellen": [
-            {"name": "Tag der Deutschen Einheit 2026 – Bremen", "url": "https://tagderdeutscheneinheit.de/"},
-            {"name": "buten un binnen – Alle Infos zum Tag der Deutschen Einheit 2026 in Bremen", "url": "https://www.butenunbinnen.de/nachrichten/einheitsfeier-tag-der-deutschen-einheit-bremen-100.html"}
+            {"name": "Stadt Troisdorf – Stadt Troisdorf sucht 20 Impulsgeber*innen für Smart City (22.09.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/stadt-troisdorf-sucht-20-impulsgeber-innen-fuer-smart-city/"}
           ]
         }
       ]
@@ -54,24 +53,23 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen zum 1. Oktober: zehnjährige Darlehen zwischen 4,12 und 4,53 Prozent",
-          "aufmacher": "Zum Monatsbeginn kostet ein zehnjährig gebundenes Immobiliendarlehen je nach Anbieter zwischen 4,12 und 4,53 Prozent festen Sollzins — der Trend zeigt weiter nach oben.",
-          "fakten": "Dr. Klein nennt für den 1. Oktober (350.000 Euro Nettodarlehensbetrag) folgende feste Sollzinssätze: 5 Jahre 4,27 Prozent, 10 Jahre 4,12 Prozent (effektiv 4,23 Prozent), 15 Jahre 4,26 Prozent, 20 Jahre 4,35 Prozent, 30 Jahre 4,58 Prozent. Baufi24 weist am gleichen Tag einen Top-Sollzins von 4,53 Prozent bei zehn Jahren aus und führt in der Konditionstabelle 4,23 Prozent für 10 Jahre und 4,50 Prozent für 15 Jahre — die Anbieterangaben liegen also gut einen Viertelpunkt auseinander, je nachdem ob Best- oder Durchschnittskondition gezeigt wird. Als Treiber nennen beide Vermittler die gestiegenen Renditen langfristiger Staatsanleihen: Baufi24 verweist auf die zehnjährige Bundesanleihe mit rund 3,31 Prozent im August, dem höchsten Stand seit 15 Jahren.",
-          "einordnung": "Bei vier Prozent Zins und 600.000 Euro Darlehen sind das rund 24.700 Euro Zinsen im Jahr, bevor der erste Euro getilgt ist. Zusammen mit dem Anleihetrend spricht mehr für eine frühe Zinsbindung als für Abwarten.",
+          "titel": "Bauzinsen zum 2. Oktober: zehnjährige Darlehen je nach Anbieter zwischen 3,93 und 4,53 Prozent",
+          "aufmacher": "Ein zehnjährig gebundenes Immobiliendarlehen kostet zum Monatsbeginn je nach Anbieter zwischen 3,93 und 4,53 Prozent festen Sollzins — der Trend zeigt weiter nach oben.",
+          "fakten": "Baufi24 nennt für den 2. Oktober einen Top-Sollzins von 4,53 Prozent (300.000 Euro Nettodarlehensbetrag, 10 Jahre); in der Konditionstabelle stehen 4,23 Prozent Sollzins (effektiv 4,34 Prozent) für 10 Jahre, 4,46 Prozent für 5 Jahre und 4,56 Prozent für 20 Jahre.[3] Dr. Klein gibt den Korridor aktuell mit 3,93 bis 4,47 Prozent an — je nach Beleihungsauslauf, also ob Best- oder Durchschnittskondition gezeigt wird.[10] Als Treiber nennt Baufi24 die gestiegenen Renditen langfristiger Staatsanleihen: Die zehnjährige Bundesanleihe kletterte im August auf rund 3,31 Prozent, den höchsten Stand seit 15 Jahren.[3]",
+          "einordnung": "Bei vier Prozent Zins und 600.000 Euro Darlehen sind das rund 24.700 Euro Zinsen im Jahr, bevor der erste Euro getilgt ist. Zusammen mit dem Anleihetrend spricht mehr für eine frühe Zinsbindung als für Abwarten — die Strategie „maximaler Hebel“ wird bei steigender Kurve teurer.",
           "quellen": [
-            {"name": "Dr. Klein – Bauzinsen aktuell (Stand 01.10.2026)", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"},
-            {"name": "Baufi24 – Bauzinsen aktuell 01.10.2026", "url": "https://www.baufi24.de/bauzinsen/"}
+            {"name": "Baufi24 – Bauzinsen aktuell 02.10.2026", "url": "https://www.baufi24.de/bauzinsen/"},
+            {"name": "Dr. Klein – Bauzinsen aktuell 2026", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"}
           ]
         },
         {
-          "titel": "Bundesanleihen auf 15-Jahres-Hoch — langes Geld wird teuer",
-          "aufmacher": "Die Rendite zehnjähriger Bundesanleihen liegt bei rund 3,6 Prozent und damit auf dem höchsten Stand seit 2011 — das verteuert Anschluss- und Refinanzierungen.",
-          "fakten": "Die Rendite der zehnjährigen Bundesanleihe notierte am 16. September 2026 bei 3,61 Prozent — der höchste Stand seit April 2011. NORD/LB führt in ihrem Morgenbericht vom 28. September 3,601 Prozent für die 10-jährige und 3,903 Prozent für die 20-jährige Laufzeit. International setzt die US-amerikanische Benchmark den Ton: Die Rendite zehnjähriger US-Staatsanleihen riss die Marke von 5,3 Prozent und damit den höchsten Stand seit 24 Jahren, die 30-jährigen Papiere erreichten 5,62 Prozent (höchster Stand seit 2002) — US-Hypothekenzinsen liegen inzwischen über 7,0 Prozent. Die EZB hatte am 10. September die Leitzinsen um 25 Basispunkte angehoben. Dr. Klein erwartet für das zweite Halbjahr 2026 einen Korridor von 3,3 bis 3,9 Prozent für zehnjährige Bauzinsen.",
-          "einordnung": "Die Strategie „maximaler Hebel, danach Refinanzierung über mehrere Banken“ hängt an genau dieser Kurve: Solange die lange Rendite steigt, wird die Anschlussfinanzierung teurer statt billiger. Bei anstehenden Zusagen lohnt eine längere Zinsbindung oder ein Forward-Darlehen.",
+          "titel": "Bonner Mietspiegel steigt zum 1. Juli um rund 4 Prozent",
+          "aufmacher": "Der Bonner Mietspiegel 2026 wurde an die allgemeine Preisentwicklung angepasst und rechnerisch um rund 4 Prozent angehoben.",
+          "fakten": "Der Rat der Bundesstadt Bonn hat den qualifizierten Mietspiegel 2026 am 7. Mai 2026 beschlossen; er gilt seit dem 1. Juli 2026 als qualifizierter Mietspiegel nach § 558d BGB für das Bonner Stadtgebiet.[4] Der General-Anzeiger beziffert die rechnerische Anhebung auf rund 4 Prozent gegenüber der Vorversion.[11]",
+          "einordnung": "Eine 4-Prozent-Anhebung des Mietspiegels ist der Maßstab für Mieterhöhungen im Bestand — bei Mikes Objekten ist das die Obergrenze für Erhöhungen in vergleichbarer Lage. Für Neuvermietungen bleibt die ortsübliche Vergleichsmiete der Anker.",
           "quellen": [
-            {"name": "Bundesbank/Kagels Trading – Zinsprognose: Rendite 10-jährige Bundesanleihe 3,61 % (Stand 16.09.2026)", "url": "https://www.kagels-trading.de/zinsentwicklung-prognose/"},
-            {"name": "NORD/LB am Morgen, 28. September 2026", "url": "https://www.nordlb.de/meine-nordlb/download/research-dokument-14443"},
-            {"name": "Handelsblatt – US-Rendite zehnjähriger Bonds bei 5,3 Prozent", "url": "https://www.handelsblatt.com/finanzen/maerkte/anleihen/anleihen-rendite-der-zehnjaehrigen-us-bonds-steigt-auf-53-prozent/100258428.html"}
+            {"name": "Stadt Bonn – Mietspiegel 2026", "url": "https://www.bonn.de/themen-entdecken/soziales-gesellschaft/mietspiegel.php"},
+            {"name": "General-Anzeiger Bonn – Wie stark der Bonner Mietspiegel zum 1. Juli steigt", "url": "https://ga.de/bonn/stadt-bonn/wie-stark-der-bonner-mietspiegel-zum-1-juli-steigt_aid-146451199"}
           ]
         }
       ]
@@ -80,24 +78,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Inflationsrate steigt auf 3,3 Prozent — höchster Stand seit Ende 2023",
-          "aufmacher": "Die Verbraucherpreise in Deutschland lagen im September 2026 voraussichtlich 3,3 Prozent über dem Vorjahresmonat — der dritte Anstieg in Folge.",
-          "fakten": "Das Statistische Bundesamt meldet für September 2026 eine vorläufige Inflationsrate von 3,3 Prozent zum Vorjahresmonat und plus 0,6 Prozent gegenüber August. Die Kerninflation ohne Nahrungsmittel und Energie beträgt 2,4 Prozent. Preistreiber ist eindeutig Energie: plus 14,9 Prozent zum Vorjahr, nach plus 10,5 Prozent im August und plus 8,3 Prozent im Juli. Dienstleistungen verteuern sich um 2,7 Prozent, Waren um 3,8 Prozent, Nahrungsmittel um 0,4 Prozent. Die endgültigen Ergebnisse für September werden am 13. Oktober 2026 veröffentlicht.",
-          "einordnung": "Energieinflation von 14,9 Prozent schlägt direkt auf Heiz- und Nebenkostenabrechnungen und damit auf die Warmmiete durch; die Kernrate von 2,4 Prozent bleibt über dem EZB-Ziel und macht schnelle Zinssenkungen unwahrscheinlich.",
+          "titel": "Inflationsrate steigt auf 3,3 Prozent — höchster Stand seit knapp drei Jahren",
+          "aufmacher": "Die Verbraucherpreise in Deutschland lagen im September 2026 voraussichtlich 3,3 Prozent über dem Vorjahresmonat.",
+          "fakten": "Das Statistische Bundesamt meldet für September 2026 eine vorläufige Inflationsrate von 3,3 Prozent zum Vorjahresmonat.[6] Die Deutsche Bundesbank bestätigt denselben amtlichen Schätzwert für den harmonisierten Verbraucherpreisindex (HVPI).[13] Die endgültigen Ergebnisse für September 2026 werden am 13. Oktober 2026 veröffentlicht.[6] Die EZB erwartet laut ihren September-Projektionen eine durchschnittliche Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028).[5]",
+          "einordnung": "Energie- und Anleihetrend halten die Teuerung über dem EZB-Ziel von 2 Prozent — schnelle Zinssenkungen sind damit unwahrscheinlich und die Bauzinskurve bleibt nach oben gerichtet. Für die liquide gehaltene Eigenkapitalreserve bleibt der Einlagensatz von 2,50 Prozent relevant.",
           "quellen": [
             {"name": "Statistisches Bundesamt – Inflationsrate im September 2026 voraussichtlich +3,3 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"},
-            {"name": "Deutsche Bundesbank – Harmonisierter Verbraucherpreisindex September 2026: 3,3 %", "url": "https://www.bundesbank.de/de/statistiken/konjunktur-und-preise/harmonisierter-verbraucherpreisindex/harmonisierter-verbraucherpreisindex-927952"}
+            {"name": "Deutsche Bundesbank – Harmonisierter Verbraucherpreisindex September 2026", "url": "https://www.bundesbank.de/de/statistiken/konjunktur-und-preise/harmonisierter-verbraucherpreisindex/harmonisierter-verbraucherpreisindex-927952"}
           ]
         },
         {
-          "titel": "EZB entscheidet am 29. Oktober — DAX schließt bei 25.199 Punkten",
-          "aufmacher": "Die nächste Zinsentscheidung der Europäischen Zentralbank fällt am 29. Oktober 2026; der DAX beendete den September mit 25.199 Punkten im Minus.",
-          "fakten": "Die EZB hatte am 10. September alle drei Leitzinssätze um 25 Basispunkte angehoben — seither liegen der Einlagensatz bei 2,50 Prozent, der Hauptrefinanzierungssatz bei 2,65 Prozent und der Spitzenrefinanzierungssatz bei 2,90 Prozent. Die neue EZB-Projektion sieht eine Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028) bei einem Wachstum von 0,9, 1,4 und 1,5 Prozent; der Rat legt sich ausdrücklich nicht auf einen weiteren Zinspfad fest. Der DAX notierte am 30. September bei 25.199,19 Punkten, ein Minus von 200,02 Punkten beziehungsweise 0,79 Prozent. Die US-Notenbank hatte ihren Zielkorridor am 16. September auf 3,75 bis 4,00 Prozent angehoben.",
-          "einordnung": "Für die liquide gehaltene Eigenkapitalreserve sind Tages- und Festgeld bei 2,50 Prozent Einlagensatz wieder attraktiv — die Opportunitätskosten des Wartens steigen. Vor der Sitzung am 29. Oktober ist ein Zinsschritt nach unten nicht eingepreist.",
+          "titel": "DAX schließt bei 24.939 Punkten — Renditeanstieg drückt auf Immobilienwerte",
+          "aufmacher": "Der DAX verlor am 1. Oktober 1,0 Prozent und schloss bei 24.939 Punkten — belastet vom ungebremsten Anstieg der Anleiherenditen.",
+          "fakten": "Der deutsche Leitindex beendete den Handelstag bei 24.939,35 Punkten, das Tagestief lag bei 24.832 Zählern; der EuroStoxx50 notierte 1,3 Prozent tiefer bei 6.187 Stellen.[7] Die zehnjährige US-Staatsanleihe erreichte mit 5,34 Prozent ein neues Dekadenhoch — Treiber sei der Mix aus Inflationsdruck, Staatsverschuldung und Kapitalnachfrage für KI-Investitionen.[7] Besonders unter Druck standen zinsempfindliche Sektoren: Vonovia verlor 1,5 Prozent, TAG Immobilien 2,1 Prozent, Deutsche Bank 2,6 und Commerzbank 2,3 Prozent.[7] Die Rendite der zehnjährigen Bundesanleihe notiert bei rund 3,52 Prozent, nachdem sie ein 17-Jahres-Hoch erreicht hatte.[9]",
+          "einordnung": "Immobilienaktien leiden zuerst, wenn die Umlaufrendite steigt — das ist der Vorlauf für die Bewertung von Mikes Bestand. Parallel preist der Geldmarkt den EZB-Einlagensatz bis Dezember bei rund 2,8 Prozent, also einen weiteren Zinsschritt.[9]",
           "quellen": [
-            {"name": "EZB – Geldpolitische Beschlüsse vom 10. September 2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"},
-            {"name": "DKB – Finanz-News im Oktober 2026 (EZB-Entscheidung 29.10.)", "url": "https://www.dkb.de/finanzwissen/finanznews-oktober"},
-            {"name": "finanzen.ch – Aktien Frankfurt: DAX 25.199,19 Punkte am 30.09.2026", "url": "https://www.finanzen.ch/nachrichten/aktien/aktien-frankfurt-eroeffnung-dax-legt-zu-trump-fuer-ki-selbstkontrolle-1036584483"}
+            {"name": "n-tv – Der Börsen-Tag, 1. Oktober 2026", "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Donnerstag-1-Oktober-2026-id31367645.html"},
+            {"name": "TradingEconomics – Germany 10-Year Bond Yield", "url": "https://tradingeconomics.com/germany/government-bond-yield"}
           ]
         }
       ]
@@ -106,13 +103,20 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Spook v5.7.0, Dreame Vacuum v2.0.0 und MCP-Dev-Build stehen an",
-          "aufmacher": "Auf dem Home-Assistant-Server sind drei Aktualisierungen offen; Spook und die Dreame-Vacuum-Integration haben am 30. September neue Versionen veröffentlicht.",
-          "fakten": "Spook steckt auf v5.5.1, Home Assistant meldet v5.6.1, und upstream liegt seit dem 30. September 21:41 Uhr bereits v5.7.0 bereit. Version 5.7.0 lässt Automatisierungen eigene Helper anlegen und wieder aufräumen — Timer, Schalter, Zähler, Textfelder, Buttons, Datum/Zeit und Dropdowns —, Kategorien nach Namen verwalten, mit repairs.list offene Reparaturen auflisten und Icon sowie Voice-Aliase von Entitäten setzen. Neu sind außerdem Reparatur-Hinweise für Bereiche, deren Temperatur- oder Feuchtesensor verschwunden ist, und für Assist-Pipelines ohne Sprach- oder Agent-Engine; Dashboards lesen jetzt Bubble Card und die Mushroom-Template-Karte. Achtung, Breaking Change: input_number.delete verlangt nun Admin-Rechte und nur noch Entity-IDs, repairs.ignore_all und unignore_all ebenfalls Admin. Die Dreame-Vacuum-Integration geht von v2.0.0b20 auf die stabile v2.0.0 (30. September, 20:42 Uhr) mit eigener Dokumentation und eigener Lovelace-Karte, Unterstützung für Dreamehome-, Movahome- und Trouver-Konten, Miio-Cloud-2FA samt Captcha, Hindernisfotos, Verlaufs- und WLAN-Karten, Cloud- und lokalem Karten-Backup sowie neuen Sensoren und Buttons. Auch hier Breaking Changes: fan_speed und status sind jetzt kleingeschrieben (strong statt Strong, spot_cleaning statt Spot cleaning), set_dnd entfällt, Selbstreinigungs- und Trocknungs-Buttons wurden umbenannt. Der Home-Assistant-MCP-Server in der Dev-Reihe springt von 8.5.0.dev2803 auf 8.6.0.dev2813 und aktualisiert sich selbst. Von 24 Docker-Containern läuft einer nicht: der Init-Container firecrawl-starter-monitor-db-init, der regulär mit Exit-Code 0 durchgelaufen ist. Home Assistant Core, Supervisor, Betriebssystem, HACS und das NAS-DSM-Update melden keinen Handlungsbedarf.",
-          "einordnung": "Vor dem Dreame-Update die eigenen Automationen auf Vergleiche mit fan_speed oder status prüfen — Kleinschreibung bricht alte Bedingungen. Das Spook-Update ist unkritisch, der MCP-Server zieht die Dev-Builds selbst. Der Init-Container ist kein Fehler.",
+          "titel": "Zigbee2MQTT 2.14.1 → 2.14.2: Fehlerbehebungen für Home-Assistant-Entitäten",
+          "aufmacher": "Für Zigbee2MQTT liegt Version 2.14.2 bereit — ein reines Fehlerbehebungs-Update mit Korrekturen an Home-Assistant-Entitäten.",
+          "fakten": "Installiert ist 2.14.1-1, verfügbar ist 2.14.2-1 (Zustand on im Home-Assistant-Update-Sensor).[8] Die Release Notes vom 1. Oktober listen unter anderem: Luftfeuchte wird bei Multi-Endpoint-Klimageräten korrekt gemeldet, der Cover-Status beim Wechsel aus vollständig geöffnetem oder geschlossenem Zustand wird korrigiert, HA-Aktionsereignisse werden breiter unterstützt und ein HA-Name bleibt erhalten, wenn er per withHomeassistant gesetzt wurde. Zusätzlich republish Zigbee2MQTT retained MQTT-Nachrichten bei einem Reconnect, und Gerätedefinitionen für Aqara, Sonoff, Namron, Tuya und Legrand wurden nachgezogen.[8]",
+          "einordnung": "Unkritisches Maintenance-Update, das genau die HA-Entitäten glättet, die Mikes Automatisierungen lesen (Temperatur, Luftfeuchte, Rollladen-Status). Kein Breaking Change — Update kann ohne Vorprüfung eingespielt werden.",
           "quellen": [
-            {"name": "GitHub – Spook v5.7.0 Release Notes", "url": "https://github.com/frenck/spook/releases"},
-            {"name": "GitHub – Dreame Vacuum v2.0.0 Release Notes", "url": "https://github.com/Tasshack/dreame-vacuum/releases"},
+            {"name": "GitHub – Koenkk/zigbee2mqtt Release 2.14.2", "url": "https://github.com/Koenkk/zigbee2mqtt/releases"}
+          ]
+        },
+        {
+          "titel": "Home-Assistant-MCP-Server (Dev): 8.6.0.dev2823 → 8.6.0.dev2830",
+          "aufmacher": "Der Home-Assistant-MCP-Server in der Entwicklungsreihe zieht von Build 2823 auf Build 2830 nach.",
+          "fakten": "Home Assistant meldet installiert 8.6.0.dev2823, verfügbar 8.6.0.dev2830 (Zustand on). Es handelt sich um einen Dev-Build innerhalb derselben Minor-Version 8.6.0, der sich selbst aktualisiert.[8] Von 93 Update-Entitäten melden nur diese beiden Handlungsbedarf; Home Assistant Core, Supervisor, Betriebssystem, HACS und das NAS-DSM-Update stehen auf off.[8] Der Docker-Watchdog meldet einen gestoppten Container — es ist der Init-Container firecrawl-starter-monitor-db-init, der regulär mit Exit-Code 0 durchläuft.",
+          "einordnung": "Der MCP-Server ist die Brücke zwischen JARVIS und Home Assistant — Dev-Builds ziehen selbst, ein manueller Eingriff ist nicht nötig. Der gestoppte Init-Container ist kein Fehler.",
+          "quellen": [
             {"name": "GitHub – homeassistant-ai/ha-mcp Releases", "url": "https://github.com/homeassistant-ai/ha-mcp/releases"}
           ]
         }
