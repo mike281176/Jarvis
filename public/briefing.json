@@ -114,7 +114,7 @@
         {
           "titel": "Home-Assistant-MCP-Server (Dev): 8.6.0.dev2823 → 8.6.0.dev2830",
           "aufmacher": "Der Home-Assistant-MCP-Server in der Entwicklungsreihe zieht von Build 2823 auf Build 2830 nach.",
-          "fakten": "Home Assistant meldet installiert 8.6.0.dev2823, verfügbar 8.6.0.dev2830 (Zustand on). Es handelt sich um einen Dev-Build innerhalb derselben Minor-Version 8.6.0, der sich selbst aktualisiert.[8] Von 93 Update-Entitäten melden nur diese beiden Handlungsbedarf; Home Assistant Core, Supervisor, Betriebssystem, HACS und das NAS-DSM-Update stehen auf off.[8] Der Docker-Watchdog meldet einen gestoppten Container — es ist der Init-Container firecrawl-starter-monitor-db-init, der regulär mit Exit-Code 0 durchläuft.",
+          "fakten": "Home Assistant meldet installiert 8.6.0.dev2823, verfügbar 8.6.0.dev2830 (Zustand on). Es handelt sich um einen Dev-Build innerhalb derselben Minor-Version 8.6.0, der sich selbst aktualisiert. Die Versionsstände stammen aus den Home-Assistant-Update-Entitäten.[8] Von 93 Update-Entitäten melden nur diese beiden Handlungsbedarf; Home Assistant Core, Supervisor, Betriebssystem, HACS und das NAS-DSM-Update stehen auf off.[8] Der Docker-Watchdog meldet einen gestoppten Container — es ist der Init-Container firecrawl-starter-monitor-db-init, der regulär mit Exit-Code 0 durchläuft.",
           "einordnung": "Der MCP-Server ist die Brücke zwischen JARVIS und Home Assistant — Dev-Builds ziehen selbst, ein manueller Eingriff ist nicht nötig. Der gestoppte Init-Container ist kein Fehler.",
           "quellen": [
             {"name": "GitHub – homeassistant-ai/ha-mcp Releases", "url": "https://github.com/homeassistant-ai/ha-mcp/releases"}
