@@ -1,14 +1,14 @@
 {
-  "datum": "Freitag, 02.10.2026",
+  "datum": "Samstag, 03.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "14,8°C · Regen 91% · UV 3,7",
-          "aufmacher": "Wechselhafter Freitag in Troisdorf: aktuell klar bei 14,8 Grad — die Regenwahrscheinlichkeit liegt aber bei 91 Prozent.",
-          "fakten": "Aktuell 14,8 °C, Tageshöchstwert 20,5 °C, Tiefstwert 14,1 °C. Niederschlagswahrscheinlichkeit 91 %, UV-Index 3,7 (mittel). Wetterlage derzeit: klar.",
-          "einordnung": "Bei UV 3,7 ist Mittagssonne relevant — Schatten oder Sonnenschutz einplanen. Der hohe Regenwert spricht für Außenarbeiten am Vormittag.",
+          "titel": "11 °C · Regen 0% · UV 3,8",
+          "aufmacher": "Bedeckt, heute bis 23 °C — trocken, aber nur mäßiger UV-Schutz nötig.",
+          "fakten": "Aktuell 11,1 °C, Tageshöchstwert 23 °C, Tiefstwert 11 °C. Regenwahrscheinlichkeit 0 %, UV-Index 3,8 (mittel).",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -17,10 +17,10 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Montag, 05.10.2026 · 19:35 — Therapiezentrum Snoek",
-          "aufmacher": "Im Drei-Tage-Fenster steht ein einziger Kalendereintrag an: Montagabend im Therapiezentrum Snoek.",
-          "fakten": "Termin aus dem Google-Kalender: Montag, 05.10.2026, 19:35 Uhr (Manuelle Therapie / Sporttherapie / Osteopathie).",
-          "einordnung": "Der Montagabend ist blockiert — Werkstatt-, Immobilien- oder Quixx24-Termine auf den Vormittag legen.",
+          "titel": "Montag, 05.10.2026 19:35 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "aufmacher": "Nächster Kalendereintrag in zwei Tagen.",
+          "fakten": "",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -29,22 +29,35 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "A59: Anschlussstelle Troisdorf Richtung Köln drei Tage voll gesperrt",
-          "aufmacher": "Von Freitag, 2. Oktober, 20 Uhr, bis Montag, 5. Oktober, 6 Uhr, ist die Anschlussstelle Troisdorf der A59 in Fahrtrichtung Köln vollständig gesperrt.",
-          "fakten": "Grund sind Sanierungsarbeiten an der Fahrbahn sowie an der Autobahnauf- und -abfahrt; der Verkehr wird über die ausgeschilderte Umleitungsstrecke U57 geführt.[16] Der ADAC bestätigt die Sperrung im A59-Verkehrsregister und nennt als Umleitungsfenster den 2. Oktober, 9:00 Uhr; weitere Bauabschnitte auf der A59 laufen bis in den Mai 2027.[17] Parallel bleibt es im Stadtgebiet voll: Vulkanstraße 2–17 in Spich bis 27. November (Leitungsneuverlegung), Friedrichstraße 34–44 in Spich bis 31. Oktober (Hauptkanal), Falkenweg in Kriegsdorf bis 9. Oktober (Glasfaser), Noldestraße 10–55 und Max-Ernst-Straße in Eschmar bis 9. Oktober, die Stichwege Am Mühlentor in Sieglar bis 16. Oktober sowie der Kreuzungsbereich Frieslandring/Hannoversche Straße am Rotter See bis 2. Oktober. Ab 12. Oktober folgen die Stichwege der Ubierstraße 1–14 und 17a–17b.[16]",
-          "einordnung": "Wer am Wochenende nach Köln muss, plant die U57 ein. Die Spicher Sperrungen treffen die Gewerbegebietsrouten — für Quixx24-Fahrten und Anlieferungen relevant.",
+          "titel": "Nordbrücke Bonn: Umfrage belegt massive Schäden für die regionale Wirtschaft",
+          "aufmacher": "Die seit vier Monaten gesperrte Bonner Nordbrücke drückt einer Unternehmensumfrage zufolge auf die Umsätze von Handwerk, Handel und Hotellerie in Bonn und im Rhein-Sieg-Kreis.",
+          "fakten": "Befragt wurden über 1.100 Betriebe. Mehr als 90 % spüren Auswirkungen, über 70 % klagen über schlechtere Erreichbarkeit, rund zwei Drittel über deutliche Umsatzeinbußen. Kreishandwerksmeister Michael Christmann berichtet von Betrieben mit Existenzängsten; ältere Kollegen erwögen einen früheren Betriebsschluss als geplant.",
+          "einordnung": "Für Ihre Handwerks- und Dienstleistungskunden in der Region bedeutet das längere Anfahrtszeiten und dünnere Auftragsbücher — ein Argument, Logistik- und Personalkosten in der Quixx24-Kalkulation 2027 defensiver anzusetzen.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Aktuelle Verkehrsmeldungen für Troisdorf (30.09.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/aktuelle-verkehrsmeldungen-fuer-troisdorf-2/"},
-            {"name": "ADAC – A59: Aktuelle Stau- und Verkehrsmeldungen", "url": "https://www.adac.de/verkehr/verkehrsinformationen/de/a59/"}
+            {
+              "name": "WDR",
+              "url": "https://www1.wdr.de/nrw/rheinland/bonn/sperrung-nordbruecke-folgen-wirtschaft-100.html"
+            },
+            {
+              "name": "General-Anzeiger Bonn",
+              "url": "https://ga.de/news/wirtschaft/regional/nordbruecke-bonn-so-halten-regionale-firmen-den-betrieb-am-laufen_aid-155424817"
+            }
           ]
         },
         {
-          "titel": "Troisdorf sucht 20 Impulsgeber für die Smart-City-Strategie",
-          "aufmacher": "Die Stadt Troisdorf schreibt ihre Smart-City-Strategie fort und sucht dafür 20 engagierte Bürger, Vereine, Organisationen und Unternehmen.",
-          "fakten": "Geplant ist ein interaktiver Workshop am Dienstag, 3. November 2026, von 16:00 bis 19:00 Uhr im Geschäftsgebäude der KESKIN Fensterbau GmbH, Junkersring 41, 53844 Troisdorf. Bewerbungen sind bis zum 5. Oktober 2026 über das Beteiligungsportal möglich; eine Rückmeldung an die Ausgewählten erfolgt bis zum 9. Oktober 2026.[2] Die Impulsgruppe setzt sich aus 20 Personen aus der Stadtgesellschaft plus Vertretern der Ratsfraktionen zusammen; Handlungsfelder sind Verwaltung, Mobilität, Leben und Freizeit, Klimaschutz, Wirtschaft, Soziales, Gesundheit und Pflege sowie Bildung und Lernen.[2]",
-          "einordnung": "Mikes Smart-Home-Setup und die JARVIS-Infrastruktur sind genau das Praxisbeispiel, das die Stadt sucht — die Bewerbungsfrist läuft über das Wochenende hinaus bis Montag.",
+          "titel": "Troisdorf: Verkehrsbeschränkungen im Stadtgebiet — und erneut Betrugsfälle",
+          "aufmacher": "Die Stadt Troisdorf meldet aktuelle und bevorstehende Straßensperrungen; parallel verbucht die Kreispolizei neue Betrugsdelikte mit Troisdorfer Geschädigten.",
+          "fakten": "Die Stadt veröffentlichte am 30.09.2026 eine Übersicht der Verkehrsbeschränkungen im Stadtgebiet. Die Kreispolizeibehörde Rhein-Sieg-Kreis meldete am 01.10.2026 einen Fall, in dem ein 46-jähriger Troisdorfer über eine Social-Media-Bekanntschaft um 3.000 Euro betrogen wurde; ein weiterer Senior überwies laut Presseportal 12.000 Euro.",
+          "einordnung": "Relevant für Ihre Mietobjekte nur indirekt, für die Erreichbarkeit der Moselstraße 46 bei Anlieferungen aber konkret: Baustellen im Stadtgebiet verlängern Anfahrtswege, bevor Termine mit Handwerkern bestätigt werden.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Stadt Troisdorf sucht 20 Impulsgeber*innen für Smart City (22.09.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/stadt-troisdorf-sucht-20-impulsgeber-innen-fuer-smart-city/"}
+            {
+              "name": "Stadt Troisdorf – Verkehrsmeldungen",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/aktuelle-verkehrsmeldungen-fuer-troisdorf-2/"
+            },
+            {
+              "name": "Presseportal Blaulicht Troisdorf",
+              "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"
+            }
           ]
         }
       ]
@@ -53,23 +66,35 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen zum 2. Oktober: zehnjährige Darlehen je nach Anbieter zwischen 3,93 und 4,53 Prozent",
-          "aufmacher": "Ein zehnjährig gebundenes Immobiliendarlehen kostet zum Monatsbeginn je nach Anbieter zwischen 3,93 und 4,53 Prozent festen Sollzins — der Trend zeigt weiter nach oben.",
-          "fakten": "Baufi24 nennt für den 2. Oktober einen Top-Sollzins von 4,53 Prozent (300.000 Euro Nettodarlehensbetrag, 10 Jahre); in der Konditionstabelle stehen 4,23 Prozent Sollzins (effektiv 4,34 Prozent) für 10 Jahre, 4,46 Prozent für 5 Jahre und 4,56 Prozent für 20 Jahre.[3] Dr. Klein gibt den Korridor aktuell mit 3,93 bis 4,47 Prozent an — je nach Beleihungsauslauf, also ob Best- oder Durchschnittskondition gezeigt wird.[10] Als Treiber nennt Baufi24 die gestiegenen Renditen langfristiger Staatsanleihen: Die zehnjährige Bundesanleihe kletterte im August auf rund 3,31 Prozent, den höchsten Stand seit 15 Jahren.[3]",
-          "einordnung": "Bei vier Prozent Zins und 600.000 Euro Darlehen sind das rund 24.700 Euro Zinsen im Jahr, bevor der erste Euro getilgt ist. Zusammen mit dem Anleihetrend spricht mehr für eine frühe Zinsbindung als für Abwarten — die Strategie „maximaler Hebel“ wird bei steigender Kurve teurer.",
+          "titel": "Bauzinsen steigen weiter: Topzins jetzt 4,38 %, 10-Jahres-Bindung bei 4,23 %",
+          "aufmacher": "Die Baufinanzierungszinsen haben im Oktober 2026 die Vier-Prozent-Marke klar hinter sich gelassen — wer kaufen oder umschulden will, sollte die Zinsbewegungen einkalkulieren.",
+          "fakten": "Baufi24 nennt am 03.10.2026 einen Topzins von 4,38 % und für 10 Jahre Zinsbindung einen Sollzins von 4,23 % (effektiv 4,34 %) bei 300.000 Euro Darlehen. Finanztip verzeichnet Bauzinsen ab etwa 4,5 % (Stand 02.10.2026) und einen Anstieg um rund 0,6 Prozentpunkte seit Anfang Juli. Als Treiber gilt die Rendite der zehnjährigen Bundesanleihe, die im August auf rund 3,31 % kletterte — den höchsten Stand seit 15 Jahren.",
+          "einordnung": "Für Ihren Hebel-Ansatz heißt das: Bei vollständiger Bankfinanzierung verteuert jeder halbe Prozentpunkt die Annuität spürbar. Eine Refinanzierung über mehrere Banken lohnt jetzt mehr denn je, und die Vollfinanzierung ohne EK wäre mit 4,3 % Sollzins nur bei deutlich positiver Cashflow-Lücke tragfähig.",
           "quellen": [
-            {"name": "Baufi24 – Bauzinsen aktuell 02.10.2026", "url": "https://www.baufi24.de/bauzinsen/"},
-            {"name": "Dr. Klein – Bauzinsen aktuell 2026", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"}
+            {
+              "name": "Baufi24 – Bauzinsen aktuell",
+              "url": "https://www.baufi24.de/bauzinsen/"
+            },
+            {
+              "name": "Finanztip – Bauzinsen",
+              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
+            }
           ]
         },
         {
-          "titel": "Bonner Mietspiegel steigt zum 1. Juli um rund 4 Prozent",
-          "aufmacher": "Der Bonner Mietspiegel 2026 wurde an die allgemeine Preisentwicklung angepasst und rechnerisch um rund 4 Prozent angehoben.",
-          "fakten": "Der Rat der Bundesstadt Bonn hat den qualifizierten Mietspiegel 2026 am 7. Mai 2026 beschlossen; er gilt seit dem 1. Juli 2026 als qualifizierter Mietspiegel nach § 558d BGB für das Bonner Stadtgebiet.[4] Der General-Anzeiger beziffert die rechnerische Anhebung auf rund 4 Prozent gegenüber der Vorversion.[11]",
-          "einordnung": "Eine 4-Prozent-Anhebung des Mietspiegels ist der Maßstab für Mieterhöhungen im Bestand — bei Mikes Objekten ist das die Obergrenze für Erhöhungen in vergleichbarer Lage. Für Neuvermietungen bleibt die ortsübliche Vergleichsmiete der Anker.",
+          "titel": "Mietpreise in Troisdorf legen auf 10,41 €/m² zu — Rhein-Sieg-Kreis bei 9,92 €/m²",
+          "aufmacher": "Troisdorf bleibt beim Mietniveau teurer als der Kreisdurchschnitt und steigt binnen Jahresfrist um gut 4 %.",
+          "fakten": "Im zweiten Quartal 2026 lag die durchschnittliche Nettokaltmiete in Troisdorf bei 10,41 €/m², ein Plus von 4,1 % gegenüber Q2 2025 (10,00 €/m²). Der Rhein-Sieg-Kreis liegt bei 9,92 €/m² (+3,4 %). Andere Portale nennen für Troisdorf Angebotsmieten bis 11,80 €/m² — die Spanne hängt stark von Ausstattung, Lage und Baujahr ab.",
+          "einordnung": "Ein steigendes Mietniveau stützt den Cashflow im Bestand, rechtlich begrenzen aber Mietpreisbremse und Kappungsgrenze die Ausschöpfung. Für Neueinkäufe gilt weiterhin: Der Kaufpreisfaktor in Troisdorf muss gegen 120–130 Monatsnettokaltmieten geprüft werden, sonst frisst der aufgenommene Zins das Plus.",
           "quellen": [
-            {"name": "Stadt Bonn – Mietspiegel 2026", "url": "https://www.bonn.de/themen-entdecken/soziales-gesellschaft/mietspiegel.php"},
-            {"name": "General-Anzeiger Bonn – Wie stark der Bonner Mietspiegel zum 1. Juli steigt", "url": "https://ga.de/bonn/stadt-bonn/wie-stark-der-bonner-mietspiegel-zum-1-juli-steigt_aid-146451199"}
+            {
+              "name": "ImmoScout24 – Mietspiegel Troisdorf",
+              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
+            },
+            {
+              "name": "ohne-makler.net – Mietspiegel Troisdorf",
+              "url": "https://www.ohne-makler.net/mietspiegel/nordrhein-westfalen/troisdorf/"
+            }
           ]
         }
       ]
@@ -78,23 +103,39 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Inflationsrate steigt auf 3,3 Prozent — höchster Stand seit knapp drei Jahren",
-          "aufmacher": "Die Verbraucherpreise in Deutschland lagen im September 2026 voraussichtlich 3,3 Prozent über dem Vorjahresmonat.",
-          "fakten": "Das Statistische Bundesamt meldet für September 2026 eine vorläufige Inflationsrate von 3,3 Prozent zum Vorjahresmonat.[6] Die Deutsche Bundesbank bestätigt denselben amtlichen Schätzwert für den harmonisierten Verbraucherpreisindex (HVPI).[13] Die endgültigen Ergebnisse für September 2026 werden am 13. Oktober 2026 veröffentlicht.[6] Die EZB erwartet laut ihren September-Projektionen eine durchschnittliche Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028).[5]",
-          "einordnung": "Energie- und Anleihetrend halten die Teuerung über dem EZB-Ziel von 2 Prozent — schnelle Zinssenkungen sind damit unwahrscheinlich und die Bauzinskurve bleibt nach oben gerichtet. Für die liquide gehaltene Eigenkapitalreserve bleibt der Einlagensatz von 2,50 Prozent relevant.",
+          "titel": "EZB hebt Leitzins auf 2,50 % — Inflationsprognose für 2027 und 2028 nach oben korrigiert",
+          "aufmacher": "Die Europäische Zentralbank hat am 10. September den Einlagenzins von 2,25 auf 2,50 % angehoben — die zweite Erhöhung in diesem Jahr.",
+          "fakten": "Der Einlagenzins steigt auf 2,50 %, der Hauptrefinanzierungssatz auf 2,65 %, die Spitzenrefinanzierungsfazilität auf 2,90 % (wirksam ab 16.09.2026). Die EZB-Volkswirte erwarten eine Teuerung von 3,0 % (2026), 2,5 % (2027) und 2,1 % (2028); die Werte für 2027 und 2028 wurden angehoben. Als Treiber nennt die EZB den Konflikt im Nahen Osten und gestiegene Energiepreise.",
+          "einordnung": "Steigende Leitzinsen stützen den Realzins auf Tagesgeld, verteuern aber gleichzeitig jede Immobilienfinanzierung — für die Quixx24-Liquidität und die geplante MFH-Akquisition ziehen beide Effekte in entgegengesetzte Richtungen.",
           "quellen": [
-            {"name": "Statistisches Bundesamt – Inflationsrate im September 2026 voraussichtlich +3,3 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"},
-            {"name": "Deutsche Bundesbank – Harmonisierter Verbraucherpreisindex September 2026", "url": "https://www.bundesbank.de/de/statistiken/konjunktur-und-preise/harmonisierter-verbraucherpreisindex/harmonisierter-verbraucherpreisindex-927952"}
+            {
+              "name": "Europäische Zentralbank – Monetary policy decisions",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"
+            },
+            {
+              "name": "tagesschau – EZB erhöht Leitzins",
+              "url": "https://www.tagesschau.de/wirtschaft/finanzen/ezb-sitzung-leitzins-100.html"
+            }
           ]
         },
         {
-          "titel": "DAX schließt bei 24.939 Punkten — Renditeanstieg drückt auf Immobilienwerte",
-          "aufmacher": "Der DAX verlor am 1. Oktober 1,0 Prozent und schloss bei 24.939 Punkten — belastet vom ungebremsten Anstieg der Anleiherenditen.",
-          "fakten": "Der deutsche Leitindex beendete den Handelstag bei 24.939,35 Punkten, das Tagestief lag bei 24.832 Zählern; der EuroStoxx50 notierte 1,3 Prozent tiefer bei 6.187 Stellen.[7] Die zehnjährige US-Staatsanleihe erreichte mit 5,34 Prozent ein neues Dekadenhoch — Treiber sei der Mix aus Inflationsdruck, Staatsverschuldung und Kapitalnachfrage für KI-Investitionen.[7] Besonders unter Druck standen zinsempfindliche Sektoren: Vonovia verlor 1,5 Prozent, TAG Immobilien 2,1 Prozent, Deutsche Bank 2,6 und Commerzbank 2,3 Prozent.[7] Die Rendite der zehnjährigen Bundesanleihe notiert bei rund 3,52 Prozent, nachdem sie ein 17-Jahres-Hoch erreicht hatte.[9]",
-          "einordnung": "Immobilienaktien leiden zuerst, wenn die Umlaufrendite steigt — das ist der Vorlauf für die Bewertung von Mikes Bestand. Parallel preist der Geldmarkt den EZB-Einlagensatz bis Dezember bei rund 2,8 Prozent, also einen weiteren Zinsschritt.[9]",
+          "titel": "Deutsche Inflation im September voraussichtlich 3,3 % — DAX erobert 25.000 Punkte zurück",
+          "aufmacher": "Erstmals seit fast drei Jahren liegt die deutsche Teuerungsrate wieder über drei Prozent; die Börse reagierte dennoch freundlich.",
+          "fakten": "Nach vorläufigen Ergebnissen des Statistischen Bundesamtes steigt der Verbraucherpreisindex im September 2026 um 3,3 % gegenüber dem Vorjahr und um 0,6 % gegenüber August. Endgültige Zahlen folgen am 13. Oktober 2026. Der DAX schloss am Freitag 1,2 % fester bei 25.231 Punkten, gestützt auf gefallene Rohölpreise nach der G7-Freigabe von bis zu 100 Millionen Barrel Reserven.",
+          "einordnung": "Steigende Inflation bei gleichzeitig festem Aktienmarkt ist klassisch für Anleger, die einen Realwertschutz suchen: Für das freie Kapital ist ein breit gestreuter ETF- oder Dividendenbaustein weiter sinnvoll, für die Immobilienfinanzierung bleibt der Zins das größere Risiko.",
           "quellen": [
-            {"name": "n-tv – Der Börsen-Tag, 1. Oktober 2026", "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Donnerstag-1-Oktober-2026-id31367645.html"},
-            {"name": "TradingEconomics – Germany 10-Year Bond Yield", "url": "https://tradingeconomics.com/germany/government-bond-yield"}
+            {
+              "name": "Statistisches Bundesamt (Destatis)",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"
+            },
+            {
+              "name": "tagesschau – Inflation September",
+              "url": "https://www.tagesschau.de/wirtschaft/inflation-september-energiepreise-100.html"
+            },
+            {
+              "name": "Handelsblatt – DAX aktuell",
+              "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-plus-und-erobert-25.000-punkte-marke-zurueck/100259189.html"
+            }
           ]
         }
       ]
@@ -103,21 +144,39 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Zigbee2MQTT 2.14.1 → 2.14.2: Fehlerbehebungen für Home-Assistant-Entitäten",
-          "aufmacher": "Für Zigbee2MQTT liegt Version 2.14.2 bereit — ein reines Fehlerbehebungs-Update mit Korrekturen an Home-Assistant-Entitäten.",
-          "fakten": "Installiert ist 2.14.1-1, verfügbar ist 2.14.2-1 (Zustand on im Home-Assistant-Update-Sensor).[8] Die Release Notes vom 1. Oktober listen unter anderem: Luftfeuchte wird bei Multi-Endpoint-Klimageräten korrekt gemeldet, der Cover-Status beim Wechsel aus vollständig geöffnetem oder geschlossenem Zustand wird korrigiert, HA-Aktionsereignisse werden breiter unterstützt und ein HA-Name bleibt erhalten, wenn er per withHomeassistant gesetzt wurde. Zusätzlich republish Zigbee2MQTT retained MQTT-Nachrichten bei einem Reconnect, und Gerätedefinitionen für Aqara, Sonoff, Namron, Tuya und Legrand wurden nachgezogen.[8]",
-          "einordnung": "Unkritisches Maintenance-Update, das genau die HA-Entitäten glättet, die Mikes Automatisierungen lesen (Temperatur, Luftfeuchte, Rollladen-Status). Kein Breaking Change — Update kann ohne Vorprüfung eingespielt werden.",
+          "titel": "🤖 Advanced SSH & Web Terminal 24.1.6 → 24.1.7: Wartungsupdate mit neuer OpenSSL- und Python-Basis",
+          "aufmacher": "Das Add-on zieht ausschließlich Abhängigkeiten nach — Sicherheitswartung ohne Funktionsänderung.",
+          "fakten": "Aktualisiert werden OpenSSL auf 3.5.9, Python auf 3.14.8, Docker auf 29.8.2 und das Hassio-Basis-Image auf 21.0.7. Auto-Update ist für dieses Add-on aktiviert.",
+          "einordnung": "Kann ohne Risiko eingespielt werden; der SSH-Zugang zu Home Assistant ist Ihr wichtigster Fallback-Kanal.",
           "quellen": [
-            {"name": "GitHub – Koenkk/zigbee2mqtt Release 2.14.2", "url": "https://github.com/Koenkk/zigbee2mqtt/releases"}
+            {
+              "name": "GitHub – hassio-addons/app-ssh Releases",
+              "url": "https://github.com/hassio-addons/addon-ssh/releases"
+            }
           ]
         },
         {
-          "titel": "Home-Assistant-MCP-Server (Dev): 8.6.0.dev2823 → 8.6.0.dev2830",
-          "aufmacher": "Der Home-Assistant-MCP-Server in der Entwicklungsreihe zieht von Build 2823 auf Build 2830 nach.",
-          "fakten": "Home Assistant meldet installiert 8.6.0.dev2823, verfügbar 8.6.0.dev2830 (Zustand on). Es handelt sich um einen Dev-Build innerhalb derselben Minor-Version 8.6.0, der sich selbst aktualisiert. Die Versionsstände stammen aus den Home-Assistant-Update-Entitäten.[8] Von 93 Update-Entitäten melden nur diese beiden Handlungsbedarf; Home Assistant Core, Supervisor, Betriebssystem, HACS und das NAS-DSM-Update stehen auf off.[8] Der Docker-Watchdog meldet einen gestoppten Container — es ist der Init-Container firecrawl-starter-monitor-db-init, der regulär mit Exit-Code 0 durchläuft.",
-          "einordnung": "Der MCP-Server ist die Brücke zwischen JARVIS und Home Assistant — Dev-Builds ziehen selbst, ein manueller Eingriff ist nicht nötig. Der gestoppte Init-Container ist kein Fehler.",
+          "titel": "🤖 Music Assistant 2.10.4 → 2.10.5: Bugfixes für Ansagen, Gruppen und Audiobook-Scan",
+          "aufmacher": "Das Update behebt vor allem Fehler bei mehrräumigen Wiedergaben und beim Hintergrund-Scan der Mediathek.",
+          "fakten": "Behoben wurden unter anderem: aus dem Takt geratene Ansagen in Lautsprechergruppen, ein Shuffle-/Repeat-Fehler bei dynamischen Mixes, ein Task-Spawning-Problem beim Audioanalyse-Scan sowie ein falscher Berechtigungsfehler beim Öffnen von Künstlerseiten. Auto-Update ist deaktiviert.",
+          "einordnung": "Relevant, sobald Sie mehrere Echo- und Sonos-Geräte gruppiert bespielen — genau dort trat der Sync-Fehler auf.",
           "quellen": [
-            {"name": "GitHub – homeassistant-ai/ha-mcp Releases", "url": "https://github.com/homeassistant-ai/ha-mcp/releases"}
+            {
+              "name": "GitHub – music-assistant/server Release 2.10.5",
+              "url": "https://github.com/music-assistant/server/releases/tag/2.10.5"
+            }
+          ]
+        },
+        {
+          "titel": "🤖 Dreame Vacuum v2.0.0 → v2.0.1: Hotfix für Cloud-Verbindung und Kartenrendering",
+          "aufmacher": "Der Saugroboter-Integration werden die gröbsten Fehler der 2.0-Version ausgetrieben — inklusive deutscher Raumnamen.",
+          "fakten": "Behoben werden unter anderem: fehlgeschlagener Cloud-Kartenabruf bei abweichender MAC-Schreibweise, fehlende Auto-Empty-Funktion nach dem Update auf v2.0.0, einfrierende Kamerakarten während der Reinigung sowie falsche oder nicht verfügbare Raumnamen. Die deutschen Übersetzungen der Raumnamen wurden aktualisiert. Zusätzlich wurde die Cloud-Verbindungszuverlässigkeit verbessert.",
+          "einordnung": "Kandidat für das Wochenende: Da die Integration die Reinigungspläne und Raumzuordnung steuert, vorher ein Backup des HA-Snapshots ziehen.",
+          "quellen": [
+            {
+              "name": "GitHub – Tasshack/dreame-vacuum Release v2.0.1",
+              "url": "https://github.com/Tasshack/dreame-vacuum/releases/v2.0.1"
+            }
           ]
         }
       ]
