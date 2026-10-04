@@ -1,14 +1,14 @@
 {
-  "datum": "Samstag, 03.10.2026",
+  "datum": "Sonntag, 04.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "11 °C · Regen 0% · UV 3,8",
-          "aufmacher": "Bedeckt, heute bis 23 °C — trocken, aber nur mäßiger UV-Schutz nötig.",
-          "fakten": "Aktuell 11,1 °C, Tageshöchstwert 23 °C, Tiefstwert 11 °C. Regenwahrscheinlichkeit 0 %, UV-Index 3,8 (mittel).",
-          "einordnung": "",
+          "titel": "12 °C · Regen 0 % · UV 3,6",
+          "aufmacher": "Bedeckt, aber trocken — der Sonntag bleibt niederschlagsfrei und wird mit bis zu 22 °C noch spätsommerlich mild.",
+          "fakten": "Aktuell 11,9 °C, Tageshöchstwert 22,1 °C, Tiefstwert 11,9 °C. Regenwahrscheinlichkeit 0 %, UV-Index 3,55 (mittel) — Sonnenschutz bei längerem Aufenthalt sinnvoll.",
+          "einordnung": "Gute Bedingungen für Außenarbeiten an den Immobilien oder für die TROPFAD-Wanderung der Stadt Troisdorf (Start 10 Uhr, Aggerbrücke/B8).",
           "quellen": []
         }
       ]
@@ -17,9 +17,16 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Montag, 05.10.2026 19:35 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
-          "aufmacher": "Nächster Kalendereintrag in zwei Tagen.",
-          "fakten": "",
+          "titel": "Montag, 05.10.2026 · 19:35 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "aufmacher": "Termin am Montagabend.",
+          "fakten": "19:35 Uhr, Therapiezentrum Snoek GmbH.",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "Mittwoch, 07.10.2026 · 10:00 — Quixx-Meeting",
+          "aufmacher": "Quixx24-Termin am Mittwochvormittag.",
+          "fakten": "10:00 Uhr.",
           "einordnung": "",
           "quellen": []
         }
@@ -29,35 +36,21 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Nordbrücke Bonn: Umfrage belegt massive Schäden für die regionale Wirtschaft",
-          "aufmacher": "Die seit vier Monaten gesperrte Bonner Nordbrücke drückt einer Unternehmensumfrage zufolge auf die Umsätze von Handwerk, Handel und Hotellerie in Bonn und im Rhein-Sieg-Kreis.",
-          "fakten": "Befragt wurden über 1.100 Betriebe. Mehr als 90 % spüren Auswirkungen, über 70 % klagen über schlechtere Erreichbarkeit, rund zwei Drittel über deutliche Umsatzeinbußen. Kreishandwerksmeister Michael Christmann berichtet von Betrieben mit Existenzängsten; ältere Kollegen erwögen einen früheren Betriebsschluss als geplant.",
-          "einordnung": "Für Ihre Handwerks- und Dienstleistungskunden in der Region bedeutet das längere Anfahrtszeiten und dünnere Auftragsbücher — ein Argument, Logistik- und Personalkosten in der Quixx24-Kalkulation 2027 defensiver anzusetzen.",
+          "titel": "Troisdorfer verliert 3.000 Euro an Online-Betrügerin",
+          "aufmacher": "Die Kreispolizei Rhein-Sieg-Kreis warnt erneut vor Liebesbetrug über soziale Medien — ein 46-jähriger Troisdorfer erstattete jetzt Anzeige.",
+          "fakten": "Der Mann hatte Anfang September über eine Social-Media-Plattform Kontakt zu einer vermeintlichen Frau aufgenommen. Nach dem Wechsel auf einen Messenger-Dienst schilderte die Unbekannte eine finanzielle Notlage und erhielt daraufhin rund 3.000 Euro. Erst am Mittwoch, 30. September, ging der Geschädigte zur Polizei.",
+          "einordnung": "Klassisches Romance-Scam-Muster: Verlagerung auf Messenger, emotionale Bindung, dann finanzielle Notlage. Relevanz für Quixx24-Kundenkontakte und für Tanja/Mike privat — Warnung lässt sich 1:1 weitergeben.",
           "quellen": [
-            {
-              "name": "WDR",
-              "url": "https://www1.wdr.de/nrw/rheinland/bonn/sperrung-nordbruecke-folgen-wirtschaft-100.html"
-            },
-            {
-              "name": "General-Anzeiger Bonn",
-              "url": "https://ga.de/news/wirtschaft/regional/nordbruecke-bonn-so-halten-regionale-firmen-den-betrieb-am-laufen_aid-155424817"
-            }
+            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis (Presseportal)", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
           ]
         },
         {
-          "titel": "Troisdorf: Verkehrsbeschränkungen im Stadtgebiet — und erneut Betrugsfälle",
-          "aufmacher": "Die Stadt Troisdorf meldet aktuelle und bevorstehende Straßensperrungen; parallel verbucht die Kreispolizei neue Betrugsdelikte mit Troisdorfer Geschädigten.",
-          "fakten": "Die Stadt veröffentlichte am 30.09.2026 eine Übersicht der Verkehrsbeschränkungen im Stadtgebiet. Die Kreispolizeibehörde Rhein-Sieg-Kreis meldete am 01.10.2026 einen Fall, in dem ein 46-jähriger Troisdorfer über eine Social-Media-Bekanntschaft um 3.000 Euro betrogen wurde; ein weiterer Senior überwies laut Presseportal 12.000 Euro.",
-          "einordnung": "Relevant für Ihre Mietobjekte nur indirekt, für die Erreichbarkeit der Moselstraße 46 bei Anlieferungen aber konkret: Baustellen im Stadtgebiet verlängern Anfahrtswege, bevor Termine mit Handwerkern bestätigt werden.",
+          "titel": "Troisdorf: Interkulturelle Woche endet, TROPFAD-Wanderung startet heute",
+          "aufmacher": "Die Stadt Troisdorf schließt ihre Interkulturelle Woche ab — heute lädt sie zur vierten TROPFAD-Etappe von Troisdorf-Mitte nach Bergheim.",
+          "fakten": "Am 1. Oktober fand im Mehrgenerationenhaus „Haus International“ ein internationales Frauenfrühstück statt; die Ausstellung „Wege und Wurzeln“ im Rathausfoyer läuft noch bis zum 31. Oktober. Die geführte Wanderung startet heute um 10 Uhr an der Aggerbrücke (Frankfurter Straße/B8) und endet gegen 13:30 Uhr; die Teilnahme ist kostenfrei.",
+          "einordnung": "Kommunale Veranstaltungen ohne direkten Geschäftsbezug — aber ein Hinweis auf die Rathaus-Ausstellung lohnt, wenn Sie ohnehin in der Stadt zu tun haben.",
           "quellen": [
-            {
-              "name": "Stadt Troisdorf – Verkehrsmeldungen",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/september/aktuelle-verkehrsmeldungen-fuer-troisdorf-2/"
-            },
-            {
-              "name": "Presseportal Blaulicht Troisdorf",
-              "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"
-            }
+            {"name": "Stadt Troisdorf – Pressemeldungen 2026", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/"}
           ]
         }
       ]
@@ -66,35 +59,21 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen steigen weiter: Topzins jetzt 4,38 %, 10-Jahres-Bindung bei 4,23 %",
-          "aufmacher": "Die Baufinanzierungszinsen haben im Oktober 2026 die Vier-Prozent-Marke klar hinter sich gelassen — wer kaufen oder umschulden will, sollte die Zinsbewegungen einkalkulieren.",
-          "fakten": "Baufi24 nennt am 03.10.2026 einen Topzins von 4,38 % und für 10 Jahre Zinsbindung einen Sollzins von 4,23 % (effektiv 4,34 %) bei 300.000 Euro Darlehen. Finanztip verzeichnet Bauzinsen ab etwa 4,5 % (Stand 02.10.2026) und einen Anstieg um rund 0,6 Prozentpunkte seit Anfang Juli. Als Treiber gilt die Rendite der zehnjährigen Bundesanleihe, die im August auf rund 3,31 % kletterte — den höchsten Stand seit 15 Jahren.",
-          "einordnung": "Für Ihren Hebel-Ansatz heißt das: Bei vollständiger Bankfinanzierung verteuert jeder halbe Prozentpunkt die Annuität spürbar. Eine Refinanzierung über mehrere Banken lohnt jetzt mehr denn je, und die Vollfinanzierung ohne EK wäre mit 4,3 % Sollzins nur bei deutlich positiver Cashflow-Lücke tragfähig.",
+          "titel": "Bauzinsen springen binnen eines Monats um 0,5 Punkte",
+          "aufmacher": "Für eine 300.000-Euro-Finanzierung kostet die Rate heute rund 125 Euro mehr im Monat als noch vor vier Wochen — die Bauzinsen sind deutlich gestiegen.",
+          "fakten": "Der Top-Sollzins für 10 Jahre Zinsbindung liegt am 4. Oktober 2026 bei 4,23 % (effektiv 4,34 %) — vor einem Monat waren es effektiv 3,82 %, ein Plus von 0,52 Prozentpunkten. Die monatliche Rate stieg damit von 1.432,50 € auf 1.557,50 €. Grund ist die Rendite der 10-jährigen Bundesanleihe, die im Monatsverlauf auf rund 3,31 % kletterte — den höchsten Stand seit 15 Jahren.",
+          "einordnung": "Direkt relevant für Ihre Hebel-Strategie: Bei jedem weiteren Anstieg verteuert sich das Bankdarlehen für das nächste MFH spürbar. Wenn eine Finanzierung ohnehin ansteht, sprechen die kurzfristig erwarteten Schwankungen eher für ein zeitnahes Zinsangebot als für weiteres Abwarten.",
           "quellen": [
-            {
-              "name": "Baufi24 – Bauzinsen aktuell",
-              "url": "https://www.baufi24.de/bauzinsen/"
-            },
-            {
-              "name": "Finanztip – Bauzinsen",
-              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
-            }
+            {"name": "Baufi24 – Bauzinsen aktuell (04.10.2026)", "url": "https://www.baufi24.de/bauzinsen/"}
           ]
         },
         {
-          "titel": "Mietpreise in Troisdorf legen auf 10,41 €/m² zu — Rhein-Sieg-Kreis bei 9,92 €/m²",
-          "aufmacher": "Troisdorf bleibt beim Mietniveau teurer als der Kreisdurchschnitt und steigt binnen Jahresfrist um gut 4 %.",
-          "fakten": "Im zweiten Quartal 2026 lag die durchschnittliche Nettokaltmiete in Troisdorf bei 10,41 €/m², ein Plus von 4,1 % gegenüber Q2 2025 (10,00 €/m²). Der Rhein-Sieg-Kreis liegt bei 9,92 €/m² (+3,4 %). Andere Portale nennen für Troisdorf Angebotsmieten bis 11,80 €/m² — die Spanne hängt stark von Ausstattung, Lage und Baujahr ab.",
-          "einordnung": "Ein steigendes Mietniveau stützt den Cashflow im Bestand, rechtlich begrenzen aber Mietpreisbremse und Kappungsgrenze die Ausschöpfung. Für Neueinkäufe gilt weiterhin: Der Kaufpreisfaktor in Troisdorf muss gegen 120–130 Monatsnettokaltmieten geprüft werden, sonst frisst der aufgenommene Zins das Plus.",
+          "titel": "Mieten in Troisdorf steigen um 4,1 Prozent",
+          "aufmacher": "Troisdorfer Mieten klettern stärker als im Kreisdurchschnitt — gut für den Cashflow, aber die Kappungsgrenze bleibt zu beachten.",
+          "fakten": "Im zweiten Quartal 2026 liegt die durchschnittliche Nettokaltmiete in Troisdorf bei 10,41 €/m², nach 10,00 €/m² im Vorjahr — ein Plus von 4,1 %. Der Rhein-Sieg-Kreis liegt bei 9,92 €/m² (+3,4 %). Troisdorf notiert damit rund einen halben Euro pro Quadratmeter über dem Kreisschnitt.",
+          "einordnung": "Bei einer 75-m²-Wohnung entspricht der Zuwachs rund 31 Euro Mehrertrag pro Monat. Für Ihre Bestandsobjekte ist das ein Argument, Mieterhöhungen zu prüfen — die Kappungsgrenze (§ 558 BGB, 15 % in drei Jahren bei angespanntem Markt 20 %) und der qualifizierte Mietspiegel sind vorher maßgeblich.",
           "quellen": [
-            {
-              "name": "ImmoScout24 – Mietspiegel Troisdorf",
-              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
-            },
-            {
-              "name": "ohne-makler.net – Mietspiegel Troisdorf",
-              "url": "https://www.ohne-makler.net/mietspiegel/nordrhein-westfalen/troisdorf/"
-            }
+            {"name": "ImmoScout24 – Mietspiegel Troisdorf 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"}
           ]
         }
       ]
@@ -103,39 +82,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hebt Leitzins auf 2,50 % — Inflationsprognose für 2027 und 2028 nach oben korrigiert",
-          "aufmacher": "Die Europäische Zentralbank hat am 10. September den Einlagenzins von 2,25 auf 2,50 % angehoben — die zweite Erhöhung in diesem Jahr.",
-          "fakten": "Der Einlagenzins steigt auf 2,50 %, der Hauptrefinanzierungssatz auf 2,65 %, die Spitzenrefinanzierungsfazilität auf 2,90 % (wirksam ab 16.09.2026). Die EZB-Volkswirte erwarten eine Teuerung von 3,0 % (2026), 2,5 % (2027) und 2,1 % (2028); die Werte für 2027 und 2028 wurden angehoben. Als Treiber nennt die EZB den Konflikt im Nahen Osten und gestiegene Energiepreise.",
-          "einordnung": "Steigende Leitzinsen stützen den Realzins auf Tagesgeld, verteuern aber gleichzeitig jede Immobilienfinanzierung — für die Quixx24-Liquidität und die geplante MFH-Akquisition ziehen beide Effekte in entgegengesetzte Richtungen.",
+          "titel": "EZB hebt Leitzins erneut an — auf 2,50 Prozent",
+          "aufmacher": "Die Europäische Zentralbank hat im September zum zweiten Mal in diesem Jahr die Zinsen erhöht; der Einlagenzins steigt von 2,25 auf 2,50 Prozent.",
+          "fakten": "Beschlossen am 10. September 2026, wirksam ab 16. September: Der Einlagenzins liegt nun bei 2,50 %, der Hauptrefinanzierungssatz bei 2,65 %, der Spitzenrefinanzierungssatz bei 2,90 %. Begründet wurde der Schritt mit dem Nahost-Konflikt, der weiterhin Inflationsdruck erzeugt. Die EZB-Volkswirte erwarten eine Teuerung von 3,0 % (2026), 2,5 % (2027) und 2,1 % (2028) sowie Wirtschaftswachstum von 0,9 % in diesem Jahr. Weitere Schritte schließt die EZB nicht aus, legt sich aber nicht fest.",
+          "einordnung": "Steigende Zinsen stützen tendenziell den Euro und dämpfen die Inflation — sie verteuern aber auch Kredite, siehe Immobilien. Für liquide Reserven (rund 600.000 € für das MFH) werden Tagesgeld- und Festgeldkonditionen damit wieder attraktiver.",
           "quellen": [
-            {
-              "name": "Europäische Zentralbank – Monetary policy decisions",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"
-            },
-            {
-              "name": "tagesschau – EZB erhöht Leitzins",
-              "url": "https://www.tagesschau.de/wirtschaft/finanzen/ezb-sitzung-leitzins-100.html"
-            }
+            {"name": "Europäische Zentralbank – Monetary policy decisions (10.09.2026)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"},
+            {"name": "tagesschau.de – EZB erhöht Leitzins auf 2,5 Prozent", "url": "https://www.tagesschau.de/wirtschaft/finanzen/ezb-sitzung-leitzins-100.html"}
           ]
         },
         {
-          "titel": "Deutsche Inflation im September voraussichtlich 3,3 % — DAX erobert 25.000 Punkte zurück",
-          "aufmacher": "Erstmals seit fast drei Jahren liegt die deutsche Teuerungsrate wieder über drei Prozent; die Börse reagierte dennoch freundlich.",
-          "fakten": "Nach vorläufigen Ergebnissen des Statistischen Bundesamtes steigt der Verbraucherpreisindex im September 2026 um 3,3 % gegenüber dem Vorjahr und um 0,6 % gegenüber August. Endgültige Zahlen folgen am 13. Oktober 2026. Der DAX schloss am Freitag 1,2 % fester bei 25.231 Punkten, gestützt auf gefallene Rohölpreise nach der G7-Freigabe von bis zu 100 Millionen Barrel Reserven.",
-          "einordnung": "Steigende Inflation bei gleichzeitig festem Aktienmarkt ist klassisch für Anleger, die einen Realwertschutz suchen: Für das freie Kapital ist ein breit gestreuter ETF- oder Dividendenbaustein weiter sinnvoll, für die Immobilienfinanzierung bleibt der Zins das größere Risiko.",
+          "titel": "Deutsche Inflation erstmals seit drei Jahren über drei Prozent",
+          "aufmacher": "Die Inflationsrate in Deutschland ist im September auf voraussichtlich 3,3 Prozent gestiegen — der höchste Wert seit fast drei Jahren.",
+          "fakten": "Nach vorläufigen Ergebnissen des Statistischen Bundesamtes lagen die Verbraucherpreise im September 2026 um 3,3 % über dem Vorjahresmonat und um 0,6 % über dem August. Treiber sind vor allem die massiv gestiegenen Energiepreise infolge des Ölpreisschocks. Die endgültigen September-Zahlen veröffentlicht Destatis am 13. Oktober 2026. Der DAX schloss am 2. Oktober bei 25.231,20 Punkten (Tagesplus 1,17 %), nachdem er am Vortag 1,03 % verloren hatte.",
+          "einordnung": "Die Kombination aus hoher Inflation und steigendem Leitzins ist ein Warnsignal für die Zinsentwicklung. Für Ihr Portfolio bleiben Sachwerte (Immobilien, Aktien) der bessere Inflationsschutz als Cash — aber der DAX notiert bereits auf hohem Niveau.",
           "quellen": [
-            {
-              "name": "Statistisches Bundesamt (Destatis)",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"
-            },
-            {
-              "name": "tagesschau – Inflation September",
-              "url": "https://www.tagesschau.de/wirtschaft/inflation-september-energiepreise-100.html"
-            },
-            {
-              "name": "Handelsblatt – DAX aktuell",
-              "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-plus-und-erobert-25.000-punkte-marke-zurueck/100259189.html"
-            }
+            {"name": "Statistisches Bundesamt – Inflationsrate September 2026 voraussichtlich +3,3 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"},
+            {"name": "investing.com – DAX historische Kurse", "url": "https://de.investing.com/indices/germany-30-historical-data"}
           ]
         }
       ]
@@ -144,39 +107,23 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 Advanced SSH & Web Terminal 24.1.6 → 24.1.7: Wartungsupdate mit neuer OpenSSL- und Python-Basis",
-          "aufmacher": "Das Add-on zieht ausschließlich Abhängigkeiten nach — Sicherheitswartung ohne Funktionsänderung.",
-          "fakten": "Aktualisiert werden OpenSSL auf 3.5.9, Python auf 3.14.8, Docker auf 29.8.2 und das Hassio-Basis-Image auf 21.0.7. Auto-Update ist für dieses Add-on aktiviert.",
-          "einordnung": "Kann ohne Risiko eingespielt werden; der SSH-Zugang zu Home Assistant ist Ihr wichtigster Fallback-Kanal.",
+          "titel": "🤖 Hermes Agent: Update verfügbar (0.21.4 → 0.21.5)",
+          "aufmacher": "Der Update-Scan meldet für Hermes Agent einen Rückstand auf die aktuelle Version — das jüngste Stable-Tag ist v0.21.5 vom 24. September.",
+          "fakten": "Der Scan meldet „commits behind“. Das Release v0.21.5 (v2026.9.24) fasst rund 460 gemergte Pull Requests und 1.610 Commits seit 0.21.4 zusammen: darunter ein Desktop-Plugin-SDK mit Composer- und Sidebar-Slots, der neue Connectors-Bereich statt des MCP-Tabs, ein einfacher/erweiterter Desktop-Modus („Simple/Advanced“), französische/deutsche/spanische Plugin-Kataloge sowie umfangreiche Performance-Arbeiten. Ein Docker-Container läuft derzeit gestoppt.",
+          "einordnung": "Die kuratierten Release-Notes kommen erst mit v0.22.0. Für Sie interessant: Der Connectors-Bereich ersetzt den MCP-Tab — relevant, sobald Sie HAOS-MCP-Server im Desktop verbinden wollen. Update wie üblich erst nach Freigabe.",
           "quellen": [
-            {
-              "name": "GitHub – hassio-addons/app-ssh Releases",
-              "url": "https://github.com/hassio-addons/addon-ssh/releases"
-            }
+            {"name": "GitHub – NousResearch/hermes-agent Releases", "url": "https://github.com/NousResearch/hermes-agent/releases"}
           ]
         },
         {
-          "titel": "🤖 Music Assistant 2.10.4 → 2.10.5: Bugfixes für Ansagen, Gruppen und Audiobook-Scan",
-          "aufmacher": "Das Update behebt vor allem Fehler bei mehrräumigen Wiedergaben und beim Hintergrund-Scan der Mediathek.",
-          "fakten": "Behoben wurden unter anderem: aus dem Takt geratene Ansagen in Lautsprechergruppen, ein Shuffle-/Repeat-Fehler bei dynamischen Mixes, ein Task-Spawning-Problem beim Audioanalyse-Scan sowie ein falscher Berechtigungsfehler beim Öffnen von Künstlerseiten. Auto-Update ist deaktiviert.",
-          "einordnung": "Relevant, sobald Sie mehrere Echo- und Sonos-Geräte gruppiert bespielen — genau dort trat der Sync-Fehler auf.",
+          "titel": "📦 Home Assistant: fünf Add-on-/HACS-Updates offen",
+          "aufmacher": "Neben Hermes stehen mehrere Aktualisierungen im HA-Ökosystem an — drei davon sind reine Fehlerbehebungen und bedenkenlos.",
+          "fakten": "Music Assistant 2.10.4 → 2.10.5 (behebt: Ankündigungen in Lautsprechergruppen liefen asynchron, OpenSubsonic-Zugangsdaten gingen bei Rekonfiguration verloren, der Audio-Analyse-Scan startete pro Titel eine eigene Aufgabe). Bosch Smart Home Controller v0.12.28 → v0.12.30 (behebt: Rauchmelder-Ereignisse wiederholten veraltete Alarmzustände; Kompatibilitäts-Fix für hassfest). Dreame Vacuum v2.0.0 → v2.0.1 (behebt: Karten-Rendering, falsche Raumnamen, Kartenbreite in Sections-Ansicht). Dazu laufen zwei Dev-Updates: HA MCP Server (auto-update aktiv) und der HA-Matter-Hub.",
+          "einordnung": "Music Assistant und Dreame betreffen Ihre laufende Infrastruktur — beide Updates beheben konkrete Fehler, die Sie im Alltag treffen könnten (Musik in Gruppen, Sauger-Karte). Freigabe für Music Assistant und Dreame ist aus meiner Sicht unkritisch.",
           "quellen": [
-            {
-              "name": "GitHub – music-assistant/server Release 2.10.5",
-              "url": "https://github.com/music-assistant/server/releases/tag/2.10.5"
-            }
-          ]
-        },
-        {
-          "titel": "🤖 Dreame Vacuum v2.0.0 → v2.0.1: Hotfix für Cloud-Verbindung und Kartenrendering",
-          "aufmacher": "Der Saugroboter-Integration werden die gröbsten Fehler der 2.0-Version ausgetrieben — inklusive deutscher Raumnamen.",
-          "fakten": "Behoben werden unter anderem: fehlgeschlagener Cloud-Kartenabruf bei abweichender MAC-Schreibweise, fehlende Auto-Empty-Funktion nach dem Update auf v2.0.0, einfrierende Kamerakarten während der Reinigung sowie falsche oder nicht verfügbare Raumnamen. Die deutschen Übersetzungen der Raumnamen wurden aktualisiert. Zusätzlich wurde die Cloud-Verbindungszuverlässigkeit verbessert.",
-          "einordnung": "Kandidat für das Wochenende: Da die Integration die Reinigungspläne und Raumzuordnung steuert, vorher ein Backup des HA-Snapshots ziehen.",
-          "quellen": [
-            {
-              "name": "GitHub – Tasshack/dreame-vacuum Release v2.0.1",
-              "url": "https://github.com/Tasshack/dreame-vacuum/releases/v2.0.1"
-            }
+            {"name": "GitHub – music-assistant/server Release 2.10.5", "url": "https://github.com/music-assistant/server/releases/tag/2.10.5"},
+            {"name": "GitHub – tschamm/boschshc-hass v0.12.30", "url": "https://github.com/tschamm/boschshc-hass/releases/tag/v0.12.30"},
+            {"name": "GitHub – Tasshack/dreame-vacuum v2.0.1", "url": "https://github.com/Tasshack/dreame-vacuum/releases/tag/v2.0.1"}
           ]
         }
       ]
