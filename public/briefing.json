@@ -1,14 +1,14 @@
 {
-  "datum": "Sonntag, 04.10.2026",
+  "datum": "Montag, 05.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "12 °C · Regen 0 % · UV 3,6",
-          "aufmacher": "Bedeckt, aber trocken — der Sonntag bleibt niederschlagsfrei und wird mit bis zu 22 °C noch spätsommerlich mild.",
-          "fakten": "Aktuell 11,9 °C, Tageshöchstwert 22,1 °C, Tiefstwert 11,9 °C. Regenwahrscheinlichkeit 0 %, UV-Index 3,55 (mittel) — Sonnenschutz bei längerem Aufenthalt sinnvoll.",
-          "einordnung": "Gute Bedingungen für Außenarbeiten an den Immobilien oder für die TROPFAD-Wanderung der Stadt Troisdorf (Start 10 Uhr, Aggerbrücke/B8).",
+          "titel": "12 °C · Regen 0 % · UV 3,7",
+          "aufmacher": "Bedeckt, aber trocken — der Montag bleibt niederschlagsfrei und wird mit bis zu 24 °C noch spätsommerlich mild.",
+          "fakten": "Aktuell 12,3 °C, Tageshöchstwert 23,7 °C, Tiefstwert 12,1 °C. Regenwahrscheinlichkeit 0 %, UV-Index 3,7 (mittel) — Sonnenschutz bei längerem Aufenthalt sinnvoll.",
+          "einordnung": "Gute Bedingungen für Außenarbeiten an den Immobilien in Troisdorf oder die Moselstraße-Baustelle.",
           "quellen": []
         }
       ]
@@ -18,7 +18,7 @@
       "artikel": [
         {
           "titel": "Montag, 05.10.2026 · 19:35 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
-          "aufmacher": "Termin am Montagabend.",
+          "aufmacher": "Termin am heutigen Montagabend.",
           "fakten": "19:35 Uhr, Therapiezentrum Snoek GmbH.",
           "einordnung": "",
           "quellen": []
@@ -29,6 +29,13 @@
           "fakten": "10:00 Uhr.",
           "einordnung": "",
           "quellen": []
+        },
+        {
+          "titel": "Donnerstag, 08.10.2026 · 15:00 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "aufmacher": "Zweiter Therapietermin in dieser Woche.",
+          "fakten": "15:00 Uhr, Therapiezentrum Snoek GmbH.",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     },
@@ -36,21 +43,21 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorfer verliert 3.000 Euro an Online-Betrügerin",
-          "aufmacher": "Die Kreispolizei Rhein-Sieg-Kreis warnt erneut vor Liebesbetrug über soziale Medien — ein 46-jähriger Troisdorfer erstattete jetzt Anzeige.",
-          "fakten": "Der Mann hatte Anfang September über eine Social-Media-Plattform Kontakt zu einer vermeintlichen Frau aufgenommen. Nach dem Wechsel auf einen Messenger-Dienst schilderte die Unbekannte eine finanzielle Notlage und erhielt daraufhin rund 3.000 Euro. Erst am Mittwoch, 30. September, ging der Geschädigte zur Polizei.",
-          "einordnung": "Klassisches Romance-Scam-Muster: Verlagerung auf Messenger, emotionale Bindung, dann finanzielle Notlage. Relevanz für Quixx24-Kundenkontakte und für Tanja/Mike privat — Warnung lässt sich 1:1 weitergeben.",
+          "titel": "A59 bei Troisdorf-Oberlar und Sieglar bis heute Morgen voll gesperrt",
+          "aufmacher": "Auf der A59 nahe Troisdorf-Oberlar und Sieglar läuft bis Montag, 5. Oktober, 5:00 Uhr eine Vollsperrung wegen Fahrbahnerneuerung.",
+          "fakten": "Die Autobahn GmbH saniert seit Freitag, 2. Oktober, 21:00 Uhr, die Tragschicht auf zwei Abschnitten zwischen den Anschlussstellen Troisdorf und Spich. Betroffen sind beide Fahrtrichtungen (Bonn–Köln und Köln–Bonn). Die Gesamtmaßnahme „Flughafen – Troisdorf\" läuft laut Verkehrszentrale noch bis zum 11. Oktober, 15:00 Uhr weiter.[1]",
+          "einordnung": "Direkt relevant für Fahrten zwischen Troisdorf und Köln — heute früh Umfahrung über die B8 einplanen. Weitere Sperrungen folgen bis 11. Oktober.",
           "quellen": [
-            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis (Presseportal)", "url": "https://www.presseportal.de/blaulicht/r/Troisdorf"}
+            {"name": "news.de", "url": "https://www.news.de/auto/859257832/verkehrsmeldung-rp-troisdorf-rhein-sieg-kreis-zur-verkehrsstoerung-wegen-asphaltierungsarbeiten-fahrbahnerneuerung-von-02-10-2026-bis-05-10-2026-beschraenkungen-im-verkehr-nordrhein-westfalen-staugefahr-in-troisdorf-oberlar-sieglar-auf-a59-willy-brandt-ri/1/"}
           ]
         },
         {
-          "titel": "Troisdorf: Interkulturelle Woche endet, TROPFAD-Wanderung startet heute",
-          "aufmacher": "Die Stadt Troisdorf schließt ihre Interkulturelle Woche ab — heute lädt sie zur vierten TROPFAD-Etappe von Troisdorf-Mitte nach Bergheim.",
-          "fakten": "Am 1. Oktober fand im Mehrgenerationenhaus „Haus International“ ein internationales Frauenfrühstück statt; die Ausstellung „Wege und Wurzeln“ im Rathausfoyer läuft noch bis zum 31. Oktober. Die geführte Wanderung startet heute um 10 Uhr an der Aggerbrücke (Frankfurter Straße/B8) und endet gegen 13:30 Uhr; die Teilnahme ist kostenfrei.",
-          "einordnung": "Kommunale Veranstaltungen ohne direkten Geschäftsbezug — aber ein Hinweis auf die Rathaus-Ausstellung lohnt, wenn Sie ohnehin in der Stadt zu tun haben.",
+          "titel": "Bahnsanierung rechter Rhein: Nachtarbeiten im Oktober zwischen Troisdorf und Wiesbaden",
+          "aufmacher": "Die Deutsche Bahn setzt im Oktober die Korridorsanierung auf der rechten Rheinstrecke fort — mit nächtlichen Bauarbeiten zwischen Troisdorf und Wiesbaden.",
+          "fakten": "Der Abschnitt Troisdorf–Unkel (25,8 km von insgesamt 89 km) ist seit 10. Juli 2026 in Bau, die technische Inbetriebnahme ist für den 11. Dezember 2026 geplant. Erneuert werden Gleise, Weichen, Oberleitungen und Brücken; in NRW werden die Bahnhöfe Niederdollendorf, Königswinter und Rhöndorf modernisiert, Bad Honnef wird rund 500 m nach Norden versetzt. Für die Bauphase gibt es einen Ersatzverkehr.[2]",
+          "einordnung": "Fünfmonatige Sperrung auf der Rheinschiene — Bahnfahrten Richtung Bonn/Koblenz frühzeitig planen; für Quixx24-Lieferungen per Bahn relevant.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Pressemeldungen 2026", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/"}
+            {"name": "DB Korridorsanierung NRW", "url": "https://korridorsanierung-nrw.deutschebahn.com/korridore/rechter-rhein.html"}
           ]
         }
       ]
@@ -59,21 +66,21 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen springen binnen eines Monats um 0,5 Punkte",
-          "aufmacher": "Für eine 300.000-Euro-Finanzierung kostet die Rate heute rund 125 Euro mehr im Monat als noch vor vier Wochen — die Bauzinsen sind deutlich gestiegen.",
-          "fakten": "Der Top-Sollzins für 10 Jahre Zinsbindung liegt am 4. Oktober 2026 bei 4,23 % (effektiv 4,34 %) — vor einem Monat waren es effektiv 3,82 %, ein Plus von 0,52 Prozentpunkten. Die monatliche Rate stieg damit von 1.432,50 € auf 1.557,50 €. Grund ist die Rendite der 10-jährigen Bundesanleihe, die im Monatsverlauf auf rund 3,31 % kletterte — den höchsten Stand seit 15 Jahren.",
-          "einordnung": "Direkt relevant für Ihre Hebel-Strategie: Bei jedem weiteren Anstieg verteuert sich das Bankdarlehen für das nächste MFH spürbar. Wenn eine Finanzierung ohnehin ansteht, sprechen die kurzfristig erwarteten Schwankungen eher für ein zeitnahes Zinsangebot als für weiteres Abwarten.",
+          "titel": "Bauzinsen bleiben über 4 Prozent — 10-Jahres-Fix bei rund 4,2 %",
+          "aufmacher": "Die Bauzinsen für 10-jährige Darlehen liegen laut Interhyp aktuell bei 4,2 % und dürften vorerst über der 4-Prozent-Marke bleiben.",
+          "fakten": "Die Zinstabelle der Interhyp AG (Konditionen 21.–27.09.2026) nennt für 10 Jahre 4,15 % (Beleihung unter 70 %), 4,27 % (80 %) und 4,52 % (über 90 %); bei 20 Jahren steigt der Zins auf 4,41–4,74 %. Treiber sind laut Interhyp die gestiegenen Renditen langfristiger Staatsanleihen, getrieben von Iran-Konflikt, EZB-Zinserhöhung und hohen Energiepreisen. Das Bankenpanel ist uneinig: kurzfristig rechnen 50 % mit steigenden und 50 % mit gleichbleibenden Zinsen.[4]",
+          "einordnung": "Beim geplanten MFH-Kauf (maximaler Hebel, nur Kaufnebenkosten aus EK) heißt das: Zinsbindung lang und mehrere Banken parallel anfragen, bevor sich das Niveau weiter nach oben bewegt.",
           "quellen": [
-            {"name": "Baufi24 – Bauzinsen aktuell (04.10.2026)", "url": "https://www.baufi24.de/bauzinsen/"}
+            {"name": "Interhyp", "url": "https://www.interhyp.de/zinsen/"}
           ]
         },
         {
-          "titel": "Mieten in Troisdorf steigen um 4,1 Prozent",
-          "aufmacher": "Troisdorfer Mieten klettern stärker als im Kreisdurchschnitt — gut für den Cashflow, aber die Kappungsgrenze bleibt zu beachten.",
-          "fakten": "Im zweiten Quartal 2026 liegt die durchschnittliche Nettokaltmiete in Troisdorf bei 10,41 €/m², nach 10,00 €/m² im Vorjahr — ein Plus von 4,1 %. Der Rhein-Sieg-Kreis liegt bei 9,92 €/m² (+3,4 %). Troisdorf notiert damit rund einen halben Euro pro Quadratmeter über dem Kreisschnitt.",
-          "einordnung": "Bei einer 75-m²-Wohnung entspricht der Zuwachs rund 31 Euro Mehrertrag pro Monat. Für Ihre Bestandsobjekte ist das ein Argument, Mieterhöhungen zu prüfen — die Kappungsgrenze (§ 558 BGB, 15 % in drei Jahren bei angespanntem Markt 20 %) und der qualifizierte Mietspiegel sind vorher maßgeblich.",
+          "titel": "Troisdorf bleibt teurer Mietmarkt: 12,83 €/m² Kaltmiete",
+          "aufmacher": "Im Rhein-Sieg-Kreis liegt die durchschnittliche Angebots-Kaltmiete bei 11,94 €/m² — Troisdorf liegt mit 12,83 €/m² über dem Kreisschnitt.",
+          "fakten": "Der Kreis-Durchschnitt der letzten zwölf Monate basiert auf 22.248 Angeboten. Für 2026 liegt der laufende Zwischenstand bei 11,66 €/m², nach 12,46 €/m² im Jahr 2025. Teuerste Kommune ist Königswinter mit 13,16 €/m², günstigste Eitorf und Windeck mit je 10,64 €/m².[5]",
+          "einordnung": "Troisdorf mit 3.962 ausgewerteten Angeboten ist ein liquider Markt mit überdurchschnittlichen Mieten — gute Basis für eine Cashflow-Rechnung beim MFH-Kauf.",
           "quellen": [
-            {"name": "ImmoScout24 – Mietspiegel Troisdorf 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"}
+            {"name": "Miet-Check.de", "url": "https://www.miet-check.de/mietspiegel/kreis/rhein-sieg-kreis/"}
           ]
         }
       ]
@@ -82,48 +89,56 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hebt Leitzins erneut an — auf 2,50 Prozent",
-          "aufmacher": "Die Europäische Zentralbank hat im September zum zweiten Mal in diesem Jahr die Zinsen erhöht; der Einlagenzins steigt von 2,25 auf 2,50 Prozent.",
-          "fakten": "Beschlossen am 10. September 2026, wirksam ab 16. September: Der Einlagenzins liegt nun bei 2,50 %, der Hauptrefinanzierungssatz bei 2,65 %, der Spitzenrefinanzierungssatz bei 2,90 %. Begründet wurde der Schritt mit dem Nahost-Konflikt, der weiterhin Inflationsdruck erzeugt. Die EZB-Volkswirte erwarten eine Teuerung von 3,0 % (2026), 2,5 % (2027) und 2,1 % (2028) sowie Wirtschaftswachstum von 0,9 % in diesem Jahr. Weitere Schritte schließt die EZB nicht aus, legt sich aber nicht fest.",
-          "einordnung": "Steigende Zinsen stützen tendenziell den Euro und dämpfen die Inflation — sie verteuern aber auch Kredite, siehe Immobilien. Für liquide Reserven (rund 600.000 € für das MFH) werden Tagesgeld- und Festgeldkonditionen damit wieder attraktiver.",
+          "titel": "EZB hebt Leitzins auf 2,50 Prozent an",
+          "aufmacher": "Der EZB-Rat hat am 10. September die drei Leitzinssätze um jeweils 25 Basispunkte angehoben — der Einlagensatz liegt nun bei 2,50 %.",
+          "fakten": "Der Hauptrefinanzierungssatz steigt auf 2,65 %, die Spitzenrefinanzierungsfazilität auf 2,90 % (gültig ab 16. September 2026). Als Begründung nennt die EZB anhaltenden Inflationsdruck durch den Nahost-Konflikt. Die EZB-Projektion erwartet für 2026 eine Gesamtinflation von 3,0 %, für 2027 von 2,5 % und für 2028 von 2,1 %; das Wachstum im Euroraum soll 2026 bei 0,9 % liegen.[6]",
+          "einordnung": "Höhere Zinsen verteuern Baudarlehen weiter — verstärkt den Druck, beim MFH-Kauf die Finanzierung früh zu sichern und auf Refinanzierung mehrerer Banken zu setzen.",
           "quellen": [
-            {"name": "Europäische Zentralbank – Monetary policy decisions (10.09.2026)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"},
-            {"name": "tagesschau.de – EZB erhöht Leitzins auf 2,5 Prozent", "url": "https://www.tagesschau.de/wirtschaft/finanzen/ezb-sitzung-leitzins-100.html"}
+            {"name": "EZB", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"}
           ]
         },
         {
-          "titel": "Deutsche Inflation erstmals seit drei Jahren über drei Prozent",
-          "aufmacher": "Die Inflationsrate in Deutschland ist im September auf voraussichtlich 3,3 Prozent gestiegen — der höchste Wert seit fast drei Jahren.",
-          "fakten": "Nach vorläufigen Ergebnissen des Statistischen Bundesamtes lagen die Verbraucherpreise im September 2026 um 3,3 % über dem Vorjahresmonat und um 0,6 % über dem August. Treiber sind vor allem die massiv gestiegenen Energiepreise infolge des Ölpreisschocks. Die endgültigen September-Zahlen veröffentlicht Destatis am 13. Oktober 2026. Der DAX schloss am 2. Oktober bei 25.231,20 Punkten (Tagesplus 1,17 %), nachdem er am Vortag 1,03 % verloren hatte.",
-          "einordnung": "Die Kombination aus hoher Inflation und steigendem Leitzins ist ein Warnsignal für die Zinsentwicklung. Für Ihr Portfolio bleiben Sachwerte (Immobilien, Aktien) der bessere Inflationsschutz als Cash — aber der DAX notiert bereits auf hohem Niveau.",
+          "titel": "Inflation 3,3 Prozent — Konjunkturprognose deutlich angehoben",
+          "aufmacher": "Die Inflationsrate in Deutschland lag im September bei voraussichtlich 3,3 Prozent, während führende Institute ihre Wachstumsprognose für 2026 auf 1,3 Prozent verdoppelten.",
+          "fakten": "Nach Destatis-Angaben stiegen die Verbraucherpreise von August auf September 2026 um 0,6 %; gegenüber dem Vorjahr beträgt der Anstieg 3,3 %.[7] Die Gemeinschaftsdiagnose der führenden Wirtschaftsinstitute (24.09.2026) hebt die BIP-Prognose für 2026 von zuvor 0,6 auf 1,3 %, für 2027 auf 1,1 %.[8]",
+          "einordnung": "Steigende Inflation bei wachsender Wirtschaft — spricht für weiter vorsichtige Zinspolitik und macht Sachwerte attraktiver als reines Cash.",
           "quellen": [
-            {"name": "Statistisches Bundesamt – Inflationsrate September 2026 voraussichtlich +3,3 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"},
-            {"name": "investing.com – DAX historische Kurse", "url": "https://de.investing.com/indices/germany-30-historical-data"}
+            {"name": "Destatis", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"},
+            {"name": "tagesschau", "url": "https://www.tagesschau.de/wirtschaft/konjunktur/herbstprognose-konjunktur-aufschwung-100.html"}
           ]
         }
       ]
     },
     {
-      "titel": "IT/Server",
+      "titel": "IT / Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent: Update verfügbar (0.21.4 → 0.21.5)",
-          "aufmacher": "Der Update-Scan meldet für Hermes Agent einen Rückstand auf die aktuelle Version — das jüngste Stable-Tag ist v0.21.5 vom 24. September.",
-          "fakten": "Der Scan meldet „commits behind“. Das Release v0.21.5 (v2026.9.24) fasst rund 460 gemergte Pull Requests und 1.610 Commits seit 0.21.4 zusammen: darunter ein Desktop-Plugin-SDK mit Composer- und Sidebar-Slots, der neue Connectors-Bereich statt des MCP-Tabs, ein einfacher/erweiterter Desktop-Modus („Simple/Advanced“), französische/deutsche/spanische Plugin-Kataloge sowie umfangreiche Performance-Arbeiten. Ein Docker-Container läuft derzeit gestoppt.",
-          "einordnung": "Die kuratierten Release-Notes kommen erst mit v0.22.0. Für Sie interessant: Der Connectors-Bereich ersetzt den MCP-Tab — relevant, sobald Sie HAOS-MCP-Server im Desktop verbinden wollen. Update wie üblich erst nach Freigabe.",
+          "titel": "🤖 HA MCP Server 8.6.0.dev2830 → dev2909",
+          "aufmacher": "Das Entwicklungspaket des Home-Assistant-MCP-Servers liegt in einer neuen Nightly-Version vor.",
+          "fakten": "Installed 8.6.0.dev2830, latest 8.6.0.dev2909. Auto-Update ist aktiviert; ein eigenständiges Update von ha-mcp muss über die HA-Apps-UI laufen.[9]",
+          "einordnung": "Dev-Kanal — kann unbeaufsichtigt von selbst aktualisieren. Bei Problemen mit den HA-Tools zuerst hier nachsehen.",
           "quellen": [
-            {"name": "GitHub – NousResearch/hermes-agent Releases", "url": "https://github.com/NousResearch/hermes-agent/releases"}
+            {"name": "Home Assistant Blog", "url": "https://www.home-assistant.io/blog/"}
           ]
         },
         {
-          "titel": "📦 Home Assistant: fünf Add-on-/HACS-Updates offen",
-          "aufmacher": "Neben Hermes stehen mehrere Aktualisierungen im HA-Ökosystem an — drei davon sind reine Fehlerbehebungen und bedenkenlos.",
-          "fakten": "Music Assistant 2.10.4 → 2.10.5 (behebt: Ankündigungen in Lautsprechergruppen liefen asynchron, OpenSubsonic-Zugangsdaten gingen bei Rekonfiguration verloren, der Audio-Analyse-Scan startete pro Titel eine eigene Aufgabe). Bosch Smart Home Controller v0.12.28 → v0.12.30 (behebt: Rauchmelder-Ereignisse wiederholten veraltete Alarmzustände; Kompatibilitäts-Fix für hassfest). Dreame Vacuum v2.0.0 → v2.0.1 (behebt: Karten-Rendering, falsche Raumnamen, Kartenbreite in Sections-Ansicht). Dazu laufen zwei Dev-Updates: HA MCP Server (auto-update aktiv) und der HA-Matter-Hub.",
-          "einordnung": "Music Assistant und Dreame betreffen Ihre laufende Infrastruktur — beide Updates beheben konkrete Fehler, die Sie im Alltag treffen könnten (Musik in Gruppen, Sauger-Karte). Freigabe für Music Assistant und Dreame ist aus meiner Sicht unkritisch.",
+          "titel": "🤖 Spook v5.7.0 → v5.8.0: neue Helfer und Schrittschalter",
+          "aufmacher": "Spook 5.8.0 kann Geräte schrittweise verstellen und bringt zwei neue Helfer.",
+          "fakten": "Klima, Warmwasser, Luftbefeuchter, Cover, Ventile und Mediaplayer lassen sich nun in Geräteeinheiten schrittweise erhöhen/verringern (z. B. climate.increase_temperature) und bleiben in ihren Grenzen. Neu sind die Helfer „Time in state\" und „Calibration\". Vier neue Trigger melden neu hinzugefügte Integrationen, Geräte und Benutzer. Hinweis: timer.set_duration ist jetzt Admin-only.[10]",
+          "einordnung": "Nützlich für HA-Automationen rund um Rollläden (Cover) und die Klimaanlagen — Update gefahrlos möglich.",
           "quellen": [
-            {"name": "GitHub – music-assistant/server Release 2.10.5", "url": "https://github.com/music-assistant/server/releases/tag/2.10.5"},
-            {"name": "GitHub – tschamm/boschshc-hass v0.12.30", "url": "https://github.com/tschamm/boschshc-hass/releases/tag/v0.12.30"},
-            {"name": "GitHub – Tasshack/dreame-vacuum v2.0.1", "url": "https://github.com/Tasshack/dreame-vacuum/releases/tag/v2.0.1"}
+            {"name": "GitHub frenck/spook", "url": "https://github.com/frenck/spook/releases/v5.8.0"}
+          ]
+        },
+        {
+          "titel": "🤖 Dreame Vacuum 2.0.0 → 2.0.1 und Music Assistant 2.10.4 → 2.10.5",
+          "aufmacher": "Saugroboter-Integration und Music Assistant erhalten Stabilitäts-Updates.",
+          "fakten": "Dreame Vacuum 2.0.1 (02.10.) beschleunigt Kartendekodierung, verbessert die Cloud-Verbindung, korrigiert die Auto-Empty-Funktion und übersetzt Raumbezeichnungen auf Deutsch.[11] Music Assistant 2.10.5 (02.10.) behebt u. a. Tonprobleme bei Ansagen in Lautsprechergruppen und stabilisiert Wiedergabe und Verbindung bei Sonos, Cast und Squeezelite.[13] Zusätzlich steht Bosch SHC v0.12.28 → v0.12.30 bereit (Fix am Hassfest-Requirement; Rauchmelder-Meldungen wiederholen kein veraltetes Signal).[12]",
+          "einordnung": "Reine Bugfix-Updates ohne Konfigurationsänderung — unkritisch, aber bewusst installieren (Auto-Update ist bei diesen Integrations-Updates aus).",
+          "quellen": [
+            {"name": "GitHub Tasshack/dreame-vacuum", "url": "https://github.com/Tasshack/dreame-vacuum/releases/v2.0.1"},
+            {"name": "GitHub music-assistant/server", "url": "https://github.com/music-assistant/server/releases/tag/2.10.5"},
+            {"name": "GitHub tschamm/boschshc-hass", "url": "https://github.com/tschamm/boschshc-hass/releases/v0.12.30"}
           ]
         }
       ]
