@@ -1,14 +1,14 @@
 {
-  "datum": "Dienstag, 06.10.2026",
+  "datum": "Mittwoch, 07.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "10,9 °C · Regen 0 % · UV 3,7",
-          "aufmacher": "Trockener, milder Herbsttag — leicht bewölkt, aber mit bis zu 23 °C fast spätsommerlich warm.",
-          "fakten": "Aktuell 10,9 °C, Tageshöchstwert 22,9 °C, Tiefstwert 10,8 °C. Regenwahrscheinlichkeit 0 %, UV-Index 3,7 (mittel) — in der Mittagspause ist Sonnenschutz sinnvoll.",
-          "einordnung": "Gute Bedingungen für Außenarbeiten an den Objekten in Troisdorf und an der Moselstraße 46.",
+          "titel": "11,3 °C · Regen 100 % · UV 3,4",
+          "aufmacher": "Start mit 11,3 °C und bis zu 24 °C Tageshöchstwert — die Wetterdaten melden aktuell klaren Himmel, aber eine Regenwahrscheinlichkeit von 100 Prozent.",
+          "fakten": "Aktuell 11,3 °C, Höchstwert 24,2 °C, Tiefstwert 11,2 °C. Regenwahrscheinlichkeit 100 %, UV-Index 3,4 (mittel). Beschreibung der Quelle: „klar“ — Wetterlage und Regenangabe widersprechen sich, daher Schauer im Tagesverlauf einplanen.",
+          "einordnung": "Außen- und Dacharbeiten an den Objekten besser auf den Vormittag legen und ab Mittag mit Nässe rechnen.",
           "quellen": []
         }
       ]
@@ -20,19 +20,19 @@
           "titel": "Mittwoch, 07.10.2026 · 10:00 — Quixx-Meeting",
           "aufmacher": "Quixx24-Termin am Mittwochvormittag.",
           "fakten": "10:00 Uhr.",
-          "einordnung": "Vorab Unterlagen zur App-Entwicklung (development-Branch) bereithalten.",
+          "einordnung": "App-Stand im development-Branch und offene Punkte vorab bereithalten.",
           "quellen": []
         },
         {
           "titel": "Donnerstag, 08.10.2026 · 15:00 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
-          "aufmacher": "Erster Therapietermin der Woche in Troisdorf.",
+          "aufmacher": "Therapietermin am Donnerstagnachmittag in Troisdorf.",
           "fakten": "15:00 Uhr, Therapiezentrum Snoek GmbH.",
           "einordnung": "",
           "quellen": []
         },
         {
           "titel": "Freitag, 09.10.2026 · 15:15 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
-          "aufmacher": "Zweiter Therapietermin am Freitagnachmittag.",
+          "aufmacher": "Zweiter Therapietermin der Woche am Freitagnachmittag.",
           "fakten": "15:15 Uhr, Therapiezentrum Snoek GmbH.",
           "einordnung": "",
           "quellen": []
@@ -43,22 +43,22 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf sperrt bis Mitte Oktober an mehreren Stellen — Sieglar, Spich und Ubierstraße betroffen",
-          "aufmacher": "Die Stadt Troisdorf setzt ihre Leitungs- und Kanalarbeiten in mehreren Stadtteilen fort: Die Sperrung rund um die Straße Am Mühlentor in Sieglar läuft bis einschließlich 16. Oktober.",
-          "fakten": "In Sieglar bleiben die Stichwege Am Mühlentor wegen Erneuerung der Versorgungsleitungen und neuer Kanalanschlüsse voll gesperrt; ab 12. Oktober bis 4. Dezember folgen nacheinander die Stichwege der Ubierstraße 1–14 und 17a–17b.[1] In Spich ist die Vulkanstraße 2–17 vom 1. Oktober bis 27. November und die Friedrichstraße 34–44 vom 28. September bis 31. Oktober voll gesperrt, in der Kurt-Schumacher-Straße (Friedrich-Wilhelms-Hütte) bis 7. Oktober.[1] Der Falkenweg in Kriegsdorf ist bis 9. Oktober wegen Glasfaserarbeiten abschnittsweise dicht, in Eschmar die Noldestraße 10–55 und die Max-Ernst-Straße bis 9. Oktober.[1]",
-          "einordnung": "Für Baufahrzeuge und Handwerker an den Immobilien längerfristig relevant: Zufahrten im Spicher Norden und in Sieglar müssen bis Ende November über Umwege geplant werden.",
+          "titel": "Troisdorf baut weiter: Bebelstraße bis Silvester gesperrt, Ubierstraße folgt ab 12. Oktober",
+          "aufmacher": "Die Stadt Troisdorf setzt ihre Kanal-, Gas- und Wasserarbeiten fort — in Friedrich-Wilhelms-Hütte bleibt die Bebelstraße vom 7. Oktober bis 31. Dezember 2026 voll gesperrt.",
+          "fakten": "Grund sind weitere Kanalanschlüsse; der Verkehr wird über eine ausgeschilderte Führung geleitet. Vom 12. bis 30. Oktober folgen in Friedrich-Wilhelms-Hütte Vollsperrungen im Bereich Am Blumenhof 5 und 17 (Gas- und Wasserhausanschlüsse, rund sieben Arbeitstage). In Sieglar bleiben die Stichwege Am Mühlentor bis 16. Oktober voll gesperrt, die Grabenstraße bis 20. November; die Stichwege der Ubierstraße 1–14 und 17a–17b werden vom 12. Oktober bis 4. Dezember nacheinander gesperrt. In Spich ist die Vulkanstraße 2–17 bis 27. November dicht, in Troisdorf die Lohmarer Straße zwischen Römerstraße und Heimbachstraße ab 19. Oktober bis 11. Dezember.[1]",
+          "einordnung": "Für Handwerker und Baufahrzeuge an den Troisdorfer Objekten relevant: Zufahrten in Sieglar, Spich und Friedrich-Wilhelms-Hütte müssen bis in den Dezember über die ausgeschilderten Umleitungen geplant werden — Anlieferungstermine entsprechend vorziehen.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Aktuelle Verkehrsmeldungen (via treffpunkt-troisdorf)", "url": "https://treffpunkt-troisdorf.de/aktuelle-verkehrsmeldungen-8/"}
+            { "name": "Stadt Troisdorf – Aktuelle Verkehrsmeldungen", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/aktuelle-verkehrsmeldungen-fuer-troisdorf/" }
           ]
         },
         {
-          "titel": "Love-Scamming in Troisdorf: Zwei Fälle, zusammen rund 15.000 Euro Schaden",
-          "aufmacher": "Die Kreispolizei Rhein-Sieg-Kreis meldet binnen weniger Tage zwei Betrugsfälle in Troisdorf, bei denen Opfer zusammen etwa 15.000 Euro an angebliche Online-Partnerinnen verloren.",
-          "fakten": "Ein 46-jähriger Troisdorfer kaufte laut Polizei mehrere Guthabenkarten im Wert von rund 3.000 Euro und übermittelte die Codes; erst als weitere 700 Euro für einen angeblichen Krankenhausaufenthalt gefordert wurden, wandte er sich an die Polizei.[2] Neun Tage zuvor war ein Fall aus Spich bekannt geworden, bei dem ein 83-Jähriger rund 12.000 Euro überwiesen hatte.[3]",
-          "einordnung": "Die Masche läuft immer gleich: Nähe aufbauen, Notlage behaupten, Geld fordern. Bei älteren Mietern lohnt ein kurzer Hinweis im Haus — die Polizei bietet dazu Präventionsberatung an.",
+          "titel": "Betrug in Troisdorf: 46-Jähriger verliert 3.000 Euro an angebliche Online-Bekanntschaft",
+          "aufmacher": "Die Kreispolizei Rhein-Sieg-Kreis meldet einen weiteren Love-Scamming-Fall aus Troisdorf — ein 46-Jähriger kaufte Guthabenkarten im Wert von rund 3.000 Euro und übermittelte die Codes.",
+          "fakten": "Der Mann hatte Anfang September über eine Social-Media-Plattform eine vermeintliche Frau kennengelernt; die Kommunikation wurde auf einen Messenger verlagert, wo die Unbekannte eine finanzielle Notlage schilderte. Erst als weitere 700 Euro für einen angeblichen Krankenhausaufenthalt gefordert wurden, wandte er sich an die Polizei.[2] Am 5. Oktober meldete die Polizei zudem, dass ein 40-Jähriger an einer Bushaltestelle in der Alfred-Delp-Straße Rettungskräfte beleidigte und mit einem Messer bedrohte; er wurde in Gewahrsam genommen.[3]",
+          "einordnung": "Die Masche läuft immer gleich: Nähe aufbauen, Notlage behaupten, Geld fordern. Bei älteren Mietern lohnt ein kurzer Hinweis im Haus — die Polizei Rhein-Sieg-Kreis bietet dazu Präventionsberatung an.",
           "quellen": [
-            {"name": "Presseportal – Kreispolizeibehörde Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/pm/65853/6363019"},
-            {"name": "Troisdorf Lokal", "url": "https://troisdorf-lokal.de/love-scamming-troisdorf-zwei-faelle/"}
+            { "name": "Presseportal – POL-SU: Troisdorfer um 3.000 Euro betrogen", "url": "https://www.presseportal.de/blaulicht/pm/65853/6363019" },
+            { "name": "Presseportal – POL-SU: Rettungskräfte mit Messer bedroht", "url": "https://www.presseportal.de/blaulicht/pm/65853/6365781" }
           ]
         }
       ]
@@ -67,23 +67,23 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben über 4 Prozent — 10-Jahres-Fix aktuell 4,53 % Top-Zins",
-          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen liegen am 6. Oktober bei 4,53 Prozent (Top-Zins, 300.000 € Darlehen) und damit weiter klar über der 4-Prozent-Marke.",
-          "fakten": "Baufi24 nennt für den 6. Oktober 4,44 % (5 Jahre), 4,23 % (10 Jahre), 4,51 % (15 Jahre) und 4,56 % (20 Jahre) Sollzins.[1] Vor einem Monat lag der effektive Jahreszins für 10 Jahre noch bei 3,98 % — aktuell sind es 4,34 %, die Monatsrate steigt damit um rund 87,50 € auf 1.557,50 €.[1] Die Interhyp-Tabelle (Konditionen 28.09.–04.10.2026) weist 4,23 % bei unter 70 % Beleihung, 4,35 % bei 80 % und 4,63 % bei über 90 % aus; als Treiber gilt die Rendite zehnjähriger Staatsanleihen, die im August auf rund 3,31 % und damit den höchsten Stand seit 15 Jahren kletterte. Das Interhyp-Bankenpanel ist gespalten: 50 % erwarten kurzfristig steigende, 50 % gleichbleibende Zinsen.[2]",
-          "einordnung": "Für den geplanten MFH-Kauf mit maximalem Hebel heißt das: Die Zinsbindung lang wählen und mehrere Banken parallel anfragen, bevor sich das Niveau weiter nach oben bewegt. Der Anstieg um 36 Basispunkte in vier Wochen kostet bei 600.000 € Darlehen rund 175 € Rate — ein Argument für Tempo.",
+          "titel": "Bauzinsen deutlich gestiegen: 10-jährige Zinsbindung effektiv bei rund 4,3 Prozent",
+          "aufmacher": "Die Bauzinsen sind binnen eines Monats kräftig geklettert — für eine 10-jährige Zinsbindung liegt der effektive Jahreszins aktuell bei rund 4,3 Prozent, nach knapp 4,0 Prozent vor einem Monat.",
+          "fakten": "Beim Vermittler Baufi24 kostete die 10-jährige Zinsbindung am 7. Oktober 2026 im Bestfall 4,53 Prozent gebundener Sollzins (bei 90 Prozent Beleihung, 300.000 Euro Nettodarlehen); die Zinstabelle des Portals nennt 4,23 Prozent Soll- und 4,34 Prozent Effektivzins für 10 Jahre sowie 4,56 Prozent Sollzins (4,68 Prozent effektiv) für 20 Jahre.[6] Vor einem Monat lag der effektive Jahreszins für 10 Jahre noch bei 3,98 Prozent — die Monatsrate stieg damit um rund 87,50 Euro auf 1.557,50 Euro.[6] Vergleich.de beziffert die Konditionen Ende September auf rund 4,1 bis 4,4 Prozent effektiv bei 10 und 4,4 bis 4,8 Prozent bei 20 Jahren.[7] Als Treiber nennt Baufi24 die Rendite der zehnjährigen Bundesanleihe, die im August auf rund 3,31 Prozent und damit den höchsten Stand seit 15 Jahren stieg.[6]",
+          "einordnung": "Für die Hebel-Strategie zählt der Trend: nur Kaufnebenkosten aus Eigenkapital, den Rest über Bankdarlehen — teurere Zinsen belasten den Cashflow der Zielobjekte spürbar. Bei laufenden Verhandlungen lohnt eine lange Zinsbindung zur Absicherung; die spätere Refinanzierung über mehrere Banken bleibt der Hebel.",
           "quellen": [
-            {"name": "Baufi24 – Bauzinsen aktuell", "url": "https://www.baufi24.de/bauzinsen/"},
-            {"name": "Interhyp – Bauzinsen", "url": "https://www.interhyp.de/zinsen/"}
+            { "name": "Baufi24 – Bauzinsen aktuell", "url": "https://www.baufi24.de/bauzinsen/" },
+            { "name": "Vergleich.de – Aktuelle Bauzinsen 10/2026", "url": "https://www.vergleich.de/aktuelle-bauzinsen.html" }
           ]
         },
         {
-          "titel": "Troisdorf bleibt über Kreisschnitt: 12,83 €/m² Kaltmiete — Bundesanstieg verlangsamt sich",
-          "aufmacher": "Im Rhein-Sieg-Kreis liegt die durchschnittliche Angebots-Kaltmiete bei 11,94 €/m², Troisdorf liegt mit 12,83 €/m² deutlich darüber — bundesweit steigen die Mieten aber langsamer als im Vorjahr.",
-          "fakten": "Der Kreiswert basiert auf 22.248 Angeboten der letzten zwölf Monate; für 2026 liegt der laufende Zwischenstand bei 11,66 €/m² nach 12,46 €/m² im Jahr 2025.[3] Troisdorf kommt auf 3.962 ausgewertete Angebote, teuerste Kommune ist Königswinter mit 13,16 €/m², günstigste Eitorf und Windeck mit je 10,64 €/m².[3] Bundesweit stiegen die Angebotsmieten 2026 langsamer: Berlin nur +1,8 %, Hamburg +4,8 %, Frankfurt +4,7 %, München bleibt mit 21,65 €/m² die teuerste Großstadt; der Anteil der Mietanfragen im Portal stieg von 80,6 % auf 81,7 %.[4]",
-          "einordnung": "Hohe Finanzierungskosten drücken Käufer in den Mietmarkt — das stützt die Nachfrage und damit die erzielbaren Mieten im Rhein-Sieg-Kreis. Troisdorf liegt über Kreisschnitt und ist liquide: gute Basis für die Cashflow-Rechnung, solange die Kaufpreise nicht schneller steigen als die Mieten.",
+          "titel": "Mieten in Troisdorf legen um 4,1 Prozent zu — Plus stützt den Cashflow",
+          "aufmacher": "Die Angebotsmieten in Troisdorf liegen im zweiten Quartal 2026 bei durchschnittlich 10,41 Euro pro Quadratmeter — 4,1 Prozent mehr als im Vorjahresquartal.",
+          "fakten": "Vor einem Jahr lag der Wert bei 10,00 Euro/m², im ersten Quartal 2026 bei 10,38 Euro/m².[8] Im Rhein-Sieg-Kreis beträgt der Durchschnitt 9,92 Euro/m² (plus 3,4 Prozent zum Vorjahr), bundesweit 9,23 Euro/m² — Troisdorf liegt damit klar über dem Kreisschnitt. Die teuersten Kommunen im Kreis sind Siegburg (10,80 Euro/m²), Niederkassel (10,71) und Alfter (10,61).[9] Es handelt sich um Angebotsmieten aus Inseratsauswertungen, nicht um einen amtlichen Mietspiegel nach § 558c/§ 558d BGB.[8]",
+          "einordnung": "Steigende Angebotsmieten verbessern die Ertragsrechnung bei Neuvermietungen in Troisdorf und Umgebung — bei laufenden Mietverhältnissen begrenzen Mietpreisbremse und Kappungsgrenze die Anpassung. Für den MFH-Kauf bleibt Troisdorf wegen des überdurchschnittlichen Mietniveaus im Kreis interessant.",
           "quellen": [
-            {"name": "Miet-Check.de – Mietspiegel Rhein-Sieg-Kreis", "url": "https://www.miet-check.de/mietspiegel/kreis/rhein-sieg-kreis/"},
-            {"name": "immowelt – Mietkompass Q3/2026", "url": "https://www.immowelt.de/ratgeber/news/mietpreise-aktuell-berlin-bremst-beim-mietanstieg-hamburg-und-frankfurt-ziehen-deutlich-an"}
+            { "name": "ImmoScout24 – Mietspiegel Troisdorf 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel" },
+            { "name": "ImmoScout24 – Mietspiegel Rhein-Sieg-Kreis 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel" }
           ]
         }
       ]
@@ -92,50 +92,46 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB-Leitzins steht bei 2,50 Prozent — Euro fällt unter 1,12 Dollar",
-          "aufmacher": "Nach der Anhebung vom 10. September liegt der EZB-Einlagensatz bei 2,50 Prozent; der Euro ist am Montag erstmals seit Mai 2025 unter 1,12 Dollar gefallen.",
-          "fakten": "Der EZB-Rat hob alle drei Leitzinssätze um 25 Basispunkte an: Einlagefazilität 2,50 %, Hauptrefinanzierung 2,65 %, Spitzenrefinanzierung 2,90 % — wirksam seit 16. September 2026.[1] Als Begründung nennt die EZB anhaltenden Inflationsdruck durch den Nahost-Konflikt; die eigene Projektion erwartet Gesamtinflation von 3,0 % (2026), 2,5 % (2027) und 2,1 % (2028) sowie Wachstum von 0,9 % im Euroraum.[1] Der Euro fiel zeitweise auf 1,1161 Dollar.[2] Ursache sind stark gestiegene US-Anleiherenditen (Renditedifferenz zu Bundesanleihen: 1,8 Prozentpunkte) und das höhere US-Zinsniveau von 3,75–4,00 %.[2]",
-          "einordnung": "Höhere Kapitalmarktzinsen verteuern Baudarlehen weiter, während der schwache Euro importierte Energie und Vorprodukte teuer hält. Für die Finanzierungsstrategie bedeutet das: Zinsfenster nicht aussitzen, sondern Angebote jetzt einholen.",
+          "titel": "EZB hebt Leitzins auf 2,50 Prozent — nächste Entscheidung am 29. Oktober",
+          "aufmacher": "Die Europäische Zentralbank hat am 10. September 2026 die drei Leitzinssätze um jeweils 25 Basispunkte angehoben — der Einlagensatz liegt seither bei 2,50 Prozent.",
+          "fakten": "Der Zinssatz für die Hauptrefinanzierungsgeschäfte beträgt 2,65 Prozent, die Spitzenrefinanzierungsfazilität 2,90 Prozent; die Anhebung gilt seit 16. September 2026.[10] Als Grund nennt der EZB-Rat anhaltenden Inflationsdruck durch den Konflikt im Nahen Osten. Die neue Projektion erwartet eine Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028); das Wachstum im Euroraum soll 2026 bei 0,9 Prozent liegen, 2027 bei 1,4 Prozent.[10] Die nächste Ratssitzung endet am 29. Oktober 2026.",
+          "einordnung": "Der Zinsschritt ist der Haupttreiber der gestiegenen Bauzinsen — wer in den nächsten Wochen finanziert, sollte den Oktober-Termin der EZB abwarten. Für Dispo und Tagesgeld heißt das weiterhin: keine Entlastung in Sicht.",
           "quellen": [
-            {"name": "EZB – Geldpolitische Beschlüsse 10.09.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"},
-            {"name": "tagesschau – Marktbericht Euro/US-Dollar", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-euro-frankreich-spanien-100.html"}
+            { "name": "EZB – Geldpolitische Beschlüsse vom 10.09.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html" }
           ]
         },
         {
-          "titel": "Inflation 3,3 Prozent im September — Institute verdoppeln Wachstumsprognose auf 1,3 Prozent",
-          "aufmacher": "Die Verbraucherpreise in Deutschland lagen im September 2026 voraussichtlich 3,3 Prozent über dem Vorjahr, während die führenden Wirtschaftsinstitute ihre BIP-Prognose für 2026 von 0,6 auf 1,3 Prozent anhoben.",
-          "fakten": "Von August auf September stiegen die Verbraucherpreise um 0,6 %; die endgültigen September-Werte veröffentlicht das Statistische Bundesamt am 13. Oktober 2026.[3] In ihrer Herbstprognose vom 24. September rechnen die führenden Forschungsinstitute mit 1,3 % BIP-Wachstum für 2026 nach zuvor 0,6 %; die Impulse kommen vor allem von Exporten, der Weltkonjunktur und dem KI-Boom, während der Arbeitsmarkt weiter schrumpft.[4] In Frankfurt notierte der DAX zu Wochenbeginn nur leicht fester bei rund 25.318 Punkten und damit etwa 5 % unter seinem Allzeithoch von 26.618,74 Punkten vom 28. August.[2]",
-          "einordnung": "Steigende Inflation bei gleichzeitig wachsender Wirtschaft spricht für vorsichtige Zinspolitik und macht Sachwerte attraktiver als reines Cash — ein Argument, die rund 600.000 € liquide Mittel weiter in Immobilien zu halten statt auf der Bank.",
+          "titel": "Inflation springt im September auf 3,3 Prozent — Energiepreise als Treiber",
+          "aufmacher": "Die Inflationsrate in Deutschland ist im September 2026 erstmals seit fast drei Jahren wieder über die Drei-Prozent-Marke gestiegen — auf 3,3 Prozent im Vorjahresvergleich.",
+          "fakten": "Im August lag die Teuerung bei 2,9 Prozent, im Juli bei 2,8 und im Juni bei 2,3 Prozent.[11][12] Hauptverantwortlich sind die Energiepreise: Im August verteuerten sich Energieprodukte um 10,5 Prozent zum Vorjahr, Kraftstoffe um 27,7 Prozent, leichtes Heizöl um 49,6 Prozent, während Strom (−5,5 Prozent) und Erdgas (−2,9 Prozent) günstiger wurden.[12] Die Kerninflation ohne Nahrungsmittel und Energie liegt bei 2,4 Prozent.[11] Von August auf September zogen die Verbraucherpreise um 0,6 Prozent an; der Tankrabatt gilt seit 1. Oktober bis Jahresende und dürfte die Rate dämpfen.[11] Der DAX notierte am 6. Oktober bei 25.449 Punkten (plus 0,77 Prozent), der Ölpreis (Brent) bei rund 98,57 US-Dollar.[13]",
+          "einordnung": "Höhere Energiepreise treffen die Nebenkostenabrechnungen der Immobilien — Heizöl und Kraftstoffe schlagen direkt durch, während Strom und Gas sinken. Bei der nächsten Betriebskostenabrechnung lohnt der Blick auf die Heizöl-Positionen.",
           "quellen": [
-            {"name": "Destatis – Inflationsrate September 2026", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"},
-            {"name": "tagesschau – Herbstprognose der Wirtschaftsinstitute", "url": "https://www.tagesschau.de/wirtschaft/konjunktur/herbstprognose-konjunktur-aufschwung-100.html"}
+            { "name": "Destatis – Inflationsrate im August 2026", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_320_611.html" },
+            { "name": "tagesschau.de – Inflationsrate steigt im September auf 3,3 Prozent", "url": "https://www.tagesschau.de/wirtschaft/inflation-september-energiepreise-100.html" },
+            { "name": "tagesschau.de – Börsenkurse", "url": "https://www.tagesschau.de/wirtschaft/boersenkurse/" }
           ]
         }
       ]
     },
     {
-      "titel": "IT / Server",
+      "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "📦 paperless-ngx 3.2.1 → 3.3.0: 2FA für Admin, Barcodes durchsuchbar",
-          "aufmacher": "Das Dokumentenarchiv hat heute Version 3.3.0 erhalten — mit Zugriffsschutz für die Admin-Oberfläche und speicherbaren Barcode-Inhalten.",
-          "fakten": "Neu sind laut Release Notes: Django-Admin jetzt mit Zwei-Faktor-Anmeldung, mehr Kontrolle bei Vorschlagsanfragen, separate Embedding-API-Keys für LLM-Setups und das Speichern, Auflisten und Durchsuchen von Barcode-Inhalten. Bugfixes betreffen die Zuordnung des ProcessedMail-Eigentümers, die Log-Rotation und Retry-Logik bei apt-Aufrufen.[1] Der lokale Update-Scan meldete außerdem einen gestoppten Docker-Container.[2]",
-          "einordnung": "Für die Paperless-Pipeline (Gmail-Anhänge, Steuer- und NK-Ablage) unkritisch, aber der Wegfall der 2FA-Lücke im Admin ist ein guter Grund, zeitnah zu aktualisieren. Vor dem Sprung ein Backup des Containers ziehen.",
+          "titel": "🤖 Hermes Agent 0.21.4 — Update verfügbar",
+          "aufmacher": "Der lokale Update-Scan meldet für J.A.R.V.I.S. einen Rückstand beim Hermes Agent: Die Installation liegt bei 0.21.4, im Upstream stehen neuere Commits bereit.",
+          "fakten": "Der Scan weist den Stand als „commits behind“ aus und nennt keine Zielversion. Die Reihe 0.21 brachte laut Release-Notes aus dem September 2026 unter anderem dauerhaftes Gedächtnis für Cron-Jobs, Live-Steuerung laufender Subagenten mitten im Lauf und einen direkt steuerbaren Desktop-Browser.[15]",
+          "einordnung": "Ein Update lohnt vor allem für die Cron-Briefings, die von der neuen Gedächtnis- und Continuity-Funktion profitieren. Vor dem Rollout ein Backup des Hermes-Verzeichnisses ziehen und danach `hermes doctor` laufen lassen — Rollout nur nach Freigabe.",
           "quellen": [
-            {"name": "GitHub – paperless-ngx v3.3.0", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.0"},
-            {"name": "Lokaler Update-Scan", "url": "https://github.com/paperless-ngx/paperless-ngx/releases"}
+            { "name": "Hermes Agent – Release Notes v0.21", "url": "https://hermes-agent-lab.com/releases/v0-21-0/" }
           ]
         },
         {
-          "titel": "🤖 Sieben HA-Updates offen: Spook, Dreame, Music Assistant, Bosch & Co.",
-          "aufmacher": "Home Assistant meldet sieben offene Updates — darunter Spook 5.7.0 → 5.8.0 mit dem Fix für verschwundene Kalender- und To-do-Aktionen.",
-          "fakten": "Offen sind: Spook v5.7.0 → v5.8.0, Dreame Vacuum v2.0.0 → v2.0.1 (Entity-ID-Fix für HA 2026.2+), Music Assistant 2.10.4 → 2.10.5, Bosch SHC v0.12.28 → v0.12.30 (Rauchmelder wiederholen keinen veralteten Alarmstatus mehr), File editor 6.1.0 → 6.2.0 (neue Option `log_level`, um jede Web-Anfrage zu unterdrücken), Simon42 Dashboard Strategy v1.4.1 → v1.4.2 (Wartungshinweise, Kindgeräte) und HA MCP Server (Dev) dev2830 → dev2933.[3] Spook 5.8.1 vom 5. Oktober korrigiert zusätzlich, dass 13 Aktionen unter HA 2026.10 ihren Filter im Ziel-Picker verlieren.[4] Installiert ist HA Core 2026.9.4, die Beta 2026.10.0b1 ist seit dem 5. Oktober verfügbar. Für Hermes selbst meldet der Update-Check ebenfalls eine neuere Version.[5]",
-          "einordnung": "Alle Integrations-Updates sind Bugfixes ohne Konfigurationsänderung; bei Bosch SHC lohnt es wegen der Rauchmelder-Meldungen, bei Dreame wegen der Entity-IDs. Der HA-MCP-Server läuft auf dem Dev-Kanal und aktualisiert sich selbst — bei Problemen mit den HA-Tools zuerst dort nachsehen.",
+          "titel": "🏠 Home Assistant: Spook v5.9.0 und MCP-Server-Dev-Update verfügbar",
+          "aufmacher": "Zwei Home-Assistant-Komponenten sind veraltet: Die Integrations-Toolbox Spook kann von v5.8.1 auf v5.9.0 aktualisiert werden, der MCP-Server (Dev) von 8.6.0.dev2945 auf 8.6.0.dev2958.",
+          "fakten": "Spook v5.9.0 bringt fünf neue Trigger für Ereignisse, die Home Assistant bisher nicht meldete — darunter das Erreichen einer Position (Cover/Ventil), das Erreichen der Zieltemperatur eines Raums, der Start eines Skripts, das Ausschalten einer Automatisierung und die Installation eines Updates; dazu die neue Bedingung `spook.is_at_target_temperature`. Zusätzlich können Aktionen ganzer Integrationen auf einmal ignoriert sowie Zonen verschoben oder in der Größe geändert werden.[14] Der MCP-Server springt im Dev-Kanal um 13 Builds; konkrete Patch-Notes dazu liegen nicht vor.",
+          "einordnung": "Vor dem Spook-Update ein HA-Backup erstellen; die neuen Trigger sind für Heizungs- und Beschattungsautomatisierung rund um das Moselstraßen-Objekt nützlich. Das MCP-Dev-Update ist unkritisch und kann folgen.",
           "quellen": [
-            {"name": "GitHub – frenck/spook v5.8.1", "url": "https://github.com/frenck/spook/releases/tag/v5.8.1"},
-            {"name": "GitHub – tschamm/boschshc-hass v0.12.30", "url": "https://github.com/tschamm/boschshc-hass/releases/tag/v0.12.30"},
-            {"name": "Home Assistant – Update-Entities (lokal)", "url": "https://github.com/home-assistant/core/releases"},
-            {"name": "Home Assistant Blog", "url": "https://www.home-assistant.io/blog/"}
+            { "name": "GitHub – Spook Releases (v5.9.0)", "url": "https://github.com/frenck/spook/releases" }
           ]
         }
       ]
