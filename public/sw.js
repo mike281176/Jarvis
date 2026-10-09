@@ -4,7 +4,7 @@
  * Mit Offline-Fallback für API-Requests (cached letzte erfolgreiche Response).
  */
 
-const CACHE_NAME = 'jarvis-v39';
+const CACHE_NAME = 'jarvis-v40';
 const STATIC_ASSETS = [
     '/',
     '/index.html',

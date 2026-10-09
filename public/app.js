@@ -1404,6 +1404,8 @@ class JarvisPWA {
                 // Environment temps
                 'sensor.garten', 'sensor.pool_temperatur',
                 'sensor.wohnzimmer_echo_temperatur', 'sensor.arbeitszimmer_temperatur',
+                // Außenwetter — Quelle für die gefühlte Temperatur (T/Feuchte/Wind)
+                'weather.troisdorf',
                 // Status sensors
                 'binary_sensor.jarvis_status_haos', 'binary_sensor.jarvis_status_proxmox',
                 'binary_sensor.jarvis_status_nas', 'binary_sensor.jarvis_status_gateway',
@@ -1763,6 +1765,40 @@ class JarvisPWA {
                 el.textContent = `${parseFloat(state.state).toFixed(1)}°C`;
             }
         });
+
+        // Gefühlte Außentemperatur — auf Wunsch von Mike (09.10.2026):
+        // "Man muss beim Menschen unterscheiden zwischen den nackten Daten und
+        // der gefühlten Temperatur." Ein Herbsttag mit 11,8 °C, 88 % Feuchte und
+        // 27,8 km/h Wind fühlt sich wie 6,4 °C an — die Differenz von über 5 K
+        // erklärt, warum so ein Tag als ungemütlich empfunden wird.
+        //
+        // Berechnung: Apparent Temperature (Bureau of Meteorology / Steadman).
+        // Bewusst NICHT der Heat Index — der verlangt mindestens 27 °C und
+        // liefert im Herbst und Winter keine Werte.
+        //   e  = (LF/100) * 6,105 * exp(17,27*T / (237,7+T))   [hPa]
+        //   AT = T + 0,33*e − 0,70*v − 4,00                    [v in m/s]
+        const elFeels = document.getElementById('statusTempGefuehlt');
+        if (elFeels) {
+            const wx = states.find(s => s.entity_id === 'weather.troisdorf')
+                     || states.find(s => s.entity_id === 'weather.forecast_home_2');
+            const a = wx && wx.attributes;
+            const T = a ? parseFloat(a.temperature) : NaN;
+            const rh = a ? parseFloat(a.humidity) : NaN;
+            const v = a ? parseFloat(a.wind_speed) / 3.6 : 0;   // km/h → m/s
+            if (isNaN(T) || isNaN(rh) || rh <= 1 || rh > 100) {
+                // 0 % bedeutet bei diesen Wetterstationen "Fühler liefert nichts"
+                // — nicht "trockene Luft". Dann lieber keine Zahl als eine falsche.
+                elFeels.textContent = '--°C';
+                elFeels.title = '';
+            } else {
+                const e = (rh / 100) * 6.105 * Math.exp(17.27 * T / (237.7 + T));
+                const at = T + 0.33 * e - 0.70 * (isNaN(v) ? 0 : v) - 4.0;
+                const diff = at - T;
+                // Vorzeichen immer sichtbar: der Unterschied ist die Aussage.
+                elFeels.textContent = `${at.toFixed(1)}°C (${diff >= 0 ? '+' : ''}${diff.toFixed(1)})`;
+                elFeels.title = `Luft ${T.toFixed(1)}°C · Feuchte ${rh}% · Wind ${(v * 3.6).toFixed(1)} km/h`;
+            }
+        }
     }
 
     updateEntityCount(count) {

@@ -567,6 +567,15 @@ html, body {
 .env-name { color: var(--text-secondary); }
 .env-value { font-family: var(--font-hud); color: var(--text-primary); }
 
+/* Gefühlte Außentemperatur — bewusst abgesetzt: sie ist keine Messung,
+   sondern eine Auslegung der Messwerte (T + Feuchte + Wind). Die Differenz
+   zur Lufttemperatur ist die eigentliche Aussage und wird daher mitgeführt. */
+.env-row-feels {
+    margin-top: 0.25rem; padding-top: 0.3rem;
+    border-top: 1px dashed rgba(0, 212, 255, 0.15);
+}
+.env-row-feels .env-value { color: var(--accent-amber, #ffb347); }
+
 /* ===========================
    FOOTER
    =========================== */
