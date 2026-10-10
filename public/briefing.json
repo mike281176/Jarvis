@@ -1,13 +1,13 @@
 {
-  "datum": "Freitag, 09.10.2026",
+  "datum": "Samstag, 10.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "10,0 °C · Regen 100 % · UV 0,6",
-          "aufmacher": "☁️ bedeckt — der Tag bleibt verregnet.",
-          "fakten": "Aktuell 10,0 °C, Tageshöchstwert 11,2 °C, Tiefstwert 8,4 °C. Regenwahrscheinlichkeit 100 %, UV-Index 0,6 (niedrig).",
+          "titel": "12,2 °C · Regen 100 % · UV 3,4",
+          "aufmacher": "🌧️ Regen — der Samstag bleibt durchweg nass.",
+          "fakten": "Aktuell 12,2 °C, Tageshöchstwert 15,4 °C, Tiefstwert 9,6 °C. Regenwahrscheinlichkeit 100 %, UV-Index 3,4 (moderat).",
           "einordnung": "Außen- und Dacharbeiten an den Objekten nur mit Regenplan; für Innenarbeiten ist der Tag unkritisch.",
           "quellen": []
         }
@@ -17,15 +17,22 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Freitag, 09.10.2026 · 15:15 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
-          "aufmacher": "Therapietermin am Freitagnachmittag.",
+          "titel": "Montag, 12.10.2026 · 14:20 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "aufmacher": "Therapietermin am Montagnachmittag.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "Montag, 12.10.2026 · 14:20 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
-          "aufmacher": "Nächster Therapietermin am Montagnachmittag.",
+          "titel": "Dienstag, 13.10.2026 · 14:00 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "aufmacher": "Therapietermin am Dienstagnachmittag.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "Dienstag, 13.10.2026 · 14:35 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "aufmacher": "Anschließender Therapietermin am Dienstag.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -36,26 +43,30 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Bebelstraße bis Silvester voll gesperrt — weitere Kanalarbeiten",
-          "aufmacher": "In Troisdorf bleibt die Bebelstraße wegen weiterer Kanalanschlüsse vom 7. Oktober bis 31. Dezember 2026 voll gesperrt.",
-          "fakten": "Die Stadt Troisdorf setzt die Herstellung von Kanal-, Gas- und Wasseranschlüssen im Stadtgebiet fort. Betroffen ist unter anderem die Bebelstraße, die ab dem 7. Oktober 2026 bis zum 31. Dezember 2026 voll gesperrt wird. Hauszugänge bleiben zu Fuß erreichbar, die Zufahrt zu Grundstücken wird je nach Baufortschritt ermöglicht.",
-          "einordnung": "Für die Objekte in Troisdorf lohnt es, An- und Abfahrten im Bereich Friedrich-Wilhelms-Hütte vorab zu prüfen; Handwerker- und Mietertouren brauchen aktuell Umwege.",
+          "titel": "Troisdorf: Vollsperrung der Offenbachstraße in Kriegsdorf ab 12. Oktober",
+          "aufmacher": "In Troisdorf-Kriegsdorf wird die Offenbachstraße ab Montag, 12. Oktober 2026, voll gesperrt — die Bauarbeiten dauern voraussichtlich bis April 2027.",
+          "fakten": "Gesperrt wird der Abschnitt zwischen Birklestraße und Im Schonsfeld; die Sperrung war ursprünglich für Mitte September vorgesehen und musste verschoben werden. Verlegt werden Kanal, Strom, Gas, Wasser und Telekommunikationsleitungen. Die Straße wird in Abschnitten von rund 150 bis 200 Metern gesperrt, bis zur Absperrung können Anwohner zufahren. Die Rhein-Sieg-Verkehrsgesellschaft (RSVG) richtet drei Ersatzhaltestellen in Kriegsdorf ein und fährt montags bis freitags einen Baustellenfahrplan zwischen Kriegsdorf und Spich.",
+          "einordnung": "Für Mietertouren und Handwerker rund um die Troisdorfer Objekte bedeutet das Umwege; die Umleitung wird ausgeschildert, die Zufahrt zu Grundstücken bleibt abschnittsweise möglich.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf — Aktuelle Verkehrsmeldungen (06.10.2026)",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/aktuelle-verkehrsmeldungen-fuer-troisdorf/"
+              "name": "Stadt Troisdorf — Vollsperrung der Offenbachstraße beginnt am 12.10. (09.10.2026)",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/vollsperrung-der-offenbachstrasse-beginnt-am-12-10/"
             }
           ]
         },
         {
-          "titel": "IHK: Jedes siebte Unternehmen in Bonn/Rhein-Sieg sieht sich durch Klimavorgaben gefährdet",
-          "aufmacher": "15 Prozent der Unternehmen in Bonn und dem Rhein-Sieg-Kreis sehen ihre Existenz durch Klimaschutzvorgaben bedroht.",
-          "fakten": "Eine IHK-Umfrage (IHK-Nachhaltigkeitsreport 2026) zeigt: Nicht die Klimaziele selbst werden als Problem genannt, sondern die wachsende Bürokratie bei Berichtspflichten.",
-          "einordnung": "Betrifft auch Quixx24 mittelbar, wenn Lieferketten- und Berichtspflichten (z. B. ESG-Anforderungen von Großkunden) auf Zulieferer durchschlagen.",
+          "titel": "Rhein-Sieg-Kreis: Abkochgebot für Trinkwasser in Bornheim nach E.coli-Nachweis",
+          "aufmacher": "Im Wasserwerk Bornheim wurden E.coli-Bakterien nachgewiesen — für die Stadt Bornheim gilt seit Freitagabend ein vorsorgliches Abkochgebot.",
+          "fakten": "Der Rhein-Sieg-Kreis hat das Abkochgebot am Freitagabend (09.10.2026) ausgesprochen; das abschließende Untersuchungsergebnis stand zunächst aus. Betroffen ist auch Wesseling im Rhein-Erft-Kreis, dessen Wasserwerk Urfeld das Bornheimer Netz teils mitversorgt. Wasser zum Trinken, zur Speisenzubereitung und zum Zähneputzen soll sprudelnd abgekocht und anschließend abgekühlt werden — die Warnung folgt der Empfehlung des Umweltbundesamtes.",
+          "einordnung": "Troisdorf selbst ist nicht betroffen, die Warnung gilt aber im Rhein-Sieg-Kreis — relevant für Mieter-Kommunikation und Objektbetreuung in der Region.",
           "quellen": [
             {
-              "name": "meinestadt.de — Nachrichten Rhein-Sieg-Kreis (IHK-Nachhaltigkeitsreport 2026)",
-              "url": "https://aktuell.meinestadt.de/rhein-sieg-kreis"
+              "name": "WDR — Bakterien im Trinkwasser von Wesseling und Bornheim (09.10.2026)",
+              "url": "https://www1.wdr.de/nrw/rheinland/ecoli-bakterien-trinkwasser-wesseling-bornheim-100.html"
+            },
+            {
+              "name": "General-Anzeiger Bonn — Bornheim: Abkochgebot nach E.-coli-Bakterien im Wasser",
+              "url": "https://ga.de/region/voreifel-und-vorgebirge/bornheim/bornheim-abkochgebot-nach-e-coli-bakterien-im-wasser_aid-156290949"
             }
           ]
         }
@@ -65,30 +76,34 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben über vier Prozent — der Anstieg hält an",
-          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen liegen bei rund 4,2 Prozent und damit klar über der Vier-Prozent-Marke.",
-          "fakten": "Laut Interhyp-Zinstabelle (Konditionen 28.09.–04.10.2026) kostet eine 10-jährige Zinsbindung bei weniger als 70 Prozent Beleihung 4,23 Prozent effektiv, bei über 90 Prozent 4,63 Prozent. Die Hälfte der befragten Banken-Experten rechnet kurzfristig mit weiter steigenden Zinsen. Als Treiber gelten gestiegene Renditen langfristiger Staatsanleihen.",
-          "einordnung": "Für die Hebel-Strategie (möglichst wenig Eigenkapital, hohe Beleihung) ist die Tranche über 90 Prozent mit 4,63 Prozent die teuerste — das Mehrbanken-Refinanzieren bleibt der entscheidende Hebel.",
+          "titel": "KfW-Programm „Gewerbe zu Wohnen“: bis zu 30.000 Euro je neuer Wohneinheit",
+          "aufmacher": "Der Bund fördert seit dem 1. Juli 2026 den Umbau leerstehender Gewerbeimmobilien zu Wohnraum mit bis zu 30.000 Euro Zuschuss je neuer Wohneinheit.",
+          "fakten": "Das KfW-Programm Nr. 266 „Gewerbe zu Wohnen“ bezuschusst den Umbau nicht zu Wohnzwecken genutzter, beheizter Gebäude bzw. Gebäudeteile (etwa Büros, Praxisräume, Handelsflächen) zu Wohnraum — bei mehreren Wohneinheiten insgesamt bis zu 300.000 Euro. Gefördert werden unter anderem Rückbau, Statik, Innenausbau, Treppenhäuser und Zugänge. Voraussetzung ist mindestens eine neu entstehende Wohneinheit und der Standard „Effizienzhaus 85 Erneuerbare-Energien“; bei bereits vorhandener Wärmepumpe bzw. 65 % erneuerbarer Heizung genügt „Effizienzhaus 85“. Für 2026 stehen insgesamt 300 Mio. Euro bereit. Der Zuschuss muss nicht zurückgezahlt werden.",
+          "einordnung": "Direkt relevant für die MFH-Strategie: Bei Umwandlungsobjekten — etwa leerstehenden Gewerbeflächen — verbessert der Zuschuss die Anschubfinanzierung und lässt sich mit dem Hebel-Prinzip (wenig Eigenkapital, hohe Beleihung) kombinieren.",
           "quellen": [
             {
-              "name": "Interhyp — Bauzinsen aktuell (Zinstabelle)",
-              "url": "https://www.interhyp.de/zinsen/"
+              "name": "KfW — Gewerbe zu Wohnen (Programm 266)",
+              "url": "https://www.kfw.de/inlandsfoerderung/Unternehmen/Wohnwirtschaft/F%C3%B6rderprodukte/Gewerbe-zu-Wohnen-(266)/"
             },
             {
-              "name": "Immobilienmanager — Bauzinsen: Warum der Zinsanstieg weitergeht (08.10.2026)",
-              "url": "https://www.immobilienmanager.de/bauzinsen-warum-der-zinsanstieg-weitergeht-08102026"
+              "name": "BMWSB — Aus Leerstand wird Wohnraum (30.06.2026)",
+              "url": "https://www.bmwsb.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/gewerbe-wohnen.html"
             }
           ]
         },
         {
-          "titel": "Troisdorf: Mieten steigen um 4,1 Prozent — über Bundesdurchschnitt",
-          "aufmacher": "Die Angebotsmieten in Troisdorf liegen bei durchschnittlich 10,41 Euro pro Quadratmeter und damit über dem Bundesdurchschnitt.",
-          "fakten": "Im zweiten Quartal 2026 beträgt der durchschnittliche Mietpreis in Troisdorf 10,41 €/m² — ein Plus von 4,1 Prozent gegenüber dem Vorjahr (10,00 €/m²). Im Rhein-Sieg-Kreis liegt der Wert bei 9,92 €/m² (+3,4 Prozent). Der Bundesdurchschnitt liegt bei 9,23 €/m².",
-          "einordnung": "Steigende Mieten stützen den Cashflow bestehender MFH-Bestände; bei Neuankäufen erhöhen sie zusammen mit über 4 Prozent Bauzinsen den Druck auf die Kaufpreisverhandlung.",
+          "titel": "Bauzinsen bleiben über vier Prozent — Treiber sind die Anleiherenditen",
+          "aufmacher": "Für zehnjährige Baudarlehen liegen die effektiven Bauzinsen weiter bei rund 4,2 Prozent — ein Rückfall unter die Vier-Prozent-Marke ist vorerst nicht in Sicht.",
+          "fakten": "Laut Interhyp-Zinstabelle (Konditionen 28.09.–04.10.2026) kostet eine 10-jährige Zinsbindung bei unter 70 Prozent Beleihung 4,23 Prozent, bei rund 90 Prozent 4,63 Prozent; bei 20 Jahren reicht die Spanne von 4,53 bis 4,79 Prozent. Interhyp-Vorstand Jörg Utecht verweist auf gestiegene Renditen langfristiger Staatsanleihen als Treiber. Die Rendite der zehnjährigen französischen Anleihe erreichte zuletzt mit 4,99 Prozent den höchsten Stand seit 24 Jahren.",
+          "einordnung": "Für die Hebel-Strategie bleibt die Tranche über 90 Prozent Beleihung (4,63 Prozent) die teuerste — das Mehrbanken-Refinanzieren bleibt der entscheidende Hebel, solange die langfristigen Renditen hoch bleiben.",
           "quellen": [
             {
-              "name": "ImmoScout24 — Mietspiegel Troisdorf 2026",
-              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
+              "name": "Interhyp — Bauzinsen aktuell (Zinstabelle, Stand 28.09.–04.10.2026)",
+              "url": "https://www.interhyp.de/zinsen/"
+            },
+            {
+              "name": "tagesschau — Marktbericht: DAX steigt über 25.000 Punkte (09.10.2026)",
+              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-166.html"
             }
           ]
         }
@@ -98,34 +113,30 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hält Leitzins bei 2,50 Prozent — nächste Sitzung am 29. Oktober",
-          "aufmacher": "Der EZB-Einlagensatz liegt seit 16. September 2026 bei 2,50 Prozent; der Markt erwartet für den 29. Oktober mehrheitlich keine Veränderung.",
-          "fakten": "Die EZB hatte am 10. September 2026 alle drei Leitzinssätze um 25 Basispunkte angehoben: Einlagefazilität 2,50 Prozent, Hauptrefinanzierung 2,65 Prozent, Spitzenrefinanzierung 2,90 Prozent. Aus Terminkursen (Stand 8. Oktober) ergibt sich für die Sitzung am 29. Oktober eine Wahrscheinlichkeit von rund 88 Prozent für unveränderte Zinsen.",
-          "einordnung": "Ein Zinsstillstand stützt die Bauzins-Prognose nur begrenzt — die langfristigen Bauzinsen hängen stärker an den Anleiherenditen als am einzelnen EZB-Schritt.",
+          "titel": "DAX erobert die 25.000 Punkte zurück",
+          "aufmacher": "Der DAX hat sich zum Wochenende erholt und schloss am Freitag bei 25.087 Punkten — ein Tagesplus von 1,13 Prozent.",
+          "fakten": "Als Treiber galten stabilisierte Ölpreise und leicht gefallene Rentenrenditen; Auslöser war die Aussage von US-Präsident Trump, der Iran werde vor den US-Kongresswahlen im November nicht mehr angegriffen. Auf Wochensicht bleibt der DAX rund 0,6 Prozent im Minus, der MDAX legte 1,64 Prozent auf 29.989 Punkte zu. Belastungsfaktoren bleiben die hohen Energiepreise, die Schuldentragfähigkeit Frankreichs und die Unsicherheit im Technologiesektor.",
+          "einordnung": "Für die rund 600.000 Euro liquiden Mittel gilt weiter Vorsicht: Der Markt hängt am Ölpreis und an den Anleiherenditen — genau den Größen, die auch die Bauzinsen steuern.",
           "quellen": [
             {
-              "name": "EZB — Geldpolitische Beschlüsse (10.09.2026)",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
-            },
-            {
-              "name": "25bp.eu — Markterwartung EZB (Stand 08.10.2026)",
-              "url": "https://25bp.eu/"
+              "name": "tagesschau — Marktbericht: Ölpreis stabilisiert sich, DAX macht wieder Boden gut (09.10.2026)",
+              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-166.html"
             }
           ]
         },
         {
-          "titel": "Inflation im September bei 3,3 Prozent — höchster Wert seit knapp drei Jahren",
-          "aufmacher": "Die Inflationsrate in Deutschland ist im September 2026 vorläufig auf 3,3 Prozent gestiegen.",
-          "fakten": "Das Statistische Bundesamt meldet +3,3 Prozent zum Vorjahresmonat (vorläufig), nach 2,9 Prozent im August. Gegenüber August 2026 legten die Verbraucherpreise um 0,6 Prozent zu. Die Kerninflation (ohne Nahrungsmittel und Energie) beträgt 2,4 Prozent; Energie verteuerte sich um 14,9 Prozent. Der DAX fiel am 8. Oktober unter 25.000 Punkte (rund 24.807 Zähler, −1,18 Prozent).",
-          "einordnung": "Steigende Energiepreise und ein schwacher Aktienmarkt sind ein Beobachtungspunkt für die liquiden Mittel; die Anleiherenditen bleiben der wichtigere Treiber für Immobilienfinanzierungen.",
+          "titel": "EZB-Protokoll veröffentlicht — nächster Zinsentscheid am 29. Oktober",
+          "aufmacher": "Die EZB hat am 8. Oktober das Protokoll ihrer September-Sitzung veröffentlicht, in der der Rat die Leitzinsen um 25 Basispunkte anhob.",
+          "fakten": "Der Rat verwies laut Sitzungszusammenfassung auf eine Verschlechterung der Inflationsaussichten und unterstrich das Ziel, die Inflation mittelfristig beim 2-Prozent-Ziel zu stabilisieren. Die nächste geldpolitische Sitzung ist am 28./29. Oktober 2026, der Zinsentscheid fällt am 29. Oktober um 14:15 Uhr. Die Inflationsrate lag im September vorläufig bei 3,3 Prozent (August: 2,9 Prozent), die Kerninflation bei 2,4 Prozent; die endgültigen September-Zahlen veröffentlicht Destatis am 13. Oktober.",
+          "einordnung": "Ein Zinsstillstand Ende Oktober würde die Bauzinsen nur begrenzt stützen — entscheidend bleibt die Rendite am Anleihemarkt.",
           "quellen": [
             {
-              "name": "Destatis — Inflationsrate im September 2026 (Pressemitteilung 348)",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"
+              "name": "EZB — Zusammenfassung der geldpolitischen Sitzung vom September (08.10.2026)",
+              "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261008~a10153d090.de.html"
             },
             {
-              "name": "TradingEconomics — Deutscher Aktienindex (DE40)",
-              "url": "https://de.tradingeconomics.com/germany/stock-market"
+              "name": "Destatis — Inflationsrate im September 2026 voraussichtlich +3,3 % (Pressemitteilung 348)",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"
             }
           ]
         }
@@ -135,26 +146,30 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent 0.21.4 → 0.21.6: Upstream zieht davon",
-          "aufmacher": "Für J.A.R.V.I.S. liegt ein Commit-Rückstand gegenüber dem Upstream vor — die Installation steht bei 0.21.4, neueste stabile Version ist 0.21.6.",
-          "fakten": "v0.21.6 ist vom 8. Oktober 2026 und rollt laut Release-Notes rund 2.106 zusammengeführte Pull-Requests seit v0.21.5 in eine stabile Version zusammen — vor allem für Docker und Hermes Cloud. Die vollständigen kuratierten Notes erscheinen erst mit v0.22.0. v0.21.5 (24. September) umfasste 460 PRs.",
-          "einordnung": "Kein akuter Fehlerfix bekannt; der Update-Scan meldet nur einen Commit-Rückstand. Ein Sprung auf den getaggten Stand ist optional.",
+          "titel": "🏠 Home Assistant: Add-on- und HACS-Updates verfügbar",
+          "aufmacher": "Home Assistant Core läuft aktuell auf 2026.10.0; für vier Erweiterungen liegen Updates bereit.",
+          "fakten": "Spook 5.9.0 → 5.10.0 (neuer flexibler State-Trigger, 35 vollständig übersetzte Sprachen, KI-Werkzeuge über die Administrator-API ab Home Assistant 2026.11). ConnectLife 0.46.0 → 0.47.0 (behebt die erzwungene Neuanmeldung bei offenen ConnectLife-AGB über einen Reparaturhinweis). Music Assistant Add-on 2.10.5 → 2.10.6. HA-MCP-Server (Dev) 8.6.0.dev2985 → dev2999, Auto-Update aktiv.",
+          "einordnung": "Der ConnectLife-Fix betrifft direkt die Klima-Integration im Wohnzimmer; Update wie üblich erst nach Backup.",
           "quellen": [
             {
-              "name": "GitHub — NousResearch/hermes-agent Releases",
-              "url": "https://github.com/NousResearch/hermes-agent/releases"
+              "name": "GitHub — Spook v5.10.0 Release Notes (09.10.2026)",
+              "url": "https://github.com/frenck/spook/releases/tag/v5.10.0"
+            },
+            {
+              "name": "GitHub — ConnectLife for Home Assistant Releases (v0.47.0)",
+              "url": "https://github.com/oyvindwe/connectlife-ha/releases"
             }
           ]
         },
         {
-          "titel": "🏠 Home Assistant 2026.10 verfügbar: neue Karte, Trigger-IDs mit Oberfläche, Modbus-Panel",
-          "aufmacher": "Home Assistant Core 2026.10 ist verfügbar — die Installation steht bei 2026.9.4.",
-          "fakten": "Version 2026.10 bringt eine neue Vektor-Karte auf OpenStreetMap-Basis (scharf in jedem Zoom), eine echte Oberfläche für Trigger-IDs in Automatisierungen, ein Panel für Modbus-Verbindungen, Ein-Klick-Anbindung der KI und 15 neue Integrationen. Home Assistant Cloud wird im Dezember zu „Home Assistant Link“. Zusätzlich verfügbar: Spook 5.9.0, Landroid Card 2026.10.0, MCP-Server (Dev) 8.6.0.dev2985 und SwitchBot-Mqtt 1.1.6.",
-          "einordnung": "Das Modbus-Panel ist für künftige Zähler- und Wechselrichter-Anbindungen (z. B. das vertagte Schneider-Gateway) relevant; Update erst nach Backup.",
+          "titel": "🤖 Hermes Agent: Update auf 0.21.6 weiterhin offen",
+          "aufmacher": "Für J.A.R.V.I.S. besteht weiterhin ein Versionsrückstand — die Installation steht bei 0.21.4+4975 (2026.9.24), die neueste stabile Version ist 0.21.6.",
+          "fakten": "Der Update-Scan meldet einen Commit-Rückstand gegenüber dem Upstream. v0.21.6 (8. Oktober 2026) bündelt die seither gemergten Änderungen für Docker und Hermes Cloud; die ausführlichen Release-Notes folgen mit v0.22.0. Zusätzlich meldet der Scan einen gestoppten Docker-Container.",
+          "einordnung": "Kein akuter Fehlerfix bekannt; der Sprung auf den getaggten Stand bleibt optional. Der gestoppte Container sollte beobachtet werden.",
           "quellen": [
             {
-              "name": "Home Assistant — 2026.10 Release Notes (07.10.2026)",
-              "url": "https://www.home-assistant.io/blog/2026/10/07/release-202610/"
+              "name": "GitHub — NousResearch/hermes-agent Releases",
+              "url": "https://github.com/NousResearch/hermes-agent/releases"
             }
           ]
         }
@@ -164,24 +179,11 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "UBTECH UWORLD U1: Humanoid wird an Privathaushalte ausgeliefert — ab rund 16.500 Dollar",
-          "aufmacher": "UBTECH liefert seit dem 16. September 2026 seinen humanoiden Begleiter UWORLD U1 an Privatkunden in China aus — zu Preisen ab umgerechnet rund 16.500 US-Dollar.",
-          "fakten": "Der U1 ist ein lebensgroßer humanoider Roboter und wurde bis zur Auslieferung laut Berichten rund 13.361 Mal vorbestellt. Die Preisspanne reicht von 119.800 Yuan (etwa 16.500 US-Dollar) bis 990.000 Yuan (etwa 135.000 US-Dollar). Anders als der 1X NEO ist der U1 primär als Begleit-Roboter für emotionale Interaktion vermarktet, nicht als Haushaltshelfer, und bislang nur in China verfügbar.",
-          "einordnung": "Erstes Serienmodell aus China, das tatsächlich in Wohnungen geht — für Deutschland weiterhin nicht erhältlich, aber ein Preisdruck-Signal für die nächsten Jahre.",
-          "quellen": [
-            {
-              "name": "IntelligentLiving — UBTECH Started Delivering UWorld U1 to Homes",
-              "url": "https://www.intelligentliving.co/ubtech-started-delivering-the-uworld-u1/"
-            },
-            {
-              "name": "StartupFortune — UBTech Delivers $16,500 Humanoid Companion Robots",
-              "url": "https://startupfortune.com/ubtech-starts-delivering-its-16500-humanoid-companion-robots-today/"
-            },
-            {
-              "name": "humanoid-portal.de — Humanoide Roboter News September 2026",
-              "url": "https://humanoid-portal.de/blog/humanoide-roboter-news-september-2026/"
-            }
-          ]
+          "titel": "Haushaltsroboter: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     }
