@@ -1,14 +1,14 @@
 {
-  "datum": "Samstag, 10.10.2026",
+  "datum": "Sonntag, 11.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "12,2 °C · Regen 100 % · UV 3,4",
-          "aufmacher": "🌧️ Regen — der Samstag bleibt durchweg nass.",
-          "fakten": "Aktuell 12,2 °C, Tageshöchstwert 15,4 °C, Tiefstwert 9,6 °C. Regenwahrscheinlichkeit 100 %, UV-Index 3,4 (moderat).",
-          "einordnung": "Außen- und Dacharbeiten an den Objekten nur mit Regenplan; für Innenarbeiten ist der Tag unkritisch.",
+          "titel": "9,0 °C · Regen 80 % · UV 2,6",
+          "aufmacher": "🌤️ Überwiegend sonnig, aber mit 80 Prozent Regenwahrscheinlichkeit im Tagesverlauf.",
+          "fakten": "Aktuell 9,0 °C, Tageshöchstwert 14,0 °C, Tiefstwert 8,8 °C. Regenwahrscheinlichkeit 80 %, UV-Index 2,6 (niedrig).",
+          "einordnung": "Außenarbeiten an den Objekten nur mit Regenplan; der UV-Wert ist unkritisch.",
           "quellen": []
         }
       ]
@@ -36,6 +36,13 @@
           "fakten": "",
           "einordnung": "",
           "quellen": []
+        },
+        {
+          "titel": "Mittwoch, 14.10.2026 · 10:00 — Quixx-Meeting",
+          "aufmacher": "Quixx24-Meeting am Mittwochvormittag.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     },
@@ -43,30 +50,26 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Vollsperrung der Offenbachstraße in Kriegsdorf ab 12. Oktober",
-          "aufmacher": "In Troisdorf-Kriegsdorf wird die Offenbachstraße ab Montag, 12. Oktober 2026, voll gesperrt — die Bauarbeiten dauern voraussichtlich bis April 2027.",
-          "fakten": "Gesperrt wird der Abschnitt zwischen Birklestraße und Im Schonsfeld; die Sperrung war ursprünglich für Mitte September vorgesehen und musste verschoben werden. Verlegt werden Kanal, Strom, Gas, Wasser und Telekommunikationsleitungen. Die Straße wird in Abschnitten von rund 150 bis 200 Metern gesperrt, bis zur Absperrung können Anwohner zufahren. Die Rhein-Sieg-Verkehrsgesellschaft (RSVG) richtet drei Ersatzhaltestellen in Kriegsdorf ein und fährt montags bis freitags einen Baustellenfahrplan zwischen Kriegsdorf und Spich.",
-          "einordnung": "Für Mietertouren und Handwerker rund um die Troisdorfer Objekte bedeutet das Umwege; die Umleitung wird ausgeschildert, die Zufahrt zu Grundstücken bleibt abschnittsweise möglich.",
+          "titel": "Troisdorf: Autofahrer erfasst Radfahrer an der Einmündung zum Mauspfad",
+          "aufmacher": "In Troisdorf hat ein Autofahrer beim Rechtsabbiegen die Vorfahrt eines Radfahrers missachtet — der 37-Jährige wurde leicht verletzt.",
+          "fakten": "Der 48-jährige Fahrer eines Ford Transit aus Lohmar bog am Donnerstag (8. Oktober) gegen 14:25 Uhr von der Asselbachstraße aus Richtung Hauptstraße nach rechts in den Mauspfad ab und übersah dabei den Radfahrer, der auf dem Geh- und Radweg parallel zum Mauspfad in Richtung Belgische Allee unterwegs war. Der Mann aus Hürth versuchte noch auszuweichen, touchierte den Pkw und stürzte; er kam mit leichten Verletzungen in ein Krankenhaus. An Fahrrad und Pkw entstand geringer Sachschaden; gegen den Autofahrer läuft ein Verfahren wegen fahrlässiger Körperverletzung.[1]",
+          "einordnung": "Die Ecke Asselbachstraße/Mauspfad liegt auf einer der üblichen Routen zwischen Troisdorf-Mitte und den Objekten — beim Rechtsabbiegen dort weiter mit Radverkehr von rechts rechnen.[1]",
           "quellen": [
             {
-              "name": "Stadt Troisdorf — Vollsperrung der Offenbachstraße beginnt am 12.10. (09.10.2026)",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/vollsperrung-der-offenbachstrasse-beginnt-am-12-10/"
+              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis — POL-SU: Vorfahrt missachtet – Fahrradfahrer angefahren (09.10.2026)",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6368146"
             }
           ]
         },
         {
-          "titel": "Rhein-Sieg-Kreis: Abkochgebot für Trinkwasser in Bornheim nach E.coli-Nachweis",
-          "aufmacher": "Im Wasserwerk Bornheim wurden E.coli-Bakterien nachgewiesen — für die Stadt Bornheim gilt seit Freitagabend ein vorsorgliches Abkochgebot.",
-          "fakten": "Der Rhein-Sieg-Kreis hat das Abkochgebot am Freitagabend (09.10.2026) ausgesprochen; das abschließende Untersuchungsergebnis stand zunächst aus. Betroffen ist auch Wesseling im Rhein-Erft-Kreis, dessen Wasserwerk Urfeld das Bornheimer Netz teils mitversorgt. Wasser zum Trinken, zur Speisenzubereitung und zum Zähneputzen soll sprudelnd abgekocht und anschließend abgekühlt werden — die Warnung folgt der Empfehlung des Umweltbundesamtes.",
-          "einordnung": "Troisdorf selbst ist nicht betroffen, die Warnung gilt aber im Rhein-Sieg-Kreis — relevant für Mieter-Kommunikation und Objektbetreuung in der Region.",
+          "titel": "Bonn/S13: Königswinterer Straße am Wochenende unter der Bahnbrücke gesperrt",
+          "aufmacher": "Für den Abbau des Gerüsts an der Eisenbahnbrücke bleibt die Königswinterer Straße in Bonn am 10. und 11. Oktober gesperrt — die Umleitungen sind ausgeschildert.",
+          "fakten": "Betroffen ist auch die Zufahrt zur Auguststraße. Weiter laufen im Oktober die Bauarbeiten am Ausbau der S13 zwischen Troisdorf und Bonn: die neue Personenunterführung „Siegburger Straße“ zwischen Friedrich-Breuer-Straße und Goetheallee (1.–31. Oktober), nachts Gleis- und Weichenarbeiten auf Höhe Königswinterer Straße 52 sowie Be- und Entladungen in Bonn-Oberkassel. Nach Fertigstellung soll die S13 alle 20 Minuten Bonn-Oberkassel über Troisdorf mit dem Flughafen, Köln und Düren verbinden; in Bonn-Vilich entsteht ein Turmbahnhof, am Schießbergweg der neue Haltepunkt Bonn-Ramersdorf.[2]",
+          "einordnung": "Die Achse Troisdorf–Bonn betrifft Handwerker- und Mietertouren direkt; langfristig ist der 20-Minuten-Takt ein Standortargument für die Objekte im Rhein-Sieg-Kreis.[2]",
           "quellen": [
             {
-              "name": "WDR — Bakterien im Trinkwasser von Wesseling und Bornheim (09.10.2026)",
-              "url": "https://www1.wdr.de/nrw/rheinland/ecoli-bakterien-trinkwasser-wesseling-bornheim-100.html"
-            },
-            {
-              "name": "General-Anzeiger Bonn — Bornheim: Abkochgebot nach E.-coli-Bakterien im Wasser",
-              "url": "https://ga.de/region/voreifel-und-vorgebirge/bornheim/bornheim-abkochgebot-nach-e-coli-bakterien-im-wasser_aid-156290949"
+              "name": "Bundesstadt Bonn — Ausbau der S13 (Nachtarbeiten und Sperrungen Oktober 2026)",
+              "url": "https://www.bonn.de/themen-entdecken/verkehr-mobilitaet/ausbau-der-s-13.php"
             }
           ]
         }
@@ -76,34 +79,34 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "KfW-Programm „Gewerbe zu Wohnen“: bis zu 30.000 Euro je neuer Wohneinheit",
-          "aufmacher": "Der Bund fördert seit dem 1. Juli 2026 den Umbau leerstehender Gewerbeimmobilien zu Wohnraum mit bis zu 30.000 Euro Zuschuss je neuer Wohneinheit.",
-          "fakten": "Das KfW-Programm Nr. 266 „Gewerbe zu Wohnen“ bezuschusst den Umbau nicht zu Wohnzwecken genutzter, beheizter Gebäude bzw. Gebäudeteile (etwa Büros, Praxisräume, Handelsflächen) zu Wohnraum — bei mehreren Wohneinheiten insgesamt bis zu 300.000 Euro. Gefördert werden unter anderem Rückbau, Statik, Innenausbau, Treppenhäuser und Zugänge. Voraussetzung ist mindestens eine neu entstehende Wohneinheit und der Standard „Effizienzhaus 85 Erneuerbare-Energien“; bei bereits vorhandener Wärmepumpe bzw. 65 % erneuerbarer Heizung genügt „Effizienzhaus 85“. Für 2026 stehen insgesamt 300 Mio. Euro bereit. Der Zuschuss muss nicht zurückgezahlt werden.",
-          "einordnung": "Direkt relevant für die MFH-Strategie: Bei Umwandlungsobjekten — etwa leerstehenden Gewerbeflächen — verbessert der Zuschuss die Anschubfinanzierung und lässt sich mit dem Hebel-Prinzip (wenig Eigenkapital, hohe Beleihung) kombinieren.",
+          "titel": "Wohnungsbau fällt 2026 auf 185.000 Einheiten — Mieten steigen trotzdem um vier Prozent",
+          "aufmacher": "In Deutschland werden 2026 voraussichtlich nur 185.000 Wohnungen fertiggestellt — der niedrigste Stand seit über 15 Jahren.",
+          "fakten": "Die Prognose der Forschergruppe EUROCONSTRUCT, der das ifo Institut angehört, erwartet für 2026 nur 185.000 Fertigstellungen nach 207.000 im Jahr 2025; für 2027 werden 195.000 und bis 2028 erstmals wieder 210.000 Einheiten erwartet — rund 17 Prozent unter dem Niveau von 2024. ifo-Experte Ludwig Dorffmeister nennt den Irankrieg und die anziehende Bauinflation als Bremsen; die Zeitspanne zwischen Genehmigung und Fertigstellung hat sich seit Beginn des Jahrzehnts um etwa ein halbes Jahr auf 27 Monate verlängert.[3] Zugleich lagen die Angebotsmieten im zweiten Quartal 2026 laut dem Institut der deutschen Wirtschaft Köln bundesweit vier Prozent über dem Vorjahr — in Großstädten außerhalb der sieben Metropolen bei plus 4,9 Prozent, in Köln bei 7,9 Prozent; die Zahl der Mietinserate liegt knapp zwölf Prozent unter dem Niveau von Anfang 2022.[4]",
+          "einordnung": "Knappe Bestände und ein ausfallender Neubau stützen die Mieten — gut für den Cashflow der Bestandsobjekte, aber die Regulierung (siehe nächster Artikel) begrenzt die jährliche Steigerung. Bei Neuakquisitionen ist der Neubau-Wettbewerb als Preistreiber jedenfalls vorerst weg.[3][4]",
           "quellen": [
             {
-              "name": "KfW — Gewerbe zu Wohnen (Programm 266)",
-              "url": "https://www.kfw.de/inlandsfoerderung/Unternehmen/Wohnwirtschaft/F%C3%B6rderprodukte/Gewerbe-zu-Wohnen-(266)/"
+              "name": "ifo Institut — Wohnungsbau in Deutschland erneut rückläufig (23.07.2026)",
+              "url": "https://www.ifo.de/pressemitteilung/2026-07-23/wohnungsbau-deutschland-erneut-ruecklaeufig"
             },
             {
-              "name": "BMWSB — Aus Leerstand wird Wohnraum (30.06.2026)",
-              "url": "https://www.bmwsb.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/gewerbe-wohnen.html"
+              "name": "tagesschau — IW Köln: Mieten in Deutschland deutlich gestiegen (20.07.2026)",
+              "url": "https://www.tagesschau.de/wirtschaft/mietpreise-anstieg-iw-100.html"
             }
           ]
         },
         {
-          "titel": "Bauzinsen bleiben über vier Prozent — Treiber sind die Anleiherenditen",
-          "aufmacher": "Für zehnjährige Baudarlehen liegen die effektiven Bauzinsen weiter bei rund 4,2 Prozent — ein Rückfall unter die Vier-Prozent-Marke ist vorerst nicht in Sicht.",
-          "fakten": "Laut Interhyp-Zinstabelle (Konditionen 28.09.–04.10.2026) kostet eine 10-jährige Zinsbindung bei unter 70 Prozent Beleihung 4,23 Prozent, bei rund 90 Prozent 4,63 Prozent; bei 20 Jahren reicht die Spanne von 4,53 bis 4,79 Prozent. Interhyp-Vorstand Jörg Utecht verweist auf gestiegene Renditen langfristiger Staatsanleihen als Treiber. Die Rendite der zehnjährigen französischen Anleihe erreichte zuletzt mit 4,99 Prozent den höchsten Stand seit 24 Jahren.",
-          "einordnung": "Für die Hebel-Strategie bleibt die Tranche über 90 Prozent Beleihung (4,63 Prozent) die teuerste — das Mehrbanken-Refinanzieren bleibt der entscheidende Hebel, solange die langfristigen Renditen hoch bleiben.",
+          "titel": "„Mietrecht II“: Indexmieten-Deckel von 3,5 Prozent ist geplant — aber noch nicht in Kraft",
+          "aufmacher": "Die Bundesregierung will Indexmieten auf jährlich 3,5 Prozent deckeln und Möblierungszuschläge begrenzen; der Entwurf ist bisher nicht beschlossen und damit kein geltendes Recht.",
+          "fakten": "Der Referentenentwurf heißt in der Praxis „Mietrecht II“; das Kabinett hat ihn am 29. April 2026 beschlossen, der Bundestag hat ihn am 9. Juli 2026 in erster Lesung beraten. Vorgesehen sind eine Deckelung der Indexmiete auf 3,5 Prozent pro Jahr in angespannten Wohnungsmärkten, mehr Transparenz und Grenzen bei Möblierungszuschlägen sowie Einschränkungen von Kurzzeitvermietung; die Kappungsgrenzen des § 558 BGB gelten für reine Indexanpassungen nicht.[5] Bereits beschlossen und in Kraft ist dagegen die Verlängerung der Mietpreisbremse bis Ende 2029.[6]",
+          "einordnung": "Praktisch heißt das: laufende Indexmietverträge nicht vorschnell anpassen, sondern die Verabschiedung abwarten — für möblierte oder kurzzeitige Modelle (Business-Apartments, Airbnb-Ansatz) ist der Entwurf die kritische Größe, nicht das heutige Recht.[5][6]",
           "quellen": [
             {
-              "name": "Interhyp — Bauzinsen aktuell (Zinstabelle, Stand 28.09.–04.10.2026)",
-              "url": "https://www.interhyp.de/zinsen/"
+              "name": "BMJV — „Mietrecht II“: Häufige Fragen (PDF)",
+              "url": "https://www.bmjv.de/SharedDocs/Downloads/DE/Gesetzgebung/FAQ/FAQ_Miete_II.pdf"
             },
             {
-              "name": "tagesschau — Marktbericht: DAX steigt über 25.000 Punkte (09.10.2026)",
-              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-166.html"
+              "name": "Deutscher Bundestag — Mietpreisbremse bis 2029 verlängert",
+              "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-mietpreisbremse-1084786"
             }
           ]
         }
@@ -113,30 +116,22 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "DAX erobert die 25.000 Punkte zurück",
-          "aufmacher": "Der DAX hat sich zum Wochenende erholt und schloss am Freitag bei 25.087 Punkten — ein Tagesplus von 1,13 Prozent.",
-          "fakten": "Als Treiber galten stabilisierte Ölpreise und leicht gefallene Rentenrenditen; Auslöser war die Aussage von US-Präsident Trump, der Iran werde vor den US-Kongresswahlen im November nicht mehr angegriffen. Auf Wochensicht bleibt der DAX rund 0,6 Prozent im Minus, der MDAX legte 1,64 Prozent auf 29.989 Punkte zu. Belastungsfaktoren bleiben die hohen Energiepreise, die Schuldentragfähigkeit Frankreichs und die Unsicherheit im Technologiesektor.",
-          "einordnung": "Für die rund 600.000 Euro liquiden Mittel gilt weiter Vorsicht: Der Markt hängt am Ölpreis und an den Anleiherenditen — genau den Größen, die auch die Bauzinsen steuern.",
+          "titel": "Trumps Diesel-Deal mit Putin — an deutschen Spritpreisen bislang ohne Wirkung",
+          "aufmacher": "US-Präsident Trump hat die Sanktionen für russischen Diesel ausgesetzt; an den deutschen Zapfsäulen war am 10. Oktober davon nichts zu sehen.",
+          "fakten": "Nach einem Telefonat mit Wladimir Putin kündigte Trump zunächst 300.000 Tonnen Diesel für die USA und den Weltmarkt an, später war von bis zu 4,8 Millionen Tonnen die Rede. Die Bundesregierung hält an den Sanktionsbeschlüssen fest: Russisches Öl und Rohölprodukte sind seit 2023 EU-sanktioniert, „wir sind unabhängig von russischem Öl“, so das Bundeswirtschaftsministerium.[7][8] Beobachtungsportale zeigten beim Diesel- und Superpreis vor und nach dem mittäglichen Sprung Werte sehr nah am Vortag — keine größeren Ausschläge. Die Rendite der zehnjährigen Bundesanleihe sank am 9. Oktober auf 3,45 Prozent.[7][9]",
+          "einordnung": "Energiepreise und Anleiherenditen bleiben die zwei Größen, die Inflation und Bauzinsen treiben — und damit jede Finanzierungsrechnung. Solange die Renditen auf diesem Niveau liegen, bleibt Abwarten bei den liquiden Mitteln keine schlechte Position.[9]",
           "quellen": [
             {
-              "name": "tagesschau — Marktbericht: Ölpreis stabilisiert sich, DAX macht wieder Boden gut (09.10.2026)",
-              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-166.html"
-            }
-          ]
-        },
-        {
-          "titel": "EZB-Protokoll veröffentlicht — nächster Zinsentscheid am 29. Oktober",
-          "aufmacher": "Die EZB hat am 8. Oktober das Protokoll ihrer September-Sitzung veröffentlicht, in der der Rat die Leitzinsen um 25 Basispunkte anhob.",
-          "fakten": "Der Rat verwies laut Sitzungszusammenfassung auf eine Verschlechterung der Inflationsaussichten und unterstrich das Ziel, die Inflation mittelfristig beim 2-Prozent-Ziel zu stabilisieren. Die nächste geldpolitische Sitzung ist am 28./29. Oktober 2026, der Zinsentscheid fällt am 29. Oktober um 14:15 Uhr. Die Inflationsrate lag im September vorläufig bei 3,3 Prozent (August: 2,9 Prozent), die Kerninflation bei 2,4 Prozent; die endgültigen September-Zahlen veröffentlicht Destatis am 13. Oktober.",
-          "einordnung": "Ein Zinsstillstand Ende Oktober würde die Bauzinsen nur begrenzt stützen — entscheidend bleibt die Rendite am Anleihemarkt.",
-          "quellen": [
-            {
-              "name": "EZB — Zusammenfassung der geldpolitischen Sitzung vom September (08.10.2026)",
-              "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261008~a10153d090.de.html"
+              "name": "tagesschau — US-Dieseldeal mit dem Kreml: Deutschland bleibt beim Nein zu russischem Öl (10.10.2026)",
+              "url": "https://www.tagesschau.de/wirtschaft/energie/trump-diesel-oelpreis-reaktionen-deutschland-100.html"
             },
             {
-              "name": "Destatis — Inflationsrate im September 2026 voraussichtlich +3,3 % (Pressemitteilung 348)",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"
+              "name": "tagesschau — Trump kündigt russische Diesellieferungen an (10.10.2026)",
+              "url": "https://www.tagesschau.de/ausland/amerika/trump-diesellieferungen-russland-100.html"
+            },
+            {
+              "name": "Trading Economics — Rendite 10-jährige deutsche Staatsanleihe (Stand 09.10.2026)",
+              "url": "https://de.tradingeconomics.com/germany/government-bond-yield"
             }
           ]
         }
@@ -146,32 +141,23 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🏠 Home Assistant: Add-on- und HACS-Updates verfügbar",
-          "aufmacher": "Home Assistant Core läuft aktuell auf 2026.10.0; für vier Erweiterungen liegen Updates bereit.",
-          "fakten": "Spook 5.9.0 → 5.10.0 (neuer flexibler State-Trigger, 35 vollständig übersetzte Sprachen, KI-Werkzeuge über die Administrator-API ab Home Assistant 2026.11). ConnectLife 0.46.0 → 0.47.0 (behebt die erzwungene Neuanmeldung bei offenen ConnectLife-AGB über einen Reparaturhinweis). Music Assistant Add-on 2.10.5 → 2.10.6. HA-MCP-Server (Dev) 8.6.0.dev2985 → dev2999, Auto-Update aktiv.",
-          "einordnung": "Der ConnectLife-Fix betrifft direkt die Klima-Integration im Wohnzimmer; Update wie üblich erst nach Backup.",
+          "titel": "🤖 Hermes Agent 0.21.4 → 0.21.6: Update steht weiter offen",
+          "aufmacher": "J.A.R.V.I.S. läuft weiter auf 0.21.4+4975 (Build vom 24. September), die neueste stabile Version ist 0.21.6 vom 8. Oktober.",
+          "fakten": "v0.21.6 ist ein Patch-Release und bündelt die rund 2.100 seit v0.21.5 gemergten Pull Requests als getaggten Stand für Docker und Hermes Cloud; laut Release-Notes folgen die ausführlich kuratierten Änderungsnotizen erst mit v0.22. Der Update-Scan meldet entsprechend weiterhin einen Commit-Rückstand gegenüber dem Upstream.[10]",
+          "einordnung": "Kein Sicherheits- oder Fehlerfix bekannt — der Sprung bleibt optional, kostet aber einen Neustart und gehört damit in ein ruhiges Fenster.[10]",
           "quellen": [
             {
-              "name": "GitHub — Spook v5.10.0 Release Notes (09.10.2026)",
-              "url": "https://github.com/frenck/spook/releases/tag/v5.10.0"
-            },
-            {
-              "name": "GitHub — ConnectLife for Home Assistant Releases (v0.47.0)",
-              "url": "https://github.com/oyvindwe/connectlife-ha/releases"
+              "name": "GitHub — NousResearch/hermes-agent Releases (v0.21.6, 08.10.2026)",
+              "url": "https://github.com/NousResearch/hermes-agent/releases"
             }
           ]
         },
         {
-          "titel": "🤖 Hermes Agent: Update auf 0.21.6 weiterhin offen",
-          "aufmacher": "Für J.A.R.V.I.S. besteht weiterhin ein Versionsrückstand — die Installation steht bei 0.21.4+4975 (2026.9.24), die neueste stabile Version ist 0.21.6.",
-          "fakten": "Der Update-Scan meldet einen Commit-Rückstand gegenüber dem Upstream. v0.21.6 (8. Oktober 2026) bündelt die seither gemergten Änderungen für Docker und Hermes Cloud; die ausführlichen Release-Notes folgen mit v0.22.0. Zusätzlich meldet der Scan einen gestoppten Docker-Container.",
-          "einordnung": "Kein akuter Fehlerfix bekannt; der Sprung auf den getaggten Stand bleibt optional. Der gestoppte Container sollte beobachtet werden.",
-          "quellen": [
-            {
-              "name": "GitHub — NousResearch/hermes-agent Releases",
-              "url": "https://github.com/NousResearch/hermes-agent/releases"
-            }
-          ]
+          "titel": "🏠 Home Assistant aktuell — der gemeldete „gestoppte Container“ ist planmäßig beendet",
+          "aufmacher": "Home Assistant Core läuft auf 2026.10.0 und hat aktuell kein einziges offenes Update — die Scan-Warnung betrifft nur einen einmaligen Datenbank-Initialisierer.",
+          "fakten": "Alle update-Entitäten standen heute auf „off“: Core, Add-ons, HACS-Integrationen und Firmware sind damit aktuell (kein Spook-, ConnectLife- oder Music-Assistant-Update mehr offen). Der vom Update-Scan gemeldete gestoppte Container ist firecrawl-starter-monitor-db-init-1 — der einmalige Datenbank-Initialisierer des Firecrawl-Stacks, der vor elf Tagen mit Exit-Code 0 planmäßig beendet wurde. Die übrigen 24 Container des NAS laufen, darunter Paperless-ngx, Immich, Open WebUI und Fredy.",
+          "einordnung": "Kein Handlungsbedarf. Wenn der Init-Container stört, kann er in Portainer gefahrlos entfernt werden — er wird bei einem Stack-Neuaufbau neu erzeugt.",
+          "quellen": []
         }
       ]
     },
@@ -179,11 +165,20 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Haushaltsroboter: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "Tau Robotics: erster humanoider Haushalts-Einsatz als Dienstleistung — 30 Dollar pro Stunde",
+          "aufmacher": "In San Francisco reinigen seit August 2026 humanoide Roboter fremde Wohnungen — für 30 US-Dollar (rund 27 Euro) pro Stunde, fernbedient von Menschen.",
+          "fakten": "Tau Robotics bietet Haus-, Tief- und Büroreinigung an, buchbar nur auf Einladung; zwei Roboter arbeiten eine Stunde für 30 Dollar pro Gerät und werden live von einer Person aus der Ferne gesteuert, unterstützt von KI. Beworben werden Saugen, Wischen von Arbeitsflächen, Müll und Aufräumen. Der CEO räumt ein, dass die KI eine humanoide Reinigung noch nicht autonom leisten kann; der Robotik-Professor Ken Goldberg (UC Berkeley) hält den Ansatz für verfrüht. Einen Kaufpreis gibt es nicht — verkauft werden Arbeitsstunden, keine Roboter. Umrechnung: 30 USD ≈ 27 EUR (Kurs 0,8924 vom 9.10.2026).",
+          "einordnung": "Damit existiert der erste kommerzielle Haushalts-Einsatz von Humanoiden — aber als Dienstleistung mit menschlichem Bediener, nicht als kaufbares Gerät. Für den eigenen Haushalt bleibt 1X NEO (20.000 USD / 499 USD im Monat, Europa ab 2027) weiter die einzige Kaufoption.",
+          "quellen": [
+            {
+              "name": "Tau Robotics — Humanoid Cleaning Service, San Francisco (offizielle Seite)",
+              "url": "https://www.tau-robotics.com/"
+            },
+            {
+              "name": "humanoid.guide — Tau Robotics offers humanoid cleaning service in San Francisco",
+              "url": "https://humanoid.guide/tau-robotics-offers-humanoid-cleaning-service-in-san-francisco/"
+            }
+          ]
         }
       ]
     }
