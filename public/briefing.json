@@ -1,14 +1,14 @@
 {
-  "datum": "Sonntag, 11.10.2026",
+  "datum": "Montag, 12.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "9,0 °C · Regen 80 % · UV 2,6",
-          "aufmacher": "🌤️ Überwiegend sonnig, aber mit 80 Prozent Regenwahrscheinlichkeit im Tagesverlauf.",
-          "fakten": "Aktuell 9,0 °C, Tageshöchstwert 14,0 °C, Tiefstwert 8,8 °C. Regenwahrscheinlichkeit 80 %, UV-Index 2,6 (niedrig).",
-          "einordnung": "Außenarbeiten an den Objekten nur mit Regenplan; der UV-Wert ist unkritisch.",
+          "titel": "5,1 °C · Regen 2 % · UV 3,3",
+          "aufmacher": "☀️ Klar und trocken. Tageshöchstwert 16,9 °C bei einem Tief von 5,1 °C.",
+          "fakten": "Aktuell 5,1 °C, Höchstwert 16,9 °C. Regenwahrscheinlichkeit nur 2 %, UV-Index 3,3 (mittel).",
+          "einordnung": "Guter Tag für Außenarbeiten an den Objekten — UV-Wert unkritisch, aber nicht unterschätzen.",
           "quellen": []
         }
       ]
@@ -17,29 +17,36 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Montag, 12.10.2026 · 14:20 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "titel": "Mo 12.10. · 14:20 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
           "aufmacher": "Therapietermin am Montagnachmittag.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "Dienstag, 13.10.2026 · 14:00 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "titel": "Di 13.10. · 14:00 — Therapiezentrum Snoek",
           "aufmacher": "Therapietermin am Dienstagnachmittag.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "Dienstag, 13.10.2026 · 14:35 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
+          "titel": "Di 13.10. · 14:35 — Therapiezentrum Snoek",
           "aufmacher": "Anschließender Therapietermin am Dienstag.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "Mittwoch, 14.10.2026 · 10:00 — Quixx-Meeting",
+          "titel": "Mi 14.10. · 10:00 — Quixx-Meeting",
           "aufmacher": "Quixx24-Meeting am Mittwochvormittag.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "Do 15.10. · 15:00 — Therapiezentrum Snoek",
+          "aufmacher": "Therapietermin am Donnerstagnachmittag.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -50,26 +57,30 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Autofahrer erfasst Radfahrer an der Einmündung zum Mauspfad",
-          "aufmacher": "In Troisdorf hat ein Autofahrer beim Rechtsabbiegen die Vorfahrt eines Radfahrers missachtet — der 37-Jährige wurde leicht verletzt.",
-          "fakten": "Der 48-jährige Fahrer eines Ford Transit aus Lohmar bog am Donnerstag (8. Oktober) gegen 14:25 Uhr von der Asselbachstraße aus Richtung Hauptstraße nach rechts in den Mauspfad ab und übersah dabei den Radfahrer, der auf dem Geh- und Radweg parallel zum Mauspfad in Richtung Belgische Allee unterwegs war. Der Mann aus Hürth versuchte noch auszuweichen, touchierte den Pkw und stürzte; er kam mit leichten Verletzungen in ein Krankenhaus. An Fahrrad und Pkw entstand geringer Sachschaden; gegen den Autofahrer läuft ein Verfahren wegen fahrlässiger Körperverletzung.[1]",
-          "einordnung": "Die Ecke Asselbachstraße/Mauspfad liegt auf einer der üblichen Routen zwischen Troisdorf-Mitte und den Objekten — beim Rechtsabbiegen dort weiter mit Radverkehr von rechts rechnen.[1]",
+          "titel": "Troisdorf-Kriegsdorf: Offenbachstraße ab heute voll gesperrt",
+          "aufmacher": "Ab Montag, 12. Oktober 2026, ist die Offenbachstraße in Troisdorf-Kriegsdorf zwischen Birklestraße und Im Schonsfeld voll gesperrt.",
+          "fakten": "Die Sperrung war ursprünglich für Mitte September vorgesehen und musste verschoben werden. Grund sind Leitungsarbeiten: Kanal, Strom, Gas, Wasser und weitere Leitungen werden verlegt. Ein Ersatzverkehr wird eingerichtet.",
+          "einordnung": "Betrifft die Verkehrsachse im Troisdorfer Osten — planungsrelevant für Fahrten zwischen Kriegsdorf und Innenstadt, auch für Handwerker- und Mietertouren.",
           "quellen": [
             {
-              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis — POL-SU: Vorfahrt missachtet – Fahrradfahrer angefahren (09.10.2026)",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6368146"
+              "name": "Stadt Troisdorf — Pressemeldungen Oktober 2026",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/"
             }
           ]
         },
         {
-          "titel": "Bonn/S13: Königswinterer Straße am Wochenende unter der Bahnbrücke gesperrt",
-          "aufmacher": "Für den Abbau des Gerüsts an der Eisenbahnbrücke bleibt die Königswinterer Straße in Bonn am 10. und 11. Oktober gesperrt — die Umleitungen sind ausgeschildert.",
-          "fakten": "Betroffen ist auch die Zufahrt zur Auguststraße. Weiter laufen im Oktober die Bauarbeiten am Ausbau der S13 zwischen Troisdorf und Bonn: die neue Personenunterführung „Siegburger Straße“ zwischen Friedrich-Breuer-Straße und Goetheallee (1.–31. Oktober), nachts Gleis- und Weichenarbeiten auf Höhe Königswinterer Straße 52 sowie Be- und Entladungen in Bonn-Oberkassel. Nach Fertigstellung soll die S13 alle 20 Minuten Bonn-Oberkassel über Troisdorf mit dem Flughafen, Köln und Düren verbinden; in Bonn-Vilich entsteht ein Turmbahnhof, am Schießbergweg der neue Haltepunkt Bonn-Ramersdorf.[2]",
-          "einordnung": "Die Achse Troisdorf–Bonn betrifft Handwerker- und Mietertouren direkt; langfristig ist der 20-Minuten-Takt ein Standortargument für die Objekte im Rhein-Sieg-Kreis.[2]",
+          "titel": "Region Bonn/Rhein-Sieg: Neuwied wird gleichberechtigter Partner im :rak",
+          "aufmacher": "Der Landkreis Neuwied ist dem Regionalen Arbeitskreis Region Bundesstadt Bonn (:rak) als gleichberechtigter Partner beigetreten.",
+          "fakten": "Bonn, der Rhein-Sieg-Kreis und der Landkreis Ahrweiler arbeiten dort seit über drei Jahrzehnten zusammen; mit der neuen Kooperationsvereinbarung kommt Neuwied hinzu. Als gemeinsame Ergebnisse gelten unter anderem das regionale Einzelhandelskonzept und das regionale Siedlungsflächen- und Dichtekonzept.",
+          "einordnung": "Interkommunale Zusammenarbeit in der Kernregion — relevant für Standort-, Gewerbe- und Flächenentwicklung im Rhein-Sieg-Kreis.",
           "quellen": [
             {
-              "name": "Bundesstadt Bonn — Ausbau der S13 (Nachtarbeiten und Sperrungen Oktober 2026)",
-              "url": "https://www.bonn.de/themen-entdecken/verkehr-mobilitaet/ausbau-der-s-13.php"
+              "name": "Bundesstadt Bonn — Pressemitteilung „:rak stärkt die Stimme der Region Bonn“",
+              "url": "https://www.bonn.de/pressemitteilungen/oktober-2026/rak-staerkt-die-stimme-der-region-bonn.php"
+            },
+            {
+              "name": "Rhein-Sieg-Kreis — Presseinformationen",
+              "url": "https://www.rhein-sieg-kreis.de/presseinformationen/index.php"
             }
           ]
         }
@@ -79,34 +90,34 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Wohnungsbau fällt 2026 auf 185.000 Einheiten — Mieten steigen trotzdem um vier Prozent",
-          "aufmacher": "In Deutschland werden 2026 voraussichtlich nur 185.000 Wohnungen fertiggestellt — der niedrigste Stand seit über 15 Jahren.",
-          "fakten": "Die Prognose der Forschergruppe EUROCONSTRUCT, der das ifo Institut angehört, erwartet für 2026 nur 185.000 Fertigstellungen nach 207.000 im Jahr 2025; für 2027 werden 195.000 und bis 2028 erstmals wieder 210.000 Einheiten erwartet — rund 17 Prozent unter dem Niveau von 2024. ifo-Experte Ludwig Dorffmeister nennt den Irankrieg und die anziehende Bauinflation als Bremsen; die Zeitspanne zwischen Genehmigung und Fertigstellung hat sich seit Beginn des Jahrzehnts um etwa ein halbes Jahr auf 27 Monate verlängert.[3] Zugleich lagen die Angebotsmieten im zweiten Quartal 2026 laut dem Institut der deutschen Wirtschaft Köln bundesweit vier Prozent über dem Vorjahr — in Großstädten außerhalb der sieben Metropolen bei plus 4,9 Prozent, in Köln bei 7,9 Prozent; die Zahl der Mietinserate liegt knapp zwölf Prozent unter dem Niveau von Anfang 2022.[4]",
-          "einordnung": "Knappe Bestände und ein ausfallender Neubau stützen die Mieten — gut für den Cashflow der Bestandsobjekte, aber die Regulierung (siehe nächster Artikel) begrenzt die jährliche Steigerung. Bei Neuakquisitionen ist der Neubau-Wettbewerb als Preistreiber jedenfalls vorerst weg.[3][4]",
+          "titel": "Bauzinsen klettern über die Vier-Prozent-Marke",
+          "aufmacher": "Baufinanzierungen sind seit dem Sommer deutlich teurer geworden; die Zinsen liegen wieder klar über 4 %.",
+          "fakten": "Dr. Klein nennt zum 09.10.2026 Top-Zinsen zwischen 4,16 % und 4,71 % je nach Zinsbindung. Finanztip beziffert zehnjährige Darlehen auf etwa 4,4 % (60 % Beleihung) bzw. 4,5 % (80 %) und meldet seit Anfang Juli einen Anstieg um rund 0,6 Prozentpunkte. Für Oktober werden Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen erwartet.",
+          "einordnung": "Höhere Zinsen verteuern die Kapitalkosten für MFH-Käufe — bei der Hebel-Strategie (nur Kaufnebenkosten aus EK, Rest Bankdarlehen) entscheidet die Zinshöhe direkt über den Cashflow.",
           "quellen": [
             {
-              "name": "ifo Institut — Wohnungsbau in Deutschland erneut rückläufig (23.07.2026)",
-              "url": "https://www.ifo.de/pressemitteilung/2026-07-23/wohnungsbau-deutschland-erneut-ruecklaeufig"
+              "name": "Dr. Klein — Bauzinsen aktuell (Stand 09.10.2026)",
+              "url": "https://www.drklein.de/aktuelle-bauzinsen.html"
             },
             {
-              "name": "tagesschau — IW Köln: Mieten in Deutschland deutlich gestiegen (20.07.2026)",
-              "url": "https://www.tagesschau.de/wirtschaft/mietpreise-anstieg-iw-100.html"
+              "name": "Finanztip — Aktuelle Bauzinsen (Stand 07.10.2026)",
+              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
             }
           ]
         },
         {
-          "titel": "„Mietrecht II“: Indexmieten-Deckel von 3,5 Prozent ist geplant — aber noch nicht in Kraft",
-          "aufmacher": "Die Bundesregierung will Indexmieten auf jährlich 3,5 Prozent deckeln und Möblierungszuschläge begrenzen; der Entwurf ist bisher nicht beschlossen und damit kein geltendes Recht.",
-          "fakten": "Der Referentenentwurf heißt in der Praxis „Mietrecht II“; das Kabinett hat ihn am 29. April 2026 beschlossen, der Bundestag hat ihn am 9. Juli 2026 in erster Lesung beraten. Vorgesehen sind eine Deckelung der Indexmiete auf 3,5 Prozent pro Jahr in angespannten Wohnungsmärkten, mehr Transparenz und Grenzen bei Möblierungszuschlägen sowie Einschränkungen von Kurzzeitvermietung; die Kappungsgrenzen des § 558 BGB gelten für reine Indexanpassungen nicht.[5] Bereits beschlossen und in Kraft ist dagegen die Verlängerung der Mietpreisbremse bis Ende 2029.[6]",
-          "einordnung": "Praktisch heißt das: laufende Indexmietverträge nicht vorschnell anpassen, sondern die Verabschiedung abwarten — für möblierte oder kurzzeitige Modelle (Business-Apartments, Airbnb-Ansatz) ist der Entwurf die kritische Größe, nicht das heutige Recht.[5][6]",
+          "titel": "IW-Wohnindex: Mieten steigen weiter, Kaufpreise stagnieren",
+          "aufmacher": "Der IW-Wohnindex Q2/2026 zeigt weiter deutlich steigende Angebotsmieten bei nur moderat steigenden Kaufpreisen.",
+          "fakten": "Bundesweit liegen die Angebotsmieten 4,0 % über dem Vorjahr und 1,3 % über dem Vorquartal; in Köln sogar +7,9 %. Eigentumswohnungen sowie Ein- und Zweifamilienhäuser verteuerten sich nur um je 0,8 % gegenüber dem Vorjahresquartal. Das Kaufangebot ist seit Anfang 2022 deutlich gestiegen, die Zahl der Mietinserate liegt rund 12 % darunter.",
+          "einordnung": "Steigende Mieten bei stagnierenden Kaufpreisen sprechen für den Aufbau von Bestand mit Mietsteigerungspotenzial — ein Renditetreiber für MFH in der Region.",
           "quellen": [
             {
-              "name": "BMJV — „Mietrecht II“: Häufige Fragen (PDF)",
-              "url": "https://www.bmjv.de/SharedDocs/Downloads/DE/Gesetzgebung/FAQ/FAQ_Miete_II.pdf"
+              "name": "IW Köln — IW-Wohnindex Q2/2026",
+              "url": "https://www.iwkoeln.de/studien/pekka-sagner-michael-voigtlaender-mehr-auswahl-beim-kauf-anhaltender-druck-auf-dem-mietmarkt.html"
             },
             {
-              "name": "Deutscher Bundestag — Mietpreisbremse bis 2029 verlängert",
-              "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-mietpreisbremse-1084786"
+              "name": "tagesschau — IW Köln: Mieten in Deutschland deutlich gestiegen",
+              "url": "https://www.tagesschau.de/wirtschaft/mietpreise-anstieg-iw-100.html"
             }
           ]
         }
@@ -116,22 +127,34 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Trumps Diesel-Deal mit Putin — an deutschen Spritpreisen bislang ohne Wirkung",
-          "aufmacher": "US-Präsident Trump hat die Sanktionen für russischen Diesel ausgesetzt; an den deutschen Zapfsäulen war am 10. Oktober davon nichts zu sehen.",
-          "fakten": "Nach einem Telefonat mit Wladimir Putin kündigte Trump zunächst 300.000 Tonnen Diesel für die USA und den Weltmarkt an, später war von bis zu 4,8 Millionen Tonnen die Rede. Die Bundesregierung hält an den Sanktionsbeschlüssen fest: Russisches Öl und Rohölprodukte sind seit 2023 EU-sanktioniert, „wir sind unabhängig von russischem Öl“, so das Bundeswirtschaftsministerium.[7][8] Beobachtungsportale zeigten beim Diesel- und Superpreis vor und nach dem mittäglichen Sprung Werte sehr nah am Vortag — keine größeren Ausschläge. Die Rendite der zehnjährigen Bundesanleihe sank am 9. Oktober auf 3,45 Prozent.[7][9]",
-          "einordnung": "Energiepreise und Anleiherenditen bleiben die zwei Größen, die Inflation und Bauzinsen treiben — und damit jede Finanzierungsrechnung. Solange die Renditen auf diesem Niveau liegen, bleibt Abwarten bei den liquiden Mitteln keine schlechte Position.[9]",
+          "titel": "EZB: Leitzins auf 2,50 % — nächster Entscheid am 29. Oktober",
+          "aufmacher": "Die EZB hat die Zinsen im September erneut um 0,25 Punkte angehoben; der Einlagensatz liegt seit dem 16. September bei 2,50 %.",
+          "fakten": "Es war die zweite Erhöhung 2026 nach dem Schritt vom 11. Juni und der Pause vom 23. Juli. Der Hauptrefinanzierungssatz liegt bei 2,65 %, der Spitzenrefinanzierungssatz bei 2,90 %. Die EZB-Projektion erwartet für 2026 eine Inflation von 3,0 % und ein Wachstum von 0,9 %. Nächster Zinsentscheid: 29. Oktober 2026 (14:15 Uhr).",
+          "einordnung": "Höhere Zinsen stützen Sparzinsen, verteuern aber Kredite — direkt relevant für Immobilienfinanzierung und den Dispo (11,99 %).",
           "quellen": [
             {
-              "name": "tagesschau — US-Dieseldeal mit dem Kreml: Deutschland bleibt beim Nein zu russischem Öl (10.10.2026)",
-              "url": "https://www.tagesschau.de/wirtschaft/energie/trump-diesel-oelpreis-reaktionen-deutschland-100.html"
+              "name": "EZB — Geldpolitische Beschlüsse (10.09.2026)",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
             },
             {
-              "name": "tagesschau — Trump kündigt russische Diesellieferungen an (10.10.2026)",
-              "url": "https://www.tagesschau.de/ausland/amerika/trump-diesellieferungen-russland-100.html"
+              "name": "Kagels Trading — EZB-Zinsentscheid 2026: Termine & aktuelle Zinsen",
+              "url": "https://www.kagels-trading.de/ezb-zinsentscheid/"
+            }
+          ]
+        },
+        {
+          "titel": "Inflation in Deutschland im September voraussichtlich 3,3 %",
+          "aufmacher": "Die Inflationsrate in Deutschland wird für September 2026 voraussichtlich 3,3 % betragen.",
+          "fakten": "Gegenüber August 2026 stiegen die Verbraucherpreise um 0,6 %. Treiber bleiben die Energiepreise (Haushaltsenergie und Kraftstoffe). Die endgültigen Ergebnisse für September werden am 13. Oktober 2026 veröffentlicht. Im Euroraum lag die Inflation im August bei 3,2 %, die Kerninflation bei 2,4 %.",
+          "einordnung": "Anhaltend hohe Inflation stützt die restriktive Linie der EZB und damit das erhöhte Bauzinsniveau — Belastung für Kreditfinanzierungen.",
+          "quellen": [
+            {
+              "name": "Destatis — Inflationsrate im September 2026 voraussichtlich +3,3 %",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"
             },
             {
-              "name": "Trading Economics — Rendite 10-jährige deutsche Staatsanleihe (Stand 09.10.2026)",
-              "url": "https://de.tradingeconomics.com/germany/government-bond-yield"
+              "name": "Kagels Trading — EZB-Zinsentscheid 2026",
+              "url": "https://www.kagels-trading.de/ezb-zinsentscheid/"
             }
           ]
         }
@@ -141,23 +164,16 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 Hermes Agent 0.21.4 → 0.21.6: Update steht weiter offen",
-          "aufmacher": "J.A.R.V.I.S. läuft weiter auf 0.21.4+4975 (Build vom 24. September), die neueste stabile Version ist 0.21.6 vom 8. Oktober.",
-          "fakten": "v0.21.6 ist ein Patch-Release und bündelt die rund 2.100 seit v0.21.5 gemergten Pull Requests als getaggten Stand für Docker und Hermes Cloud; laut Release-Notes folgen die ausführlich kuratierten Änderungsnotizen erst mit v0.22. Der Update-Scan meldet entsprechend weiterhin einen Commit-Rückstand gegenüber dem Upstream.[10]",
-          "einordnung": "Kein Sicherheits- oder Fehlerfix bekannt — der Sprung bleibt optional, kostet aber einen Neustart und gehört damit in ein ruhiges Fenster.[10]",
+          "titel": "Systeme auf aktuellem Stand — nur ein einmalig gelaufener Init-Container",
+          "aufmacher": "Home Assistant Core läuft auf 2026.10.1 (aktuelleste Version), und es ist kein einziges Update offen.",
+          "fakten": "Alle update-Entitäten stehen auf „off“: Core, Supervisor, Betriebssystem, Add-ons, HACS-Integrationen sowie UniFi- und Shelly-Firmware. Der Update-Scan meldet lediglich einen gestoppten Container — firecrawl-starter-monitor-db-init-1, der einmalige Datenbank-Initialisierer des Firecrawl-Stacks, der vor 12 Tagen planmäßig mit Exit-Code 0 beendet wurde (23 von 24 Containern laufen). J.A.R.V.I.S. selbst läuft auf dem stable-Stand b30f95a (24.09.2026); die neueste getaggte Version ist v0.21.6 vom 08.10.2026.",
+          "einordnung": "Kein Handlungsbedarf im Betrieb. Der Hermes-Sprung auf v0.21.6 ist ein Patch-Release ohne bekannte Sicherheitslücke — optional und nur in einem ruhigen Fenster (Neustart).",
           "quellen": [
             {
-              "name": "GitHub — NousResearch/hermes-agent Releases (v0.21.6, 08.10.2026)",
+              "name": "GitHub — NousResearch/hermes-agent Releases",
               "url": "https://github.com/NousResearch/hermes-agent/releases"
             }
           ]
-        },
-        {
-          "titel": "🏠 Home Assistant aktuell — der gemeldete „gestoppte Container“ ist planmäßig beendet",
-          "aufmacher": "Home Assistant Core läuft auf 2026.10.0 und hat aktuell kein einziges offenes Update — die Scan-Warnung betrifft nur einen einmaligen Datenbank-Initialisierer.",
-          "fakten": "Alle update-Entitäten standen heute auf „off“: Core, Add-ons, HACS-Integrationen und Firmware sind damit aktuell (kein Spook-, ConnectLife- oder Music-Assistant-Update mehr offen). Der vom Update-Scan gemeldete gestoppte Container ist firecrawl-starter-monitor-db-init-1 — der einmalige Datenbank-Initialisierer des Firecrawl-Stacks, der vor elf Tagen mit Exit-Code 0 planmäßig beendet wurde. Die übrigen 24 Container des NAS laufen, darunter Paperless-ngx, Immich, Open WebUI und Fredy.",
-          "einordnung": "Kein Handlungsbedarf. Wenn der Init-Container stört, kann er in Portainer gefahrlos entfernt werden — er wird bei einem Stack-Neuaufbau neu erzeugt.",
-          "quellen": []
         }
       ]
     },
@@ -165,20 +181,11 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Tau Robotics: erster humanoider Haushalts-Einsatz als Dienstleistung — 30 Dollar pro Stunde",
-          "aufmacher": "In San Francisco reinigen seit August 2026 humanoide Roboter fremde Wohnungen — für 30 US-Dollar (rund 27 Euro) pro Stunde, fernbedient von Menschen.",
-          "fakten": "Tau Robotics bietet Haus-, Tief- und Büroreinigung an, buchbar nur auf Einladung; zwei Roboter arbeiten eine Stunde für 30 Dollar pro Gerät und werden live von einer Person aus der Ferne gesteuert, unterstützt von KI. Beworben werden Saugen, Wischen von Arbeitsflächen, Müll und Aufräumen. Der CEO räumt ein, dass die KI eine humanoide Reinigung noch nicht autonom leisten kann; der Robotik-Professor Ken Goldberg (UC Berkeley) hält den Ansatz für verfrüht. Einen Kaufpreis gibt es nicht — verkauft werden Arbeitsstunden, keine Roboter. Umrechnung: 30 USD ≈ 27 EUR (Kurs 0,8924 vom 9.10.2026).",
-          "einordnung": "Damit existiert der erste kommerzielle Haushalts-Einsatz von Humanoiden — aber als Dienstleistung mit menschlichem Bediener, nicht als kaufbares Gerät. Für den eigenen Haushalt bleibt 1X NEO (20.000 USD / 499 USD im Monat, Europa ab 2027) weiter die einzige Kaufoption.",
-          "quellen": [
-            {
-              "name": "Tau Robotics — Humanoid Cleaning Service, San Francisco (offizielle Seite)",
-              "url": "https://www.tau-robotics.com/"
-            },
-            {
-              "name": "humanoid.guide — Tau Robotics offers humanoid cleaning service in San Francisco",
-              "url": "https://humanoid.guide/tau-robotics-offers-humanoid-cleaning-service-in-san-francisco/"
-            }
-          ]
+          "titel": "Haushaltsroboter: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     }
