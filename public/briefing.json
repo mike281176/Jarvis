@@ -1,14 +1,14 @@
 {
-  "datum": "Montag, 12.10.2026",
+  "datum": "Dienstag, 13.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "5,1 °C · Regen 2 % · UV 3,3",
-          "aufmacher": "☀️ Klar und trocken. Tageshöchstwert 16,9 °C bei einem Tief von 5,1 °C.",
-          "fakten": "Aktuell 5,1 °C, Höchstwert 16,9 °C. Regenwahrscheinlichkeit nur 2 %, UV-Index 3,3 (mittel).",
-          "einordnung": "Guter Tag für Außenarbeiten an den Objekten — UV-Wert unkritisch, aber nicht unterschätzen.",
+          "titel": "10,9 °C · Regen 69 % · UV 1,1",
+          "aufmacher": "☁️ Bedeckt mit hoher Regenwahrscheinlichkeit. Tageshöchstwert 15,4 °C bei einem Tief von 9,1 °C.",
+          "fakten": "Aktuell 10,9 °C, Höchstwert 15,4 °C, Tief 9,1 °C. Regenwahrscheinlichkeit 69 %, UV-Index 1,1 (niedrig).",
+          "einordnung": "Feuchter Tag — Außenarbeiten an den Objekten besser auf die trockeneren Vormittagsstunden legen.",
           "quellen": []
         }
       ]
@@ -17,14 +17,7 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Mo 12.10. · 14:20 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
-          "aufmacher": "Therapietermin am Montagnachmittag.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "Di 13.10. · 14:00 — Therapiezentrum Snoek",
+          "titel": "Di 13.10. · 14:00 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
           "aufmacher": "Therapietermin am Dienstagnachmittag.",
           "fakten": "",
           "einordnung": "",
@@ -57,30 +50,26 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf-Kriegsdorf: Offenbachstraße ab heute voll gesperrt",
-          "aufmacher": "Ab Montag, 12. Oktober 2026, ist die Offenbachstraße in Troisdorf-Kriegsdorf zwischen Birklestraße und Im Schonsfeld voll gesperrt.",
-          "fakten": "Die Sperrung war ursprünglich für Mitte September vorgesehen und musste verschoben werden. Grund sind Leitungsarbeiten: Kanal, Strom, Gas, Wasser und weitere Leitungen werden verlegt. Ein Ersatzverkehr wird eingerichtet.",
-          "einordnung": "Betrifft die Verkehrsachse im Troisdorfer Osten — planungsrelevant für Fahrten zwischen Kriegsdorf und Innenstadt, auch für Handwerker- und Mietertouren.",
+          "titel": "Troisdorf: Blitzer-Standorte diese Woche",
+          "aufmacher": "Der Rhein-Sieg-Kreis misst in dieser Woche an drei Stellen in Troisdorf die Geschwindigkeit — Schwerpunkt ist Donnerstag, der 15. Oktober.",
+          "fakten": "Am 15. Oktober stehen mobile Messgeräte am K 20 / Mauspfad, in Troisdorf-Bergheim an der Glockenstraße und in Troisdorf-Müllekoven an der Eschmarer Straße. Der Kreis listet für den Zeitraum 12. bis 18. Oktober rund 60 Standorte im Kreisgebiet, überwiegend auf Landstraßen. Hauptunfallursache bleibt überhöhte oder nicht angepasste Geschwindigkeit.",
+          "einordnung": "Mauspfad und Glockenstraße liegen auf typischen Alltagsrouten zwischen Innenstadt, Bergheim und den Gewerbeflächen — für Mieter- und Handwerkerfahrten planungsrelevant.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf — Pressemeldungen Oktober 2026",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/"
+              "name": "Rhein-Sieg-Kreis — Hier wird diese Woche geblitzt (12.–18.10.2026)",
+              "url": "https://www.rhein-sieg-kreis.de/verwaltung-politik/aktuelle-themen/hier-wird-diese-woche-geblitzt_12310.php"
             }
           ]
         },
         {
-          "titel": "Region Bonn/Rhein-Sieg: Neuwied wird gleichberechtigter Partner im :rak",
-          "aufmacher": "Der Landkreis Neuwied ist dem Regionalen Arbeitskreis Region Bundesstadt Bonn (:rak) als gleichberechtigter Partner beigetreten.",
-          "fakten": "Bonn, der Rhein-Sieg-Kreis und der Landkreis Ahrweiler arbeiten dort seit über drei Jahrzehnten zusammen; mit der neuen Kooperationsvereinbarung kommt Neuwied hinzu. Als gemeinsame Ergebnisse gelten unter anderem das regionale Einzelhandelskonzept und das regionale Siedlungsflächen- und Dichtekonzept.",
-          "einordnung": "Interkommunale Zusammenarbeit in der Kernregion — relevant für Standort-, Gewerbe- und Flächenentwicklung im Rhein-Sieg-Kreis.",
+          "titel": "Troisdorf: Autofahrer missachtet Vorfahrt — Radfahrer verletzt",
+          "aufmacher": "Ein 48-jähriger Autofahrer aus Lohmar hat am Donnerstag (8. Oktober) in Troisdorf beim Rechtsabbiegen die Vorfahrt eines Radfahrers missachtet.",
+          "fakten": "Der Zusammenstoß ereignete sich gegen 14:25 Uhr auf der Asselbachstraße aus Richtung Hauptstraße kommend, an der Einmündung zum Mauspfad. Der Radfahrer wurde leicht verletzt und in ein Krankenhaus gebracht. Die Kreispolizeibehörde Rhein-Sieg-Kreis hat den Unfall am 9. Oktober gemeldet.",
+          "einordnung": "Die Einmündung Asselbachstraße/Mauspfad ist ein unfallauffälliger Knoten im Stadtgebiet — dieselbe Straße steht am 15. Oktober auch auf der Blitzerliste.",
           "quellen": [
             {
-              "name": "Bundesstadt Bonn — Pressemitteilung „:rak stärkt die Stimme der Region Bonn“",
-              "url": "https://www.bonn.de/pressemitteilungen/oktober-2026/rak-staerkt-die-stimme-der-region-bonn.php"
-            },
-            {
-              "name": "Rhein-Sieg-Kreis — Presseinformationen",
-              "url": "https://www.rhein-sieg-kreis.de/presseinformationen/index.php"
+              "name": "Presseportal — Kreispolizeibehörde Rhein-Sieg-Kreis (09.10.2026)",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6368146"
             }
           ]
         }
@@ -90,34 +79,30 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen klettern über die Vier-Prozent-Marke",
-          "aufmacher": "Baufinanzierungen sind seit dem Sommer deutlich teurer geworden; die Zinsen liegen wieder klar über 4 %.",
-          "fakten": "Dr. Klein nennt zum 09.10.2026 Top-Zinsen zwischen 4,16 % und 4,71 % je nach Zinsbindung. Finanztip beziffert zehnjährige Darlehen auf etwa 4,4 % (60 % Beleihung) bzw. 4,5 % (80 %) und meldet seit Anfang Juli einen Anstieg um rund 0,6 Prozentpunkte. Für Oktober werden Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen erwartet.",
-          "einordnung": "Höhere Zinsen verteuern die Kapitalkosten für MFH-Käufe — bei der Hebel-Strategie (nur Kaufnebenkosten aus EK, Rest Bankdarlehen) entscheidet die Zinshöhe direkt über den Cashflow.",
+          "titel": "Troisdorf: Mieten steigen um 6,0 Prozent",
+          "aufmacher": "Troisdorf zählt mit einem Mietanstieg von 6,0 Prozent auf 10,52 €/m² zu den Städten mit den stärksten Mietsteigerungen in NRW.",
+          "fakten": "Die durchschnittliche Angebotsmiete (nettokalt) in NRW liegt bei 9,2 €/m² — ein Plus von 4,5 Prozent gegenüber dem Vorjahr. Troisdorf liegt mit 10,52 €/m² deutlich über dem Landesdurchschnitt und belegt landesweit Platz 5 der stärksten Mietpreisveränderungen. Spitzenreiter im Land sind Köln (13,12 €/m²), Düsseldorf (12,99 €/m²) und Bonn (11,85 €/m²); günstigste Stadt ist Gelsenkirchen mit 7,19 €/m². In NRW gelten 77 von 78 untersuchten Städten als Mietspiegel-Kommunen, die Mietpreisbremse greift in 57 Kommunen.",
+          "einordnung": "Die wichtigste Zahl der Woche für den Bestand: 6 Prozent Mietwachstum bei stagnierenden Kaufpreisen verbessert die Cashflow-Rechnung im Rhein-Sieg-Kreis — und stützt die Refinanzierung über mehrere Banken.",
+          "quellen": [
+            {
+              "name": "Mietspiegel NRW 2026 — Angebotsmieten nach Stadt",
+              "url": "https://www.mietspiegel-2026.de/nrw"
+            }
+          ]
+        },
+        {
+          "titel": "Bauzinsen: zehn Jahre ab 4,16 Prozent",
+          "aufmacher": "Die Bauzinsen bleiben klar über der Vier-Prozent-Marke — für zehnjährige Darlehen liegen die Bestzinsen aktuell zwischen 4,16 und 4,71 Prozent.",
+          "fakten": "Dr. Klein nennt in der Zinsübersicht vom 9. Oktober 2026 Top-Zinsen von 4,16 bis 4,71 Prozent je nach Sollzinsbindung. Finanztip beziffert das Niveau mit Stand 7. Oktober auf 4,4 bis 5,0 Prozent und meldet seit Anfang Juli einen Anstieg um rund 0,6 Prozentpunkte. Interhyp nennt für zehnjährige Darlehen rund 4,2 Prozent. Für Oktober werden Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen erwartet.",
+          "einordnung": "Realistisch ist bei 80 Prozent Beleihung mit rund 4,5 Prozent zu rechnen — entscheidend für die Kalkulation, nur die Kaufnebenkosten aus Eigenkapital zu decken und den Rest über Bankdarlehen zu finanzieren.",
           "quellen": [
             {
               "name": "Dr. Klein — Bauzinsen aktuell (Stand 09.10.2026)",
               "url": "https://www.drklein.de/aktuelle-bauzinsen.html"
             },
             {
-              "name": "Finanztip — Aktuelle Bauzinsen (Stand 07.10.2026)",
-              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
-            }
-          ]
-        },
-        {
-          "titel": "IW-Wohnindex: Mieten steigen weiter, Kaufpreise stagnieren",
-          "aufmacher": "Der IW-Wohnindex Q2/2026 zeigt weiter deutlich steigende Angebotsmieten bei nur moderat steigenden Kaufpreisen.",
-          "fakten": "Bundesweit liegen die Angebotsmieten 4,0 % über dem Vorjahr und 1,3 % über dem Vorquartal; in Köln sogar +7,9 %. Eigentumswohnungen sowie Ein- und Zweifamilienhäuser verteuerten sich nur um je 0,8 % gegenüber dem Vorjahresquartal. Das Kaufangebot ist seit Anfang 2022 deutlich gestiegen, die Zahl der Mietinserate liegt rund 12 % darunter.",
-          "einordnung": "Steigende Mieten bei stagnierenden Kaufpreisen sprechen für den Aufbau von Bestand mit Mietsteigerungspotenzial — ein Renditetreiber für MFH in der Region.",
-          "quellen": [
-            {
-              "name": "IW Köln — IW-Wohnindex Q2/2026",
-              "url": "https://www.iwkoeln.de/studien/pekka-sagner-michael-voigtlaender-mehr-auswahl-beim-kauf-anhaltender-druck-auf-dem-mietmarkt.html"
-            },
-            {
-              "name": "tagesschau — IW Köln: Mieten in Deutschland deutlich gestiegen",
-              "url": "https://www.tagesschau.de/wirtschaft/mietpreise-anstieg-iw-100.html"
+              "name": "Interhyp — Bauzinsen aktuell",
+              "url": "https://www.interhyp.de/zinsen/"
             }
           ]
         }
@@ -127,34 +112,34 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB: Leitzins auf 2,50 % — nächster Entscheid am 29. Oktober",
-          "aufmacher": "Die EZB hat die Zinsen im September erneut um 0,25 Punkte angehoben; der Einlagensatz liegt seit dem 16. September bei 2,50 %.",
-          "fakten": "Es war die zweite Erhöhung 2026 nach dem Schritt vom 11. Juni und der Pause vom 23. Juli. Der Hauptrefinanzierungssatz liegt bei 2,65 %, der Spitzenrefinanzierungssatz bei 2,90 %. Die EZB-Projektion erwartet für 2026 eine Inflation von 3,0 % und ein Wachstum von 0,9 %. Nächster Zinsentscheid: 29. Oktober 2026 (14:15 Uhr).",
-          "einordnung": "Höhere Zinsen stützen Sparzinsen, verteuern aber Kredite — direkt relevant für Immobilienfinanzierung und den Dispo (11,99 %).",
+          "titel": "DAX fällt unter 25.000 Punkte",
+          "aufmacher": "Der DAX hat die Marke von 25.000 Punkten nach unten durchbrochen und schloss am 8. Oktober bei 24.806 Zählern.",
+          "fakten": "Das entspricht einem Tagesverlust von 1,18 Prozent; der MDAX gab 2,00 Prozent auf 29.508 Punkte nach. Belastet wird der Markt durch hohe Öl- und Gaspreise infolge der De-facto-Sperrung der Straße von Hormus, hohe Anleiherenditen und die Sorge um Frankreich. Zehnjährige Bundesanleihen rentieren bei rund 3,5 Prozent, französische Staatsanleihen bei fast 5 Prozent. Der Euro notierte zuletzt bei 1,1188 Dollar; der EZB-Referenzkurs vom 12. Oktober liegt bei 1,1181 Dollar je Euro.",
+          "einordnung": "Die Kombination aus hohen Anleiherenditen und schwachem Euro ist der eigentliche Kostentreiber für Immobilienfinanzierungen — der DAX ist dabei nur das Thermometer, nicht die Ursache.",
+          "quellen": [
+            {
+              "name": "tagesschau — Marktbericht: DAX fällt unter 25.000 Punkte (08.10.2026)",
+              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-boerse-dax-oel-100.html"
+            },
+            {
+              "name": "EZB — Euro-Referenzkurs US-Dollar",
+              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html"
+            }
+          ]
+        },
+        {
+          "titel": "EZB: Nächster Zinsentscheid am 29. Oktober",
+          "aufmacher": "Nach der Anhebung auf 2,50 Prozent im September tagt der EZB-Rat das nächste Mal am 29. Oktober 2026.",
+          "fakten": "Mit Wirkung vom 16. September liegt der Einlagensatz bei 2,50 Prozent, der Hauptrefinanzierungssatz bei 2,65 Prozent und der Spitzenrefinanzierungssatz bei 2,90 Prozent. Die EZB-Fachleute erwarten eine Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028); die Wachstumsprojektion liegt bei 0,9, 1,4 und 1,5 Prozent. Der Rat legt sich laut eigener Aussage nicht im Voraus auf einen Zinspfad fest.",
+          "einordnung": "Kurzfristig ist keine Entlastung bei kurzen Zinsbindungen zu erwarten. Wer 2027 refinanziert, sollte den Oktober-Termin und die Projektionsrevisionen im Blick behalten.",
           "quellen": [
             {
               "name": "EZB — Geldpolitische Beschlüsse (10.09.2026)",
               "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
             },
             {
-              "name": "Kagels Trading — EZB-Zinsentscheid 2026: Termine & aktuelle Zinsen",
-              "url": "https://www.kagels-trading.de/ezb-zinsentscheid/"
-            }
-          ]
-        },
-        {
-          "titel": "Inflation in Deutschland im September voraussichtlich 3,3 %",
-          "aufmacher": "Die Inflationsrate in Deutschland wird für September 2026 voraussichtlich 3,3 % betragen.",
-          "fakten": "Gegenüber August 2026 stiegen die Verbraucherpreise um 0,6 %. Treiber bleiben die Energiepreise (Haushaltsenergie und Kraftstoffe). Die endgültigen Ergebnisse für September werden am 13. Oktober 2026 veröffentlicht. Im Euroraum lag die Inflation im August bei 3,2 %, die Kerninflation bei 2,4 %.",
-          "einordnung": "Anhaltend hohe Inflation stützt die restriktive Linie der EZB und damit das erhöhte Bauzinsniveau — Belastung für Kreditfinanzierungen.",
-          "quellen": [
-            {
-              "name": "Destatis — Inflationsrate im September 2026 voraussichtlich +3,3 %",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_348_611.html"
-            },
-            {
-              "name": "Kagels Trading — EZB-Zinsentscheid 2026",
-              "url": "https://www.kagels-trading.de/ezb-zinsentscheid/"
+              "name": "LBBW — EZB-Zinsentscheid: Leitzins, Prognosen und Termine 2026",
+              "url": "https://www.lbbw.de/artikel/maerkte-verstehen/ezb-zinsentscheid-leitzins-prognosen_ait4bfmrfe_d.html"
             }
           ]
         }
@@ -164,14 +149,26 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Systeme auf aktuellem Stand — nur ein einmalig gelaufener Init-Container",
-          "aufmacher": "Home Assistant Core läuft auf 2026.10.1 (aktuelleste Version), und es ist kein einziges Update offen.",
-          "fakten": "Alle update-Entitäten stehen auf „off“: Core, Supervisor, Betriebssystem, Add-ons, HACS-Integrationen sowie UniFi- und Shelly-Firmware. Der Update-Scan meldet lediglich einen gestoppten Container — firecrawl-starter-monitor-db-init-1, der einmalige Datenbank-Initialisierer des Firecrawl-Stacks, der vor 12 Tagen planmäßig mit Exit-Code 0 beendet wurde (23 von 24 Containern laufen). J.A.R.V.I.S. selbst läuft auf dem stable-Stand b30f95a (24.09.2026); die neueste getaggte Version ist v0.21.6 vom 08.10.2026.",
-          "einordnung": "Kein Handlungsbedarf im Betrieb. Der Hermes-Sprung auf v0.21.6 ist ein Patch-Release ohne bekannte Sicherheitslücke — optional und nur in einem ruhigen Fenster (Neustart).",
+          "titel": "Paperless-ngx 3.3.1 verfügbar",
+          "aufmacher": "Für Paperless-ngx steht Version 3.3.1 bereit — ein Wartungsrelease mit Fehlerkorrekturen rund um Dokumentversionen.",
+          "fakten": "Die Version wurde am 12. Oktober 2026 veröffentlicht. Sie indexiert Dokumentversionen künftig als ihr jeweiliges Root-Dokument, nutzt den effektiven Inhalt des Root-Dokuments für den LLM-Index, korrigiert die Rechteprüfung bei Einzelobjekten und liefert klarere Fehlermeldungen bei ungültigem JSON. Zusätzlich wird ein abgebrochener Suchindex-Aufbau automatisch wiederholt. Eingesetzt ist derzeit 3.3.0.",
+          "einordnung": "Reine Fehlerkorrekturen ohne Schemaänderung — unkritisch, aber sinnvoll, weil die Fixes Dokumentrechte, Papierkorb und Suche betreffen. Deployment erst nach Freigabe.",
           "quellen": [
             {
-              "name": "GitHub — NousResearch/hermes-agent Releases",
-              "url": "https://github.com/NousResearch/hermes-agent/releases"
+              "name": "GitHub — paperless-ngx Releases (v3.3.1)",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
+            }
+          ]
+        },
+        {
+          "titel": "Systemstatus: keine offenen Updates",
+          "aufmacher": "In Home Assistant steht keine einzige Update-Entität auf aktiv — Core, Add-ons, HACS-Integrationen und Firmware sind aktuell.",
+          "fakten": "Geprüft wurden 98 Update-Entitäten: Bis auf einige als nicht verfügbar gemeldete Firmware-Sensoren (Rasen, Einfahrt, WLED-Segmente, IBC) melden alle den Zustand aus. Der Server-Scan meldet als einzigen Befund einen gestoppten Docker-Container — den einmaligen Datenbank-Initialisierer des Firecrawl-Stacks, der planmäßig mit Exit-Code 0 beendet wurde.",
+          "einordnung": "Kein Handlungsbedarf im Betrieb; der einzige echte Punkt bleibt das Paperless-Update.",
+          "quellen": [
+            {
+              "name": "Home Assistant — Update-Entitäten (Live-Abfrage)",
+              "url": "https://www.home-assistant.io/integrations/update/"
             }
           ]
         }
@@ -181,11 +178,20 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Haushaltsroboter: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "Flourish 1: Haushaltsroboter für 3.555 Dollar",
+          "aufmacher": "Das Startup Flourish Robots hat mit Flourish 1 einen Haushaltsroboter für 3.555 US-Dollar vorgestellt — und unterbietet damit alle bislang bekannten Humanoiden deutlich.",
+          "fakten": "Vorbestellungen für die ersten 50 Einheiten sind seit dem 29. September 2026 offen, die Auslieferung soll im Dezember 2026 beginnen. Zum Preis von 3.555 US-Dollar — nach EZB-Referenzkurs vom 12. Oktober (1,1181 USD je Euro) rund 3.180 Euro — kommt ein fahrbarer Roboter auf sechsrädriger Basis mit zwei Armen (je 1,5 kg Nutzlast), Lidar in Bodennähe und Handgelenkkameras. Aufgaben wie Schuhe, Kleidung und Spielzeug aufsammeln, Geschirr einräumen, Tische wischen, Pflanzen gießen oder ein Katzenklo leeren werden per Smartphone in rund 30 Minuten angelernt — ohne Programmierung; die Rechenleistung läuft in der Cloud. Das Gerät ist nicht wasserdicht und für feinmotorische Arbeiten nicht geeignet.",
+          "einordnung": "Erste echte Preisklasse unter 4.000 Dollar und damit erstmals auf dem Niveau einer gehobenen Haushaltsanschaffung — ein Aufräum- und Holroboter, kein Haushaltsgeneralist. Für den 10-Jahres-Blick ist das der erste glaubwürdige Einstiegspunkt von mehreren.",
+          "quellen": [
+            {
+              "name": "PR Newswire — Flourish Robots Launches Flourish 1 (29.09.2026)",
+              "url": "https://www.prnewswire.com/news-releases/flourish-robots-launches-flourish-1--a-3-555-home-robot-built-to-give-people-their-potential-back-302891638.html"
+            },
+            {
+              "name": "The Robot Report — Meet Flourish One",
+              "url": "https://www.therobotreport.com/meet-flourish-one-raspberry-pi-powered-humanoid-built-busy-parents/"
+            }
+          ]
         }
       ]
     }
