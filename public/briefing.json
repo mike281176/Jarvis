@@ -1,14 +1,14 @@
 {
-  "datum": "Dienstag, 13.10.2026",
+  "datum": "Mittwoch, 14.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "10,9 °C · Regen 69 % · UV 1,1",
-          "aufmacher": "☁️ Bedeckt mit hoher Regenwahrscheinlichkeit. Tageshöchstwert 15,4 °C bei einem Tief von 9,1 °C.",
-          "fakten": "Aktuell 10,9 °C, Höchstwert 15,4 °C, Tief 9,1 °C. Regenwahrscheinlichkeit 69 %, UV-Index 1,1 (niedrig).",
-          "einordnung": "Feuchter Tag — Außenarbeiten an den Objekten besser auf die trockeneren Vormittagsstunden legen.",
+          "titel": "12,2 °C · Regen 75 % · UV 3,2",
+          "aufmacher": "☁️ Bedeckt mit hoher Regenwahrscheinlichkeit. Tageshöchstwert 18,7 °C bei einem Tief von 11,1 °C.",
+          "fakten": "Aktuell 12,2 °C, Höchstwert 18,7 °C, Tief 11,1 °C. Regenwahrscheinlichkeit 75 %, UV-Index 3,2 (mittel).",
+          "einordnung": "Feuchter Vormittag — Außenarbeiten an den Objekten auf die Nachmittagsstunden legen.",
           "quellen": []
         }
       ]
@@ -17,20 +17,6 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Di 13.10. · 14:00 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
-          "aufmacher": "Therapietermin am Dienstagnachmittag.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "Di 13.10. · 14:35 — Therapiezentrum Snoek",
-          "aufmacher": "Anschließender Therapietermin am Dienstag.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
           "titel": "Mi 14.10. · 10:00 — Quixx-Meeting",
           "aufmacher": "Quixx24-Meeting am Mittwochvormittag.",
           "fakten": "",
@@ -38,7 +24,7 @@
           "quellen": []
         },
         {
-          "titel": "Do 15.10. · 15:00 — Therapiezentrum Snoek",
+          "titel": "Do 15.10. · 15:00 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
           "aufmacher": "Therapietermin am Donnerstagnachmittag.",
           "fakten": "",
           "einordnung": "",
@@ -50,26 +36,26 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Blitzer-Standorte diese Woche",
-          "aufmacher": "Der Rhein-Sieg-Kreis misst in dieser Woche an drei Stellen in Troisdorf die Geschwindigkeit — Schwerpunkt ist Donnerstag, der 15. Oktober.",
-          "fakten": "Am 15. Oktober stehen mobile Messgeräte am K 20 / Mauspfad, in Troisdorf-Bergheim an der Glockenstraße und in Troisdorf-Müllekoven an der Eschmarer Straße. Der Kreis listet für den Zeitraum 12. bis 18. Oktober rund 60 Standorte im Kreisgebiet, überwiegend auf Landstraßen. Hauptunfallursache bleibt überhöhte oder nicht angepasste Geschwindigkeit.",
-          "einordnung": "Mauspfad und Glockenstraße liegen auf typischen Alltagsrouten zwischen Innenstadt, Bergheim und den Gewerbeflächen — für Mieter- und Handwerkerfahrten planungsrelevant.",
+          "titel": "Troisdorf: Schüsse auf ein Wohnhaus — Ermittlungen wegen versuchten Tötungsdelikts",
+          "aufmacher": "Unbekannte haben in der Nacht zum Dienstag (13.10.2026) gegen 00:33 Uhr mehrere Schüsse auf ein Einfamilienhaus in Troisdorf abgegeben; Polizei und Staatsanwaltschaft ermitteln wegen des Verdachts eines versuchten Tötungsdelikts.",
+          "fakten": "Ein 48-jähriger Bewohner wurde durch die Schussgeräusche aufmerksam und entdeckte wenig später Einschusslöcher im Erdgeschoss. Er hielt sich zur Tatzeit mit seiner Ehefrau und den beiden Kindern im Haus auf; die Familie blieb unverletzt. Eine sofort eingeleitete Fahndung nach den Tätern verlief negativ. Die Kreispolizeibehörde Rhein-Sieg-Kreis hat die Meldung am 13. Oktober um 15:40 Uhr veröffentlicht.",
+          "einordnung": "Der Fall wird von der Bonner Polizei und der Staatsanwaltschaft geführt, weil ein versuchtes Tötungsdelikt im Raum steht. Ein Motiv ist bislang nicht veröffentlicht — für die Bestandsverwaltung eine Einzelmeldung ohne erkennbaren Bezug zu den Objekten.",
           "quellen": [
             {
-              "name": "Rhein-Sieg-Kreis — Hier wird diese Woche geblitzt (12.–18.10.2026)",
-              "url": "https://www.rhein-sieg-kreis.de/verwaltung-politik/aktuelle-themen/hier-wird-diese-woche-geblitzt_12310.php"
+              "name": "Presseportal — POL-SU: Schüsse auf ein Wohnhaus in Troisdorf (13.10.2026)",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6370488"
             }
           ]
         },
         {
-          "titel": "Troisdorf: Autofahrer missachtet Vorfahrt — Radfahrer verletzt",
-          "aufmacher": "Ein 48-jähriger Autofahrer aus Lohmar hat am Donnerstag (8. Oktober) in Troisdorf beim Rechtsabbiegen die Vorfahrt eines Radfahrers missachtet.",
-          "fakten": "Der Zusammenstoß ereignete sich gegen 14:25 Uhr auf der Asselbachstraße aus Richtung Hauptstraße kommend, an der Einmündung zum Mauspfad. Der Radfahrer wurde leicht verletzt und in ein Krankenhaus gebracht. Die Kreispolizeibehörde Rhein-Sieg-Kreis hat den Unfall am 9. Oktober gemeldet.",
-          "einordnung": "Die Einmündung Asselbachstraße/Mauspfad ist ein unfallauffälliger Knoten im Stadtgebiet — dieselbe Straße steht am 15. Oktober auch auf der Blitzerliste.",
+          "titel": "Troisdorf: Street Food Festival auf der Kölner Straße",
+          "aufmacher": "Vom 16. bis 18. Oktober 2026 wird die Kölner Straße in der Troisdorfer Innenstadt für drei Tage zur Genussmeile.",
+          "fakten": "Rund 15 Street-Food-Trucks aus der Region und von weiter her bieten internationale Spezialitäten, dazu Cocktails, Wein und eine Chill-out-Lounge mit Musik. Der Eintritt ist frei. Öffnungszeiten: Freitag 17:00–22:00 Uhr, Samstag 15:00–22:00 Uhr, Sonntag 12:00–19:00 Uhr. Veranstaltungsort ist die Fußgängerzone Kölner Straße.",
+          "einordnung": "Anwohner- und Anlieferungsverkehr in der Innenstadt ist am Wochenende eingeschränkt — Handwerker- und Mietertermine in der Fußgängerzone besser auf Montag legen.",
           "quellen": [
             {
-              "name": "Presseportal — Kreispolizeibehörde Rhein-Sieg-Kreis (09.10.2026)",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6368146"
+              "name": "Stadt Troisdorf — Street Food Festival: Genussmeile in der Fußgängerzone",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/street-food-festival-bringt-kulinarische-vielfalt-in-die-troisdorfer-innenstadt/"
             }
           ]
         }
@@ -79,30 +65,34 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Troisdorf: Mieten steigen um 6,0 Prozent",
-          "aufmacher": "Troisdorf zählt mit einem Mietanstieg von 6,0 Prozent auf 10,52 €/m² zu den Städten mit den stärksten Mietsteigerungen in NRW.",
-          "fakten": "Die durchschnittliche Angebotsmiete (nettokalt) in NRW liegt bei 9,2 €/m² — ein Plus von 4,5 Prozent gegenüber dem Vorjahr. Troisdorf liegt mit 10,52 €/m² deutlich über dem Landesdurchschnitt und belegt landesweit Platz 5 der stärksten Mietpreisveränderungen. Spitzenreiter im Land sind Köln (13,12 €/m²), Düsseldorf (12,99 €/m²) und Bonn (11,85 €/m²); günstigste Stadt ist Gelsenkirchen mit 7,19 €/m². In NRW gelten 77 von 78 untersuchten Städten als Mietspiegel-Kommunen, die Mietpreisbremse greift in 57 Kommunen.",
-          "einordnung": "Die wichtigste Zahl der Woche für den Bestand: 6 Prozent Mietwachstum bei stagnierenden Kaufpreisen verbessert die Cashflow-Rechnung im Rhein-Sieg-Kreis — und stützt die Refinanzierung über mehrere Banken.",
+          "titel": "Wohnungsmarkt: Metropolen geben nach, B-Lagen legen zu",
+          "aufmacher": "Die Kaufpreise driften auseinander: In den sieben größten Städten sinken die Preise für Eigentumswohnungen um 0,4 Prozent im Vorjahresvergleich, in Großstädten abseits der Top-7 steigen sie um 2,0 Prozent.",
+          "fakten": "Bundesweit stabilisieren sich die Preise seitwärts und legen im Jahresschnitt nur noch rund 0,6 bis 0,7 Prozent zu. Dem Markt fehlen schätzungsweise 1,35 bis 1,4 Millionen Wohnungen; das ifo Institut erwartet für 2026 nur noch rund 185.000 fertiggestellte Wohnungen — ein Tiefstand seit über 15 Jahren. Der Anteil der Mietanfragen am Gesamtmarkt ist auf über 81 Prozent gestiegen. Eine Eigentumswohnung kostet laut Europace-Daten im Schnitt 3.480 €/m², ein Neubau 4.418 €/m² und ein Bestandshaus 3.033 €/m² (Stand Oktober 2026). Ob die im Report genannte Deckelung von Indexmieten auf 3,5 Prozent pro Jahr bereits seit Mitte 2026 greift, ist nicht unabhängig bestätigt.",
+          "einordnung": "Genau das Segment, in dem Mikes Cashflow-Strategie arbeitet — B-Lagen wachsen weiter, während der Einkauf in den Metropolen teuer bleibt und dort leicht nachgibt. 3.480 €/m² Durchschnittspreis setzt die Latte für Ankaufskalkulationen im Rhein-Sieg-Kreis.",
           "quellen": [
             {
-              "name": "Mietspiegel NRW 2026 — Angebotsmieten nach Stadt",
-              "url": "https://www.mietspiegel-2026.de/nrw"
+              "name": "Wohnungsmarkt-Report Oktober 2026 (Stand 05.10.2026)",
+              "url": "https://www.immobilien-henke.de/de/infos-zum-wohnungsmarkt/aktuelle-lage-auf-dem-wohnungsmarkt-im-oktober-2026"
+            },
+            {
+              "name": "Dr. Klein — Immobilienpreise 2026 (Europace-Daten, Stand Oktober 2026)",
+              "url": "https://www.drklein.de/immobilienpreise.html"
             }
           ]
         },
         {
-          "titel": "Bauzinsen: zehn Jahre ab 4,16 Prozent",
-          "aufmacher": "Die Bauzinsen bleiben klar über der Vier-Prozent-Marke — für zehnjährige Darlehen liegen die Bestzinsen aktuell zwischen 4,16 und 4,71 Prozent.",
-          "fakten": "Dr. Klein nennt in der Zinsübersicht vom 9. Oktober 2026 Top-Zinsen von 4,16 bis 4,71 Prozent je nach Sollzinsbindung. Finanztip beziffert das Niveau mit Stand 7. Oktober auf 4,4 bis 5,0 Prozent und meldet seit Anfang Juli einen Anstieg um rund 0,6 Prozentpunkte. Interhyp nennt für zehnjährige Darlehen rund 4,2 Prozent. Für Oktober werden Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen erwartet.",
-          "einordnung": "Realistisch ist bei 80 Prozent Beleihung mit rund 4,5 Prozent zu rechnen — entscheidend für die Kalkulation, nur die Kaufnebenkosten aus Eigenkapital zu decken und den Rest über Bankdarlehen zu finanzieren.",
+          "titel": "Bauzinsen: zehn Jahre ab rund 4,16 Prozent",
+          "aufmacher": "Für zehnjährige Baufinanzierungen liegen die Topkonditionen bei etwa 4,16 Prozent effektivem Jahreszins bei 60 Prozent Beleihung.",
+          "fakten": "Der Marktdurchschnitt liegt typischerweise 0,2 bis 0,4 Prozentpunkte höher. Die maßgebliche 10-jährige Bundesanleihe rentiert bei rund 2,91 Prozent, der Trend ist seitwärts. Dr. Klein nennt in der Zinsübersicht zum 5. Oktober Top-Zinsen von 4,12 bis 4,59 Prozent je nach Sollzinsbindung. Ein Unterschied von 0,5 Prozentpunkten bedeutet bei 300.000 Euro Darlehen über zehn Jahre Zinsbindung rund 15.000 Euro Mehrbelastung.",
+          "einordnung": "Für die nächste Tranche bleibt rund 4,5 Prozent bei 80 Prozent Beleihung die realistische Kalkulationsbasis — Kaufnebenkosten aus Eigenkapital, Rest über Bankdarlehen. Das Sonderkündigungsrecht nach zehn Jahren bleibt der Refinanzierungshebel.",
           "quellen": [
             {
-              "name": "Dr. Klein — Bauzinsen aktuell (Stand 09.10.2026)",
-              "url": "https://www.drklein.de/aktuelle-bauzinsen.html"
+              "name": "Baufi Deutschland — Bauzinsen aktuell 14.10.2026",
+              "url": "https://baufi-deutschland.de/aktuelle-bauzinsen/"
             },
             {
-              "name": "Interhyp — Bauzinsen aktuell",
-              "url": "https://www.interhyp.de/zinsen/"
+              "name": "Dr. Klein — Zinsentwicklung Baufinanzierung 2026",
+              "url": "https://www.drklein.de/zinsentwicklung-prognose.html"
             }
           ]
         }
@@ -112,34 +102,26 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "DAX fällt unter 25.000 Punkte",
-          "aufmacher": "Der DAX hat die Marke von 25.000 Punkten nach unten durchbrochen und schloss am 8. Oktober bei 24.806 Zählern.",
-          "fakten": "Das entspricht einem Tagesverlust von 1,18 Prozent; der MDAX gab 2,00 Prozent auf 29.508 Punkte nach. Belastet wird der Markt durch hohe Öl- und Gaspreise infolge der De-facto-Sperrung der Straße von Hormus, hohe Anleiherenditen und die Sorge um Frankreich. Zehnjährige Bundesanleihen rentieren bei rund 3,5 Prozent, französische Staatsanleihen bei fast 5 Prozent. Der Euro notierte zuletzt bei 1,1188 Dollar; der EZB-Referenzkurs vom 12. Oktober liegt bei 1,1181 Dollar je Euro.",
-          "einordnung": "Die Kombination aus hohen Anleiherenditen und schwachem Euro ist der eigentliche Kostentreiber für Immobilienfinanzierungen — der DAX ist dabei nur das Thermometer, nicht die Ursache.",
+          "titel": "DAX schließt 0,1 Prozent tiefer bei 25.259 Punkten",
+          "aufmacher": "Der DAX konnte ein zwischenzeitliches Plus von 0,7 Prozent nicht halten und schloss am 13. Oktober 0,1 Prozent tiefer bei 25.259 Punkten.",
+          "fakten": "Belastend wirkten neue Sorgen um den Chipsektor nach Berichten über leistungsfähige KI-Chips des chinesischen Herstellers CXMT sowie der holprige Start der US-Berichtssaison zum dritten Quartal. Brent-Öl notierte am frühen Abend knapp unter 106 Dollar pro Barrel. Stützend wirkte die neue IWF-Prognose, die für Deutschland 2026 ein BIP-Wachstum von 1,3 Prozent erwartet. Am Montag hatte der Leitindex noch knapp 0,8 Prozent zugelegt.",
+          "einordnung": "Chip-Sorgen und Energiepreise bleiben die Treiber. Für Immobilienfinanzierungen zählt weiter die Anleiherendite, nicht der Index — der DAX ist nur das Thermometer.",
           "quellen": [
             {
-              "name": "tagesschau — Marktbericht: DAX fällt unter 25.000 Punkte (08.10.2026)",
-              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-boerse-dax-oel-100.html"
-            },
-            {
-              "name": "EZB — Euro-Referenzkurs US-Dollar",
-              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html"
+              "name": "tagesschau — Marktbericht: DAX driftet ins Minus (13.10.2026)",
+              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-boerse-116.html"
             }
           ]
         },
         {
-          "titel": "EZB: Nächster Zinsentscheid am 29. Oktober",
-          "aufmacher": "Nach der Anhebung auf 2,50 Prozent im September tagt der EZB-Rat das nächste Mal am 29. Oktober 2026.",
-          "fakten": "Mit Wirkung vom 16. September liegt der Einlagensatz bei 2,50 Prozent, der Hauptrefinanzierungssatz bei 2,65 Prozent und der Spitzenrefinanzierungssatz bei 2,90 Prozent. Die EZB-Fachleute erwarten eine Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028); die Wachstumsprojektion liegt bei 0,9, 1,4 und 1,5 Prozent. Der Rat legt sich laut eigener Aussage nicht im Voraus auf einen Zinspfad fest.",
-          "einordnung": "Kurzfristig ist keine Entlastung bei kurzen Zinsbindungen zu erwarten. Wer 2027 refinanziert, sollte den Oktober-Termin und die Projektionsrevisionen im Blick behalten.",
+          "titel": "Inflation im September mit 3,3 Prozent bestätigt",
+          "aufmacher": "Das Statistische Bundesamt hat die Inflationsrate für September 2026 mit +3,3 Prozent bestätigt — der höchste Wert seit Dezember 2023.",
+          "fakten": "Energieprodukte verteuerten sich um 14,9 Prozent gegenüber September 2025, nach +10,5 Prozent im August und +8,3 Prozent im Juli. Gegenüber dem Vormonat stieg der Verbraucherpreisindex um 0,6 Prozent; leichtes Heizöl legte um 18,5 Prozent zu, Kraftstoffe um 6,9 Prozent. Nahrungsmittel verteuerten sich nur um 0,4 Prozent. Die Kerninflation ohne Nahrungsmittel und Energie liegt unverändert bei 2,4 Prozent. Als Preistreiber nennt Destatis den seit Beginn des Iran-Kriegs gestiegenen Rohölpreis, teilweise gedämpft durch die erneute Senkung der Energiesteuer auf Kraftstoffe.",
+          "einordnung": "Der Preisauftrieb ist energiegetrieben; die Kerninflation von 2,4 Prozent zeigt, dass die Breite fehlt. Für die Finanzierung ist das die unangenehme Kombination: hohe Energiepreise stützen die Anleiherenditen und damit die Bauzinsen.",
           "quellen": [
             {
-              "name": "EZB — Geldpolitische Beschlüsse (10.09.2026)",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
-            },
-            {
-              "name": "LBBW — EZB-Zinsentscheid: Leitzins, Prognosen und Termine 2026",
-              "url": "https://www.lbbw.de/artikel/maerkte-verstehen/ezb-zinsentscheid-leitzins-prognosen_ait4bfmrfe_d.html"
+              "name": "Destatis — Inflationsrate im September 2026 bei +3,3 % (13.10.2026)",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"
             }
           ]
         }
@@ -149,26 +131,22 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Paperless-ngx 3.3.1 verfügbar",
-          "aufmacher": "Für Paperless-ngx steht Version 3.3.1 bereit — ein Wartungsrelease mit Fehlerkorrekturen rund um Dokumentversionen.",
-          "fakten": "Die Version wurde am 12. Oktober 2026 veröffentlicht. Sie indexiert Dokumentversionen künftig als ihr jeweiliges Root-Dokument, nutzt den effektiven Inhalt des Root-Dokuments für den LLM-Index, korrigiert die Rechteprüfung bei Einzelobjekten und liefert klarere Fehlermeldungen bei ungültigem JSON. Zusätzlich wird ein abgebrochener Suchindex-Aufbau automatisch wiederholt. Eingesetzt ist derzeit 3.3.0.",
-          "einordnung": "Reine Fehlerkorrekturen ohne Schemaänderung — unkritisch, aber sinnvoll, weil die Fixes Dokumentrechte, Papierkorb und Suche betreffen. Deployment erst nach Freigabe.",
+          "titel": "Drei offene Updates in Home Assistant — ConnectLife, Bosch SHC, MCP-Server",
+          "aufmacher": "In Home Assistant stehen drei Update-Entitäten auf aktiv: die ConnectLife-Integration, die Bosch-Smart-Home-Integration und der Home-Assistant-MCP-Server im Dev-Kanal.",
+          "fakten": "ConnectLife springt von v0.50.0 auf v0.51.0 (Come and Go): Neu hinzugefügte Geräte erscheinen ohne Neustart, verschwindende Geräte bekommen sofort eine Reparaturmeldung. Drei neue Gerätetypen: Hisense Hi-Therma II Wärmepumpe, Waschmaschine, Trockner. Daily-Energy-Sensoren, die dauerhaft 0 anzeigen, entfallen. Der Release-Hinweis verlangt nach dem Update einen Neustart von Home Assistant. Bosch Smart Home Controller: v0.12.31 → v0.12.33 (Robustheit bei Setup, Unload und Pairing); im Hersteller-Repository liegen bereits v0.12.34 und v0.12.35 nach. Home-Assistant-MCP-Server (Dev): 8.6.0.dev3016 → 8.6.0.dev3038 (Nightly-Kanal, keine Release-Notes). Server-Scan sonst unverändert: Paperless-ngx 3.3.1 wartet weiter auf Freigabe.",
+          "einordnung": "ConnectLife betrifft die Wohnzimmer-Klimaanlage. Das Update ist unkritisch, verlangt aber einen HA-Neustart und gehört damit nicht in ein Zeitfenster mit laufenden Automatisierungen. Nichts davon wird ohne Freigabe eingespielt.",
           "quellen": [
             {
-              "name": "GitHub — paperless-ngx Releases (v3.3.1)",
+              "name": "GitHub — connectlife-ha Releases (v0.51.0, 12.10.2026)",
+              "url": "https://github.com/oyvindwe/connectlife-ha/releases"
+            },
+            {
+              "name": "GitHub — boschshc-hass Releases",
+              "url": "https://github.com/tschamm/boschshc-hass/releases"
+            },
+            {
+              "name": "GitHub — paperless-ngx Releases",
               "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
-            }
-          ]
-        },
-        {
-          "titel": "Systemstatus: keine offenen Updates",
-          "aufmacher": "In Home Assistant steht keine einzige Update-Entität auf aktiv — Core, Add-ons, HACS-Integrationen und Firmware sind aktuell.",
-          "fakten": "Geprüft wurden 98 Update-Entitäten: Bis auf einige als nicht verfügbar gemeldete Firmware-Sensoren (Rasen, Einfahrt, WLED-Segmente, IBC) melden alle den Zustand aus. Der Server-Scan meldet als einzigen Befund einen gestoppten Docker-Container — den einmaligen Datenbank-Initialisierer des Firecrawl-Stacks, der planmäßig mit Exit-Code 0 beendet wurde.",
-          "einordnung": "Kein Handlungsbedarf im Betrieb; der einzige echte Punkt bleibt das Paperless-Update.",
-          "quellen": [
-            {
-              "name": "Home Assistant — Update-Entitäten (Live-Abfrage)",
-              "url": "https://www.home-assistant.io/integrations/update/"
             }
           ]
         }
@@ -178,20 +156,11 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Flourish 1: Haushaltsroboter für 3.555 Dollar",
-          "aufmacher": "Das Startup Flourish Robots hat mit Flourish 1 einen Haushaltsroboter für 3.555 US-Dollar vorgestellt — und unterbietet damit alle bislang bekannten Humanoiden deutlich.",
-          "fakten": "Vorbestellungen für die ersten 50 Einheiten sind seit dem 29. September 2026 offen, die Auslieferung soll im Dezember 2026 beginnen. Zum Preis von 3.555 US-Dollar — nach EZB-Referenzkurs vom 12. Oktober (1,1181 USD je Euro) rund 3.180 Euro — kommt ein fahrbarer Roboter auf sechsrädriger Basis mit zwei Armen (je 1,5 kg Nutzlast), Lidar in Bodennähe und Handgelenkkameras. Aufgaben wie Schuhe, Kleidung und Spielzeug aufsammeln, Geschirr einräumen, Tische wischen, Pflanzen gießen oder ein Katzenklo leeren werden per Smartphone in rund 30 Minuten angelernt — ohne Programmierung; die Rechenleistung läuft in der Cloud. Das Gerät ist nicht wasserdicht und für feinmotorische Arbeiten nicht geeignet.",
-          "einordnung": "Erste echte Preisklasse unter 4.000 Dollar und damit erstmals auf dem Niveau einer gehobenen Haushaltsanschaffung — ein Aufräum- und Holroboter, kein Haushaltsgeneralist. Für den 10-Jahres-Blick ist das der erste glaubwürdige Einstiegspunkt von mehreren.",
-          "quellen": [
-            {
-              "name": "PR Newswire — Flourish Robots Launches Flourish 1 (29.09.2026)",
-              "url": "https://www.prnewswire.com/news-releases/flourish-robots-launches-flourish-1--a-3-555-home-robot-built-to-give-people-their-potential-back-302891638.html"
-            },
-            {
-              "name": "The Robot Report — Meet Flourish One",
-              "url": "https://www.therobotreport.com/meet-flourish-one-raspberry-pi-powered-humanoid-built-busy-parents/"
-            }
-          ]
+          "titel": "Haushaltsroboter: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     }
