@@ -1,14 +1,14 @@
 {
-  "datum": "Mittwoch, 14.10.2026",
+  "datum": "Donnerstag, 15.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "12,2 °C · Regen 75 % · UV 3,2",
-          "aufmacher": "☁️ Bedeckt mit hoher Regenwahrscheinlichkeit. Tageshöchstwert 18,7 °C bei einem Tief von 11,1 °C.",
-          "fakten": "Aktuell 12,2 °C, Höchstwert 18,7 °C, Tief 11,1 °C. Regenwahrscheinlichkeit 75 %, UV-Index 3,2 (mittel).",
-          "einordnung": "Feuchter Vormittag — Außenarbeiten an den Objekten auf die Nachmittagsstunden legen.",
+          "titel": "8,2 °C · Regen 0 % · UV 3,1",
+          "aufmacher": "☁️ Bedeckt, aber trocken — der Tageshöchstwert liegt bei 21,1 °C.",
+          "fakten": "Aktuell 8,2 °C (Tief 8,2 °C, Höchstwert 21,1 °C). Regenwahrscheinlichkeit 0 %, UV-Index 3,1 (mittel).",
+          "einordnung": "Trockener, milder Tag — günstig für Außenarbeiten und Anlieferungen an den Objekten.",
           "quellen": []
         }
       ]
@@ -17,16 +17,9 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Mi 14.10. · 10:00 — Quixx-Meeting",
-          "aufmacher": "Quixx24-Meeting am Mittwochvormittag.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "Do 15.10. · 15:00 — Therapiezentrum Snoek (Manuelle Therapie / Sporttherapie / Osteopathie)",
-          "aufmacher": "Therapietermin am Donnerstagnachmittag.",
-          "fakten": "",
+          "titel": "Do 15.10. · 15:00 — Therapiezentrum Snoek (Manuelle Therapie, Sporttherapie, Osteopathie)",
+          "aufmacher": "Ein Kalendertermin heute: Physiotherapie am Donnerstagnachmittag.",
+          "fakten": "15. Oktober 2026, 15:00 Uhr.",
           "einordnung": "",
           "quellen": []
         }
@@ -36,26 +29,30 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Schüsse auf ein Wohnhaus — Ermittlungen wegen versuchten Tötungsdelikts",
-          "aufmacher": "Unbekannte haben in der Nacht zum Dienstag (13.10.2026) gegen 00:33 Uhr mehrere Schüsse auf ein Einfamilienhaus in Troisdorf abgegeben; Polizei und Staatsanwaltschaft ermitteln wegen des Verdachts eines versuchten Tötungsdelikts.",
-          "fakten": "Ein 48-jähriger Bewohner wurde durch die Schussgeräusche aufmerksam und entdeckte wenig später Einschusslöcher im Erdgeschoss. Er hielt sich zur Tatzeit mit seiner Ehefrau und den beiden Kindern im Haus auf; die Familie blieb unverletzt. Eine sofort eingeleitete Fahndung nach den Tätern verlief negativ. Die Kreispolizeibehörde Rhein-Sieg-Kreis hat die Meldung am 13. Oktober um 15:40 Uhr veröffentlicht.",
-          "einordnung": "Der Fall wird von der Bonner Polizei und der Staatsanwaltschaft geführt, weil ein versuchtes Tötungsdelikt im Raum steht. Ein Motiv ist bislang nicht veröffentlicht — für die Bestandsverwaltung eine Einzelmeldung ohne erkennbaren Bezug zu den Objekten.",
+          "titel": "Troisdorf: Feuerlöscher im Parkhaus an der Kölner Straße versprüht — Polizei ermittelt in zwei Fällen",
+          "aufmacher": "Binnen einer Woche sind in einem Parkhaus an der Troisdorfer Kölner Straße zwei Brandmeldealarme ausgelöst worden, weil Unbekannte Wandfeuerlöscher aus ihren Halterungen nahmen und auf einem Parkdeck versprühten; die Kriminalpolizei ermittelt in beiden Fällen.",
+          "fakten": "Der jüngste Vorfall war am Dienstag, 13. Oktober: Gegen 15:50 Uhr löste die Brandmeldeanlage aus und alarmierte Polizei und Feuerwehr, Hinweise auf ein Feuer fanden sich nicht. Am 7. Oktober hatte es am selben Parkhaus bereits einen gleichartigen Einsatz gegeben, damals gegen 23:00 Uhr. Ermittelt wird wegen Missbrauchs von Notrufen und der Beeinträchtigung von Unfallverhütungs- und Nothilfemitteln. Hinweise nimmt die Polizei unter 02241 541-3221 entgegen; die Meldung datiert vom 14. Oktober 2026, 09:45 Uhr.",
+          "einordnung": "Für die Bestandsverwaltung eine Randnotiz — bemerkenswert ist, dass die Polizei die zweckentfremdeten Löscher ausdrücklich als Kosten- und Haftungsrisiko für die Täter benennt. Bei Objekten mit Tiefgarage lohnt der Blick auf Halterungen und Brandmeldeanlage.",
           "quellen": [
             {
-              "name": "Presseportal — POL-SU: Schüsse auf ein Wohnhaus in Troisdorf (13.10.2026)",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6370488"
+              "name": "Presseportal — Kreispolizeibehörde Rhein-Sieg-Kreis: Feuerlöscher in Troisdorfer Parkhaus versprüht (14.10.2026)",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6370769"
+            },
+            {
+              "name": "news.de — Polizei-News Troisdorf, 14.10.26 (auf Basis der Polizeimeldung)",
+              "url": "https://www.news.de/lokales/860090392/blaulicht-news-polizei-einsatz-troisdorf-14-10-26-unfall-und-brand-heute/1/"
             }
           ]
         },
         {
-          "titel": "Troisdorf: Street Food Festival auf der Kölner Straße",
-          "aufmacher": "Vom 16. bis 18. Oktober 2026 wird die Kölner Straße in der Troisdorfer Innenstadt für drei Tage zur Genussmeile.",
-          "fakten": "Rund 15 Street-Food-Trucks aus der Region und von weiter her bieten internationale Spezialitäten, dazu Cocktails, Wein und eine Chill-out-Lounge mit Musik. Der Eintritt ist frei. Öffnungszeiten: Freitag 17:00–22:00 Uhr, Samstag 15:00–22:00 Uhr, Sonntag 12:00–19:00 Uhr. Veranstaltungsort ist die Fußgängerzone Kölner Straße.",
-          "einordnung": "Anwohner- und Anlieferungsverkehr in der Innenstadt ist am Wochenende eingeschränkt — Handwerker- und Mietertermine in der Fußgängerzone besser auf Montag legen.",
+          "titel": "Troisdorf und Elmina vereinbaren gemeinsame Projekte — Schwerpunkt Solarenergie",
+          "aufmacher": "Die Stadt Troisdorf hat vom 27. September bis 3. Oktober 2026 eine Delegation aus ihrer ghanaischen Partnerstadt Elmina empfangen und mit ihr konkrete gemeinsame Vorhaben verabredet.",
+          "fakten": "Als inhaltliche Schwerpunkte wurden Solarenergie und Gleichstellung festgelegt. Beim Besuch der Stadtwerke Troisdorf informierte sich die Delegation über die lokalen Erfahrungen mit Energieversorgung und erneuerbaren Energien. Weitere Programmpunkte waren ein Austausch mit der RSAG zur Abfallwirtschaft und ein Gespräch mit der TROWISTA zur lokalen Wirtschaftsentwicklung. Angeführt wurde die Delegation von Bürgermeister Ismail Zagoon-Saeed, beteiligt auf Troisdorfer Seite war Bürgermeister Alexander Biber. Die Meldung der Stadt datiert vom 14. Oktober 2026.",
+          "einordnung": "Der Solar-Schwerpunkt zeigt, dass die Stadtwerke Troisdorf das Thema Photovoltaik aktiv nach außen tragen — ein Hinweis darauf, wie Netz- und Einspeisethemen im Stadtgebiet behandelt werden.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf — Street Food Festival: Genussmeile in der Fußgängerzone",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/street-food-festival-bringt-kulinarische-vielfalt-in-die-troisdorfer-innenstadt/"
+              "name": "Stadt Troisdorf — Troisdorf und Elmina konkretisieren gemeinsame Projekte (14.10.2026)",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/troisdorf-und-elmina-konkretisieren-gemeinsame-projekte/"
             }
           ]
         }
@@ -65,34 +62,42 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Wohnungsmarkt: Metropolen geben nach, B-Lagen legen zu",
-          "aufmacher": "Die Kaufpreise driften auseinander: In den sieben größten Städten sinken die Preise für Eigentumswohnungen um 0,4 Prozent im Vorjahresvergleich, in Großstädten abseits der Top-7 steigen sie um 2,0 Prozent.",
-          "fakten": "Bundesweit stabilisieren sich die Preise seitwärts und legen im Jahresschnitt nur noch rund 0,6 bis 0,7 Prozent zu. Dem Markt fehlen schätzungsweise 1,35 bis 1,4 Millionen Wohnungen; das ifo Institut erwartet für 2026 nur noch rund 185.000 fertiggestellte Wohnungen — ein Tiefstand seit über 15 Jahren. Der Anteil der Mietanfragen am Gesamtmarkt ist auf über 81 Prozent gestiegen. Eine Eigentumswohnung kostet laut Europace-Daten im Schnitt 3.480 €/m², ein Neubau 4.418 €/m² und ein Bestandshaus 3.033 €/m² (Stand Oktober 2026). Ob die im Report genannte Deckelung von Indexmieten auf 3,5 Prozent pro Jahr bereits seit Mitte 2026 greift, ist nicht unabhängig bestätigt.",
-          "einordnung": "Genau das Segment, in dem Mikes Cashflow-Strategie arbeitet — B-Lagen wachsen weiter, während der Einkauf in den Metropolen teuer bleibt und dort leicht nachgibt. 3.480 €/m² Durchschnittspreis setzt die Latte für Ankaufskalkulationen im Rhein-Sieg-Kreis.",
+          "titel": "KfW-Förderung EH55-Plus: Bund legt 250 Millionen Euro nach",
+          "aufmacher": "Der Bund stockt die EH55-Plus-Förderung um 250 Millionen Euro auf; wer eine Baugenehmigung hat, kann den zinsverbilligten KfW-Kredit weiter bis zum 31. Dezember 2026 beantragen.",
+          "fakten": "Von den ursprünglich rund 800 Millionen Euro waren zuletzt nur noch 69 Millionen Euro verfügbar. Seit Programmstart im Dezember 2025 bis zum 5. Oktober 2026 wurden nach Angaben der Bundesregierung rund 52.100 Wohneinheiten mit einem Kredit- und Zuschussvolumen von 4,9 Milliarden Euro gefördert. Gefördert werden Neubau und Ersterwerb von Wohngebäuden: bis zu 100.000 Euro Kredit je Wohneinheit, seit dem 2. März 2026 mit einem effektiven Zinssatz ab 1,00 Prozent pro Jahr bei zehn Jahren Laufzeit und Zinsbindung. Voraussetzung ist eine vorliegende Baugenehmigung, mit dem Bau darf noch nicht begonnen worden sein. Für 2027 ist eine neue Förderstruktur mit zwei KfW-Programmen angekündigt; ob die bestehende Förderung bis dahin verlängert wird, ist offen.",
+          "einordnung": "Für Bestandsobjekte und Anschlussfinanzierungen greift das Programm nicht — es zielt auf Neubau und Ersterwerb. Das Marktsignal bleibt relevant: Die Nachfrage war größer als der Etat, der Bund reagiert mit Sondermitteln. Wer 2026 noch einen Neubau plant, sollte die Antragsfrist im Blick behalten.",
           "quellen": [
             {
-              "name": "Wohnungsmarkt-Report Oktober 2026 (Stand 05.10.2026)",
-              "url": "https://www.immobilien-henke.de/de/infos-zum-wohnungsmarkt/aktuelle-lage-auf-dem-wohnungsmarkt-im-oktober-2026"
+              "name": "BMWSB — Pressemitteilungen (Meldung zur EH55-Plus-Förderung, 09.10.2026)",
+              "url": "https://www.bmwsb.bund.de/DE/tools-services/presse/pressemitteilungen/pressemitteilungen_node.html"
             },
             {
-              "name": "Dr. Klein — Immobilienpreise 2026 (Europace-Daten, Stand Oktober 2026)",
-              "url": "https://www.drklein.de/immobilienpreise.html"
+              "name": "Haufe — KfW-Kredit: Bund stockt EH55-Plus-Förderung auf",
+              "url": "https://www.haufe.de/immobilien/wirtschaft-politik/neubaustandard-eh40_84342_605890.html"
+            },
+            {
+              "name": "Interhyp — KfW-Förderung EH55: Bund stockt um 250 Mio. Euro auf (13.10.2026)",
+              "url": "https://www.interhyp.de/ratgeber/news/kfw-foerderung-eh55-aufstockung/"
             }
           ]
         },
         {
-          "titel": "Bauzinsen: zehn Jahre ab rund 4,16 Prozent",
-          "aufmacher": "Für zehnjährige Baufinanzierungen liegen die Topkonditionen bei etwa 4,16 Prozent effektivem Jahreszins bei 60 Prozent Beleihung.",
-          "fakten": "Der Marktdurchschnitt liegt typischerweise 0,2 bis 0,4 Prozentpunkte höher. Die maßgebliche 10-jährige Bundesanleihe rentiert bei rund 2,91 Prozent, der Trend ist seitwärts. Dr. Klein nennt in der Zinsübersicht zum 5. Oktober Top-Zinsen von 4,12 bis 4,59 Prozent je nach Sollzinsbindung. Ein Unterschied von 0,5 Prozentpunkten bedeutet bei 300.000 Euro Darlehen über zehn Jahre Zinsbindung rund 15.000 Euro Mehrbelastung.",
-          "einordnung": "Für die nächste Tranche bleibt rund 4,5 Prozent bei 80 Prozent Beleihung die realistische Kalkulationsbasis — Kaufnebenkosten aus Eigenkapital, Rest über Bankdarlehen. Das Sonderkündigungsrecht nach zehn Jahren bleibt der Refinanzierungshebel.",
+          "titel": "Bauzinsen auf Jahreshöchstniveau — zehn Jahre ab 4,11 Prozent",
+          "aufmacher": "Nach dem Anstieg im Spätsommer haben sich die Bauzinsen auf hohem Niveau stabilisiert: Der effektive Topzins für ein zehnjähriges Darlehen liegt derzeit bei 4,11 Prozent.",
+          "fakten": "Die Topkonditionen für Zinsbindungen zwischen 5 und 30 Jahren liegen zwischen 4,12 und 4,59 Prozent (Stand 05.10.2026). Im Durchschnitt kosteten zehnjährig gebundene Darlehen Anfang Oktober 4,44 Prozent. Beim Vermittler Interhyp lag der Schnitt für zehnjährige Darlehen zuletzt bei rund 4,46 Prozent — im Juli waren es noch 3,8 Prozent. Der Markt bewegt sich damit in der Nähe seines Jahreshochs.",
+          "einordnung": "Für die Finanzierungsstrategie — möglichst hoher Bankanteil, später Refinanzierung über mehrere Banken — heißt das: Zinsbindung, Tilgungssatz und Forward-Optionen jetzt rechnen. Ein weiterer Anstieg um 0,1 bis 0,2 Prozentpunkte verteuert eine durchschnittliche Finanzierung schnell um mehrere Tausend Euro.",
           "quellen": [
             {
-              "name": "Baufi Deutschland — Bauzinsen aktuell 14.10.2026",
-              "url": "https://baufi-deutschland.de/aktuelle-bauzinsen/"
+              "name": "Dr. Klein — Zinsentwicklung Baufinanzierung (Topzins 4,11 %, Stand 15.10.2026)",
+              "url": "https://www.drklein.de/zinsentwicklung-prognose.html"
             },
             {
-              "name": "Dr. Klein — Zinsentwicklung Baufinanzierung 2026",
-              "url": "https://www.drklein.de/zinsentwicklung-prognose.html"
+              "name": "Interhyp — Regionale Chancen trotz höherer Zinsen (07.10.2026)",
+              "url": "https://www.interhyp.de/ratgeber/news/regionale-kaufchancen-nutzen/"
+            },
+            {
+              "name": "Statista — Bauzinsen: monatliche Entwicklung in Deutschland bis 2026",
+              "url": "https://de.statista.com/statistik/daten/studie/1347565/umfrage/entwicklung-der-bauzinsen-in-deutschland/"
             }
           ]
         }
@@ -102,25 +107,45 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "DAX schließt 0,1 Prozent tiefer bei 25.259 Punkten",
-          "aufmacher": "Der DAX konnte ein zwischenzeitliches Plus von 0,7 Prozent nicht halten und schloss am 13. Oktober 0,1 Prozent tiefer bei 25.259 Punkten.",
-          "fakten": "Belastend wirkten neue Sorgen um den Chipsektor nach Berichten über leistungsfähige KI-Chips des chinesischen Herstellers CXMT sowie der holprige Start der US-Berichtssaison zum dritten Quartal. Brent-Öl notierte am frühen Abend knapp unter 106 Dollar pro Barrel. Stützend wirkte die neue IWF-Prognose, die für Deutschland 2026 ein BIP-Wachstum von 1,3 Prozent erwartet. Am Montag hatte der Leitindex noch knapp 0,8 Prozent zugelegt.",
-          "einordnung": "Chip-Sorgen und Energiepreise bleiben die Treiber. Für Immobilienfinanzierungen zählt weiter die Anleiherendite, nicht der Index — der DAX ist nur das Thermometer.",
+          "titel": "US-Inflation bremst den DAX aus — Schluss bei 25.322 Punkten",
+          "aufmacher": "Der DAX hat am Mittwoch einen Großteil seiner Tagesgewinne abgegeben und 0,25 Prozent fester bei 25.322,48 Punkten geschlossen, nachdem die US-Verbraucherpreise im September mit 3,7 Prozent über den Erwartungen lagen.",
+          "fakten": "Die US-Inflationsrate stieg im Vorjahresvergleich auf 3,7 Prozent, getrieben vor allem von Benzin- und Dieselpreisen; im Monatsvergleich legte der Index um 0,6 Prozent zu. Die Helaba wertet die Rate als deutlich über der Zielmarke der US-Notenbank. Zeitweise hatte der DAX am Mittwoch 0,8 Prozent zugelegt, am Nachmittag lag er noch rund 0,2 Prozent im Plus. Der MDax stieg um 0,7 Prozent auf 30.225 Punkte. Seit Jahresbeginn steht der DAX bei rund plus 3,19 Prozent, das Jahreshoch liegt bei 26.618,74 Punkten.",
+          "einordnung": "Zinsempfindliche Bewertungen bleiben der Hebel: Beharrlich hohe US-Inflationsraten stützen die Zinserwartungen und können Bauzins- und Refinanzierungskonditionen auch hierzulande nach oben ziehen — unmittelbar relevant für die geplante MFH-Finanzierung.",
           "quellen": [
             {
-              "name": "tagesschau — Marktbericht: DAX driftet ins Minus (13.10.2026)",
-              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-boerse-116.html"
+              "name": "finanzen.net — Pluszeichen in Frankfurt: DAX verbucht letztendlich Zuschläge (14.10.2026)",
+              "url": "https://www.finanzen.net/nachricht/aktien/pluszeichen-in-frankfurt-dax-verbucht-letztendlich-zuschlaege-15985118"
+            },
+            {
+              "name": "t-online (dpa-AFX) — Aktien Frankfurt: US-Inflationsdaten bremsen steigenden Dax aus (14.10.2026)",
+              "url": "https://www.t-online.de/finanzen/boerse/ticker/aktien-frankfurt-us-inflationsdaten-bremsen-steigenden-dax-aus/0DBA9C00D2B7F37E/"
+            },
+            {
+              "name": "Handelsblatt — Preise in den USA steigen im September um 3,7 Prozent",
+              "url": "https://global.handelsblatt.com/finanzen/geldpolitik/inflation-preise-in-den-usa-steigen-im-september-um-37-prozent/100261070.html"
+            },
+            {
+              "name": "U.S. Bureau of Labor Statistics — Consumer Price Index (September 2026, veröffentlicht 14.10.2026)",
+              "url": "https://www.bls.gov/cpi/"
             }
           ]
         },
         {
-          "titel": "Inflation im September mit 3,3 Prozent bestätigt",
-          "aufmacher": "Das Statistische Bundesamt hat die Inflationsrate für September 2026 mit +3,3 Prozent bestätigt — der höchste Wert seit Dezember 2023.",
-          "fakten": "Energieprodukte verteuerten sich um 14,9 Prozent gegenüber September 2025, nach +10,5 Prozent im August und +8,3 Prozent im Juli. Gegenüber dem Vormonat stieg der Verbraucherpreisindex um 0,6 Prozent; leichtes Heizöl legte um 18,5 Prozent zu, Kraftstoffe um 6,9 Prozent. Nahrungsmittel verteuerten sich nur um 0,4 Prozent. Die Kerninflation ohne Nahrungsmittel und Energie liegt unverändert bei 2,4 Prozent. Als Preistreiber nennt Destatis den seit Beginn des Iran-Kriegs gestiegenen Rohölpreis, teilweise gedämpft durch die erneute Senkung der Energiesteuer auf Kraftstoffe.",
-          "einordnung": "Der Preisauftrieb ist energiegetrieben; die Kerninflation von 2,4 Prozent zeigt, dass die Breite fehlt. Für die Finanzierung ist das die unangenehme Kombination: hohe Energiepreise stützen die Anleiherenditen und damit die Bauzinsen.",
+          "titel": "EZB: Leitzins steht bei 2,50 Prozent — nächste Entscheidung am 29. Oktober",
+          "aufmacher": "Die Europäische Zentralbank hat ihre Leitzinsen zuletzt am 10. September um 25 Basispunkte angehoben; seit dem 16. September liegt der Zinssatz der Einlagefazilität bei 2,50 Prozent.",
+          "fakten": "Der Hauptrefinanzierungssatz beträgt 2,65 Prozent, die Spitzenrefinanzierungsfazilität 2,90 Prozent. Der EZB-Rat begründet den Schritt mit anhaltendem Inflationsdruck durch den Konflikt im Nahen Osten. Die EZB-Projektionen erwarten eine Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028); für das Wachstum werden 0,9, 1,4 und 1,5 Prozent veranschlagt. Die Risiken für die Inflation gelten als aufwärtsgerichtet. Die nächste geldpolitische Sitzung ist für den 28. und 29. Oktober 2026 angesetzt, der Zinsbeschluss fällt am zweiten Tag.",
+          "einordnung": "Entscheidend ist weniger der Beschluss selbst als die Erwartung: Die deutsche Inflationsrate liegt im September bei 3,3 Prozent und damit über dem EZB-Ziel, Spielraum für Zinssenkungen ist gering. Das spricht dafür, Finanzierungskonditionen zu sichern statt auf fallende Zinsen zu warten.",
           "quellen": [
             {
-              "name": "Destatis — Inflationsrate im September 2026 bei +3,3 % (13.10.2026)",
+              "name": "Europäische Zentralbank — Geldpolitische Beschlüsse vom 10. September 2026",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
+            },
+            {
+              "name": "Europäische Zentralbank — Sitzungskalender des EZB-Rats",
+              "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.de.html"
+            },
+            {
+              "name": "Statistisches Bundesamt — Inflationsrate im September 2026 bei +3,3 %",
               "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"
             }
           ]
@@ -131,21 +156,33 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Drei offene Updates in Home Assistant — ConnectLife, Bosch SHC, MCP-Server",
-          "aufmacher": "In Home Assistant stehen drei Update-Entitäten auf aktiv: die ConnectLife-Integration, die Bosch-Smart-Home-Integration und der Home-Assistant-MCP-Server im Dev-Kanal.",
-          "fakten": "ConnectLife springt von v0.50.0 auf v0.51.0 (Come and Go): Neu hinzugefügte Geräte erscheinen ohne Neustart, verschwindende Geräte bekommen sofort eine Reparaturmeldung. Drei neue Gerätetypen: Hisense Hi-Therma II Wärmepumpe, Waschmaschine, Trockner. Daily-Energy-Sensoren, die dauerhaft 0 anzeigen, entfallen. Der Release-Hinweis verlangt nach dem Update einen Neustart von Home Assistant. Bosch Smart Home Controller: v0.12.31 → v0.12.33 (Robustheit bei Setup, Unload und Pairing); im Hersteller-Repository liegen bereits v0.12.34 und v0.12.35 nach. Home-Assistant-MCP-Server (Dev): 8.6.0.dev3016 → 8.6.0.dev3038 (Nightly-Kanal, keine Release-Notes). Server-Scan sonst unverändert: Paperless-ngx 3.3.1 wartet weiter auf Freigabe.",
-          "einordnung": "ConnectLife betrifft die Wohnzimmer-Klimaanlage. Das Update ist unkritisch, verlangt aber einen HA-Neustart und gehört damit nicht in ein Zeitfenster mit laufenden Automatisierungen. Nichts davon wird ohne Freigabe eingespielt.",
+          "titel": "Home Assistant: HA-MCP 8.7.0 und Shelly-Firmware 2.1.0 neu verfügbar",
+          "aufmacher": "Zwei neue Updates sind in Home Assistant aufgelaufen: der HA-MCP in Version 8.7.0 und die Shelly-Firmware 2.1.0; die ConnectLife-Aktualisierung von gestern steht weiter offen.",
+          "fakten": "HA-MCP: Die Custom Component springt von v8.6.0 auf v8.7.0, das Add-on von 8.6.0.dev3016 auf 8.7.0.dev3047 (Release 14.10.2026). Neu sind unter anderem eine Dashboard-Kartensuche, die auch in Custom Cards verschachtelte Karten erreicht, das Erkennen des zuständigen Helfers vor dem Löschen einer Entität, Aktionen für Thread-Datasets sowie die Anpassung an Home Assistant 2026.10 (MCP-Discovery und Tool-Metadaten). Shelly: Firmware 2.0.1 auf 2.1.0 (14.10.2026) bringt Unterstützung für Shelly-Cloud-NILM-Dienste bei Mess- und Energiemessgeräten; betroffen sind hier der Outdoor-Kühlschrank und die Unterverteilung (Shelly Pro 3EM). Unverändert offen bleibt ConnectLife v0.50.0 auf v0.51.0; die Bosch-SHC-Integration steht nicht mehr als Update an.",
+          "einordnung": "NILM heißt, dass Shelly künftig Verbraucher im Haus aus dem Lastprofil erraten will — für die Verbrauchsauswertung der Unterverteilung ein interessanter, aber cloudgebundener Ansatz. Das MCP-Update verbessert die Werkzeuge, mit denen ich auf Home Assistant zugreife. Nichts wird ohne Freigabe eingespielt.",
           "quellen": [
             {
-              "name": "GitHub — connectlife-ha Releases (v0.51.0, 12.10.2026)",
-              "url": "https://github.com/oyvindwe/connectlife-ha/releases"
+              "name": "GitHub — homeassistant-ai/ha-mcp Release v8.7.0",
+              "url": "https://github.com/homeassistant-ai/ha-mcp/releases/v8.7.0"
             },
             {
-              "name": "GitHub — boschshc-hass Releases",
-              "url": "https://github.com/tschamm/boschshc-hass/releases"
+              "name": "Shelly — Firmware-Changelog Gen2+ (2.1.0 vom 14.10.2026)",
+              "url": "https://shelly-api-docs.shelly.cloud/gen2/changelog/"
             },
             {
-              "name": "GitHub — paperless-ngx Releases",
+              "name": "GitHub — oyvindwe/connectlife-ha Release 0.51.0",
+              "url": "https://github.com/oyvindwe/connectlife-ha/releases/v0.51.0"
+            }
+          ]
+        },
+        {
+          "titel": "Paperless-ngx 3.3.1 wartet weiter; Hermes-Update offen und ein gestoppter Container auf dem NAS",
+          "aufmacher": "Paperless-ngx ist weiterhin in Version 3.3.0 installiert, 3.3.1 steht unverändert zur Einspielung bereit; zusätzlich meldet der Scan ein offenes Hermes-Agent-Update und einen gestoppten Docker-Container.",
+          "fakten": "Paperless-ngx 3.3.1 (Release 12.10.2026) ist ein reines Bugfix-Release: Es korrigiert Rechte- und Index-Behandlung von Dokumentversionen nach dem Root-Dokument-Prinzip, repariert einen unterbrochenen Neuaufbau des Suchindex, verhindert Indexeinträge für nicht darstellbare Datumswerte und liefert verständlichere Fehlermeldungen bei ungültigem JSON. Der lokale Hermes Agent läuft als Git-Installation auf Stand vgit.e06df9c (2026.9.24) und ist laut Versionsprüfung Commits hinter dem Upstream zurück. Portainer meldet auf dem NAS einen gestoppten Container.",
+          "einordnung": "Das Paperless-Update ist risikoarm und behebt genau die Fälle, die beim täglichen 05:00-Import mit Versionen und Bulk-Reprocess auftreten. Update, Hermes-Upgrade und Container-Start erfolgen erst nach Freigabe.",
+          "quellen": [
+            {
+              "name": "GitHub — paperless-ngx Releases (v3.3.1)",
               "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
             }
           ]
