@@ -1,14 +1,14 @@
 {
-  "datum": "Donnerstag, 15.10.2026",
+  "datum": "Freitag, 16.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "8,2 °C · Regen 0 % · UV 3,1",
-          "aufmacher": "☁️ Bedeckt, aber trocken — der Tageshöchstwert liegt bei 21,1 °C.",
-          "fakten": "Aktuell 8,2 °C (Tief 8,2 °C, Höchstwert 21,1 °C). Regenwahrscheinlichkeit 0 %, UV-Index 3,1 (mittel).",
-          "einordnung": "Trockener, milder Tag — günstig für Außenarbeiten und Anlieferungen an den Objekten.",
+          "titel": "11,5 °C · Regen 37 % · UV 3,1",
+          "aufmacher": "☀️ Klar und mild — der Tageshöchstwert liegt bei 23,0 °C.",
+          "fakten": "Aktuell 11,5 °C (Tief 11,5 °C, Höchstwert 23,0 °C). Regenwahrscheinlichkeit 37 %, UV-Index 3,1 (mittel).",
+          "einordnung": "Trocken genug für Außenarbeiten am Vormittag, am Nachmittag ist ein Schauer möglich — Regenjacke mitnehmen.",
           "quellen": []
         }
       ]
@@ -17,9 +17,9 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Do 15.10. · 15:00 — Therapiezentrum Snoek (Manuelle Therapie, Sporttherapie, Osteopathie)",
-          "aufmacher": "Ein Kalendertermin heute: Physiotherapie am Donnerstagnachmittag.",
-          "fakten": "15. Oktober 2026, 15:00 Uhr.",
+          "titel": "Mo 19.10. · 15:00 — Therapiezentrum Snoek (Manuelle Therapie, Sporttherapie, Osteopathie)",
+          "aufmacher": "Der nächste Kalendereintrag: Physiotherapie am Montagnachmittag.",
+          "fakten": "19. Oktober 2026, 15:00 Uhr.",
           "einordnung": "",
           "quellen": []
         }
@@ -29,30 +29,34 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Feuerlöscher im Parkhaus an der Kölner Straße versprüht — Polizei ermittelt in zwei Fällen",
-          "aufmacher": "Binnen einer Woche sind in einem Parkhaus an der Troisdorfer Kölner Straße zwei Brandmeldealarme ausgelöst worden, weil Unbekannte Wandfeuerlöscher aus ihren Halterungen nahmen und auf einem Parkdeck versprühten; die Kriminalpolizei ermittelt in beiden Fällen.",
-          "fakten": "Der jüngste Vorfall war am Dienstag, 13. Oktober: Gegen 15:50 Uhr löste die Brandmeldeanlage aus und alarmierte Polizei und Feuerwehr, Hinweise auf ein Feuer fanden sich nicht. Am 7. Oktober hatte es am selben Parkhaus bereits einen gleichartigen Einsatz gegeben, damals gegen 23:00 Uhr. Ermittelt wird wegen Missbrauchs von Notrufen und der Beeinträchtigung von Unfallverhütungs- und Nothilfemitteln. Hinweise nimmt die Polizei unter 02241 541-3221 entgegen; die Meldung datiert vom 14. Oktober 2026, 09:45 Uhr.",
-          "einordnung": "Für die Bestandsverwaltung eine Randnotiz — bemerkenswert ist, dass die Polizei die zweckentfremdeten Löscher ausdrücklich als Kosten- und Haftungsrisiko für die Täter benennt. Bei Objekten mit Tiefgarage lohnt der Blick auf Halterungen und Brandmeldeanlage.",
+          "titel": "Troisdorf: Street Food Festival startet heute in der Fußgängerzone",
+          "aufmacher": "Von heute bis Sonntag wird die Kölner Straße zur Genussmeile: Rund 15 Street-Food-Trucks, Cocktails und eine Chill-Out-Lounge bespielen die Troisdorfer Innenstadt.",
+          "fakten": "Das Street Food Festival läuft von Freitag, 16. Oktober (17:00–22:00 Uhr), über Samstag, 17. Oktober (15:00–22:00 Uhr) bis Sonntag, 18. Oktober (12:00–19:00 Uhr) auf der Kölner Straße in der Fußgängerzone. Der Eintritt ist frei. Veranstalter sind Andre Neff und Ramon Wiener, beteiligt ist Bürgermeister Alexander Biber.",
+          "einordnung": "Drei Tage zusätzliche Frequenz in der Innenstadt — für Einzelhandel und Anlieger im Zentrum ein spürbarer Umsatzimpuls, und ein ruhiger Anlass, sich die Straße selbst anzusehen.",
           "quellen": [
             {
-              "name": "Presseportal — Kreispolizeibehörde Rhein-Sieg-Kreis: Feuerlöscher in Troisdorfer Parkhaus versprüht (14.10.2026)",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6370769"
+              "name": "Stadt Troisdorf — Street Food Festival (16.–18.10.2026)",
+              "url": "https://www.troisdorf.de/de/kalender/startseite/allgemeine-veranstaltungen/2026/oktober/2026-10-16-street-food-festival/789100:0"
             },
             {
-              "name": "news.de — Polizei-News Troisdorf, 14.10.26 (auf Basis der Polizeimeldung)",
-              "url": "https://www.news.de/lokales/860090392/blaulicht-news-polizei-einsatz-troisdorf-14-10-26-unfall-und-brand-heute/1/"
+              "name": "Rheinische Anzeigenblätter — Street Food Festival: Genussmeile in der Fußgängerzone",
+              "url": "https://www.rheinische-anzeigenblaetter.de/troisdorf/c-nachrichten/genussmeile-in-der-fussgaengerzone_a381188"
             }
           ]
         },
         {
-          "titel": "Troisdorf und Elmina vereinbaren gemeinsame Projekte — Schwerpunkt Solarenergie",
-          "aufmacher": "Die Stadt Troisdorf hat vom 27. September bis 3. Oktober 2026 eine Delegation aus ihrer ghanaischen Partnerstadt Elmina empfangen und mit ihr konkrete gemeinsame Vorhaben verabredet.",
-          "fakten": "Als inhaltliche Schwerpunkte wurden Solarenergie und Gleichstellung festgelegt. Beim Besuch der Stadtwerke Troisdorf informierte sich die Delegation über die lokalen Erfahrungen mit Energieversorgung und erneuerbaren Energien. Weitere Programmpunkte waren ein Austausch mit der RSAG zur Abfallwirtschaft und ein Gespräch mit der TROWISTA zur lokalen Wirtschaftsentwicklung. Angeführt wurde die Delegation von Bürgermeister Ismail Zagoon-Saeed, beteiligt auf Troisdorfer Seite war Bürgermeister Alexander Biber. Die Meldung der Stadt datiert vom 14. Oktober 2026.",
-          "einordnung": "Der Solar-Schwerpunkt zeigt, dass die Stadtwerke Troisdorf das Thema Photovoltaik aktiv nach außen tragen — ein Hinweis darauf, wie Netz- und Einspeisethemen im Stadtgebiet behandelt werden.",
+          "titel": "Rhein-Sieg-Kreis: Festnahme nach Tankstellenüberfällen von 2021",
+          "aufmacher": "Fast fünf Jahre nach zwei Messerüberfällen auf Tankstellen in Königswinter und Hennef hat die Polizei einen 27 Jahre alten Tatverdächtigen festgenommen; er sitzt in Untersuchungshaft.",
+          "fakten": "In der Nacht zum 24. Oktober 2021 hatte ein maskierter Mann gegen 04:00 Uhr zunächst an einer Tankstelle in Königswinter (Straße „Im Mühlenbruch“) mehrfach auf einen Kunden eingestochen und vergeblich Bargeld gefordert; gegen 04:15 Uhr überfiel er eine Tankstelle an der Frankfurter Straße in Hennef und stach dem Kassierer ins Bein. Nach einem Hinweis aus der Bevölkerung erfolgte die Festnahme am Dienstagmorgen, 13. Oktober 2026, an der Wohnanschrift des Mannes in Hennef. Der Haftrichter ordnete am 14. Oktober Untersuchungshaft wegen Fluchtgefahr an. Die Meldung datiert vom 15. Oktober 2026, 12:55 Uhr.",
+          "einordnung": "Auch wenn Troisdorf nicht Tatort war: Der Fall zeigt, wie lange solche Ermittlungen im Kreis laufen — und dass ein einziger Bürgerhinweis sie zum Abschluss bringt. Für Gewerbeobjekte mit Nachtschalter und Bargeld bleibt das ein Argument für Sichtschutz, Kameratechnik und einen möglichst bargeldarmen Betrieb.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf — Troisdorf und Elmina konkretisieren gemeinsame Projekte (14.10.2026)",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/troisdorf-und-elmina-konkretisieren-gemeinsame-projekte/"
+              "name": "Polizei Bonn / Staatsanwaltschaft Bonn / Polizei Rhein-Sieg-Kreis — Festnahme nach Tankstellenüberfällen (15.10.2026)",
+              "url": "https://bonn.polizei.nrw/presse/festnahme-nach-tankstellenueberfaellen-in-koenigswinter-und-hennef-im-oktober-2021-27-jaehriger-in-untersuchungshaft"
+            },
+            {
+              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis via Presseportal/meinestadt — Originalsachverhalt (15.10.2026, 14:05 Uhr)",
+              "url": "https://aktuell.meinestadt.de/rhein-sieg-kreis/polizeimeldungen/829693903"
             }
           ]
         }
@@ -62,42 +66,34 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "KfW-Förderung EH55-Plus: Bund legt 250 Millionen Euro nach",
-          "aufmacher": "Der Bund stockt die EH55-Plus-Förderung um 250 Millionen Euro auf; wer eine Baugenehmigung hat, kann den zinsverbilligten KfW-Kredit weiter bis zum 31. Dezember 2026 beantragen.",
-          "fakten": "Von den ursprünglich rund 800 Millionen Euro waren zuletzt nur noch 69 Millionen Euro verfügbar. Seit Programmstart im Dezember 2025 bis zum 5. Oktober 2026 wurden nach Angaben der Bundesregierung rund 52.100 Wohneinheiten mit einem Kredit- und Zuschussvolumen von 4,9 Milliarden Euro gefördert. Gefördert werden Neubau und Ersterwerb von Wohngebäuden: bis zu 100.000 Euro Kredit je Wohneinheit, seit dem 2. März 2026 mit einem effektiven Zinssatz ab 1,00 Prozent pro Jahr bei zehn Jahren Laufzeit und Zinsbindung. Voraussetzung ist eine vorliegende Baugenehmigung, mit dem Bau darf noch nicht begonnen worden sein. Für 2027 ist eine neue Förderstruktur mit zwei KfW-Programmen angekündigt; ob die bestehende Förderung bis dahin verlängert wird, ist offen.",
-          "einordnung": "Für Bestandsobjekte und Anschlussfinanzierungen greift das Programm nicht — es zielt auf Neubau und Ersterwerb. Das Marktsignal bleibt relevant: Die Nachfrage war größer als der Etat, der Bund reagiert mit Sondermitteln. Wer 2026 noch einen Neubau plant, sollte die Antragsfrist im Blick behalten.",
+          "titel": "Bauzinsen bleiben über vier Prozent — zehnjährige Darlehen bei rund 4,5 Prozent",
+          "aufmacher": "Die Bauzinsen haben sich auf hohem Niveau eingependelt: Interhyp nennt für zehnjährige Darlehen aktuell 4,5 Prozent, Dr. Klein weist Topkonditionen zwischen 4,12 und 4,59 Prozent aus.",
+          "fakten": "Interhyp-Zinstabelle (Konditionsangebote der Interhyp AG vom 05. bis 11. Oktober 2026, effektiver Jahreszins): fünf Jahre 4,25 Prozent, zehn Jahre 4,22 Prozent, 15 Jahre 4,41 Prozent, 20 Jahre 4,51 Prozent — jeweils bei einem Beleihungsauslauf unter 70 Prozent. Bei 80 Prozent Beleihungsauslauf kostet das zehnjährige Darlehen 4,34 Prozent, bei über 90 Prozent 4,62 Prozent. Dr. Klein nennt Topkonditionen zwischen 4,12 und 4,59 Prozent (Stand 05.10.2026). Das Interhyp-Bankenpanel erwartet kurzfristig überwiegend gleichbleibende Zinsen (80 Prozent), mittelfristig mehrheitlich fallende (60 Prozent). Als Belastungsfaktoren gelten der Iran-Konflikt und steigende Anleiherenditen.",
+          "einordnung": "Für die Strategie ‚maximaler Hebel, nur die Kaufnebenkosten aus Eigenkapital, danach Refinanzierung über mehrere Banken‘ heißt das: Zinsbindung, Tilgungssatz und Forward-Optionen jetzt rechnen — nicht auf fallende Zinsen warten. Bei einem Beleihungsauslauf über 90 Prozent kostet schon die Beleihungshöhe 0,4 Prozentpunkte Zins.",
           "quellen": [
             {
-              "name": "BMWSB — Pressemitteilungen (Meldung zur EH55-Plus-Förderung, 09.10.2026)",
-              "url": "https://www.bmwsb.bund.de/DE/tools-services/presse/pressemitteilungen/pressemitteilungen_node.html"
+              "name": "Interhyp — Bauzinsen aktuell (Stand 15.10.2026)",
+              "url": "https://www.interhyp.de/zinsen"
             },
             {
-              "name": "Haufe — KfW-Kredit: Bund stockt EH55-Plus-Förderung auf",
-              "url": "https://www.haufe.de/immobilien/wirtschaft-politik/neubaustandard-eh40_84342_605890.html"
-            },
-            {
-              "name": "Interhyp — KfW-Förderung EH55: Bund stockt um 250 Mio. Euro auf (13.10.2026)",
-              "url": "https://www.interhyp.de/ratgeber/news/kfw-foerderung-eh55-aufstockung/"
+              "name": "Dr. Klein — Zinsentwicklung Baufinanzierung 2026 (Topzinsen Stand 05.10.2026)",
+              "url": "https://www.drklein.de/zinsentwicklung-prognose.html"
             }
           ]
         },
         {
-          "titel": "Bauzinsen auf Jahreshöchstniveau — zehn Jahre ab 4,11 Prozent",
-          "aufmacher": "Nach dem Anstieg im Spätsommer haben sich die Bauzinsen auf hohem Niveau stabilisiert: Der effektive Topzins für ein zehnjähriges Darlehen liegt derzeit bei 4,11 Prozent.",
-          "fakten": "Die Topkonditionen für Zinsbindungen zwischen 5 und 30 Jahren liegen zwischen 4,12 und 4,59 Prozent (Stand 05.10.2026). Im Durchschnitt kosteten zehnjährig gebundene Darlehen Anfang Oktober 4,44 Prozent. Beim Vermittler Interhyp lag der Schnitt für zehnjährige Darlehen zuletzt bei rund 4,46 Prozent — im Juli waren es noch 3,8 Prozent. Der Markt bewegt sich damit in der Nähe seines Jahreshochs.",
-          "einordnung": "Für die Finanzierungsstrategie — möglichst hoher Bankanteil, später Refinanzierung über mehrere Banken — heißt das: Zinsbindung, Tilgungssatz und Forward-Optionen jetzt rechnen. Ein weiterer Anstieg um 0,1 bis 0,2 Prozentpunkte verteuert eine durchschnittliche Finanzierung schnell um mehrere Tausend Euro.",
+          "titel": "Rhein-Sieg-Kreis: Mieten ziehen an, Kaufpreise für Wohnungen deutlich fester",
+          "aufmacher": "Im Rhein-Sieg-Kreis sind die Angebotsmieten im dritten Quartal 2026 auf durchschnittlich 10,22 Euro pro Quadratmeter gestiegen — ein Plus von 6,2 Prozent zum Vorjahr.",
+          "fakten": "ImmoScout24 weist für den Kreis im dritten Quartal 2026 Ø 10,22 €/m² aus, nach 9,62 €/m² im Vorjahresquartal (plus 6,35 Prozent) und 10,10 €/m² im zweiten Quartal 2026 (plus 1,19 Prozent). Der Bundesdurchschnitt liegt bei 9,42 €/m². Die höchsten Mieten im Kreis liegen in Niederkassel und Siegburg (je 11,07 €/m²), gefolgt von Alfter (11,05), Sankt Augustin (10,88) und Bornheim (10,84); am günstigsten sind Windeck (7,93) und Ruppichteroth (8,33 €/m²). KSK-Immobilien meldet für den Rhein-Sieg-Kreis im dritten Quartal 2026 einen durchschnittlichen Kaufpreis für Eigenheime von 531.333 Euro (plus 0,5 Prozent zum Vorquartal) und 3.849 €/m² für Eigentumswohnungen (plus 7,5 Prozent). Die ImmoScout24-Zahlen sind kein amtlicher Mietspiegel nach Paragraf 558c/558d BGB.",
+          "einordnung": "Steigende Mieten stützen genau den Cashflow, den die geplante MFH-Finanzierung tragen soll — während Wohnungspreise mit plus 7,5 Prozent im Quartal schneller zulegen als die Mieten. Die Spanne im Kreis beträgt mehr als drei Euro pro Quadratmeter: Standortwahl entscheidet stärker als die Ausstattung.",
           "quellen": [
             {
-              "name": "Dr. Klein — Zinsentwicklung Baufinanzierung (Topzins 4,11 %, Stand 15.10.2026)",
-              "url": "https://www.drklein.de/zinsentwicklung-prognose.html"
+              "name": "ImmoScout24 — Mietspiegel Rhein-Sieg-Kreis, Q3 2026",
+              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"
             },
             {
-              "name": "Interhyp — Regionale Chancen trotz höherer Zinsen (07.10.2026)",
-              "url": "https://www.interhyp.de/ratgeber/news/regionale-kaufchancen-nutzen/"
-            },
-            {
-              "name": "Statista — Bauzinsen: monatliche Entwicklung in Deutschland bis 2026",
-              "url": "https://de.statista.com/statistik/daten/studie/1347565/umfrage/entwicklung-der-bauzinsen-in-deutschland/"
+              "name": "KSK-Immobilien (Kreissparkasse Köln) — Immobilienpreise Rheinland, Stand Q3 2026",
+              "url": "https://www.ksk-immobilien.de/wissen-ratgeber/immobilienpreise"
             }
           ]
         }
@@ -107,46 +103,34 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "US-Inflation bremst den DAX aus — Schluss bei 25.322 Punkten",
-          "aufmacher": "Der DAX hat am Mittwoch einen Großteil seiner Tagesgewinne abgegeben und 0,25 Prozent fester bei 25.322,48 Punkten geschlossen, nachdem die US-Verbraucherpreise im September mit 3,7 Prozent über den Erwartungen lagen.",
-          "fakten": "Die US-Inflationsrate stieg im Vorjahresvergleich auf 3,7 Prozent, getrieben vor allem von Benzin- und Dieselpreisen; im Monatsvergleich legte der Index um 0,6 Prozent zu. Die Helaba wertet die Rate als deutlich über der Zielmarke der US-Notenbank. Zeitweise hatte der DAX am Mittwoch 0,8 Prozent zugelegt, am Nachmittag lag er noch rund 0,2 Prozent im Plus. Der MDax stieg um 0,7 Prozent auf 30.225 Punkte. Seit Jahresbeginn steht der DAX bei rund plus 3,19 Prozent, das Jahreshoch liegt bei 26.618,74 Punkten.",
-          "einordnung": "Zinsempfindliche Bewertungen bleiben der Hebel: Beharrlich hohe US-Inflationsraten stützen die Zinserwartungen und können Bauzins- und Refinanzierungskonditionen auch hierzulande nach oben ziehen — unmittelbar relevant für die geplante MFH-Finanzierung.",
+          "titel": "DAX schließt 0,33 Prozent fester bei 25.382 Punkten — Tech-Ausverkauf bremst kaum",
+          "aufmacher": "Der DAX hat am Donnerstag 0,33 Prozent höher bei 25.382 Punkten geschlossen und den weltweiten Ausverkauf bei Technologieaktien weitgehend weggesteckt.",
+          "fakten": "Der Leitindex pendelt seit Tagen um die Marke von 25.000 Punkten und schloss am 15. Oktober 2026 bei 25.382,62 Punkten (Tageshoch 25.420,62, Tagestief 25.133,71). Auslöser der internationalen Verluste waren überraschend hohe US-Verbraucherpreise von 3,7 Prozent im Vorjahresvergleich, getrieben von Energiepreisen; die Nasdaq gab zeitweise rund 1,8 Prozent nach, der Dow-Jones-Index legte 0,3 Prozent zu. Die Renditen am US-Anleihemarkt fielen, die US-Einzelhandelsumsätze stiegen stärker als erwartet. Die US-Notenbank berät am 27. und 28. Oktober, der Leitzins liegt bei 3,75 bis 4,00 Prozent. Als weitere Belastung gelten die hohen Ölpreise und die Staatsschulden großer EU-Staaten wie Frankreich und Italien.",
+          "einordnung": "Der Umweg über die USA bleibt entscheidend: Solange dort Zinssorgen dominieren, fallen die deutschen Bauzinsen kaum spürbar. Die flache Seitwärtsbewegung des DAX ist für die Liquiditätsplanung das kleinere Problem als die Anschlussfinanzierung.",
           "quellen": [
             {
-              "name": "finanzen.net — Pluszeichen in Frankfurt: DAX verbucht letztendlich Zuschläge (14.10.2026)",
-              "url": "https://www.finanzen.net/nachricht/aktien/pluszeichen-in-frankfurt-dax-verbucht-letztendlich-zuschlaege-15985118"
+              "name": "tagesschau — Marktbericht: DAX vom Tech-Ausverkauf kaum betroffen (15.10.2026, 18:32 Uhr)",
+              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-asml-tsmc-berichtssaison-102.html"
             },
             {
-              "name": "t-online (dpa-AFX) — Aktien Frankfurt: US-Inflationsdaten bremsen steigenden Dax aus (14.10.2026)",
-              "url": "https://www.t-online.de/finanzen/boerse/ticker/aktien-frankfurt-us-inflationsdaten-bremsen-steigenden-dax-aus/0DBA9C00D2B7F37E/"
-            },
-            {
-              "name": "Handelsblatt — Preise in den USA steigen im September um 3,7 Prozent",
-              "url": "https://global.handelsblatt.com/finanzen/geldpolitik/inflation-preise-in-den-usa-steigen-im-september-um-37-prozent/100261070.html"
-            },
-            {
-              "name": "U.S. Bureau of Labor Statistics — Consumer Price Index (September 2026, veröffentlicht 14.10.2026)",
-              "url": "https://www.bls.gov/cpi/"
+              "name": "Yahoo Finanzen — DAX historische Kurse (Schlusskurs 15.10.2026)",
+              "url": "https://de.finance.yahoo.com/quote/%5EGDAXI/history"
             }
           ]
         },
         {
-          "titel": "EZB: Leitzins steht bei 2,50 Prozent — nächste Entscheidung am 29. Oktober",
-          "aufmacher": "Die Europäische Zentralbank hat ihre Leitzinsen zuletzt am 10. September um 25 Basispunkte angehoben; seit dem 16. September liegt der Zinssatz der Einlagefazilität bei 2,50 Prozent.",
-          "fakten": "Der Hauptrefinanzierungssatz beträgt 2,65 Prozent, die Spitzenrefinanzierungsfazilität 2,90 Prozent. Der EZB-Rat begründet den Schritt mit anhaltendem Inflationsdruck durch den Konflikt im Nahen Osten. Die EZB-Projektionen erwarten eine Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028); für das Wachstum werden 0,9, 1,4 und 1,5 Prozent veranschlagt. Die Risiken für die Inflation gelten als aufwärtsgerichtet. Die nächste geldpolitische Sitzung ist für den 28. und 29. Oktober 2026 angesetzt, der Zinsbeschluss fällt am zweiten Tag.",
-          "einordnung": "Entscheidend ist weniger der Beschluss selbst als die Erwartung: Die deutsche Inflationsrate liegt im September bei 3,3 Prozent und damit über dem EZB-Ziel, Spielraum für Zinssenkungen ist gering. Das spricht dafür, Finanzierungskonditionen zu sichern statt auf fallende Zinsen zu warten.",
+          "titel": "Öl bleibt teuer — US-Energiebehörde hebt Brent-Prognose auf 105 Dollar",
+          "aufmacher": "Die US-Energiebehörde EIA hat ihre Preisprognose für Brent-Rohöl im vierten Quartal 2026 auf durchschnittlich 105 US-Dollar je Barrel angehoben; eine Entspannung deutet sich erst Ende des zweiten Quartals 2027 an.",
+          "fakten": "Die EIA erwartet für das vierte Quartal 2026 im Schnitt 105 US-Dollar je Barrel Brent — 14 Prozent mehr als in der vorherigen Prognose. Am Donnerstag, 15. Oktober, notierte Brent um die 104 US-Dollar und damit rund zwei Prozent niedriger als am Vortag. Der Ölpreis gilt an den Börsen neben den EU-Staatsschulden als zentraler Belastungsfaktor der Inflation.",
+          "einordnung": "Hohe Kraftstoffpreise treffen zwei Flanken: Sie halten die Inflations- und Zinserwartungen oben und sie belasten die Kundenfrequenz in der Autopflege. Beim Tanken über die Firma ist der Barrel-Preis ein unmittelbarer Kostenfaktor im eigenen Betrieb.",
           "quellen": [
             {
-              "name": "Europäische Zentralbank — Geldpolitische Beschlüsse vom 10. September 2026",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
+              "name": "heizoelexpress — EIA hebt Ölpreisprognose an (15.10.2026)",
+              "url": "https://www.heizoelexpress.com/energieinfos/2026/Oktober/15/eia-hebt-oelpreisprognose-rohoel-bleibt-vorerst-teuer-entspannung-fuer-ende-2-quartal-2027-in-aussicht"
             },
             {
-              "name": "Europäische Zentralbank — Sitzungskalender des EZB-Rats",
-              "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.de.html"
-            },
-            {
-              "name": "Statistisches Bundesamt — Inflationsrate im September 2026 bei +3,3 %",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"
+              "name": "esyoil — Ölpreise geben leicht nach, Brent um die 104 Dollar (15.10.2026)",
+              "url": "https://www.esyoil.com/news/oelpreise-geben-leicht-nach-erste-details-zur-geplanten-gruenheizoelquote?id=109191"
             }
           ]
         }
@@ -156,34 +140,26 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Home Assistant: HA-MCP 8.7.0 und Shelly-Firmware 2.1.0 neu verfügbar",
-          "aufmacher": "Zwei neue Updates sind in Home Assistant aufgelaufen: der HA-MCP in Version 8.7.0 und die Shelly-Firmware 2.1.0; die ConnectLife-Aktualisierung von gestern steht weiter offen.",
-          "fakten": "HA-MCP: Die Custom Component springt von v8.6.0 auf v8.7.0, das Add-on von 8.6.0.dev3016 auf 8.7.0.dev3047 (Release 14.10.2026). Neu sind unter anderem eine Dashboard-Kartensuche, die auch in Custom Cards verschachtelte Karten erreicht, das Erkennen des zuständigen Helfers vor dem Löschen einer Entität, Aktionen für Thread-Datasets sowie die Anpassung an Home Assistant 2026.10 (MCP-Discovery und Tool-Metadaten). Shelly: Firmware 2.0.1 auf 2.1.0 (14.10.2026) bringt Unterstützung für Shelly-Cloud-NILM-Dienste bei Mess- und Energiemessgeräten; betroffen sind hier der Outdoor-Kühlschrank und die Unterverteilung (Shelly Pro 3EM). Unverändert offen bleibt ConnectLife v0.50.0 auf v0.51.0; die Bosch-SHC-Integration steht nicht mehr als Update an.",
-          "einordnung": "NILM heißt, dass Shelly künftig Verbraucher im Haus aus dem Lastprofil erraten will — für die Verbrauchsauswertung der Unterverteilung ein interessanter, aber cloudgebundener Ansatz. Das MCP-Update verbessert die Werkzeuge, mit denen ich auf Home Assistant zugreife. Nichts wird ohne Freigabe eingespielt.",
+          "titel": "Home Assistant: Spook 👻 5.11.1 behebt Fehlalarme und einen Start-Blocker",
+          "aufmacher": "Für die Home-Assistant-Diagnoseerweiterung Spook steht Version 5.11.1 bereit; installiert ist derzeit v5.11.0.",
+          "fakten": "Spook v5.11.1 (Release 14.10.2026, 23:45 Uhr) entfernt die Reparaturmeldung für doppelte Assist-Namen vollständig: Sie hatte ‚exposed to Assist‘ mit ‚asked for by Assist‘ verwechselt und erzeugte auf großen Installationen über hundert Meldungen, die Home Assistant beim Start ausbremsen konnten; bestehende Reparaturen löschen sich nach einem Neustart. Zusätzlich fallen mehrere Fehlalarme aus 5.11.0 weg, unter anderem bei Themen-Templates, per Template abgeschalteten Blueprint-Triggern, browser_mod sowie Entitäts-IDs fremder Home-Assistant-Instanzen in REST-Sensor-Daten. Spook ist ein Prüfwerkzeug: Es meldet ungültige Entitäts-IDs, Templates und Automationen, greift aber nicht selbst ein.",
+          "einordnung": "Das Update beseitigt genau den Fehler, der große Installationen beim Start blockieren konnte — bei der hiesigen Entitätszahl relevant. Einspielen erst nach Freigabe.",
           "quellen": [
             {
-              "name": "GitHub — homeassistant-ai/ha-mcp Release v8.7.0",
-              "url": "https://github.com/homeassistant-ai/ha-mcp/releases/v8.7.0"
-            },
-            {
-              "name": "Shelly — Firmware-Changelog Gen2+ (2.1.0 vom 14.10.2026)",
-              "url": "https://shelly-api-docs.shelly.cloud/gen2/changelog/"
-            },
-            {
-              "name": "GitHub — oyvindwe/connectlife-ha Release 0.51.0",
-              "url": "https://github.com/oyvindwe/connectlife-ha/releases/v0.51.0"
+              "name": "GitHub — frenck/spook Release v5.11.1 (14.10.2026)",
+              "url": "https://github.com/frenck/spook/releases/tag/v5.11.1"
             }
           ]
         },
         {
-          "titel": "Paperless-ngx 3.3.1 wartet weiter; Hermes-Update offen und ein gestoppter Container auf dem NAS",
-          "aufmacher": "Paperless-ngx ist weiterhin in Version 3.3.0 installiert, 3.3.1 steht unverändert zur Einspielung bereit; zusätzlich meldet der Scan ein offenes Hermes-Agent-Update und einen gestoppten Docker-Container.",
-          "fakten": "Paperless-ngx 3.3.1 (Release 12.10.2026) ist ein reines Bugfix-Release: Es korrigiert Rechte- und Index-Behandlung von Dokumentversionen nach dem Root-Dokument-Prinzip, repariert einen unterbrochenen Neuaufbau des Suchindex, verhindert Indexeinträge für nicht darstellbare Datumswerte und liefert verständlichere Fehlermeldungen bei ungültigem JSON. Der lokale Hermes Agent läuft als Git-Installation auf Stand vgit.e06df9c (2026.9.24) und ist laut Versionsprüfung Commits hinter dem Upstream zurück. Portainer meldet auf dem NAS einen gestoppten Container.",
-          "einordnung": "Das Paperless-Update ist risikoarm und behebt genau die Fälle, die beim täglichen 05:00-Import mit Versionen und Bulk-Reprocess auftreten. Update, Hermes-Upgrade und Container-Start erfolgen erst nach Freigabe.",
+          "titel": "Paperless-ngx 3.3.1 weiterhin offen — VoiceStudio-Container auf dem NAS gestoppt",
+          "aufmacher": "Der Update-Scan meldet weiterhin nur Paperless-ngx 3.3.0 auf 3.3.1; auf dem NAS steht der VoiceStudio-Container seit rund einem Tag.",
+          "fakten": "paperless-ngx 3.3.1 (Release 12.10.2026) ist ein reines Bugfix-Release: Es nutzt für den LLM-Index den effektiven Inhalt des Root-Dokuments, indexiert Dokumentversionen als deren Root-Dokument, prüft die Berechtigung von Dokumentversionen über das Root-Dokument und liefert verständlichere Fehlermeldungen bei ungültigem JSON. Auf dem NAS laufen 24 Container; gestoppt sind derzeit ghcr.io/debpalash/voicestudio:stable (Exit-Code 137 vor rund 23 Stunden — typisch für einen erzwungenen Neustart oder eine Speichergrenze) und ein einmaliger Initialisierungs-Container von Firecrawl, der regulär mit Exit 0 endet. Alle Kernsysteme laufen stabil: Paperless-ngx samt Datenbank und Broker, Open WebUI, Immich, Firecrawl und Portainer, Paperless seit fünf Tagen ohne Unterbrechung. Weitere Updates über die Home-Assistant-Update-Entitäten stehen nicht an.",
+          "einordnung": "Das Paperless-Update behebt die Versions- und Indexfälle, die beim täglichen 05:00-Import auftreten — risikoarm und empfehlenswert. Der VoiceStudio-Ausfall kostet nur die lokale TTS-Instanz. Neustart und Update erst nach Freigabe.",
           "quellen": [
             {
-              "name": "GitHub — paperless-ngx Releases (v3.3.1)",
-              "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
+              "name": "GitHub — paperless-ngx Release v3.3.1 (12.10.2026)",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.1"
             }
           ]
         }
