@@ -1,14 +1,14 @@
 {
-  "datum": "Freitag, 16.10.2026",
+  "datum": "Samstag, 17.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "11,5 °C · Regen 37 % · UV 3,1",
-          "aufmacher": "☀️ Klar und mild — der Tageshöchstwert liegt bei 23,0 °C.",
-          "fakten": "Aktuell 11,5 °C (Tief 11,5 °C, Höchstwert 23,0 °C). Regenwahrscheinlichkeit 37 %, UV-Index 3,1 (mittel).",
-          "einordnung": "Trocken genug für Außenarbeiten am Vormittag, am Nachmittag ist ein Schauer möglich — Regenjacke mitnehmen.",
+          "titel": "11,8 °C · Regen 89 % · UV 2,6",
+          "aufmacher": "☁️ Bedeckt und nass — bei einem Tageshöchstwert von 16,8 °C ist heute mit Regen zu rechnen.",
+          "fakten": "Aktuell 11,8 °C, Tief 9,7 °C, Höchstwert 16,8 °C. Regenwahrscheinlichkeit 89 %, UV-Index 2,6 (niedrig).",
+          "einordnung": "Kein Tag für Außenarbeiten am Haus oder an der Fassade — der Bundesschnitt meldet für heute 8 bis 18 Grad und aus Nordwesten deutlich kühlere Luft.",
           "quellen": []
         }
       ]
@@ -19,7 +19,7 @@
         {
           "titel": "Mo 19.10. · 15:00 — Therapiezentrum Snoek (Manuelle Therapie, Sporttherapie, Osteopathie)",
           "aufmacher": "Der nächste Kalendereintrag: Physiotherapie am Montagnachmittag.",
-          "fakten": "19. Oktober 2026, 15:00 Uhr.",
+          "fakten": "19. Oktober 2026, 15:00 Uhr. In den nächsten drei Tagen sonst keine weiteren Termine im Kalender.",
           "einordnung": "",
           "quellen": []
         }
@@ -29,34 +29,34 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Street Food Festival startet heute in der Fußgängerzone",
-          "aufmacher": "Von heute bis Sonntag wird die Kölner Straße zur Genussmeile: Rund 15 Street-Food-Trucks, Cocktails und eine Chill-Out-Lounge bespielen die Troisdorfer Innenstadt.",
-          "fakten": "Das Street Food Festival läuft von Freitag, 16. Oktober (17:00–22:00 Uhr), über Samstag, 17. Oktober (15:00–22:00 Uhr) bis Sonntag, 18. Oktober (12:00–19:00 Uhr) auf der Kölner Straße in der Fußgängerzone. Der Eintritt ist frei. Veranstalter sind Andre Neff und Ramon Wiener, beteiligt ist Bürgermeister Alexander Biber.",
-          "einordnung": "Drei Tage zusätzliche Frequenz in der Innenstadt — für Einzelhandel und Anlieger im Zentrum ein spürbarer Umsatzimpuls, und ein ruhiger Anlass, sich die Straße selbst anzusehen.",
+          "titel": "Troisdorf-Müllekoven: Einbruch in eine Wohnung im Mehrfamilienhaus",
+          "aufmacher": "Unbekannte sind am Mittwoch über das Garagendach auf den Balkon einer Wohnung in Troisdorf-Müllekoven gestiegen und haben die Wohnung einer 76-Jährigen verwüstet.",
+          "fakten": "Die Bewohnerin verließ ihre Wohnung in der Dechant-Hoven-Straße am Mittwoch, 15. Oktober, gegen 10:00 Uhr und kehrte gegen 19:15 Uhr zurück — sie fand die Wohnung verwüstet vor. Nach bisherigen Ermittlungen verschafften sich die Täter über das Garagendach Zutritt zum Balkon und öffneten von dort die Wohnung. Die Kreispolizeibehörde Rhein-Sieg-Kreis sucht Zeugen (Meldung vom 16.10.2026, 12:22 Uhr). Angaben zu möglichem Diebesgut enthält die veröffentlichte Meldung nicht.",
+          "einordnung": "Der Weg über Garagendach und Balkon ist der klassische Einstieg in Mehrfamilienhäusern: Balkon- und Terrassentüren sind der Schwachpunkt, aufstiegsfreundliche Garagendächer die Vorlage. Bei eigenen Objekten lohnt die Prüfung von Aufstiegshilfen, Schließzylindern und Beleuchtung an den Rückseiten.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf — Street Food Festival (16.–18.10.2026)",
-              "url": "https://www.troisdorf.de/de/kalender/startseite/allgemeine-veranstaltungen/2026/oktober/2026-10-16-street-food-festival/789100:0"
+              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis — Einbruch in Wohnung in Troisdorf, Zeugen gesucht (16.10.2026)",
+              "url": "https://aktuell.meinestadt.de/rhein-sieg-kreis/polizeimeldungen/830057849"
             },
             {
-              "name": "Rheinische Anzeigenblätter — Street Food Festival: Genussmeile in der Fußgängerzone",
-              "url": "https://www.rheinische-anzeigenblaetter.de/troisdorf/c-nachrichten/genussmeile-in-der-fussgaengerzone_a381188"
+              "name": "news.de — Polizei-News Troisdorf, 16.10.26: Einbruch in Wohnung in Troisdorf (Syndikation der Polizeimeldung)",
+              "url": "https://www.news.de/lokales/860099062/blaulicht-news-polizei-einsatz-troisdorf-16-10-26-diebstahl-heute/1/"
             }
           ]
         },
         {
-          "titel": "Rhein-Sieg-Kreis: Festnahme nach Tankstellenüberfällen von 2021",
-          "aufmacher": "Fast fünf Jahre nach zwei Messerüberfällen auf Tankstellen in Königswinter und Hennef hat die Polizei einen 27 Jahre alten Tatverdächtigen festgenommen; er sitzt in Untersuchungshaft.",
-          "fakten": "In der Nacht zum 24. Oktober 2021 hatte ein maskierter Mann gegen 04:00 Uhr zunächst an einer Tankstelle in Königswinter (Straße „Im Mühlenbruch“) mehrfach auf einen Kunden eingestochen und vergeblich Bargeld gefordert; gegen 04:15 Uhr überfiel er eine Tankstelle an der Frankfurter Straße in Hennef und stach dem Kassierer ins Bein. Nach einem Hinweis aus der Bevölkerung erfolgte die Festnahme am Dienstagmorgen, 13. Oktober 2026, an der Wohnanschrift des Mannes in Hennef. Der Haftrichter ordnete am 14. Oktober Untersuchungshaft wegen Fluchtgefahr an. Die Meldung datiert vom 15. Oktober 2026, 12:55 Uhr.",
-          "einordnung": "Auch wenn Troisdorf nicht Tatort war: Der Fall zeigt, wie lange solche Ermittlungen im Kreis laufen — und dass ein einziger Bürgerhinweis sie zum Abschluss bringt. Für Gewerbeobjekte mit Nachtschalter und Bargeld bleibt das ein Argument für Sichtschutz, Kameratechnik und einen möglichst bargeldarmen Betrieb.",
+          "titel": "Troisdorf: Vollsperrungen bis in den Februar — Offenbachstraße, Eschmar und Spich betroffen",
+          "aufmacher": "In Troisdorf laufen mehrere Großbaustellen: Die Offenbachstraße in Kriegsdorf ist seit dem 12. Oktober voll gesperrt, in Eschmar bleiben Max-Ernst-Straße und Noldestraße bis 14. Februar 2027 dicht.",
+          "fakten": "Die Stadt Troisdorf listet folgende Verkehrsbeschränkungen: Altenrath, Salamanderkaule 17, Vollsperrung 19.–23. Oktober (Telekommunikationsstörung); Bergheim, Zur Kleinbahn 10 vom 12.–23. Oktober (Gasanschluss) und Pohlgasse 1 vom 26.–30. Oktober; Eschmar, Max-Ernst-Straße und Noldestraße vom 12. Oktober 2026 bis 14. Februar 2027 in mehreren Bauabschnitten; Oberlar, Agnesstraße 58, Vollsperrung am 29. Oktober von 6 bis 16 Uhr (Kraneinsatz); Sieglar, Uhlandstraße vom 21. September bis 18. Dezember 2026 in Bauabschnitten; Spich, Vulkanstraße 2 bis 17 seit 12. Oktober 2026 bis voraussichtlich Februar 2027 (Leitungssanierung, überwiegend Vollsperrung) und Kastanienweg vom 19.–27. Oktober (Glasfaser). Im Glasfaserausbau an der Erzbergerstraße 1–56, Scheidemannstraße 2–20 und Kriegsdorfer Straße 1–49 kommt es vom 19. Oktober bis 27. November 2026 zu Vollsperrungen der Fahrbahn. In Troisdorf-West ist die Großstraße 20 vom 13.–26. Oktober während der Arbeitszeiten gesperrt; Zum Altenforst bleibt zwischen Königsberger Straße und Brunnenstraße bis einschließlich 20. Januar 2027 zu, der Abschnitt zwischen Römerstraße und Heimbachstraße folgt vom 26. Oktober bis 11. Dezember 2026. Umleitungen sind ausgeschildert, die Zufahrt für Rettungskräfte bleibt gewährleistet.",
+          "einordnung": "Für Fahrten zwischen Müllekoven, Spich, Sieglar und der Innenstadt ist der Nahbereich bis Februar dicht — Anfahrt zu Objekten und Terminen in Kriegsdorf und Spich sollte entsprechend geplant werden.",
           "quellen": [
             {
-              "name": "Polizei Bonn / Staatsanwaltschaft Bonn / Polizei Rhein-Sieg-Kreis — Festnahme nach Tankstellenüberfällen (15.10.2026)",
-              "url": "https://bonn.polizei.nrw/presse/festnahme-nach-tankstellenueberfaellen-in-koenigswinter-und-hennef-im-oktober-2021-27-jaehriger-in-untersuchungshaft"
+              "name": "Stadt Troisdorf — Arbeiten und Straßensperrungen im Stadtgebiet (14.10.2026)",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/aktuelle-verkehrsmeldungen-fuer-troisdorf-1/"
             },
             {
-              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis via Presseportal/meinestadt — Originalsachverhalt (15.10.2026, 14:05 Uhr)",
-              "url": "https://aktuell.meinestadt.de/rhein-sieg-kreis/polizeimeldungen/829693903"
+              "name": "Kölner Stadt-Anzeiger — Alle Sperrungen in Troisdorf",
+              "url": "https://www.ksta.de/region/rhein-sieg-bonn/troisdorf/alle-sperrungen-in-troisdorf-1-1396599"
             }
           ]
         }
@@ -66,34 +66,34 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben über vier Prozent — zehnjährige Darlehen bei rund 4,5 Prozent",
-          "aufmacher": "Die Bauzinsen haben sich auf hohem Niveau eingependelt: Interhyp nennt für zehnjährige Darlehen aktuell 4,5 Prozent, Dr. Klein weist Topkonditionen zwischen 4,12 und 4,59 Prozent aus.",
-          "fakten": "Interhyp-Zinstabelle (Konditionsangebote der Interhyp AG vom 05. bis 11. Oktober 2026, effektiver Jahreszins): fünf Jahre 4,25 Prozent, zehn Jahre 4,22 Prozent, 15 Jahre 4,41 Prozent, 20 Jahre 4,51 Prozent — jeweils bei einem Beleihungsauslauf unter 70 Prozent. Bei 80 Prozent Beleihungsauslauf kostet das zehnjährige Darlehen 4,34 Prozent, bei über 90 Prozent 4,62 Prozent. Dr. Klein nennt Topkonditionen zwischen 4,12 und 4,59 Prozent (Stand 05.10.2026). Das Interhyp-Bankenpanel erwartet kurzfristig überwiegend gleichbleibende Zinsen (80 Prozent), mittelfristig mehrheitlich fallende (60 Prozent). Als Belastungsfaktoren gelten der Iran-Konflikt und steigende Anleiherenditen.",
-          "einordnung": "Für die Strategie ‚maximaler Hebel, nur die Kaufnebenkosten aus Eigenkapital, danach Refinanzierung über mehrere Banken‘ heißt das: Zinsbindung, Tilgungssatz und Forward-Optionen jetzt rechnen — nicht auf fallende Zinsen warten. Bei einem Beleihungsauslauf über 90 Prozent kostet schon die Beleihungshöhe 0,4 Prozentpunkte Zins.",
+          "titel": "Bauzinsen bleiben bei rund 4,4 Prozent — Banken erwarten Seitwärtsbewegung",
+          "aufmacher": "Zehnjährige Baufinanzierungen kosten im Schnitt weiterhin rund 4,4 Prozent; 80 Prozent der von Interhyp befragten Banken rechnen für die nächsten ein bis zwei Monate mit unveränderten Konditionen.",
+          "fakten": "Interhyp meldet für zehnjährige Darlehen rund 4,4 Prozent und begründet die erwartete Seitwärtsbewegung damit, dass die Finanzmärkte mehrere EZB-Zinsschritte bereits vorweggenommen haben. Im Bankenpanel rechnen 80 Prozent kurzfristig mit gleichbleibenden und 20 Prozent mit fallenden Zinsen; ein kurzfristiger Anstieg wird von niemandem erwartet. Langfristig bleibt das Bild geteilt: 60 Prozent erwarten fallende, 40 Prozent steigende Bauzinsen. Baufi24 nennt für den 17. Oktober 2026 einen Topzins von rund 4,46 Prozent (Beispiel: 300.000 Euro Darlehen, 2 Prozent Tilgung, 90 Prozent Beleihung) und einen Zinskorridor von 4,0 bis 5,0 Prozent. Als Belastungsfaktoren gelten der Iran-Konflikt, hohe Staatsdefizite und steigende Anleiherenditen.",
+          "einordnung": "Für die Strategie „nur die Kaufnebenkosten aus Eigenkapital, Rest über Bankdarlehen, danach Refinanzierung über mehrere Banken“ entscheidet die Struktur, nicht das Warten auf fallende Zinsen: Zinsbindung, Tilgungssatz und Forward-Optionen jetzt rechnen. Bei 90 Prozent Beleihung kostet allein die Beleihungshöhe Zins.",
           "quellen": [
             {
-              "name": "Interhyp — Bauzinsen aktuell (Stand 15.10.2026)",
-              "url": "https://www.interhyp.de/zinsen"
+              "name": "Interhyp — Zins-Update Oktober 2026: Bauzinsen stabilisieren sich auf erhöhtem Niveau",
+              "url": "https://www.interhyp.de/ueber-interhyp/presse/zinsupdate-oktober-2026/"
             },
             {
-              "name": "Dr. Klein — Zinsentwicklung Baufinanzierung 2026 (Topzinsen Stand 05.10.2026)",
-              "url": "https://www.drklein.de/zinsentwicklung-prognose.html"
+              "name": "Baufi24 — Bauzinsen aktuell, Stand 17.10.2026",
+              "url": "https://www.baufi24.de/bauzinsen/"
             }
           ]
         },
         {
-          "titel": "Rhein-Sieg-Kreis: Mieten ziehen an, Kaufpreise für Wohnungen deutlich fester",
-          "aufmacher": "Im Rhein-Sieg-Kreis sind die Angebotsmieten im dritten Quartal 2026 auf durchschnittlich 10,22 Euro pro Quadratmeter gestiegen — ein Plus von 6,2 Prozent zum Vorjahr.",
-          "fakten": "ImmoScout24 weist für den Kreis im dritten Quartal 2026 Ø 10,22 €/m² aus, nach 9,62 €/m² im Vorjahresquartal (plus 6,35 Prozent) und 10,10 €/m² im zweiten Quartal 2026 (plus 1,19 Prozent). Der Bundesdurchschnitt liegt bei 9,42 €/m². Die höchsten Mieten im Kreis liegen in Niederkassel und Siegburg (je 11,07 €/m²), gefolgt von Alfter (11,05), Sankt Augustin (10,88) und Bornheim (10,84); am günstigsten sind Windeck (7,93) und Ruppichteroth (8,33 €/m²). KSK-Immobilien meldet für den Rhein-Sieg-Kreis im dritten Quartal 2026 einen durchschnittlichen Kaufpreis für Eigenheime von 531.333 Euro (plus 0,5 Prozent zum Vorquartal) und 3.849 €/m² für Eigentumswohnungen (plus 7,5 Prozent). Die ImmoScout24-Zahlen sind kein amtlicher Mietspiegel nach Paragraf 558c/558d BGB.",
-          "einordnung": "Steigende Mieten stützen genau den Cashflow, den die geplante MFH-Finanzierung tragen soll — während Wohnungspreise mit plus 7,5 Prozent im Quartal schneller zulegen als die Mieten. Die Spanne im Kreis beträgt mehr als drei Euro pro Quadratmeter: Standortwahl entscheidet stärker als die Ausstattung.",
+          "titel": "GREIX: Angebotsmieten steigen im Quartal um 1,2 Prozent — stärkster Anstieg seit Anfang 2025",
+          "aufmacher": "Die Angebotsmieten in deutschen Städten haben im dritten Quartal 2026 wieder Fahrt aufgenommen: plus 1,2 Prozent zum Vorquartal und plus 3,7 Prozent zum Vorjahr.",
+          "fakten": "Der GREIX-Mietpreisindex des Kiel Instituts für Weltwirtschaft (veröffentlicht am 15.10.2026) wertet Angebotsmieten in 37 Städten und Regionen aus. Der gewichtete Durchschnitt liegt bei 14,60 Euro pro Quadratmeter. Bestandsmieten stiegen im Quartal um 1,2 Prozent, Neubaumieten nur um 0,6 Prozent; auf Jahressicht liegt der Bestand mit 3,7 Prozent vor dem Neubau mit 3,3 Prozent. Inflationsbereinigt bleiben plus 0,3 Prozent im Quartal und plus 0,7 Prozent im Jahr. Köln stagnierte im Quartal, legte im Jahresvergleich aber um 5,4 Prozent zu; Bonn gab im Quartal 0,4 Prozent nach und lag im Jahr bei plus 2,3 Prozent. immowelt meldet für das dritte Quartal bundesweit plus 0,7 Prozent bei Bestandswohnungen (Ø 3.288 Euro pro Quadratmeter) und bei Häusern (Ø 2.886 Euro pro Quadratmeter), rund 97 Prozent des Höchststands von Juni 2022; der Anteil der Mietanfragen stieg auf 81,7 Prozent, der Kaufanteil sank auf 18,3 Prozent.",
+          "einordnung": "Steigende Bestandsmieten stützen den Cashflow, den die geplante MFH-Finanzierung tragen soll — und sie steigen derzeit schneller als Neubaumieten. Regional bleibt es zweigeteilt: Köln und Bonn entwickeln sich gegenläufig, der Rhein-Sieg-Kreis liegt über dem GREIX-Durchschnitt.",
           "quellen": [
             {
-              "name": "ImmoScout24 — Mietspiegel Rhein-Sieg-Kreis, Q3 2026",
-              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"
+              "name": "Kiel Institut für Weltwirtschaft — GREIX-Mietpreisindex Q3 2026 (15.10.2026)",
+              "url": "https://www.kielinstitut.de/de/medien/aktuelles/greix-mietpreisindex-q3-2026-angebotsmieten-ziehen-wieder-an-bestandswohnungen-treiben-die-entwicklung/"
             },
             {
-              "name": "KSK-Immobilien (Kreissparkasse Köln) — Immobilienpreise Rheinland, Stand Q3 2026",
-              "url": "https://www.ksk-immobilien.de/wissen-ratgeber/immobilienpreise"
+              "name": "immowelt — Immobilienpreise Q3 2026: Wohnungen und Häuser",
+              "url": "https://www.immowelt.de/ratgeber/news/immobilienpreise-q3-2026-wohnungen-haeuser-kaufpreise"
             }
           ]
         }
@@ -103,34 +103,34 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "DAX schließt 0,33 Prozent fester bei 25.382 Punkten — Tech-Ausverkauf bremst kaum",
-          "aufmacher": "Der DAX hat am Donnerstag 0,33 Prozent höher bei 25.382 Punkten geschlossen und den weltweiten Ausverkauf bei Technologieaktien weitgehend weggesteckt.",
-          "fakten": "Der Leitindex pendelt seit Tagen um die Marke von 25.000 Punkten und schloss am 15. Oktober 2026 bei 25.382,62 Punkten (Tageshoch 25.420,62, Tagestief 25.133,71). Auslöser der internationalen Verluste waren überraschend hohe US-Verbraucherpreise von 3,7 Prozent im Vorjahresvergleich, getrieben von Energiepreisen; die Nasdaq gab zeitweise rund 1,8 Prozent nach, der Dow-Jones-Index legte 0,3 Prozent zu. Die Renditen am US-Anleihemarkt fielen, die US-Einzelhandelsumsätze stiegen stärker als erwartet. Die US-Notenbank berät am 27. und 28. Oktober, der Leitzins liegt bei 3,75 bis 4,00 Prozent. Als weitere Belastung gelten die hohen Ölpreise und die Staatsschulden großer EU-Staaten wie Frankreich und Italien.",
-          "einordnung": "Der Umweg über die USA bleibt entscheidend: Solange dort Zinssorgen dominieren, fallen die deutschen Bauzinsen kaum spürbar. Die flache Seitwärtsbewegung des DAX ist für die Liquiditätsplanung das kleinere Problem als die Anschlussfinanzierung.",
+          "titel": "Inflation zieht an: Deutschland 3,3 Prozent, Euroraum 3,8 Prozent",
+          "aufmacher": "Die Teuerung hat im September deutlich zugelegt: In Deutschland lag die Inflationsrate bei 3,3 Prozent, im Euroraum bei 3,8 Prozent — getrieben von den Energiepreisen.",
+          "fakten": "Nach der endgültigen Berechnung des Statistischen Bundesamts (13.10.2026) lag die Inflationsrate in Deutschland im September 2026 bei +3,3 Prozent, nach +2,9 Prozent im August und +2,8 Prozent im Juli. Die Energiepreise stiegen gegenüber dem Vorjahresmonat um 14,9 Prozent; die Jahresteuerung ist die höchste seit Dezember 2023. Eurostat weist für den Euroraum eine Schnellschätzung von 3,8 Prozent aus (August: 3,2 Prozent), mit Energie bei 18,8 Prozent und Dienstleistungen bei 3,2 Prozent; ohne Energie liegt die Rate bei 2,3 Prozent. Für Deutschland nennt Eurostat im harmonisierten Verbraucherpreisindex ebenfalls 3,3 Prozent.",
+          "einordnung": "Die Rate ohne Energie bleibt deutlich niedriger — der Schub kommt aus Energie, nicht aus breiter Nachfrage. Für die Baufinanzierung zählt ohnehin weniger der Verbraucherpreisindex als die Rendite langfristiger Anleihen, an der sich die Bauzinsen ausrichten.",
           "quellen": [
             {
-              "name": "tagesschau — Marktbericht: DAX vom Tech-Ausverkauf kaum betroffen (15.10.2026, 18:32 Uhr)",
-              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-asml-tsmc-berichtssaison-102.html"
+              "name": "Statistisches Bundesamt (Destatis) — Inflationsrate im September 2026 bei +3,3 % (13.10.2026)",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"
             },
             {
-              "name": "Yahoo Finanzen — DAX historische Kurse (Schlusskurs 15.10.2026)",
-              "url": "https://de.finance.yahoo.com/quote/%5EGDAXI/history"
+              "name": "Eurostat — Euro area annual inflation up to 3.8 %, Schnellschätzung September 2026 (02.10.2026)",
+              "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-02102026-ap"
             }
           ]
         },
         {
-          "titel": "Öl bleibt teuer — US-Energiebehörde hebt Brent-Prognose auf 105 Dollar",
-          "aufmacher": "Die US-Energiebehörde EIA hat ihre Preisprognose für Brent-Rohöl im vierten Quartal 2026 auf durchschnittlich 105 US-Dollar je Barrel angehoben; eine Entspannung deutet sich erst Ende des zweiten Quartals 2027 an.",
-          "fakten": "Die EIA erwartet für das vierte Quartal 2026 im Schnitt 105 US-Dollar je Barrel Brent — 14 Prozent mehr als in der vorherigen Prognose. Am Donnerstag, 15. Oktober, notierte Brent um die 104 US-Dollar und damit rund zwei Prozent niedriger als am Vortag. Der Ölpreis gilt an den Börsen neben den EU-Staatsschulden als zentraler Belastungsfaktor der Inflation.",
-          "einordnung": "Hohe Kraftstoffpreise treffen zwei Flanken: Sie halten die Inflations- und Zinserwartungen oben und sie belasten die Kundenfrequenz in der Autopflege. Beim Tanken über die Firma ist der Barrel-Preis ein unmittelbarer Kostenfaktor im eigenen Betrieb.",
+          "titel": "EZB-Entscheid am 29. Oktober: Einlagensatz 2,50 Prozent, Markt preist eine Pause ein",
+          "aufmacher": "Die Europäische Zentralbank entscheidet am 29. Oktober über die Zinsen; seit dem 16. September liegt der Einlagensatz bei 2,50 Prozent, und der Markt erwartet vorerst keine weitere Änderung.",
+          "fakten": "Die EZB hatte am 10. September 2026 alle drei Leitzinsen um 25 Basispunkte angehoben. Gültig seit 16. September gilt: Einlagensatz 2,50 Prozent, Hauptrefinanzierungssatz 2,65 Prozent, Spitzenrefinanzierungssatz 2,90 Prozent. Der 3-Monats-Euribor lag am 15. Oktober 2026 bei 2,636 Prozent, der 12-Monats-Euribor bei 3,217 Prozent. Die nächsten Sitzungen sind der 29. Oktober und der 17. Dezember 2026, die Entscheidung fällt jeweils um 14:15 Uhr. Ein Marktkommentar vom 26. September hält eine Zinspause für wahrscheinlich und nennt als Hauptrisiko einen Energiepreisschock vor der Sitzung; die Kerninflation wird dort mit 2,4 Prozent angegeben. Hinweis auf eine Ungenauigkeit der Quelle: Sie bezeichnet 2,65 Prozent als „Leitzins“ — das ist der Hauptrefinanzierungssatz, gesteuert wird über den Einlagensatz.",
+          "einordnung": "Für variable oder Euribor-gebundene Finanzierungen ist der Euribor die Richtschnur, nicht der Leitzins; für langfristige Baufinanzierungen zählen die Anleiherenditen. Am 29. Oktober geht es weniger um den Tag als um die Erwartung für 2027.",
           "quellen": [
             {
-              "name": "heizoelexpress — EIA hebt Ölpreisprognose an (15.10.2026)",
-              "url": "https://www.heizoelexpress.com/energieinfos/2026/Oktober/15/eia-hebt-oelpreisprognose-rohoel-bleibt-vorerst-teuer-entspannung-fuer-ende-2-quartal-2027-in-aussicht"
+              "name": "euribor-rates.info — EZB-Leitzins aktuell (Daten des EZB-Datenportals, Stand 15.10.2026)",
+              "url": "https://euribor-rates.info/de/ezb-leitzins/"
             },
             {
-              "name": "esyoil — Ölpreise geben leicht nach, Brent um die 104 Dollar (15.10.2026)",
-              "url": "https://www.esyoil.com/news/oelpreise-geben-leicht-nach-erste-details-zur-geplanten-gruenheizoelquote?id=109191"
+              "name": "Der Investor — EZB Oktober-Entscheidung: Was der Markt jetzt einpreist (26.09.2026)",
+              "url": "https://www.der-investor.com/post/ezb-zinsentscheid-oktober-2026-markt"
             }
           ]
         }
@@ -140,28 +140,27 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Home Assistant: Spook 👻 5.11.1 behebt Fehlalarme und einen Start-Blocker",
-          "aufmacher": "Für die Home-Assistant-Diagnoseerweiterung Spook steht Version 5.11.1 bereit; installiert ist derzeit v5.11.0.",
-          "fakten": "Spook v5.11.1 (Release 14.10.2026, 23:45 Uhr) entfernt die Reparaturmeldung für doppelte Assist-Namen vollständig: Sie hatte ‚exposed to Assist‘ mit ‚asked for by Assist‘ verwechselt und erzeugte auf großen Installationen über hundert Meldungen, die Home Assistant beim Start ausbremsen konnten; bestehende Reparaturen löschen sich nach einem Neustart. Zusätzlich fallen mehrere Fehlalarme aus 5.11.0 weg, unter anderem bei Themen-Templates, per Template abgeschalteten Blueprint-Triggern, browser_mod sowie Entitäts-IDs fremder Home-Assistant-Instanzen in REST-Sensor-Daten. Spook ist ein Prüfwerkzeug: Es meldet ungültige Entitäts-IDs, Templates und Automationen, greift aber nicht selbst ein.",
-          "einordnung": "Das Update beseitigt genau den Fehler, der große Installationen beim Start blockieren konnte — bei der hiesigen Entitätszahl relevant. Einspielen erst nach Freigabe.",
+          "titel": "Paperless-ngx 3.3.2 schließt eine Sicherheitslücke — NAS läuft noch auf 3.3.0",
+          "aufmacher": "Paperless-ngx hat am 16. Oktober die Version 3.3.2 veröffentlicht; sie behebt eine als moderat eingestufte Informationslücke und mehrere Programmfehler. Auf dem NAS ist noch 3.3.0 im Einsatz.",
+          "fakten": "Die Sicherheitsberatung GHSA-c8f3-pqr2-rr24 beschreibt eine Offenlegung von Informationen zwischen Nutzern in KI-Klassifizierungs-Workflows: Bei Dokumenten ohne Eigentümer kann der Klassifizierungspfad die fehlende Zuordnung als uneingeschränkten Kontext auslegen und private Titel, Textauszüge, Tags, Korrespondenten, Dokumenttypen und Speicherpfade anderer Nutzer in Anfragen an den KI-Anbieter aufnehmen. Voraussetzung sind aktivierte KI-Funktionen und ein Klassifizierungs-Workflow, der ein Dokument ohne Eigentümer verarbeitet; CVSS 4,3 (moderat), keine CVE vergeben. Die Beratung nennt als betroffene Versionen 3.0 bis 3.3.2 und als behoben 3.3.2 — die Angabe ist in sich widersprüchlich; die Release-Notes weisen 3.3.2 als Korrekturversion aus. Zusätzlich behoben: das Kopieren nur direkter Nutzerrechte, kombinierte Text- und Suchanfragen sowie eindeutige Dateinamen beim Export.",
+          "einordnung": "Soweit auf dem NAS keine KI-Klassifizierungs-Workflows auf eigentümerlosen Dokumenten laufen, ist das Sicherheitsrisiko praktisch gering — die drei Fehlerkorrekturen sprechen trotzdem für das Update. Einspielen erst nach Freigabe.",
           "quellen": [
             {
-              "name": "GitHub — frenck/spook Release v5.11.1 (14.10.2026)",
-              "url": "https://github.com/frenck/spook/releases/tag/v5.11.1"
+              "name": "GitHub — paperless-ngx Releases (v3.3.2, 16.10.2026)",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
+            },
+            {
+              "name": "GitHub Advisory — GHSA-c8f3-pqr2-rr24: Cross-user information disclosure in AI classification workflows",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/security/advisories/GHSA-c8f3-pqr2-rr24"
             }
           ]
         },
         {
-          "titel": "Paperless-ngx 3.3.1 weiterhin offen — VoiceStudio-Container auf dem NAS gestoppt",
-          "aufmacher": "Der Update-Scan meldet weiterhin nur Paperless-ngx 3.3.0 auf 3.3.1; auf dem NAS steht der VoiceStudio-Container seit rund einem Tag.",
-          "fakten": "paperless-ngx 3.3.1 (Release 12.10.2026) ist ein reines Bugfix-Release: Es nutzt für den LLM-Index den effektiven Inhalt des Root-Dokuments, indexiert Dokumentversionen als deren Root-Dokument, prüft die Berechtigung von Dokumentversionen über das Root-Dokument und liefert verständlichere Fehlermeldungen bei ungültigem JSON. Auf dem NAS laufen 24 Container; gestoppt sind derzeit ghcr.io/debpalash/voicestudio:stable (Exit-Code 137 vor rund 23 Stunden — typisch für einen erzwungenen Neustart oder eine Speichergrenze) und ein einmaliger Initialisierungs-Container von Firecrawl, der regulär mit Exit 0 endet. Alle Kernsysteme laufen stabil: Paperless-ngx samt Datenbank und Broker, Open WebUI, Immich, Firecrawl und Portainer, Paperless seit fünf Tagen ohne Unterbrechung. Weitere Updates über die Home-Assistant-Update-Entitäten stehen nicht an.",
-          "einordnung": "Das Paperless-Update behebt die Versions- und Indexfälle, die beim täglichen 05:00-Import auftreten — risikoarm und empfehlenswert. Der VoiceStudio-Ausfall kostet nur die lokale TTS-Instanz. Neustart und Update erst nach Freigabe.",
-          "quellen": [
-            {
-              "name": "GitHub — paperless-ngx Release v3.3.1 (12.10.2026)",
-              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.1"
-            }
-          ]
+          "titel": "NAS: VoiceStudio-Container seit zwei Tagen gestoppt — HA-Add-on wartet auf ein Update",
+          "aufmacher": "Auf dem NAS läuft der VoiceStudio-Container seit rund 47 Stunden nicht mehr; von 25 Containern sind 23 aktiv. Beim Home-Assistant-Add-on „MCP Server (Dev)“ steht ein Update an.",
+          "fakten": "Der Container omnivoice (ghcr.io/debpalash/voicestudio:stable) ist mit Exit-Code 137 beendet — typisch für einen erzwungenen Neustart oder eine Speichergrenze — und steht seit rund 47 Stunden. Der zweite gestoppte Container ist der einmalige Datenbank-Initialisierungscontainer von Firecrawl, der regulär mit Exit-Code 0 endet (seit zwei Wochen). Alle übrigen 23 Container laufen; der Update-Scan meldet darüber hinaus keine offenen Punkte. Beim Home-Assistant-Add-on „Home Assistant MCP Server (Dev)“ ist Version 8.7.0.dev3061 verfügbar, installiert ist 8.7.0.dev3053; die automatische Aktualisierung ist aktiviert. Für das Add-on wird kein Release-Text ausgeliefert.",
+          "einordnung": "Der Ausfall kostet nur die lokale TTS-Instanz; Paperless, Open WebUI, Immich, Firecrawl und Portainer laufen. Neustart und Add-on-Update erst nach Freigabe.",
+          "quellen": []
         }
       ]
     },
@@ -169,11 +168,28 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Haushaltsroboter: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "Faraday Future bringt FF Nova für 2.490 US-Dollar (rund 2.213 Euro) — neuer Preistiefstwert bei Humanoiden",
+          "aufmacher": "Faraday Future und FF EAI Robotics haben am 15. Oktober zwei Humanoide vorgestellt: den Entwickler- und Bildungsroboter FF Nova für 2.490 US-Dollar und den Mini-Roboter FF Nova Mini für 299 US-Dollar.",
+          "fakten": "FF Nova ist ein zweibeiniger Humanoide mit 20 Freiheitsgraden, LiDAR, Weitwinkel- und Tiefensensorik sowie Mikrofonarray; er kann gehen, drehen, winken und nach einem Sturz selbst aufstehen, alternativ auf einer abnehmbaren Basis fahren. Dazu kommen ein offenes SDK, ein ROS-2-Workflow und ein Skills-Store. Preis: 2.490 US-Dollar, das Developer-Skills-Paket 390 US-Dollar. Zum EZB-Referenzkurs vom 16. Oktober (1 USD = 0,8887 EUR) sind das rund 2.213 Euro beziehungsweise 347 Euro. Die Auslieferung läuft in drei Phasen: Phase 1 ausschließlich auf Einladung mit 100 Einheiten, davon die ersten 20 sofort lieferbar; Phase 2 für alle Entwickler und Bildungseinrichtungen; Phase 3 ist der Endkundenstart — Termine nennt das Unternehmen nicht. FF Nova Mini kostet 299 US-Dollar (rund 266 Euro), der zugehörige Lehrplan 499 US-Dollar (rund 443 Euro); er ist für Kinder ab acht Jahren in Klassenräumen, Ganztagsangeboten und zu Hause gedacht. Der Preisspiegel von The Robot Radar (Stand 9. Oktober 2026) führt die bekannten Haushaltsmodelle unverändert: 1X NEO mit 20.000 US-Dollar Kaufpreis oder 499 US-Dollar pro Monat (bisher nur USA) und Weave Isaac 1 mit 7.999 US-Dollar (bisher nur Kalifornien).",
+          "einordnung": "FF Nova ist ausdrücklich kein Haushaltshelfer, sondern ein Entwickler- und Bildungsgerät — interessant ist es als neuer Preistiefstwert für einen zweibeinigen Humanoiden. Bei den tatsächlichen Haushaltsmodellen hat sich nichts geändert.",
+          "quellen": [
+            {
+              "name": "Business Wire — Faraday Future / FFR launch FF Nova (15.10.2026)",
+              "url": "https://www.businesswire.com/news/home/20261015292642/en/Faraday-Future-and-FFR-Jointly-Launch-FF-Nova-First-Embodied-AI-Humanoid-Robot-Priced-Below-%242500-in-U.S.-FF-Nova-Mini-Physical-AI-Spark-Program-Curriculum-Nova-Reinforcement-Learning-Developer-Program-and-Developer-Community-Recruitment"
+            },
+            {
+              "name": "engineering.com — FF launches Nova humanoid robots and Physical AI programs",
+              "url": "https://www.engineering.com/ff-launches-nova-humanoid-robots-and-physical-ai-programs/"
+            },
+            {
+              "name": "The Robot Radar — Humanoid robot prices, Stand 09.10.2026",
+              "url": "https://therobotradar.com/guides/humanoid-robot-price"
+            },
+            {
+              "name": "xrates.eu — EZB-Referenzwechselkurse vom 16.10.2026 (1 USD = 0,8887 EUR)",
+              "url": "https://www.xrates.eu/de/wechselkurs-16-oktober-2026"
+            }
+          ]
         }
       ]
     }
