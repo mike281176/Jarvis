@@ -1,14 +1,14 @@
 {
-  "datum": "Sonntag, 18.10.2026",
+  "datum": "Montag, 19.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "7,2 °C · Regen 63 % · UV 1,9",
-          "aufmacher": "🌫️ Neblig-trüb in Troisdorf — der Sonntag bleibt grau, nass wird es nur zeitweise.",
-          "fakten": "Aktuell 7,2 °C, Tief 6,8 °C, Tageshöchstwert 11,7 °C. Regenwahrscheinlichkeit 63 %, UV-Index 1,85 (niedrig), Sicht durch Nebel eingeschränkt.",
-          "einordnung": "Kaum Sonne und niedriger UV-Wert — schlechter Tag für den PV-Ertrag, brauchbar für Keller-, Heizungs- oder Netzwerkarbeiten.",
+          "titel": "11,4 °C · Regen 65 % · UV 2,9",
+          "aufmacher": "☁️ Bedeckt und wechselhaft — Troisdorf bleibt heute unter 17 Grad, Schauer sind jederzeit möglich.",
+          "fakten": "Aktuell 11,4 °C, Tief 9,6 °C, Höchstwert 17,0 °C. Regenwahrscheinlichkeit 65 %, UV-Index 2,95 (niedrig), durchgehend bedeckt.",
+          "einordnung": "Schwacher PV-Tag — gut für Arbeiten an Heizung, Netzwerk oder Werkstatt statt für alles, was Sonne braucht.",
           "quellen": []
         }
       ]
@@ -29,6 +29,13 @@
           "fakten": "21. Oktober 2026, 10:00 Uhr.",
           "einordnung": "Zwei Tage Vorlauf — Unterlagen lassen sich Montag oder Dienstag vorbereiten.",
           "quellen": []
+        },
+        {
+          "titel": "Do 22.10. · 15:00 — Therapiezentrum Snoek",
+          "aufmacher": "Zweiter Physio-Termin der Woche am Donnerstag.",
+          "fakten": "22. Oktober 2026, 15:00 Uhr.",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     },
@@ -36,38 +43,30 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Melanbogenbrücke: Jetzt dürfen auch keine Linienbusse mehr über die Sieg",
-          "aufmacher": "Die Siegquerung zwischen Troisdorf-Friedrich-Wilhelms-Hütte und Sankt Augustin-Menden ist seit dem 14. Oktober für Fahrzeuge über 3,5 Tonnen gesperrt — damit fällt die Linie 508 als direkte Verbindung weg.",
-          "fakten": "Der Verkehrsverbund Rhein-Sieg führt die Vollsperrung der Melanbogenbrücke für Fahrzeuge über 3,5 Tonnen seit dem 14. Oktober 2026 und stuft sie bis 31. Oktober 2029 als gültig ein; betroffen ist unter anderem die Linie 508, die umgeleitet werden muss. Für Fahrzeuge über 14 Tonnen ist die Brücke bereits seit 2006 gesperrt. Ein Ersatzneubau ist seit Jahren geplant, ein Baubeginn war zeitweise für 2025 im Gespräch, inzwischen wird über 2031 diskutiert. CDU und SPD fordern laut General-Anzeiger Fortschritte beim Neubau.",
-          "einordnung": "Für Pendeln zwischen Troisdorf, Siegburg und Sankt Augustin bedeutet das längere Fahrzeiten, und für Vermietungsobjekte an der Achse Friedrich-Wilhelms-Hütte ist die ÖPNV-Anbindung ein Argument, das gerade schwächer wird. Handwerker- und Lieferverkehr über 3,5 Tonnen muss ebenfalls umplanen.",
+          "titel": "Troisdorfer Gewerbe lernt KI — TROWISTA schult Online-Sichtbarkeit",
+          "aufmacher": "Wie wird mein Geschäft online besser gefunden, und was kann KI im Arbeitsalltag leisten? Damit hat sich das Troisdorfer Gewerbe am 8. Oktober beschäftigt.",
+          "fakten": "TROWISTA führte die Veranstaltung gemeinsam mit Troisdorf Aktiv e. V. und den Digitalcoaches des Einzelhandelsverbands Bonn Rhein-Sieg Euskirchen durch. Tagsüber wurden Gewerbetreibende in ihren Geschäften besucht, am Abend kamen rund 20 von ihnen zum DigitalForum Troisdorf in der Stadtbibliothek zusammen. Themen waren Google-Sichtbarkeit und der Einsatz einfacher KI-Werkzeuge in Handel, Gastronomie und Hotellerie.",
+          "einordnung": "Für Quixx24 ist das der gleiche Hebel: lokale Auffindbarkeit und ein sauberer Digitalauftritt entscheiden über Anfragen — ohne dass man dafür eine Agentur braucht.",
           "quellen": [
             {
-              "name": "VRS – Linie 508, Vollsperrung Melanbogenbrücke (ab 14.10.2026)",
-              "url": "https://www.vrs.de/lis/linie/de:vrs:508:"
+              "name": "TROWISTA: Digitalisierung im Geschäftsalltag",
+              "url": "https://www.trowista.de/aktuelles/trowista-bringt-digitalisierung-in-den-geschaeftsalltag"
             },
             {
-              "name": "General-Anzeiger – Busse dürfen nicht mehr die Sieg überqueren (17.10.2026)",
-              "url": "https://ga.de/region/sieg-und-rhein/sankt-augustin/melanbogenbruecke-busse-duerfen-nicht-mehr-die-sieg-ueberqueren_aid-156679821"
-            },
-            {
-              "name": "treffpunkt-troisdorf – Melanbogenbrücke: Erst große Versprechen, jetzt Busse",
-              "url": "https://treffpunkt-troisdorf.de/melanbogenbruecke/"
+              "name": "treffpunkt-troisdorf: Digitale Chancen nutzen",
+              "url": "https://treffpunkt-troisdorf.de/digitale-chancen-nutzen/"
             }
           ]
         },
         {
-          "titel": "Rhein-Sieg-Kreis: Haushalt 2027 wächst auf 1,175 Milliarden Euro — Kreisumlage steigt um einen Punkt",
-          "aufmacher": "Der Rhein-Sieg-Kreis hat am 15. Oktober seinen Haushaltsentwurf für 2027 in den Kreistag eingebracht: 1,175 Milliarden Euro Volumen, steigende Sozialkosten und eine höhere Kreisumlage.",
-          "fakten": "Das Volumen liegt bei rund 1.175 Millionen Euro, davon etwa 720 Millionen Euro Transferaufwendungen (über 60 Prozent). Die Gesamtaufwendungen steigen gegenüber 2026 um rund 95 Millionen Euro, davon 72 Millionen Euro bei den Transferleistungen — etwa die Hälfte davon ist die höhere Umlage des Landschaftsverbands Rheinland. Die Erträge wachsen nur um rund 66 Millionen Euro, die Lücke wird über eine Rücklagenentnahme gedeckt. Vorgesehen sind Konsolidierungen von rund 21 Millionen Euro plus der vollständige Einsatz der Ausgleichsrücklage (rund 41 Millionen Euro). Die Allgemeine Kreisumlage steigt um einen Prozentpunkt, rund 11 Millionen Euro. Verabschiedet werden soll der Haushalt am 14. Dezember 2026.",
-          "einordnung": "Der Kreis kündigt für die Folgejahre weitere Erhöhungen an, weil dann keine Rücklagen mehr zur Verfügung stehen. Das trifft die Städte und mittelbar Hebesätze und Grundsteuer — bei der MFH-Kalkulation in Troisdorf als Kostenrisiko einplanen, nicht als einmalige Spitze.",
+          "titel": "Einbruch in Mehrfamilienhaus in Müllekoven",
+          "aufmacher": "In Troisdorf-Müllekoven ist am Mittwoch tagsüber eine Wohnung in einem Mehrfamilienhaus aufgebrochen worden.",
+          "fakten": "Die 76-jährige Bewohnerin verließ ihre Wohnung gegen 10:00 Uhr und fand sie gegen 19:15 Uhr verwüstet vor. Die Tat fiel damit mitten in den Tag; die Polizei sucht Zeugen aus der Dechant-Hoven-Straße.",
+          "einordnung": "Ein Fall, der die eigene Objektverwaltung betrifft: geprüfte Schließtechnik am Hauseingang, aufmerksame Nachbarschaft und ein sauberer Versicherungsnachweis zahlen sich aus.",
           "quellen": [
             {
-              "name": "treffpunkt-troisdorf – Rhein-Sieg-Kreis legt Haushaltsentwurf 2027 vor (15.10.2026)",
-              "url": "https://treffpunkt-troisdorf.de/haushaltsentwurf-2027/"
-            },
-            {
-              "name": "Kölner Stadt-Anzeiger – Haushaltsentwurf 2027: Rhein-Sieg greift tief in die Rücklagen",
-              "url": "https://www.ksta.de/region/rhein-sieg-bonn/siegburg/haushaltsentwurf-2027-rhein-sieg-greift-tief-in-die-ruecklagen-1397264"
+              "name": "POL-SU: Einbruch in Wohnung in Troisdorf – Zeugen gesucht",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6372575"
             }
           ]
         }
@@ -77,18 +76,34 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Baugenehmigungen ziehen an: plus 14,5 Prozent bei Mehrfamilienhäusern",
-          "aufmacher": "Im August 2026 wurden in Deutschland 20.600 Wohnungen zur Baugenehmigung freigegeben — 6,8 Prozent mehr als im Vorjahresmonat, bei Mehrfamilienhäusern liegt der Zuwachs seit Jahresbeginn zweistellig.",
-          "fakten": "Von Januar bis August 2026 wurden 169.400 Wohnungen genehmigt, 12,1 Prozent mehr als im Vorjahreszeitraum. In neuen Wohngebäuden waren es 137.500 Wohnungen (plus 12,7 Prozent). Nach Gebäudetypen: Einfamilienhäuser 31.500 (plus 7,8 Prozent), Zweifamilienhäuser 10.000 (plus 21,7 Prozent), Wohnungen in Mehrfamilienhäusern 90.600 (plus 14,5 Prozent). Genehmigungen für Wohnungen durch Umbau bestehender Gebäude stiegen um 10,1 Prozent auf 29.100. Im August allein: 20.600 Wohnungen, davon 16.500 im Neubau und 4.200 durch Umbau. Das Statistische Bundesamt weist darauf hin, dass Nachmeldungen die Monatswerte verzerren können.",
-          "einordnung": "Zweistelliges Plus bei Mehrfamilienhäusern ist das Signal, das für die MFH-Strategie zählt: Das Angebot an fertigen Objekten wächst mittelfristig, und mehr Neubau-Konkurrenz drückt die Verhandlungsmacht bei Bestandsobjekten — Kaufpreisverhandlung bleibt wichtiger als Zinshoffnung.",
+          "titel": "Bauzinsen klettern über 4,3 Prozent",
+          "aufmacher": "Die Baufinanzierung ist seit dem Sommer deutlich teurer geworden — Top-Zinsen liegen aktuell zwischen 4,11 und 4,61 Prozent.",
+          "fakten": "Dr. Klein nennt für den 19. Oktober Top-Zinsen von 4,11 bis 4,61 Prozent effektiv je nach Zinsbindung und einen Anstieg um rund 0,8 Prozentpunkte seit Juli 2026; für das Jahresende erwartet der Expertenrat stabile bis leicht steigende Zinsen. Hypofriend notiert für den 17. Oktober 4,36 Prozent bei zehn Jahren und 4,55 Prozent bei zwanzig Jahren — vor sechs Monaten lag die Zehnjahresbindung bei 3,92 Prozent.",
+          "einordnung": "Bei 600.000 Euro Darlehen kostet jeder Prozentpunkt rund 6.000 Euro Zins im Jahr. Die MFH-Rechnung sollte mit 4,4 Prozent laufen, nicht mit den 3,5 Prozent aus dem Frühjahr.",
           "quellen": [
             {
-              "name": "Statistisches Bundesamt – Baugenehmigungen August 2026 (16.10.2026)",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_370_3111.html"
+              "name": "Dr. Klein: Bauzinsen aktuell (19.10.2026)",
+              "url": "https://www.drklein.de/aktuelle-bauzinsen.html"
             },
             {
-              "name": "tz – Baugenehmigungen steigen: Hoffnung für Baubetriebe",
-              "url": "https://www.tz.de/wirtschaft/baugenehmigungen-steigen-hoffnung-fuer-baubetriebe-zr-94545006.html"
+              "name": "Hypofriend: Bauzinsen (17.10.2026)",
+              "url": "https://hypofriend.de/de/bauzinsen"
+            }
+          ]
+        },
+        {
+          "titel": "Angebotsmieten ziehen wieder an",
+          "aufmacher": "Die Mieten für angebotene Wohnungen sind im dritten Quartal so stark gestiegen wie seit Anfang 2025 nicht mehr.",
+          "fakten": "Laut dem GREIX-Mietpreisindex des Kiel Instituts legten sie nominal um 1,2 Prozent zum Vorquartal und 3,7 Prozent zum Vorjahr zu, real um 0,3 und 0,7 Prozent. Berlin (+2,1 Prozent) und Düsseldorf (+2,0 Prozent) führen; Bestandswohnungen treiben die Entwicklung.",
+          "einordnung": "Das stützt den Cashflow im Bestand — aber Angebotsmieten sind Marktpreise bei Neuvermietung, nicht die eigenen laufenden Mieten. Spielraum entsteht erst bei Mieterwechsel oder Indexmiete.",
+          "quellen": [
+            {
+              "name": "IfW Kiel: GREIX-Mietpreisindex Q3 2026",
+              "url": "https://www.kielinstitut.de/de/medien/aktuelles/greix-mietpreisindex-q3-2026-angebotsmieten-ziehen-wieder-an-bestandswohnungen-treiben-die-entwicklung/"
+            },
+            {
+              "name": "n-tv: Angebotsmieten steigen wieder schneller",
+              "url": "https://www.n-tv.de/wirtschaft/Studie-Angebotsmieten-steigen-in-Deutschland-wieder-schneller-id31419362.html"
             }
           ]
         }
@@ -98,34 +113,30 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "DAX bei 25.622 Punkten — starke Woche, aber keine Richtung",
-          "aufmacher": "Der deutsche Leitindex hat eine starke Woche hinter sich: Am Freitagnachmittag stand der DAX bei 25.622,61 Punkten, ein Plus von 0,95 Prozent zum Vortag.",
-          "fakten": "Der Vortagesschluss lag bei 25.382,62 Punkten. Das Allzeithoch von Ende August liegt bei 26.659 Punkten, der Index hat sich davon also noch nicht erholt. Marktbeobachter von Captrader und RoboMarkets beschreiben die Lage als aufgehellt, aber weiter undurchsichtig. Begleitdaten vom Freitag: Brent-Öl 109,68 US-Dollar (plus 3,76 Prozent), Gold 4.165,18 US-Dollar (plus 0,23 Prozent), EUR/USD 1,1239, Bitcoin 81.681,89 US-Dollar.",
-          "einordnung": "Öl über 109 Dollar ist der eigentliche Treiber — es stützt die Inflationsrate, drückt die Zinsfantasie und macht Heizöl teuer. Wer jetzt eine Anschlussfinanzierung plant, sollte die Anleiherenditen beobachten, nicht den DAX.",
+          "titel": "Einlagensatz 2,50 Prozent — EZB tagt am 29. Oktober",
+          "aufmacher": "Die EZB hat im September die Zinsen angehoben; am 29. Oktober berät der Rat über den weiteren Kurs.",
+          "fakten": "Der Rat hob am 10. September alle drei Leitzinssätze um 25 Basispunkte an: Einlagefazilität 2,50 Prozent, Hauptrefinanzierung 2,65 Prozent, Spitzenrefinanzierung 2,90 Prozent, wirksam seit 16. September. Als Begründung nennt die EZB den Inflationsdruck durch den Nahost-Konflikt; die Projektion erwartet 3,0 Prozent Teuerung 2026 und 2,1 Prozent 2028.",
+          "einordnung": "Kein Grund, auf fallende Zinsen zu warten: Objektfinanzierungen sollten auf dem heutigen Niveau gerechnet und lange fixiert werden.",
           "quellen": [
             {
-              "name": "onvista – Wochenausblick: DAX nach starker Woche auf Richtungssuche (16.10.2026)",
-              "url": "https://www.onvista.de/news/2026/10-16-wochenausblick-dax-nach-starker-woche-auf-richtungssuche-sorgenthemen-bleiben-0-10-26564944"
+              "name": "EZB: Geldpolitische Beschlüsse vom 10.09.2026",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
             },
             {
-              "name": "Deutsche Börse – Wochenausblick (Marktdaten DAX/Allzeithoch)",
-              "url": "https://live.deutsche-boerse.com/nachrichten/wochenausblick-pruefstein-us-quartalszahlen"
+              "name": "EZB: Sitzungskalender des Rates",
+              "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.de.html"
             }
           ]
         },
         {
-          "titel": "Öl bei 109 Dollar — warum das Heizöl und Bauzinsen gleichzeitig teuer macht",
-          "aufmacher": "Ein Barrel Brent kostet am Freitag 109,68 US-Dollar, fast vier Prozent mehr als am Vortag — und das ist der Grund, warum die EZB im September die Zinsen erhöht hat.",
-          "fakten": "Die Notierung legte um 3,76 Prozent zu. Die EZB begründet ihre Zinserhöhung vom 10. September ausdrücklich mit dem Inflationsdruck aus dem Konflikt im Nahen Osten und erwartet für 2026 eine durchschnittliche Gesamtinflation von 3,0 Prozent — deutlich über dem Zielwert von 2 Prozent. In Deutschland lag die Inflationsrate im September bei 3,3 Prozent.",
-          "einordnung": "Für Mike doppelt relevant: Heizöl und Gas werden teurer, was die Wirtschaftlichkeit von Wärmepumpe und PV verbessert; gleichzeitig bleiben die Bauzinsen über 4 Prozent, solange der Ölpreis die Teuerung stützt.",
+          "titel": "Inflation bei 3,3 Prozent — Energie treibt",
+          "aufmacher": "Die Teuerung in Deutschland ist im September auf 3,3 Prozent gestiegen, den höchsten Stand seit Dezember 2023.",
+          "fakten": "Destatis bestätigt +3,3 Prozent zum Vorjahr und +0,6 Prozent zum Vormonat, nach 2,9 Prozent im August. Energie verteuerte sich um 14,9 Prozent, Kraftstoffe um 37,1 Prozent, leichtes Heizöl um 74,9 Prozent. Nahrungsmittel lagen nur bei +0,4 Prozent, die Kerninflation bei +2,4 Prozent.",
+          "einordnung": "Heizöl und Kraftstoffe treffen die Nebenkostenabrechnung und damit die Warmmiete im Bestand. Bei Neuvermietung spricht die Lage für Staffel- oder Indexmiete statt starrer Miethöhe.",
           "quellen": [
             {
-              "name": "onvista – Marktdaten (Brent, Stand 16.10.2026)",
-              "url": "https://www.onvista.de/news/2026/10-16-wochenausblick-dax-nach-starker-woche-auf-richtungssuche-sorgenthemen-bleiben-0-10-26564944"
-            },
-            {
-              "name": "EZB – Geldpolitische Beschlüsse vom 10.09.2026",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
+              "name": "Destatis: Inflationsrate September 2026 bei +3,3 %",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"
             }
           ]
         }
@@ -135,26 +146,42 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Fünf Updates offen — Sicherheitsupdate für das NAS, drei Integrationen aktualisierbar",
-          "aufmacher": "Der Systemscan meldet fünf offene Updates, darunter ein Sicherheitsupdate für das Synology NAS und ein Update für die Wohnzimmer-Klima-Integration.",
-          "fakten": "🤖 Synology DSM 7.3.2-86009 Update 4 → 7.4.1-90080: Sprung auf DSM 7.4 mit DSM Agent; Update 1 vom 12. Oktober schließt Sicherheitslücken, Gerät startet neu, Downgrade nach Installation nicht möglich. 🤖 Music Assistant 2.10.6 → 2.10.7: behebt doppelt angezeigte DLNA-Player, fehlende Spotify-Playlists in großen Bibliotheken und Aussetzer nach Trackwechsel im Queue. 🤖 ConnectLife v0.51.0 → v0.52.0: Anmeldung auch per Google-/Apple-/Microsoft-Konto, fünf neue Geräte-Mappings (u. a. Hisense-Waschmaschinen), Licht-Buttons für Display-LEDs. 🤖 Sonoff LAN v3.13.1 → v3.13.2: Unterstützung für NSPanel Pro Gen2 und SONOFF TRV Gen2, Fix für T6-Wandschalter (Firmware 1.0.3) und für MINIR4M-Taster. 🤖 HA MCP Server (Dev) 8.7.0.dev3061 → dev3077: Nightly-Build ohne Release-Text, Auto-Update ist aktiv. Zusätzlich meldet der Scan zwei gestoppte Docker-Container.",
-          "einordnung": "Das DSM-Update ist das einzige mit Sicherheitsrelevanz — vorher Backup-Job prüfen, danach ist kein Rollback möglich. ConnectLife v0.52.0 mitnehmen, weil es die Anmeldung der Klima-Integration stabilisiert. Alles Weitere erst nach Freigabe.",
+          "titel": "Neu offen: Sicherheitspatch fürs NAS und für Frigate",
+          "aufmacher": "Synology wartet auf DSM 7.4.1, Frigate auf 0.18.2 — beide Updates schließen Sicherheitslücken.",
+          "fakten": "DSM 7.4.1-90080 Update 1 vom 12. Oktober behebt Sicherheitslücken, erzwingt einen Neustart und erlaubt danach kein Downgrade mehr; installiert ist 7.3.2-86009 Update 4. Frigate 0.18.2 vom 15. Oktober ist ein Wartungsrelease mit Sicherheitskorrekturen für die 0.18-Reihe (installiert: 0.18.0). Der Docker-Scan meldet zusätzlich zwei gestoppte Container.",
+          "einordnung": "Auf dem NAS liegen Paperless, Vault und Backups — der Patch gehört zeitnah eingespielt, aber nach Backup und mit deiner Freigabe.",
           "quellen": [
             {
-              "name": "Synology – DSM Release Notes (7.4.1-90080 Update 1, 12.10.2026)",
-              "url": "https://www.synology.com/de-de/releaseNote/DSM?os=DSM&version=7.4"
+              "name": "Synology: Release Notes DSM 7.4.1",
+              "url": "https://www.synology.com/de-de/releaseNote/DSM?model=DS920%2B"
             },
             {
-              "name": "Music Assistant 2.10.7 – Release Notes",
+              "name": "Frigate 0.18.2 Release",
+              "url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.2"
+            }
+          ]
+        },
+        {
+          "titel": "Fünf Integrations-Updates: Musik, Alexa, Sonoff, ConnectLife",
+          "aufmacher": "Bei den Home-Assistant-Integrationen stehen fünf kleinere Aktualisierungen an.",
+          "fakten": "Music Assistant 2.10.7 behebt fehlende Spotify-Playlists in großen Bibliotheken und doppelte DLNA-Player. Alexa Media Player 5.17.1 hält den Amazon-Login beim Domain-Wechsel offen. Sonoff LAN 3.13.2 unterstützt NSPanel Pro Gen2 und TRV Gen2 und korrigiert T6-Wandschalter. ConnectLife 0.52.0 bringt Website-Login auch mit Google oder Apple und fünf neue Geräteprofile. Dazu ein Dev-Build des HA-MCP-Servers (8.7.0.dev3061 auf dev3080, Auto-Update aktiv).",
+          "einordnung": "Alles unkritisch, aber Sonoff und ConnectLife betreffen direkt Schalter und Klimaanlagen — gesammelt einspielen und danach kurz prüfen, nicht einzeln durchtesten.",
+          "quellen": [
+            {
+              "name": "Music Assistant 2.10.7",
               "url": "https://github.com/music-assistant/server/releases/tag/2.10.7"
             },
             {
-              "name": "ConnectLife HA v0.52.0 – Release Notes",
-              "url": "https://github.com/oyvindwe/connectlife-ha/releases/v0.52.0"
+              "name": "Alexa Media Player v5.17.1",
+              "url": "https://github.com/alandtse/alexa_media_player/releases/v5.17.1"
             },
             {
-              "name": "Sonoff LAN v3.13.2 – Release Notes",
+              "name": "Sonoff LAN v3.13.2",
               "url": "https://github.com/AlexxIT/SonoffLAN/releases/v3.13.2"
+            },
+            {
+              "name": "ConnectLife HA v0.52.0",
+              "url": "https://github.com/oyvindwe/connectlife-ha/releases/v0.52.0"
             }
           ]
         }
