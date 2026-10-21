@@ -1,14 +1,14 @@
 {
-  "datum": "Dienstag, 20.10.2026",
+  "datum": "Mittwoch, 21.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "6,0 °C · Regen 55 % · UV 2,9",
-          "aufmacher": "🌤️ Überwiegend sonnig, aber kühl — Troisdorf startet bei 6 Grad und kommt heute höchstens auf 13,4 Grad.",
-          "fakten": "Aktuell 6,0 °C, Tief 5,8 °C, Höchstwert 13,4 °C. Regenwahrscheinlichkeit 55 %, UV-Index 2,85 (niedrig), meist gering bewölkt.",
-          "einordnung": "Brauchbarer PV-Tag bei 2,9 UV — gut für Außenarbeiten am Vormittag, Schauerrisiko eher am Nachmittag.",
+          "titel": "10,2 °C · Regen 100 % · UV 2,6",
+          "aufmacher": "🌦️ Niesel bei 10,2 °C, Höchstwert 14,8 °C, Tief 9,7 °C — durchgehend nass, UV-Index niedrig.",
+          "fakten": "Regenwahrscheinlichkeit 100 %, UV-Index 2,6 (niedrig, kein Schutz erforderlich).",
+          "einordnung": "Kein PV-Tag — bei 100 % Regen bleibt der Speicher heute auf Netzbezug. Außenarbeiten auf Donnerstag verschieben.",
           "quellen": []
         }
       ]
@@ -18,14 +18,14 @@
       "artikel": [
         {
           "titel": "Mi 21.10. · 10:00 — Quixx-Meeting",
-          "aufmacher": "Morgen Vormittag steht das Quixx-Meeting an.",
+          "aufmacher": "Heute Vormittag, 10:00 Uhr: Quixx-Meeting.",
           "fakten": "21. Oktober 2026, 10:00 Uhr.",
-          "einordnung": "Ein Tag Vorlauf — Unterlagen lassen sich heute vorbereiten.",
+          "einordnung": "",
           "quellen": []
         },
         {
           "titel": "Do 22.10. · 15:00 — Therapiezentrum Snoek",
-          "aufmacher": "Donnerstag nachmittags: Manuelle Therapie, Sporttherapie, Osteopathie.",
+          "aufmacher": "Morgen nachmittags: Manuelle Therapie, Sporttherapie, Osteopathie.",
           "fakten": "22. Oktober 2026, 15:00 Uhr.",
           "einordnung": "",
           "quellen": []
@@ -36,22 +36,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf dreht zweimal an den Kita-Beiträgen",
-          "aufmacher": "Die Stadt Troisdorf erhöht die Elternbeiträge für Kitas zum 1. Januar 2027 — und plant zum 1. August 2027 bereits die nächste Runde.",
-          "fakten": "Beschlossen ist die neunte Änderung der Elternbeitragssatzung: Sie gilt ab 1. Januar 2027, führt eine neue Einkommensstufe von 37.000 bis 43.000 Euro Jahresbrutto ein und erhöht die Monatsbeiträge oberhalb von 43.000 Euro. Bei U3-Betreuung steigen die Beiträge in der Stufe bis 49.500 Euro von 100, 150 und 230 Euro auf 105, 158 und 242 Euro, je nach Betreuungsumfang. Am 19. Oktober hat die Verwaltung zusätzlich eine Überarbeitung zum 1. August 2027 vorgelegt, die rund 1,2 Millionen Euro pro Jahr bringen soll: Betreuungszeiten von 30, 35, 40 und 45 Stunden statt bisher 25, 35 und 45, zehn Euro mehr pro Einkommensstufe bei 45 Wochenstunden, Beiträge nur noch für das erste Kind und der Wegfall des dritten beitragsfreien Kita-Jahres — einer freiwilligen Leistung über die gesetzlichen zwei Jahre hinaus. Elternbeiträge decken derzeit rund fünf Prozent der Kita-Kosten. Der Stadtrat hat noch nicht abschließend entschieden.",
-          "einordnung": "Die Stadt spart zuerst bei freiwilligen Leistungen, bevor sie an Hebesätze und Gebühren geht — ein Fingerzeig für die Haushaltslage, aus der auch die Grundsteuer in Troisdorf finanziert wird.",
+          "titel": "Kreisumlage 2027 steigt um einen Punkt — rund 11 Millionen Euro mehr für Troisdorf",
+          "aufmacher": "Der Rhein-Sieg-Kreis hebt die Kreisumlage 2027 um einen Prozentpunkt an; Troisdorf und die übrigen Kommunen tragen rund 11 Millionen Euro zusätzlich.",
+          "fakten": "Das Haushaltsvolumen 2027 liegt bei rund 1.175 Millionen Euro, davon etwa 720 Millionen für Transferleistungen wie Sozial- und Jugendhilfe. Die Aufwendungen steigen um rund 95 Millionen Euro, die Erträge nur um rund 66 Millionen; die Lücke wird über die Ausgleichsrücklage gedeckt, die mit 41 Millionen Euro vollständig verbraucht wird. Trotz Konsolidierung von rund 21 Millionen Euro war die Umlageerhöhung laut Kreis nicht vermeidbar — für die Folgejahre kündigt die Verwaltung weitere Erhöhungen an, weil dann keine Rücklagen mehr zur Verfügung stehen. Beschlossen wird der Etat am 14. Dezember 2026.",
+          "einordnung": "Troisdorf bekommt weniger Spielraum im eigenen Haushalt — der Druck auf Grundsteuer-Hebesätze und Gebühren wächst. Bei der Cashflow-Rechnung für Zukäufe in der Region gehören steigende kommunale Kosten in den Puffer, nicht in die Kür.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Kita-Beiträge in Troisdorf (19.10.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kita-beitraege-in-troisdorf/"},
-            {"name": "Troisdorf Lokal – Elternbeitragssatzung ab 1. Januar 2027 (9.10.2026)", "url": "https://troisdorf-lokal.de/kita-beitraege-troisdorf-2027/"}
+            {"name": "Rhein-Sieg-Kreis – Haushaltsentwurf 2027 (Pressemitteilung 15.10.2026)", "url": "https://www.rhein-sieg-kreis.de/presseinformationen/oktober/haushaltsetat.php"},
+            {"name": "Kölner Stadt-Anzeiger – Rhein-Sieg greift tief in die Rücklagen", "url": "https://www.ksta.de/region/rhein-sieg-bonn/siegburg/haushaltsentwurf-2027-rhein-sieg-greift-tief-in-die-ruecklagen-1397264"}
           ]
         },
         {
-          "titel": "Bonn-Auerberg: Fünf Verletzte nach Auseinandersetzung",
-          "aufmacher": "Am Sonntagabend ist es auf der Osloer Straße in Bonn-Auerberg zu einer Auseinandersetzung mit fünf Verletzten gekommen.",
-          "fakten": "Nach Angaben der Bonner Polizei waren am 18. Oktober gegen Abend mehrere Männer beteiligt. Polizei und Staatsanwaltschaft haben die Ermittlungen aufgenommen und suchen Zeugen. Zu Ursache und Hintergrund machte die Behörde bislang keine Angaben.",
-          "einordnung": "Rund 20 Kilometer von Troisdorf entfernt — kein Bezug zur Moselstraße, aber Teil der regionalen Sicherheitslage, die bei Vermietung im Bonner Umfeld regelmäßig mitgedacht wird.",
+          "titel": "Aggerstadion bekommt Netzwerk und öffentliches WLAN",
+          "aufmacher": "Troisdorf hat das Aggerstadion mit neuer Netzwerk- und WLAN-Infrastruktur ausgestattet — ein Baustein der Sportentwicklungsplanung „Sport und Bewegung in Troisdorf 2040“.",
+          "fakten": "Das Schul-, Sport- und Kulturamt hat die Maßnahme gemeinsam mit der städtischen IUK umgesetzt; das öffentliche WLAN ergänzt das Angebot für Wettkämpfe und Vereine. Die Stadt meldet den Abschluss am 20. Oktober 2026.",
+          "einordnung": "Kleines Projekt, aber ein Muster: Die Stadt baut eigene Netze aus, statt zu mieten. Für digitale Infrastruktur auf städtischen Flächen bleibt Troisdorf damit ein verlässlicher Partner — relevant, falls du später Zähler- oder Sensorik-Anbindung außerhalb des Hauses planst.",
           "quellen": [
-            {"name": "Polizei Bonn – Pressemitteilung vom 19.10.2026", "url": "https://bonn.polizei.nrw/presse/bonn-auerberg-fuenf-verletzte-nach-auseinandersetzung-auf-der-osloer-strasse-polizei-und-staatsanwaltschaft-ermitteln-zeugen-gesucht"}
+            {"name": "Stadt Troisdorf – Aggerstadion erfolgreich digital angebunden (20.10.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/aggerstadion-erfolgreich-digital-angebunden/"},
+            {"name": "treffpunkt-troisdorf – Aggerstadion digital angebunden", "url": "https://treffpunkt-troisdorf.de/aggerstadion-digital-angebunden/"}
           ]
         }
       ]
@@ -60,24 +61,23 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Heizungsgesetz heißt jetzt GModG — die 65-Prozent-Regel ist weg",
-          "aufmacher": "Seit dem 29. Juli 2026 gilt das Gebäudemodernisierungsgesetz: Neue Gas- und Ölheizungen sind wieder zulässig, die 65-Prozent-Vorgabe für erneuerbare Energien ist gestrichen.",
-          "fakten": "Das bisherige Gebäudeenergiegesetz wurde mit Gesetz vom 23. Juli 2026 in Gebäudemodernisierungsgesetz (GModG) umbenannt; erste Teile gelten seit 29. Juli 2026, weitere Stufen folgen zum 1. Januar 2027, 2028 und 2030. Neben Wärmepumpe, Fernwärme, Hybrid- und Biomasseheizung dürfen auch neue Gas- und Ölheizungen eingebaut werden, wenn sie ab dem 1. Januar 2029 einen schrittweise steigenden Anteil CO2-neutraler Brennstoffe nutzen. Für bestehende Heizungen soll ab 2028 eine Grüngasquote von zunächst bis zu einem Prozent gelten. Ab 2027 kommt über einen neu gefassten § 106 eine Solarpflicht, zeitlich gestaffelt und zunächst nur für Nichtwohngebäude. Die Deutsche Umwelthilfe hat am 29. September 2026 Verfassungsbeschwerde eingelegt; das Bundesverfassungsgericht muss über die Annahme entscheiden.",
-          "einordnung": "Am Rechenergebnis für die Moselstraße ändert sich nichts — Wärmepumpe plus BWWP bleiben wirtschaftlich. Aber der politische Zeitdruck ist raus, und falls Karlsruhe das Gesetz kippt, kehrt die 65-Prozent-Regel zurück: Die WP-Entscheidung sollte darauf nicht warten.",
+          "titel": "Bauzinsen bleiben über vier Prozent — 10 Jahre bei 4,4 bis 4,5 Prozent",
+          "aufmacher": "Für zehnjährige Baufinanzierungen werden aktuell rund 4,4 bis 4,5 Prozent effektiver Jahreszins fällig; nach dem Anstieg seit Juli sind die Sätze zuletzt nur leicht gesunken.",
+          "fakten": "Interhyp weist für den Zeitraum 12. bis 18. Oktober 2026 bei 80 Prozent Beleihungsauslauf 4,30 Prozent für 10 Jahre aus, bei über 90 Prozent 4,56 Prozent; 20 Jahre kosten 4,49 bis 4,69 Prozent. Finanztip nennt Stand 16. Oktober 4,4 Prozent ab und für 20 Jahre 4,9 Prozent, mit Schwankungen von 0,1 bis 0,2 Punkten in beide Richtungen. Kurzfristig rechnen 80 Prozent der Institute im Interhyp-Bankenpanel mit gleichbleibenden Zinsen, mittelfristig 60 Prozent mit fallenden; als Treiber gelten der Iran-Konflikt und Aufwärtsrisiken bei den Anleiherenditen.",
+          "einordnung": "Rechengröße für ein 600k-MFH: jeder halbe Prozentpunkt Zins sind rund 3.000 Euro pro Jahr. Bei maximalem Hebel — nur Kaufnebenkosten aus Eigenkapital — frisst das schnell die Marge. Kalkuliere mit 4,5 Prozent plus Puffer und halte die Anschlussfinanzierung früh im Blick.",
           "quellen": [
-            {"name": "Haufe – Umwelthilfe legt Verfassungsbeschwerde gegen GModG ein", "url": "https://www.haufe.de/immobilien/wirtschaft-politik/heizungsgesetz_84342_596382.html"},
-            {"name": "PV Magazine – Bundestag verabschiedet Gebäudemodernisierungsgesetz (10.07.2026)", "url": "https://www.pv-magazine.de/2026/07/10/bundestag-verabschiedet-gebaeudemodernisierungsgesetz-doch-noch-vor-der-sommerpause/"},
-            {"name": "Wikipedia – Gebäudemodernisierungsgesetz (Gesetzesdaten, BGBl. 2026 I Nr. 226)", "url": "https://de.wikipedia.org/wiki/Geb%C3%A4udemodernisierungsgesetz"}
+            {"name": "Interhyp – Bauzinsen aktuell (Konditionen 12.–18.10.2026)", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Finanztip – Aktuelle Bauzinsen (Stand 16.10.2026)", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
           ]
         },
         {
-          "titel": "Troisdorf: 10,74 Euro Kaltmiete — plus 6,9 Prozent in einem Jahr",
-          "aufmacher": "Der Quadratmeter Kaltmiete kostet in Troisdorf im dritten Quartal 2026 durchschnittlich 10,74 Euro — 6,9 Prozent mehr als vor einem Jahr.",
-          "fakten": "Im dritten Quartal 2025 lag der Schnitt bei 10,05 Euro pro Quadratmeter, im zweiten Quartal 2026 bei 10,61 Euro; das aktuelle Plus zum Vorquartal beträgt 1,2 Prozent. Der Bundesdurchschnitt liegt bei 9,42 Euro, der Rhein-Sieg-Kreis bei 10,22 Euro (plus 6,2 Prozent zum Vorjahr). Die Spanne in Troisdorf reicht von 9,93 bis 11,87 Euro pro Quadratmeter. Das Portal ohne-makler.net nennt für 2026 einen deutlich höheren Wert von 11,70 Euro — die Portale erheben unterschiedlich; ein amtlicher qualifizierter Mietspiegel der Stadt gilt seit 1. Oktober 2025.",
-          "einordnung": "Eine 80-Quadratmeter-Wohnung bringt damit rund 859 Euro kalt. Bei 6,9 Prozent Mietwachstum und Bauzinsen um 4,3 Prozent dreht sich der Hebel wieder Richtung Bestand — Neubau rechnet sich weiter nur mit hohen Anfangsmieten.",
+          "titel": "Mieten in Troisdorf plus 6,9 Prozent — aber 15 Prozent Kappungsgrenze",
+          "aufmacher": "Die Angebotsmieten in Troisdorf sind binnen Jahresfrist um 6,9 Prozent auf durchschnittlich 10,74 Euro pro Quadratmeter gestiegen (Q3 2026).",
+          "fakten": "Die Spanne reicht von 9,93 bis 11,87 Euro pro Quadratmeter; im Rhein-Sieg-Kreis liegt der Schnitt bei 10,22 Euro, ein Plus von 6,2 Prozent zum Vorjahr. Gebremst wird die Entwicklung durch die Mieterschutzverordnung: In Troisdorf gilt seit 1. März 2025 die Mietpreisbremse mit maximal 10 Prozent über der ortsüblichen Vergleichsmiete bei Neuverträgen und eine Kappungsgrenze von 15 Prozent in drei Jahren statt bisher 20 Prozent. Bei Umwandlung in Wohnungseigentum gilt eine Kündigungssperrfrist von acht Jahren statt drei.",
+          "einordnung": "Marktmiete wächst also schneller als Bestandsmieten erlaubt — der Abstand zur Vergleichsmiete wird jedes Jahr größer. Beim Ankauf auf Marktniveau kalkulieren, dann sind die 15 Prozent alle drei Jahre ein echter Cashflow-Hebel.",
           "quellen": [
             {"name": "ImmoScout24 – Mietspiegel Troisdorf Q3 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"},
-            {"name": "ohne-makler.net – Mietspiegel Troisdorf 2026", "url": "https://www.ohne-makler.net/mietspiegel/nordrhein-westfalen/troisdorf/"}
+            {"name": "Stadt Troisdorf – Mieterschutzverordnung ab 01.03.2025", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2025/februar/neue-mieterschutzverordnung-auch-in-troisdorf-gueltig/"}
           ]
         }
       ]
@@ -86,13 +86,24 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Bundesregierung hebt Wachstumsprognose auf 1,3 Prozent",
-          "aufmacher": "Deutschland wächst 2026 um 1,3 Prozent — 0,8 Punkte mehr als im Frühjahr, getragen von Exporten und staatlichen Investitionen.",
-          "fakten": "Die Herbstprojektion vom 8. Oktober 2026 rechnet mit einem BIP-Plus von 1,3 Prozent für 2026, 1,1 Prozent für 2027 und 0,6 Prozent für 2028. Bei den Verbraucherpreisen erwartet die Regierung 2,7 Prozent 2026, 3,0 Prozent 2027 und 2,2 Prozent 2028 — deutlich unter der zuletzt gemeldeten Rate von 3,3 Prozent im September. Als Treiber nennt die Bundesregierung robuste Exporte sowie staatliche Investitionen in Verteidigung und Infrastruktur; der Nahost-Konflikt und höhere Energiepreise bremsen weniger stark als befürchtet. Wirtschaftsministerin Reiche mahnt trotzdem weitere Reformen an und verweist auf den Investitionsgipfel am 19. und 20. Oktober.",
-          "einordnung": "Wachstum plus drei Prozent Teuerung im Jahr 2027 spricht gegen schnelle Zinssenkungen — die Anschlussfinanzierung bleibt bei rund 4,3 Prozent. Für Quixx24 zählt ohnehin die Binnenkonjunktur und der private Konsum, nicht das BIP allein.",
+          "titel": "EZB hebt auf 2,50 Prozent — Deutschland bei 3,3 Prozent Inflation",
+          "aufmacher": "Die EZB hat am 10. September die Leitzinsen um 25 Basispunkte angehoben; der Einlagesatz liegt seit 16. September bei 2,50 Prozent — die nächste Entscheidung fällt am 29. Oktober.",
+          "fakten": "Der Hauptrefinanzierungssatz steht bei 2,65 Prozent, die Spitzenrefinanzierung bei 2,90 Prozent. Der EZB-Rat begründet den Schritt mit Inflationsdruck aus dem Nahost-Konflikt; die Projektion sieht Gesamtinflation bei 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028), Wachstum bei 0,9, 1,4 und 1,5 Prozent. In Deutschland lag die Teuerung im September bei 3,3 Prozent nach 2,9 Prozent im August — der höchste Wert seit Dezember 2023, getrieben von Energie mit plus 14,9 Prozent; die Kerninflation blieb bei 2,4 Prozent.",
+          "einordnung": "Real gerechnet: 2,5 Prozent Zins minus 3,3 Prozent Inflation ergibt rund minus 0,8 Prozent. Auf 600.000 Euro Liquidität sind das etwa 4.800 Euro Kaufkraftverlust im Jahr — Parken ist derzeit teurer als investieren.",
           "quellen": [
-            {"name": "Bundesregierung – Herbstprojektion 2026 (08.10.2026)", "url": "https://www.bundesregierung.de/breg-de/aktuelles/herbstprojektion-2026-bundesregierung-2456338"},
-            {"name": "BMWE – Konjunktur und Wachstum, Herbstprojektion", "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Dossier/konjunktur-und-wachstum.html"}
+            {"name": "EZB – Geldpolitische Beschlüsse 10.09.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"},
+            {"name": "Deutsche Bundesbank – EZB-Rat hebt Leitzinsen um 25 Basispunkte an", "url": "https://www.bundesbank.de/de/aufgaben/themen/ezb-rat-hebt-leitzinsen-um-25-basispunkte-an-1008148"},
+            {"name": "Destatis – Inflationsrate im September 2026 bei +3,3 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"}
+          ]
+        },
+        {
+          "titel": "DAX bei 25.219 Punkten — 1,3 Prozent Rücksetzer",
+          "aufmacher": "Der DAX hat am 20. Oktober bei 25.219,71 Punkten geschlossen, 1,3 Prozent unter dem Vortagesschluss von 25.540,77.",
+          "fakten": "Ende September stand der Index bei 25.199,19 Punkten, am 16. Oktober bei 25.495,28. Im Vormittagshandel des 20. Oktober lag der DAX rund ein Prozent tiefer bei 25.090 Zählern, der EuroStoxx 50 bei 6.088 Punkten — belastet von der Zinserhöhung und der Lage im Nahen Osten.",
+          "einordnung": "Für deine ETF-Logik unaufregend: ein 1-Prozent-Tag ist Rauschen, und der Index liegt weiter über dem Septemberstand. Kein Anlass, am Sparplan zu drehen.",
+          "quellen": [
+            {"name": "finanzen.net – DAX historische Kurse", "url": "https://www.finanzen.net/index/dax"},
+            {"name": "n-tv – Der Börsen-Tag vom 20.10.2026", "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Dienstag-20-Oktober-2026-id31433440.html"}
           ]
         }
       ]
@@ -101,23 +112,32 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "paperless-ngx 3.3.3 — zehn Fehlerkorrekturen, keine neuen Funktionen",
-          "aufmacher": "Das Dokumentenarchiv hat am 19. Oktober Version 3.3.3 veröffentlicht; installiert ist 3.3.2.",
-          "fakten": "Das Release ist reine Wartung. Behoben sind unter anderem: die globale Suche verschiebt das Layout nicht mehr, Suchtreffer enthalten keinen Dokumentinhalt mehr, überflüssige Blätterleisten sind entfernt, Dashboard-Widget-Titel brechen nicht mehr um, die Aufgabenansicht paginiert nicht mehr über Abschnitte hinweg. Dazu kommen ein Fix für Importer-Manifeste mit Passphrase, eine Korrektur für Subpfade bei Logout, Freigabe-Links und Auto-Login, ein Vorschlags-Button, der nicht mehr an die KI-Funktion gebunden ist, ein Fix für Single-Class-Classifier bei der Schwellenwert-Vorhersage sowie eine Korrektur, die Zähler und Dateiendung beim Kürzen langer öffentlicher Dateinamen erhält.",
-          "einordnung": "Unkritisch, aber die Such- und Freigabe-Link-Fixes merkt man im Alltag. Das Update ist gefahrlos machbar — ich warte auf Freigabe, bevor ich den Container anfasse.",
+          "titel": "Frigate 0.18.2 ist ein Sicherheitsupdate — dein NVR läuft noch auf 0.18.0",
+          "aufmacher": "Zwei Lücken in Frigate erlaubten angemeldeten Nutzern Befehlsausführung als root; Version 0.18.2 vom 15. Oktober schließt beide.",
+          "fakten": "Die Advisories GHSA-qjjw-3v66-279f und GHSA-93xj-hg88-ffg7 beschreiben eine Umgehung des go2rtc-Exec-Filters über das Source-Schema sowie direkt erreichbare WebSocket-Pfade — jeweils Root-Rechte nach Admin-Login. Zusätzlich normalisiert 0.18.2 die Anfragepfade in der Media-Authentifizierung. Installiert ist 0.18.0, verfügbar 0.18.2.",
+          "einordnung": "Deine Kameras hängen hinter dem Frigate-Server — ein Root-RCE ist dort kein Akademiker-Problem. Ich ziehe das Update nach, sobald du es freigibst; es ist ein Schreibzugriff.",
           "quellen": [
-            {"name": "GitHub – paperless-ngx v3.3.3 Release Notes", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.3"}
+            {"name": "GitHub – Frigate Release 0.18.2 (15.10.2026)", "url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.2"}
           ]
         },
         {
-          "titel": "MCP-Server springt auf 9.0 — und omnivoice ist seit Freitag aus",
-          "aufmacher": "Bei Home Assistant stehen neun Updates offen; der auffälligste Sprung ist der HA-MCP-Server von 8.7 auf 9.0 — und ein Container läuft seit dem 16. Oktober nicht mehr.",
-          "fakten": "Offen sind: Home Assistant MCP Server (Dev) 8.7.0.dev3061 auf 9.0.0.dev3105 (Major-Sprung, Auto-Update aktiv), Mosquitto 7.1.1 auf 7.1.2 (Auto-Update), Music Assistant 2.10.6 auf 2.10.7, Alexa Media Player 5.17.0 auf 5.17.1 und ConnectLife 0.51.0 auf 0.52.1 — letzteres bricht künftig mit einer Meldung ab statt mit Fehler 500, wenn geänderte AGB den Login blockieren, und bereitet auf Home Assistant 2026.12 vor. Sonoff LAN 3.13.1 auf 3.13.2 unterstützt NSPanel Pro Gen2 und TRV Gen2 und korrigiert T6-Wandschalter mit Firmware 1.0.3; Frigate 0.18.0 auf 0.18.2 enthält Sicherheitsfixes, das NAS wartet weiter auf DSM 7.4.1-90080. Gestoppt ist der Container omnivoice, seit 16. Oktober mit Exit-Code 137 (Abbruch wegen Speichermangels).",
-          "einordnung": "omnivoice sollte neu gestartet oder bewusst abgeschaltet werden — ein Speicher-Abbruch heilt sich nicht selbst. Den MCP-Sprung auf 9.0 würde ich vor dem 29. Oktober einmal von Hand anstoßen und danach die Sprachsteuerung prüfen.",
+          "titel": "NAS: DSM 7.4.1 wartet — Sicherheitsfix, aber kein Weg zurück",
+          "aufmacher": "Auf dem NAS läuft DSM 7.3.2-86009 Update 4, verfügbar ist 7.4.1-90080 — ein Sprung über eine Minor-Version, nach dem kein Downgrade mehr möglich ist.",
+          "fakten": "DSM 7.4.1-90080 erschien am 23. Juli 2026, das Update 1 am 12. Oktober 2026 und behebt Sicherheitslücken; das NAS startet beim Update neu. 7.4.1 korrigiert zusätzlich Probleme mit der Erkennung von USB-USV und USB-Geräten nach dem Wechsel auf DSM 7.4 sowie das Cache-Handling. DSM 7.4 selbst brachte laut Synology KI-gestützte Verwaltung und effizientere Speichernutzung.",
+          "einordnung": "Hängt die USV am NAS, ist 7.4.1 der passende Fix. Vor dem Sprung von 7.3 auf 7.4 ein Hyper-Backup und ein Wartungsfenster einplanen — ich mache das ausschließlich mit deiner Freigabe.",
           "quellen": [
-            {"name": "GitHub – SonoffLAN v3.13.2", "url": "https://github.com/AlexxIT/SonoffLAN/releases/v3.13.2"},
-            {"name": "GitHub – connectlife-ha v0.52.1", "url": "https://github.com/oyvindwe/connectlife-ha/releases/v0.52.1"},
-            {"name": "GitHub – Frigate v0.18.2", "url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.2"}
+            {"name": "Synology – Release Notes DSM (DS920+)", "url": "https://www.synology.com/releaseNote/DSM?model=DS920%2B"},
+            {"name": "Synology – Ankündigung DSM 7.4", "url": "https://www.synology.com/en-global/company/news/article/dsm74"}
+          ]
+        },
+        {
+          "titel": "Zwei Wartungsupdates ohne Risiko — und omnivoice ist seit fünf Tagen tot",
+          "aufmacher": "paperless-ngx 3.3.2 → 3.3.3 und Music Assistant 2.10.6 → 2.10.7 sind reine Bugfix-Releases; der Container omnivoice liegt seit fünf Tagen mit Exit 137 danieder.",
+          "fakten": "paperless-ngx 3.3.3 vom 19. Oktober bringt zehn Fehlerbehebungen — unter anderem gegen springende Layouts in der globalen Suche, doppelte Paginierung und abgeschnittene Dateinamen bei langen Public-Filenames; keine Migration, kein Breaking Change. Music Assistant 2.10.7 vom 17. Oktober behebt fehlende Spotify-Playlists in großen Bibliotheken, doppelt auftauchende DLNA-Player und den Home-Assistant-Login über die externe URL. omnivoice wurde vor fünf Tagen mit Exit 137 beendet (SIGKILL, üblicherweise Speichermangel); die Firecrawl-Init-Leiche daneben ist dagegen ein normaler One-Shot-Container.",
+          "einordnung": "Beide Updates sind gefahrlos nachziehbar. omnivoice ist der eigentliche Punkt: entweder Speicherlimit anheben oder den Dienst bewusst abschalten — ein halbtoter Dienst erzeugt nur Fehlalarme.",
+          "quellen": [
+            {"name": "GitHub – paperless-ngx Release 3.3.3 (19.10.2026)", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.3"},
+            {"name": "GitHub – Music Assistant Release 2.10.7 (17.10.2026)", "url": "https://github.com/music-assistant/server/releases/tag/2.10.7"}
           ]
         }
       ]
@@ -126,14 +146,11 @@
       "titel": "🤖 Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Astribot T1: 18.000 Dollar — der erste Zweiarmer unter der 20.000er-Marke",
-          "aufmacher": "Der Shenzhener Hersteller Astribot verkauft sein T1 ab 18.000 Dollar in den USA und liefert nach eigener Aussage sofort.",
-          "fakten": "Genannt wurde der Preis am 30. September 2026 auf der IROS in Pittsburgh: starting at 18.000 Dollar, umgerechnet rund 16.000 Euro; in China startet das Modell ab 89.900 Yuan. Technisch: etwa 1,55 Meter hoch, 66 Kilogramm, 23 Freiheitsgrade ohne Greifer, bis zu 5 Kilogramm Nutzlast pro Arm, automatisches Laden und Schnellwechsel-Akku, rollende Basis statt Beine, seilgetriebene Arme. Was in der Basisausstattung enthalten ist, teilt Astribot nicht mit — Greifer, Rechner und Kameras sind modular und treiben den Preis. Zum Vergleich: Feather wirbt mit 29.990 Dollar, sein eigener Shop listet das Full-System aber mit 31.990 Dollar (rund 28.500 Euro) und meldet es als ausverkauft; 1X NEO bleibt bei 20.000 Dollar Kaufpreis oder 499 Dollar im Monat, weiterhin ohne bestätigte Erstauslieferung an einen Kunden.",
-          "einordnung": "Die Preisgrenze für ernsthafte Zweiarmer fällt schnell — aber alles rollend, halbautonom und ohne erprobte Haushaltstauglichkeit. Für den Haushalt bleibt NEO das einzige bestellbare Modell; also beobachten statt kaufen, die 10-Jahres-Sicht gilt weiter.",
-          "quellen": [
-            {"name": "Robotica Guide – Astribot T1: Preis und Spezifikationen (10.10.2026)", "url": "https://roboticaguide.com/astribot-t1-price-us-18000-specs/"},
-            {"name": "Robotica Guide – Feather Robot: Preis (10.10.2026)", "url": "https://roboticaguide.com/feather-robot-price-specs-29990/"}
-          ]
+          "titel": "Status",
+          "aufmacher": "Haushaltsroboter: nichts Neues.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     }
