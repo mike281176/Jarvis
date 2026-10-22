@@ -1,14 +1,14 @@
 {
-  "datum": "Mittwoch, 21.10.2026",
+  "datum": "Donnerstag, 22.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "10,2 °C · Regen 100 % · UV 2,6",
-          "aufmacher": "🌦️ Niesel bei 10,2 °C, Höchstwert 14,8 °C, Tief 9,7 °C — durchgehend nass, UV-Index niedrig.",
-          "fakten": "Regenwahrscheinlichkeit 100 %, UV-Index 2,6 (niedrig, kein Schutz erforderlich).",
-          "einordnung": "Kein PV-Tag — bei 100 % Regen bleibt der Speicher heute auf Netzbezug. Außenarbeiten auf Donnerstag verschieben.",
+          "titel": "6,7 °C · Regen 49 % · UV 2,5",
+          "aufmacher": "☀️ Klar und kühl: 6,7 °C jetzt, bis 12,3 °C am Nachmittag.",
+          "fakten": "Regenwahrscheinlichkeit 49 %, UV-Index 2,45 (niedrig), Tiefstwert 6,7 °C.",
+          "einordnung": "Bei UV 2,45 ist kein Sonnenschutz nötig; das Regenrisiko spricht dafür, Außenarbeiten und Dachthemen auf den Vormittag zu legen.",
           "quellen": []
         }
       ]
@@ -17,17 +17,10 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Mi 21.10. · 10:00 — Quixx-Meeting",
-          "aufmacher": "Heute Vormittag, 10:00 Uhr: Quixx-Meeting.",
-          "fakten": "21. Oktober 2026, 10:00 Uhr.",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "Do 22.10. · 15:00 — Therapiezentrum Snoek",
-          "aufmacher": "Morgen nachmittags: Manuelle Therapie, Sporttherapie, Osteopathie.",
-          "fakten": "22. Oktober 2026, 15:00 Uhr.",
-          "einordnung": "",
+          "titel": "22.10.2026 15:00 — Therapiezentrum Snoek",
+          "aufmacher": "Heute 15:00 Uhr: Manuelle Therapie / Sporttherapie / Osteopathie (Therapiezentrum Snoek GmbH).",
+          "fakten": "Einziger Kalendereintrag der nächsten drei Tage.",
+          "einordnung": "Danach ist der Nachmittag frei — guter Slot für die Freigabe des DSM-Updates.",
           "quellen": []
         }
       ]
@@ -36,23 +29,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Kreisumlage 2027 steigt um einen Punkt — rund 11 Millionen Euro mehr für Troisdorf",
-          "aufmacher": "Der Rhein-Sieg-Kreis hebt die Kreisumlage 2027 um einen Prozentpunkt an; Troisdorf und die übrigen Kommunen tragen rund 11 Millionen Euro zusätzlich.",
-          "fakten": "Das Haushaltsvolumen 2027 liegt bei rund 1.175 Millionen Euro, davon etwa 720 Millionen für Transferleistungen wie Sozial- und Jugendhilfe. Die Aufwendungen steigen um rund 95 Millionen Euro, die Erträge nur um rund 66 Millionen; die Lücke wird über die Ausgleichsrücklage gedeckt, die mit 41 Millionen Euro vollständig verbraucht wird. Trotz Konsolidierung von rund 21 Millionen Euro war die Umlageerhöhung laut Kreis nicht vermeidbar — für die Folgejahre kündigt die Verwaltung weitere Erhöhungen an, weil dann keine Rücklagen mehr zur Verfügung stehen. Beschlossen wird der Etat am 14. Dezember 2026.",
-          "einordnung": "Troisdorf bekommt weniger Spielraum im eigenen Haushalt — der Druck auf Grundsteuer-Hebesätze und Gebühren wächst. Bei der Cashflow-Rechnung für Zukäufe in der Region gehören steigende kommunale Kosten in den Puffer, nicht in die Kür.",
+          "titel": "Kriegsdorf: Offenbachstraße bis April 2027 voll gesperrt",
+          "aufmacher": "Seit dem 12. Oktober ist die Offenbachstraße in Kriegsdorf zwischen Birklestraße und Im Schonsfeld dicht — voraussichtlich bis April 2027.",
+          "fakten": "Gegraben wird für Kanal, Strom, Gas, Wasser und Telekommunikationsleitungen; gesperrt wird in Abschnitten von 150 bis 200 Metern, Anlieger können bis zur Absperrung zufahren. Die RSVG richtet drei Ersatzhaltestellen ein (Reichensteinstraße/Rosenhügel, Reichensteinstraße/Falkenweg, Kriegsdorfer Straße) und fährt montags bis freitags einen Baustellenfahrplan zwischen Kriegsdorf und Spich. Parallel: Zum Altenforst bis 20.01.2027, Lohmarer Straße/Heimbachstraße bis 23.10., Römerstraße–Heimbachstraße 26.10.–11.12.2026, Max-Ernst-/Noldestraße in Eschmar bis 14.02.2027.",
+          "einordnung": "Für Fahrten Richtung Spich und Sieglar kostet die Umleitung täglich Zeit; bei Objektterminen in Kriegsdorf gehört mehr Puffer in den Kalender.",
           "quellen": [
-            {"name": "Rhein-Sieg-Kreis – Haushaltsentwurf 2027 (Pressemitteilung 15.10.2026)", "url": "https://www.rhein-sieg-kreis.de/presseinformationen/oktober/haushaltsetat.php"},
-            {"name": "Kölner Stadt-Anzeiger – Rhein-Sieg greift tief in die Rücklagen", "url": "https://www.ksta.de/region/rhein-sieg-bonn/siegburg/haushaltsentwurf-2027-rhein-sieg-greift-tief-in-die-ruecklagen-1397264"}
+            {"name": "Stadt Troisdorf", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/vollsperrung-der-offenbachstrasse-beginnt-am-12-10/"},
+            {"name": "Kölner Stadt-Anzeiger – Sperrungen", "url": "https://www.ksta.de/region/rhein-sieg-bonn/troisdorf/alle-sperrungen-in-troisdorf-2-1396599"}
           ]
         },
         {
-          "titel": "Aggerstadion bekommt Netzwerk und öffentliches WLAN",
-          "aufmacher": "Troisdorf hat das Aggerstadion mit neuer Netzwerk- und WLAN-Infrastruktur ausgestattet — ein Baustein der Sportentwicklungsplanung „Sport und Bewegung in Troisdorf 2040“.",
-          "fakten": "Das Schul-, Sport- und Kulturamt hat die Maßnahme gemeinsam mit der städtischen IUK umgesetzt; das öffentliche WLAN ergänzt das Angebot für Wettkämpfe und Vereine. Die Stadt meldet den Abschluss am 20. Oktober 2026.",
-          "einordnung": "Kleines Projekt, aber ein Muster: Die Stadt baut eigene Netze aus, statt zu mieten. Für digitale Infrastruktur auf städtischen Flächen bleibt Troisdorf damit ein verlässlicher Partner — relevant, falls du später Zähler- oder Sensorik-Anbindung außerhalb des Hauses planst.",
+          "titel": "Gedenken an die Opfer der Nazi-Diktatur am 9. November",
+          "aufmacher": "Troisdorf gedenkt am Montag, 9. November 2026, der Verfolgung und Ermordung seiner jüdischen Bürgerinnen und Bürger.",
+          "fakten": "Um 16:00 Uhr legt Bürgermeister Alexander Biber am Jahnplatz in Troisdorf-Mitte einen Kranz nieder, um 16:30 Uhr beginnt die Gedenkveranstaltung in der Remise auf Burg Wissem. Redner ist Aaron Knappstein vom Verein Kölsche Kippa Köpp, musikalisch begleitet Rainer Weber (Klarinette). Anmeldung bis 5. November unter 02241-900450 oder landr@troisdorf.de; um 20:00 Uhr folgt ein kostenloses Konzert des Jazz-Duos Doyna im Kunsthaus Troisdorf, Mülheimer Straße 23.",
+          "einordnung": "Steht im lokalen Kalender — wer dabei sein will, muss sich in den kommenden zwei Wochen anmelden.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Aggerstadion erfolgreich digital angebunden (20.10.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/aggerstadion-erfolgreich-digital-angebunden/"},
-            {"name": "treffpunkt-troisdorf – Aggerstadion digital angebunden", "url": "https://treffpunkt-troisdorf.de/aggerstadion-digital-angebunden/"}
+            {"name": "Stadt Troisdorf (Pressemeldung)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/gedenken-an-die-opfer-der-nazi-diktatur/"},
+            {"name": "Stadt Troisdorf (offizieller Kanal)", "url": "https://www.instagram.com/stadt_troisdorf/"}
           ]
         }
       ]
@@ -61,23 +54,22 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben über vier Prozent — 10 Jahre bei 4,4 bis 4,5 Prozent",
-          "aufmacher": "Für zehnjährige Baufinanzierungen werden aktuell rund 4,4 bis 4,5 Prozent effektiver Jahreszins fällig; nach dem Anstieg seit Juli sind die Sätze zuletzt nur leicht gesunken.",
-          "fakten": "Interhyp weist für den Zeitraum 12. bis 18. Oktober 2026 bei 80 Prozent Beleihungsauslauf 4,30 Prozent für 10 Jahre aus, bei über 90 Prozent 4,56 Prozent; 20 Jahre kosten 4,49 bis 4,69 Prozent. Finanztip nennt Stand 16. Oktober 4,4 Prozent ab und für 20 Jahre 4,9 Prozent, mit Schwankungen von 0,1 bis 0,2 Punkten in beide Richtungen. Kurzfristig rechnen 80 Prozent der Institute im Interhyp-Bankenpanel mit gleichbleibenden Zinsen, mittelfristig 60 Prozent mit fallenden; als Treiber gelten der Iran-Konflikt und Aufwärtsrisiken bei den Anleiherenditen.",
-          "einordnung": "Rechengröße für ein 600k-MFH: jeder halbe Prozentpunkt Zins sind rund 3.000 Euro pro Jahr. Bei maximalem Hebel — nur Kaufnebenkosten aus Eigenkapital — frisst das schnell die Marge. Kalkuliere mit 4,5 Prozent plus Puffer und halte die Anschlussfinanzierung früh im Blick.",
+          "titel": "Bauzinsen bei 4,36 Prozent — Bundesanleihe auf 15-Jahres-Hoch",
+          "aufmacher": "Für zehn Jahre Zinsbindung liegt der Topzins Mitte Oktober bei rund 4,36 Prozent — der Korridor reicht von 4,0 bis 5,0 Prozent.",
+          "fakten": "Berechnungsbasis: 90 Prozent Beleihung, 300.000 Euro Darlehen, 2 Prozent Tilgung. Treiber ist der Kapitalmarkt: Die Rendite der zehnjährigen Bundesanleihe stieg im August auf rund 3,31 Prozent, den höchsten Stand seit 15 Jahren. Bei 60 Prozent Beleihung sind es 4,13 Prozent gegenüber 4,55 Prozent bei 90 Prozent; Vollfinanzierungen über 110 Prozent liegen über 5 Prozent, laut Baufivergleich bei 5,28 Prozent.",
+          "einordnung": "Bei der Hebelstrategie trifft jeder Zinspunkt direkt den Cashflow: 600.000 Euro Darlehen kosten einen Prozentpunkt mehr rund 500 Euro im Monat, 6.000 Euro im Jahr. Hohe Beleihung wird dadurch teurer als die Variante mit Eigenkapital — die Refinanzierung nach dem Kauf sollte früh vorbereitet werden.",
           "quellen": [
-            {"name": "Interhyp – Bauzinsen aktuell (Konditionen 12.–18.10.2026)", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Finanztip – Aktuelle Bauzinsen (Stand 16.10.2026)", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
+            {"name": "Baufi24 – Bauzinsen", "url": "https://www.baufi24.de/bauzinsen/"},
+            {"name": "Baufivergleich – aktuelle Zinsen", "url": "https://baufivergleich.de/aktuelle-zinsen/"}
           ]
         },
         {
-          "titel": "Mieten in Troisdorf plus 6,9 Prozent — aber 15 Prozent Kappungsgrenze",
-          "aufmacher": "Die Angebotsmieten in Troisdorf sind binnen Jahresfrist um 6,9 Prozent auf durchschnittlich 10,74 Euro pro Quadratmeter gestiegen (Q3 2026).",
-          "fakten": "Die Spanne reicht von 9,93 bis 11,87 Euro pro Quadratmeter; im Rhein-Sieg-Kreis liegt der Schnitt bei 10,22 Euro, ein Plus von 6,2 Prozent zum Vorjahr. Gebremst wird die Entwicklung durch die Mieterschutzverordnung: In Troisdorf gilt seit 1. März 2025 die Mietpreisbremse mit maximal 10 Prozent über der ortsüblichen Vergleichsmiete bei Neuverträgen und eine Kappungsgrenze von 15 Prozent in drei Jahren statt bisher 20 Prozent. Bei Umwandlung in Wohnungseigentum gilt eine Kündigungssperrfrist von acht Jahren statt drei.",
-          "einordnung": "Marktmiete wächst also schneller als Bestandsmieten erlaubt — der Abstand zur Vergleichsmiete wird jedes Jahr größer. Beim Ankauf auf Marktniveau kalkulieren, dann sind die 15 Prozent alle drei Jahre ein echter Cashflow-Hebel.",
+          "titel": "Mieten steigen langsamer als die Kapitalkosten",
+          "aufmacher": "Die Nettokaltmieten in Deutschland lagen im August 2026 um 1,9 Prozent über dem Vorjahresmonat, die Haushaltsenergie gab um 0,7 Prozent nach.",
+          "fakten": "Die Statistik umfasst Bestandsmieten sowie Neu- und Wiedervermietungen in allen Regionen, unterschieden nach Baujahr und Wohnungsgröße. Quelle sind die Verbraucherpreisindizes des Statistischen Bundesamts.",
+          "einordnung": "Rund 2 Prozent Mietwachstum gegen 4,5 Prozent Finanzierungszins — die Schere zwischen Mietrendite und Kapitaldienst bleibt offen. Bei Neuakquisitionen zählt der Einstiegspreis, nicht die erhoffte Mietsteigerung.",
           "quellen": [
-            {"name": "ImmoScout24 – Mietspiegel Troisdorf Q3 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"},
-            {"name": "Stadt Troisdorf – Mieterschutzverordnung ab 01.03.2025", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2025/februar/neue-mieterschutzverordnung-auch-in-troisdorf-gueltig/"}
+            {"name": "Destatis/Statista – Nettokaltmieten", "url": "https://de.statista.com/statistik/daten/studie/1345546/umfrage/verbraucherpreisindex-fuer-nettokaltmiete-nebenkosten-und-energie-in-deutschland/"}
           ]
         }
       ]
@@ -86,24 +78,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hebt auf 2,50 Prozent — Deutschland bei 3,3 Prozent Inflation",
-          "aufmacher": "Die EZB hat am 10. September die Leitzinsen um 25 Basispunkte angehoben; der Einlagesatz liegt seit 16. September bei 2,50 Prozent — die nächste Entscheidung fällt am 29. Oktober.",
-          "fakten": "Der Hauptrefinanzierungssatz steht bei 2,65 Prozent, die Spitzenrefinanzierung bei 2,90 Prozent. Der EZB-Rat begründet den Schritt mit Inflationsdruck aus dem Nahost-Konflikt; die Projektion sieht Gesamtinflation bei 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028), Wachstum bei 0,9, 1,4 und 1,5 Prozent. In Deutschland lag die Teuerung im September bei 3,3 Prozent nach 2,9 Prozent im August — der höchste Wert seit Dezember 2023, getrieben von Energie mit plus 14,9 Prozent; die Kerninflation blieb bei 2,4 Prozent.",
-          "einordnung": "Real gerechnet: 2,5 Prozent Zins minus 3,3 Prozent Inflation ergibt rund minus 0,8 Prozent. Auf 600.000 Euro Liquidität sind das etwa 4.800 Euro Kaufkraftverlust im Jahr — Parken ist derzeit teurer als investieren.",
+          "titel": "EZB hält 2,50 Prozent — Entscheidung am 28./29. Oktober",
+          "aufmacher": "Seit dem 16. September gilt der Einlagensatz von 2,50 Prozent, der Hauptrefinanzierungssatz von 2,65 und der Spitzenrefinanzierungssatz von 2,90 Prozent.",
+          "fakten": "Der EZB-Rat hatte am 10. September um jeweils 25 Basispunkte angehoben und begründet das mit anhaltendem Inflationsdruck durch den Konflikt im Nahen Osten. Die Projektion erwartet Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028) bei Wachstum von 0,9 / 1,4 / 1,5 Prozent. Nächste Sitzungen: 28./29. Oktober und 16./17. Dezember 2026.",
+          "einordnung": "Der Rat legt sich laut eigener Aussage nicht auf einen Zinspfad fest; Ökonomen rechnen eher mit einem weiteren Schritt als mit einer Pause. Für Anschlussfinanzierungen also nicht auf fallende Zinsen setzen.",
           "quellen": [
             {"name": "EZB – Geldpolitische Beschlüsse 10.09.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"},
-            {"name": "Deutsche Bundesbank – EZB-Rat hebt Leitzinsen um 25 Basispunkte an", "url": "https://www.bundesbank.de/de/aufgaben/themen/ezb-rat-hebt-leitzinsen-um-25-basispunkte-an-1008148"},
-            {"name": "Destatis – Inflationsrate im September 2026 bei +3,3 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"}
+            {"name": "Sparkasse – EZB-Leitzins", "url": "https://www.sparkasse.de/pk/ratgeber/finanzplanung/investieren/leitzins.html"}
           ]
         },
         {
-          "titel": "DAX bei 25.219 Punkten — 1,3 Prozent Rücksetzer",
-          "aufmacher": "Der DAX hat am 20. Oktober bei 25.219,71 Punkten geschlossen, 1,3 Prozent unter dem Vortagesschluss von 25.540,77.",
-          "fakten": "Ende September stand der Index bei 25.199,19 Punkten, am 16. Oktober bei 25.495,28. Im Vormittagshandel des 20. Oktober lag der DAX rund ein Prozent tiefer bei 25.090 Zählern, der EuroStoxx 50 bei 6.088 Punkten — belastet von der Zinserhöhung und der Lage im Nahen Osten.",
-          "einordnung": "Für deine ETF-Logik unaufregend: ein 1-Prozent-Tag ist Rauschen, und der Index liegt weiter über dem Septemberstand. Kein Anlass, am Sparplan zu drehen.",
+          "titel": "Inflation im Euroraum springt auf 3,8 Prozent",
+          "aufmacher": "Die Teuerung im Euroraum lag im September 2026 bei 3,8 Prozent, nach 3,2 Prozent im August; in Deutschland bei 3,3 Prozent.",
+          "fakten": "Beide Werte liegen deutlich über dem EZB-Ziel von 2 Prozent. Bei einem Einlagensatz von 2,50 Prozent bleibt der Realzins damit negativ.",
+          "einordnung": "Cash verliert weiter an Kaufkraft — für die liquiden Mittel spricht das eher für den Objektkauf mit gesicherter Finanzierung als für weiteres Warten.",
           "quellen": [
-            {"name": "finanzen.net – DAX historische Kurse", "url": "https://www.finanzen.net/index/dax"},
-            {"name": "n-tv – Der Börsen-Tag vom 20.10.2026", "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Dienstag-20-Oktober-2026-id31433440.html"}
+            {"name": "Eurostat – Inflation im Euroraum", "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Inflation_in_the_euro_area"},
+            {"name": "Sparkasse – EZB-Leitzins", "url": "https://www.sparkasse.de/pk/ratgeber/finanzplanung/investieren/leitzins.html"}
           ]
         }
       ]
@@ -112,33 +103,38 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Frigate 0.18.2 ist ein Sicherheitsupdate — dein NVR läuft noch auf 0.18.0",
-          "aufmacher": "Zwei Lücken in Frigate erlaubten angemeldeten Nutzern Befehlsausführung als root; Version 0.18.2 vom 15. Oktober schließt beide.",
-          "fakten": "Die Advisories GHSA-qjjw-3v66-279f und GHSA-93xj-hg88-ffg7 beschreiben eine Umgehung des go2rtc-Exec-Filters über das Source-Schema sowie direkt erreichbare WebSocket-Pfade — jeweils Root-Rechte nach Admin-Login. Zusätzlich normalisiert 0.18.2 die Anfragepfade in der Media-Authentifizierung. Installiert ist 0.18.0, verfügbar 0.18.2.",
-          "einordnung": "Deine Kameras hängen hinter dem Frigate-Server — ein Root-RCE ist dort kein Akademiker-Problem. Ich ziehe das Update nach, sobald du es freigibst; es ist ein Schreibzugriff.",
+          "titel": "Frigate 0.18.0 → 0.18.2: zwei Lücken erlauben Root-Zugriff",
+          "aufmacher": "Das Wartungsrelease vom 15. Oktober schließt zwei Sicherheitslücken, über die ein angemeldeter Admin oder ein Websocket-Zugriff Code als Root ausführen kann.",
+          "fakten": "Betroffen sind GHSA-qjjw-3v66-279f (Umgehung des go2rtc-Exec-Filters) und GHSA-93xj-hg88-ffg7 (direkte Websocket-Pfade). 0.18.2 normalisiert zusätzlich die Pfadprüfung in der Media-Authentifizierung.",
+          "einordnung": "Höchste Priorität der offenen Updates: Der NVR läuft im Heimnetz, hat aber Kamerazugriff und eine Weboberfläche.",
           "quellen": [
-            {"name": "GitHub – Frigate Release 0.18.2 (15.10.2026)", "url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.2"}
+            {"name": "Frigate Release 0.18.2", "url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.2"}
           ]
         },
         {
-          "titel": "NAS: DSM 7.4.1 wartet — Sicherheitsfix, aber kein Weg zurück",
-          "aufmacher": "Auf dem NAS läuft DSM 7.3.2-86009 Update 4, verfügbar ist 7.4.1-90080 — ein Sprung über eine Minor-Version, nach dem kein Downgrade mehr möglich ist.",
-          "fakten": "DSM 7.4.1-90080 erschien am 23. Juli 2026, das Update 1 am 12. Oktober 2026 und behebt Sicherheitslücken; das NAS startet beim Update neu. 7.4.1 korrigiert zusätzlich Probleme mit der Erkennung von USB-USV und USB-Geräten nach dem Wechsel auf DSM 7.4 sowie das Cache-Handling. DSM 7.4 selbst brachte laut Synology KI-gestützte Verwaltung und effizientere Speichernutzung.",
-          "einordnung": "Hängt die USV am NAS, ist 7.4.1 der passende Fix. Vor dem Sprung von 7.3 auf 7.4 ein Hyper-Backup und ein Wartungsfenster einplanen — ich mache das ausschließlich mit deiner Freigabe.",
+          "titel": "Synology DSM 7.3.2 → 7.4.1-90080: Sicherheitsupdate ohne Rückweg",
+          "aufmacher": "Die DS920+ steht noch auf DSM 7.3.2-86009 Update 4, verfügbar ist 7.4.1-90080 samt Update 1 vom 12. Oktober 2026.",
+          "fakten": "Update 1 behebt Sicherheitslücken; das Hauptrelease 7.4.1 ändert die KMIP-Zertifikatsbehandlung (nur noch private CAs) und startet das Gerät neu. Nach der Installation ist kein Downgrade mehr möglich.",
+          "einordnung": "Vor dem Sprung ein DSM-Backup einplanen und Freigabe geben — der Neustart nimmt NAS-Dienste kurz offline, inklusive Paperless und Immich.",
           "quellen": [
-            {"name": "Synology – Release Notes DSM (DS920+)", "url": "https://www.synology.com/releaseNote/DSM?model=DS920%2B"},
-            {"name": "Synology – Ankündigung DSM 7.4", "url": "https://www.synology.com/en-global/company/news/article/dsm74"}
+            {"name": "Synology – DSM Release Notes", "url": "https://www.synology.com/en-global/releaseNote/DSM"}
           ]
         },
         {
-          "titel": "Zwei Wartungsupdates ohne Risiko — und omnivoice ist seit fünf Tagen tot",
-          "aufmacher": "paperless-ngx 3.3.2 → 3.3.3 und Music Assistant 2.10.6 → 2.10.7 sind reine Bugfix-Releases; der Container omnivoice liegt seit fünf Tagen mit Exit 137 danieder.",
-          "fakten": "paperless-ngx 3.3.3 vom 19. Oktober bringt zehn Fehlerbehebungen — unter anderem gegen springende Layouts in der globalen Suche, doppelte Paginierung und abgeschnittene Dateinamen bei langen Public-Filenames; keine Migration, kein Breaking Change. Music Assistant 2.10.7 vom 17. Oktober behebt fehlende Spotify-Playlists in großen Bibliotheken, doppelt auftauchende DLNA-Player und den Home-Assistant-Login über die externe URL. omnivoice wurde vor fünf Tagen mit Exit 137 beendet (SIGKILL, üblicherweise Speichermangel); die Firecrawl-Init-Leiche daneben ist dagegen ein normaler One-Shot-Container.",
-          "einordnung": "Beide Updates sind gefahrlos nachziehbar. omnivoice ist der eigentliche Punkt: entweder Speicherlimit anheben oder den Dienst bewusst abschalten — ein halbtoter Dienst erzeugt nur Fehlalarme.",
+          "titel": "paperless-ngx 3.3.2 → 3.3.3: Suche und Layout korrigiert",
+          "aufmacher": "Das Release vom 19. Oktober behebt das springende Layout der globalen Suche und blendet Dokumentinhalte aus den Suchergebnissen aus.",
+          "fakten": "Weitere Fixes: Weiterleitungen bei Betrieb unter einem Unterpfad, Klassifizierer mit nur einer Klasse, Dateinamen-Kürzung im Importer sowie redundante Blätter-Mechaniken im Dashboard.",
+          "einordnung": "Unkritisch, aber sinnvoll — die Suche ist der meistgenutzte Teil des Archivs. Kann mit dem nächsten Wartungsfenster mitlaufen.",
           "quellen": [
-            {"name": "GitHub – paperless-ngx Release 3.3.3 (19.10.2026)", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.3"},
-            {"name": "GitHub – Music Assistant Release 2.10.7 (17.10.2026)", "url": "https://github.com/music-assistant/server/releases/tag/2.10.7"}
+            {"name": "paperless-ngx Releases", "url": "https://github.com/paperless-ngx/paperless-ngx/releases"}
           ]
+        },
+        {
+          "titel": "Nebenbei: MCP-Server-Dev-Build und ein gestoppter Container",
+          "aufmacher": "Der Home-Assistant-MCP-Server läuft als Dev-Build 9.0.0.dev3121, verfügbar ist dev3129.",
+          "fakten": "Für Dev-Builds veröffentlicht das Add-on keine Release-Notes. Auf dem NAS ist der Container omnivoice seit sechs Tagen gestoppt (Exit 137 — von der Ressourcenkontrolle beendet); der Firecrawl-Init-Container endete erwartungsgemäß mit Code 0.",
+          "einordnung": "omnivoice bei Bedarf neu starten oder bewusst aus lassen — 137 deutet auf Speicherdruck auf dem NAS hin.",
+          "quellen": []
         }
       ]
     },
@@ -146,8 +142,8 @@
       "titel": "🤖 Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Status",
-          "aufmacher": "Haushaltsroboter: nichts Neues.",
+          "titel": "Haushaltsroboter: nichts Neues.",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
