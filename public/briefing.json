@@ -1,14 +1,14 @@
 {
-  "datum": "Donnerstag, 22.10.2026",
+  "datum": "Freitag, 23.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "6,7 °C · Regen 49 % · UV 2,5",
-          "aufmacher": "☀️ Klar und kühl: 6,7 °C jetzt, bis 12,3 °C am Nachmittag.",
-          "fakten": "Regenwahrscheinlichkeit 49 %, UV-Index 2,45 (niedrig), Tiefstwert 6,7 °C.",
-          "einordnung": "Bei UV 2,45 ist kein Sonnenschutz nötig; das Regenrisiko spricht dafür, Außenarbeiten und Dachthemen auf den Vormittag zu legen.",
+          "titel": "10,5 °C · Regen 94 % · UV 2,1",
+          "aufmacher": "🌦️ Niesel den ganzen Tag: 10,5 °C jetzt, Höchstwert 12,6 °C.",
+          "fakten": "Tiefstwert 10,1 °C, Regenwahrscheinlichkeit 94 %, UV-Index 2,1 (niedrig). Kaum trockene Fenster — der Tag bleibt durchweg feucht und kühl.",
+          "einordnung": "Bei 94 % Regen ist heute praktisch kein PV-Ertrag zu erwarten; der Speicher bleibt voraussichtlich flach.",
           "quellen": []
         }
       ]
@@ -17,10 +17,17 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "22.10.2026 15:00 — Therapiezentrum Snoek",
-          "aufmacher": "Heute 15:00 Uhr: Manuelle Therapie / Sporttherapie / Osteopathie (Therapiezentrum Snoek GmbH).",
-          "fakten": "Einziger Kalendereintrag der nächsten drei Tage.",
-          "einordnung": "Danach ist der Nachmittag frei — guter Slot für die Freigabe des DSM-Updates.",
+          "titel": "26.10.2026 14:20 — Therapiezentrum Snoek",
+          "aufmacher": "Montag, 14:20 Uhr: Manuelle Therapie / Sporttherapie / Osteopathie.",
+          "fakten": "Termin im Therapiezentrum Snoek GmbH.",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "26.10.2026 15:00 — Therapiezentrum Snoek",
+          "aufmacher": "Montag, 15:00 Uhr: zweiter Termin derselben Praxis.",
+          "fakten": "Direkt im Anschluss an den 14:20-Termin — eine Fahrt genügt.",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -29,23 +36,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Kriegsdorf: Offenbachstraße bis April 2027 voll gesperrt",
-          "aufmacher": "Seit dem 12. Oktober ist die Offenbachstraße in Kriegsdorf zwischen Birklestraße und Im Schonsfeld dicht — voraussichtlich bis April 2027.",
-          "fakten": "Gegraben wird für Kanal, Strom, Gas, Wasser und Telekommunikationsleitungen; gesperrt wird in Abschnitten von 150 bis 200 Metern, Anlieger können bis zur Absperrung zufahren. Die RSVG richtet drei Ersatzhaltestellen ein (Reichensteinstraße/Rosenhügel, Reichensteinstraße/Falkenweg, Kriegsdorfer Straße) und fährt montags bis freitags einen Baustellenfahrplan zwischen Kriegsdorf und Spich. Parallel: Zum Altenforst bis 20.01.2027, Lohmarer Straße/Heimbachstraße bis 23.10., Römerstraße–Heimbachstraße 26.10.–11.12.2026, Max-Ernst-/Noldestraße in Eschmar bis 14.02.2027.",
-          "einordnung": "Für Fahrten Richtung Spich und Sieglar kostet die Umleitung täglich Zeit; bei Objektterminen in Kriegsdorf gehört mehr Puffer in den Kalender.",
+          "titel": "Kita-Beiträge: Stadtrat vertagt die Mehrbelastung",
+          "aufmacher": "Troisdorf wollte rund 1,2 Millionen Euro zusätzlich pro Jahr über Kita-Beiträge einnehmen — der Stadtrat hat die Entscheidung vorerst vertagt.",
+          "fakten": "Die Verwaltung schlägt eine neue Elternbeitragssatzung zum 1. August 2027 vor: Betreuungsstufen künftig 30, 35, 40 und 45 Stunden (die 25-Stunden-Stufe entfällt), zehn Euro mehr bei 45 Wochenstunden, und die freiwillige Beitragsfreiheit im drittletzten Kita-Jahr soll wegfallen. Elternbeiträge decken derzeit rund fünf Prozent der Kita-Kosten; die unterste Einkommensstufe bis 37.000 Euro Jahreseinkommen bleibt beitragsfrei, für Geschwisterkinder soll nur einmal gezahlt werden. Der Tagesordnungspunkt wurde ohne Abstimmung in den Haupt- und Finanzausschuss zurückverwiesen.",
+          "einordnung": "Die Stadt steckt in der Haushaltsklemme — kommunale Einnahmeverbesserungen landen erfahrungsgemäß zuerst bei Gebühren und Hebesätzen, nicht bei Entlastungen.",
           "quellen": [
-            {"name": "Stadt Troisdorf", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/vollsperrung-der-offenbachstrasse-beginnt-am-12-10/"},
-            {"name": "Kölner Stadt-Anzeiger – Sperrungen", "url": "https://www.ksta.de/region/rhein-sieg-bonn/troisdorf/alle-sperrungen-in-troisdorf-2-1396599"}
+            {"name": "Stadt Troisdorf — Kita-Beiträge in Troisdorf (19.10.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kita-beitraege-in-troisdorf/"},
+            {"name": "SPD Troisdorf — Neuigkeiten aus dem Stadtrat (14.10.2026)", "url": "https://www.spd-troisdorf.de/2026/10/14/neuigkeiten-stadtrat-ratssitzung-entscheidungen-alkoholverbot-kita-elternbeitraege/"}
           ]
         },
         {
-          "titel": "Gedenken an die Opfer der Nazi-Diktatur am 9. November",
-          "aufmacher": "Troisdorf gedenkt am Montag, 9. November 2026, der Verfolgung und Ermordung seiner jüdischen Bürgerinnen und Bürger.",
-          "fakten": "Um 16:00 Uhr legt Bürgermeister Alexander Biber am Jahnplatz in Troisdorf-Mitte einen Kranz nieder, um 16:30 Uhr beginnt die Gedenkveranstaltung in der Remise auf Burg Wissem. Redner ist Aaron Knappstein vom Verein Kölsche Kippa Köpp, musikalisch begleitet Rainer Weber (Klarinette). Anmeldung bis 5. November unter 02241-900450 oder landr@troisdorf.de; um 20:00 Uhr folgt ein kostenloses Konzert des Jazz-Duos Doyna im Kunsthaus Troisdorf, Mülheimer Straße 23.",
-          "einordnung": "Steht im lokalen Kalender — wer dabei sein will, muss sich in den kommenden zwei Wochen anmelden.",
+          "titel": "Handy-Verkauf an der Aggerbrücke: Fälschung statt Smartphone",
+          "aufmacher": "Zwei Unbekannte haben am Mittwochabend bei einem Handyverkauf in Troisdorf das Original gegen eine Fälschung getauscht und den Verkäufer mit einem Messer bedroht.",
+          "fakten": "Der 44-jährige Troisdorfer traf sich gegen 21:00 Uhr an der Frankfurter Straße nahe der Aggerbrücke mit einem angeblichen Käufer und dessen Begleiter. Während der eine das Gerät prüfte, tauschte der andere es aus; als der Verkäufer den etwa 20-Jährigen festhielt, zückte dieser ein Messer, beide flohen Richtung Innenstadt. Die Kripo ermittelt wegen räuberischen Diebstahls, Zeugenhinweise unter 02241 541-3221.",
+          "einordnung": "Klassische Masche bei Online-Verkäufen — Übergabe an belebten Orten und Ware erst nach gesicherter Zahlung aus der Hand geben.",
           "quellen": [
-            {"name": "Stadt Troisdorf (Pressemeldung)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/gedenken-an-die-opfer-der-nazi-diktatur/"},
-            {"name": "Stadt Troisdorf (offizieller Kanal)", "url": "https://www.instagram.com/stadt_troisdorf/"}
+            {"name": "news.de — Polizeimeldung Troisdorf (22.10.2026)", "url": "https://www.news.de/lokales/860118775/blaulicht-news-polizei-einsatz-troisdorf-22-10-26-diebstahl-heute/1/"},
+            {"name": "Presseportal — Kreispolizeibehörde Rhein-Sieg-Kreis (Originalmeldung)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6375833"}
           ]
         }
       ]
@@ -54,22 +61,24 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bei 4,36 Prozent — Bundesanleihe auf 15-Jahres-Hoch",
-          "aufmacher": "Für zehn Jahre Zinsbindung liegt der Topzins Mitte Oktober bei rund 4,36 Prozent — der Korridor reicht von 4,0 bis 5,0 Prozent.",
-          "fakten": "Berechnungsbasis: 90 Prozent Beleihung, 300.000 Euro Darlehen, 2 Prozent Tilgung. Treiber ist der Kapitalmarkt: Die Rendite der zehnjährigen Bundesanleihe stieg im August auf rund 3,31 Prozent, den höchsten Stand seit 15 Jahren. Bei 60 Prozent Beleihung sind es 4,13 Prozent gegenüber 4,55 Prozent bei 90 Prozent; Vollfinanzierungen über 110 Prozent liegen über 5 Prozent, laut Baufivergleich bei 5,28 Prozent.",
-          "einordnung": "Bei der Hebelstrategie trifft jeder Zinspunkt direkt den Cashflow: 600.000 Euro Darlehen kosten einen Prozentpunkt mehr rund 500 Euro im Monat, 6.000 Euro im Jahr. Hohe Beleihung wird dadurch teurer als die Variante mit Eigenkapital — die Refinanzierung nach dem Kauf sollte früh vorbereitet werden.",
+          "titel": "Bauzinsen bleiben bei rund 4,4 Prozent",
+          "aufmacher": "Für zehn Jahre Zinsbindung liegen die Bauzinsen weiter um 4,4 Prozent — minimal günstiger als vor Wochenfrist, aber ohne Trend nach unten.",
+          "fakten": "Baufi24 nennt für den 23. Oktober einen Topzins von 4,36 Prozent (Beispiel: 300.000 Euro Darlehen, 90 Prozent Beleihung, 2 Prozent Tilgung) im Korridor von 4,0 bis 5,0 Prozent. Hypofriend notiert für den 21. Oktober 4,37 Prozent bei 5 Jahren, 4,41 Prozent bei 10 Jahren, 4,57 Prozent bei 15 und 4,67 Prozent bei 20 Jahren — am 14. Oktober waren es noch 4,45 Prozent auf zehn Jahre. Die Rendite der zehnjährigen Bundesanleihe lag am 22. Oktober bei 3,34 Prozent (21.10.: 3,41 Prozent).",
+          "einordnung": "Praktisch gerechnet: 300.000 Euro zu 4,36 Prozent plus 2 Prozent Tilgung ergeben 1.590 Euro Rate im Monat; bei 600.000 Euro sind es 3.180 Euro — davon 26.160 Euro Zins im Jahr. Jeder Zehntelpunkt kostet bei 600.000 Euro rund 50 Euro monatlich.",
           "quellen": [
-            {"name": "Baufi24 – Bauzinsen", "url": "https://www.baufi24.de/bauzinsen/"},
-            {"name": "Baufivergleich – aktuelle Zinsen", "url": "https://baufivergleich.de/aktuelle-zinsen/"}
+            {"name": "Baufi24 — Bauzinsen aktuell (23.10.2026)", "url": "https://www.baufi24.de/bauzinsen/"},
+            {"name": "Hypofriend — Bauzinsen Zeitreihe (Stand 21.10.2026)", "url": "https://hypofriend.de/de/bauzinsen"},
+            {"name": "tagesschau — Marktbericht 22.10.2026", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-tesla-meta-sap-100.html"}
           ]
         },
         {
-          "titel": "Mieten steigen langsamer als die Kapitalkosten",
-          "aufmacher": "Die Nettokaltmieten in Deutschland lagen im August 2026 um 1,9 Prozent über dem Vorjahresmonat, die Haushaltsenergie gab um 0,7 Prozent nach.",
-          "fakten": "Die Statistik umfasst Bestandsmieten sowie Neu- und Wiedervermietungen in allen Regionen, unterschieden nach Baujahr und Wohnungsgröße. Quelle sind die Verbraucherpreisindizes des Statistischen Bundesamts.",
-          "einordnung": "Rund 2 Prozent Mietwachstum gegen 4,5 Prozent Finanzierungszins — die Schere zwischen Mietrendite und Kapitaldienst bleibt offen. Bei Neuakquisitionen zählt der Einstiegspreis, nicht die erhoffte Mietsteigerung.",
+          "titel": "Baugenehmigungen steigen — gebaut wird trotzdem zu wenig",
+          "aufmacher": "Im August 2026 wurden in Deutschland 20.600 Wohnungen genehmigt, 6,8 Prozent mehr als im Vorjahr — doch rund 450.000 genehmigte Wohnungen liegen weiter auf Eis.",
+          "fakten": "Im Neubau stiegen die Genehmigungen um 4,2 Prozent auf 16.500 Wohnungen, durch Umbau um 18,2 Prozent auf 4.200. Von Januar bis August waren es 169.400 Wohnungen (+12,1 Prozent), davon 90.600 in Mehrfamilienhäusern (+14,5 Prozent). Das ifo-Geschäftsklima im Wohnungsbau fiel im September auf minus 25,1 Punkte (August: minus 22,5); 41,3 Prozent der Firmen melden Auftragsmangel, 14,1 Prozent Stornierungen. Der GdW rechnet mit rund 200.000 Fertigstellungen in diesem Jahr bei einem Bedarf von etwa 320.000.",
+          "einordnung": "Mehr MFH-Genehmigungen sind ein Frühindikator für Angebot in zwei bis drei Jahren; kurzfristig stützt der Nachfrageüberhang die Mieten im Bestand — das Argument für Cashflow-Objekte statt Neubau.",
           "quellen": [
-            {"name": "Destatis/Statista – Nettokaltmieten", "url": "https://de.statista.com/statistik/daten/studie/1345546/umfrage/verbraucherpreisindex-fuer-nettokaltmiete-nebenkosten-und-energie-in-deutschland/"}
+            {"name": "Destatis — Baugenehmigungen August 2026 (16.10.2026)", "url": "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Bauen/_inhalt.html"},
+            {"name": "Haufe — Baugenehmigungen, Bauüberhang und ifo-Zahlen", "url": "https://www.haufe.de/immobilien/entwicklung-vermarktung/marktanalysen/destatis-baugenehmigungen-fuer-wohnungen-deutlich-gestiegen_84324_511962.html"}
           ]
         }
       ]
@@ -78,23 +87,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hält 2,50 Prozent — Entscheidung am 28./29. Oktober",
-          "aufmacher": "Seit dem 16. September gilt der Einlagensatz von 2,50 Prozent, der Hauptrefinanzierungssatz von 2,65 und der Spitzenrefinanzierungssatz von 2,90 Prozent.",
-          "fakten": "Der EZB-Rat hatte am 10. September um jeweils 25 Basispunkte angehoben und begründet das mit anhaltendem Inflationsdruck durch den Konflikt im Nahen Osten. Die Projektion erwartet Gesamtinflation von 3,0 Prozent (2026), 2,5 Prozent (2027) und 2,1 Prozent (2028) bei Wachstum von 0,9 / 1,4 / 1,5 Prozent. Nächste Sitzungen: 28./29. Oktober und 16./17. Dezember 2026.",
-          "einordnung": "Der Rat legt sich laut eigener Aussage nicht auf einen Zinspfad fest; Ökonomen rechnen eher mit einem weiteren Schritt als mit einer Pause. Für Anschlussfinanzierungen also nicht auf fallende Zinsen setzen.",
+          "titel": "EZB entscheidet am 29. Oktober — Bundesbank sieht Risiken nach oben",
+          "aufmacher": "Die Bundesbank erwartet eine hartnäckig erhöhte Teuerung bis weit in 2027 hinein; die EZB muss am 29. Oktober über den Leitzins entscheiden.",
+          "fakten": "Seit dem 16. September gelten Einlagensatz 2,50, Hauptrefinanzierungssatz 2,65 und Spitzenrefinanzierungssatz 2,90 Prozent. Die deutsche Inflationsrate stieg von 2,8 Prozent im Juli über 2,9 im August auf 3,3 Prozent im September — der höchste Wert seit Dezember 2023; die Kernrate blieb bei 2,4 Prozent. Treiber war Energie: Heizöl plus 74,9 Prozent, Kraftstoffe plus 37,1 Prozent, Energie insgesamt plus 14,9 Prozent, während Strom 5,5 und Gas 2,8 Prozent billiger wurden. Die Zinsentscheidung wird am 29. Oktober um 14:15 Uhr veröffentlicht.",
+          "einordnung": "Bei 2,50 Prozent Einlagensatz und 3,3 Prozent Inflation bleibt der Realzins negativ — Bargeld verliert real, während Immobilienkredite bei 4,4 Prozent teuer bleiben. Spielraum für schnelle Zinssenkungen gibt es so nicht.",
           "quellen": [
-            {"name": "EZB – Geldpolitische Beschlüsse 10.09.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"},
-            {"name": "Sparkasse – EZB-Leitzins", "url": "https://www.sparkasse.de/pk/ratgeber/finanzplanung/investieren/leitzins.html"}
+            {"name": "Cash. — Bundesbank erwartet hartnäckige Inflation bis 2027", "url": "https://www.cash-online.de/a/bundesbank-erwartet-hartnaeckige-inflation-bis-ins-jahr-2027-727969/"},
+            {"name": "EZB — Key ECB interest rates", "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"}
           ]
         },
         {
-          "titel": "Inflation im Euroraum springt auf 3,8 Prozent",
-          "aufmacher": "Die Teuerung im Euroraum lag im September 2026 bei 3,8 Prozent, nach 3,2 Prozent im August; in Deutschland bei 3,3 Prozent.",
-          "fakten": "Beide Werte liegen deutlich über dem EZB-Ziel von 2 Prozent. Bei einem Einlagensatz von 2,50 Prozent bleibt der Realzins damit negativ.",
-          "einordnung": "Cash verliert weiter an Kaufkraft — für die liquiden Mittel spricht das eher für den Objektkauf mit gesicherter Finanzierung als für weiteres Warten.",
+          "titel": "DAX gibt 1,1 Prozent ab — Öl und schwache US-Tech-Zahlen drücken",
+          "aufmacher": "Der DAX schloss am Donnerstag bei 25.371 Punkten und damit 1,07 Prozent im Minus — belastet von enttäuschenden US-Quartalszahlen und Öl über 112 Dollar.",
+          "fakten": "Der deutsche Leitindex hatte am Vortag noch 1,3 Prozent zugelegt, das Tagestief lag bei 25.318 Punkten. Der Nasdaq 100 verlor rund zwei Prozent, nachdem Meta, IBM und Tesla negativ aufgenommene Zahlen vorgelegt hatten: Teslas Gewinn brach um mehr als 40 Prozent auf rund 800 Millionen Dollar ein bei stagnierendem Umsatz von 28,05 Milliarden. Meta investiert 135 bis 145 Milliarden Dollar in KI-Infrastruktur. Brent verteuerte sich um 2,6 Prozent auf gut 112 Dollar; französische Staatsanleihen rentierten zeitweise mit 5,11 Prozent erstmals seit 2013 höher als US-Papiere, Bundesanleihen fielen auf 3,34 Prozent.",
+          "einordnung": "Der Ölpreis ist der eigentliche Treiber: Er verteuert Heizöl und Sprit direkt und ist der Grund, warum die EZB nächste Woche kaum lockern dürfte.",
           "quellen": [
-            {"name": "Eurostat – Inflation im Euroraum", "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Inflation_in_the_euro_area"},
-            {"name": "Sparkasse – EZB-Leitzins", "url": "https://www.sparkasse.de/pk/ratgeber/finanzplanung/investieren/leitzins.html"}
+            {"name": "tagesschau — Marktbericht 22.10.2026", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-tesla-meta-sap-100.html"},
+            {"name": "n-tv — Der Börsen-Tag, 22.10.2026", "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Donnerstag-22-Oktober-2026-id31444261.html"}
           ]
         }
       ]
@@ -103,38 +112,32 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Frigate 0.18.0 → 0.18.2: zwei Lücken erlauben Root-Zugriff",
-          "aufmacher": "Das Wartungsrelease vom 15. Oktober schließt zwei Sicherheitslücken, über die ein angemeldeter Admin oder ein Websocket-Zugriff Code als Root ausführen kann.",
-          "fakten": "Betroffen sind GHSA-qjjw-3v66-279f (Umgehung des go2rtc-Exec-Filters) und GHSA-93xj-hg88-ffg7 (direkte Websocket-Pfade). 0.18.2 normalisiert zusätzlich die Pfadprüfung in der Media-Authentifizierung.",
-          "einordnung": "Höchste Priorität der offenen Updates: Der NVR läuft im Heimnetz, hat aber Kamerazugriff und eine Weboberfläche.",
+          "titel": "paperless-ngx 3.3.3 → 3.3.4: Sicherheitsupdate für Zertifikate und Bibliotheken",
+          "aufmacher": "Das Wartungsrelease vom 22. Oktober aktualisiert Abhängigkeiten wegen des eMudhra/emSign-Zertifikatsvorfalls und schließt Lücken in Pillow und aiohttp.",
+          "fakten": "Betroffen sind ausschließlich Drittbibliotheken, nicht der Paperless-Code selbst; certifi und uv wurden nachgezogen, ausdrückliche Update-Empfehlung für alle Nutzer. Auf dem NAS läuft noch 3.3.3.",
+          "einordnung": "Zertifikatsgeschichten sind keine Kosmetik — mitziehen, sobald der nächste Wartungsslot frei ist.",
           "quellen": [
-            {"name": "Frigate Release 0.18.2", "url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.2"}
+            {"name": "GitHub — paperless-ngx v3.3.4", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.4"},
+            {"name": "Python Discuss — eMudhra/emSign CA-Vorfall", "url": "https://discuss.python.org/t/information-for-python-users-regarding-emudhra-emsign-ca-certificate-security-incident/109576"}
           ]
         },
         {
-          "titel": "Synology DSM 7.3.2 → 7.4.1-90080: Sicherheitsupdate ohne Rückweg",
-          "aufmacher": "Die DS920+ steht noch auf DSM 7.3.2-86009 Update 4, verfügbar ist 7.4.1-90080 samt Update 1 vom 12. Oktober 2026.",
-          "fakten": "Update 1 behebt Sicherheitslücken; das Hauptrelease 7.4.1 ändert die KMIP-Zertifikatsbehandlung (nur noch private CAs) und startet das Gerät neu. Nach der Installation ist kein Downgrade mehr möglich.",
-          "einordnung": "Vor dem Sprung ein DSM-Backup einplanen und Freigabe geben — der Neustart nimmt NAS-Dienste kurz offline, inklusive Paperless und Immich.",
+          "titel": "Alexa Media Player 5.17.1 → 5.18.0: Echo Show 8 (Gen4) und stabilere Sensoren",
+          "aufmacher": "Die HACS-Integration vom 22. Oktober kennt jetzt den Echo Show 8 der vierten Generation und hält die Verfügbarkeit der Benachrichtigungssensoren synchron zum Gerät.",
+          "fakten": "alexapy wurde auf 1.33.0 angehoben, die Auth-Proxy-Handler sind pro aktivem Config-Flow isoliert (weniger Login-Konflikte bei mehreren Konten), und für jede neue Stimme wird ein alexa_media_voice_command-Event gefeuert. Auto-Update ist aus, Installation läuft über HACS.",
+          "einordnung": "Relevant, weil die Alexa-Ansagen bei uns über diese Integration laufen — der Sensor-Fix verhindert falsche „nicht verfügbar“-Zustände.",
           "quellen": [
-            {"name": "Synology – DSM Release Notes", "url": "https://www.synology.com/en-global/releaseNote/DSM"}
+            {"name": "GitHub — alexa_media_player v5.18.0", "url": "https://github.com/alandtse/alexa_media_player/releases/tag/v5.18.0"}
           ]
         },
         {
-          "titel": "paperless-ngx 3.3.2 → 3.3.3: Suche und Layout korrigiert",
-          "aufmacher": "Das Release vom 19. Oktober behebt das springende Layout der globalen Suche und blendet Dokumentinhalte aus den Suchergebnissen aus.",
-          "fakten": "Weitere Fixes: Weiterleitungen bei Betrieb unter einem Unterpfad, Klassifizierer mit nur einer Klasse, Dateinamen-Kürzung im Importer sowie redundante Blätter-Mechaniken im Dashboard.",
-          "einordnung": "Unkritisch, aber sinnvoll — die Suche ist der meistgenutzte Teil des Archivs. Kann mit dem nächsten Wartungsfenster mitlaufen.",
+          "titel": "Nebenbei: DSM 7.4.1 ist durch, File editor wartet auf 6.3.0",
+          "aufmacher": "Das Synology-Update von gestern Abend ist installiert — die DS920+ steht jetzt auf DSM 7.4.1-90080 Update 1, die Update-Meldung ist verschwunden.",
+          "fakten": "Offen bleibt nur der File-editor-Add-on: 6.2.0 → 6.3.0 (5-Sekunden-Healthcheck beim Start, hass-configurator 0.7.0, neues Basis-Image, Veröffentlichung über GHCR). HA Core läuft unverändert auf 2026.10.2, die Frigate-Integration auf v5.15.6. Der Update-Scan meldet zusätzlich zwei gestoppte Container.",
+          "einordnung": "Damit ist der Schritt ohne Rückweg erledigt — der Rest ist Routine.",
           "quellen": [
-            {"name": "paperless-ngx Releases", "url": "https://github.com/paperless-ngx/paperless-ngx/releases"}
+            {"name": "GitHub — Home Assistant Add-ons, File editor Changelog", "url": "https://github.com/home-assistant/addons/blob/master/configurator/CHANGELOG.md"}
           ]
-        },
-        {
-          "titel": "Nebenbei: MCP-Server-Dev-Build und ein gestoppter Container",
-          "aufmacher": "Der Home-Assistant-MCP-Server läuft als Dev-Build 9.0.0.dev3121, verfügbar ist dev3129.",
-          "fakten": "Für Dev-Builds veröffentlicht das Add-on keine Release-Notes. Auf dem NAS ist der Container omnivoice seit sechs Tagen gestoppt (Exit 137 — von der Ressourcenkontrolle beendet); der Firecrawl-Init-Container endete erwartungsgemäß mit Code 0.",
-          "einordnung": "omnivoice bei Bedarf neu starten oder bewusst aus lassen — 137 deutet auf Speicherdruck auf dem NAS hin.",
-          "quellen": []
         }
       ]
     },
