@@ -1,13 +1,13 @@
 {
-  "datum": "Sonntag, 25.10.2026",
+  "datum": "Montag, 26.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "11,8 °C · Regen 100 % · UV 2,6",
-          "aufmacher": "🌧️ Regen",
-          "fakten": "Höchstwert 14,0 °C, Tiefstwert 8,1 °C. Dauerregen den ganzen Tag, UV-Index niedrig.",
+          "titel": "13,7 °C · Regen 33 % · UV 2,1",
+          "aufmacher": "☁️ Bedeckt, überwiegend trocken",
+          "fakten": "Aktuell 8,1 °C, Höchstwert 13,7 °C, Tiefstwert 7,4 °C. Regenwahrscheinlichkeit 33 Prozent, UV-Index 2,1 (niedrig).",
           "einordnung": "",
           "quellen": []
         }
@@ -43,23 +43,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf hebt Grundsteuer B auf 640 Prozentpunkte",
-          "aufmacher": "Troisdorf erhöht die Grundsteuer B für 2026 und 2027 auf 640 von Hundert – 105 Punkte mehr als bisher.",
-          "fakten": "Die vom Rat am 5. Mai 2026 beschlossene Hebesatzsatzung setzt für beide Jahre 640 v. H. bei Grundsteuer B, 571 v. H. bei Grundsteuer A und 500 v. H. bei der Gewerbesteuer fest.[1] Nach Angaben der IHK Bonn/Rhein-Sieg lag der Satz zuvor bei 535 Punkten.[2] Der am 25.08.2026 beschlossene Doppelhaushalt 2026/2027 plant für 2026 Erträge von 288,1 Mio. Euro gegen Aufwendungen von 310,4 Mio. Euro – ein Defizit von 22,3 Mio. Euro, das mit 5,5 Mio. Euro aus der Ausgleichsrücklage und 16,8 Mio. Euro aus der allgemeinen Rücklage gedeckt wird; für Investitionen sind 26,0 Mio. Euro Kredite vorgesehen.[1]",
-          "einordnung": "Bei vermieteten Einheiten lässt sich die höhere Grundsteuer als Betriebskosten weiterreichen, bei Leerstand und Eigennutzung zahlt Mike sie selbst. Zusammen mit der steigenden Kreisumlage ist das ein struktureller Kostenaufwuchs im Bestand.",
+          "titel": "Troisdorf will Kita-Beiträge zum August 2027 neu ordnen – 1,2 Millionen Euro zusätzlich",
+          "aufmacher": "Die Stadt Troisdorf plant eine überarbeitete Elternbeitragssatzung für Kitas zum 1. August 2027 und will damit rund 1,2 Millionen Euro mehr pro Jahr einnehmen.",
+          "fakten": "Elternbeiträge decken derzeit nur rund fünf Prozent der Kosten der Kindertageseinrichtungen; den Rest trägt die Allgemeinheit. Statt 25, 35 und 45 Wochenstunden soll es künftig 30, 35, 40 und 45 Stunden geben – die 25-Stunden-Stufe entfällt. Bei 45 Wochenstunden steigt der Beitrag je Einkommensstufe um zehn Euro, die Einkommensgrenzen bleiben im Wesentlichen unverändert. Die zusätzliche freiwillige Beitragsfreiheit im drittletzten Kita-Jahr soll wegfallen; die gesetzliche Beitragsfreiheit der beiden letzten Jahre vor der Einschulung bleibt. Für Geschwisterkinder soll künftig grundsätzlich nur ein Beitrag anfallen, die unterste Einkommensstufe bis 37.000 Euro Jahreseinkommen bleibt beitragsfrei. Jugendhilfeausschuss und Stadtrat haben beraten, eine abschließende Entscheidung steht noch aus.",
+          "einordnung": "Nach der Grundsteuer-Anhebung ist das der zweite Belastungsschub für Troisdorfer Haushalte binnen eines Jahres – die Stadt sucht Kostendeckung über Gebühren, nicht über Einsparungen. Für die Vermietung an Familien bleibt die Kita-Gebühr ein Faktor in der Mieterauswahl und damit auch in der Bewertung familienfreundlicher Grundrisse.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Haushaltssatzung 2026/2027 (25.09.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/bekanntmachungen/2026-2027-bekanntmachung-haushaltssatzung.pdf?cid=22xv"},
-            {"name": "General-Anzeiger Bonn – Grundsteuer steigt in sechs Kommunen (23.09.2026)", "url": "https://ga.de/news/wirtschaft/regional/bonn-region-grundsteuer-steigt-in-sechs-kommunen-deutlich_aid-154839281"}
+            {"name": "Stadt Troisdorf – Kita-Beiträge in Troisdorf (19.10.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kita-beitraege-in-troisdorf/"},
+            {"name": "Treffpunkt Troisdorf – Kita-Beiträge in Troisdorf", "url": "https://treffpunkt-troisdorf.de/kita-beitraege-in-troisdorf/"}
           ]
         },
         {
-          "titel": "Rhein-Sieg-Kreis: 1,175 Milliarden Etat und höhere Kreisumlage",
-          "aufmacher": "Der Kreis plant 2027 mit 1,175 Milliarden Euro Volumen und hebt die Kreisumlage um einen Prozentpunkt – rund 11 Millionen Euro mehr, die die Städte tragen müssen.",
-          "fakten": "Der Entwurf wurde am 15.10.2026 vorgelegt, verabschiedet werden soll er am 14.12.2026.[3] Rund 720 Mio. Euro – über 60 Prozent der Aufwendungen – sind Transferleistungen, vor allem Sozial- und Jugendhilfe inklusive der LVR-Umlage.[3] Die Gesamtaufwendungen steigen um rund 95 Mio. Euro, die Erträge nur um rund 66 Mio. Euro; gestopft wird das Loch mit dem vollständigen Einsatz der Ausgleichsrücklage (rund 41 Mio. Euro) und Konsolidierungen von rund 21 Mio. Euro.[3][15] Weil die Rücklage danach leer ist, kündigt der Kreis weitere Erhöhungen in den Folgejahren an.[3]",
-          "einordnung": "Die Kreisumlage zahlen die Kommunen – und die refinanzieren sich über Grund- und Gewerbesteuer. Für Mike bedeutet das: Der Troisdorfer Hebesatz von 640 ist keine Einmalbewegung, sondern Teil einer Aufwärtsbewegung, die in die Ankaufsrechnung der nächsten MFH gehört.",
+          "titel": "Troisdorf: Handyverkauf eskaliert – Täter tauschten das Gerät gegen eine Fälschung",
+          "aufmacher": "Zwei bislang unbekannte Männer haben am Mittwochabend in Troisdorf bei einem geplanten Smartphone-Verkauf ein hochwertiges Gerät gegen eine Fälschung getauscht und sind damit geflohen.",
+          "fakten": "Der 44-jährige Troisdorfer hatte sein Smartphone zum Verkauf angeboten. Als er den Austausch bemerkte und die beiden Männer darauf ansprach, flüchteten sie; einer zog dabei ein Messer. Die Polizei im Rhein-Sieg-Kreis ermittelt und sucht Zeuginnen und Zeugen (Meldung vom 22. Oktober 2026).",
+          "einordnung": "Kleiner Fall, klares Muster: Die Prüfung kam nach der Übergabe. Wer Firmen- oder Privatgeräte verkauft, sollte IMEI und Seriennummer vor Ort abgleichen und die Übergabe dort machen, wo Zeugen sind.",
           "quellen": [
-            {"name": "Rhein-Sieg-Kreis – Haushaltsentwurf 2027 vorgelegt (15.10.2026)", "url": "https://www.rhein-sieg-kreis.de/presseinformationen/oktober/haushaltsetat.php"},
-            {"name": "General-Anzeiger Bonn – Haushalt 2027: 41 Millionen Euro Minus (21.10.2026)", "url": "https://ga.de/region/sieg-und-rhein/sankt-augustin/haushalt-2027-rhein-sieg-kreis-plant-mit-41-millionen-euro-minus_aid-156685791"}
+            {"name": "Polizei Rhein-Sieg-Kreis via Presseportal (22.10.2026)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6375833"},
+            {"name": "General-Anzeiger Bonn – Betrugsversuch in Troisdorf", "url": "https://ga.de/region/sieg-und-rhein/troisdorf/troisdorf-betrugsversuch-in-handygeschaeft_aid-157035993"}
           ]
         }
       ]
@@ -68,24 +68,23 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Angebotsmieten in Troisdorf steigen auf 10,74 Euro pro Quadratmeter",
-          "aufmacher": "In Troisdorf kostet der Quadratmeter Miete im dritten Quartal 2026 durchschnittlich 10,74 Euro – 6,9 Prozent mehr als ein Jahr zuvor.",
-          "fakten": "Im Rhein-Sieg-Kreis liegt der Schnitt bei 10,22 Euro pro Quadratmeter, nach 9,62 Euro im Vorjahresquartal (+6,2 Prozent).[6][7] Gegenüber dem zweiten Quartal 2026 (10,61 Euro) sind es in Troisdorf plus 1,2 Prozent; der Bundesdurchschnitt liegt bei 9,42 Euro, Troisdorf damit 14 Prozent darüber.[6] Bei den Bestandsmieten sieht es anders aus: Die Nettokaltmieten in Deutschland stiegen im September nur um 1,9 Prozent gegenüber dem Vorjahr.[8]",
-          "einordnung": "Für Ankauf und Bewertung zählt die Angebotsmiete, für den Cashflow die Bestandsmiete. Die Lücke von mehreren Prozentpunkten ist bei einem MFH-Kauf kein Gewinn, sondern erst nach Vermietungswechsel oder Mieterhöhung realisierbar – und die ist durch Kappungsgrenze und Mietpreisbremse begrenzt.",
+          "titel": "IW-Wohnindex: Kaufpreise stagnieren, Mieten plus 4,5 Prozent – die Schere öffnet sich",
+          "aufmacher": "Wohneigentum ist im dritten Quartal 2026 kaum teurer geworden, während die Angebotsmieten deutlich anzogen – für Käufer mit Vermietungsabsicht verbessert sich die Rechnung.",
+          "fakten": "Eigentumswohnungen kosteten 0,3 Prozent mehr als im Vorjahresquartal, Ein- und Zweifamilienhäuser 0,4 Prozent; gegenüber dem Höchststand von 2022 sind die Preise gut zehn Prozent niedriger. Die Angebotsmieten stiegen um 4,5 Prozent im Jahresvergleich und um 1,2 Prozent gegenüber dem Vorquartal – im Umland der sieben größten Städte um 5,2 Prozent. In den Top-7-Städten gaben Wohnungspreise um 0,8 Prozent nach, in Köln um 1,3 Prozent; Hamburg verzeichnet mit 6,8 Prozent den stärksten Mietanstieg. Pfandbriefrenditen mit zehnjähriger Bindung sind seit Jahresbeginn um fast 70 Basispunkte gestiegen, bei kurzen Laufzeiten um mehr als 100 Basispunkte.",
+          "einordnung": "Genau das Muster, auf das die Cashflow-Strategie setzt: Kaufpreise seitwärts, Mieten aufwärts. Die Bruttorendite steigt, während die Finanzierung teurer wird – entscheidend ist die Zinslast gegen die Mietsteigerung zu rechnen, nicht gegen den Kaufpreis allein. Am stärksten fällt der Mieteffekt im Umland der Metropolen aus, also genau im Rhein-Sieg-Segment.",
           "quellen": [
-            {"name": "ImmoScout24 – Mietspiegel Troisdorf Q3/2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"},
-            {"name": "ImmoScout24 – Mietspiegel Rhein-Sieg-Kreis Q3/2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"},
-            {"name": "Destatis – Inflationsrate September 2026 (Nettokaltmieten +1,9 %)", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"}
+            {"name": "IW Köln – IW-Wohnindex Q3/2026 (23.10.2026)", "url": "https://www.iwkoeln.de/studien/pekka-sagner-michael-voigtlaender-iw-wohnindex-q3-2026-zinsentwicklung-bremst-den-wohnungsmarkt-erneut-aus.html"},
+            {"name": "immofux – IW-Wohnindex Q3/2026", "url": "https://immofux.com/iw-wohnindex-q3-2026-kaufpreise-sinken/"}
           ]
         },
         {
-          "titel": "Bauzinsen bleiben bei 4,4 Prozent – Beleihung entscheidet über 0,26 Punkte",
-          "aufmacher": "Zehnjährige Baufinanzierungen kosten Mitte Oktober 4,42 Prozent – so viel wie zuletzt 2009, und das Bankenpanel ist für die kommenden Monate gespalten.",
-          "fakten": "Interhyp weist für den Zeitraum 12. bis 18.10.2026 effektive Jahreszinsen von 4,19 Prozent (unter 70 Prozent Beleihung), 4,30 Prozent (80 Prozent) und 4,56 Prozent (über 90 Prozent) aus; vor einem Jahr lag der Zehnjahreszins bei rund 3,6 Prozent.[4] Vergleich.de nennt für 10 Jahre 4,1 bis 4,5 Prozent und für 20 Jahre 4,4 bis 4,9 Prozent.[5] Kurzfristig erwarten 80 Prozent des Interhyp-Bankenpanels gleichbleibende Zinsen, mittelfristig 60 Prozent fallende und 40 Prozent steigende.[4]",
-          "einordnung": "Bei der Maximal-Hebel-Strategie – nur Kaufnebenkosten aus Eigenkapital – entscheidet die Beleihungshöhe über den Zins: Der Sprung von 80 auf über 90 Prozent Beleihung kostet 0,26 Prozentpunkte, bei 500.000 Euro Darlehen rund 1.300 Euro Zins im Jahr. Wer knapp über der 90-Prozent-Grenze landet, sollte prüfen, ob etwas mehr Eigenkapital die Tranche unter 80 Prozent drückt.",
+          "titel": "MFH-Spitzenrendite steigt auf 3,59 Prozent – mehr Ankaufsfenster, aber teurere Finanzierung",
+          "aufmacher": "Die Spitzenrendite für Mehrfamilienhäuser in den Top-7-Städten ist im dritten Quartal um 0,2 Prozentpunkte auf 3,59 Prozent gestiegen – für Käufer bedeutet das niedrigere Preise bei höheren Kapitalkosten.",
+          "fakten": "Deutschlandweit wurden in den ersten drei Quartalen 2026 knapp 5,9 Milliarden Euro in Wohnungsportfolios ab 30 Einheiten investiert, rund vier Prozent unter dem Vorjahr; das dritte Quartal war mit etwa 2,3 Milliarden Euro das stärkste des Jahres, plus 17 Prozent gegenüber dem zweiten Quartal. Portfoliotransaktionen machten rund 75 Prozent des Quartalsvolumens aus, ausländische Käufer etwa drei Viertel. Die Zahl der Abschlüsse sank von 51 auf 44, viele Prozesse wurden vor Abschluss neu verhandelt oder verschoben. CBRE erwartet für das Gesamtjahr rund acht Milliarden Euro und bis Jahresende eine weitere moderate Ausweitung der Spitzenrenditen.",
+          "einordnung": "Steigende Renditen sind kein Nachteil, sondern der Einstiegspreis: 0,2 Punkte mehr Rendite entsprechen rund fünf Prozent niedrigere Kaufpreise bei gleicher Miete. Wer ohne Verkaufsdruck kauft, kann das gegen die höheren Finanzierungskosten rechnen – und genau dort liegt derzeit das Argument für Eigenkapital statt Vollfinanzierung.",
           "quellen": [
-            {"name": "Interhyp – Bauzinsen aktuell (Stand 15.10.2026)", "url": "https://www.interhyp.de/zinsen"},
-            {"name": "vergleich.de – Aktuelle Bauzinsen 10/2026", "url": "https://www.vergleich.de/aktuelle-bauzinsen.html"}
+            {"name": "CBRE – Wohninvestmentmarkt Q3 2026 (05.10.2026)", "url": "https://www.cbre.de/press-releases/marktaktivitaet-am-deutschen-wohninvestmentmarkt-legte-im-dritten-quartal-deutlich-zu"},
+            {"name": "BNP Paribas Real Estate – Wohnimmobilien-Investmentmarkt Deutschland Q3 2026", "url": "https://www.realestate.bnpparibas.de/marktberichte/wohnungsmarkt/deutschland-report"}
           ]
         }
       ]
@@ -94,23 +93,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB entscheidet am 29. Oktober – Einlagensatz aktuell 2,50 Prozent",
-          "aufmacher": "Der EZB-Rat tagt am 29. Oktober erneut; seit dem 16. September liegt der Einlagensatz bei 2,50 Prozent, die Hauptrefinanzierung bei 2,65 Prozent.",
-          "fakten": "Am 10.09.2026 hob der EZB-Rat alle drei Leitzinsen um je 25 Basispunkte an – Einlagefazilität 2,50, Hauptrefinanzierungsgeschäfte 2,65, Spitzenrefinanzierungsfazilität 2,90 Prozent.[9][11] Als Grund nennt die EZB anhaltenden Inflationsdruck aus dem Nahost-Konflikt; die neuen Projektionen erwarten 3,0 Prozent Inflation 2026, 2,5 Prozent 2027 und 2,1 Prozent 2028 bei Wachstum von 0,9, 1,4 und 1,5 Prozent.[9] Eine Festlegung auf einen Zinspfad vermeidet der Rat ausdrücklich; entschieden wird von Sitzung zu Sitzung.[9]",
-          "einordnung": "Steigende Leitzinsen sind der Haupttreiber der Bauzinsen. Für laufende oder geplante Finanzierungen heißt das: Zinsbindung eher früher als später sichern und Forward-Darlehen prüfen, statt auf fallende Zinsen zu setzen.",
+          "titel": "Fed entscheidet am Mittwoch – Zinsband liegt seit September bei 3,75 bis 4,00 Prozent",
+          "aufmacher": "Die US-Notenbank tagt am 27. und 28. Oktober; nach der ersten Erhöhung seit 2023 liegt das Zielband bei 3,75 bis 4,00 Prozent.",
+          "fakten": "Die Fed hatte am 16. September den Leitzins um 0,25 Prozentpunkte angehoben und zugleich signalisiert, dass im weiteren Jahresverlauf eine zusätzliche Erhöhung möglich ist. Der DAX schloss am Folgetag 0,7 Prozent höher bei 25.717 Punkten. Die Entscheidung fällt am Mittwoch um 19:00 Uhr MEZ, die Pressekonferenz folgt um 19:30 Uhr. Als Begründung nannten die Währungshüter die hartnäckige Inflation und Zweifel des Anleihemarkts an ihrer Entschlossenheit.",
+          "einordnung": "Der wichtigste Termin der Woche für ETF- und Aktienpositionen – und indirekt für die Immobilienfinanzierung: Ein weiterer Schritt würde die Anleiherenditen und damit auch die Bauzinsen stützen. Die Terminmärkte preisen derzeit mehr Schritte ein, als die Fed liefern dürfte.",
           "quellen": [
-            {"name": "EZB – Geldpolitische Beschlüsse (10.09.2026)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"},
-            {"name": "Deutsche Bundesbank – EZB-Rat hebt Leitzinsen um 25 Basispunkte an", "url": "https://www.bundesbank.de/de/aufgaben/themen/ezb-rat-hebt-leitzinsen-um-25-basispunkte-an-1008148"}
+            {"name": "tagesschau – Marktbericht nach der Fed-Erhöhung (17.09.2026)", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-154.html"},
+            {"name": "Federal Reserve – FOMC-Kalender 2026", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"}
           ]
         },
         {
-          "titel": "Inflation in Deutschland springt auf 3,3 Prozent",
-          "aufmacher": "Die Teuerungsrate lag im September bei 3,3 Prozent – der höchste Wert seit Dezember 2023, getrieben fast ausschließlich von Energie.",
-          "fakten": "Im August lag die Rate bei 2,9, im Juli bei 2,8 Prozent.[8] Energie verteuerte sich um 14,9 Prozent gegenüber September 2025, darunter leichtes Heizöl um 74,9 und Kraftstoffe um 37,1 Prozent; Strom lag 5,5, Erdgas 2,8 und Fernwärme 1,0 Prozent unter dem Vorjahresniveau.[8] Die Kerninflation ohne Nahrungsmittel und Energie blieb mit 2,4 Prozent darunter, Dienstleistungen lagen bei 2,7, Nettokaltmieten bei 1,9 Prozent.[8] Auf HVPI-Basis bestätigt die Bundesbank 3,3 Prozent Gesamtrate und 2,5 Prozent Kernrate; die Oktober-Vorabzahlen kommen am 30.10.[10]",
-          "einordnung": "Die Teuerung kommt aus Öl, nicht aus Mieten oder Bau. Für Mike unmittelbar relevant: Heizöl plus 74,9 Prozent trifft jede Ölheizung im Bestand, während Strom und Gas billiger sind – das stützt die WP-Umstellung und die PV-Rechnung zusätzlich.",
+          "titel": "DAX pendelt um 25.000 Punkte – zwei Notenbanktermine bestimmen die Woche",
+          "aufmacher": "Der DAX hat die Woche bei 25.154 Punkten geschlossen, knapp über dem September-Tief – in dieser Woche fallen die Entscheidungen von Fed und EZB.",
+          "fakten": "Am Freitag fiel der Index bis 25.010 Punkte und schloss wieder über dem September-Tief von 25.054. Das Allzeithoch liegt bei 26.620, das Januarhoch bei 25.510; nach unten stützen die 200-Tage-Linie bei 24.856 und das Vorjahreshoch bei 24.770. Der Fokus liegt auf der runden 25.000er-Marke. Am 28. Oktober entscheidet die Fed (19:00 Uhr MEZ), am 29. Oktober die EZB (14:15 Uhr MEZ).",
+          "einordnung": "Für langfristige ETF-Sparpläne ist das Rauschen – für die Immobilienfinanzierung nicht: Wenn beide Notenbanken restriktiv bleiben, bleiben die Pfandbriefrenditen und damit die Bauzinsen auf dem aktuellen Niveau.",
           "quellen": [
-            {"name": "Destatis – Inflationsrate im September 2026 bei +3,3 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"},
-            {"name": "Deutsche Bundesbank – HVPI September 2026", "url": "https://www.bundesbank.de/de/statistiken/konjunktur-und-preise/harmonisierter-verbraucherpreisindex/harmonisierter-verbraucherpreisindex-927952"}
+            {"name": "Kagels Trading – DAX-Prognose, Wochenschluss 25.154", "url": "https://www.kagels-trading.de/dax-prognose/"},
+            {"name": "Federal Reserve – FOMC-Kalender 2026", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"}
           ]
         }
       ]
@@ -119,30 +118,20 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Zwei frische HA-Updates: ConnectLife 0.54 und DWD-Wetter 5.3",
-          "aufmacher": "Beide Integrationen wurden am 24. Oktober aktualisiert – ConnectLife bringt neue Hisense-Waschmaschinen und Feldkorrekturen, DWD-Wetter erstmals eine 5-Minuten-Niederschlagsprognose.",
-          "fakten": "ConnectLife v0.53.2 → v0.54.0: zwei neue Waschmaschinen (WF5I9043BBFS, WF3S8014), Korrekturen an Gewicht, Schleuderdrehzahl, Knitterschutzphase und Fernstart-Berechtigung, generische Gerätenamen statt chinesischer Modellcodes.[13] Breaking Change: Bei Geschirrspülern entfallen die Tages-Sensoren für Energie und Wasser – im Energie-Dashboard sind stattdessen die Gesamtverbrauchssensoren zu verwenden.[13] DWD-Wetter 5.2.0 → 5.3.0: neue 5-Minuten-Niederschlagsprognose, Radar auf neues Datenformat umgestellt, Zeitzonen- und Interpolationsfehler behoben (Prognose lag eine Stunde daneben).[14] Beide sind noch nicht installiert; der Home-Assistant-MCP-Server (Dev) zieht von dev3159 auf dev3166 automatisch nach.",
-          "einordnung": "Beide Updates sind unkritisch und werden empfohlen. Vor dem ConnectLife-Update prüfen, ob ein Geschirrspüler eingebunden ist – sonst bricht die Energieauswertung im Dashboard.",
+          "titel": "paperless-ngx 3.3.4 seit drei Tagen offen – das schließt das Update konkret",
+          "aufmacher": "Das Sicherheits-Update von 3.3.3 auf 3.3.4 ist seit dem 22. Oktober verfügbar und liegt weiterhin nicht eingespielt auf dem Server.",
+          "fakten": "3.3.4 ist ein reines Wartungsrelease für Sicherheit: Es aktualisiert certifi wegen des eMudhra-/emSign-CA-Vorfalls, außerdem uv auf 0.13 sowie die Bibliotheken Pillow und aiohttp. Betroffen sind ausschließlich Fremdbibliotheken, nicht der Paperless-Code selbst – der Herausgeber empfiehlt das Update trotzdem allen Nutzern. Ein Funktions- oder Datenbankwechsel ist nicht Teil des Releases, was den Aufwand klein hält.",
+          "einordnung": "Der Zertifikatsteil ist der relevante: Ohne aktualisierte CA-Liste können TLS-Verbindungen zu Diensten mit eMudhra-Kette fehlschlagen – bei Paperless betrifft das Import- und Mail-Abrufe. Empfehlung: beim nächsten Wartungsfenster einspielen, vorher Back-up, danach die alte Sicherung löschen.",
           "quellen": [
-            {"name": "GitHub – ConnectLife HA v0.54.0", "url": "https://github.com/oyvindwe/connectlife-ha/releases/tag/v0.54.0"},
-            {"name": "GitHub – DWD Wetter 5.3.0", "url": "https://github.com/FL550/dwd_weather/releases/tag/5.3.0"}
+            {"name": "GitHub – paperless-ngx v3.3.4 Release Notes", "url": "https://github.com/paperless-ngx/paperless-ngx/releases"}
           ]
         },
         {
-          "titel": "VoiceStudio-Container omnivoice seit 10 Tagen gestoppt",
-          "aufmacher": "Auf dem Portainer-Host läuft der Container omnivoice (VoiceStudio) seit zehn Tagen nicht mehr – Exit-Code 137, also ein hartes Abschießen des Prozesses.",
-          "fakten": "Von 25 Containern auf dem Endpoint sind zwei nicht aktiv: omnivoice (Image ghcr.io/debpalash/voicestudio:stable) mit Exited (137) seit rund 10 Tagen, und ein einmaliger firecrawl-init-Container mit Exited (0), der planmäßig beendet ist. Exit 137 bedeutet SIGKILL – typischerweise Out-of-Memory oder ein Watchdog-Eingriff.",
-          "einordnung": "Damit ist die lokale VoiceStudio-Instanz derzeit offline. Vorschlag: Neustart mit explizitem Speicherlimit und Blick ins OOM-Log; wenn der Host knapp ist, stattdessen auf das CPU-taugliche TTS-Backend ausweichen.",
+          "titel": "VoiceStudio seit elf Tagen offline – nur ein Container, kein Systemausfall",
+          "aufmacher": "Der Container-Scan meldet weiterhin zwei nicht laufende Container; nur einer davon ist ein echter Ausfall, der zweite ist ein planmäßig beendeter Datenbank-Init.",
+          "fakten": "Gestoppt sind omnivoice (Image ghcr.io/debpalash/voicestudio:stable) mit Exit-Code 137 seit rund elf Tagen – also SIGKILL, typischerweise Out-of-Memory oder ein Watchdog-Eingriff – und firecrawl-starter-monitor-db-init-1 mit Exit 0, der nach erledigtem Init beendet bleibt. Insgesamt laufen 23 von 25 Containern. Der Home-Assistant-MCP-Server (Dev) steht bei dev3166, im Dev-Kanal ist dev3178 verfügbar; die Auto-Update-Funktion des Add-ons ist aktiv.",
+          "einordnung": "Damit ist die lokale VoiceStudio-Instanz weiterhin der einzige echte Ausfall. Vor einem Neustart lohnt der Blick auf das Speicherlimit und das OOM-Log – sonst endet der Container wieder mit 137.",
           "quellen": []
-        },
-        {
-          "titel": "paperless-ngx 3.3.4 wartet weiter auf Installation",
-          "aufmacher": "Das Sicherheits-Update von 3.3.3 auf 3.3.4 ist seit Tagen verfügbar und noch nicht eingespielt.",
-          "fakten": "Es handelt sich um ein Security-Maintenance-Release: aktualisierte Abhängigkeiten wegen des eMudhra/emSign-CA-Zertifikatsvorfalls sowie Lücken in Pillow und aiohttp. Betroffen sind Drittbibliotheken, nicht der Paperless-Code selbst; der Herausgeber empfiehlt das Update für alle.[12]",
-          "einordnung": "Der Aufwand ist gering, der Nutzen klar: Ein CA-Vorfall betrifft die Vertrauenskette bei TLS-Verbindungen. Update beim nächsten Wartungsfenster einspielen – vorher Back-up, danach die alte Sicherung löschen.",
-          "quellen": [
-            {"name": "GitHub – paperless-ngx v3.3.4", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.4"}
-          ]
         }
       ]
     },
