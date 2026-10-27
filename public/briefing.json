@@ -1,13 +1,13 @@
 {
-  "datum": "Montag, 26.10.2026",
+  "datum": "Dienstag, 27.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "13,7 °C · Regen 33 % · UV 2,1",
-          "aufmacher": "☁️ Bedeckt, überwiegend trocken",
-          "fakten": "Aktuell 8,1 °C, Höchstwert 13,7 °C, Tiefstwert 7,4 °C. Regenwahrscheinlichkeit 33 Prozent, UV-Index 2,1 (niedrig).",
+          "titel": "11,1 °C · Regen 94 % · UV 2,6",
+          "aufmacher": "☀️ Klar, Tageshöchstwert 18,1 °C bei einem Tiefstwert von 10,7 °C.",
+          "fakten": "Aktuell 11,1 °C. Regenwahrscheinlichkeit 94 Prozent, UV-Index 2,55 (niedrig) – trotz klarem Himmel ist Schauerneigung im Tagesverlauf hoch.",
           "einordnung": "",
           "quellen": []
         }
@@ -17,22 +17,22 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "26.10.2026 14:20 · Therapiezentrum Snoek",
-          "aufmacher": "Montag",
-          "fakten": "Manuelle Therapie / Sporttherapie / Osteopathie.",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "26.10.2026 15:00 · Therapiezentrum Snoek",
-          "aufmacher": "Montag",
-          "fakten": "Zweiter Termin am selben Nachmittag.",
+          "titel": "27.10.2026 19:00 · Online Steuer-Workshop – Burkhard Küpper (SND GmbH)",
+          "aufmacher": "Heute Abend, 19:00 Uhr, online.",
+          "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
           "titel": "28.10.2026 09:00 · Quixx-Meeting",
-          "aufmacher": "Mittwoch",
+          "aufmacher": "Morgen früh um 9:00 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "28.10.2026 15:00 · KGG – Krankengymnastik am Gerät (1. Termin, Melvin)",
+          "aufmacher": "Morgen 15:00 Uhr, erster Termin.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -43,23 +43,39 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf will Kita-Beiträge zum August 2027 neu ordnen – 1,2 Millionen Euro zusätzlich",
-          "aufmacher": "Die Stadt Troisdorf plant eine überarbeitete Elternbeitragssatzung für Kitas zum 1. August 2027 und will damit rund 1,2 Millionen Euro mehr pro Jahr einnehmen.",
-          "fakten": "Elternbeiträge decken derzeit nur rund fünf Prozent der Kosten der Kindertageseinrichtungen; den Rest trägt die Allgemeinheit. Statt 25, 35 und 45 Wochenstunden soll es künftig 30, 35, 40 und 45 Stunden geben – die 25-Stunden-Stufe entfällt. Bei 45 Wochenstunden steigt der Beitrag je Einkommensstufe um zehn Euro, die Einkommensgrenzen bleiben im Wesentlichen unverändert. Die zusätzliche freiwillige Beitragsfreiheit im drittletzten Kita-Jahr soll wegfallen; die gesetzliche Beitragsfreiheit der beiden letzten Jahre vor der Einschulung bleibt. Für Geschwisterkinder soll künftig grundsätzlich nur ein Beitrag anfallen, die unterste Einkommensstufe bis 37.000 Euro Jahreseinkommen bleibt beitragsfrei. Jugendhilfeausschuss und Stadtrat haben beraten, eine abschließende Entscheidung steht noch aus.",
-          "einordnung": "Nach der Grundsteuer-Anhebung ist das der zweite Belastungsschub für Troisdorfer Haushalte binnen eines Jahres – die Stadt sucht Kostendeckung über Gebühren, nicht über Einsparungen. Für die Vermietung an Familien bleibt die Kita-Gebühr ein Faktor in der Mieterauswahl und damit auch in der Bewertung familienfreundlicher Grundrisse.",
+          "titel": "Kommunalaufsicht genehmigt Troisdorfer Haushalt – 1,2 Millionen Euro Lücke bleiben",
+          "aufmacher": "Die Kommunalaufsicht hat den Haushalt der Stadt Troisdorf genehmigt, obwohl er weiterhin eine Deckungslücke von 1,2 Millionen Euro aufweist.",
+          "fakten": "Der Rat hatte dem Haushalt erst am 25. August nach langen Debatten zugestimmt. Die Lücke bleibt, weil der Rat der von der Verwaltung vorgeschlagenen Anpassung der Gebühren für Kita- und Tagespflegeplätze nicht zugestimmt hat. Elternbeiträge decken derzeit nur rund fünf Prozent der tatsächlichen Kita-Kosten. Die freiwillige Beitragsfreiheit im drittletzten Kita-Jahr soll nach dem Verwaltungsvorschlag entfallen; die gesetzliche Beitragsfreiheit der beiden letzten Jahre vor der Einschulung bleibt, die unterste Einkommensstufe bis 37.000 Euro Jahreseinkommen bleibt beitragsfrei. Parallel meldet die Stadt neue Zahlen aus der Fußgängerzone: Von Januar bis August gab es 92 Feststellungen von Personen mit Alkohol, in nur sieben Fällen konnte der Ordnungsdienst eingreifen.",
+          "einordnung": "Ein genehmigter Haushalt mit offener Lücke heißt: Die Stadt muss die 1,2 Millionen Euro an anderer Stelle holen — Gebühren, Grundsteuer oder Zuschüsse. Für Mikes Troisdorfer Bestand ist das ein Frühindikator für die nächste Belastungsrunde, nicht für 2026, aber sicher für 2027.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Kita-Beiträge in Troisdorf (19.10.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kita-beitraege-in-troisdorf/"},
-            {"name": "Treffpunkt Troisdorf – Kita-Beiträge in Troisdorf", "url": "https://treffpunkt-troisdorf.de/kita-beitraege-in-troisdorf/"}
+            {
+              "name": "Rundblick Troisdorf – Bericht aus dem Stadtrat: Tierbestattungen, Trinkgelage und Haushaltslücken (23.10.2026)",
+              "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3172495-tierbestattungen-trinkgelage-und-haushaltsluecken"
+            },
+            {
+              "name": "Stadt Troisdorf – Kita-Beiträge in Troisdorf (19.10.2026)",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kita-beitraege-in-troisdorf"
+            },
+            {
+              "name": "Stadt Troisdorf – Haushalt 2026/2027 (beschlossen 25.08.2026)",
+              "url": "https://www.troisdorf.de/de/rathaus-service/finanzen/haushalt"
+            }
           ]
         },
         {
-          "titel": "Troisdorf: Handyverkauf eskaliert – Täter tauschten das Gerät gegen eine Fälschung",
-          "aufmacher": "Zwei bislang unbekannte Männer haben am Mittwochabend in Troisdorf bei einem geplanten Smartphone-Verkauf ein hochwertiges Gerät gegen eine Fälschung getauscht und sind damit geflohen.",
-          "fakten": "Der 44-jährige Troisdorfer hatte sein Smartphone zum Verkauf angeboten. Als er den Austausch bemerkte und die beiden Männer darauf ansprach, flüchteten sie; einer zog dabei ein Messer. Die Polizei im Rhein-Sieg-Kreis ermittelt und sucht Zeuginnen und Zeugen (Meldung vom 22. Oktober 2026).",
-          "einordnung": "Kleiner Fall, klares Muster: Die Prüfung kam nach der Übergabe. Wer Firmen- oder Privatgeräte verkauft, sollte IMEI und Seriennummer vor Ort abgleichen und die Übergabe dort machen, wo Zeugen sind.",
+          "titel": "Einbruchserie im Kreis: Täter nutzen die frühe Dunkelheit",
+          "aufmacher": "Die Polizei Rhein-Sieg-Kreis meldet Einbrüche aus dem Wochenende — in Lohmar wurde ein Einfamilienhaus bis in den Keller durchsucht, in Hennef brachen Unbekannte mindestens sechs Autos auf.",
+          "fakten": "In Lohmar-Honrath drangen Täter am Samstag (24. Oktober) zwischen 14:00 und 21:45 Uhr über den Garten ein, zerstörten vorher eine Außenlampe mit Bewegungsmelder und hebelten die Terrassentür auf. Gestohlen wurden eine Münzsammlung, Getränke, Wurst und Tiefkühlwaren. In Hennef-Heisterschoss wurden in der Nacht zuvor in mehreren Straßen mindestens sechs Fahrzeuge geöffnet oder Seitenscheiben eingeschlagen. Die Polizei weist darauf hin, dass mit der früher einsetzenden Dunkelheit das Einbruchsrisiko steigt, und bietet kostenlose Beratungsabende zum technischen Einbruchschutz in der Polizeiwache Siegburg an; Termine über die Pressestelle, 02241 541-4777.",
+          "einordnung": "Terrassentür und außenliegender Bewegungsmelder sind genau die Schwachstellen, die Versicherungen im Blick haben — bei Vermietung lohnt die Dokumentation mechanischer Sicherung (RC2) und ein Hinweis an die Mieter, weil niemand zu Hause ist, wenn es früh dunkel wird.",
           "quellen": [
-            {"name": "Polizei Rhein-Sieg-Kreis via Presseportal (22.10.2026)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6375833"},
-            {"name": "General-Anzeiger Bonn – Betrugsversuch in Troisdorf", "url": "https://ga.de/region/sieg-und-rhein/troisdorf/troisdorf-betrugsversuch-in-handygeschaeft_aid-157035993"}
+            {
+              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis – POL-SU: Einbrecher stehlen Lebensmittel und Münzen (26.10.2026)",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6377939"
+            },
+            {
+              "name": "meinestadt.de – Polizeimeldungen Rhein-Sieg-Kreis",
+              "url": "https://aktuell.meinestadt.de/rhein-sieg-kreis/polizeimeldungen/825825460"
+            }
           ]
         }
       ]
@@ -68,23 +84,39 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "IW-Wohnindex: Kaufpreise stagnieren, Mieten plus 4,5 Prozent – die Schere öffnet sich",
-          "aufmacher": "Wohneigentum ist im dritten Quartal 2026 kaum teurer geworden, während die Angebotsmieten deutlich anzogen – für Käufer mit Vermietungsabsicht verbessert sich die Rechnung.",
-          "fakten": "Eigentumswohnungen kosteten 0,3 Prozent mehr als im Vorjahresquartal, Ein- und Zweifamilienhäuser 0,4 Prozent; gegenüber dem Höchststand von 2022 sind die Preise gut zehn Prozent niedriger. Die Angebotsmieten stiegen um 4,5 Prozent im Jahresvergleich und um 1,2 Prozent gegenüber dem Vorquartal – im Umland der sieben größten Städte um 5,2 Prozent. In den Top-7-Städten gaben Wohnungspreise um 0,8 Prozent nach, in Köln um 1,3 Prozent; Hamburg verzeichnet mit 6,8 Prozent den stärksten Mietanstieg. Pfandbriefrenditen mit zehnjähriger Bindung sind seit Jahresbeginn um fast 70 Basispunkte gestiegen, bei kurzen Laufzeiten um mehr als 100 Basispunkte.",
-          "einordnung": "Genau das Muster, auf das die Cashflow-Strategie setzt: Kaufpreise seitwärts, Mieten aufwärts. Die Bruttorendite steigt, während die Finanzierung teurer wird – entscheidend ist die Zinslast gegen die Mietsteigerung zu rechnen, nicht gegen den Kaufpreis allein. Am stärksten fällt der Mieteffekt im Umland der Metropolen aus, also genau im Rhein-Sieg-Segment.",
+          "titel": "Bauzins bei 4,40 Prozent — höchster Stand seit über 15 Jahren",
+          "aufmacher": "Zehnjährige Immobilienkredite kosten im Oktober 2026 durchschnittlich 4,40 Prozent — so teuer wie seit über 15 Jahren nicht mehr.",
+          "fakten": "Verivox weist für Oktober 2026 im Schnitt 4,34 Prozent bei fünf Jahren Zinsbindung aus, 4,40 Prozent bei zehn, 4,52 Prozent bei 15 und 4,62 Prozent bei 20 Jahren. Treiber ist die Zinswende der EZB: Nach zwei Erhöhungen um je 25 Basispunkte liegt der Einlagensatz seit 16. September 2026 bei 2,50 Prozent. Für ein 500.000-Euro-Darlehen sind das allein 1.833 Euro Zins im Monat, bevor ein Cent getilgt ist; mit zwei Prozent Anfangstilgung rund 2.667 Euro Annuität.",
+          "einordnung": "Die Hebel-Strategie — nur Kaufnebenkosten aus Eigenkapital, Rest als Bankdarlehen — wird bei 4,40 Prozent deutlich teurer als in den Vorjahren. Der Zins muss aktiv über mehrere Banken gedrückt werden, sonst trägt ein 600k-Objekt den Kapitaldienst nicht aus der Miete.",
           "quellen": [
-            {"name": "IW Köln – IW-Wohnindex Q3/2026 (23.10.2026)", "url": "https://www.iwkoeln.de/studien/pekka-sagner-michael-voigtlaender-iw-wohnindex-q3-2026-zinsentwicklung-bremst-den-wohnungsmarkt-erneut-aus.html"},
-            {"name": "immofux – IW-Wohnindex Q3/2026", "url": "https://immofux.com/iw-wohnindex-q3-2026-kaufpreise-sinken/"}
+            {
+              "name": "Verivox – Baufinanzierung, aktuelle Bauzinsen 10/2026",
+              "url": "https://www.verivox.de/baufinanzierung"
+            },
+            {
+              "name": "Kredithelden – Forward-Darlehen 2026 bei 4,39 % Bauzins (Verivox-Daten)",
+              "url": "https://www.kredithelden.de/blog/forward-darlehen-2026-wann-es-sich-lohnt"
+            },
+            {
+              "name": "EZB – Key ECB interest rates",
+              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+            }
           ]
         },
         {
-          "titel": "MFH-Spitzenrendite steigt auf 3,59 Prozent – mehr Ankaufsfenster, aber teurere Finanzierung",
-          "aufmacher": "Die Spitzenrendite für Mehrfamilienhäuser in den Top-7-Städten ist im dritten Quartal um 0,2 Prozentpunkte auf 3,59 Prozent gestiegen – für Käufer bedeutet das niedrigere Preise bei höheren Kapitalkosten.",
-          "fakten": "Deutschlandweit wurden in den ersten drei Quartalen 2026 knapp 5,9 Milliarden Euro in Wohnungsportfolios ab 30 Einheiten investiert, rund vier Prozent unter dem Vorjahr; das dritte Quartal war mit etwa 2,3 Milliarden Euro das stärkste des Jahres, plus 17 Prozent gegenüber dem zweiten Quartal. Portfoliotransaktionen machten rund 75 Prozent des Quartalsvolumens aus, ausländische Käufer etwa drei Viertel. Die Zahl der Abschlüsse sank von 51 auf 44, viele Prozesse wurden vor Abschluss neu verhandelt oder verschoben. CBRE erwartet für das Gesamtjahr rund acht Milliarden Euro und bis Jahresende eine weitere moderate Ausweitung der Spitzenrenditen.",
-          "einordnung": "Steigende Renditen sind kein Nachteil, sondern der Einstiegspreis: 0,2 Punkte mehr Rendite entsprechen rund fünf Prozent niedrigere Kaufpreise bei gleicher Miete. Wer ohne Verkaufsdruck kauft, kann das gegen die höheren Finanzierungskosten rechnen – und genau dort liegt derzeit das Argument für Eigenkapital statt Vollfinanzierung.",
+          "titel": "Mieten in Troisdorf steigen auf 10,74 Euro pro Quadratmeter",
+          "aufmacher": "Angebotsmieten in Troisdorf liegen im dritten Quartal 2026 bei durchschnittlich 10,74 Euro pro Quadratmeter — 6,9 Prozent mehr als ein Jahr zuvor.",
+          "fakten": "Im dritten Quartal 2025 lag der Schnitt noch bei 10,05 Euro pro Quadratmeter. Der Rhein-Sieg-Kreis insgesamt steht bei 10,22 Euro, ein Plus von 6,2 Prozent zum Vorjahr. Andere Auswertungen liegen höher, weil sie anders gewichten: miete-aktuell.de nennt für Troisdorf 11,67 Euro Kaltmiete pro Quadratmeter (Stand 1. Oktober 2026), also gut 0,9 Euro über dem ImmoScout-Schnitt — die Streuung zeigt, wie stark es auf Erhebungsmethode und Objektmix ankommt.",
+          "einordnung": "6,9 Prozent Mietwachstum gegen 4,40 Prozent Finanzierungszins: Die Marge bleibt knapp, aber der Bestandswert arbeitet. Bei Neuabschluss entscheidet allein die Ausgangsmiete über den Cashflow der ersten zehn Jahre.",
           "quellen": [
-            {"name": "CBRE – Wohninvestmentmarkt Q3 2026 (05.10.2026)", "url": "https://www.cbre.de/press-releases/marktaktivitaet-am-deutschen-wohninvestmentmarkt-legte-im-dritten-quartal-deutlich-zu"},
-            {"name": "BNP Paribas Real Estate – Wohnimmobilien-Investmentmarkt Deutschland Q3 2026", "url": "https://www.realestate.bnpparibas.de/marktberichte/wohnungsmarkt/deutschland-report"}
+            {
+              "name": "ImmoScout24 – Mietspiegel Troisdorf, Q3 2026",
+              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
+            },
+            {
+              "name": "miete-aktuell.de – Mietspiegel Troisdorf, Stand 01.10.2026",
+              "url": "https://www.miete-aktuell.de/mietspiegel/Troisdorf/Troisdorf/Troisdorf"
+            }
           ]
         }
       ]
@@ -93,23 +125,39 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Fed entscheidet am Mittwoch – Zinsband liegt seit September bei 3,75 bis 4,00 Prozent",
-          "aufmacher": "Die US-Notenbank tagt am 27. und 28. Oktober; nach der ersten Erhöhung seit 2023 liegt das Zielband bei 3,75 bis 4,00 Prozent.",
-          "fakten": "Die Fed hatte am 16. September den Leitzins um 0,25 Prozentpunkte angehoben und zugleich signalisiert, dass im weiteren Jahresverlauf eine zusätzliche Erhöhung möglich ist. Der DAX schloss am Folgetag 0,7 Prozent höher bei 25.717 Punkten. Die Entscheidung fällt am Mittwoch um 19:00 Uhr MEZ, die Pressekonferenz folgt um 19:30 Uhr. Als Begründung nannten die Währungshüter die hartnäckige Inflation und Zweifel des Anleihemarkts an ihrer Entschlossenheit.",
-          "einordnung": "Der wichtigste Termin der Woche für ETF- und Aktienpositionen – und indirekt für die Immobilienfinanzierung: Ein weiterer Schritt würde die Anleiherenditen und damit auch die Bauzinsen stützen. Die Terminmärkte preisen derzeit mehr Schritte ein, als die Fed liefern dürfte.",
+          "titel": "EZB entscheidet am Donnerstag — Leitzins bleibt wohl bei 2,50 Prozent",
+          "aufmacher": "Der EZB-Rat tagt am 29. Oktober 2026; der Einlagensatz liegt seit dem 16. September bei 2,50 Prozent, eine Änderung gilt als unwahrscheinlich.",
+          "fakten": "Der Hauptrefinanzierungssatz beträgt 2,65 Prozent, der Spitzenrefinanzierungssatz 2,90 Prozent. Die EZB hat 2026 zweimal um je 25 Basispunkte angehoben — im Juni von 2,00 auf 2,25 und im September auf 2,50 Prozent. Die Inflation im Euroraum liegt mit 3,8 Prozent (September 2026) weiter über dem Ziel von zwei Prozent; in Deutschland waren es nach endgültigen Zahlen 3,3 Prozent im September.",
+          "einordnung": "Solange die Inflation über dem Ziel bleibt, ist keine Senkung in Sicht. Wer 2027 oder 2028 eine Anschlussfinanzierung vor sich hat, sollte Forward-Konditionen jetzt prüfen statt auf fallende Zinsen zu setzen.",
           "quellen": [
-            {"name": "tagesschau – Marktbericht nach der Fed-Erhöhung (17.09.2026)", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-154.html"},
-            {"name": "Federal Reserve – FOMC-Kalender 2026", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"}
+            {
+              "name": "EZB – Key ECB interest rates (Stand 16.09.2026)",
+              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+            },
+            {
+              "name": "euribor-rates.info – EZB-Leitzins, nächste Sitzung 29.10.2026",
+              "url": "https://euribor-rates.info/de/ezb-leitzins"
+            },
+            {
+              "name": "Statistisches Bundesamt – Inflationsrate September 2026: +3,3 %",
+              "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html"
+            }
           ]
         },
         {
-          "titel": "DAX pendelt um 25.000 Punkte – zwei Notenbanktermine bestimmen die Woche",
-          "aufmacher": "Der DAX hat die Woche bei 25.154 Punkten geschlossen, knapp über dem September-Tief – in dieser Woche fallen die Entscheidungen von Fed und EZB.",
-          "fakten": "Am Freitag fiel der Index bis 25.010 Punkte und schloss wieder über dem September-Tief von 25.054. Das Allzeithoch liegt bei 26.620, das Januarhoch bei 25.510; nach unten stützen die 200-Tage-Linie bei 24.856 und das Vorjahreshoch bei 24.770. Der Fokus liegt auf der runden 25.000er-Marke. Am 28. Oktober entscheidet die Fed (19:00 Uhr MEZ), am 29. Oktober die EZB (14:15 Uhr MEZ).",
-          "einordnung": "Für langfristige ETF-Sparpläne ist das Rauschen – für die Immobilienfinanzierung nicht: Wenn beide Notenbanken restriktiv bleiben, bleiben die Pfandbriefrenditen und damit die Bauzinsen auf dem aktuellen Niveau.",
+          "titel": "Anthropic beantragt Börsengang — Bewertung bis zwei Billionen Dollar",
+          "aufmacher": "Der Claude-Hersteller Anthropic hat am 26. Oktober seine S-1 bei der US-Börsenaufsicht SEC eingereicht und will unter dem Kürzel „ANT“ an die Nasdaq.",
+          "fakten": "Anzahl der Aktien und Preisspanne sind noch nicht festgelegt. Berichtet wird eine mögliche Bewertung von bis zu zwei Billionen Dollar und ein Handelsstart in der Woche ab dem 16. November. Federführend sind Goldman Sachs und Morgan Stanley, der Prospekt umfasst 333 Seiten. Es wäre einer der größten Börsengänge der Geschichte.",
+          "einordnung": "Ein IPO dieser Größe zieht Kapital aus bestehenden Tech-Werten ab und verschiebt Indexgewichte — für ETF-Sparpläne relevant, für ein Neuengagement ein Fall für die Beobachtungsliste statt für den ersten Handelstag.",
           "quellen": [
-            {"name": "Kagels Trading – DAX-Prognose, Wochenschluss 25.154", "url": "https://www.kagels-trading.de/dax-prognose/"},
-            {"name": "Federal Reserve – FOMC-Kalender 2026", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"}
+            {
+              "name": "Anthropic – S-1 filing with the SEC (26.10.2026)",
+              "url": "https://www.anthropic.com/news/s1-sec"
+            },
+            {
+              "name": "tagesschau.de – Anthropic beantragt Börsengang (26.10.2026)",
+              "url": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-bereitet-boersengang-vor-100.html"
+            }
           ]
         }
       ]
@@ -118,20 +166,28 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "paperless-ngx 3.3.4 seit drei Tagen offen – das schließt das Update konkret",
-          "aufmacher": "Das Sicherheits-Update von 3.3.3 auf 3.3.4 ist seit dem 22. Oktober verfügbar und liegt weiterhin nicht eingespielt auf dem Server.",
-          "fakten": "3.3.4 ist ein reines Wartungsrelease für Sicherheit: Es aktualisiert certifi wegen des eMudhra-/emSign-CA-Vorfalls, außerdem uv auf 0.13 sowie die Bibliotheken Pillow und aiohttp. Betroffen sind ausschließlich Fremdbibliotheken, nicht der Paperless-Code selbst – der Herausgeber empfiehlt das Update trotzdem allen Nutzern. Ein Funktions- oder Datenbankwechsel ist nicht Teil des Releases, was den Aufwand klein hält.",
-          "einordnung": "Der Zertifikatsteil ist der relevante: Ohne aktualisierte CA-Liste können TLS-Verbindungen zu Diensten mit eMudhra-Kette fehlschlagen – bei Paperless betrifft das Import- und Mail-Abrufe. Empfehlung: beim nächsten Wartungsfenster einspielen, vorher Back-up, danach die alte Sicherung löschen.",
+          "titel": "paperless-ngx 3.3.4 seit fünf Tagen offen — das Update betrifft nur Fremdbibliotheken",
+          "aufmacher": "Das Sicherheits-Update von 3.3.3 auf 3.3.4 ist seit dem 22. Oktober verfügbar und liegt weiterhin nicht eingespielt.",
+          "fakten": "3.3.4 ist ein reines Wartungsrelease: Es aktualisiert certifi wegen des eMudhra-/emSign-CA-Vorfalls, uv auf 0.13 sowie die Bibliotheken Pillow und aiohttp. Betroffen sind ausschließlich Abhängigkeiten, nicht der Paperless-Code; der Herausgeber empfiehlt das Update allen Nutzern. Ein Datenbank- oder Funktionswechsel ist nicht enthalten, der Aufwand bleibt klein.",
+          "einordnung": "Der Zertifikatsteil ist der kritische: Ohne aktualisierte CA-Liste scheitern TLS-Verbindungen zu Diensten mit eMudhra-Kette — bei Paperless betreffen sie Imports und Mail-Abrufe. Beim nächsten Wartungsfenster einspielen, vorher Sicherung, danach die alte löschen.",
           "quellen": [
-            {"name": "GitHub – paperless-ngx v3.3.4 Release Notes", "url": "https://github.com/paperless-ngx/paperless-ngx/releases"}
+            {
+              "name": "GitHub – paperless-ngx v3.3.4 Release Notes (22.10.2026)",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.4"
+            }
           ]
         },
         {
-          "titel": "VoiceStudio seit elf Tagen offline – nur ein Container, kein Systemausfall",
-          "aufmacher": "Der Container-Scan meldet weiterhin zwei nicht laufende Container; nur einer davon ist ein echter Ausfall, der zweite ist ein planmäßig beendeter Datenbank-Init.",
-          "fakten": "Gestoppt sind omnivoice (Image ghcr.io/debpalash/voicestudio:stable) mit Exit-Code 137 seit rund elf Tagen – also SIGKILL, typischerweise Out-of-Memory oder ein Watchdog-Eingriff – und firecrawl-starter-monitor-db-init-1 mit Exit 0, der nach erledigtem Init beendet bleibt. Insgesamt laufen 23 von 25 Containern. Der Home-Assistant-MCP-Server (Dev) steht bei dev3166, im Dev-Kanal ist dev3178 verfügbar; die Auto-Update-Funktion des Add-ons ist aktiv.",
-          "einordnung": "Damit ist die lokale VoiceStudio-Instanz weiterhin der einzige echte Ausfall. Vor einem Neustart lohnt der Blick auf das Speicherlimit und das OOM-Log – sonst endet der Container wieder mit 137.",
-          "quellen": []
+          "titel": "Bosch Smart Home: v0.12.38 → v0.12.42 behebt den Heizkreis-Modus-Fehler",
+          "aufmacher": "Für die Bosch-SHC-Integration in Home Assistant liegt v0.12.42 bereit; sie behebt zwei konkrete Fehler bei Heizkreisen und beim Abmelden von Entitäten.",
+          "fakten": "Ein climate.set_temperature mit hvac_mode (Auto oder Heat) übernimmt jetzt auch den Modus — vorher wurde nur der Sollwert gesetzt, der Modus still ignoriert. Außerdem melden sich Entitäten sauber vom Controller ab, wenn das Hinzufügen mittendrin scheitert, was bisher fehlgeschlagene Rückrufe bis zum Neustart hinterließ. 0.12.42 liest Heizkreis-Sollwerte, LED- und Display-Grenzen, Ausgangsmodi und die Twinguard-Komfortzone über öffentliche boschshcpy-Properties statt über private Dienste und verlangt boschshcpy ab 0.6.24. Nebenbefund: Container omnivoice (VoiceStudio) steht seit zwölf Tagen auf „Exited (137)“, also SIGKILL — vermutlich Speicherlimit oder Watchdog, kein regulärer Stopp.",
+          "einordnung": "Nur relevant, wenn die Bosch-Heizungsregelung über Home Assistant läuft — dann lohnt das Update vor der Heizperiode, weil es den Modus-Fehler in Automatisierungen beseitigt. Der gestoppte VoiceStudio-Container erklärt, warum lokale TTS-Aufrufe derzeit ins Leere laufen.",
+          "quellen": [
+            {
+              "name": "GitHub – tschamm/boschshc-hass v0.12.42 (26.10.2026)",
+              "url": "https://github.com/tschamm/boschshc-hass/releases/v0.12.42"
+            }
+          ]
         }
       ]
     },
@@ -139,11 +195,20 @@
       "titel": "🤖 Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Haushaltsroboter: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "Tesla startet Optimus-Produktion in Fremont — weiterhin kein Verkauf an Haushalte",
+          "aufmacher": "Tesla hat die Serienproduktion des Humanoiden Optimus im Werk Fremont aufgenommen; die ersten Roboter in Fertigungsqualität laufen laut Quartalsbericht vom Band.",
+          "fakten": "Tesla führt die Linie in Kalifornien als „Early Ramp“, eine zweite Optimus-Fertigungsstätte in Texas ist im Bau. Im Aktionärsbrief heißt es, der aktuelle Produktionsprozess sei „für ein kommerzielles Produkt geeignet“, während Hardware und Fertigung weiter überarbeitet werden. Elon Musk sprach in der Telefonkonferenz von „early production“ mit langsamem, „holprigem“ Hochlauf und nannte 20.000 Roboter pro Woche als Ziel bis Ende 2027. Einen Endkundenpreis gibt es weiterhin nicht; die bekannte Zielmarke liegt bei 20.000 bis 30.000 US-Dollar — umgerechnet zum EZB-Referenzkurs vom 27.10.2026 (1,1188 USD/EUR) rund 17.900 bis 26.800 Euro, als finaler Verkaufspreis nicht verifiziert. Verfügbarkeit: bislang ausschließlich intern, kein Verkauf an Privathaushalte angekündigt.",
+          "einordnung": "Tesla ist damit von der Ankündigung in die Fertigung gewechselt — der Vorsprung ist aber ein Fabrik-Vorsprung, kein Haushalts-Vorsprung. Für Mike ändert sich am einzigen bestellbaren Haushaltsmodell nichts; interessant wird es erst, wenn Tesla einen Preis und einen Privatkundenkanal nennt.",
+          "quellen": [
+            {
+              "name": "Tesla – Q3 2026 Quarterly Update (Optimus-Produktion Fremont)",
+              "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
+            },
+            {
+              "name": "TechCrunch via Yahoo Finance – Tesla starts Optimus robot production (21.10.2026)",
+              "url": "https://finance.yahoo.com/technology/ai/articles/tesla-stars-optimus-robot-production-203309413.html"
+            }
+          ]
         }
       ]
     }
