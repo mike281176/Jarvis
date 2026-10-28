@@ -1,13 +1,13 @@
 {
-  "datum": "Dienstag, 27.10.2026",
+  "datum": "Mittwoch, 28.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "11,1 °C · Regen 94 % · UV 2,6",
-          "aufmacher": "☀️ Klar, Tageshöchstwert 18,1 °C bei einem Tiefstwert von 10,7 °C.",
-          "fakten": "Aktuell 11,1 °C. Regenwahrscheinlichkeit 94 Prozent, UV-Index 2,55 (niedrig) – trotz klarem Himmel ist Schauerneigung im Tagesverlauf hoch.",
+          "titel": "10,6 °C · Regen 100 % · UV 2,4",
+          "aufmacher": "🌧️ Regen, Tageshöchstwert 14,6 °C bei einem Tiefstwert von 9,8 °C.",
+          "fakten": "Aktuell 10,6 °C. Regenwahrscheinlichkeit 100 Prozent, UV-Index 2,4 (niedrig). Der Tag bleibt nass — Schirm einpacken.",
           "einordnung": "",
           "quellen": []
         }
@@ -17,22 +17,15 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "27.10.2026 19:00 · Online Steuer-Workshop – Burkhard Küpper (SND GmbH)",
-          "aufmacher": "Heute Abend, 19:00 Uhr, online.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
           "titel": "28.10.2026 09:00 · Quixx-Meeting",
-          "aufmacher": "Morgen früh um 9:00 Uhr.",
+          "aufmacher": "Heute früh um 9:00 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
           "titel": "28.10.2026 15:00 · KGG – Krankengymnastik am Gerät (1. Termin, Melvin)",
-          "aufmacher": "Morgen 15:00 Uhr, erster Termin.",
+          "aufmacher": "Heute 15:00 Uhr, erster Termin.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -43,38 +36,30 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Kommunalaufsicht genehmigt Troisdorfer Haushalt – 1,2 Millionen Euro Lücke bleiben",
-          "aufmacher": "Die Kommunalaufsicht hat den Haushalt der Stadt Troisdorf genehmigt, obwohl er weiterhin eine Deckungslücke von 1,2 Millionen Euro aufweist.",
-          "fakten": "Der Rat hatte dem Haushalt erst am 25. August nach langen Debatten zugestimmt. Die Lücke bleibt, weil der Rat der von der Verwaltung vorgeschlagenen Anpassung der Gebühren für Kita- und Tagespflegeplätze nicht zugestimmt hat. Elternbeiträge decken derzeit nur rund fünf Prozent der tatsächlichen Kita-Kosten. Die freiwillige Beitragsfreiheit im drittletzten Kita-Jahr soll nach dem Verwaltungsvorschlag entfallen; die gesetzliche Beitragsfreiheit der beiden letzten Jahre vor der Einschulung bleibt, die unterste Einkommensstufe bis 37.000 Euro Jahreseinkommen bleibt beitragsfrei. Parallel meldet die Stadt neue Zahlen aus der Fußgängerzone: Von Januar bis August gab es 92 Feststellungen von Personen mit Alkohol, in nur sieben Fällen konnte der Ordnungsdienst eingreifen.",
-          "einordnung": "Ein genehmigter Haushalt mit offener Lücke heißt: Die Stadt muss die 1,2 Millionen Euro an anderer Stelle holen — Gebühren, Grundsteuer oder Zuschüsse. Für Mikes Troisdorfer Bestand ist das ein Frühindikator für die nächste Belastungsrunde, nicht für 2026, aber sicher für 2027.",
+          "titel": "Troisdorf: Neue Vollsperrungen ab 2. November",
+          "aufmacher": "In Sieglar und Spich beginnen in der ersten Novemberhälfte größere Leitungsarbeiten — mehrere Straßen werden wochenlang voll gesperrt.",
+          "fakten": "Die Stadt Troisdorf hat am 27. Oktober die nächsten Verkehrsbeschränkungen veröffentlicht. In Sieglar wird die Ubierstraße 1–14 voraussichtlich ab 2. November saniert: Kanal, Strom, Gas, Wasser, Straßenbeleuchtung und Glasfaser, überwiegend unter Vollsperrung. In Spich beginnt am 9. November dieselbe Kombination im Dohlenweg 1–10b. Der Talweg 40 in Troisdorf-West ist vom 2. bis 20. November für einen neuen Kanalanschluss voll gesperrt, die Meindorfer Straße 2–3 am 17. November zwischen 7:30 und 16 Uhr für eine TV-Kanaluntersuchung. Die bereits laufende Sperrung der Uhlandstraße in Sieglar wurde bis 13. Dezember verlängert.",
+          "einordnung": "Grundstückszufahrten und Parkplätze sind zeitweise nicht nutzbar, die Häuser bleiben aber zu Fuß erreichbar. Für Vermietung heißt das: Mieter früh informieren und Handwerkertermine in diesen Straßen nicht in die Sperrzeit legen.",
           "quellen": [
             {
-              "name": "Rundblick Troisdorf – Bericht aus dem Stadtrat: Tierbestattungen, Trinkgelage und Haushaltslücken (23.10.2026)",
-              "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3172495-tierbestattungen-trinkgelage-und-haushaltsluecken"
-            },
-            {
-              "name": "Stadt Troisdorf – Kita-Beiträge in Troisdorf (19.10.2026)",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kita-beitraege-in-troisdorf"
-            },
-            {
-              "name": "Stadt Troisdorf – Haushalt 2026/2027 (beschlossen 25.08.2026)",
-              "url": "https://www.troisdorf.de/de/rathaus-service/finanzen/haushalt"
+              "name": "Stadt Troisdorf – Verkehrsmeldungen 27.10.2026",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/aktuelle-verkehrsmeldungen-fuer-troisdorf-2/"
             }
           ]
         },
         {
-          "titel": "Einbruchserie im Kreis: Täter nutzen die frühe Dunkelheit",
-          "aufmacher": "Die Polizei Rhein-Sieg-Kreis meldet Einbrüche aus dem Wochenende — in Lohmar wurde ein Einfamilienhaus bis in den Keller durchsucht, in Hennef brachen Unbekannte mindestens sechs Autos auf.",
-          "fakten": "In Lohmar-Honrath drangen Täter am Samstag (24. Oktober) zwischen 14:00 und 21:45 Uhr über den Garten ein, zerstörten vorher eine Außenlampe mit Bewegungsmelder und hebelten die Terrassentür auf. Gestohlen wurden eine Münzsammlung, Getränke, Wurst und Tiefkühlwaren. In Hennef-Heisterschoss wurden in der Nacht zuvor in mehreren Straßen mindestens sechs Fahrzeuge geöffnet oder Seitenscheiben eingeschlagen. Die Polizei weist darauf hin, dass mit der früher einsetzenden Dunkelheit das Einbruchsrisiko steigt, und bietet kostenlose Beratungsabende zum technischen Einbruchschutz in der Polizeiwache Siegburg an; Termine über die Pressestelle, 02241 541-4777.",
-          "einordnung": "Terrassentür und außenliegender Bewegungsmelder sind genau die Schwachstellen, die Versicherungen im Blick haben — bei Vermietung lohnt die Dokumentation mechanischer Sicherung (RC2) und ein Hinweis an die Mieter, weil niemand zu Hause ist, wenn es früh dunkel wird.",
+          "titel": "Region Bonn/Rhein-Sieg: Wirtschaft kommt nicht in Gang",
+          "aufmacher": "Der Konjunkturklimaindex der IHK Bonn/Rhein-Sieg stagniert bei 82 Punkten — erst Werte über 100 stehen für Wachstum.",
+          "fakten": "Die IHK hat am 27. Oktober ihren Wirtschaftslagebericht vorgestellt. Nur jedes fünfte Unternehmen bewertet seine Geschäftslage als gut, nur jedes zehnte erwartet eine Verbesserung, und nur jedes fünfte plant derzeit Investitionen. Jedes vierte Unternehmen will Stellen abbauen, für 82 Prozent bleiben Energie- und Rohstoffkosten das Hauptrisiko. Im Einzelhandel klagt fast die Hälfte über sinkende Umsätze. Der Index liegt unverändert bei 82 Punkten und damit auf dem Niveau des Frühsommers.",
+          "einordnung": "Investitionszurückhaltung dämpft die gewerbliche Nachfrage — für Quixx24 vorsichtigere Kunden, für Immobilienprojekte gleichzeitig mehr freie Handwerkerkapazität.",
           "quellen": [
             {
-              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis – POL-SU: Einbrecher stehlen Lebensmittel und Münzen (26.10.2026)",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6377939"
+              "name": "WDR – IHK Bonn/Rhein-Sieg Wirtschaftslagebericht",
+              "url": "https://www1.wdr.de/nrw/rheinland/wirtschaft-bonn-rhein-sieg-ihk-100.html"
             },
             {
-              "name": "meinestadt.de – Polizeimeldungen Rhein-Sieg-Kreis",
-              "url": "https://aktuell.meinestadt.de/rhein-sieg-kreis/polizeimeldungen/825825460"
+              "name": "Honnef heute – IHK Konjunkturumfrage",
+              "url": "https://honnef-heute.de/ihk-unternehmen-in-bonn-und-rhein-sieg-warten-weiter-auf-aufschwung/"
             }
           ]
         }
@@ -84,38 +69,26 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzins bei 4,40 Prozent — höchster Stand seit über 15 Jahren",
-          "aufmacher": "Zehnjährige Immobilienkredite kosten im Oktober 2026 durchschnittlich 4,40 Prozent — so teuer wie seit über 15 Jahren nicht mehr.",
-          "fakten": "Verivox weist für Oktober 2026 im Schnitt 4,34 Prozent bei fünf Jahren Zinsbindung aus, 4,40 Prozent bei zehn, 4,52 Prozent bei 15 und 4,62 Prozent bei 20 Jahren. Treiber ist die Zinswende der EZB: Nach zwei Erhöhungen um je 25 Basispunkte liegt der Einlagensatz seit 16. September 2026 bei 2,50 Prozent. Für ein 500.000-Euro-Darlehen sind das allein 1.833 Euro Zins im Monat, bevor ein Cent getilgt ist; mit zwei Prozent Anfangstilgung rund 2.667 Euro Annuität.",
-          "einordnung": "Die Hebel-Strategie — nur Kaufnebenkosten aus Eigenkapital, Rest als Bankdarlehen — wird bei 4,40 Prozent deutlich teurer als in den Vorjahren. Der Zins muss aktiv über mehrere Banken gedrückt werden, sonst trägt ein 600k-Objekt den Kapitaldienst nicht aus der Miete.",
+          "titel": "Bauzinsen: 4,15 bis 4,53 Prozent — je nach Eigenkapital",
+          "aufmacher": "Zehnjährige Baufinanzierungen kosten derzeit zwischen 4,15 und 4,53 Prozent effektiv; der Unterschied liegt fast ausschließlich am Beleihungsauslauf.",
+          "fakten": "Interhyp-Konditionen der Woche vom 19. bis 25. Oktober 2026: bei weniger als 70 Prozent Beleihung 4,15 Prozent, bei 80 Prozent 4,27 Prozent, über 90 Prozent 4,53 Prozent. Für 5 Jahre liegt die Spanne bei 4,20 bis 4,55 Prozent, für 20 Jahre bei 4,41 bis 4,70 Prozent. Interhyp selbst meldet für zehnjährige Darlehen rund 4,4 Prozent, Finanztip nennt einen Einstieg ab etwa 4,4 Prozent. 80 Prozent des Interhyp-Bankenpanels rechnen kurzfristig mit gleichbleibenden Zinsen, mittelfristig erwarten 60 Prozent fallende und 40 Prozent steigende Konditionen. Treiber sind der Iran-Konflikt und Aufwärtsrisiken bei den Anleiherenditen; die EZB hatte im September um 25 Basispunkte auf 2,50 Prozent Einlagesatz erhöht.",
+          "einordnung": "Bei 500.000 Euro Darlehen und 2 Prozent Tilgung sind das rund 2.612 Euro Annuität im Monat bei 80 Prozent Beleihung und 2.721 Euro über 90 Prozent. Der Sprung von 90 auf 80 Prozent Beleihung spart rund 110 Euro im Monat, von 80 auf 70 Prozent weitere 50 Euro — der erste Hebel, an dem bei Mikes Finanzierungsmodell zu drehen ist.",
           "quellen": [
             {
-              "name": "Verivox – Baufinanzierung, aktuelle Bauzinsen 10/2026",
-              "url": "https://www.verivox.de/baufinanzierung"
+              "name": "Interhyp – Bauzinsen aktuell (Zinstabelle)",
+              "url": "https://www.interhyp.de/zinsen/"
             },
             {
-              "name": "Kredithelden – Forward-Darlehen 2026 bei 4,39 % Bauzins (Verivox-Daten)",
-              "url": "https://www.kredithelden.de/blog/forward-darlehen-2026-wann-es-sich-lohnt"
+              "name": "Finanztip – Hypothekenzinsen",
+              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
             },
             {
-              "name": "EZB – Key ECB interest rates",
-              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
-            }
-          ]
-        },
-        {
-          "titel": "Mieten in Troisdorf steigen auf 10,74 Euro pro Quadratmeter",
-          "aufmacher": "Angebotsmieten in Troisdorf liegen im dritten Quartal 2026 bei durchschnittlich 10,74 Euro pro Quadratmeter — 6,9 Prozent mehr als ein Jahr zuvor.",
-          "fakten": "Im dritten Quartal 2025 lag der Schnitt noch bei 10,05 Euro pro Quadratmeter. Der Rhein-Sieg-Kreis insgesamt steht bei 10,22 Euro, ein Plus von 6,2 Prozent zum Vorjahr. Andere Auswertungen liegen höher, weil sie anders gewichten: miete-aktuell.de nennt für Troisdorf 11,67 Euro Kaltmiete pro Quadratmeter (Stand 1. Oktober 2026), also gut 0,9 Euro über dem ImmoScout-Schnitt — die Streuung zeigt, wie stark es auf Erhebungsmethode und Objektmix ankommt.",
-          "einordnung": "6,9 Prozent Mietwachstum gegen 4,40 Prozent Finanzierungszins: Die Marge bleibt knapp, aber der Bestandswert arbeitet. Bei Neuabschluss entscheidet allein die Ausgangsmiete über den Cashflow der ersten zehn Jahre.",
-          "quellen": [
-            {
-              "name": "ImmoScout24 – Mietspiegel Troisdorf, Q3 2026",
-              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
+              "name": "Interhyp Zins-Update Oktober 2026",
+              "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69844298-interhyp-zins-update-oktober-bauzinsen-stabilisieren-sich-auf-erhoehtem-niveau-007.htm"
             },
             {
-              "name": "miete-aktuell.de – Mietspiegel Troisdorf, Stand 01.10.2026",
-              "url": "https://www.miete-aktuell.de/mietspiegel/Troisdorf/Troisdorf/Troisdorf"
+              "name": "EZB – Geldpolitische Beschlüsse 10.09.2026",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
             }
           ]
         }
@@ -125,38 +98,34 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB entscheidet am Donnerstag — Leitzins bleibt wohl bei 2,50 Prozent",
-          "aufmacher": "Der EZB-Rat tagt am 29. Oktober 2026; der Einlagensatz liegt seit dem 16. September bei 2,50 Prozent, eine Änderung gilt als unwahrscheinlich.",
-          "fakten": "Der Hauptrefinanzierungssatz beträgt 2,65 Prozent, der Spitzenrefinanzierungssatz 2,90 Prozent. Die EZB hat 2026 zweimal um je 25 Basispunkte angehoben — im Juni von 2,00 auf 2,25 und im September auf 2,50 Prozent. Die Inflation im Euroraum liegt mit 3,8 Prozent (September 2026) weiter über dem Ziel von zwei Prozent; in Deutschland waren es nach endgültigen Zahlen 3,3 Prozent im September.",
-          "einordnung": "Solange die Inflation über dem Ziel bleibt, ist keine Senkung in Sicht. Wer 2027 oder 2028 eine Anschlussfinanzierung vor sich hat, sollte Forward-Konditionen jetzt prüfen statt auf fallende Zinsen zu setzen.",
+          "titel": "Fed entscheidet heute Abend — Zinspause erwartet",
+          "aufmacher": "Die US-Notenbank gibt ihre Zinsentscheidung am Mittwoch um 19:00 Uhr deutscher Zeit bekannt; die Zielspanne dürfte bei 3,75 bis 4,00 Prozent bleiben.",
+          "fakten": "Die Federal Reserve tagt am 27. und 28. Oktober. An den Märkten gilt eine Pause als Konsens, nachdem die Fed im September um 25 Basispunkte angehoben hat; die Zielspanne für die Federal Funds Rate liegt seither bei 3,75 bis 4,00 Prozent. Eine weitere Erhöhung im Dezember bleibt im Gespräch, weil der Inflationsdruck anhält, während der Arbeitsmarkt abkühlt und die Finanzierungsbedingungen straffer sind. In Deutschland lag die Teuerung im September bei 3,3 Prozent, der harmonisierte Index ebenfalls.",
+          "einordnung": "Eine Pause in den USA nimmt Druck von den globalen Anleiherenditen — das ist die Größe, die auch die deutschen Bauzinsen steuert. Für Mikes Finanzierungen zählt aber die EZB-Sitzung am Donnerstag mehr.",
           "quellen": [
             {
-              "name": "EZB – Key ECB interest rates (Stand 16.09.2026)",
-              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+              "name": "Federal Reserve – FOMC-Kalender 2026",
+              "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
             },
             {
-              "name": "euribor-rates.info – EZB-Leitzins, nächste Sitzung 29.10.2026",
-              "url": "https://euribor-rates.info/de/ezb-leitzins"
+              "name": "TradingKey – Fed-Vorschau Oktober 2026",
+              "url": "https://www.tradingkey.com/de/analysis/economic/central-banks/262241422-fed-october-decision-rate-pause-consensus-us-stocks-dollar-gold-reaction-tradingkey"
             },
             {
-              "name": "Statistisches Bundesamt – Inflationsrate September 2026: +3,3 %",
-              "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html"
+              "name": "Destatis – Inflationsrate September 2026",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"
             }
           ]
         },
         {
-          "titel": "Anthropic beantragt Börsengang — Bewertung bis zwei Billionen Dollar",
-          "aufmacher": "Der Claude-Hersteller Anthropic hat am 26. Oktober seine S-1 bei der US-Börsenaufsicht SEC eingereicht und will unter dem Kürzel „ANT“ an die Nasdaq.",
-          "fakten": "Anzahl der Aktien und Preisspanne sind noch nicht festgelegt. Berichtet wird eine mögliche Bewertung von bis zu zwei Billionen Dollar und ein Handelsstart in der Woche ab dem 16. November. Federführend sind Goldman Sachs und Morgan Stanley, der Prospekt umfasst 333 Seiten. Es wäre einer der größten Börsengänge der Geschichte.",
-          "einordnung": "Ein IPO dieser Größe zieht Kapital aus bestehenden Tech-Werten ab und verschiebt Indexgewichte — für ETF-Sparpläne relevant, für ein Neuengagement ein Fall für die Beobachtungsliste statt für den ersten Handelstag.",
+          "titel": "DAX erobert die 100-Tage-Linie zurück",
+          "aufmacher": "Der deutsche Leitindex hat am Dienstag die vielbeachtete 100-Tage-Durchschnittslinie übersprungen und notiert bei rund 25.600 Punkten.",
+          "fakten": "Die Marke liegt bei etwa 25.455 Punkten; am Montag war der DAX dort noch abgeprallt, am Dienstag reichte es zeitweise bis knapp 25.600 Punkte. Als Handelsspanne sehen charttechnisch orientierte Anleger seit Wochen rund 1.000 Punkte mit Obergrenze knapp unter 25.800. Die eigentlichen Prüfsteine kommen erst: Zinsentscheide in den USA, der Eurozone und Japan sowie Quartalszahlen von Microsoft, Alphabet und Amazon.",
+          "einordnung": "Ein Ausbruch über die 100-Tage-Linie ist noch kein Trendwechsel — die Spanne bleibt intakt. Für ETF-Sparpläne ändert das nichts, für Einzelengagements ist die Woche der Notenbankentscheide kein guter Einstiegszeitpunkt.",
           "quellen": [
             {
-              "name": "Anthropic – S-1 filing with the SEC (26.10.2026)",
-              "url": "https://www.anthropic.com/news/s1-sec"
-            },
-            {
-              "name": "tagesschau.de – Anthropic beantragt Börsengang (26.10.2026)",
-              "url": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-bereitet-boersengang-vor-100.html"
+              "name": "BörsenNEWS – Zinswoche: DAX erobert die 100-Tage-Linie zurück (27.10.2026)",
+              "url": "https://www.boersennews.de/nachrichten/artikel/boersennews/zinswoche-dax-erobert-die-100-tage-linie-zurueck/5327068/"
             }
           ]
         }
@@ -166,26 +135,18 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "paperless-ngx 3.3.4 seit fünf Tagen offen — das Update betrifft nur Fremdbibliotheken",
-          "aufmacher": "Das Sicherheits-Update von 3.3.3 auf 3.3.4 ist seit dem 22. Oktober verfügbar und liegt weiterhin nicht eingespielt.",
-          "fakten": "3.3.4 ist ein reines Wartungsrelease: Es aktualisiert certifi wegen des eMudhra-/emSign-CA-Vorfalls, uv auf 0.13 sowie die Bibliotheken Pillow und aiohttp. Betroffen sind ausschließlich Abhängigkeiten, nicht der Paperless-Code; der Herausgeber empfiehlt das Update allen Nutzern. Ein Datenbank- oder Funktionswechsel ist nicht enthalten, der Aufwand bleibt klein.",
-          "einordnung": "Der Zertifikatsteil ist der kritische: Ohne aktualisierte CA-Liste scheitern TLS-Verbindungen zu Diensten mit eMudhra-Kette — bei Paperless betreffen sie Imports und Mail-Abrufe. Beim nächsten Wartungsfenster einspielen, vorher Sicherung, danach die alte löschen.",
+          "titel": "Kompromittierte CA-Wurzel: 9 Shelly-Geräte und paperless-ngx brauchen Update",
+          "aufmacher": "Ein Zertifikatsvorfall bei der CA eMudhra zwingt quer durch den Stack zu Updates — bei Mike sind neun Shelly-Geräte und paperless-ngx betroffen.",
+          "fakten": "Shelly hat am 26. Oktober die Firmware 1.7.6 für Gen2-Geräte und 2.1.1 für die neueren Geräte veröffentlicht; beide enthalten genau eine Änderung: CA-Bundles aktualisieren und die kompromittierten eMudhra-Wurzeln entfernen. Offen sind Zirkulation-alt, Tor, Whirlpool, die Klimaanlagen-Sammelsteckdose, Lampe-Bad, Lüfter-Bad und Esszimmer-Lampe (alle 1.7.5 auf 1.7.6) sowie Outdoor-Kühlschrank und Unterverteilung (2.1.0 auf 2.1.1). Parallel liegt paperless-ngx 3.3.4 seit dem 22. Oktober bereit und behebt denselben CA-Vorfall über aktualisierte Abhängigkeiten. Home Assistant Core läuft mit 2026.10.4 aktuell, Supervisor, Operating System und alle Add-ons melden kein offenes Update.",
+          "einordnung": "Ohne aktualisierte CA-Liste scheitern TLS-Verbindungen zu Diensten mit eMudhra-Kette — bei Paperless betreffen sie Importe und Mail-Abrufe, bei den Shellys Cloud und Webhooks. Unkritisch einzuspielen, aber vorher Sicherung; ich mache das auf Zuruf, die Geräte brauchen dabei kurz Strom.",
           "quellen": [
             {
-              "name": "GitHub – paperless-ngx v3.3.4 Release Notes (22.10.2026)",
-              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.4"
-            }
-          ]
-        },
-        {
-          "titel": "Bosch Smart Home: v0.12.38 → v0.12.42 behebt den Heizkreis-Modus-Fehler",
-          "aufmacher": "Für die Bosch-SHC-Integration in Home Assistant liegt v0.12.42 bereit; sie behebt zwei konkrete Fehler bei Heizkreisen und beim Abmelden von Entitäten.",
-          "fakten": "Ein climate.set_temperature mit hvac_mode (Auto oder Heat) übernimmt jetzt auch den Modus — vorher wurde nur der Sollwert gesetzt, der Modus still ignoriert. Außerdem melden sich Entitäten sauber vom Controller ab, wenn das Hinzufügen mittendrin scheitert, was bisher fehlgeschlagene Rückrufe bis zum Neustart hinterließ. 0.12.42 liest Heizkreis-Sollwerte, LED- und Display-Grenzen, Ausgangsmodi und die Twinguard-Komfortzone über öffentliche boschshcpy-Properties statt über private Dienste und verlangt boschshcpy ab 0.6.24. Nebenbefund: Container omnivoice (VoiceStudio) steht seit zwölf Tagen auf „Exited (137)“, also SIGKILL — vermutlich Speicherlimit oder Watchdog, kein regulärer Stopp.",
-          "einordnung": "Nur relevant, wenn die Bosch-Heizungsregelung über Home Assistant läuft — dann lohnt das Update vor der Heizperiode, weil es den Modus-Fehler in Automatisierungen beseitigt. Der gestoppte VoiceStudio-Container erklärt, warum lokale TTS-Aufrufe derzeit ins Leere laufen.",
-          "quellen": [
+              "name": "Shelly – Gen2+ Firmware-Changelog",
+              "url": "https://shelly-api-docs.shelly.cloud/gen2/changelog/"
+            },
             {
-              "name": "GitHub – tschamm/boschshc-hass v0.12.42 (26.10.2026)",
-              "url": "https://github.com/tschamm/boschshc-hass/releases/v0.12.42"
+              "name": "paperless-ngx Releases",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
             }
           ]
         }
@@ -195,18 +156,26 @@
       "titel": "🤖 Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Tesla startet Optimus-Produktion in Fremont — weiterhin kein Verkauf an Haushalte",
-          "aufmacher": "Tesla hat die Serienproduktion des Humanoiden Optimus im Werk Fremont aufgenommen; die ersten Roboter in Fertigungsqualität laufen laut Quartalsbericht vom Band.",
-          "fakten": "Tesla führt die Linie in Kalifornien als „Early Ramp“, eine zweite Optimus-Fertigungsstätte in Texas ist im Bau. Im Aktionärsbrief heißt es, der aktuelle Produktionsprozess sei „für ein kommerzielles Produkt geeignet“, während Hardware und Fertigung weiter überarbeitet werden. Elon Musk sprach in der Telefonkonferenz von „early production“ mit langsamem, „holprigem“ Hochlauf und nannte 20.000 Roboter pro Woche als Ziel bis Ende 2027. Einen Endkundenpreis gibt es weiterhin nicht; die bekannte Zielmarke liegt bei 20.000 bis 30.000 US-Dollar — umgerechnet zum EZB-Referenzkurs vom 27.10.2026 (1,1188 USD/EUR) rund 17.900 bis 26.800 Euro, als finaler Verkaufspreis nicht verifiziert. Verfügbarkeit: bislang ausschließlich intern, kein Verkauf an Privathaushalte angekündigt.",
-          "einordnung": "Tesla ist damit von der Ankündigung in die Fertigung gewechselt — der Vorsprung ist aber ein Fabrik-Vorsprung, kein Haushalts-Vorsprung. Für Mike ändert sich am einzigen bestellbaren Haushaltsmodell nichts; interessant wird es erst, wenn Tesla einen Preis und einen Privatkundenkanal nennt.",
+          "titel": "1X NEO: erste Geräte in US-Haushalten, aber jede Aufgabe fremdgesteuert",
+          "aufmacher": "Der erste bestellbare Haushalts-Humanoide steht jetzt in US-Wohnungen — ohne menschlichen Fernoperator schafft er laut Tests bislang keine einzige Haushaltsaufgabe.",
+          "fakten": "1X hat die Serienproduktion am 30. April 2026 im Werk Hayward in Kalifornien gestartet und liefert seither Einheiten an Early-Access-Kunden in den USA aus; die Fabrik ist auf 10.000 Einheiten im ersten Jahr ausgelegt, bis Ende 2027 sollen es über 100.000 werden. Preis unverändert: 20.000 US-Dollar oder 499 US-Dollar im Monat, dazu 200 US-Dollar rückzahlbare Anzahlung. Beim EZB-Referenzkurs von 1,115 US-Dollar je Euro am 27. Oktober 2026 sind das rund 17.940 Euro Kaufpreis, etwa 448 Euro Monatsrate und rund 179 Euro Anzahlung. Eine unabhängig bestätigte Auslieferung an reguläre Vorbesteller außerhalb des Early-Access-Programms gab es bis Mitte Oktober 2026 nicht. Frühe Hands-on-Tests fanden, dass NEO keine Aufgabe ohne einen menschlichen Turing-Operator erledigte, der über die Kameras zusieht und steuert. Andere Märkte will 1X erst ab 2027 bedienen.",
+          "einordnung": "Damit ist die zuletzt offene Frage beantwortet: NEO kommt an, aber ohne Autonomie. Für Mike bleibt es beim Warten — Europa erst ab 2027, und ein Gerät mit Fernsteuerung ist kein Ersatz für eine Reinigungskraft.",
           "quellen": [
             {
-              "name": "Tesla – Q3 2026 Quarterly Update (Optimus-Produktion Fremont)",
-              "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
+              "name": "Startup Fortune – 1X NEO Auslieferung (22.10.2026)",
+              "url": "https://startupfortune.com/1x-starts-delivering-its-20000-neo-home-robot-teleoperator-and-all/"
             },
             {
-              "name": "TechCrunch via Yahoo Finance – Tesla starts Optimus robot production (21.10.2026)",
-              "url": "https://finance.yahoo.com/technology/ai/articles/tesla-stars-optimus-robot-production-203309413.html"
+              "name": "1X Technologies – NEO Home Robot",
+              "url": "https://www.1x.tech/discover/neo-home-robot"
+            },
+            {
+              "name": "Roboterwelt – Haushaltsroboter 2026",
+              "url": "https://www.roboterwelt.de/roboter-als-haushaltshilfe"
+            },
+            {
+              "name": "EZB – Euro-Referenzkurs USD (27.10.2026)",
+              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.de.html"
             }
           ]
         }
