@@ -1,14 +1,14 @@
 {
-  "datum": "Freitag, 30.10.2026",
+  "datum": "Samstag, 31.10.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "5,6 °C · Regen 0 % · UV 2,4",
-          "aufmacher": "☀️ Klarer Morgen bei 5,6 °C — tagsüber bis 13,8 °C und durchgehend trocken.",
-          "fakten": "Aktuell 5,6 °C, Tiefstwert 5,5 °C, Höchstwert 13,8 °C. Regenwahrscheinlichkeit 0 Prozent, UV-Index 2,4 (niedrig).",
-          "einordnung": "",
+          "titel": "4,3 °C · Regen 0 % · UV 2,4",
+          "aufmacher": "Klarer Himmel über Troisdorf, trocken — Tageshöchstwert 12,6 °C, Tiefstwert 4,2 °C.",
+          "fakten": "UV-Index 2,4 (niedrig), kein Niederschlag zu erwarten.",
+          "einordnung": "Gute Bedingungen für Außenarbeiten und Dach-Check vor dem Winter.",
           "quellen": []
         }
       ]
@@ -19,7 +19,7 @@
         {
           "titel": "Keine Termine in den nächsten 3 Tagen",
           "aufmacher": "Der Google-Kalender ist für die kommenden drei Tage leer.",
-          "fakten": "Keine Einträge vom 30. Oktober bis 1. November 2026.",
+          "fakten": "",
           "einordnung": "",
           "quellen": []
         }
@@ -29,35 +29,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Melanbogenbrücke: nur noch 3,5 Tonnen — Linie 508 ab Montag gekürzt",
-          "aufmacher": "Die marode Siegbrücke zwischen Troisdorf und Sankt Augustin darf seit dem 23. Oktober nur noch von Fahrzeugen bis 3,5 Tonnen passiert werden — der Busverkehr wird deshalb ab 2. November zusammengestrichen.",
-          "fakten": "Straßen.NRW hat die zulässige Belastung der Melanbogenbrücke an der L143 (Siegstraße) von 14 auf 3,5 Tonnen Gesamtgewicht abgesenkt, weil die engmaschige Bauwerksüberwachung neue Befunde geliefert hat. RSK und RSVG kürzen daraufhin die Linie 508 zwischen Troisdorf Kuttgasse und Menden Brücke: Ab 2. November entfallen Ursulaplatz (Ersatz 501, 503, 507), Im Grund (Linie 506) und Tierheim (AGGUA-Bad, Linie 506); Aggerdeich und Mannstaedtwerke fallen ersatzlos weg. Auch der Schienenersatzverkehr der Bahn wird umgeleitet; ob die Ablastung zurückgenommen werden kann, prüft Straßen.NRW mit Sonderprüfungen.",
-          "einordnung": "Betrifft jeden Liefer- und Handwerkerverkehr über 3,5 Tonnen zwischen Troisdorf und Sankt Augustin — bei Bauvorhaben an der Moselstraße muss die Anfahrt größerer Fahrzeuge umgeplant werden, und die Achse ist auf Jahre nicht verlässlich planbar.",
+          "titel": "Fahrradklimatest: Acht Kommunen im Kreis fehlen noch Stimmen",
+          "aufmacher": "Noch bis 30. November können Radfahrende im Rhein-Sieg-Kreis ihre Kommune benoten — acht der 19 Städte und Gemeinden brauchen dafür noch Teilnehmer.",
+          "fakten": "Bis zum 22. Oktober hatten 1.266 Personen mitgemacht, rund 100 weniger als zum gleichen Zeitpunkt 2024. Elf Kommunen haben die Marke von 50 Bewertungen erreicht, die für eine Auswertung nötig ist; Rheinbach und Sankt Augustin führen mit je 131 Stimmen, Ruppichteroth liegt bei 2. Der Test von ADFC und Bundesverkehrsministerium stellt 27 gleichbleibende Fragen zu Sicherheit, Komfort und Infrastruktur.",
+          "einordnung": "Für Troisdorf und die Nachbarkommunen ein Signal für Standortqualität — bei Radpendlern wird die Nordbrücken-Sperrung das bestimmende Thema sein.",
           "quellen": [
-            {
-              "name": "Straßen.NRW – L143 Melanbogenbrücke gesperrt (22.10.2026)",
-              "url": "https://www.strassen.nrw.de/de/meldung/l143-melanbogenbruecke-zwischen-troisdorf-und-sankt-augustin-wird-fuer-fahrzeuge-ueber-3-5-tonnen-gesperrt.html"
-            },
-            {
-              "name": "Stadt Troisdorf – Kürzung der Linie 508 ab 02.11.2026",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kuerzung-der-linie-508-ab-02-11-2026/"
-            },
-            {
-              "name": "VRS – Ereignismeldung Melanbogenbrücke (Linie 508)",
-              "url": "https://www.vrs.de/ems/ereignismeldung/8529"
-            }
+            {"name": "Rundschau Online: ADFC-Fahrradklimatest 2026 im Kreis", "url": "https://www.rundschau-online.de/region/rhein-sieg/siegburg/adfc-fahrradklimatest-2026-im-kreis-fehlen-noch-stimmen-1406382"},
+            {"name": "ADFC: Fahrradklima-Test 2026", "url": "https://fahrradklima-test.adfc.de/"}
           ]
         },
         {
-          "titel": "Kölner Straße ab heute sechs Uhr voll gesperrt",
-          "aufmacher": "Auf der Kölner Straße ist von Freitag, 30. Oktober, 6 Uhr, bis Montag, 2. November 2026, 6 Uhr kein Durchkommen.",
-          "fakten": "Grund ist die Instandsetzung eines Schachtdeckels auf Höhe der Hausnummer 152. Die Stadt spricht von einer Vollsperrung über das gesamte Wochenende; sie endet am Montagmorgen um 6 Uhr.",
-          "einordnung": "Wer am Wochenende in Richtung Troisdorfer Innenstadt muss, sollte die Umfahrung einplanen — die Sperrung liegt im Zulauf zur Sieglarer Straße.",
+          "titel": "Blaulicht aus dem Kreis: Rettungswagen erwischt Pferd, Pedelec-Fahrerin verletzt",
+          "aufmacher": "In der Nacht zum Freitag ist in Windeck ein Rettungswagen im Einsatz mit einem Pferd auf der Fahrbahn kollidiert; am Donnerstagnachmittag wurde in Hennef eine 61-jährige Pedelec-Fahrerin bei einem Abbiegeunfall leicht verletzt.",
+          "fakten": "Der Rettungswagen war gegen 3.10 Uhr mit Blaulicht und Einsatzhorn auf der Dammsbachstraße in Windeck-Helpenstell unterwegs, als auf der Kreisstraße 23 zwischen Obernau und Dreisel ein Pferd auftauchte; am Steuer saß ein 47-Jähriger. In Hennef war ein 63-Jähriger aus Hückeswagen mit seinem Audi auf der Frankfurter Straße unterwegs, als es an der Kreuzung zur Siegfeldstraße zum Zusammenstoß mit der entgegenkommenden Pedelec-Fahrerin kam.",
+          "einordnung": "Zwei Meldungen aus dem Kreis — für die Routenwahl am Wochenende relevant, mehr nicht.",
           "quellen": [
-            {
-              "name": "Stadt Troisdorf – Vollsperrung Kölner Straße 30.10.–2.11.2026",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/vollsperrung-der-koelner-strasse-vom-30-oktober-bis-2-november/"
-            }
+            {"name": "Polizei Rhein-Sieg-Kreis (ots): Rettungswagen kollidiert mit Tier", "url": "https://www.presseportal.de/blaulicht/pm/65853/6380989"},
+            {"name": "Polizei Rhein-Sieg-Kreis (ots): Radfahrerin bei Unfall in Hennef leicht verletzt", "url": "https://www.presseportal.de/blaulicht/pm/65853/6381051"}
           ]
         }
       ]
@@ -66,43 +54,23 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben über vier Prozent",
-          "aufmacher": "Eine zehnjährige Zinsbindung kostet derzeit 4,15 Prozent effektiv — wer voll finanziert, zahlt über 4,5 Prozent.",
-          "fakten": "Die Interhyp-Konditionen der Woche vom 19. bis 25. Oktober 2026 weisen 4,15 Prozent bei unter 70 Prozent Beleihung aus, 4,27 Prozent bei 80 Prozent und 4,53 Prozent über 90 Prozent; über 20 Jahre reicht die Spanne von 4,41 bis 4,70 Prozent. Andere Vermittler nennen als Topzins für zehn Jahre am 30. Oktober rund 4,45 Prozent — der Abstand erklärt sich aus Beleihung und Anbieterwahl. Die EZB hat im Juni und September 2026 um je 25 Basispunkte erhöht und stellt fest, dass sich die Finanzierungsbedingungen seither gestrafft haben.",
-          "einordnung": "Bei 500.000 Euro Darlehen sind 4,53 Prozent rund 22.650 Euro Zins im Jahr (1.888 Euro im Monat), bei 4,15 Prozent rund 20.750 Euro — 1.900 Euro Unterschied pro Jahr. Für die Hebel-Strategie mit nur Kaufnebenkosten aus Eigenkapital ist der 90-Prozent-Satz maßgeblich, nicht der beworbene Topzins.",
+          "titel": "Kaufpreise treten auf der Stelle, Mieten ziehen an",
+          "aufmacher": "Der IW-Wohnindex für das dritte Quartal 2026 zeigt eine zweigeteilte Entwicklung: Kaufpreise stagnieren, Mieten steigen deutlich.",
+          "fakten": "Eigentumswohnungen verteuerten sich gegenüber dem Vorjahresquartal um 0,3 Prozent, Ein- und Zweifamilienhäuser um 0,4 Prozent; gegenüber dem Höchststand von 2022 liegen die Kaufpreise gut 10 Prozent niedriger. Die Angebotsmieten legten um 4,5 Prozent im Jahresvergleich und 1,2 Prozent gegenüber dem Vorquartal zu, im Umland der sieben größten Städte sogar um 5,2 Prozent. Das IW nennt die höheren Finanzierungskosten als Ursache: Weniger Kaufinteressenten drängen in den Mietmarkt.",
+          "einordnung": "Für Bestandsobjekte zählt die Miete, nicht der Kaufpreis — 4,5 Prozent Mietwachstum stützen den Cashflow, während stagnierende Kaufpreise bei teurer Finanzierung eher antizyklische Einstiege eröffnen.",
           "quellen": [
-            {
-              "name": "Interhyp – Bauzinsen aktuell (Zinstabelle 19.–25.10.2026)",
-              "url": "https://www.interhyp.de/bauzinsen/"
-            },
-            {
-              "name": "baufi-deutschland – Bauzinsen aktuell 30.10.2026",
-              "url": "https://baufi-deutschland.de/aktuelle-bauzinsen/"
-            },
-            {
-              "name": "EZB – Monetary policy decisions, 29.10.2026",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html"
-            }
+            {"name": "IW-Wohnindex Q3 2026 (IW Köln, PDF)", "url": "https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2026/IW-Report_2026-Wohnindex-Q3-2026.pdf"},
+            {"name": "Dr. Klein: Immobilienpreise Q3 2026", "url": "https://www.drklein.de/deutschlands-immobilienmaerkte-oktober-2026.html"}
           ]
         },
         {
-          "titel": "Mieten in Troisdorf ziehen um 6,9 Prozent an",
-          "aufmacher": "In Troisdorf kostet der Quadratmeter Wohnfläche im dritten Quartal 2026 durchschnittlich 10,74 Euro nettokalt — 6,9 Prozent mehr als vor einem Jahr.",
-          "fakten": "Der Rhein-Sieg-Kreis liegt bei 10,22 Euro je Quadratmeter (plus 6,2 Prozent), Nordrhein-Westfalen bei 9,07 Euro (plus 4,7 Prozent); die Troisdorfer Spanne reicht von 9,93 bis 11,87 Euro. Rechtlicher Rahmen für Bestandsmieten bleibt der qualifizierte Mietspiegel der Stadt Troisdorf, gültig seit 1. Oktober 2025.",
-          "einordnung": "6,9 Prozent Mietanstieg schlagen die Inflation von 3,3 Prozent deutlich — bei 70 Quadratmetern sind das rund 752 Euro Kaltmiete, bei 100 Quadratmetern 1.074 Euro. Für Bestandsobjekte im Kreis stützt das Mieterhöhungen im Mietspiegel-Rahmen; die Marge kommt derzeit von der Mietseite, nicht von der Zinsseite.",
+          "titel": "Baukosten steigen so stark wie seit drei Jahren nicht",
+          "aufmacher": "Der Neubau konventionell gefertigter Wohngebäude war im August 2026 um 5,5 Prozent teurer als im Vorjahr — der stärkste Anstieg seit drei Jahren.",
+          "fakten": "Im vorherigen Berichtsmonat Mai lag der Zuwachs bei 5,0 Prozent, gegenüber Mai 2026 zogen die Preise um 1,0 Prozent an. Rohbauarbeiten verteuerten sich um 5,4 Prozent, Ausbauarbeiten um 5,7 Prozent, Instandhaltungsarbeiten um 6,0 Prozent. Überdurchschnittlich teuer wurden Dachdeckungsarbeiten (+7,6 Prozent), Zimmer- und Holzbau (+7,2 Prozent) und Elektroanlagen (+7,2 Prozent); Heizanlagen und zentrale Wassererwärmung — also Wärmepumpen — legten um 5,2 Prozent zu.",
+          "einordnung": "Instandhaltung und Heizungstausch werden teurer, während die Kaufpreise stehen — Instandhaltungsrücklage und Sanierungsreihenfolge (Moselstr. 46) sollte man an diesen Preisen neu messen.",
           "quellen": [
-            {
-              "name": "ImmoScout24 – Mietspiegel Troisdorf Q3 2026",
-              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
-            },
-            {
-              "name": "ImmoScout24 – Mietspiegel Rhein-Sieg-Kreis Q3 2026",
-              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/mietspiegel"
-            },
-            {
-              "name": "Stadt Troisdorf – Qualifizierter Mietspiegel 2025",
-              "url": "https://www.troisdorf.de/de/rathaus-service/buergerservice/wohnungsamt/mietspiegel/"
-            }
+            {"name": "Destatis: Baupreise für Wohngebäude im August 2026", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_360_61261.html"},
+            {"name": "tagesschau: Baupreise steigen besonders stark", "url": "https://www.tagesschau.de/wirtschaft/konjunktur/bauen-teuer-baukosten-bauzinsen-100.html"}
           ]
         }
       ]
@@ -111,35 +79,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hält still — Leitzins bleibt bei 2,50 Prozent",
-          "aufmacher": "Die Europäische Zentralbank hat am 29. Oktober alle drei Leitzinsen unverändert gelassen.",
-          "fakten": "Der Einlagesatz bleibt bei 2,50 Prozent, der Hauptrefinanzierungssatz bei 2,65 Prozent, der Spitzenrefinanzierungssatz bei 2,90 Prozent. Zur Begründung nennt der EZB-Rat weiter steigende Energiepreise als Aufwärtsrisiko für die Inflation und als Abwärtsrisiko für das Wachstum; die Finanzierungsbedingungen hätten sich seit der letzten Sitzung gestrafft. Der 3-Monats-Euribor lag am 28. Oktober bei 2,618 Prozent, der 12-Monats-Euribor bei 3,290 Prozent; die Zinskurve impliziert für den 3-Monats-Satz in drei Monaten 3,280 Prozent — ein Terminsatz, keine Prognose. Nächste Sitzung: 17. Dezember 2026.",
-          "einordnung": "Variabel finanzierte Objekte hängen am Euribor, nicht am Leitzins — und die Kurve zeigt nach oben. Für Anschlussfinanzierungen spricht derzeit mehr für früh festzurren als für abwarten.",
+          "titel": "Inflation fällt im Oktober auf 2,8 Prozent",
+          "aufmacher": "Die Teuerung in Deutschland hat sich im Oktober spürbar abgeschwächt: Die vorläufige Inflationsrate liegt bei 2,8 Prozent, nach 3,3 Prozent im September.",
+          "fakten": "Gegenüber September sanken die Verbraucherpreise um 0,2 Prozent, die Kerninflation ohne Nahrungsmittel und Energie fiel auf 2,1 Prozent. Energie blieb mit +12,2 Prozent der Treiber, nach +14,9 Prozent im Vormonat; Lebensmittel verteuerten sich nur um 0,4 Prozent, Dienstleistungen um 2,5 Prozent. Grund für die Entlastung ist die Anfang Oktober gesenkte Energiesteuer auf Kraftstoffe. Analysten hatten mit 3,0 Prozent gerechnet, die Commerzbank erwartet um die Jahreswende wieder über drei Prozent.",
+          "einordnung": "Für private Entnahme und Mietanpassung ist 2,8 statt 3,3 Prozent ein kleiner Spielraum — die Energiepreise bleiben der Unsicherheitsfaktor.",
           "quellen": [
-            {
-              "name": "EZB – Monetary policy decisions, 29.10.2026",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html"
-            },
-            {
-              "name": "euribor-rates.info – EZB-Leitzins und Euribor",
-              "url": "https://euribor-rates.info/de/ezb-leitzins/"
-            }
+            {"name": "Destatis: Inflationsrate im Oktober 2026 voraussichtlich +2,8 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_382_611.html"},
+            {"name": "tagesschau: Inflationsrate fällt im Oktober auf 2,8 Prozent", "url": "https://www.tagesschau.de/wirtschaft/verbraucher/inflationsrate-deutschland-oktober-100.html"}
           ]
         },
         {
-          "titel": "Inflation springt auf 3,3 Prozent — Energie ist der Treiber",
-          "aufmacher": "Die Verbraucherpreise in Deutschland lagen im September 2026 um 3,3 Prozent über dem Vorjahr, nach 2,9 Prozent im August.",
-          "fakten": "Energie verteuerte sich im harmonisierten Index um 13,4 Prozent (August: 9,4 Prozent), Nahrungsmittel um 1,1 Prozent, Dienstleistungen um 2,8 Prozent. Die Kerninflationsrate ohne Energie und Nahrungsmittel sank von 2,6 auf 2,5 Prozent.",
-          "einordnung": "Die Kernrate liegt bei 2,5 Prozent und damit nahe am Ziel — der Preisdruck kommt von außen über Energie, nicht aus der Binnenwirtschaft. Im Haushaltsbudget schlagen deshalb Heizung und Strom durch, nicht die klassische Teuerung.",
+          "titel": "ifo-Geschäftsklima steigt das sechste Mal in Folge",
+          "aufmacher": "Die Stimmung in der deutschen Wirtschaft hat sich im Oktober erneut verbessert: Der ifo-Geschäftsklimaindex stieg um 0,3 Punkte auf 90,2 Zähler, nach 89,9 im September.",
+          "fakten": "Es ist der sechste Anstieg in Folge und der höchste Stand seit dem Frühjahr 2023; befragt werden monatlich rund 9.000 Unternehmen. Getragen wurde der Anstieg von besseren Erwartungen, während die Bewertung der aktuellen Lage schwächer ausfiel — Analysten hatten eine Stagnation bei 89,9 Punkten erwartet. ifo-Präsident Clemens Fuest: „Die Konjunkturbelebung setzt sich fort.“",
+          "einordnung": "Eine sich belebende Industrie stützt Mieternachfrage und Preise im Umland — sie macht aber auch weitere Zinsanstiege wahrscheinlicher, was für geplante Finanzierungen gegen die aktuelle Zinsruhe spricht.",
           "quellen": [
-            {
-              "name": "Destatis – Inflationsrate September 2026 (+3,3 %)",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"
-            },
-            {
-              "name": "Deutsche Bundesbank – HVPI September 2026",
-              "url": "https://www.bundesbank.de/de/statistiken/konjunktur-und-preise/harmonisierter-verbraucherpreisindex/harmonisierter-verbraucherpreisindex-927952"
-            }
+            {"name": "ifo Institut: Geschäftsklimaindex gestiegen (Oktober 2026)", "url": "https://www.ifo.de/pressemitteilung/2026-10-26/ifo-geschaeftsklimaindex-gestiegen-oktober-2026"},
+            {"name": "tagesschau: Ifo-Index — Konjunkturbelebung setzt sich fort", "url": "https://www.tagesschau.de/wirtschaft/konjunktur/ifo-index-oktober-102.html"}
           ]
         }
       ]
@@ -148,15 +104,13 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "🤖 paperless-ngx 3.3.3 → 3.4.0: PDF-Vorschauen und Sicherheitsfixes",
-          "aufmacher": "paperless-ngx ist in Version 3.4.0 erschienen (29. Oktober 2026); auf dem NAS läuft noch 3.3.3.",
-          "fakten": "Neu sind PDF-Vorschaubilder über die poppler-Werkzeuge, eigene Felder in Workflow-Titelvorlagen, relative Datumsabfragen für eigene Felder, Markdown im KI-Chat und schnellere Ladezeiten der Aufgaben-Anzeige. Dazu kommen Sicherheitsaktualisierungen bei Frontend-Abhängigkeiten, Django REST Framework, brotli und setuptools sowie django-allauth 65.20 und oauthlib 4.0. In Home Assistant stehen alle 98 Update-Entitäten auf „off“ — Core, Supervisor, Betriebssystem, Add-ons, HACS und sämtliche Geräte-Firmware sind aktuell. Gestoppt sind zwei Container: VoiceStudio (/omnivoice, Exited 137 seit zwei Wochen, vermutlich Speicherlimit) und der einmalige Firecrawl-Init-Container (Exited 0, regulär beendet).",
-          "einordnung": "Einspielen erst nach Sicherung — und vor dem Neustart prüfe ich, ob poppler im Container vorhanden ist, sonst bleibt die PDF-Vorschau leer. Für die Dokumentenflut aus Gmail und Paperless bringt die Version vor allem Bedienkomfort, kein Risiko fürs Datenformat.",
+          "titel": "paperless-ngx: heute 3.4.1 — Fehlerbehebungen und weniger Speicher im Leerlauf",
+          "aufmacher": "Rund einen Tag nach dem großen Sprung auf 3.4.0 hat paperless-ngx heute Morgen Version 3.4.1 nachgeschoben.",
+          "fakten": "Die Version bringt ausschließlich Korrekturen: fünf Fehlerbehebungen an den neuen PDF-Bedienelementen, den Berechtigungsprüfungen und der Dokumentliste. Zusätzlich verbraucht die Anwendung im Leerlauf weniger Arbeitsspeicher, weil mehr Importe erst bei Bedarf geladen werden. Auf dem NAS läuft derzeit 3.3.3, verfügbar ist 3.4.1.",
+          "einordnung": "Unkritisches Wartungsupdate — nach dem Backup einspielen. Zwei Container auf dem NAS stehen seit Längerem still: „omnivoice“ ist vor zwei Wochen mit Exit-Code 137 (harter Abbruch, häufig Speichermangel) ausgestiegen, der Firecrawl-Init-Container hat regulär beendet.",
           "quellen": [
-            {
-              "name": "paperless-ngx v3.4.0 – Release Notes (GitHub)",
-              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.0"
-            }
+            {"name": "paperless-ngx v3.4.1 Release Notes (GitHub)", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.1"},
+            {"name": "paperless-ngx Releases (Übersicht)", "url": "https://github.com/paperless-ngx/paperless-ngx/releases"}
           ]
         }
       ]
@@ -165,20 +119,11 @@
       "titel": "🤖 Haushaltsroboter",
       "artikel": [
         {
-          "titel": "1X NEO: erste Auslieferungen an Privatkunden",
-          "aufmacher": "1X hat in dieser Woche begonnen, seinen Haushaltsroboter NEO an Early-Access-Kunden in den USA auszuliefern.",
-          "fakten": "Der Preis liegt bei 20.000 US-Dollar (rund 17.970 Euro) beim Kauf oder 499 US-Dollar im Monat (rund 448 Euro) im Abo, mit 200 US-Dollar Anzahlung. Die Fabrik in Hayward, Kalifornien, läuft seit April 2026 mit 10.000 Einheiten Jahreskapazität, bis Ende 2027 sollen es mehr als 100.000 werden; die erste Jahresproduktion war binnen fünf Tagen nach Vorbestellstart ausverkauft. Tester berichten, NEO schaffe keine Aufgabe ohne menschlichen Fernsteuerer. Europa bleibt für 2027 angekündigt.",
-          "einordnung": "Erste echte Lieferung statt Ankündigung — aber der Betrieb bleibt ein Fernsteuerungs-Abo. Für den Alltag ist das noch kein Produkt, sondern ein Beobachtungsposten: Wer 2027 in Europa kaufen will, sollte die Teleoperator-Quote im Auge behalten.",
-          "quellen": [
-            {
-              "name": "Startup Fortune – 1X begins delivering NEO (22.10.2026)",
-              "url": "https://startupfortune.com/1x-starts-delivering-its-20000-neo-home-robot-teleoperator-and-all/"
-            },
-            {
-              "name": "Roboterwelt – Haushaltsroboter 2026: Zahlen, Humanoide, Grenzen",
-              "url": "https://www.roboterwelt.de/roboter-als-haushaltshilfe"
-            }
-          ]
+          "titel": "Haushaltsroboter: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     }
