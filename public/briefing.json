@@ -1,14 +1,14 @@
 {
-  "datum": "Samstag, 31.10.2026",
+  "datum": "Sonntag, 01.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "4,3 °C · Regen 0 % · UV 2,4",
-          "aufmacher": "Klarer Himmel über Troisdorf, trocken — Tageshöchstwert 12,6 °C, Tiefstwert 4,2 °C.",
-          "fakten": "UV-Index 2,4 (niedrig), kein Niederschlag zu erwarten.",
-          "einordnung": "Gute Bedingungen für Außenarbeiten und Dach-Check vor dem Winter.",
+          "titel": "8,2 °C · Regen 8 % · UV 2",
+          "aufmacher": "☁️ bedeckt über Troisdorf — Tageshöchstwert 10,7 °C, Tiefstwert 7,8 °C.",
+          "fakten": "Regenwahrscheinlichkeit 8 Prozent, UV-Index 2 (niedrig).",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -17,8 +17,15 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Keine Termine in den nächsten 3 Tagen",
-          "aufmacher": "Der Google-Kalender ist für die kommenden drei Tage leer.",
+          "titel": "04.11.2026 09:00: Quixx-Meeting",
+          "aufmacher": "Mittwoch, 09:00 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "04.11.2026 15:00: KGG – Krankengymnastik am Gerät (Melvin)",
+          "aufmacher": "Mittwoch, 15:00 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -29,23 +36,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Fahrradklimatest: Acht Kommunen im Kreis fehlen noch Stimmen",
-          "aufmacher": "Noch bis 30. November können Radfahrende im Rhein-Sieg-Kreis ihre Kommune benoten — acht der 19 Städte und Gemeinden brauchen dafür noch Teilnehmer.",
-          "fakten": "Bis zum 22. Oktober hatten 1.266 Personen mitgemacht, rund 100 weniger als zum gleichen Zeitpunkt 2024. Elf Kommunen haben die Marke von 50 Bewertungen erreicht, die für eine Auswertung nötig ist; Rheinbach und Sankt Augustin führen mit je 131 Stimmen, Ruppichteroth liegt bei 2. Der Test von ADFC und Bundesverkehrsministerium stellt 27 gleichbleibende Fragen zu Sicherheit, Komfort und Infrastruktur.",
-          "einordnung": "Für Troisdorf und die Nachbarkommunen ein Signal für Standortqualität — bei Radpendlern wird die Nordbrücken-Sperrung das bestimmende Thema sein.",
+          "titel": "Linie 508 ab morgen gekürzt: fünf Haltestellen fallen weg",
+          "aufmacher": "Weil die Melanbogenbrücke für Fahrzeuge über 3,5 Tonnen gesperrt ist, kürzen RSK und RSVG die Buslinie 508 ab Montag, 2. November, zwischen Troisdorf Kuttgasse und Menden Brücke.",
+          "fakten": "Nicht mehr angefahren werden Ursulaplatz (Ersatz: Linien 501, 503 und 507), Im Grund (Ersatz: 506) und Tierheim (Ersatz: Haltestelle AGGUA-Bad der Linie 506); Aggerdeich und Mannstaettwerke entfallen ersatzlos. Ohne die Kürzung wären zusätzliche Fahrzeuge und Personal nötig geworden. Parallel läuft bis Montag, 2. November, 6 Uhr, die Vollsperrung der Kölner Straße auf Höhe Hausnummer 152 wegen der Instandsetzung eines Schachtdeckels.",
+          "einordnung": "Betrifft die Pendlerachse Troisdorf-Süd Richtung Menden — ab Montag früh braucht es eine Alternative, sonst wird der Arbeitsweg spürbar länger.",
           "quellen": [
-            {"name": "Rundschau Online: ADFC-Fahrradklimatest 2026 im Kreis", "url": "https://www.rundschau-online.de/region/rhein-sieg/siegburg/adfc-fahrradklimatest-2026-im-kreis-fehlen-noch-stimmen-1406382"},
-            {"name": "ADFC: Fahrradklima-Test 2026", "url": "https://fahrradklima-test.adfc.de/"}
+            {"name": "Stadt Troisdorf: Kürzung der Linie 508 ab 02.11.2026", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kuerzung-der-linie-508-ab-02-11-2026/"},
+            {"name": "Stadt Troisdorf: Pressemeldungen 2026", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/"}
           ]
         },
         {
-          "titel": "Blaulicht aus dem Kreis: Rettungswagen erwischt Pferd, Pedelec-Fahrerin verletzt",
-          "aufmacher": "In der Nacht zum Freitag ist in Windeck ein Rettungswagen im Einsatz mit einem Pferd auf der Fahrbahn kollidiert; am Donnerstagnachmittag wurde in Hennef eine 61-jährige Pedelec-Fahrerin bei einem Abbiegeunfall leicht verletzt.",
-          "fakten": "Der Rettungswagen war gegen 3.10 Uhr mit Blaulicht und Einsatzhorn auf der Dammsbachstraße in Windeck-Helpenstell unterwegs, als auf der Kreisstraße 23 zwischen Obernau und Dreisel ein Pferd auftauchte; am Steuer saß ein 47-Jähriger. In Hennef war ein 63-Jähriger aus Hückeswagen mit seinem Audi auf der Frankfurter Straße unterwegs, als es an der Kreuzung zur Siegfeldstraße zum Zusammenstoß mit der entgegenkommenden Pedelec-Fahrerin kam.",
-          "einordnung": "Zwei Meldungen aus dem Kreis — für die Routenwahl am Wochenende relevant, mehr nicht.",
+          "titel": "900 Cannabispflanzen in Troisdorf-Spich entdeckt",
+          "aufmacher": "Die Kriminalpolizei hat am Dienstag (27. Oktober) in einem Einfamilienhaus in Spich eine professionell angelegte Cannabisplantage mit rund 900 Pflanzen gefunden.",
+          "fakten": "Drei Kellerräume waren eigens dafür umgebaut worden. Durchsucht wurden fünf Objekte: das Haus in Spich, zwei Wohnungen und ein Ladenlokal in Sankt Augustin sowie eine Wohnung in Ruppichteroth. Weil am Stromanschluss manipuliert worden war, wurden die Stadtwerke Troisdorf hinzugezogen; das THW half beim Abtransport von Pflanzen und Technik. Drei Tatverdächtige im Alter von 42 bis 49 Jahren wurden nach erkennungsdienstlicher Behandlung entlassen, das Kriminalkommissariat 3 ermittelt weiter.",
+          "einordnung": "Manipulierte Stromanschlüsse sind bei solchen Anlagen der klassische Brandauslöser — für Vermieter im Bestand ein Argument, Kellerzugänge und Zähleranlagen im Blick zu behalten.",
           "quellen": [
-            {"name": "Polizei Rhein-Sieg-Kreis (ots): Rettungswagen kollidiert mit Tier", "url": "https://www.presseportal.de/blaulicht/pm/65853/6380989"},
-            {"name": "Polizei Rhein-Sieg-Kreis (ots): Radfahrerin bei Unfall in Hennef leicht verletzt", "url": "https://www.presseportal.de/blaulicht/pm/65853/6381051"}
+            {"name": "POL-SU: Rund 900 Cannabispflanzen entdeckt (Presseportal)", "url": "https://www.presseportal.de/blaulicht/pm/65853/6379612"},
+            {"name": "Radio Bonn/Rhein-Sieg: 900 Cannabispflanzen in Troisdorf entdeckt", "url": "https://www.radiobonn.de/artikel/900-cannabispflanzen-in-troisdorf-entdeckt-2792252"}
           ]
         }
       ]
@@ -54,23 +61,23 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Kaufpreise treten auf der Stelle, Mieten ziehen an",
-          "aufmacher": "Der IW-Wohnindex für das dritte Quartal 2026 zeigt eine zweigeteilte Entwicklung: Kaufpreise stagnieren, Mieten steigen deutlich.",
-          "fakten": "Eigentumswohnungen verteuerten sich gegenüber dem Vorjahresquartal um 0,3 Prozent, Ein- und Zweifamilienhäuser um 0,4 Prozent; gegenüber dem Höchststand von 2022 liegen die Kaufpreise gut 10 Prozent niedriger. Die Angebotsmieten legten um 4,5 Prozent im Jahresvergleich und 1,2 Prozent gegenüber dem Vorquartal zu, im Umland der sieben größten Städte sogar um 5,2 Prozent. Das IW nennt die höheren Finanzierungskosten als Ursache: Weniger Kaufinteressenten drängen in den Mietmarkt.",
-          "einordnung": "Für Bestandsobjekte zählt die Miete, nicht der Kaufpreis — 4,5 Prozent Mietwachstum stützen den Cashflow, während stagnierende Kaufpreise bei teurer Finanzierung eher antizyklische Einstiege eröffnen.",
+          "titel": "Bauzinsen bleiben über vier Prozent",
+          "aufmacher": "Für zehn Jahre Zinsbindung liegen die Topkonditionen Ende Oktober bei 3,90 Prozent (60 Prozent Beleihung) und 4,33 Prozent (90 Prozent Beleihung).",
+          "fakten": "Finanztip nennt als Stand 25. Oktober rund 4,4 Prozent für zehn Jahre und verweist darauf, dass die Zinsen im Oktober nach dem Anstieg seit Juli erstmals wieder leicht gesunken sind. Bei Baufivergleich kostet die 15-jährige Bindung 4,58 Prozent, die 20-jährige 4,69 Prozent (jeweils 90 Prozent Beleihung); die fünfjährige liegt mit 4,44 Prozent über der zehnjährigen. Für die EZB-Leitzinsen sind seit dem 16. September keine Änderungen verzeichnet.",
+          "einordnung": "Bei 4,33 Prozent Zins und zwei Prozent anfänglicher Tilgung sind das 527,50 Euro je 100.000 Euro Darlehen im Monat — beim MFH entscheidet damit die Eigenkapitalquote über den Cashflow, nicht der Zinssatz allein.",
           "quellen": [
-            {"name": "IW-Wohnindex Q3 2026 (IW Köln, PDF)", "url": "https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2026/IW-Report_2026-Wohnindex-Q3-2026.pdf"},
-            {"name": "Dr. Klein: Immobilienpreise Q3 2026", "url": "https://www.drklein.de/deutschlands-immobilienmaerkte-oktober-2026.html"}
+            {"name": "Baufivergleich: Aktuelle Bauzinsen November 2026", "url": "https://baufivergleich.de/aktuelle-zinsen/"},
+            {"name": "Finanztip: Aktuelle Bauzinsen", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
           ]
         },
         {
-          "titel": "Baukosten steigen so stark wie seit drei Jahren nicht",
-          "aufmacher": "Der Neubau konventionell gefertigter Wohngebäude war im August 2026 um 5,5 Prozent teurer als im Vorjahr — der stärkste Anstieg seit drei Jahren.",
-          "fakten": "Im vorherigen Berichtsmonat Mai lag der Zuwachs bei 5,0 Prozent, gegenüber Mai 2026 zogen die Preise um 1,0 Prozent an. Rohbauarbeiten verteuerten sich um 5,4 Prozent, Ausbauarbeiten um 5,7 Prozent, Instandhaltungsarbeiten um 6,0 Prozent. Überdurchschnittlich teuer wurden Dachdeckungsarbeiten (+7,6 Prozent), Zimmer- und Holzbau (+7,2 Prozent) und Elektroanlagen (+7,2 Prozent); Heizanlagen und zentrale Wassererwärmung — also Wärmepumpen — legten um 5,2 Prozent zu.",
-          "einordnung": "Instandhaltung und Heizungstausch werden teurer, während die Kaufpreise stehen — Instandhaltungsrücklage und Sanierungsreihenfolge (Moselstr. 46) sollte man an diesen Preisen neu messen.",
+          "titel": "Mieten in Troisdorf ziehen um knapp sieben Prozent an",
+          "aufmacher": "In Troisdorf liegt die durchschnittliche Angebotsmiete für Wohnungen im dritten Quartal 2026 bei 10,74 Euro je Quadratmeter — 6,77 Prozent mehr als vor einem Jahr (10,05 Euro).",
+          "fakten": "Im Rhein-Sieg-Kreis sind es 10,22 Euro je Quadratmeter, gut sechs Prozent mehr als im Vorjahresquartal. Andere Erhebungen liegen höher: ohne-makler nennt 11,70 Euro für 2026 nach 11,56 Euro im Vorjahr und damit nahezu stagnierende Werte — die Methoden unterscheiden sich, die Richtung ist bei beiden nach oben. Häuser zur Miete kosten dort 13,43 Euro je Quadratmeter, ein Plus von 11,9 Prozent gegenüber 12,00 Euro.",
+          "einordnung": "Sechs bis sieben Prozent Mietwachstum bei gut vier Prozent Finanzierungszins sind der Hebel für die Bestandshalter-Strategie — vorausgesetzt, Kappungsgrenze und Mietpreisbremse lassen die Anpassung im jeweiligen Objekt überhaupt zu.",
           "quellen": [
-            {"name": "Destatis: Baupreise für Wohngebäude im August 2026", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_360_61261.html"},
-            {"name": "tagesschau: Baupreise steigen besonders stark", "url": "https://www.tagesschau.de/wirtschaft/konjunktur/bauen-teuer-baukosten-bauzinsen-100.html"}
+            {"name": "ImmoScout24: Mietspiegel Troisdorf 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"},
+            {"name": "ohne-makler: Mietspiegel Troisdorf 2026", "url": "https://www.ohne-makler.net/mietspiegel/nordrhein-westfalen/troisdorf/"}
           ]
         }
       ]
@@ -79,23 +86,21 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Inflation fällt im Oktober auf 2,8 Prozent",
-          "aufmacher": "Die Teuerung in Deutschland hat sich im Oktober spürbar abgeschwächt: Die vorläufige Inflationsrate liegt bei 2,8 Prozent, nach 3,3 Prozent im September.",
-          "fakten": "Gegenüber September sanken die Verbraucherpreise um 0,2 Prozent, die Kerninflation ohne Nahrungsmittel und Energie fiel auf 2,1 Prozent. Energie blieb mit +12,2 Prozent der Treiber, nach +14,9 Prozent im Vormonat; Lebensmittel verteuerten sich nur um 0,4 Prozent, Dienstleistungen um 2,5 Prozent. Grund für die Entlastung ist die Anfang Oktober gesenkte Energiesteuer auf Kraftstoffe. Analysten hatten mit 3,0 Prozent gerechnet, die Commerzbank erwartet um die Jahreswende wieder über drei Prozent.",
-          "einordnung": "Für private Entnahme und Mietanpassung ist 2,8 statt 3,3 Prozent ein kleiner Spielraum — die Energiepreise bleiben der Unsicherheitsfaktor.",
+          "titel": "EZB lässt den Leitzins bei 2,5 Prozent — Dezember-Erhöhung wird erwartet",
+          "aufmacher": "Die Europäische Zentralbank hat ihre Leitzinsen am 29. Oktober unverändert bei 2,5 Prozent belassen und damit eine Zinspause eingelegt.",
+          "fakten": "Als Begründung nennt die EZB die hartnäckige Teuerung: Die Inflationsrate im Euroraum lag zuletzt bei 3,8 Prozent, nach 3,2 Prozent im August, während das Ziel bei 2,0 Prozent liegt. Bereits im September hatten die Währungshüter angehoben; Ökonomen rechnen nun mit einem weiteren Schritt im Dezember. Auch die US-Notenbank Fed ließ ihre Sätze unverändert.",
+          "einordnung": "Ein Dezember-Schritt träfe die Anschlussfinanzierung härter als den Neukauf — wer 2027 eine Zinsbindung auslaufen sieht, sollte die Frist jetzt im Blick behalten statt auf fallende Zinsen zu warten.",
           "quellen": [
-            {"name": "Destatis: Inflationsrate im Oktober 2026 voraussichtlich +2,8 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_382_611.html"},
-            {"name": "tagesschau: Inflationsrate fällt im Oktober auf 2,8 Prozent", "url": "https://www.tagesschau.de/wirtschaft/verbraucher/inflationsrate-deutschland-oktober-100.html"}
+            {"name": "tagesschau: EZB hält Leitzins unverändert", "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/ezb-570.html"}
           ]
         },
         {
-          "titel": "ifo-Geschäftsklima steigt das sechste Mal in Folge",
-          "aufmacher": "Die Stimmung in der deutschen Wirtschaft hat sich im Oktober erneut verbessert: Der ifo-Geschäftsklimaindex stieg um 0,3 Punkte auf 90,2 Zähler, nach 89,9 im September.",
-          "fakten": "Es ist der sechste Anstieg in Folge und der höchste Stand seit dem Frühjahr 2023; befragt werden monatlich rund 9.000 Unternehmen. Getragen wurde der Anstieg von besseren Erwartungen, während die Bewertung der aktuellen Lage schwächer ausfiel — Analysten hatten eine Stagnation bei 89,9 Punkten erwartet. ifo-Präsident Clemens Fuest: „Die Konjunkturbelebung setzt sich fort.“",
-          "einordnung": "Eine sich belebende Industrie stützt Mieternachfrage und Preise im Umland — sie macht aber auch weitere Zinsanstiege wahrscheinlicher, was für geplante Finanzierungen gegen die aktuelle Zinsruhe spricht.",
+          "titel": "Dax beendet starke Woche knapp unter 26.000 Punkten",
+          "aufmacher": "Der Dax schloss am Freitag 0,9 Prozent im Minus bei 25.808 Punkten und konnte die Marke von 26.000 Zählern damit nicht halten.",
+          "fakten": "Auf Wochensicht bleibt ein Plus von 2,5 Prozent, für den Monat Oktober ebenfalls 2,5 Prozent. Am Donnerstag hatte der Index mit 26.040 Punkten ein Achtwochenhoch erreicht — der höchste Schlusskurs seit Anfang September und der größte Tagesgewinn in Punkten seit Juli. Eine Serie von fünf Gewinntagen in Folge, zuletzt im Januar gelungen, verpasste der Index.",
+          "einordnung": "Für laufende ETF-Sparpläne ändert das nichts; bemerkenswert ist, dass die Rally auf soliden Bilanzen ruht und nicht auf Zinssenkungshoffnungen — das macht sie gegen einen Dezember-Schritt der EZB robuster.",
           "quellen": [
-            {"name": "ifo Institut: Geschäftsklimaindex gestiegen (Oktober 2026)", "url": "https://www.ifo.de/pressemitteilung/2026-10-26/ifo-geschaeftsklimaindex-gestiegen-oktober-2026"},
-            {"name": "tagesschau: Ifo-Index — Konjunkturbelebung setzt sich fort", "url": "https://www.tagesschau.de/wirtschaft/konjunktur/ifo-index-oktober-102.html"}
+            {"name": "Handelsblatt: Dax schließt im Minus – und reißt die 26.000-Punkte-Marke", "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-minus-und-reisst-die-26.000-punkte-marke/100266086.html"}
           ]
         }
       ]
@@ -104,19 +109,23 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "paperless-ngx: heute 3.4.1 — Fehlerbehebungen und weniger Speicher im Leerlauf",
-          "aufmacher": "Rund einen Tag nach dem großen Sprung auf 3.4.0 hat paperless-ngx heute Morgen Version 3.4.1 nachgeschoben.",
-          "fakten": "Die Version bringt ausschließlich Korrekturen: fünf Fehlerbehebungen an den neuen PDF-Bedienelementen, den Berechtigungsprüfungen und der Dokumentliste. Zusätzlich verbraucht die Anwendung im Leerlauf weniger Arbeitsspeicher, weil mehr Importe erst bei Bedarf geladen werden. Auf dem NAS läuft derzeit 3.3.3, verfügbar ist 3.4.1.",
-          "einordnung": "Unkritisches Wartungsupdate — nach dem Backup einspielen. Zwei Container auf dem NAS stehen seit Längerem still: „omnivoice“ ist vor zwei Wochen mit Exit-Code 137 (harter Abbruch, häufig Speichermangel) ausgestiegen, der Firecrawl-Init-Container hat regulär beendet.",
-          "quellen": [
-            {"name": "paperless-ngx v3.4.1 Release Notes (GitHub)", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.1"},
-            {"name": "paperless-ngx Releases (Übersicht)", "url": "https://github.com/paperless-ngx/paperless-ngx/releases"}
-          ]
+          "titel": "Home Assistant: Update für den MCP-Server",
+          "aufmacher": "Der Home-Assistant-MCP-Server steht in Version 9.1.0.dev3285 bereit, installiert ist dev3282.",
+          "fakten": "Es handelt sich um einen Dev-Build der Integrationsschicht, über die ich HA-Daten lese und Dienste aufrufe; drei Builds Sprung sind ein Routine-Bump ohne dokumentierte funktionale Änderung. Sonst ist nichts offen: HA-Core, Add-ons und HACS melden keine Updates. paperless-ngx ist inzwischen von 3.3.3 auf 3.4.1 aktualisiert und läuft gesund.",
+          "einordnung": "Dev-Builds können die Werkzeugschnittstelle brechen — ich installiere erst nach einer Sicherung, wie bei HA-Änderungen üblich.",
+          "quellen": []
+        },
+        {
+          "titel": "Zertifikat für quixx24.de läuft am 6. Dezember ab",
+          "aufmacher": "Das TLS-Zertifikat der Hauptdomain quixx24.de ist noch bis 6. Dezember 2026 gültig, das Wildcard-Zertifikat für jarvis-app.quixx24.com bis 27. Januar 2027.",
+          "fakten": "Beide Zertifikate wurden regulär ausgestellt (quixx24.de am 7. September, die Wildcard-Variante am 29. Oktober). Ob die Erneuerung bei quixx24.de automatisch erfolgt, habe ich nicht verifiziert — die Laufzeit von 90 Tagen spricht für eine ACME-Ausstellung.",
+          "einordnung": "Ich prüfe die Verlängerung Ende November; falls sie ausbleibt, wäre die Firmenseite über Wochenbeginn hinaus nicht mehr vertrauenswürdig erreichbar.",
+          "quellen": []
         }
       ]
     },
     {
-      "titel": "🤖 Haushaltsroboter",
+      "titel": "Haushaltsroboter",
       "artikel": [
         {
           "titel": "Haushaltsroboter: nichts Neues.",
