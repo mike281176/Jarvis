@@ -1,14 +1,14 @@
 {
-  "datum": "Montag, 02.11.2026",
+  "datum": "Dienstag, 03.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "7 °C · Regen 92 % · UV 0,3",
-          "aufmacher": "☁️ bedeckt, Tageshöchstwert 8,7 °C — Schirm einpacken.",
-          "fakten": "Minimum 6,6 °C, Maximum 8,7 °C. Regenwahrscheinlichkeit 92 Prozent, UV-Index 0,3.",
-          "einordnung": "",
+          "titel": "6,1 °C · Regen 14 % · UV 2,1",
+          "aufmacher": "⛅ leicht bewölkt, Tageshöchstwert 9,8 °C, Tiefstwert 5,2 °C.",
+          "fakten": "Regenwahrscheinlichkeit 14 %, UV-Index 2,1 (niedrig).",
+          "einordnung": "Trocken genug für Außenarbeiten — Jacke bleibt trotzdem Pflicht.",
           "quellen": []
         }
       ]
@@ -29,6 +29,13 @@
           "fakten": "",
           "einordnung": "",
           "quellen": []
+        },
+        {
+          "titel": "06.11.2026 14:30: KGG – Krankengymnastik am Gerät (Melvin)",
+          "aufmacher": "Freitag, 14:30 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     },
@@ -36,23 +43,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Linie 508 fährt ab heute verkürzt — fünf Haltestellen fallen weg",
-          "aufmacher": "Wegen der Ablastung der Melanbogenbrücke fährt die Linie 508 ab heute nur noch zwischen Troisdorf Kuttgasse und Menden Brücke.",
-          "fakten": "RSK und RSVG haben die Linie gekürzt, weil sonst zusätzliche Fahrzeuge und Personal nötig geworden wären. Nicht mehr angefahren werden Ursulaplatz (Ersatz: Linien 501, 503, 507), Im Grund (Ersatz: Linie 506) und Tierheim (Ersatz: Haltestelle AGGUA-Bad der Linie 506); Aggerdeich und Mannstaettwerke entfallen ersatzlos. Hintergrund ist die Melanbogenbrücke an der L143 (Siegstraße): Sie ist seit Freitag, 23. Oktober, für Kraftfahrzeuge über 3,5 Tonnen gesperrt, weil eine weitere Ablastung von bisher 14 auf 3,5 Tonnen Gesamtgewicht zur Verkehrssicherheit nötig war. Auch der Schienenersatzverkehr der Bahn wurde auf andere Strecken umgeleitet.",
-          "einordnung": "Für Quixx24 heißt das: Alles über 3,5 Tonnen muss den Siegübergang großräumig umfahren. Straßen.NRW will das Planfeststellungsverfahren für den Ersatzneubau bis zum Jahreswechsel 2026/27 bei der Bezirksregierung Köln beantragen — die Einschränkung bleibt also voraussichtlich Jahre bestehen.",
+          "titel": "Einbruch in Spicher Lagerhalle: 30.000 Euro Schaden",
+          "aufmacher": "Unbekannte sind am Wochenende in eine Firmenlagerhalle in Troisdorf-Spich eingebrochen und haben Kupfer und Werkzeug gestohlen.",
+          "fakten": "Der Schaden wird auf etwa 30.000 Euro geschätzt. Die Täter hebelten zwischen Samstag, 31. Oktober, 17:00 Uhr, und Sonntag, 1. November, 15:40 Uhr, ein Zufahrtstor an der Echternacher Straße auf und beschädigten anschließend das Rolltor der Halle. Ein Mitarbeiter bemerkte am Sonntagnachmittag die beschädigte Scheibe und informierte die Polizei. Die Kripo ermittelt wegen besonders schweren Falls des Diebstahls, Zeugen erreichen die Polizei unter 02241 541-3221.",
+          "einordnung": "Kupferdiebstähle häufen sich im Kreis — Mitte Oktober traf es einen Metallbetrieb in Much, nun eine Halle in Spich. Wer Lagerflächen betreibt, sollte Zufahrten und Rolltore nachts beleuchten; die Täter suchen gezielt unbewachte Gewerbegrundstücke.",
           "quellen": [
-            {"name": "Stadt Troisdorf: Kürzung der Linie 508 ab 02.11.2026", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kuerzung-der-linie-508-ab-02-11-2026/"},
-            {"name": "Straßen.NRW: Melanbogenbrücke für Fahrzeuge über 3,5 Tonnen gesperrt", "url": "https://www.strassen.nrw.de/de/meldung/l143-melanbogenbruecke-zwischen-troisdorf-und-sankt-augustin-wird-fuer-fahrzeuge-ueber-3-5-tonnen-gesperrt.html"}
+            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis, PM vom 02.11.2026", "url": "https://www.presseportal.de/blaulicht/pm/65853/6382550"},
+            {"name": "Presseportal, Newsroom Polizei Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/nr/65853"}
           ]
         },
         {
-          "titel": "ADFC-Fahrradklimatest: 8 der 19 Kreis-Kommunen fehlt noch die Mindestbeteiligung",
-          "aufmacher": "Nur 11 der 19 Kommunen im Rhein-Sieg-Kreis haben die Marke von 50 Teilnehmenden erreicht — ohne sie gibt es keine wissenschaftliche Auswertung.",
-          "fakten": "Der ADFC-Fahrradklimatest läuft noch bis Ende November 2026; Radfahrende bewerten ihre Stadt oder Gemeinde online in rund 30 Fragen. Für eine belastbare Auswertung braucht jede Kommune mindestens 50 Teilnehmende. Im Rhein-Sieg-Kreis haben diese Marke bislang 11 der 19 Kommunen erreicht.",
-          "einordnung": "Die Ergebnisse fließen in die kommunale Verkehrsplanung, auch in Troisdorf. Wer täglich Rad fährt, sollte die zehn Minuten investieren — die Alternative ist, dass die Stadt ohne Datengrundlage plant.",
+          "titel": "Alkoholverbot in der Troisdorfer City: Entscheidung fällt erst im Hauptausschuss",
+          "aufmacher": "Der Stadtrat hat das Alkoholkonsumverbot in der Fußgängerzone erneut beraten, aber nicht entschieden — das soll im Hauptausschuss im November passieren.",
+          "fakten": "Damit ist auch offen, ob das CDU-Bürgerbegehren in einen Bürgerentscheid mündet; das dürfte sich mit der Ausschussentscheidung klären. Bereits in der Ratssitzung am 14. Oktober waren die Vorlagen zum Alkoholverbot und zu den Kita-Elternbeiträgen vertagt worden. Ein festes Datum für die Ausschusssitzung war zuletzt nicht veröffentlicht.",
+          "einordnung": "Für Immobilien in der Innenstadt kein Nebenschauplatz: Ein Verbot verändert Aufenthaltsqualität und Frequenz in der Fußgängerzone. Bei Ankäufen in City-Lage würde ich die Entscheidung abwarten, bevor ich die Mikrolage bewerte.",
           "quellen": [
-            {"name": "ADFC-Fahrradklima-Test (offiziell)", "url": "https://fkt.adfc.de/"},
-            {"name": "Kölner Stadt-Anzeiger: Fahrradklimatest 2026 im Kreis", "url": "https://www.ksta.de/region/rhein-sieg-bonn/siegburg/adfc-fahrradklimatest-2026-im-kreis-fehlen-noch-stimmen-1406382"}
+            {"name": "General-Anzeiger Bonn, 26.10.2026", "url": "https://ga.de/region/sieg-und-rhein/troisdorf/darum-ist-das-alkoholverbot-in-der-troisdorfer-city-noch-nicht-beschlossen_aid-156891597"},
+            {"name": "SPD Troisdorf, Ratssitzung 14.10.2026", "url": "https://www.spd-troisdorf.de/2026/10/14/neuigkeiten-stadtrat-ratssitzung-entscheidungen-alkoholverbot-kita-elternbeitraege/"}
           ]
         }
       ]
@@ -61,23 +68,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Baugenehmigungen plus 12,1 Prozent — Mehrfamilienhäuser legen 14,5 Prozent zu",
-          "aufmacher": "Von Januar bis August 2026 wurden in Deutschland 169.400 Wohnungen genehmigt, 12,1 Prozent mehr als im Vorjahr — der stärkste Zuwachs liegt bei Mehrfamilienhäusern.",
-          "fakten": "Im August 2026 wurden 20.600 Wohnungen genehmigt, 6,8 Prozent mehr als im August 2025; davon 16.500 im Neubau (+4,2 Prozent) und 4.200 durch Umbau (+18,2 Prozent). In neu zu errichtenden Wohngebäuden waren es von Januar bis August 137.500 Wohnungen (+12,7 Prozent). Mehrfamilienhäuser, die zahlenmäßig stärkste Gebäudeart, kommen auf 90.600 Neubauwohnungen — ein Plus von 14,5 Prozent oder 11.500 Wohnungen. Einfamilienhäuser: 31.500 (+7,8 Prozent), Zweifamilienhäuser: 10.000 (+21,7 Prozent). Die Kaufpreise ziehen dagegen kaum an: Im Rhein-Sieg-Kreis liegen Wohnungen im dritten Quartal 2026 bei 3.077 Euro je Quadratmeter, nur 2,8 Prozent über dem Vorjahr.",
-          "einordnung": "Mehr genehmigte MFH-Wohnungen und stagnierende Kaufpreise sind genau die Konstellation, in der Ankauf lohnt — das Angebot kommt in 18 bis 30 Monaten auf den Markt, die Zinsen aber schon vorher. Für die 600k-EK-Strategie heißt das: 2027 wird der Wettbewerb um fertige MFH größer, nicht kleiner.",
+          "titel": "Bauzinsen bleiben über 4 Prozent — der Spielraum wird kleiner",
+          "aufmacher": "Für zehnjährige Darlehen liegt der Topzins am 3. November bei 4,20 bis 4,50 Prozent; seit Juli sind die Bauzinsen um rund 0,8 Prozentpunkte gestiegen.",
+          "fakten": "Dr. Klein nennt für den Stichtag 3. November 2026 eine Spanne von 4,20 bis 4,50 Prozent effektiv je nach Zinsbindung. Finanztip ermittelte am 25. Oktober 4,4 Prozent für 10 Jahre, 4,7 Prozent für 15 und 4,9 Prozent für 20 Jahre. Im Oktober gingen die Renditen der Bundesanleihen leicht zurück und brachten kurzzeitig etwas Luft. Der Dr.-Klein-Expertenrat erwartet bis Jahresende stabile bis leicht steigende Zinsen mit einem Topzins zwischen 4,0 und 4,5 Prozent.",
+          "einordnung": "Auf 600.000 Euro Darlehen kostet jeder Zehntelprozent rund 50 Euro Zins im Monat: 4,2 Prozent bedeuten 2.100 Euro, 4,5 Prozent 2.250 Euro. Bei 4,4 Prozent und zwei Prozent Anfangstilgung liegt die Annuität bei 3.200 Euro — die Kaltmiete muss das tragen, sonst ist der Cashflow weg, bevor die Refinanzierung greift. Warten auf sinkende Zinsen ist derzeit die teurere Wette.",
           "quellen": [
-            {"name": "Destatis: Baugenehmigungen August 2026 (+6,8 %)", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_370_3111.html"},
-            {"name": "ImmoScout24: Wohnungspreise Rhein-Sieg-Kreis Q3 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/wohnungspreise"}
-          ]
-        },
-        {
-          "titel": "Troisdorf: Hauspreise plus 15,7 Prozent, Wohnungen nur plus 2,8",
-          "aufmacher": "Der Quadratmeterpreis für Häuser in Troisdorf ist 2026 auf 3.643 Euro gestiegen — 15,65 Prozent mehr als im Vorjahr, während Wohnungen nur um 2,35 Prozent auf 3.162 Euro zulegten.",
-          "fakten": "Nach Erhebungen von Engel & Völkers (Stand 26. Oktober 2026) kostete der Haus-Quadratmeter in Troisdorf 2025 noch 3.150 Euro, 2024 waren es 3.154 Euro. Bei Eigentumswohnungen liegt der Wert 2026 bei 3.162 Euro je Quadratmeter nach 3.090 Euro im Vorjahr. Im Kreisvergleich ist Troisdorf bei Wohnungen mit 3.358 Euro je Quadratmeter (ImmoScout24, Q3 2026) Vierter hinter Siegburg (3.559), Niederkassel (3.482) und Bornheim (3.370). Zum Vergleich: Häuser kosten in Sankt Augustin 3.702 Euro je Quadratmeter, in Siegburg 3.057 Euro.",
-          "einordnung": "Der Sprung bei den Häusern ist ein Angebotspreise-Effekt — es kommen wenige, dafür teure Objekte auf den Markt. Für MFH zählt die Wohnungszahl: 3.358 Euro je Quadratmeter bei 10,74 Euro Miete ergibt eine Bruttorendite von rund 3,8 Prozent vor Kosten — bei 4,0 bis 4,3 Prozent Finanzierungszins trägt sich das nur mit Eigenkapital und Mietsteigerung.",
-          "quellen": [
-            {"name": "Engel & Völkers: Immobilienpreise Troisdorf (26.10.2026)", "url": "https://www.engelvoelkers.com/de-de/immobilienpreise/nordrhein-westfalen/troisdorf/"},
-            {"name": "ImmoScout24: Wohnungspreise Rhein-Sieg-Kreis Q3 2026", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/wohnungspreise"}
+            {"name": "Dr. Klein: Zinsentwicklung Baufinanzierung (Stand 03.11.2026)", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"},
+            {"name": "Finanztip: Aktuelle Bauzinsen (Stand 25.10.2026)", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
           ]
         }
       ]
@@ -86,23 +83,13 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Inflation 3,3 Prozent — Energie plus 14,9 Prozent, Kernrate bleibt bei 2,4",
-          "aufmacher": "Die Teuerung in Deutschland hat im September mit 3,3 Prozent den höchsten Stand seit Dezember 2023 erreicht — getrieben fast ausschließlich von Energie.",
-          "fakten": "Der Verbraucherpreisindex lag im September 2026 um 3,3 Prozent über dem Vorjahresmonat und 0,6 Prozent über August; im Juli waren es 2,8, im August 2,9 Prozent. Energie verteuerte sich um 14,9 Prozent: Kraftstoffe plus 37,1 Prozent, leichtes Heizöl plus 74,9 Prozent, feste Brennstoffe plus 15,6 Prozent — dagegen Strom minus 5,5 Prozent, Erdgas minus 2,8 Prozent, Fernwärme minus 1,0 Prozent. Die Kerninflation ohne Nahrung und Energie liegt unverändert bei 2,4 Prozent, Nahrungsmittel nur bei plus 0,4 Prozent, Dienstleistungen bei plus 2,7 Prozent, Nettokaltmieten bei plus 1,9 Prozent. Der Tankrabatt gilt erst ab 1. Oktober und ist im Septemberwert noch nicht enthalten.",
-          "einordnung": "Die Kernrate bei 2,4 Prozent ist die gute Nachricht: Es gibt bislang keine Zweitrundeneffekte. Für die Immobilie heißt das, dass Nebenkosten — Heizöl, Kraftstoffe — weiter der Kostentreiber in der Betriebskostenabrechnung bleiben, nicht die Miete selbst.",
+          "titel": "EZB lässt den Leitzins bei 2,50 Prozent — trotz steigender Energiepreise",
+          "aufmacher": "Die Europäische Zentralbank hat am 29. Oktober alle drei Leitzinssätze unverändert gelassen.",
+          "fakten": "Der Einlagensatz bleibt bei 2,50 Prozent, der Satz für Hauptrefinanzierungsgeschäfte bei 2,65 Prozent, die Spitzenrefinanzierungsfazilität bei 2,90 Prozent. Zur Begründung nennt der EZB-Rat weiter steigende Energiepreise, die Aufwärtsrisiken für die Inflation und Abwärtsrisiken für das Wachstum mit sich brächten; die zugrunde liegende Inflation sei bislang weitgehend stabil geblieben, und die Löhne zeigten noch keine wesentliche Reaktion. Die Bestände aus APP und PEPP werden weiterhin nicht wiederangelegt. Der Rat legt sich ausdrücklich nicht auf einen Zinspfad fest.",
+          "einordnung": "2,50 Prozent Einlagensatz bleiben die Referenz für Tages- und Festgeld — viel ist da nicht zu holen. Interessanter ist die Schere: Kurzfristzinsen stehen still, die Bauzinsen steigen trotzdem, weil die Märkte den Energieschock einpreisen. Wer in den nächsten zwölf Monaten eine Anschlussfinanzierung braucht, sollte die Konditionen jetzt sichern statt auf fallende Zinsen zu setzen.",
           "quellen": [
-            {"name": "Destatis: Inflationsrate September 2026 bei +3,3 %", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"},
-            {"name": "EZB: Geldpolitische Beschlüsse 29.10.2026 (Energiepreise, Löhne)", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.de.html"}
-          ]
-        },
-        {
-          "titel": "IG Metall weitet Warnstreiks aus — 3,7 Millionen Beschäftigte betroffen",
-          "aufmacher": "Nach der ergebnislosen zweiten Tarifrunde rollt in der Metall- und Elektroindustrie ab heute eine bundesweite Streikwelle an.",
-          "fakten": "Die Friedenspflicht ist Ende Oktober ausgelaufen, erste Arbeitsniederlegungen liefen in der Nacht zu Sonntag, am Montag werden die Aktionen ausgeweitet — Betriebe unter anderem in Berlin, Hamburg, Niedersachsen, Nordrhein-Westfalen, Brandenburg, Mecklenburg-Vorpommern und Bayern; allein in Bayern sollen 34 Betriebe bestreikt werden, auch in der Automobilindustrie. Die IG Metall fordert bei zwölf Monaten Laufzeit fünf Prozent mehr Geld sowie die Sicherung von Jobs und Standorten. Das Arbeitgeberangebot aus der zweiten Runde sah eine Einmalzahlung im kommenden Jahr und eine Stufenerhöhung von 1,3 Prozent im Juli 2028 vor. Es geht um rund 3,7 Millionen Beschäftigte.",
-          "einordnung": "Die EZB begründet ihre Zinspause unter anderem damit, dass die Löhne bislang keine wesentliche Reaktion zeigen. Genau das steht jetzt auf dem Spiel: Ein hoher Abschluss wirkt 2027 als Zweitrundeneffekt und stützt hohe Zinsen — für den Leverage-Plan ist das der wichtigere Risikofaktor als der Ölpreis.",
-          "quellen": [
-            {"name": "tagesschau: IG Metall weitet Warnstreiks aus (02.11.2026)", "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/ig-metall-warnstreiks-120.html"},
-            {"name": "EZB: Geldpolitische Beschlüsse 29.10.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.de.html"}
+            {"name": "EZB: Geldpolitische Beschlüsse vom 29.10.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.de.html"},
+            {"name": "Deutsche Bundesbank: Pressemitteilung 29.10.2026", "url": "https://www.bundesbank.de/de/presse/pressemitteilungen/ezb/geldpolitische-beschluesse-vom-29-oktober-2026-959126"}
           ]
         }
       ]
@@ -111,10 +98,10 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "⚠️ Container omnivoice seit zwei Wochen gestoppt (Exit 137)",
-          "aufmacher": "Auf dem Portainer-Host laufen 24 von 25 Containern — omnivoice steht seit rund zwei Wochen auf Exit 137.",
-          "fakten": "Exit-Code 137 bedeutet SIGKILL, in der Praxis meist Out-of-Memory oder ein harter Stopp. Betroffen ist der Container omnivoice mit dem Image ghcr.io/debpalash/voicestudio:stable — das ist die lokale VoiceStudio-Installation für TTS. Der zweite gestoppte Container ist der einmalige Datenbank-Initialisierer von firecrawl (Exit 0) und damit ein normaler Einmal-Job; er braucht keine Beachtung. Im Home Assistant meldet genau eine Update-Entity ein Update: der HA MCP Server (Dev) von 9.1.0.dev3299 auf dev3307 — Auto-Update ist aktiv, das erledigt sich selbst. Alle übrigen 97 Update-Entities stehen auf aus: HA Core, Supervisor, Betriebssystem, HACS, Add-ons sowie Shelly-, UniFi- und Geräte-Firmware sind aktuell.",
-          "einordnung": "Zwei Wochen unbemerkt down ist der eigentliche Befund, nicht das Update. Logs und RAM-Verbrauch prüfe ich auf Zuruf; einen Neustart mache ich nicht ohne Freigabe.",
+          "titel": "Sieben Geräte melden keinen Update-Status mehr",
+          "aufmacher": "Der Update-Lauf findet kaum offene Aktualisierungen, dafür sieben Update-Entitäten in Home Assistant ohne jede Statusmeldung.",
+          "fakten": "Betroffen sind die Update-Entitäten von Rasen-Shelly, Einfahrt-UAP-AC-M, Einfahrt, WLED IBC1, IBC2, Wiesel und WLED — sie stehen auf „unavailable“, liefern also weder installierte noch verfügbare Version. Offen ist nur der Home Assistant MCP Server (Dev) von 9.1.0.dev3324 auf 9.1.0.dev3327; Auto-Update ist aktiv, ein Changelog veröffentlicht der Dev-Kanal nicht. Alle übrigen 90 Update-Entitäten stehen auf „aus“: HA Core, Supervisor, Betriebssystem, Add-ons, HACS sowie Shelly- und UniFi-Firmware sind aktuell. Auf dem NAS laufen 23 von 25 Containern; weiterhin gestoppt sind omnivoice (Exit 137, seit rund zwei Wochen) und der einmalige Firecrawl-DB-Init (Exit 0, unauffällig).",
+          "einordnung": "Ein „unavailable“ heißt in der Regel, dass das Gerät selbst nicht mehr antwortet — sieben auf einmal ist kein Zufall, eher ein gemeinsames VLAN, ein Zigbee-Problem oder abgezogene Stecker. Ich würde mit dem Einfahrt-UAP anfangen; wenn der weg ist, verlieren die anderen Geräte dort ihre Verbindung mit.",
           "quellen": [
             {"name": "Interne Abfrage: Home Assistant Update-Entities", "url": "http://192.168.1.91:8123"},
             {"name": "Interne Abfrage: Portainer Endpoint 2, Container-Status", "url": "http://192.168.1.159:9000"}
@@ -126,14 +113,25 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Flourish 1: Haushaltsroboter für 3.555 USD — 50 Stück, Lieferung ab Dezember",
-          "aufmacher": "Ein San-Francisco-Startup unterbietet 1X NEO um 82 Prozent: Flourish 1 kostet 3.555 USD (rund 3.180 EUR) statt 20.000 USD.",
-          "fakten": "Flourish Robots (San Francisco, gegründet Januar 2026, Pre-Seed von Families Fund) hat die Vorbestellung für die ersten 50 Einheiten zu 3.555 USD geöffnet, Auslieferung ab Dezember 2026. Technik: zwei Arme mit Greifern auf Radbasis, höhenverstellbarer Oberkörper, 1,5 kg Nutzlast, angeblich 12 Stunden Laufzeit, keine Treppen, keine zerbrechlichen Objekte. Aufgaben werden per Handy in etwa 30 Minuten beigebracht — Schuhe und Kleidung aufsammeln, Tisch wischen, Pflanzen gießen, Geschirrspüler, Katzenklo leeren. Der Hersteller gibt an, eine angelernte Aufgabe funktioniere derzeit in 80 Prozent der Fälle; Benchmark und Testbedingungen nennt er nicht. Für anspruchsvollere KI-Aufgaben ist zusätzliche Rechenleistung nötig, wahlweise über eine eigene GPU oder einen Firmen-Plan, dessen Preis noch nicht veröffentlicht ist. Unbestätigt: Tesla soll laut einem Bericht vom 30. Oktober Vorbestellungen für Optimus Anfang Dezember öffnen.",
-          "einordnung": "Bei rund 3.180 EUR liegt der Preis in der Region eines sehr guten Saugroboters, nicht eines Humanoiden — deshalb ist Flourish 1 die interessantere Meldung als NEO. Aber 1,5 kg Nutzlast, 80 Prozent Erfolgsquote, unklare Rechenkosten und kein bekannter EU-Vertrieb sprechen gegen eine Bestellung. Die ersten 50 Einheiten sind ein Feldtest, kein Produkt.",
+          "titel": "Haushaltsroboter: nichts Neues.",
+          "aufmacher": "Haushaltsroboter: nichts Neues.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        }
+      ]
+    },
+    {
+      "titel": "Deutsche/europäische KI",
+      "artikel": [
+        {
+          "titel": "Mistral gibt die Gewichte von Mistral Large 4 frei",
+          "aufmacher": "Mistral hat am 29. Oktober die Gewichte seines Flaggschiffs Mistral Large 4 veröffentlicht — Spitzname „Le Chonk“.",
+          "fakten": "Das Modell hat eine Billion Parameter, ist ein Mixture-of-Experts mit multimodaler Eingabe, versteht nach Herstellerangaben über 160 Sprachen und wurde auf europäischer Infrastruktur trainiert. Mistral bezeichnet es als bestes Open-Weight-Modell für Coding: 19,7 Prozent auf Cognition's FrontierCode 2.0, 48 Prozent im Artificial Analysis Coding Agent Index bei 47 Prozent weniger Tokens pro Aufgabe als der Vergleichswert. Über die API kostet es 0,70 US-Dollar pro Million Input- und 2,10 US-Dollar pro Million Output-Tokens; die Gewichte sind frei herunterladbar und selbst hostbar. TechCrunch ordnet die Veröffentlichung als Vorstoß in den Markt für Cybersicherheitsmodelle ein.",
+          "einordnung": "Erstmals liegt ein Modell dieser Größenklasse offen und aus Europa vor — grundsätzlich auch auf eigener Hardware betreibbar. Eine Billion Parameter heißt aber: mehrere Beschleuniger, nicht die 24-GB-Klasse im Serverkeller. Für lokal bleibt es vorerst bei kleineren Modellen.",
           "quellen": [
-            {"name": "Flourish Robots / PR Newswire: Launch Flourish 1 (29.09.2026)", "url": "https://www.morningstar.com/news/pr-newswire/20260929ph57178/flourish-robots-launches-flourish-1-a-3555-home-robot-built-to-give-people-their-potential-back"},
-            {"name": "Humanoids Daily: Flourish 1 technische Einordnung", "url": "https://www.humanoidsdaily.com/news/flourish-1-affordable-home-robot"},
-            {"name": "Humanoids Daily: Tesla Optimus Reservations (30.10.2026)", "url": "https://www.humanoidsdaily.com/news/tesla-optimus-reservations-december-humanoids-summit"}
+            {"name": "Mistral AI: Mistral Large 4 (Le Chonk) open weight, 29.10.2026", "url": "https://mistral.ai/news/mistral-large-4-oss/"},
+            {"name": "TechCrunch, 29.10.2026", "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"}
           ]
         }
       ]
