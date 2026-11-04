@@ -1,14 +1,14 @@
 {
-  "datum": "Dienstag, 03.11.2026",
+  "datum": "Mittwoch, 04.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "6,1 °C · Regen 14 % · UV 2,1",
-          "aufmacher": "⛅ leicht bewölkt, Tageshöchstwert 9,8 °C, Tiefstwert 5,2 °C.",
-          "fakten": "Regenwahrscheinlichkeit 14 %, UV-Index 2,1 (niedrig).",
-          "einordnung": "Trocken genug für Außenarbeiten — Jacke bleibt trotzdem Pflicht.",
+          "titel": "5,4 °C · Regen 0 % · UV 2,1",
+          "aufmacher": "☁️ bedeckt, Tageshöchstwert 11,3 °C, Tiefstwert 4,4 °C.",
+          "fakten": "Regenwahrscheinlichkeit 0 %, UV-Index 2,1 (niedrig).",
+          "einordnung": "Trocken und brauchbar für Außenarbeiten — die Sonne bleibt heute aber Mangelware.",
           "quellen": []
         }
       ]
@@ -18,14 +18,14 @@
       "artikel": [
         {
           "titel": "04.11.2026 09:00: Quixx-Meeting",
-          "aufmacher": "Mittwoch, 09:00 Uhr.",
+          "aufmacher": "Heute Vormittag, 09:00 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
           "titel": "04.11.2026 15:00: KGG – Krankengymnastik am Gerät (Melvin)",
-          "aufmacher": "Mittwoch, 15:00 Uhr.",
+          "aufmacher": "Heute Nachmittag, 15:00 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -43,23 +43,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Einbruch in Spicher Lagerhalle: 30.000 Euro Schaden",
-          "aufmacher": "Unbekannte sind am Wochenende in eine Firmenlagerhalle in Troisdorf-Spich eingebrochen und haben Kupfer und Werkzeug gestohlen.",
-          "fakten": "Der Schaden wird auf etwa 30.000 Euro geschätzt. Die Täter hebelten zwischen Samstag, 31. Oktober, 17:00 Uhr, und Sonntag, 1. November, 15:40 Uhr, ein Zufahrtstor an der Echternacher Straße auf und beschädigten anschließend das Rolltor der Halle. Ein Mitarbeiter bemerkte am Sonntagnachmittag die beschädigte Scheibe und informierte die Polizei. Die Kripo ermittelt wegen besonders schweren Falls des Diebstahls, Zeugen erreichen die Polizei unter 02241 541-3221.",
-          "einordnung": "Kupferdiebstähle häufen sich im Kreis — Mitte Oktober traf es einen Metallbetrieb in Much, nun eine Halle in Spich. Wer Lagerflächen betreibt, sollte Zufahrten und Rolltore nachts beleuchten; die Täter suchen gezielt unbewachte Gewerbegrundstücke.",
+          "titel": "Ausbildungsmarkt Bonn/Rhein-Sieg: mehr Bewerber, ein Fünftel weniger Stellen",
+          "aufmacher": "In Bonn und im Rhein-Sieg-Kreis drängen mehr Jugendliche in eine Ausbildung, während die Betriebe deutlich weniger Plätze anbieten.",
+          "fakten": "Die Zahl der gemeldeten Ausbildungsstellen ging in diesem Sommer um fast 20 Prozent gegenüber dem Vorjahr zurück, während die Bewerberzahl trotz des fehlenden Abiturjahrgangs auf hohem Niveau blieb. In der Halbjahresbilanz im März meldeten Arbeitsagentur Bonn/Rhein-Sieg, IHK Bonn/Rhein-Sieg, Kreishandwerkerschaft Bonn · Rhein-Sieg und Handwerkskammer zu Köln 3.104 erfasste Ausbildungsstellen – 26,7 Prozent weniger als im Vorjahr; nach Schätzung der Agentur lag der tatsächliche Rückgang bei rund 23,5 Prozent, weil eine Umstellung im Meldeverfahren die Statistik zeitweise untererfasste. Stefan Krause von der Arbeitsagentur nennt als mögliche Ursachen die schwache Konjunktur und die Unsicherheit der Betriebe, ob sie Azubis in drei Jahren übernehmen können.",
+          "einordnung": "Für Handwerksbetriebe wie Quixx24 heißt das: Der Markt bleibt eng, aber die Konkurrenz um dieselben Jugendlichen wird kleiner, weil weniger Betriebe überhaupt ausbilden. Wer jetzt ausbildet, besetzt die Stellen, die in den kommenden Jahren durch Rentenabgänge frei werden.",
           "quellen": [
-            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis, PM vom 02.11.2026", "url": "https://www.presseportal.de/blaulicht/pm/65853/6382550"},
-            {"name": "Presseportal, Newsroom Polizei Rhein-Sieg-Kreis", "url": "https://www.presseportal.de/blaulicht/nr/65853"}
+            {"name": "WDR: Bonner Ausbildungsbilanz, 03.11.2026", "url": "https://www1.wdr.de/nrw/rheinland/ausbildungsmarkt-bonn-rhein-sieg-2025-2026-100.html"},
+            {"name": "Agentur für Arbeit Bonn/Rhein-Sieg: Halbjahresbilanz 2025/26 (PDF)", "url": "https://berufsberatung-bonn.de/wp-content/uploads/260331_11_PM_Halbjahresbilanz_Ausbildungsmarkt2025_26.pdf"}
           ]
         },
         {
-          "titel": "Alkoholverbot in der Troisdorfer City: Entscheidung fällt erst im Hauptausschuss",
-          "aufmacher": "Der Stadtrat hat das Alkoholkonsumverbot in der Fußgängerzone erneut beraten, aber nicht entschieden — das soll im Hauptausschuss im November passieren.",
-          "fakten": "Damit ist auch offen, ob das CDU-Bürgerbegehren in einen Bürgerentscheid mündet; das dürfte sich mit der Ausschussentscheidung klären. Bereits in der Ratssitzung am 14. Oktober waren die Vorlagen zum Alkoholverbot und zu den Kita-Elternbeiträgen vertagt worden. Ein festes Datum für die Ausschusssitzung war zuletzt nicht veröffentlicht.",
-          "einordnung": "Für Immobilien in der Innenstadt kein Nebenschauplatz: Ein Verbot verändert Aufenthaltsqualität und Frequenz in der Fußgängerzone. Bei Ankäufen in City-Lage würde ich die Entscheidung abwarten, bevor ich die Mikrolage bewerte.",
+          "titel": "Spezialeinheiten verhindern bewaffneten Überfall auf Geldkurier in Sankt Augustin",
+          "aufmacher": "Die Polizei Rhein-Sieg hat am Montagvormittag einen geplanten Raub auf einen Geldkurier in Sankt Augustin vereitelt und fünf Tatverdächtige festgenommen.",
+          "fakten": "Konkrete Hinweise hatten die Ermittler vorab auf die Spur gebracht. Am 2. November griffen die Beamten um 10:25 Uhr zu, als zwei bereits vermummte Männer in der Nähe der Bank standen; einer von ihnen, 22 Jahre alt, zog eine Pistole. Ein Polizeihund stellte den Flüchtenden und verletzte ihn am Arm, er kam anschließend ins Krankenhaus. Drei mutmaßliche Komplizen warteten in zwei Fluchtautos und wurden ebenfalls festgenommen, die Fahrzeuge wurden beschlagnahmt. Alle fünf Beschuldigten sind zwischen 18 und 25 Jahre alt und sollten noch am Dienstag einem Haftrichter vorgeführt werden.",
+          "einordnung": "Bargeldverkehr bleibt ein Sicherheitsthema für Betriebe und Gewerbeobjekte in der Region. Die Ermittlungen zu Planung und Hintergrund laufen weiter; zur Herkunft der Tatverdächtigen machte die Polizei keine Angaben.",
           "quellen": [
-            {"name": "General-Anzeiger Bonn, 26.10.2026", "url": "https://ga.de/region/sieg-und-rhein/troisdorf/darum-ist-das-alkoholverbot-in-der-troisdorfer-city-noch-nicht-beschlossen_aid-156891597"},
-            {"name": "SPD Troisdorf, Ratssitzung 14.10.2026", "url": "https://www.spd-troisdorf.de/2026/10/14/neuigkeiten-stadtrat-ratssitzung-entscheidungen-alkoholverbot-kita-elternbeitraege/"}
+            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis, PM vom 03.11.2026", "url": "https://www.presseportal.de/blaulicht/pm/65853/6383348"},
+            {"name": "WDR: SEK-Einsatz in Sankt Augustin, 03.11.2026", "url": "https://www1.wdr.de/nrw/rheinland/rhein-sieg-kreis/geplanter-raubueberfall-geldtransport-festnahme-sankt-augustin-100.html"}
           ]
         }
       ]
@@ -68,13 +68,14 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben über 4 Prozent — der Spielraum wird kleiner",
-          "aufmacher": "Für zehnjährige Darlehen liegt der Topzins am 3. November bei 4,20 bis 4,50 Prozent; seit Juli sind die Bauzinsen um rund 0,8 Prozentpunkte gestiegen.",
-          "fakten": "Dr. Klein nennt für den Stichtag 3. November 2026 eine Spanne von 4,20 bis 4,50 Prozent effektiv je nach Zinsbindung. Finanztip ermittelte am 25. Oktober 4,4 Prozent für 10 Jahre, 4,7 Prozent für 15 und 4,9 Prozent für 20 Jahre. Im Oktober gingen die Renditen der Bundesanleihen leicht zurück und brachten kurzzeitig etwas Luft. Der Dr.-Klein-Expertenrat erwartet bis Jahresende stabile bis leicht steigende Zinsen mit einem Topzins zwischen 4,0 und 4,5 Prozent.",
-          "einordnung": "Auf 600.000 Euro Darlehen kostet jeder Zehntelprozent rund 50 Euro Zins im Monat: 4,2 Prozent bedeuten 2.100 Euro, 4,5 Prozent 2.250 Euro. Bei 4,4 Prozent und zwei Prozent Anfangstilgung liegt die Annuität bei 3.200 Euro — die Kaltmiete muss das tragen, sonst ist der Cashflow weg, bevor die Refinanzierung greift. Warten auf sinkende Zinsen ist derzeit die teurere Wette.",
+          "titel": "Ein Jahr Bau-Turbo: 7.892 Wohneinheiten zugestimmt, 84 Prozent in Mehrfamilienhäusern",
+          "aufmacher": "Der Bau-Turbo hat von Januar bis Juni 2026 Vorhaben mit 7.892 Wohneinheiten eine kommunale Zustimmung gebracht — die Fertigstellungszahlen bleiben trotzdem auf Rekordtief.",
+          "fakten": "Das Bundesbauministerium hat 393 Kommunen freiwillig befragt: In 72 Prozent der rund 400 teilnehmenden Kommunen wurde bereits über Bau-Turbo-Anträge verhandelt, mehr als die Hälfte erhielt eine Zustimmung. Rund 84 Prozent der zugestimmten Wohneinheiten entstehen in Mehrfamilienhäusern, fast neun von zehn auf bereits genutzten Flächen – nur rund zwölf Prozent auf bisherigen Grün- oder Landwirtschaftsflächen. Das ifo-Institut erwartet für 2026 nur noch rund 185.000 fertiggestellte Wohnungen, während die Bundespolitik 320.000 bis 400.000 pro Jahr anpeilt. Der GdW verweist darauf, dass sich mit den aktuellen Baukosten bezahlbare Mieten nicht finanzieren lassen. Das Monitoring ist nicht repräsentativ, weil keine Berichtspflicht besteht.",
+          "einordnung": "Für Mikes Strategie zählt der Bestand: Bleibt der Neubau aus, verschärft sich die Knappheit und damit die Mietentwicklung im Bestand. Interessant ist, dass der Bau-Turbo ausdrücklich auch Aufstockung und Umnutzung erfasst — der günstigere Hebel gegenüber Neubau auf der grünen Wiese.",
           "quellen": [
-            {"name": "Dr. Klein: Zinsentwicklung Baufinanzierung (Stand 03.11.2026)", "url": "https://www.drklein.de/zinsentwicklung-prognose.html"},
-            {"name": "Finanztip: Aktuelle Bauzinsen (Stand 25.10.2026)", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
+            {"name": "BMWSB: Ein Jahr Bau-Turbo, 03.11.2026", "url": "https://www.bmwsb.bund.de/SharedDocs/pressemitteilungen/DE/2026/11/1Jahr_Bauturbo.html"},
+            {"name": "Deutschlandfunk: Bau-Turbo, gemischte Bilanz, 03.11.2026", "url": "https://www.deutschlandfunk.de/ein-jahr-bau-turbo-ministerin-hubertz-spd-sieht-erste-effekte-wohnungswirtschaft-zieht-gemischte-bil-100.html"},
+            {"name": "Verbändebündnis mit ifo-Prognose 185.000 Wohnungen, 02.11.2026", "url": "https://www.bayika.de/de/aktuelles/meldungen/2026-11-02_Bundesingenieurkammer-und-weitere-29-Verbaende-fordern-haushaltspolitisches-Umsteuern-fuer-den-Wohnungsbau.php"}
           ]
         }
       ]
@@ -83,13 +84,13 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB lässt den Leitzins bei 2,50 Prozent — trotz steigender Energiepreise",
-          "aufmacher": "Die Europäische Zentralbank hat am 29. Oktober alle drei Leitzinssätze unverändert gelassen.",
-          "fakten": "Der Einlagensatz bleibt bei 2,50 Prozent, der Satz für Hauptrefinanzierungsgeschäfte bei 2,65 Prozent, die Spitzenrefinanzierungsfazilität bei 2,90 Prozent. Zur Begründung nennt der EZB-Rat weiter steigende Energiepreise, die Aufwärtsrisiken für die Inflation und Abwärtsrisiken für das Wachstum mit sich brächten; die zugrunde liegende Inflation sei bislang weitgehend stabil geblieben, und die Löhne zeigten noch keine wesentliche Reaktion. Die Bestände aus APP und PEPP werden weiterhin nicht wiederangelegt. Der Rat legt sich ausdrücklich nicht auf einen Zinspfad fest.",
-          "einordnung": "2,50 Prozent Einlagensatz bleiben die Referenz für Tages- und Festgeld — viel ist da nicht zu holen. Interessanter ist die Schere: Kurzfristzinsen stehen still, die Bauzinsen steigen trotzdem, weil die Märkte den Energieschock einpreisen. Wer in den nächsten zwölf Monaten eine Anschlussfinanzierung braucht, sollte die Konditionen jetzt sichern statt auf fallende Zinsen zu setzen.",
+          "titel": "Inflation in Deutschland fällt im Oktober auf 2,8 Prozent",
+          "aufmacher": "Die Teuerung in Deutschland hat sich spürbar abgeschwächt: Die Inflationsrate sinkt vorläufig auf 2,8 Prozent, nach 3,3 Prozent im September.",
+          "fakten": "Der Verbraucherpreisindex liegt im Oktober 2026 vorläufig 2,8 Prozent über dem Vorjahresmonat und 0,2 Prozent unter September. Die Kerninflation ohne Nahrungsmittel und Energie fällt von 2,4 auf 2,1 Prozent. Energie bleibt mit plus 12,2 Prozent der größte Preistreiber, schwächt sich aber ab (September: 14,9 Prozent); Nahrungsmittel liegen bei plus 0,4 Prozent, Dienstleistungen bei plus 2,5 Prozent. Die endgültigen Werte veröffentlicht Destatis am 11. November. Die EZB hatte den Leitzins am 29. Oktober bei 2,5 Prozent belassen, bei zuletzt 3,8 Prozent Inflation im Euroraum.",
+          "einordnung": "Entscheidend für die Finanzierung ist der 10. Dezember: Ökonomen rechnen mit einer erneuten Anhebung, weil die Energiepreise erst mit Verzögerung auf andere Güter durchschlagen. Bei Bauzinsen über 4 Prozent sollte eine MFH-Finanzierung den Zinspfad nach oben einkalkulieren statt auf sinkende Zinsen zu setzen.",
           "quellen": [
-            {"name": "EZB: Geldpolitische Beschlüsse vom 29.10.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.de.html"},
-            {"name": "Deutsche Bundesbank: Pressemitteilung 29.10.2026", "url": "https://www.bundesbank.de/de/presse/pressemitteilungen/ezb/geldpolitische-beschluesse-vom-29-oktober-2026-959126"}
+            {"name": "Statistisches Bundesamt: Inflationsrate Oktober 2026 (vorläufig)", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_382_611.html"},
+            {"name": "tagesschau: Inflation geht auf 2,8 Prozent zurück", "url": "https://www.tagesschau.de/wirtschaft/verbraucher/inflationsrate-deutschland-oktober-100.html"}
           ]
         }
       ]
@@ -98,13 +99,13 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Sieben Geräte melden keinen Update-Status mehr",
-          "aufmacher": "Der Update-Lauf findet kaum offene Aktualisierungen, dafür sieben Update-Entitäten in Home Assistant ohne jede Statusmeldung.",
-          "fakten": "Betroffen sind die Update-Entitäten von Rasen-Shelly, Einfahrt-UAP-AC-M, Einfahrt, WLED IBC1, IBC2, Wiesel und WLED — sie stehen auf „unavailable“, liefern also weder installierte noch verfügbare Version. Offen ist nur der Home Assistant MCP Server (Dev) von 9.1.0.dev3324 auf 9.1.0.dev3327; Auto-Update ist aktiv, ein Changelog veröffentlicht der Dev-Kanal nicht. Alle übrigen 90 Update-Entitäten stehen auf „aus“: HA Core, Supervisor, Betriebssystem, Add-ons, HACS sowie Shelly- und UniFi-Firmware sind aktuell. Auf dem NAS laufen 23 von 25 Containern; weiterhin gestoppt sind omnivoice (Exit 137, seit rund zwei Wochen) und der einmalige Firecrawl-DB-Init (Exit 0, unauffällig).",
-          "einordnung": "Ein „unavailable“ heißt in der Regel, dass das Gerät selbst nicht mehr antwortet — sieben auf einmal ist kein Zufall, eher ein gemeinsames VLAN, ein Zigbee-Problem oder abgezogene Stecker. Ich würde mit dem Einfahrt-UAP anfangen; wenn der weg ist, verlieren die anderen Geräte dort ihre Verbindung mit.",
+          "titel": "paperless-ngx 3.4.2 ist da — reines Bugfix-Update",
+          "aufmacher": "Paperless-ngx 3.4.2 behebt vor allem Fehler in der Oberfläche und beim Aufbau der Indizes; auf dem NAS läuft noch 3.4.1.",
+          "fakten": "Das Release vom 3. November 21:57 Uhr korrigiert die Darstellung des Speichern-Buttons auf Mobilgeräten, verhindert den Verlust des Ansichtsnamens beim Speichern und Schließen, lässt die Index- und LLM-Index-Initialisierung auf die Installation der Tesseract-Sprachpakete warten und zieht filelock auf 4.2.6 (ACL-Fixes); zusätzlich werden bulk_edit-Importe in den Celery-Workern sicher geladen. Im Home-Assistant-Add-on „MCP Server (Dev)“ steht der Sprung von 9.1.0.dev3341 auf dev3355 an – Dev-Kanal mit aktiver Auto-Aktualisierung, Release-Notes veröffentlicht dieser Kanal nicht. Der Hermes Agent meldet auf v0.22.6 ein Upstream-Update im Git-Install; der lokale Stand ist dabei nicht hinter dem Remote, die Anzeige kommt aus der Upstream-Prüfung.",
+          "einordnung": "Das Paperless-Update ist risikoarm, aber vor dem Einspielen ein Backup ziehen — die Index-Initialisierung fasst den Suchindex an. Beim MCP-Dev-Add-on ist nichts zu tun, es aktualisiert sich selbst.",
           "quellen": [
-            {"name": "Interne Abfrage: Home Assistant Update-Entities", "url": "http://192.168.1.91:8123"},
-            {"name": "Interne Abfrage: Portainer Endpoint 2, Container-Status", "url": "http://192.168.1.159:9000"}
+            {"name": "paperless-ngx v3.4.2 Release Notes", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.2"},
+            {"name": "Interne Abfrage: HA-Update-Entities", "url": "http://192.168.1.91:8123"}
           ]
         }
       ]
@@ -125,13 +126,14 @@
       "titel": "Deutsche/europäische KI",
       "artikel": [
         {
-          "titel": "Mistral gibt die Gewichte von Mistral Large 4 frei",
-          "aufmacher": "Mistral hat am 29. Oktober die Gewichte seines Flaggschiffs Mistral Large 4 veröffentlicht — Spitzname „Le Chonk“.",
-          "fakten": "Das Modell hat eine Billion Parameter, ist ein Mixture-of-Experts mit multimodaler Eingabe, versteht nach Herstellerangaben über 160 Sprachen und wurde auf europäischer Infrastruktur trainiert. Mistral bezeichnet es als bestes Open-Weight-Modell für Coding: 19,7 Prozent auf Cognition's FrontierCode 2.0, 48 Prozent im Artificial Analysis Coding Agent Index bei 47 Prozent weniger Tokens pro Aufgabe als der Vergleichswert. Über die API kostet es 0,70 US-Dollar pro Million Input- und 2,10 US-Dollar pro Million Output-Tokens; die Gewichte sind frei herunterladbar und selbst hostbar. TechCrunch ordnet die Veröffentlichung als Vorstoß in den Markt für Cybersicherheitsmodelle ein.",
-          "einordnung": "Erstmals liegt ein Modell dieser Größenklasse offen und aus Europa vor — grundsätzlich auch auf eigener Hardware betreibbar. Eine Billion Parameter heißt aber: mehrere Beschleuniger, nicht die 24-GB-Klasse im Serverkeller. Für lokal bleibt es vorerst bei kleineren Modellen.",
+          "titel": "Bundesregierung legt KI-Zielbild 2030 vor: 55 Prozent der KMU sollen KI nutzen",
+          "aufmacher": "Die KI-Taskforce der Bundesregierung hat am 2. November ihren Ergebnisbericht „Deutschland als KI-Nation 2030“ vorgelegt — mit erstmals ressortübergreifend geeinten Zielwerten.",
+          "fakten": "Der Bericht bündelt 18 Schlüsselmaßnahmen auf sechs Feldern. Bis 2030 sollen mindestens 55 Prozent der kleinen und mittleren Unternehmen KI einsetzen und mindestens 90 Prozent der Bundesbehörden wenigstens eine KI-Anwendung produktiv nutzen; die Rechenzentrumskapazität soll sich vervierfachen, und mindestens eine europäische KI-Gigafactory soll in Deutschland den Betrieb aufnehmen. Vorgestellt wurde das Papier beim Digital-Gipfel unter dem Motto „Shaping AI: safe, sovereign, competitive“; Kanzler Merz verwies auf über 200 Milliarden Euro Investitionszusagen beim Investitionsgipfel und nannte Mistral, Aleph Alpha und Cohere als Partner. Der Branchenverband eco begrüßt die Schwerpunkte, kritisiert aber den starren PUE-Betriebswert von 1,2 im Energieeffizienzgesetz, fehlende verbindliche Netzanschlusszusagen und die Strompreise; angepeilt ist eine Genehmigungsdauer für Rechenzentren von höchstens zweieinhalb Jahren.",
+          "einordnung": "Bemerkenswert für Mike: Der Ausbau trifft genau die Engpässe, die auch sein Netzanschluss-Thema sind — Anschlussleistung, Netzkapazität, Strompreis. Abwärmenutzung aus Rechenzentren wird damit zu einem kommunalen Thema, das perspektivisch auch Wärmenetze in Troisdorf berühren kann.",
           "quellen": [
-            {"name": "Mistral AI: Mistral Large 4 (Le Chonk) open weight, 29.10.2026", "url": "https://mistral.ai/news/mistral-large-4-oss/"},
-            {"name": "TechCrunch, 29.10.2026", "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"}
+            {"name": "Bundesregierung: „Deutschland als KI-Nation 2030“ (PDF, 02.11.2026)", "url": "https://www.bundesregierung.de/resource/blob/992814/2459514/b8518975df987ac1cfdc1fc5b655efb3/2026-11-02-ki-data.pdf?download=1"},
+            {"name": "Bundesregierung: Pressekonferenz zum Digital-Gipfel", "url": "https://www.bundesregierung.de/breg-de/aktuelles/pressekonferenzen/digital-gipfel-pk-merz-2459634"},
+            {"name": "eco: Stellungnahme zur KI-Taskforce, 02.11.2026", "url": "https://www.eco.de/presse/eco-zur-ki-taskforce-ambitionierte-ki-ziele-duerfen-nicht-an-der-infrastruktur-scheitern/"}
           ]
         }
       ]
