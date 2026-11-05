@@ -1,14 +1,14 @@
 {
-  "datum": "Mittwoch, 04.11.2026",
+  "datum": "Donnerstag, 05.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "5,4 °C · Regen 0 % · UV 2,1",
-          "aufmacher": "☁️ bedeckt, Tageshöchstwert 11,3 °C, Tiefstwert 4,4 °C.",
-          "fakten": "Regenwahrscheinlichkeit 0 %, UV-Index 2,1 (niedrig).",
-          "einordnung": "Trocken und brauchbar für Außenarbeiten — die Sonne bleibt heute aber Mangelware.",
+          "titel": "3,7 °C · Regen 0 % · UV 2,1",
+          "aufmacher": "☀️ klar, Tageshöchstwert 12,4 °C, Tiefstwert 3,6 °C.",
+          "fakten": "Kein Niederschlag zu erwarten, UV-Index 2,1 (niedrig).",
+          "einordnung": "Sonnig und trocken — der beste Tag der Woche für Arbeiten am Dach, an der PV oder am Zählerschrank.",
           "quellen": []
         }
       ]
@@ -16,20 +16,6 @@
     {
       "titel": "📅 Termine",
       "artikel": [
-        {
-          "titel": "04.11.2026 09:00: Quixx-Meeting",
-          "aufmacher": "Heute Vormittag, 09:00 Uhr.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "04.11.2026 15:00: KGG – Krankengymnastik am Gerät (Melvin)",
-          "aufmacher": "Heute Nachmittag, 15:00 Uhr.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
         {
           "titel": "06.11.2026 14:30: KGG – Krankengymnastik am Gerät (Melvin)",
           "aufmacher": "Freitag, 14:30 Uhr.",
@@ -43,23 +29,35 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Ausbildungsmarkt Bonn/Rhein-Sieg: mehr Bewerber, ein Fünftel weniger Stellen",
-          "aufmacher": "In Bonn und im Rhein-Sieg-Kreis drängen mehr Jugendliche in eine Ausbildung, während die Betriebe deutlich weniger Plätze anbieten.",
-          "fakten": "Die Zahl der gemeldeten Ausbildungsstellen ging in diesem Sommer um fast 20 Prozent gegenüber dem Vorjahr zurück, während die Bewerberzahl trotz des fehlenden Abiturjahrgangs auf hohem Niveau blieb. In der Halbjahresbilanz im März meldeten Arbeitsagentur Bonn/Rhein-Sieg, IHK Bonn/Rhein-Sieg, Kreishandwerkerschaft Bonn · Rhein-Sieg und Handwerkskammer zu Köln 3.104 erfasste Ausbildungsstellen – 26,7 Prozent weniger als im Vorjahr; nach Schätzung der Agentur lag der tatsächliche Rückgang bei rund 23,5 Prozent, weil eine Umstellung im Meldeverfahren die Statistik zeitweise untererfasste. Stefan Krause von der Arbeitsagentur nennt als mögliche Ursachen die schwache Konjunktur und die Unsicherheit der Betriebe, ob sie Azubis in drei Jahren übernehmen können.",
-          "einordnung": "Für Handwerksbetriebe wie Quixx24 heißt das: Der Markt bleibt eng, aber die Konkurrenz um dieselben Jugendlichen wird kleiner, weil weniger Betriebe überhaupt ausbilden. Wer jetzt ausbildet, besetzt die Stellen, die in den kommenden Jahren durch Rentenabgänge frei werden.",
+          "titel": "Melanbogenbrücke bleibt für Lkw gesperrt — Linie 508 fährt seit Montag Umleitung",
+          "aufmacher": "Die Siegbrücke der L143 zwischen Troisdorf und Sankt Augustin ist seit dem 23. Oktober für Fahrzeuge über 3,5 Tonnen gesperrt; der Busverkehr ist bereits umgestellt.",
+          "fakten": "Straßen.NRW hat die Brücke nach neuen Prüfergebnissen von 14 auf 3,5 Tonnen abgelastet, um die Verkehrssicherheit zu halten. Auch der Schienenersatzverkehr der Deutschen Bahn aus der Korridorsanierung am Rechten Rhein wurde verlegt, um die Brücke zu entlasten. Die Buslinie 508 fährt in Sankt Augustin-Menden seit dem 2. November mit Ersatzhaltestellen. Ein Neubau an gleicher Stelle ist geplant; der Antrag auf Planfeststellung soll bis zum Jahreswechsel 2026/27 bei der Bezirksregierung Köln eingehen.",
+          "einordnung": "Für Zulieferungen und Bagger zur Moselstraße heißt das Umweg über Siegburg oder die A59 — Transporte für PV, Wallbox und Zählerschrank lieber auf Fahrzeuge unter 3,5 Tonnen legen.",
           "quellen": [
-            {"name": "WDR: Bonner Ausbildungsbilanz, 03.11.2026", "url": "https://www1.wdr.de/nrw/rheinland/ausbildungsmarkt-bonn-rhein-sieg-2025-2026-100.html"},
-            {"name": "Agentur für Arbeit Bonn/Rhein-Sieg: Halbjahresbilanz 2025/26 (PDF)", "url": "https://berufsberatung-bonn.de/wp-content/uploads/260331_11_PM_Halbjahresbilanz_Ausbildungsmarkt2025_26.pdf"}
+            {
+              "name": "Straßen.NRW, 22.10.2026",
+              "url": "https://www.strassen.nrw.de/de/meldung/l143-melanbogenbruecke-zwischen-troisdorf-und-sankt-augustin-wird-fuer-fahrzeuge-ueber-3-5-tonnen-gesperrt.html"
+            },
+            {
+              "name": "BLICK aktuell, Linie 508 ab 2. November",
+              "url": "https://www.blick-aktuell.de/Nachrichten/Ersatzhaltestellen-und-Umleitung-der-Linie-508-ab-2-November-680044.html"
+            }
           ]
         },
         {
-          "titel": "Spezialeinheiten verhindern bewaffneten Überfall auf Geldkurier in Sankt Augustin",
-          "aufmacher": "Die Polizei Rhein-Sieg hat am Montagvormittag einen geplanten Raub auf einen Geldkurier in Sankt Augustin vereitelt und fünf Tatverdächtige festgenommen.",
-          "fakten": "Konkrete Hinweise hatten die Ermittler vorab auf die Spur gebracht. Am 2. November griffen die Beamten um 10:25 Uhr zu, als zwei bereits vermummte Männer in der Nähe der Bank standen; einer von ihnen, 22 Jahre alt, zog eine Pistole. Ein Polizeihund stellte den Flüchtenden und verletzte ihn am Arm, er kam anschließend ins Krankenhaus. Drei mutmaßliche Komplizen warteten in zwei Fluchtautos und wurden ebenfalls festgenommen, die Fahrzeuge wurden beschlagnahmt. Alle fünf Beschuldigten sind zwischen 18 und 25 Jahre alt und sollten noch am Dienstag einem Haftrichter vorgeführt werden.",
-          "einordnung": "Bargeldverkehr bleibt ein Sicherheitsthema für Betriebe und Gewerbeobjekte in der Region. Die Ermittlungen zu Planung und Hintergrund laufen weiter; zur Herkunft der Tatverdächtigen machte die Polizei keine Angaben.",
+          "titel": "Einbruch in Troisdorf-Spich: Kupfer und Werkzeug im Wert von rund 30.000 Euro gestohlen",
+          "aufmacher": "Unbekannte sind am Wochenende in die Lagerhalle einer Firma an der Echternacher Straße in Troisdorf-Spich eingebrochen und haben Kupfer sowie Werkzeug mitgenommen.",
+          "fakten": "Die Tat liegt zwischen Samstag, 31. Oktober, 17:00 Uhr, und Sonntag, 1. November, 15:40 Uhr. Die Täter hebelten ein Zufahrtstor auf und beschädigten anschließend das elektronische Rolltor der Halle. Der Schaden wird auf etwa 30.000 Euro geschätzt. Die Kripo ermittelt wegen besonders schweren Falls des Diebstahls; Hinweise nimmt die Polizei unter 02241 541-3221 entgegen.",
+          "einordnung": "Kupfer ist derzeit ein beliebtes Diebesgut — Kabelrollen und PV-Komponenten auf Baustellen in Troisdorf nicht über Nacht frei zugänglich lagern.",
           "quellen": [
-            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis, PM vom 03.11.2026", "url": "https://www.presseportal.de/blaulicht/pm/65853/6383348"},
-            {"name": "WDR: SEK-Einsatz in Sankt Augustin, 03.11.2026", "url": "https://www1.wdr.de/nrw/rheinland/rhein-sieg-kreis/geplanter-raubueberfall-geldtransport-festnahme-sankt-augustin-100.html"}
+            {
+              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis, 02.11.2026",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6382550"
+            },
+            {
+              "name": "news.de, Polizei-News Troisdorf 02.11.26",
+              "url": "https://www.news.de/lokales/860152882/blaulicht-news-polizei-einsatz-troisdorf-02-11-26-diebstahl-heute/1/"
+            }
           ]
         }
       ]
@@ -68,14 +66,19 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Ein Jahr Bau-Turbo: 7.892 Wohneinheiten zugestimmt, 84 Prozent in Mehrfamilienhäusern",
-          "aufmacher": "Der Bau-Turbo hat von Januar bis Juni 2026 Vorhaben mit 7.892 Wohneinheiten eine kommunale Zustimmung gebracht — die Fertigstellungszahlen bleiben trotzdem auf Rekordtief.",
-          "fakten": "Das Bundesbauministerium hat 393 Kommunen freiwillig befragt: In 72 Prozent der rund 400 teilnehmenden Kommunen wurde bereits über Bau-Turbo-Anträge verhandelt, mehr als die Hälfte erhielt eine Zustimmung. Rund 84 Prozent der zugestimmten Wohneinheiten entstehen in Mehrfamilienhäusern, fast neun von zehn auf bereits genutzten Flächen – nur rund zwölf Prozent auf bisherigen Grün- oder Landwirtschaftsflächen. Das ifo-Institut erwartet für 2026 nur noch rund 185.000 fertiggestellte Wohnungen, während die Bundespolitik 320.000 bis 400.000 pro Jahr anpeilt. Der GdW verweist darauf, dass sich mit den aktuellen Baukosten bezahlbare Mieten nicht finanzieren lassen. Das Monitoring ist nicht repräsentativ, weil keine Berichtspflicht besteht.",
-          "einordnung": "Für Mikes Strategie zählt der Bestand: Bleibt der Neubau aus, verschärft sich die Knappheit und damit die Mietentwicklung im Bestand. Interessant ist, dass der Bau-Turbo ausdrücklich auch Aufstockung und Umnutzung erfasst — der günstigere Hebel gegenüber Neubau auf der grünen Wiese.",
+          "titel": "Bauzinsen bleiben über vier Prozent — 3,90 Prozent gibt es nur bei 60 Prozent Beleihung",
+          "aufmacher": "Für zehnjährige Zinsbindung liegt der Bestzins im November bei 3,90 Prozent effektiv bei 60 Prozent Beleihung — bei 90 Prozent Beleihung sind es 4,33 Prozent.",
+          "fakten": "Der Unterschied von 0,43 Prozentpunkten kostet je 100.000 Euro Darlehen rund 35 Euro im Monat, auf 500.000 Euro sind es rund 179 Euro. 15 Jahre Bindung kosten 4,58 Prozent, 20 Jahre 4,69 Prozent, 30 Jahre 4,96 Prozent. Finanztip nennt mit Stand 25. Oktober rund 4,4 Prozent und erwartet kurzfristig Schwankungen von 0,1 bis 0,2 Prozentpunkten. Fünf Jahre Bindung ist mit 4,44 Prozent derzeit teurer als zehn Jahre.",
+          "einordnung": "Bei maximalem Hebel — nur Kaufnebenkosten aus Eigenkapital, rund 90 Prozent Beleihung — ist der 4,33-Prozent-Satz der realistische Preis: auf 500.000 Euro sind das rund 1.804 Euro Zins im Monat vor Tilgung, bei 3,90 Prozent wären es 1.625 Euro. Zehn Jahre Bindung mit Sondertilgungsrecht bleibt die vernünftige Wahl; lange Bindungen kosten je 500.000 Euro rund 100 Euro mehr im Monat.",
           "quellen": [
-            {"name": "BMWSB: Ein Jahr Bau-Turbo, 03.11.2026", "url": "https://www.bmwsb.bund.de/SharedDocs/pressemitteilungen/DE/2026/11/1Jahr_Bauturbo.html"},
-            {"name": "Deutschlandfunk: Bau-Turbo, gemischte Bilanz, 03.11.2026", "url": "https://www.deutschlandfunk.de/ein-jahr-bau-turbo-ministerin-hubertz-spd-sieht-erste-effekte-wohnungswirtschaft-zieht-gemischte-bil-100.html"},
-            {"name": "Verbändebündnis mit ifo-Prognose 185.000 Wohnungen, 02.11.2026", "url": "https://www.bayika.de/de/aktuelles/meldungen/2026-11-02_Bundesingenieurkammer-und-weitere-29-Verbaende-fordern-haushaltspolitisches-Umsteuern-fuer-den-Wohnungsbau.php"}
+            {
+              "name": "Baufivergleich, Zinsupdate 30.10.2026",
+              "url": "https://baufivergleich.de/aktuelle-zinsen"
+            },
+            {
+              "name": "Finanztip, Stand 25.10.2026",
+              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen"
+            }
           ]
         }
       ]
@@ -84,13 +87,19 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Inflation in Deutschland fällt im Oktober auf 2,8 Prozent",
-          "aufmacher": "Die Teuerung in Deutschland hat sich spürbar abgeschwächt: Die Inflationsrate sinkt vorläufig auf 2,8 Prozent, nach 3,3 Prozent im September.",
-          "fakten": "Der Verbraucherpreisindex liegt im Oktober 2026 vorläufig 2,8 Prozent über dem Vorjahresmonat und 0,2 Prozent unter September. Die Kerninflation ohne Nahrungsmittel und Energie fällt von 2,4 auf 2,1 Prozent. Energie bleibt mit plus 12,2 Prozent der größte Preistreiber, schwächt sich aber ab (September: 14,9 Prozent); Nahrungsmittel liegen bei plus 0,4 Prozent, Dienstleistungen bei plus 2,5 Prozent. Die endgültigen Werte veröffentlicht Destatis am 11. November. Die EZB hatte den Leitzins am 29. Oktober bei 2,5 Prozent belassen, bei zuletzt 3,8 Prozent Inflation im Euroraum.",
-          "einordnung": "Entscheidend für die Finanzierung ist der 10. Dezember: Ökonomen rechnen mit einer erneuten Anhebung, weil die Energiepreise erst mit Verzögerung auf andere Güter durchschlagen. Bei Bauzinsen über 4 Prozent sollte eine MFH-Finanzierung den Zinspfad nach oben einkalkulieren statt auf sinkende Zinsen zu setzen.",
+          "titel": "EZB lässt Leitzins bei 2,50 Prozent — und nennt Energiepreise als Risiko",
+          "aufmacher": "Der EZB-Rat hat am 29. Oktober alle drei Leitzinsen unverändert gelassen; der Einlagesatz bleibt bei 2,50 Prozent.",
+          "fakten": "Hauptrefinanzierungssatz 2,65 Prozent, Spitzenrefinanzierungssatz 2,90 Prozent. Zur Begründung verweist der Rat auf weiter gestiegene Energiepreise, die Aufwärtsrisiken für die Inflation und Abwärtsrisiken für das Wachstum mit sich bringen. Die zugrunde liegende Inflation sei bislang weitgehend stabil, die Löhne zeigten keine wesentliche Reaktion; zugleich haben sich die Finanzierungsbedingungen verschärft. Der Rat legt sich nicht auf einen Zinspfad fest — nächste Sitzung am 17. Dezember 2026.",
+          "einordnung": "Bauzinsen hängen an der Rendite zehnjähriger Bundesanleihen, nicht am Leitzins. Solange der Rat bei steigenden Energiepreisen stillhält und die Finanzierungsbedingungen sich verschärfen, ist mit fallenden Bauzinsen kurzfristig nicht zu rechnen — für geplante Anschlussfinanzierungen eher ein Forward-Darlehen prüfen als auf Zinssenkung zu warten.",
           "quellen": [
-            {"name": "Statistisches Bundesamt: Inflationsrate Oktober 2026 (vorläufig)", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_382_611.html"},
-            {"name": "tagesschau: Inflation geht auf 2,8 Prozent zurück", "url": "https://www.tagesschau.de/wirtschaft/verbraucher/inflationsrate-deutschland-oktober-100.html"}
+            {
+              "name": "EZB, Geldpolitische Beschlüsse 29.10.2026",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.de.html"
+            },
+            {
+              "name": "Baufivergleich, Leitzinsen bestätigt am 29.10.2026",
+              "url": "https://baufivergleich.de/aktuelle-zinsen"
+            }
           ]
         }
       ]
@@ -99,13 +108,26 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "paperless-ngx 3.4.2 ist da — reines Bugfix-Update",
-          "aufmacher": "Paperless-ngx 3.4.2 behebt vor allem Fehler in der Oberfläche und beim Aufbau der Indizes; auf dem NAS läuft noch 3.4.1.",
-          "fakten": "Das Release vom 3. November 21:57 Uhr korrigiert die Darstellung des Speichern-Buttons auf Mobilgeräten, verhindert den Verlust des Ansichtsnamens beim Speichern und Schließen, lässt die Index- und LLM-Index-Initialisierung auf die Installation der Tesseract-Sprachpakete warten und zieht filelock auf 4.2.6 (ACL-Fixes); zusätzlich werden bulk_edit-Importe in den Celery-Workern sicher geladen. Im Home-Assistant-Add-on „MCP Server (Dev)“ steht der Sprung von 9.1.0.dev3341 auf dev3355 an – Dev-Kanal mit aktiver Auto-Aktualisierung, Release-Notes veröffentlicht dieser Kanal nicht. Der Hermes Agent meldet auf v0.22.6 ein Upstream-Update im Git-Install; der lokale Stand ist dabei nicht hinter dem Remote, die Anzeige kommt aus der Upstream-Prüfung.",
-          "einordnung": "Das Paperless-Update ist risikoarm, aber vor dem Einspielen ein Backup ziehen — die Index-Initialisierung fasst den Suchindex an. Beim MCP-Dev-Add-on ist nichts zu tun, es aktualisiert sich selbst.",
+          "titel": "Voicestudio-Container liegt seit drei Wochen still (Exit 137)",
+          "aufmacher": "Zwei der 23 Container auf dem NAS laufen nicht — einer davon ist omnivoice, seit rund drei Wochen beendet mit Exit-Code 137.",
+          "fakten": "Exit 137 bedeutet Abbruch durch das System, in aller Regel wegen Speichermangels (OOM-Kill). Der zweite gestoppte Container ist der einmalige Firecrawl-Init firecrawl-starter-monitor-db-init-1 mit Exit-Code 0 — das ist ein normal beendeter Einmaljob. Die übrigen 21 Container laufen, darunter Portainer, Paperless mit Datenbank und Broker, Immich, Open WebUI, Fredy und der komplette Firecrawl-Stack.",
+          "einordnung": "Lokales TTS und Dubbing stehen damit seit Wochen still, ohne dass es aufgefallen wäre. Ein Neustart ist ein Schreibzugriff — ich brauche deine Freigabe; vorher prüfe ich das Log, ob wirklich der Speicher die Ursache war oder eine Konfiguration.",
+          "quellen": []
+        },
+        {
+          "titel": "Home Assistant ist komplett aktuell — nur Paperless hängt eine Version zurück",
+          "aufmacher": "Alle 96 Update-Einträge in Home Assistant stehen auf „aus«, es ist nichts offen; auf dem NAS läuft Paperless weiter auf 3.4.1.",
+          "fakten": "Geprüft wurden Core, Supervisor, Betriebssystem, alle Add-ons (Mosquitto, Zigbee2MQTT, Frigate, Music Assistant, Glances, Studio Code Server), sämtliche HACS-Integrationen und Karten sowie Shelly- und UniFi-Firmware — kein offenes Update, einige wenige Entitäten sind schlicht nicht erreichbar. Paperless-ngx 3.4.2 vom 3. November bringt 11 Fehlerbehebungen und 14 Abhängigkeits-Aktualisierungen, keine neuen Funktionen und keine Breaking Changes; der Indexaufbau wartet jetzt auf die Tesseract-Sprachpakete.",
+          "einordnung": "Ein Container-Neustart genügt, ein Export-Backup vorher. Ich kann das übernehmen, sobald du es freigibst.",
           "quellen": [
-            {"name": "paperless-ngx v3.4.2 Release Notes", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.2"},
-            {"name": "Interne Abfrage: HA-Update-Entities", "url": "http://192.168.1.91:8123"}
+            {
+              "name": "paperless-ngx, Release v3.4.2",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.2"
+            },
+            {
+              "name": "releaselab, Upgrade-Test 3.4.2",
+              "url": "https://releaselab.dev/releases/paperless-ngx/3.4.2"
+            }
           ]
         }
       ]
@@ -126,14 +148,19 @@
       "titel": "Deutsche/europäische KI",
       "artikel": [
         {
-          "titel": "Bundesregierung legt KI-Zielbild 2030 vor: 55 Prozent der KMU sollen KI nutzen",
-          "aufmacher": "Die KI-Taskforce der Bundesregierung hat am 2. November ihren Ergebnisbericht „Deutschland als KI-Nation 2030“ vorgelegt — mit erstmals ressortübergreifend geeinten Zielwerten.",
-          "fakten": "Der Bericht bündelt 18 Schlüsselmaßnahmen auf sechs Feldern. Bis 2030 sollen mindestens 55 Prozent der kleinen und mittleren Unternehmen KI einsetzen und mindestens 90 Prozent der Bundesbehörden wenigstens eine KI-Anwendung produktiv nutzen; die Rechenzentrumskapazität soll sich vervierfachen, und mindestens eine europäische KI-Gigafactory soll in Deutschland den Betrieb aufnehmen. Vorgestellt wurde das Papier beim Digital-Gipfel unter dem Motto „Shaping AI: safe, sovereign, competitive“; Kanzler Merz verwies auf über 200 Milliarden Euro Investitionszusagen beim Investitionsgipfel und nannte Mistral, Aleph Alpha und Cohere als Partner. Der Branchenverband eco begrüßt die Schwerpunkte, kritisiert aber den starren PUE-Betriebswert von 1,2 im Energieeffizienzgesetz, fehlende verbindliche Netzanschlusszusagen und die Strompreise; angepeilt ist eine Genehmigungsdauer für Rechenzentren von höchstens zweieinhalb Jahren.",
-          "einordnung": "Bemerkenswert für Mike: Der Ausbau trifft genau die Engpässe, die auch sein Netzanschluss-Thema sind — Anschlussleistung, Netzkapazität, Strompreis. Abwärmenutzung aus Rechenzentren wird damit zu einem kommunalen Thema, das perspektivisch auch Wärmenetze in Troisdorf berühren kann.",
+          "titel": "Cohere sammelt bis zu 7 Milliarden kanadische Dollar ein — mit Aleph Alpha im Rücken",
+          "aufmacher": "Cohere, seit diesem Jahr Eigentümer von Aleph Alpha, hat die größte private Kapitalrunde der kanadischen Technologiegeschichte aufgelegt: bis zu 7 Milliarden kanadische Dollar, rund 4,7 Milliarden Euro.",
+          "fakten": "Die Series E bewertet das Unternehmen mit rund 35,7 Milliarden kanadischen Dollar (rund 23,9 Milliarden Euro). Angeführt wird die Runde von der Schwarz-Gruppe (Lidl, Kaufland); die kanadische Regierung und Nvidia sind ebenfalls beteiligt. Cohere sitzt in Toronto und Berlin, Heidelberg bleibt zentraler Forschungs- und Entwicklungsstandort von Aleph Alpha. Das Geld soll in Modelle, Infrastruktur und Expansion fließen; Beobachter lesen darin auch einen Schritt Richtung Börsengang.",
+          "einordnung": "Der deutsche Souveränitätsanspruch läuft damit über einen kanadischen Anbieter mit deutschem Großinvestor — für deine Local-first-Ausrichtung zählen ohnehin Modellgewichte und Preise, nicht der Firmensitz. Mistral (Gewichte von Large 4 am 29.10. gemeldet) und Black Forest Labs: nichts Neues.",
           "quellen": [
-            {"name": "Bundesregierung: „Deutschland als KI-Nation 2030“ (PDF, 02.11.2026)", "url": "https://www.bundesregierung.de/resource/blob/992814/2459514/b8518975df987ac1cfdc1fc5b655efb3/2026-11-02-ki-data.pdf?download=1"},
-            {"name": "Bundesregierung: Pressekonferenz zum Digital-Gipfel", "url": "https://www.bundesregierung.de/breg-de/aktuelles/pressekonferenzen/digital-gipfel-pk-merz-2459634"},
-            {"name": "eco: Stellungnahme zur KI-Taskforce, 02.11.2026", "url": "https://www.eco.de/presse/eco-zur-ki-taskforce-ambitionierte-ki-ziele-duerfen-nicht-an-der-infrastruktur-scheitern/"}
+            {
+              "name": "heise online, Schwarz-Gruppe investiert Milliarden in Cohere",
+              "url": "https://www.heise.de/news/Schwarz-Gruppe-investiert-Milliarden-in-KI-Start-up-Cohere-11505395.html"
+            },
+            {
+              "name": "heise online, KI-Update kompakt zu ML4 und Cohere",
+              "url": "https://www.heise.de/news/KI-Update-kompakt-Mistral-ML4-Cohere-KI-Empfehlungen-KI-klont-Indie-Spiele-11506040.html"
+            }
           ]
         }
       ]
