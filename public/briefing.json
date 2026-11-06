@@ -1,14 +1,14 @@
 {
-  "datum": "Donnerstag, 05.11.2026",
+  "datum": "Freitag, 06.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "3,7 °C · Regen 0 % · UV 2,1",
-          "aufmacher": "☀️ klar, Tageshöchstwert 12,4 °C, Tiefstwert 3,6 °C.",
-          "fakten": "Kein Niederschlag zu erwarten, UV-Index 2,1 (niedrig).",
-          "einordnung": "Sonnig und trocken — der beste Tag der Woche für Arbeiten am Dach, an der PV oder am Zählerschrank.",
+          "titel": "2,3 °C · Regen 0 % · UV 2,1",
+          "aufmacher": "Klarer Morgen über Troisdorf, Tageshöchstwert 11,4 °C — trocken, aber die Jacke bleibt Pflicht.",
+          "fakten": "",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -18,7 +18,14 @@
       "artikel": [
         {
           "titel": "06.11.2026 14:30: KGG – Krankengymnastik am Gerät (Melvin)",
-          "aufmacher": "Freitag, 14:30 Uhr.",
+          "aufmacher": "Heute Nachmittag.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "09.11.2026 15:00: KGG – Krankengymnastik am Gerät (Luisa Köhn)",
+          "aufmacher": "Montag, 15 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -29,34 +36,34 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Melanbogenbrücke bleibt für Lkw gesperrt — Linie 508 fährt seit Montag Umleitung",
-          "aufmacher": "Die Siegbrücke der L143 zwischen Troisdorf und Sankt Augustin ist seit dem 23. Oktober für Fahrzeuge über 3,5 Tonnen gesperrt; der Busverkehr ist bereits umgestellt.",
-          "fakten": "Straßen.NRW hat die Brücke nach neuen Prüfergebnissen von 14 auf 3,5 Tonnen abgelastet, um die Verkehrssicherheit zu halten. Auch der Schienenersatzverkehr der Deutschen Bahn aus der Korridorsanierung am Rechten Rhein wurde verlegt, um die Brücke zu entlasten. Die Buslinie 508 fährt in Sankt Augustin-Menden seit dem 2. November mit Ersatzhaltestellen. Ein Neubau an gleicher Stelle ist geplant; der Antrag auf Planfeststellung soll bis zum Jahreswechsel 2026/27 bei der Bezirksregierung Köln eingehen.",
-          "einordnung": "Für Zulieferungen und Bagger zur Moselstraße heißt das Umweg über Siegburg oder die A59 — Transporte für PV, Wallbox und Zählerschrank lieber auf Fahrzeuge unter 3,5 Tonnen legen.",
+          "titel": "Vier Telefonbetrüger in Haft — 80.000 Euro Schaden im Rhein-Sieg-Kreis",
+          "aufmacher": "Die Polizei Rhein-Sieg hat eine Bande zerschlagen, die sich als Bankmitarbeiter ausgab und vor allem ältere Menschen um ihr Geld brachte.",
+          "fakten": "Vier Tatverdächtige im Alter von 24 bis 26 Jahren sitzen seit dem 5. November in Untersuchungshaft, einer wurde in den Niederlanden festgenommen. Die Gruppe soll zwischen März und August 2026 mehr als 20 Taten begangen und dabei rund 80.000 Euro erbeutet haben — überwiegend im Rhein-Sieg-Kreis, außerdem in Bonn und Overath. Die Ermittlungen führte das Kriminalkommissariat 2 mit der Staatsanwaltschaft Bonn sowie den Polizeien Köln und Wuppertal, teils verdeckt. Die Masche: angebliche Bankmitarbeiter holen Karten an der Haustür ab und fragen am Telefon nach PIN-Nummern.",
+          "einordnung": "Die Masche zielt auf ältere Alleinwohnende — genau die Klientel in vielen Mehrfamilienhäusern. Ein Satz im nächsten Mieterrundschreiben kostet nichts und erspart im Schadensfall Diskussionen mit der Versicherung.",
           "quellen": [
             {
-              "name": "Straßen.NRW, 22.10.2026",
-              "url": "https://www.strassen.nrw.de/de/meldung/l143-melanbogenbruecke-zwischen-troisdorf-und-sankt-augustin-wird-fuer-fahrzeuge-ueber-3-5-tonnen-gesperrt.html"
+              "name": "Polizei Bonn / Polizei Rhein-Sieg-Kreis, Pressemeldung 05.11.2026",
+              "url": "https://www.presseportal.de/blaulicht/pm/7304/6385012"
             },
             {
-              "name": "BLICK aktuell, Linie 508 ab 2. November",
-              "url": "https://www.blick-aktuell.de/Nachrichten/Ersatzhaltestellen-und-Umleitung-der-Linie-508-ab-2-November-680044.html"
+              "name": "Süddeutsche Zeitung (dpa), 05.11.2026",
+              "url": "https://www.sueddeutsche.de/panorama/kriminalitaet-abzocke-per-telefon-polizei-schnappt-betruegerbande-dpa.urn-newsml-dpa-com-20090101-261105-930-951265"
             }
           ]
         },
         {
-          "titel": "Einbruch in Troisdorf-Spich: Kupfer und Werkzeug im Wert von rund 30.000 Euro gestohlen",
-          "aufmacher": "Unbekannte sind am Wochenende in die Lagerhalle einer Firma an der Echternacher Straße in Troisdorf-Spich eingebrochen und haben Kupfer sowie Werkzeug mitgenommen.",
-          "fakten": "Die Tat liegt zwischen Samstag, 31. Oktober, 17:00 Uhr, und Sonntag, 1. November, 15:40 Uhr. Die Täter hebelten ein Zufahrtstor auf und beschädigten anschließend das elektronische Rolltor der Halle. Der Schaden wird auf etwa 30.000 Euro geschätzt. Die Kripo ermittelt wegen besonders schweren Falls des Diebstahls; Hinweise nimmt die Polizei unter 02241 541-3221 entgegen.",
-          "einordnung": "Kupfer ist derzeit ein beliebtes Diebesgut — Kabelrollen und PV-Komponenten auf Baustellen in Troisdorf nicht über Nacht frei zugänglich lagern.",
+          "titel": "Spich: Friedrichstraße ab Montag einen Monat voll gesperrt",
+          "aufmacher": "Ab dem 9. November ist die Friedrichstraße 3–6 in Troisdorf-Spich wegen Arbeiten am Hauptkanal dicht.",
+          "fakten": "Vom 9. bis 30. November wird die Friedrichstraße 3–6 voll gesperrt, weil Ver- und Entsorgungsleitungen einschließlich des Hauptkanals neu verlegt werden; die Gehwege bleiben nutzbar. Im Kreisverkehr Langbaurghstraße/Niederkasseler Straße ist vom 9. bis 11. November jeweils von 7 bis 19 Uhr mit Einschränkungen zu rechnen. In Altenrath wird der Eisenweg (K20) zwischen Altenrather Straße und Brückenstraße vom 7. bis 16. Dezember für Forstarbeiten komplett gesperrt.",
+          "einordnung": "Spich und Altenrath liegen im direkten Umfeld der Troisdorfer Objekte — bei Anlieferung und Müllabfuhr lohnt der Blick auf die Termine, nicht auf die Umleitungsschilder.",
           "quellen": [
             {
-              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis, 02.11.2026",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6382550"
+              "name": "Stadt Troisdorf, Verkehrsmeldungen 04.11.2026",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/aktuelle-verkehrsmeldungen-fuer-troisdorf/"
             },
             {
-              "name": "news.de, Polizei-News Troisdorf 02.11.26",
-              "url": "https://www.news.de/lokales/860152882/blaulicht-news-polizei-einsatz-troisdorf-02-11-26-diebstahl-heute/1/"
+              "name": "Rundblick Troisdorf, Verkehrsmeldungen",
+              "url": "https://www.rundblick-troisdorf.de/"
             }
           ]
         }
@@ -66,18 +73,22 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben über vier Prozent — 3,90 Prozent gibt es nur bei 60 Prozent Beleihung",
-          "aufmacher": "Für zehnjährige Zinsbindung liegt der Bestzins im November bei 3,90 Prozent effektiv bei 60 Prozent Beleihung — bei 90 Prozent Beleihung sind es 4,33 Prozent.",
-          "fakten": "Der Unterschied von 0,43 Prozentpunkten kostet je 100.000 Euro Darlehen rund 35 Euro im Monat, auf 500.000 Euro sind es rund 179 Euro. 15 Jahre Bindung kosten 4,58 Prozent, 20 Jahre 4,69 Prozent, 30 Jahre 4,96 Prozent. Finanztip nennt mit Stand 25. Oktober rund 4,4 Prozent und erwartet kurzfristig Schwankungen von 0,1 bis 0,2 Prozentpunkten. Fünf Jahre Bindung ist mit 4,44 Prozent derzeit teurer als zehn Jahre.",
-          "einordnung": "Bei maximalem Hebel — nur Kaufnebenkosten aus Eigenkapital, rund 90 Prozent Beleihung — ist der 4,33-Prozent-Satz der realistische Preis: auf 500.000 Euro sind das rund 1.804 Euro Zins im Monat vor Tilgung, bei 3,90 Prozent wären es 1.625 Euro. Zehn Jahre Bindung mit Sondertilgungsrecht bleibt die vernünftige Wahl; lange Bindungen kosten je 500.000 Euro rund 100 Euro mehr im Monat.",
+          "titel": "Wohnungspreise drehen erstmals seit zwei Jahren ins Minus",
+          "aufmacher": "Erstmals seit dem zweiten Quartal 2024 kosten Eigentumswohnungen in Deutschland weniger als ein Jahr zuvor.",
+          "fakten": "Der GREIX-Kaufpreisindex für das dritte Quartal 2026 weist für Eigentumswohnungen 0,2 Prozent Minus im Jahresvergleich aus; zum Vorquartal ging es nominal noch 0,5 Prozent aufwärts — der Anstieg reicht nicht, um den Rückgang seit Herbst 2025 auszugleichen. Einfamilienhäuser gaben zum Vorquartal 0,5 Prozent nach, Mehrfamilienhäuser 0,2 Prozent; im Jahresvergleich liegen MFH 2,4 Prozent im Minus, real sogar 5,2 Prozent, bei kleiner Transaktionszahl allerdings eingeschränkt aussagekräftig. Regional läuft es auseinander: Köln plus 2,8 Prozent zum Vorquartal und plus 4,6 Prozent im Jahr, Berlin minus 0,9 Prozent und minus 2,9 Prozent im Jahr. Inserate stehen im Schnitt 94 Tage online, bei 22,4 Prozent der Wohnungsanzeigen wurde der Preis nach unten korrigiert. Der Index stützt sich auf notariell beurkundete Kaufpreise aus 27 Städten und Regionen, Thüringen ist erstmals vollständig enthalten.",
+          "einordnung": "Köln läuft, Berlin nicht — der Markt differenziert wieder nach Lage statt nur nach Zins. Für den MFH-Kauf heißt das: Die Preise geben leicht nach, während der Bauzins seit Ende September von 4,13 auf 3,90 Prozent gefallen ist. Der Hebel wird billiger, die Objekte nicht teurer — die Konstellation, in der Nachrechnen mehr bringt als Warten.",
           "quellen": [
             {
-              "name": "Baufivergleich, Zinsupdate 30.10.2026",
-              "url": "https://baufivergleich.de/aktuelle-zinsen"
+              "name": "Kiel Institut für Weltwirtschaft, GREIX Q3 2026, 05.11.2026",
+              "url": "https://www.kielinstitut.de/de/medien/aktuelles/wohnungspreise-erstmals-seit-gut-zwei-jahren-unter-vorjahresniveau/"
             },
             {
-              "name": "Finanztip, Stand 25.10.2026",
-              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen"
+              "name": "GREIX – German Real Estate Index",
+              "url": "https://www.greix.de/"
+            },
+            {
+              "name": "Der Tagesspiegel (Reuters), 05.11.2026",
+              "url": "https://www.tagesspiegel.de/wirtschaft/reuters-experte-erklart-immobilien-trendwende-wohnungspreise-sinken-erstmals-seit-zwei-jahren-16244490.html"
             }
           ]
         }
@@ -87,18 +98,18 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB lässt Leitzins bei 2,50 Prozent — und nennt Energiepreise als Risiko",
-          "aufmacher": "Der EZB-Rat hat am 29. Oktober alle drei Leitzinsen unverändert gelassen; der Einlagesatz bleibt bei 2,50 Prozent.",
-          "fakten": "Hauptrefinanzierungssatz 2,65 Prozent, Spitzenrefinanzierungssatz 2,90 Prozent. Zur Begründung verweist der Rat auf weiter gestiegene Energiepreise, die Aufwärtsrisiken für die Inflation und Abwärtsrisiken für das Wachstum mit sich bringen. Die zugrunde liegende Inflation sei bislang weitgehend stabil, die Löhne zeigten keine wesentliche Reaktion; zugleich haben sich die Finanzierungsbedingungen verschärft. Der Rat legt sich nicht auf einen Zinspfad fest — nächste Sitzung am 17. Dezember 2026.",
-          "einordnung": "Bauzinsen hängen an der Rendite zehnjähriger Bundesanleihen, nicht am Leitzins. Solange der Rat bei steigenden Energiepreisen stillhält und die Finanzierungsbedingungen sich verschärfen, ist mit fallenden Bauzinsen kurzfristig nicht zu rechnen — für geplante Anschlussfinanzierungen eher ein Forward-Darlehen prüfen als auf Zinssenkung zu warten.",
+          "titel": "Inflation im Euroraum springt auf 4,0 Prozent — Energie ist der Treiber",
+          "aufmacher": "Die Teuerung im Euroraum ist im Oktober auf 4,0 Prozent gestiegen, den höchsten Stand seit September 2023.",
+          "fakten": "Nach der Eurostat-Schnellschätzung vom 4. November zogen die Verbraucherpreise von 3,8 Prozent im September auf 4,0 Prozent an. Energie verteuert sich um 20,8 Prozent im Jahresvergleich (September: 18,9 Prozent), Dienstleistungen um 3,3 Prozent, Nahrungsmittel, Alkohol und Tabak um 1,6 Prozent; ohne Energie läge die Rate bei 2,3 Prozent. Deutschland steht mit 2,8 Prozent deutlich unter dem Euroraum-Schnitt, Litauen mit 6,1 Prozent an der Spitze, Italien und Griechenland bei je 5,6 Prozent. Die EZB beließ den Einlagesatz am 29. Oktober bei 2,50 Prozent; Bundesbankchef Nagel hält eine Erhöhung am 17. Dezember für „sehr wahrscheinlich notwendig“. Die vollständigen Oktober-Daten erscheinen am 18. November.",
+          "einordnung": "Vier Prozent Teuerung bei 2,5 Prozent Zins heißt negativer Realzins — für Sparguthaben schlecht, für Kredite bequem. Solange die EZB nicht dreht, bleibt Fremdkapital das billigere Kapital; die Energieseite trifft zugleich die Heizkostenabrechnung, die im Frühjahr auf dem Tisch liegt.",
           "quellen": [
             {
-              "name": "EZB, Geldpolitische Beschlüsse 29.10.2026",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.de.html"
+              "name": "Eurostat, Flash-Schätzung Oktober 2026 (04.11.2026)",
+              "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-04112026-ap"
             },
             {
-              "name": "Baufivergleich, Leitzinsen bestätigt am 29.10.2026",
-              "url": "https://baufivergleich.de/aktuelle-zinsen"
+              "name": "tagesschau.de, 04.11.2026",
+              "url": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-eurozone-oktober-102.html"
             }
           ]
         }
@@ -108,25 +119,18 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Voicestudio-Container liegt seit drei Wochen still (Exit 137)",
-          "aufmacher": "Zwei der 23 Container auf dem NAS laufen nicht — einer davon ist omnivoice, seit rund drei Wochen beendet mit Exit-Code 137.",
-          "fakten": "Exit 137 bedeutet Abbruch durch das System, in aller Regel wegen Speichermangels (OOM-Kill). Der zweite gestoppte Container ist der einmalige Firecrawl-Init firecrawl-starter-monitor-db-init-1 mit Exit-Code 0 — das ist ein normal beendeter Einmaljob. Die übrigen 21 Container laufen, darunter Portainer, Paperless mit Datenbank und Broker, Immich, Open WebUI, Fredy und der komplette Firecrawl-Stack.",
-          "einordnung": "Lokales TTS und Dubbing stehen damit seit Wochen still, ohne dass es aufgefallen wäre. Ein Neustart ist ein Schreibzugriff — ich brauche deine Freigabe; vorher prüfe ich das Log, ob wirklich der Speicher die Ursache war oder eine Konfiguration.",
-          "quellen": []
-        },
-        {
-          "titel": "Home Assistant ist komplett aktuell — nur Paperless hängt eine Version zurück",
-          "aufmacher": "Alle 96 Update-Einträge in Home Assistant stehen auf „aus«, es ist nichts offen; auf dem NAS läuft Paperless weiter auf 3.4.1.",
-          "fakten": "Geprüft wurden Core, Supervisor, Betriebssystem, alle Add-ons (Mosquitto, Zigbee2MQTT, Frigate, Music Assistant, Glances, Studio Code Server), sämtliche HACS-Integrationen und Karten sowie Shelly- und UniFi-Firmware — kein offenes Update, einige wenige Entitäten sind schlicht nicht erreichbar. Paperless-ngx 3.4.2 vom 3. November bringt 11 Fehlerbehebungen und 14 Abhängigkeits-Aktualisierungen, keine neuen Funktionen und keine Breaking Changes; der Indexaufbau wartet jetzt auf die Tesseract-Sprachpakete.",
-          "einordnung": "Ein Container-Neustart genügt, ein Export-Backup vorher. Ich kann das übernehmen, sobald du es freigibst.",
+          "titel": "Paperless 3.4.2 wartet weiter — es ist ein Sicherheitsupdate",
+          "aufmacher": "Auf dem NAS läuft Paperless-ngx unverändert auf 3.4.1; das Update auf 3.4.2 vom 3. November schließt konkrete Sicherheitslücken und wartet auf Freigabe.",
+          "fakten": "Das Release hebt 14 Abhängigkeiten an, unter anderem um den Zertifikatsvorfall bei eMudhra/emSign und Schwachstellen in Pillow zu schließen, und bringt elf Fehlerbehebungen, überwiegend in der Weboberfläche auf Mobilgeräten. Der Indexaufbau wartet jetzt auf die Installation der Tesseract-Sprachpakete. Breaking Changes sind keine dokumentiert, ein Fremdtest des Sprungs 3.4.1 auf 3.4.2 lief ohne Datenverlust und ohne offene Migrationen. Home Assistant und die übrigen Dienste sind aktuell; aus bleiben unverändert Voicestudio (Exit 137) und der einmalige Firecrawl-Init-Container (Exit 0).",
+          "einordnung": "Betroffen ist das Dokumentenarchiv, in dem die Belege liegen — Export-Backup vorher, danach zehn Minuten Arbeit. Ich mache das auf dein Wort.",
           "quellen": [
             {
               "name": "paperless-ngx, Release v3.4.2",
-              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.2"
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
             },
             {
-              "name": "releaselab, Upgrade-Test 3.4.2",
-              "url": "https://releaselab.dev/releases/paperless-ngx/3.4.2"
+              "name": "releaselab.dev, Upgrade-Test 3.4.2",
+              "url": "https://releaselab.dev/releases/paperless-ngx/3.4.2/"
             }
           ]
         }
@@ -136,11 +140,20 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Haushaltsroboter: nichts Neues.",
-          "aufmacher": "Haushaltsroboter: nichts Neues.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "NEURA 4NE1 kostet 98.000 Euro — Auslieferung Ende 2026",
+          "aufmacher": "Der Heidelberger Hersteller NEURA Robotics nennt erstmals konkrete Preise für seinen humanoiden 4NE1: 98.000 Euro pro Einheit, Auslieferung für Ende 2026 angekündigt.",
+          "fakten": "Laut Roboterwelt lässt sich die Generation 3.5 für 98.000 Euro pro Einheit reservieren, die kleinere Variante 4NE1 Mini ab 19.999 Euro — jeweils netto, ohne Steuern und Versand. NEURA selbst weist auf der eigenen Reservierungsseite keinen Stückpreis aus, verlangt aber eine vollständig rückzahlbare Reservierungsgebühr von 100 Euro und spricht im FAQ vom „late 2026 release“; beworben werden unter anderem Bügeln, Tragen und das Ausräumen der Spülmaschine. Ein USD-Preis wurde nicht genannt — nicht verifiziert.",
+          "einordnung": "Damit hat der erste deutsche Humanoid Preis und Lieferfenster — teurer als ein 1X NEO im Abo, aber ohne menschliche Fernsteuerung als Geschäftsmodell. Für den privaten Haushalt bleibt es Vorserienstand zum Kleinwagenpreis; interessant ist es dort, wo eine Halle repetitive Handgriffe hat.",
+          "quellen": [
+            {
+              "name": "NEURA Robotics, 4NE1 Reservierung",
+              "url": "https://neura-robotics.com/product/4ne1-reservation/"
+            },
+            {
+              "name": "Roboterwelt, NEURA 4NE1: Daten, Preise und Lieferstand 2026",
+              "url": "https://www.roboterwelt.de/magazin/w4o5/humanoider-robotik-neu-gedacht-was-4ne1-wirklich-leisten-kann"
+            }
+          ]
         }
       ]
     },
@@ -148,18 +161,22 @@
       "titel": "Deutsche/europäische KI",
       "artikel": [
         {
-          "titel": "Cohere sammelt bis zu 7 Milliarden kanadische Dollar ein — mit Aleph Alpha im Rücken",
-          "aufmacher": "Cohere, seit diesem Jahr Eigentümer von Aleph Alpha, hat die größte private Kapitalrunde der kanadischen Technologiegeschichte aufgelegt: bis zu 7 Milliarden kanadische Dollar, rund 4,7 Milliarden Euro.",
-          "fakten": "Die Series E bewertet das Unternehmen mit rund 35,7 Milliarden kanadischen Dollar (rund 23,9 Milliarden Euro). Angeführt wird die Runde von der Schwarz-Gruppe (Lidl, Kaufland); die kanadische Regierung und Nvidia sind ebenfalls beteiligt. Cohere sitzt in Toronto und Berlin, Heidelberg bleibt zentraler Forschungs- und Entwicklungsstandort von Aleph Alpha. Das Geld soll in Modelle, Infrastruktur und Expansion fließen; Beobachter lesen darin auch einen Schritt Richtung Börsengang.",
-          "einordnung": "Der deutsche Souveränitätsanspruch läuft damit über einen kanadischen Anbieter mit deutschem Großinvestor — für deine Local-first-Ausrichtung zählen ohnehin Modellgewichte und Preise, nicht der Firmensitz. Mistral (Gewichte von Large 4 am 29.10. gemeldet) und Black Forest Labs: nichts Neues.",
+          "titel": "Merz startet „European Future AI Initiative“ — 18 Maßnahmen bis 2030",
+          "aufmacher": "Deutschland, Frankreich, Finnland, Italien, Polen und Kanada bündeln ihre Kräfte, um eigene europäische Frontier-Modelle aufzubauen.",
+          "fakten": "Bundeskanzler Merz hat die Allianz auf dem Digital-Gipfel der Bundesregierung in Berlin angekündigt; laut Bundesregierung sollen gemeinsam mit privaten Investoren souveräne europäische Spitzenmodelle entstehen, weitere Partner seien ausdrücklich willkommen. Flankierend legte die ressortübergreifende KI-Taskforce unter Digitalminister Wildberger den Fahrplan „Deutschlands Weg zur KI-Nation 2030“ mit 18 Maßnahmen vor: Bis 2030 sollen mindestens 55 Prozent der kleinen und mittleren Unternehmen und 80 Prozent der Großunternehmen KI einsetzen, 90 Prozent der Bundesbehörden mindestens eine KI-Anwendung produktiv nutzen, und die KI-Rechenzentrumskapazität soll sich gegenüber 2025 vervierfachen. Der Bund will als Ankerkunde auftreten und mindestens eine europäische KI-Gigafabrik nach Deutschland holen. Auf dem Gipfel waren auch die Chefs von Mistral, Black Forest Labs und Cohere vertreten.",
+          "einordnung": "Der entscheidende Teil ist der Einkauf: Der Staat als Erstkäufer ist für Aleph Alpha das eigentliche Geschäftsmodell — Zusage und Umsatz sind dort dasselbe Wort. Die Vervierfachung der Rechenkapazität ist die einzige Zahl im Papier, an der sich der Beschluss in vier Jahren messen lassen muss.",
           "quellen": [
             {
-              "name": "heise online, Schwarz-Gruppe investiert Milliarden in Cohere",
-              "url": "https://www.heise.de/news/Schwarz-Gruppe-investiert-Milliarden-in-KI-Start-up-Cohere-11505395.html"
+              "name": "Bundesregierung, Pressekonferenz Digital-Gipfel",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/pressekonferenzen/digital-gipfel-pk-merz-2459634"
             },
             {
-              "name": "heise online, KI-Update kompakt zu ML4 und Cohere",
-              "url": "https://www.heise.de/news/KI-Update-kompakt-Mistral-ML4-Cohere-KI-Empfehlungen-KI-klont-Indie-Spiele-11506040.html"
+              "name": "Computerwoche, 03.11.2026",
+              "url": "https://www.computerwoche.de/article/4243847/digital-gipfel-2026-kanzler-merz-blast-zur-ki-offensive.html"
+            },
+            {
+              "name": "Handelsblatt KI-Briefing, 05.11.2026",
+              "url": "https://www.handelsblatt.com/technik/ki/ki-briefing/ki-briefing-gebuendelte-kraefte-deutschland-schmiedet-neues-ki-buendnis/100267246.html"
             }
           ]
         }
