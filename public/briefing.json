@@ -1,13 +1,13 @@
 {
-  "datum": "Samstag, 07.11.2026",
+  "datum": "Sonntag, 08.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "2°C jetzt · Regen 0% · UV 2",
-          "aufmacher": "Bedeckt, Tageshöchstwert 10°C, Tief 2°C.",
-          "fakten": "Kein Niederschlag zu erwarten, UV-Index 2,05 (niedrig).",
+          "titel": "6°C jetzt · Regen 10% · UV 1,1",
+          "aufmacher": "☀️ Klar. Höchstwert 11°C, Tief 4,3°C, trocken bei nur 10 Prozent Regenrisiko. UV-Index niedrig — Winterlicht, kein Sonnenschutz nötig.",
+          "fakten": "",
           "einordnung": "",
           "quellen": []
         }
@@ -18,7 +18,21 @@
       "artikel": [
         {
           "titel": "Montag 09.11.2026 15:00: KGG – Krankengymnastik am Gerät (Luisa Köhn)",
-          "aufmacher": "Der einzige Termin der nächsten drei Tage.",
+          "aufmacher": "Krankengymnastik am Gerät, 15 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "Mittwoch 11.11.2026 09:00: Quixx-Meeting",
+          "aufmacher": "Quixx-Meeting, 9 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "Mittwoch 11.11.2026 15:00: KGG – Krankengymnastik am Gerät (Melvin)",
+          "aufmacher": "Krankengymnastik am Gerät, 15 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -29,23 +43,31 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Bund lehnt Klima-Petition zur Verkehrsplanung ab",
-          "aufmacher": "Die Bundesregierung hat die Petition von NABU und Parents for Future für eine klima- und naturschutzverträgliche Verkehrswende abgelehnt.",
-          "fakten": "Mehr als 22.000 Menschen hatten unterzeichnet und gefordert, die noch nicht abgeschlossenen Projekte des Bundesverkehrswegeplans auf Klima- und Naturverträglichkeit zu prüfen und neu zu priorisieren – Vorrang für Erhalt und Schiene. In der Ablehnungsbegründung heißt es, man sehe keinen Grund nachzusteuern, unter anderem weil neue Antriebe CO₂ senken würden. Der Bundesverkehrswegeplan stammt aus dem Jahr 2016; der Verkehrssektor verfehlt seine Klimaziele seit Jahren, und es drohen Strafzahlungen an die EU. NABU und Parents for Future verweisen auf die anstehende Bedarfsplanüberprüfung als letzte Gelegenheit für eine Neuausrichtung.",
-          "einordnung": "Für Troisdorf und den Rhein-Sieg-Kreis geht es um dieselbe Logik: Erhalt vor Neubau, Schiene vor Straße. Wer kommunale Infrastruktur plant, sollte die Instandhaltungskosten neuer Bauwerke von Anfang an mitrechnen, sonst wandern die Lasten zu den Baulastträgern und damit in die Grundsteuer-B-Töpfe.",
+          "titel": "Coolblue eröffnet Logistikzentrum in Troisdorf",
+          "aufmacher": "Der niederländische Elektronikhändler Coolblue hat am 4. November sein neues Depot in Troisdorf in Betrieb genommen.",
+          "fakten": "Das Lager in der Godesberger Straße 8 umfasst 1.810 Quadratmeter und ist nach Hamm und Düsseldorf der dritte Coolblue-Standort in Nordrhein-Westfalen, bundesweit der zehnte. Die Belieferung des Großraums Köln mit 2,4 Millionen Menschen läuft künftig direkt aus Troisdorf statt aus Düsseldorf, zusätzlich erschließt der Standort den Raum Koblenz mit 2,2 Millionen weiteren Menschen. Große Haushaltsgeräte liefert Coolblue mit einstündigem Zeitfenster und installiert sie auf Wunsch vor Ort.",
+          "einordnung": "Ein weiterer Logistikstandort im Troisdorfer Gewerbeumfeld Spich. Das stützt die Nachfrage nach Gewerbefläche — auf die Wohnungsmieten wirkt es nicht.",
           "quellen": [
-            {"name": "Treffpunkt Troisdorf", "url": "https://treffpunkt-troisdorf.de/verkehrsplanung/"},
-            {"name": "Tagesspiegel Background", "url": "https://background.tagesspiegel.de/verkehr-und-smart-mobility/briefing/bundesregierung-lehnt-klima-petition-ab"}
+            {
+              "name": "Logistik Heute",
+              "url": "https://logistik-heute.de/news/e-commerce-coolblue-nimmt-neuen-logistikstandort-troisdorf-betrieb-292124.html"
+            },
+            {
+              "name": "ChannelPartner",
+              "url": "https://www.channelpartner.de/article/4244559/coolblue-eroffnet-neues-logistikzentrum-fur-die-region-koblenz.html"
+            }
           ]
         },
         {
-          "titel": "Troisdorf: Reifenhäuser dreimal in Folge kammerbester Ausbildungsbetrieb",
-          "aufmacher": "Der Troisdorfer Maschinenbauer Reifenhäuser stellt zum dritten Mal in Folge den besten Absolventen bei den Elektronikern für Betriebstechnik im IHK-Bezirk Bonn/Rhein-Sieg.",
-          "fakten": "Fabian Bijkerk erreichte in der Abschlussprüfung 97 Prozent. Von 53 Prüflingen im Bezirk schafften sieben ein „sehr gut“ – drei davon bei Reifenhäuser: Bijkerk (97), Christopher Frieling (94) und Niklas Meyer (94). Alle drei hatten ihre Ausbildung 2023 begonnen und gemeinsam mit ihrem Fachausbilder um ein Jahr verkürzt; zwei von ihnen studieren parallel dual. Die Ehrung fand am 12. Oktober im GOP Bonn statt.",
-          "einordnung": "Ausbildungsqualität ist im Rhein-Sieg-Kreis ein Standortfaktor – für Dienstleister wie Quixx24 zählt, dass technische Fachkräfte in der Region bleiben und nicht nach Köln abwandern.",
+          "titel": "Schon wieder Metalldiebstahl in Spich",
+          "aufmacher": "Vom Gelände einer Firma an der Mülheimer Straße in Troisdorf-Spich sind mehrere Paletten Aluminiumplatten gestohlen worden.",
+          "fakten": "Die Täter waren zwischen Mittwoch, 4. November, 16 Uhr, und Donnerstag, 5. November, 8 Uhr, auf das Firmengelände eingedrungen und transportierten die Paletten ab. Die Polizei sucht Zeugen. Nur wenige Tage zuvor hatten Unbekannte aus einer Lagerhalle im selben Ortsteil Kupfer und Werkzeug im Wert von rund 30.000 Euro gestohlen.",
+          "einordnung": "Zwei Metall-Diebstähle binnen einer Woche im selben Gewerbegebiet: Wer dort Lagerhallen oder Gewerbeobjekte hält, sollte Zäune, Beleuchtung und Zutrittskontrolle prüfen. Metall ist leichte Beute mit sicherem Abnehmer.",
           "quellen": [
-            {"name": "Treffpunkt Troisdorf", "url": "https://treffpunkt-troisdorf.de/kammerbeste-ausbildungsleistung/"},
-            {"name": "Pressebox / Reifenhäuser", "url": "https://www.pressebox.de/inaktiv/reifenhaeuser-gmbh-co-kg-maschinenfabrik/reifenhuser-erzielt-zum-dritten-mal-in-folge-kammerbeste-ausbildungsleistung-im-ihk-bezirk-bonn-rhein-sieg/boxid/1319729"}
+            {
+              "name": "Polizei Rhein-Sieg-Kreis (Presseportal)",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6385461"
+            }
           ]
         }
       ]
@@ -54,23 +76,15 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben bei rund 4,3 Prozent",
-          "aufmacher": "Die Bauzinsen für zehnjährige Darlehen liegen am 7. November 2026 bei etwa 4,26 bis 4,32 Prozent effektiv.",
-          "fakten": "Baufi24 nennt einen Topzins von rund 4,26 Prozent, Baufi Deutschland 4,32 Prozent bei zehnjähriger Zinsbindung. Treiber ist die Rendite der zehnjährigen Bundesanleihe, die im August auf rund 3,31 Prozent und damit den höchsten Stand seit 15 Jahren gestiegen war; für die kommenden Monate rechnen Vermittler mit weiteren Schwankungen. Bei einer Vollfinanzierung von 600.000 Euro entspricht das rein rechnerisch etwa 2.130 bis 2.160 Euro Zins im Monat, bevor ein Cent getilgt ist.",
-          "einordnung": "Mit der Strategie „nur Kaufnebenkosten aus Eigenkapital“ schlägt jeder Zehntelprozentpunkt voll durch: Der Unterschied zwischen 3,0 und 4,3 Prozent kostet bei 600.000 Euro rund 7.920 Euro Zins pro Jahr. Bei diesen Zinsen wird die Anschlussfinanzierung zum eigentlichen Risiko – Zinsbindung eher lang wählen oder eine Forward-Vereinbarung prüfen.",
+          "titel": "Bauturbo: Nur 8 Prozent der Wohnungsunternehmen haben ihn genutzt",
+          "aufmacher": "Ein Jahr nach dem Start des Bauturbos hat ihn laut GdW nur ein Bruchteil der Wohnungsunternehmen tatsächlich in einem Genehmigungsverfahren eingesetzt.",
+          "fakten": "In einer Umfrage des Spitzenverbands GdW im September 2026 berichteten rund 8 Prozent der sozial orientierten Wohnungsunternehmen von einer Anwendung, 92 Prozent verneinten sie. Wo er lief, lag die Genehmigungsdauer im Mittel bei drei Monaten und der geschätzte Zeitgewinn bei durchschnittlich 13 Monaten. Rund 31 Prozent wollen das Instrument künftig nutzen, bei knapp 48 Prozent ist das noch ungewiss. Der GdW fordert dauerhaft niedrige Förderzinsen, einfachere Baustandards und eine verbindliche Fast Lane für bezahlbaren Wohnungsbau.",
+          "einordnung": "Schnellere Genehmigungen sind kein Renditehebel — Baukosten und Zins bleiben es. Beim Ankauf zählt der Genehmigungsstand des Objekts mehr als die Aussicht auf ein zügigeres Verfahren.",
           "quellen": [
-            {"name": "Baufi24", "url": "https://www.baufi24.de/bauzinsen/"},
-            {"name": "Baufi Deutschland", "url": "https://baufi-deutschland.de/aktuelle-bauzinsen/"}
-          ]
-        },
-        {
-          "titel": "Mieten in Troisdorf steigen um rund 6,8 Prozent",
-          "aufmacher": "In Troisdorf liegt die durchschnittliche Angebotsmiete im dritten Quartal 2026 bei 10,74 Euro pro Quadratmeter – 6,77 Prozent mehr als im Vorjahr.",
-          "fakten": "Im Rhein-Sieg-Kreis sind es 10,22 Euro pro Quadratmeter nach 9,62 Euro im Vorjahr, ein Plus von 6,35 Prozent. Engel & Völkers weist für Troisdorf, Stand 3. November 2026, 13,11 Euro pro Quadratmeter für Wohnungen (plus 6,15 Prozent) und 11,46 Euro für Häuser (plus 2,78 Prozent) aus – Angebotsmieten auf Basis von Portalinseraten, also eine andere Erhebungsmethodik als der ImmoScout24-Index.",
-          "einordnung": "Eine 80-Quadratmeter-Wohnung bringt in Troisdorf derzeit rund 859 Euro Kaltmiete. Steigende Angebotsmieten verbessern den Cashflow im Bestand, erhöhen aber auch die Kaufpreisfaktoren neuer Objekte – beim Ankauf weiter mit der tatsächlich erzielbaren Miete rechnen, nicht mit der Portalmittelzahl.",
-          "quellen": [
-            {"name": "ImmoScout24 Mietspiegel Troisdorf", "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"},
-            {"name": "Engel & Völkers Troisdorf", "url": "https://www.engelvoelkers.com/de/de/immobilienpreise/miete/nordrhein-westfalen/troisdorf"}
+            {
+              "name": "GdW Bundesverband",
+              "url": "https://www.gdw.de/pressecenter/pressemeldungen/bauturbo-jahresbilanz-bezahlbarer-wohnungsbau-steckt-weiter-fest"
+            }
           ]
         }
       ]
@@ -79,14 +93,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Nach den US-Midterms: Ölpreis bricht ein, DAX gibt Rekord wieder ab",
-          "aufmacher": "Der Ölpreis ist nach dem Wahlsieg der Demokraten bei den US-Midterms um fast acht Prozent eingebrochen, während der DAX seinen Rekord vom Donnerstag wieder abgab.",
-          "fakten": "Der DAX hatte am Donnerstag mit 26.655 Punkten ein Allzeithoch markiert und notierte am Freitag bei 25.684 Punkten, rund zwei Prozent im Minus. Der Dow Jones legte dagegen rund drei Prozent zu; Brent notierte zuletzt bei 97,75 Dollar je Barrel, Gold bei 4.066 Dollar je Feinunze. Auslöser war der Sieg der Demokraten, die Repräsentantenhaus und Senat gewinnen konnten – der Ölpreis gab daraufhin deutlich nach, weil der Iran-Konflikt als Inflationstreiber an Bedeutung verliert.",
-          "einordnung": "Fällt der Ölpreis dauerhaft, entspannt das die Energiekomponente der Inflation – und damit den Druck auf die EZB, im Dezember zu erhöhen. Für dich heißt das: Die Bauzinsprognose bleibt unsicher, aber ein weiterer Inflationsschub von der Energieseite ist erst einmal unwahrscheinlicher geworden. Gold über 4.000 Dollar bleibt die Absicherung, die 2026 funktioniert hat.",
+          "titel": "US-Arbeitsmarkt schafft 165.000 Stellen — Zinssenkung rückt in die Ferne",
+          "aufmacher": "Die USA haben im Oktober 165.000 neue Stellen außerhalb der Landwirtschaft geschaffen und damit mehr als doppelt so viele wie erwartet.",
+          "fakten": "Volkswirte hatten im Schnitt 65.000 neue Jobs prognostiziert. Die Arbeitslosenquote sank von 4,2 auf 4,1 Prozent, die Zahl der Arbeitslosen liegt bei 7,1 Millionen. Die Stundenlöhne stiegen um 0,4 Prozent zum Vormonat und 3,1 Prozent zum Vorjahr, erwartet waren 0,3 und 2,9 Prozent. Der September-Wert wurde von 29.000 auf 60.000 Stellen nach oben revidiert.",
+          "einordnung": "Ein robuster Arbeitsmarkt mit steigenden Löhnen spricht gegen eine schnelle Zinssenkung der Fed — und damit gegen sinkende Kapitalmarktzinsen, an denen die Bauzinsen hängen. Für eine Anschlussfinanzierung ist das ein Argument, die Zinsbindung früh zu sichern statt auf Entspannung zu warten.",
           "quellen": [
-            {"name": "wallstreetONLINE, Marktbericht 06.11.2026", "url": "https://www.wallstreet-online.de/nachricht/21654228-wahldebakel-usa-antizyklisch-kaufen"},
-            {"name": "cash-online: DAX-Allzeithoch am 05.11.2026", "url": "https://www.cash-online.de/a/warum-der-dax-nach-den-us-wahlen-einen-neuen-rekord-markiert-729729/"},
-            {"name": "muenzkauf, Edelmetall-Abendbericht 04.11.2026", "url": "https://blog.muenzkauf.de/Edelmetall-Abendbericht-vom-04-November-2026-04112026"}
+            {
+              "name": "U.S. Bureau of Labor Statistics",
+              "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+            },
+            {
+              "name": "wallstreetONLINE",
+              "url": "https://www.wallstreet-online.de/nachricht/21653955-us-jobmarkt-ueberrascht-us-jobhammer-165-000-stellen-droht-zinsschock"
+            },
+            {
+              "name": "IndustryWeek",
+              "url": "https://www.industryweek.com/talent/news/55417255/october-jobs-report-us-adds-165000-jobs-as-unemployment-falls-slightly-to-41"
+            }
           ]
         }
       ]
@@ -95,12 +118,15 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "ConnectLife v0.55.0 → v0.56.0: bereit für Home Assistant 2026.11",
-          "aufmacher": "Die Integration der Wohnzimmer-Klimaanlage ist gestern Abend in Version 0.56.0 erschienen und beseitigt die Deprecation-Warnungen von Klima- und Warmwasser-Entitäten.",
-          "fakten": "Neu sind fünf Gerätezuordnungen (zwei Waschmaschinen, zwei Trockner, ein Kühl-Gefrierkombi), ein korrigierter Türsensor bei Trocknern sowie ein Brauchwasser-Boost-Schalter und eine experimentelle Tagesenergie-Anzeige für die Hi-Therma-Wärmepumpe. Installiert wird künftig über den Marketplace. Daneben: Paperless-ngx wartet weiter auf Freigabe für 3.4.2, der MCP-Server hat sich als Dev-Build selbst aktualisiert. Von 25 Containern auf dem NAS laufen 23; gestoppt sind weiterhin Voicestudio (Exit 137) und der einmalige Firecrawl-Init (Exit 0).",
-          "einordnung": "Das ConnectLife-Update ist unkritisch und bringt nur Vorteile – ich spiele es auf Zuruf ein, ein HA-Neustart ist nicht nötig.",
+          "titel": "Landroid Cloud 7.2.0: Mähfahrt bis zu acht Stunden",
+          "aufmacher": "Die Home-Assistant-Integration für den Mähroboter ist in Version 7.2.0 erschienen, installiert ist noch 7.1.3.",
+          "fakten": "Neu sind einmalige Mähfahrten von bis zu acht Stunden, ein Schalter für das Positionslicht des Mähers und eigene Schnitthöhen je RTK-Zone. Behoben wurden ein Startfehler auf Python-Versionen unter 3.14 und Abbrüche bei langsamen MQTT-Verbindungen. Das Update wird nicht automatisch eingespielt. Offen sind außerdem Paperless-ngx 3.4.2 und ein Dev-Build des MCP-Servers (9.1.2.dev3397 → dev3399), der sich selbst aktualisiert.",
+          "einordnung": "Unkritisch und ohne Breaking Change. Die längere Einzelfahrt hilft bei nassem Herbstlaub mehr als jede neue Statistik.",
           "quellen": [
-            {"name": "connectlife-ha Releases", "url": "https://github.com/oyvindwe/connectlife-ha/releases/tag/v0.56.0"}
+            {
+              "name": "Landroid Cloud Release Notes v7.2.0",
+              "url": "https://github.com/MTrab/landroid_cloud/releases/tag/v7.2.0"
+            }
           ]
         }
       ]
@@ -121,13 +147,23 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Mistral veröffentlicht die Gewichte von Mistral Large 4",
-          "aufmacher": "Mistral AI hat die Gewichte seines Flaggschiffmodells Mistral Large 4 („Le Chonk“) offengelegt – eine Billion Parameter, multimodal, auf europäischer Infrastruktur trainiert.",
-          "fakten": "Die Freigabe erfolgte am 29. Oktober nach der Public Preview, mit Verbesserungen beim agentischen Programmieren und in der defensiven Cybersecurity; das Modell gilt als bestes offenes Modell für Coding. Drei Reasoning-Modi erlauben die Wahl zwischen Genauigkeit und Kosten. API-Preise: 0,70 Dollar pro Million Input-Tokens, 0,07 Dollar für gecachte Eingaben, 2,10 Dollar pro Million Output-Tokens. Damit ist es das erste europäische Modell dieser Größe, das sich vollständig selbst hosten lässt.",
-          "einordnung": "Für datensensible Auswertungen – Belege, Mietverträge, Angebote – ist ein selbst gehostetes Modell dieser Klasse der realistische Weg aus der Cloud. Aleph Alpha und Black Forest Labs meldeten in den vergangenen Tagen nichts Substanzielles.",
+          "titel": "Mistral macht Studio zur Agenten-Plattform",
+          "aufmacher": "Mistral hat seine Enterprise-Plattform Studio um verwaltete Agenten und Apps erweitert, beide sind in der öffentlichen Vorschau.",
+          "fakten": "Die Release Notes vom 5. November 2026 listen zwölf neue Einträge, zehn davon in Public Preview. Agenten laufen über das Agents SDK, entweder im eigenen Prozess, selbst gehostet oder von Mistral verwaltet und dauerhaft im Hintergrund; eine Ausführung kann auf eine menschliche Freigabe warten. Deploybar ist das in Mistrals Cloud, in einer eigenen VPC oder on-premises. Als produktive Nutzer nennt Mistral ABANCA, BNP Paribas, Accenture, Capgemini, CMA CGM und TCS.",
+          "einordnung": "Interessant ist der On-Prem-Teil: Dokumenten- und Mail-Workflows von Quixx24 ließen sich damit lokal betreiben, statt Daten an eine US-API zu geben. Erst ansehen, nicht sofort umbauen — die Agenten-Teile sind Vorschau.",
           "quellen": [
-            {"name": "Mistral AI", "url": "https://mistral.ai/news/mistral-large-4-oss/"},
-            {"name": "TechRepublic", "url": "https://www.techrepublic.com/article/news-mistral-large-4-ai-cybersecurity-open-weights/"}
+            {
+              "name": "Mistral AI",
+              "url": "https://mistral.ai/news/build-with-studio"
+            },
+            {
+              "name": "Mistral Docs – Release Notes",
+              "url": "https://docs.mistral.ai/resources/release-notes"
+            },
+            {
+              "name": "DataStudios",
+              "url": "https://www.datastudios.org/post/mistral-studio-managed-agents-workflows-apps-public-preview"
+            }
           ]
         }
       ]
