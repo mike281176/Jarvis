@@ -1,14 +1,14 @@
 {
-  "datum": "Dienstag, 10.11.2026",
+  "datum": "Mittwoch, 11.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "1,4 °C · Regen 50 % · UV 2,0",
-          "aufmacher": "☀️ klar am Morgen, im Tagesverlauf bis 50 % Regenrisiko — Höchstwert 9,6 °C, Tiefstwert 1,2 °C.",
-          "fakten": "UV-Index 2,0 — kein Sonnenschutz erforderlich. Morgens frostnah, tagsüber einstellig.",
-          "einordnung": "Regenrisiko liegt am Nachmittag: Außentermine besser vor 14 Uhr legen.",
+          "titel": "6,0 °C · Regen 100 % · UV 0,2",
+          "aufmacher": "🌦️ Niesel bei 5 bis 8 °C — es bleibt den ganzen Tag nass.",
+          "fakten": "Tageshöchstwert 8,2 °C, Tiefstwert 5,0 °C. Dauerregen, UV-Index praktisch null.",
+          "einordnung": "",
           "quellen": []
         }
       ]
@@ -17,15 +17,15 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Mittwoch 11.11.2026 09:00: Quixx-Meeting",
-          "aufmacher": "Morgen Vormittag, 9 Uhr.",
+          "titel": "Mi 11.11. 09:00 Uhr: Quixx-Meeting",
+          "aufmacher": "Mittwoch, 11.11.2026, 09:00 Uhr — Quixx-Meeting.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "Mittwoch 11.11.2026 15:00: KGG – Krankengymnastik am Gerät (Melvin)",
-          "aufmacher": "Morgen Nachmittag, 15 Uhr.",
+          "titel": "Mi 11.11. 15:00 Uhr: KGG – Krankengymnastik am Gerät (Melvin)",
+          "aufmacher": "Mittwoch, 11.11.2026, 15:00 Uhr — Krankengymnastik am Gerät bei Melvin.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -36,35 +36,22 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Spich: Person am Bahnhof von Zug erfasst — Strecke Köln–Troisdorf stundenlang gesperrt",
-          "aufmacher": "Am Bahnhof Troisdorf-Spich ist am Montagnachmittag eine Person von einem Zug erfasst und tödlich verletzt worden.",
-          "fakten": "Der Unfall ereignete sich gegen 15.20 Uhr. Betroffen waren die Linie RE9 sowie die S-Bahnen S12 und S19; der Zugverkehr zwischen Köln und Troisdorf wurde eingestellt. Zwischen Köln Hauptbahnhof und Troisdorf pendelte ein Ersatzverkehr mit zehn Bussen. Gegen 18.30 Uhr wurde die Sperrung aufgehoben, danach waren zunächst noch Verspätungen und Teilausfälle möglich. Im Einsatz waren Bundespolizei, Polizei und Feuerwehr. Angaben zur Identität der Person machte die Polizei bislang nicht; eine zweite unabhängige Quelle lag bis Redaktionsschluss nicht vor.",
-          "einordnung": "Für die Pendlerachse Troisdorf–Köln war der Nachmittag blockiert. Bei Terminen in Köln lohnt an solchen Tagen ein Blick auf zuginfo.nrw, bevor man losfährt.",
+          "titel": "Karnevalsauftakt: 1.500 Kräfte in Köln, Zusatzzüge in der Region",
+          "aufmacher": "Mit dem 11.11. beginnt die Session 2026/27: In Köln sichern mehr als 1.500 Kräfte, im Nahverkehr rollen Sonderzüge — und es regnet durch.",
+          "fakten": "Polizei und Ordnungsamt Köln fahren mit über 1.000 Beamten und bis zu 450 Ordnungsamtskräften auf, dazu mehrere hundert Mitarbeiter privater Sicherheitsfirmen und der KVB. Schwerpunkte sind Altstadt, Zülpicher Viertel, Ringe und Chlodwigplatz — dort gelten Glasverbot und Zugangskontrollen, landesweit das Messerverbot auf Veranstaltungen, die Synagoge steht unter besonderem Schutz. go.Rheinland und VRR haben über TRI 32 Sonderfahrten bestellt: ab Essen um 07:44 und 08:44 Uhr nach Köln Hbf (an 08:48 und 09:50), danach stündlich Köln–Düsseldorf ab 09:17 Uhr, letzte Rückfahrten ab Köln Süd um 22:07 und 23:07 Uhr. RE 12, RE 22, RB 24, RB 25 und RE 6 fahren mit längeren Zügen; die Bahn setzt rund 85 zusätzliche Sicherheitskräfte in Köln Hbf, Bonn Hbf und Köln Süd ein.",
+          "einordnung": "Für Pendler aus Troisdorf heißt das: S 12 und S 19 sind voll, Kontrollen inklusive. Wer mit dem Mustang nach Köln will, sollte Altstadt und Ringe meiden — rund um den Heumarkt ist an diesem Tag kein Blumentopf zu parken.",
           "quellen": [
-            {
-              "name": "General-Anzeiger Bonn",
-              "url": "https://ga.de/region/sieg-und-rhein/troisdorf/spich-person-von-zug-toedlich-erfasst-bahnstrecke-wieder-frei_aid-158091085"
-            }
+            {"name": "WDR/tagesschau: Großaufgebot soll Jecke in Köln schützen", "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-mehr-als-1-500-einsatzkraefte-grossaufgebot-soll-jecke-in-koeln-schuetzen-100.html"},
+            {"name": "VRS via LOK Report: Zusätzliche Züge am 11.11.", "url": "https://www.lok-report.de/news/deutschland/aus-den-laendern/nrw-zusaetzliche-zuege-im-nahverkehr-fuer-die-karnevalsbegeisterten-am-11-11.html"}
           ]
         },
         {
-          "titel": "Troisdorf-Oberlar: Auto erfasst Radfahrer nach Wortgefecht — Führerschein und Wagen beschlagnahmt",
-          "aufmacher": "Nach einem Streit an der Kreuzung Bonner Straße/Godesberger Straße hat die Polizei den Führerschein eines 42-jährigen Autofahrers und dessen Kombi sichergestellt.",
-          "fakten": "Am Freitagnachmittag (6. November) gerieten gegen 15.30 Uhr ein 69-jähriger Radfahrer und ein 42-jähriger Autofahrer aneinander; vorausgegangen war ein Vorfahrtsverstoß des Autofahrers, der ohne Folgen blieb. Beide hielten im Kreuzungsbereich an und stritten weiter. Dabei fuhr der Autofahrer einige Meter vor und erfasste den Radfahrer, der unter die Fahrzeugfront geriet. Der 69-Jährige erlitt leichte Verletzungen und kam ins Krankenhaus. Die Polizei ermittelt wegen gefährlichen Eingriffs in den Straßenverkehr und Körperverletzung.",
-          "einordnung": "Die Kreuzung Bonner/Godesberger Straße ist eine der stärker belasteten Troisdorfer Achsen — bei Objekten in Oberlar zählt die Erreichbarkeit, aber auch die Unfalllage im direkten Umfeld.",
+          "titel": "Troisdorf-Rotter See: Scheibe eingeschlagen, Portemonnaie aus Taxi gestohlen",
+          "aufmacher": "Unbekannte haben am Montagnachmittag an der Uckendorfer Straße die Scheibe eines Taxis zerstört und ein Portemonnaie mit dreistelligem Bargeld entwendet.",
+          "fakten": "Der Wagen stand nach Angaben des Fahrzeughalters nur kurz in Rotter See; die Tatzeit lässt sich auf 15:55 bis 16:10 Uhr eingrenzen. Neben dem Geld verschwanden Dokumente und Quittungen. Hinweise nimmt die Polizei unter 02241 541-3221 entgegen.",
+          "einordnung": "Kein Zufall, sondern ein Muster: Anfang November traf es in Spich eine Firmenlagerhalle (Schaden rund 30.000 Euro) und ein Firmengelände an der Mülheimer Straße. Wertgegenstände und Belege gehören nicht ins abgestellte Auto.",
           "quellen": [
-            {
-              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis (Presseportal)",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6386451"
-            },
-            {
-              "name": "Rundblick Troisdorf",
-              "url": "https://www.rundblick-troisdorf.de/blaulicht/pol-su-polizei-beschlagnahmt-fuehrerschein-und-auto-nach-verkehrsdelikt/"
-            },
-            {
-              "name": "Newsflash24",
-              "url": "https://newsflash24.de/blaulicht/nordrhein-westfalen/troisdorf-polizei-beschlagnahmt-fuehrerschein-und-auto-nach-streit/"
-            }
+            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis, Pressemeldung vom 10.11.2026", "url": "https://www.presseportal.de/blaulicht/pm/65853/6387559"}
           ]
         }
       ]
@@ -73,31 +60,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben bei gut vier Prozent — der Spielraum zeigt nach oben",
-          "aufmacher": "Für zehnjährige Darlehen zahlt man bei Interhyp derzeit 4,08 bis 4,41 Prozent effektiv, je nach Beleihung.",
-          "fakten": "Konditionen der Woche vom 2. bis 8. November: bei 70 Prozent Beleihung 4,08 Prozent, bei 80 Prozent 4,17 Prozent, über 90 Prozent 4,41 Prozent; über 20 Jahre 4,34 bis 4,62 Prozent. Kurzfristig erwarten 80 Prozent der Institute im Interhyp-Bankenpanel gleichbleibende Zinsen, 20 Prozent fallende; mittelfristig rechnen 60 Prozent mit fallenden und 40 Prozent mit steigenden Sätzen. Der Sprung von 70 auf 90 Prozent Beleihung kostet bei 300.000 Euro Darlehen rund 83 Euro Zins pro Monat (eigene Rechnung).",
-          "einordnung": "Wer nur die Kaufnebenkosten aus Eigenkapital stemmt, landet im 90-Prozent-Auslauf und damit beim oberen Satz. Bei 600.000 Euro Volumen sind das gegenüber dem 70-Prozent-Satz rund 165 Euro monatlich — genau die Differenz, über die ein MFH-Cashflow entscheidet. Lange Zinsbindung bleibt bei dieser Marge die Absicherung der Wahl.",
+          "titel": "Mehrfamilienhäuser nur noch plus 0,5 Prozent — Mieten plus 3,5 Prozent",
+          "aufmacher": "Der Immobilienpreisindex der Pfandbriefbanken zeigt für das dritte Quartal 2026: Wohnimmobilien verteuern sich nur noch um 1,0 Prozent, Mehrfamilienhäuser um 0,5 Prozent — während die Mieten deutlich schneller steigen.",
+          "fakten": "Der vdp-Index, der auf Transaktionsdaten von mehr als 700 Instituten beruht, legt im Jahresvergleich um 0,2 Prozent zu und gibt im Quartalsvergleich 0,2 Prozent nach. Im Wohnsegment: Eigentumswohnungen +2,3 Prozent, Einfamilienhäuser +1,3 Prozent, Mehrfamilienhäuser +0,5 Prozent. Neuvertragsmieten für Wohnungen stiegen um 3,5 Prozent, die Liegenschaftszinsen um 2,9 Prozent. Büroimmobilien verloren 3,9 Prozent auf Jahressicht, Einzelhandel blieb bei 0,0 Prozent. Die Preisdynamik hat sich seit Jahresbeginn mehr als halbiert: Q1 +2,3, Q2 +1,9, Q3 +1,0 Prozent.",
+          "einordnung": "Das ist das Fenster, auf das die MFH-Strategie wartet: Kaufpreise fast im Stillstand, Mieten klar im Plus — der Faktor sinkt und die Bruttorendite im Bestand steigt. Gegenspieler bleiben die Finanzierungskosten, die der vdp seit Jahresbeginn als deutlich gestiegen bezeichnet. Bei gut vier Prozent Bauzins muss der Cashflow aus der Miete kommen, nicht aus der Wertsteigerung.",
           "quellen": [
-            {
-              "name": "Interhyp – Bauzinsen aktuell",
-              "url": "https://www.interhyp.de/zinsen/"
-            }
-          ]
-        },
-        {
-          "titel": "Troisdorf: Mieten 6,9 Prozent im Plus und über dem Bundesdurchschnitt",
-          "aufmacher": "In Troisdorf kostet der Quadratmeter Wohnfläche im dritten Quartal 2026 durchschnittlich 10,74 Euro nettokalt — 6,9 Prozent mehr als im Vorjahr.",
-          "fakten": "Im Rhein-Sieg-Kreis liegt der Schnitt bei 10,22 Euro pro Quadratmeter (plus 6,2 Prozent gegenüber dem dritten Quartal 2025), der Bundesdurchschnitt bei 9,42 Euro. Troisdorf liegt damit 1,32 Euro über dem Kreis. Eine 80-Quadratmeter-Wohnung bringt bei diesem Schnitt 859 Euro Kaltmiete, im Vorjahr 804 Euro — 55 Euro mehr pro Monat. Die Zahlen sind Marktauswertungen von ImmoScout24 und kein qualifizierter Mietspiegel; für Mieterhöhungen gilt der Troisdorfer Mietspiegel 2025, gültig seit 1. Oktober 2025.",
-          "einordnung": "Bei Faktor 20 (Bruttorendite 5 Prozent) trägt eine solche Wohnung rund 10.300 Euro Jahresnettokaltmiete. Fünf Prozent Mietsteigerung sind gut 500 Euro im Jahr — mehr als die Zinsmehrkosten eines 300.000-Euro-Darlehens bei einem Prozentpunkt Aufschlag. Die Schere zwischen Mietwachstum und Bauzins spricht weiter für Bestand mit Anpassungspotenzial statt Neubau.",
-          "quellen": [
-            {
-              "name": "ImmoScout24 – Mietspiegel Troisdorf Q3 2026",
-              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
-            },
-            {
-              "name": "Stadt Troisdorf – Qualifizierter Mietspiegel 2025",
-              "url": "https://www.troisdorf.de/de/rathaus-service/buergerservice/wohnungsamt/mietspiegel/"
-            }
+            {"name": "vdp – Verband deutscher Pfandbriefbanken: Immobilienpreisindex Q3 2026", "url": "https://www.pfandbrief.de/wohnimmobilienpreis-anstieg-verliert-an-dynamik"},
+            {"name": "Cash.: vdp-Index zeigt deutlich schwächeres Wachstum", "url": "https://www.cash-online.de/a/immobilienpreise-in-deutschland-vdp-index-zeigt-deutlich-schwaecheres-wachstum-729954/"}
           ]
         }
       ]
@@ -106,43 +75,14 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB hält den Leitzins bei 2,50 Prozent — Ölpreis treibt die Inflation auf 4,0 Prozent",
-          "aufmacher": "Die Europäische Zentralbank hält still, während die Teuerung im Euroraum im Oktober wieder die Vier-Prozent-Marke erreicht hat.",
-          "fakten": "Der EZB-Rat beließ am 29. Oktober den Einlagensatz bei 2,50 Prozent, den Hauptrefinanzierungssatz bei 2,65 Prozent und die Spitzenrefinanzierungsfazilität bei 2,90 Prozent; im September hatte er noch um 25 Basispunkte angehoben. Laut Eurostat-Schnellschätzung vom 4. November stieg die Inflationsrate im Euroraum von 3,8 auf 4,0 Prozent. Die Energiepreise legten um 20,8 Prozent zu (September: 18,9 Prozent), die Kernrate ohne Energie und Nahrungsmittel liegt dagegen bei 2,3 Prozent. EZB-Präsidentin Lagarde deutete zum Wochenauftakt eine weitere Anhebung an.",
-          "einordnung": "Die Teuerung kommt über Energie, nicht über die Binnenwirtschaft — die Kernrate bleibt ruhig. Der Markt preist damit eher einen weiteren Schritt nach oben als eine Senkung ein. Wer 2027 mit einer Anschlussfinanzierung fällig wird, sollte die Konditionen jetzt festschreiben statt auf Entspannung zu warten.",
+          "titel": "Heiße US-Inflation: Rendite springt, Fed diskutiert 50 Basispunkte",
+          "aufmacher": "Die US-Verbraucherpreise sind im Oktober um 0,4 Prozent zum Vormonat gestiegen statt der erwarteten 0,3 — die Rendite zweijähriger US-Anleihen kletterte daraufhin auf 4,76 Prozent, den höchsten Stand seit über zwei Jahren.",
+          "fakten": "Die Kernrate lag bei 0,3 Prozent (erwartet 0,2). Eine Jahresrate veröffentlichte das Arbeitsministerium nicht, weil für Oktober 2025 wegen des Regierungsstillstands keine Vergleichsdaten erhoben wurden. Fed-Gouverneur Christopher Waller sagte, eine Erhöhung um 50 Basispunkte im Dezember müsse in Betracht gezogen werden; 25 Basispunkte würden die Glaubwürdigkeit gefährden. Auch EZB-Chefvolkswirt Philip Lane deutete eine weitere Erhöhung im Dezember an. Der DAX markierte am Dienstag ein Rekordhoch von 26.640 Punkten und schloss 0,3 Prozent fester, am Mittwochmorgen notiert er um 26.600 Zähler.",
+          "einordnung": "Die Zinsseite bleibt der Taktgeber: Steigende US-Renditen ziehen die Swap-Sätze und damit die Bauzinsen mit. Geht die Fed im Dezember tatsächlich 50 Basispunkte, wird die Anschlussfinanzierung teurer — Forward-Darlehen und längere Zinsbindung werden wieder zum Rechenexempel. DAX-Rekorde ändern daran nichts.",
           "quellen": [
-            {
-              "name": "EZB – Geldpolitische Beschlüsse 29.10.2026",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.de.html"
-            },
-            {
-              "name": "EZB – Geldpolitische Beschlüsse 10.09.2026",
-              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.de.html"
-            },
-            {
-              "name": "Eurostat – Inflationsrate Euroraum Oktober 2026",
-              "url": "https://ec.europa.eu/eurostat/de/web/products-euro-indicators/w/2-04112026-ap"
-            },
-            {
-              "name": "n-tv – Der Börsen-Tag 09.11.2026",
-              "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Montag-9-November-2026-id31510008.html"
-            }
-          ]
-        },
-        {
-          "titel": "DAX nach dem KI-Ausverkauf wieder über 26.000 Punkten",
-          "aufmacher": "Der deutsche Leitindex hat die Verluste der Vorwoche teilweise wettgemacht und am Montag 1,7 Prozent auf 26.267 Punkte zugelegt.",
-          "fakten": "Am Donnerstag hatte der DAX mit 26.692 Punkten ein Rekordhoch markiert. Auslöser der Korrektur waren Zweifel an der Rentabilität der milliardenschweren KI-Investitionen: Der DAX verlor zeitweise mehr als 1.000 Punkte und schloss am Freitag 1,9 Prozent im Minus bei rund 25.820 Zählern. Der Nasdaq 100 hat seit Ende Oktober rund neun Prozent eingebüßt. Am Montag erholten sich vor allem Bank- und Technologiewerte, der EuroStoxx50 legte 1,9 Prozent auf 6.290 Punkte zu.",
-          "einordnung": "Bemerkenswert ist die Ursache: nicht die Konjunktur, sondern die Frage, ob sich KI-Kapitalausgaben rechnen. Wer KI- und Halbleiterwerte im Depot hat, sitzt damit auf einem Bewertungsrisiko, nicht auf einem Geschäftsmodellrisiko. Sparplan weiterlaufen lassen, nicht in die Erholung hinein aufstocken.",
-          "quellen": [
-            {
-              "name": "tagesschau.de – Marktbericht 06.11.2026",
-              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-ki-nasdaq-wall-street-100.html"
-            },
-            {
-              "name": "n-tv – Der Börsen-Tag 09.11.2026",
-              "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Montag-9-November-2026-id31510008.html"
-            }
+            {"name": "Handelsblatt: Hohe Inflation treibt Anleiherendite über Zwei-Jahres-Hoch", "url": "https://www.handelsblatt.com/finanzen/geldpolitik/usa-hohe-inflation-treibt-wichtige-anleiherendite-ueber-zwei-jahres-hoch/100268295.html"},
+            {"name": "aktien.news: US-Inflation steigt im Oktober um 0,4 Prozent", "url": "https://www.aktien.news/us-inflation-steigt-im-oktober-um-04-prozent-und-uberrascht-die-fed"},
+            {"name": "Trading Economics: DAX 10./11.11.2026", "url": "https://tradingeconomics.com/germany/stock-market"}
           ]
         }
       ]
@@ -151,19 +91,12 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Paperless-ngx 3.4.2 ist da — Wartungsupdate ohne Risiko",
-          "aufmacher": "Für die Dokumentenablage steht Version 3.4.2 bereit: elf Fehlerbehebungen, 14 aktualisierte Abhängigkeiten, keine neuen Funktionen.",
-          "fakten": "Installiert ist 3.4.1, verfügbar ist 3.4.2 (Stand 3. November). Schwerpunkte sind die Weboberfläche auf dem Smartphone (Speichern-Button, Dokumentenliste, Zoom-Tasten), ein Fix, damit Index und LLM-Index auf die Installation der Tesseract-Sprachpakete warten, sowie ein Celery-Fix für Massenbearbeitungen. Breaking Changes sind nicht dokumentiert; ein Test-Upgrade im Docker-Compose-Setup lief ohne offene Migrationen und ohne Datenverlust durch.",
-          "einordnung": "Unkritisch und empfohlen, aber nur mit vorherigem Export (document_exporter). Ein Hinweis aus dem Container-Scan: Der Dienst omnivoice steht seit rund drei Wochen auf Exited (137) — ein harter Abbruch, typischerweise Speichermangel. Falls die lokale Sprachausgabe gebraucht wird, sollte ich ihn mit Speicherlimit neu starten; der zweite gestoppte Eintrag ist der einmalige Init-Container des Firecrawl-Monitors und damit normal.",
+          "titel": "Power Flow Card Plus 0.6.1: Buttons und Sichtbarkeitsregeln",
+          "aufmacher": "Die Energiefluss-Karte im Dashboard hat ein Update: frei belegbare Buttons am Kartenfuß und Geräte, die nur unter Bedingungen erscheinen.",
+          "fakten": "Version 0.6.1 erschien am 10. November um 19:33 Uhr. Neu sind mehrere Buttons mit eigenem Namen, Icon und Tap-, Halte- oder Doppelklick-Aktion; der bisherige Dashboard-Link lässt sich mit einem Klick in solche Buttons überführen. Einzelne Geräte können über visibility nur angezeigt werden, solange eine Bedingung gilt — etwa die Wallbox nur bei angestecktem Auto. Dazu: Sensoren, die den Grünstrom-Anteil melden, werden über invert_state akzeptiert; Ausfall-Icons lassen sich farblich hervorheben; Korrekturen bei Dezimalstellen und beim Hilfe-Button. Daneben: Home-Assistant-MCP-Server läuft auf dev3454, verfügbar ist dev3474 (Auto-Update aktiv). Paperless-ngx 3.4.2 war gestern bereits gemeldet. Die zwei gestoppten Container im Scan sind unkritisch: Voicestudio (seit drei Wochen aus, Exit 137) und ein einmaliger Firecrawl-Init-Container (Exit 0).",
+          "einordnung": "Für das Wandpanel ein sinnvolles Update: Wallbox und Whirlpool nur einblenden, wenn sie wirklich arbeiten — weniger Zahlenrauschen. Die Karte ist eine HACS-Karte, das Einspielen ist unkritisch; ich warte auf Freigabe.",
           "quellen": [
-            {
-              "name": "releaselab – Paperless-ngx 3.4.2",
-              "url": "https://releaselab.dev/releases/paperless-ngx/3.4.2"
-            },
-            {
-              "name": "Paperless-ngx – Changelog",
-              "url": "https://docs.paperless-ngx.com/changelog/"
-            }
+            {"name": "GitHub: flixlix/power-flow-card-plus v0.6.1 Release Notes", "url": "https://github.com/flixlix/power-flow-card-plus/releases/tag/v0.6.1"}
           ]
         }
       ]
@@ -184,19 +117,13 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Merz bündelt Europas KI-Kräfte: European Future AI Initiative mit fünf Staaten",
-          "aufmacher": "Deutschland, Frankreich, Finnland, Italien und Polen wollen gemeinsam souveräne europäische Spitzenmodelle entwickeln — angekündigt von Kanzler Merz auf dem Digital-Gipfel am 2. November in Berlin.",
-          "fakten": "Merz sagte in Berlin, man bündle nun die Kräfte von Deutschland, Frankreich und vielen weiteren Partnern wie Finnland, Italien und Polen. Ziel ist laut Bundesregierung, gemeinsam mit privaten Investoren souveräne europäische Frontier-Modelle zu entwickeln. Weitere Partner seien ausdrücklich willkommen; das Handelsblatt nennt zusätzlich Kanada. Beim Investitionsgipfel zwei Wochen zuvor waren 230 Milliarden Euro an Investitionszusagen zusammengekommen. Ein eigenes Finanzvolumen für die Allianz wurde nicht genannt.",
-          "einordnung": "Für Mike ist das eine Standortfrage: Souveräne Modelle brauchen Rechenzentren und Strom. Ob daraus Kapazitäten in NRW werden, entscheidet mit über Netzentgelte und Anschlusskapazitäten — dieselbe Frage, die bei PV-Erweiterung und Wallboxen in der Moselstraße den Rahmen setzt.",
+          "titel": "Mistral und Black Forest Labs unterzeichnen Macrons „Paris Call“",
+          "aufmacher": "Sechs Staaten und zehn KI-Unternehmen — darunter Mistral AI und Black Forest Labs — haben sich am 9. November in Paris auf gemeinsame Sicherheitsstandards für Frontier-Modelle verpflichtet.",
+          "fakten": "Unterzeichnet haben Frankreich, Kanada, Finnland, Norwegen, die Niederlande und Bahrain sowie OpenAI, Anthropic, Microsoft, Mistral, Hugging Face, Cohere, Black Forest Labs, Domyn, Sakana AI und Synthesia. Kern der Erklärung: gemeinsame Standards für Risikobewertung, Veröffentlichung nicht-sensibler Testergebnisse in einheitlichem Format, Frühwarnung bei schweren Vorfällen und Fail-safe-Mechanismen, mit denen Entwickler ihre Modelle auch während des Trainings abschalten können. Die USA, Google, Meta und China haben nicht unterzeichnet. Die französische Sicherheitsorganisation CeSIA kritisiert fehlende gemeinsame Risikoschwellen, kein garantierter Zugang unabhängiger Prüfer und keine Fristen — die Entscheidung über eine Sperrung müsse bei den Behörden liegen.",
+          "einordnung": "Für die deutschen Hoffnungsträger ist das ein Verkaufsargument bei Behörden- und Industriekunden: Dokumentationspflichten statt Verbote, und beide sind freiwillig vorangegangen. Ein Durchbruch ist es nicht — die Erklärung setzt keine Fristen, das gemeinsame Testgerüst existiert noch nicht.",
           "quellen": [
-            {
-              "name": "Bundesregierung – Digital-Gipfel, Pressekonferenz des Kanzlers (02.11.2026)",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/digital-gipfel-pk-merz-2459634"
-            },
-            {
-              "name": "Handelsblatt – KI-Briefing: Deutschland schmiedet neues KI-Bündnis",
-              "url": "https://www.handelsblatt.com/technik/ki/ki-briefing/ki-briefing-gebuendelte-kraefte-deutschland-schmiedet-neues-ki-buendnis/100267246.html"
-            }
+            {"name": "Élysée: Paris Call for AI safety and security (09.11.2026)", "url": "https://www.elysee.fr/en/emmanuel-macron/2026/11/09/paris-call-for-ai-safety-and-security"},
+            {"name": "The Next Web: AI firms sign Macron's Paris Call", "url": "https://thenextweb.com/news/paris-call-ai-safety-openai-anthropic-cesia"}
           ]
         }
       ]
