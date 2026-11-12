@@ -1,13 +1,13 @@
 {
-  "datum": "Mittwoch, 11.11.2026",
+  "datum": "Donnerstag, 12.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "6,0 °C · Regen 100 % · UV 0,2",
-          "aufmacher": "🌦️ Niesel bei 5 bis 8 °C — es bleibt den ganzen Tag nass.",
-          "fakten": "Tageshöchstwert 8,2 °C, Tiefstwert 5,0 °C. Dauerregen, UV-Index praktisch null.",
+          "titel": "5,9 °C · Regen 47 % · UV 1,8",
+          "aufmacher": "☁️ Bedeckt bei 6 °C — Schauer sind möglich, aber es bleibt überwiegend trocken.",
+          "fakten": "Tageshöchstwert 9,3 °C, Tiefstwert 3,9 °C. Regenwahrscheinlichkeit 47 %, UV-Index 1,8 (niedrig). Kein Dauerregen wie gestern.",
           "einordnung": "",
           "quellen": []
         }
@@ -17,15 +17,8 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Mi 11.11. 09:00 Uhr: Quixx-Meeting",
-          "aufmacher": "Mittwoch, 11.11.2026, 09:00 Uhr — Quixx-Meeting.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "Mi 11.11. 15:00 Uhr: KGG – Krankengymnastik am Gerät (Melvin)",
-          "aufmacher": "Mittwoch, 11.11.2026, 15:00 Uhr — Krankengymnastik am Gerät bei Melvin.",
+          "titel": "Fr 13.11. 18:00 Uhr: Karnevalssitzung",
+          "aufmacher": "Freitag, 13.11.2026, 18:00 Uhr — Karnevalssitzung.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -36,22 +29,22 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Karnevalsauftakt: 1.500 Kräfte in Köln, Zusatzzüge in der Region",
-          "aufmacher": "Mit dem 11.11. beginnt die Session 2026/27: In Köln sichern mehr als 1.500 Kräfte, im Nahverkehr rollen Sonderzüge — und es regnet durch.",
-          "fakten": "Polizei und Ordnungsamt Köln fahren mit über 1.000 Beamten und bis zu 450 Ordnungsamtskräften auf, dazu mehrere hundert Mitarbeiter privater Sicherheitsfirmen und der KVB. Schwerpunkte sind Altstadt, Zülpicher Viertel, Ringe und Chlodwigplatz — dort gelten Glasverbot und Zugangskontrollen, landesweit das Messerverbot auf Veranstaltungen, die Synagoge steht unter besonderem Schutz. go.Rheinland und VRR haben über TRI 32 Sonderfahrten bestellt: ab Essen um 07:44 und 08:44 Uhr nach Köln Hbf (an 08:48 und 09:50), danach stündlich Köln–Düsseldorf ab 09:17 Uhr, letzte Rückfahrten ab Köln Süd um 22:07 und 23:07 Uhr. RE 12, RE 22, RB 24, RB 25 und RE 6 fahren mit längeren Zügen; die Bahn setzt rund 85 zusätzliche Sicherheitskräfte in Köln Hbf, Bonn Hbf und Köln Süd ein.",
-          "einordnung": "Für Pendler aus Troisdorf heißt das: S 12 und S 19 sind voll, Kontrollen inklusive. Wer mit dem Mustang nach Köln will, sollte Altstadt und Ringe meiden — rund um den Heumarkt ist an diesem Tag kein Blumentopf zu parken.",
+          "titel": "Troisdorfer Kitas: 25-Stunden-Woche fällt weg, 40 Stunden wird Regel",
+          "aufmacher": "Troisdorf stellt die Kita-Betreuung um: Ab 1. August 2027 gibt es 30, 35, 40 und 45 Wochenstunden — die 25-Stunden-Betreuung wird nicht mehr angeboten.",
+          "fakten": "Die Stadtverwaltung hat die Änderung am 11.11.2026 angekündigt; Grundlage ist eine Gesetzesreform, die den Kommunen neue Spielräume gibt. Vereinzelte 25-Stunden-Verträge laufen zum 1.8.2027 aus. In den städtischen Kitas gilt für neu aufgenommene U3- und Ü3-Kinder künftig ein Regelumfang von 40 Wochenstunden; 45 Stunden werden nur noch vergeben, wenn ein erweiterter Bedarf — etwa durch Arbeits- und Rüstzeiten — schriftlich nachgewiesen ist. Bestehende 45-Stunden-Verträge laufen im Kita-Jahr 2027/28 weiter. Über die neue Elternbeitragssatzung entscheidet der Stadtrat am 8.12.2026.",
+          "einordnung": "Für den Immobilienstandort Troisdorf ist das kein Nebenthema: Verlässliche Betreuungszeiten entscheiden, ob junge Familien bleiben oder in Nachbarkommunen abwandern — und ein breiteres 35/40-Stunden-Angebot im U3-Bereich trifft den Bedarf, den die Verwaltung laut eigener Mitteilung regelmäßig gemeldet bekommt.",
           "quellen": [
-            {"name": "WDR/tagesschau: Großaufgebot soll Jecke in Köln schützen", "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-mehr-als-1-500-einsatzkraefte-grossaufgebot-soll-jecke-in-koeln-schuetzen-100.html"},
-            {"name": "VRS via LOK Report: Zusätzliche Züge am 11.11.", "url": "https://www.lok-report.de/news/deutschland/aus-den-laendern/nrw-zusaetzliche-zuege-im-nahverkehr-fuer-die-karnevalsbegeisterten-am-11-11.html"}
+            {"name": "Stadt Troisdorf: Neue Betreuungszeiten ab 1. August 2027 (11.11.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/neue-betreuungszeiten-ab-1-august-2027/"},
+            {"name": "Stadt Troisdorf: Kita-Beiträge in Troisdorf (19.10.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kita-beitraege-in-troisdorf/"}
           ]
         },
         {
-          "titel": "Troisdorf-Rotter See: Scheibe eingeschlagen, Portemonnaie aus Taxi gestohlen",
-          "aufmacher": "Unbekannte haben am Montagnachmittag an der Uckendorfer Straße die Scheibe eines Taxis zerstört und ein Portemonnaie mit dreistelligem Bargeld entwendet.",
-          "fakten": "Der Wagen stand nach Angaben des Fahrzeughalters nur kurz in Rotter See; die Tatzeit lässt sich auf 15:55 bis 16:10 Uhr eingrenzen. Neben dem Geld verschwanden Dokumente und Quittungen. Hinweise nimmt die Polizei unter 02241 541-3221 entgegen.",
-          "einordnung": "Kein Zufall, sondern ein Muster: Anfang November traf es in Spich eine Firmenlagerhalle (Schaden rund 30.000 Euro) und ein Firmengelände an der Mülheimer Straße. Wertgegenstände und Belege gehören nicht ins abgestellte Auto.",
+          "titel": "Friedrichstraße: Parkplatz zwei Wochen komplett gesperrt",
+          "aufmacher": "Wegen Kanalbauarbeiten fällt der Parkplatz an der Friedrichstraße ab Montag, 16. November, für voraussichtlich zwei Wochen vollständig weg.",
+          "fakten": "Die Sperrung gilt für alle Fahrzeuge und trifft ausdrücklich auch Pendlerinnen und Pendler, die die Fläche regelmäßig nutzen. Wann der Platz wieder frei ist, teilen der Abwasserbetrieb beziehungsweise das ausführende Unternehmen nach Abschluss der Arbeiten mit (Pressemitteilung der Stadt vom 11.11.2026).",
+          "einordnung": "Zwei Wochen ohne diese Stellfläche heißt morgens früher losfahren oder auf Bahn und Rad ausweichen — der Parkdruck verschiebt sich in die angrenzenden Straßen.",
           "quellen": [
-            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis, Pressemeldung vom 10.11.2026", "url": "https://www.presseportal.de/blaulicht/pm/65853/6387559"}
+            {"name": "Stadt Troisdorf: Parkplatz an der Friedrichstraße wird gesperrt (11.11.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/parkplatz-an-der-friedrichstrasse-wird-gesperrt/"}
           ]
         }
       ]
@@ -60,13 +53,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Mehrfamilienhäuser nur noch plus 0,5 Prozent — Mieten plus 3,5 Prozent",
-          "aufmacher": "Der Immobilienpreisindex der Pfandbriefbanken zeigt für das dritte Quartal 2026: Wohnimmobilien verteuern sich nur noch um 1,0 Prozent, Mehrfamilienhäuser um 0,5 Prozent — während die Mieten deutlich schneller steigen.",
-          "fakten": "Der vdp-Index, der auf Transaktionsdaten von mehr als 700 Instituten beruht, legt im Jahresvergleich um 0,2 Prozent zu und gibt im Quartalsvergleich 0,2 Prozent nach. Im Wohnsegment: Eigentumswohnungen +2,3 Prozent, Einfamilienhäuser +1,3 Prozent, Mehrfamilienhäuser +0,5 Prozent. Neuvertragsmieten für Wohnungen stiegen um 3,5 Prozent, die Liegenschaftszinsen um 2,9 Prozent. Büroimmobilien verloren 3,9 Prozent auf Jahressicht, Einzelhandel blieb bei 0,0 Prozent. Die Preisdynamik hat sich seit Jahresbeginn mehr als halbiert: Q1 +2,3, Q2 +1,9, Q3 +1,0 Prozent.",
-          "einordnung": "Das ist das Fenster, auf das die MFH-Strategie wartet: Kaufpreise fast im Stillstand, Mieten klar im Plus — der Faktor sinkt und die Bruttorendite im Bestand steigt. Gegenspieler bleiben die Finanzierungskosten, die der vdp seit Jahresbeginn als deutlich gestiegen bezeichnet. Bei gut vier Prozent Bauzins muss der Cashflow aus der Miete kommen, nicht aus der Wertsteigerung.",
+          "titel": "Bauzinsen seit Oktober gesunken — aber weiter über vier Prozent",
+          "aufmacher": "Nach dem Anstieg seit Anfang Juli sind die Bauzinsen seit Anfang Oktober wieder spürbar gesunken; sie bleiben aber klar über der Vier-Prozent-Marke.",
+          "fakten": "Nach der Finanztip-Erhebung mit Stand 10.11.2026 kosten zehnjährige Darlehen 4,2 bis 4,3 Prozent, zwanzigjährige 4,7 bis 4,8 Prozent (bei 60 beziehungsweise 80 Prozent Beleihung); günstigste Angebote ab etwa 4,2 Prozent. Dr. Klein nennt für Mitte November Top-Zinsen zwischen 4,03 und 4,47 Prozent, je nach Sollzinsbindung. Für den Rest des Monats halten die Analysten Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen für möglich.",
+          "einordnung": "Bei maximalem Hebel zählt jeder Zehntelpunkt: Auf 500.000 Euro Darlehen sind 0,1 Prozentpunkte rund 500 Euro Zins im Jahr. Da die EZB im Dezember eher anhebt als senkt, spricht mehr dafür, eine lange Zinsbindung jetzt zu sichern, statt auf weiter fallende Zinsen zu warten.",
           "quellen": [
-            {"name": "vdp – Verband deutscher Pfandbriefbanken: Immobilienpreisindex Q3 2026", "url": "https://www.pfandbrief.de/wohnimmobilienpreis-anstieg-verliert-an-dynamik"},
-            {"name": "Cash.: vdp-Index zeigt deutlich schwächeres Wachstum", "url": "https://www.cash-online.de/a/immobilienpreise-in-deutschland-vdp-index-zeigt-deutlich-schwaecheres-wachstum-729954/"}
+            {"name": "Finanztip: Aktuelle Bauzinsen, Stand 10.11.2026", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"},
+            {"name": "Dr. Klein: Aktuelle Bauzinsen", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"}
           ]
         }
       ]
@@ -75,14 +68,15 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Heiße US-Inflation: Rendite springt, Fed diskutiert 50 Basispunkte",
-          "aufmacher": "Die US-Verbraucherpreise sind im Oktober um 0,4 Prozent zum Vormonat gestiegen statt der erwarteten 0,3 — die Rendite zweijähriger US-Anleihen kletterte daraufhin auf 4,76 Prozent, den höchsten Stand seit über zwei Jahren.",
-          "fakten": "Die Kernrate lag bei 0,3 Prozent (erwartet 0,2). Eine Jahresrate veröffentlichte das Arbeitsministerium nicht, weil für Oktober 2025 wegen des Regierungsstillstands keine Vergleichsdaten erhoben wurden. Fed-Gouverneur Christopher Waller sagte, eine Erhöhung um 50 Basispunkte im Dezember müsse in Betracht gezogen werden; 25 Basispunkte würden die Glaubwürdigkeit gefährden. Auch EZB-Chefvolkswirt Philip Lane deutete eine weitere Erhöhung im Dezember an. Der DAX markierte am Dienstag ein Rekordhoch von 26.640 Punkten und schloss 0,3 Prozent fester, am Mittwochmorgen notiert er um 26.600 Zähler.",
-          "einordnung": "Die Zinsseite bleibt der Taktgeber: Steigende US-Renditen ziehen die Swap-Sätze und damit die Bauzinsen mit. Geht die Fed im Dezember tatsächlich 50 Basispunkte, wird die Anschlussfinanzierung teurer — Forward-Darlehen und längere Zinsbindung werden wieder zum Rechenexempel. DAX-Rekorde ändern daran nichts.",
+          "titel": "DAX bei 26.663 Punkten — Eurozone-Inflation klettert auf 4,0 Prozent",
+          "aufmacher": "Der DAX hat am Mittwoch 1,2 Prozent zugelegt und bei 26.663 Punkten geschlossen, während die Teuerung im Euroraum im Oktober auf 4,0 Prozent gestiegen ist.",
+          "fakten": "Zum Xetra-Schluss stand der Index bei 26.663 Zählern, das Allzeithoch liegt knapp unter 26.700 Punkten. Getragen wurde der Anstieg von der Hoffnung auf eine Konjunkturerholung und bessere Unternehmensgewinne. Die Eurostat-Schnellschätzung für Oktober weist 4,0 Prozent Inflation aus, nach 3,8 Prozent im September. Die EZB hatte die Zinsen am 29. Oktober unverändert gelassen (Einlagesatz 2,50 Prozent, Hauptrefinanzierung 2,65 Prozent); die nächste Sitzung ist am 17. Dezember, eine Erhöhung gilt als wahrscheinlich. Heute legen unter anderem Siemens, Allianz, Munich Re und LEG Immobilien ihre Zahlen vor.",
+          "einordnung": "Steigende Inflation plus erwartete Zinserhöhung treffen den Hebel dort, wo er empfindlich ist: Die Anschlussfinanzierung wird teurer, während die Mieten zuletzt nur rund 3,5 Prozent zulegten. Wer 2027 aus der Zinsbindung läuft, sollte die Anschlussfinanzierung jetzt durchrechnen lassen.",
           "quellen": [
-            {"name": "Handelsblatt: Hohe Inflation treibt Anleiherendite über Zwei-Jahres-Hoch", "url": "https://www.handelsblatt.com/finanzen/geldpolitik/usa-hohe-inflation-treibt-wichtige-anleiherendite-ueber-zwei-jahres-hoch/100268295.html"},
-            {"name": "aktien.news: US-Inflation steigt im Oktober um 0,4 Prozent", "url": "https://www.aktien.news/us-inflation-steigt-im-oktober-um-04-prozent-und-uberrascht-die-fed"},
-            {"name": "Trading Economics: DAX 10./11.11.2026", "url": "https://tradingeconomics.com/germany/stock-market"}
+            {"name": "dts/CMC Markets: DAX legt 1,2 Prozent zu (11.11.2026)", "url": "https://www.wirtschaftsnetzwerk-deutschland.de/wirtschaft/dax-legt-12-prozent-zu-konjunkturhoffnung-und-ki-euphorie-stuetzen/"},
+            {"name": "dpa-AFX Tagesvorschau 12.11.2026", "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/tagesvorschau-termine-am-12-november-2026/5348828/"},
+            {"name": "Capitalo: Inflation Euroraum 4,0 Prozent — EZB vor Zinserhöhung", "url": "https://www.capitalo.de/anbieter/capitalo/news/inflation-euroraum"},
+            {"name": "LBBW: EZB-Zinsentscheid, aktueller Leitzins und Termine", "url": "https://www.lbbw.de/artikel/maerkte-verstehen/ezb-zinsentscheid-leitzins-prognosen_ait4bfmrfe_d.html"}
           ]
         }
       ]
@@ -91,12 +85,13 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Power Flow Card Plus 0.6.1: Buttons und Sichtbarkeitsregeln",
-          "aufmacher": "Die Energiefluss-Karte im Dashboard hat ein Update: frei belegbare Buttons am Kartenfuß und Geräte, die nur unter Bedingungen erscheinen.",
-          "fakten": "Version 0.6.1 erschien am 10. November um 19:33 Uhr. Neu sind mehrere Buttons mit eigenem Namen, Icon und Tap-, Halte- oder Doppelklick-Aktion; der bisherige Dashboard-Link lässt sich mit einem Klick in solche Buttons überführen. Einzelne Geräte können über visibility nur angezeigt werden, solange eine Bedingung gilt — etwa die Wallbox nur bei angestecktem Auto. Dazu: Sensoren, die den Grünstrom-Anteil melden, werden über invert_state akzeptiert; Ausfall-Icons lassen sich farblich hervorheben; Korrekturen bei Dezimalstellen und beim Hilfe-Button. Daneben: Home-Assistant-MCP-Server läuft auf dev3454, verfügbar ist dev3474 (Auto-Update aktiv). Paperless-ngx 3.4.2 war gestern bereits gemeldet. Die zwei gestoppten Container im Scan sind unkritisch: Voicestudio (seit drei Wochen aus, Exit 137) und ein einmaliger Firecrawl-Init-Container (Exit 0).",
-          "einordnung": "Für das Wandpanel ein sinnvolles Update: Wallbox und Whirlpool nur einblenden, wenn sie wirklich arbeiten — weniger Zahlenrauschen. Die Karte ist eine HACS-Karte, das Einspielen ist unkritisch; ich warte auf Freigabe.",
+          "titel": "Systemstand: nur ein Dev-Build offen — Paperless-Update wartet noch",
+          "aufmacher": "Von 97 Update-Entities in Home Assistant steht genau eine auf 'on'; offen sind sonst nur das Paperless-Update von vorgestern und die Entscheidung, ob Hermes aktualisiert wird.",
+          "fakten": "Alle Add-ons, HACS-Integrationen sowie Shelly-, UniFi- und Geräte-Firmware melden 'aktuell'. Offen: Home Assistant MCP Server (Dev) von 9.3.0.dev3492 auf dev3501 (Nightly-Build, Auto-Update aktiv, keine Release-Notes) und paperless-ngx 3.4.1 auf 3.4.2 — ein Wartungsrelease mit 11 Fehlerkorrekturen und 14 Abhängigkeits-Updates, ohne Breaking Changes; ein unabhängiger Labortest des Docker-Upgrades lief ohne Auffälligkeiten. Hermes Agent läuft auf der stabilen v0.23.1; im Upstream-Repository sind 2.970 Commits aufgelaufen, aber ausschließlich Canary-Builds — es gibt keine neuere stabile Version.",
+          "einordnung": "Handlungsbedarf: Paperless-Update einspielen (vorher Export-Backup), Hermes bleibt auf stable — ein Wechsel auf Canary bringt nur ungetestete Commits. Für beides hole ich vorher Freigabe ein.",
           "quellen": [
-            {"name": "GitHub: flixlix/power-flow-card-plus v0.6.1 Release Notes", "url": "https://github.com/flixlix/power-flow-card-plus/releases/tag/v0.6.1"}
+            {"name": "GitHub: paperless-ngx v3.4.2 Release Notes", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.2"},
+            {"name": "releaselab.dev: Paperless-ngx 3.4.2 Upgrade-Test", "url": "https://releaselab.dev/releases/paperless-ngx/3.4.2/"}
           ]
         }
       ]
@@ -117,14 +112,11 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Mistral und Black Forest Labs unterzeichnen Macrons „Paris Call“",
-          "aufmacher": "Sechs Staaten und zehn KI-Unternehmen — darunter Mistral AI und Black Forest Labs — haben sich am 9. November in Paris auf gemeinsame Sicherheitsstandards für Frontier-Modelle verpflichtet.",
-          "fakten": "Unterzeichnet haben Frankreich, Kanada, Finnland, Norwegen, die Niederlande und Bahrain sowie OpenAI, Anthropic, Microsoft, Mistral, Hugging Face, Cohere, Black Forest Labs, Domyn, Sakana AI und Synthesia. Kern der Erklärung: gemeinsame Standards für Risikobewertung, Veröffentlichung nicht-sensibler Testergebnisse in einheitlichem Format, Frühwarnung bei schweren Vorfällen und Fail-safe-Mechanismen, mit denen Entwickler ihre Modelle auch während des Trainings abschalten können. Die USA, Google, Meta und China haben nicht unterzeichnet. Die französische Sicherheitsorganisation CeSIA kritisiert fehlende gemeinsame Risikoschwellen, kein garantierter Zugang unabhängiger Prüfer und keine Fristen — die Entscheidung über eine Sperrung müsse bei den Behörden liegen.",
-          "einordnung": "Für die deutschen Hoffnungsträger ist das ein Verkaufsargument bei Behörden- und Industriekunden: Dokumentationspflichten statt Verbote, und beide sind freiwillig vorangegangen. Ein Durchbruch ist es nicht — die Erklärung setzt keine Fristen, das gemeinsame Testgerüst existiert noch nicht.",
-          "quellen": [
-            {"name": "Élysée: Paris Call for AI safety and security (09.11.2026)", "url": "https://www.elysee.fr/en/emmanuel-macron/2026/11/09/paris-call-for-ai-safety-and-security"},
-            {"name": "The Next Web: AI firms sign Macron's Paris Call", "url": "https://thenextweb.com/news/paris-call-ai-safety-openai-anthropic-cesia"}
-          ]
+          "titel": "Deutsche/europäische KI: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     }
