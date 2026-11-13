@@ -1,13 +1,13 @@
 {
-  "datum": "Donnerstag, 12.11.2026",
+  "datum": "Freitag, 13.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "5,9 °C · Regen 47 % · UV 1,8",
-          "aufmacher": "☁️ Bedeckt bei 6 °C — Schauer sind möglich, aber es bleibt überwiegend trocken.",
-          "fakten": "Tageshöchstwert 9,3 °C, Tiefstwert 3,9 °C. Regenwahrscheinlichkeit 47 %, UV-Index 1,8 (niedrig). Kein Dauerregen wie gestern.",
+          "titel": "1,6 °C · Regen 2 % · UV 1,9",
+          "aufmacher": "☀️ Klar und trocken — Tageshöchstwert 9,3 °C, Tiefstwert 1,3 °C.",
+          "fakten": "Aktuell 1,6 °C bei klarem Himmel. Regenwahrscheinlichkeit nur 2 %, UV-Index 1,9 (niedrig).",
           "einordnung": "",
           "quellen": []
         }
@@ -17,8 +17,15 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "Fr 13.11. 18:00 Uhr: Karnevalssitzung",
-          "aufmacher": "Freitag, 13.11.2026, 18:00 Uhr — Karnevalssitzung.",
+          "titel": "13.11.2026 18:00 Uhr: Karnevalssitzung",
+          "aufmacher": "Heute Abend, 18:00 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "16.11.2026 15:00 Uhr: KGG – Krankengymnastik am Gerät (Heidrun)",
+          "aufmacher": "Montag, 15:00 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -29,22 +36,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorfer Kitas: 25-Stunden-Woche fällt weg, 40 Stunden wird Regel",
-          "aufmacher": "Troisdorf stellt die Kita-Betreuung um: Ab 1. August 2027 gibt es 30, 35, 40 und 45 Wochenstunden — die 25-Stunden-Betreuung wird nicht mehr angeboten.",
-          "fakten": "Die Stadtverwaltung hat die Änderung am 11.11.2026 angekündigt; Grundlage ist eine Gesetzesreform, die den Kommunen neue Spielräume gibt. Vereinzelte 25-Stunden-Verträge laufen zum 1.8.2027 aus. In den städtischen Kitas gilt für neu aufgenommene U3- und Ü3-Kinder künftig ein Regelumfang von 40 Wochenstunden; 45 Stunden werden nur noch vergeben, wenn ein erweiterter Bedarf — etwa durch Arbeits- und Rüstzeiten — schriftlich nachgewiesen ist. Bestehende 45-Stunden-Verträge laufen im Kita-Jahr 2027/28 weiter. Über die neue Elternbeitragssatzung entscheidet der Stadtrat am 8.12.2026.",
-          "einordnung": "Für den Immobilienstandort Troisdorf ist das kein Nebenthema: Verlässliche Betreuungszeiten entscheiden, ob junge Familien bleiben oder in Nachbarkommunen abwandern — und ein breiteres 35/40-Stunden-Angebot im U3-Bereich trifft den Bedarf, den die Verwaltung laut eigener Mitteilung regelmäßig gemeldet bekommt.",
+          "titel": "Bonner Rat rettet das Melbbad — Sanierung kostet 29 Millionen Euro",
+          "aufmacher": "Der Bonner Stadtrat ist am Donnerstagabend dem Bürgerbegehren für das seit 2020 geschlossene Melbbad gefolgt — mit 34 von 63 Stimmen.",
+          "fakten": "Mehr als 22.000 Menschen hatten das Bürgerbegehren unterschrieben. Die Sanierung des 2020 durch Starkregen gefluteten Freibads soll rund 29 Millionen Euro kosten. Oberbürgermeister Guido Déus kündigte im Rat Steuererhöhungen an, unter anderem bei der Grundsteuer, und warnte vor weiteren Begehren zu Frankenbad und Oper. Der Stadtsportbund Bonn hatte in einem offenen Brief gegen das Begehren votiert, weil die gesamte Bäderlandschaft gefährdet sei. Teile des städtischen Bäderkonzepts mit Kombibädern in Römer-, Ennert- und Hardtbergbad sind damit hinfällig.",
+          "einordnung": "Für Mike als Eigentümer im Kreis relevant: Kommunale Großprojekte landen über die Hebesätze bei den Grundsteuer-Nebenkosten — bei der nächsten Kalkulation im Raum Bonn gehört ein Aufschlag in die Rechnung.",
           "quellen": [
-            {"name": "Stadt Troisdorf: Neue Betreuungszeiten ab 1. August 2027 (11.11.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/neue-betreuungszeiten-ab-1-august-2027/"},
-            {"name": "Stadt Troisdorf: Kita-Beiträge in Troisdorf (19.10.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/oktober/kita-beitraege-in-troisdorf/"}
+            {"name": "tagesschau/WDR", "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-nach-buergerbegehren-bonner-rat-entscheidet-ueber-zukunft-des-melbbads-100.html"},
+            {"name": "General-Anzeiger Bonn", "url": "https://ga.de/bonn/stadt-bonn/bonn-so-hat-der-stadtrat-ueber-das-buergerbegehren-zum-melbbad-entschieden_aid-158135369"}
           ]
         },
         {
-          "titel": "Friedrichstraße: Parkplatz zwei Wochen komplett gesperrt",
-          "aufmacher": "Wegen Kanalbauarbeiten fällt der Parkplatz an der Friedrichstraße ab Montag, 16. November, für voraussichtlich zwei Wochen vollständig weg.",
-          "fakten": "Die Sperrung gilt für alle Fahrzeuge und trifft ausdrücklich auch Pendlerinnen und Pendler, die die Fläche regelmäßig nutzen. Wann der Platz wieder frei ist, teilen der Abwasserbetrieb beziehungsweise das ausführende Unternehmen nach Abschluss der Arbeiten mit (Pressemitteilung der Stadt vom 11.11.2026).",
-          "einordnung": "Zwei Wochen ohne diese Stellfläche heißt morgens früher losfahren oder auf Bahn und Rad ausweichen — der Parkdruck verschiebt sich in die angrenzenden Straßen.",
+          "titel": "Nadeln in Süßigkeiten: Rhein-Sieg-Kreis betroffen",
+          "aufmacher": "In Niederkassel im Rhein-Sieg-Kreis haben Eltern eine Stopfnadel in einer Weingummitüte gefunden — NRW-weit zählt der WDR inzwischen rund 24 Verdachtsfälle.",
+          "fakten": "Das Kind hatte an Halloween mit der Mutter von Tür zu Tür gesammelt, die Anzeige ging am Dienstag bei der Polizei ein. Am Donnerstagabend kam ein neuer Fall aus Hückeswagen dazu: Nach einem Martinsumzug fand ein Mädchen eine Nadel in einem Schokoriegel. In Bochum biss eine Neunjährige auf eine Nadel und verletzte sich leicht; in Bottrop entdeckte ein Kind die Nadel mit einem Magneten. Die Polizei bittet, jeden Verdacht anzuzeigen, weil sich Taten so zuordnen lassen.",
+          "einordnung": "Die Martinszüge im Kreis laufen gerade — Süßigkeiten vor dem Verzehr durchbrechen und mit einem Magneten prüfen kostet eine Minute.",
           "quellen": [
-            {"name": "Stadt Troisdorf: Parkplatz an der Friedrichstraße wird gesperrt (11.11.2026)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/parkplatz-an-der-friedrichstrasse-wird-gesperrt/"}
+            {"name": "tagesschau/WDR", "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-nrw-karte-hier-sind-manipulierte-halloween-suessigkeiten-aufgetaucht-100.html"},
+            {"name": "WDR – Übersicht der Fälle", "url": "https://www1.wdr.de/nrw/halloween-suessigkeiten-nadeln-ueberblick-100.html"}
           ]
         }
       ]
@@ -53,13 +61,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen seit Oktober gesunken — aber weiter über vier Prozent",
-          "aufmacher": "Nach dem Anstieg seit Anfang Juli sind die Bauzinsen seit Anfang Oktober wieder spürbar gesunken; sie bleiben aber klar über der Vier-Prozent-Marke.",
-          "fakten": "Nach der Finanztip-Erhebung mit Stand 10.11.2026 kosten zehnjährige Darlehen 4,2 bis 4,3 Prozent, zwanzigjährige 4,7 bis 4,8 Prozent (bei 60 beziehungsweise 80 Prozent Beleihung); günstigste Angebote ab etwa 4,2 Prozent. Dr. Klein nennt für Mitte November Top-Zinsen zwischen 4,03 und 4,47 Prozent, je nach Sollzinsbindung. Für den Rest des Monats halten die Analysten Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen für möglich.",
-          "einordnung": "Bei maximalem Hebel zählt jeder Zehntelpunkt: Auf 500.000 Euro Darlehen sind 0,1 Prozentpunkte rund 500 Euro Zins im Jahr. Da die EZB im Dezember eher anhebt als senkt, spricht mehr dafür, eine lange Zinsbindung jetzt zu sichern, statt auf weiter fallende Zinsen zu warten.",
+          "titel": "Mieten steigen 4,5 Prozent — Kaufpreise stagnieren",
+          "aufmacher": "Die Kaufpreise für Wohnimmobilien bewegen sich seitwärts, die Angebotsmieten zogen im dritten Quartal 2026 um 4,5 Prozent gegenüber dem Vorjahr an.",
+          "fakten": "Laut IW-Wohnindex verteuerten sich Eigentumswohnungen nur um 0,3 Prozent, Ein- und Zweifamilienhäuser um 0,4 Prozent; gegenüber dem Höchststand von 2022 liegen die Preise rund zehn Prozent niedriger. In den sieben teuersten Städten gaben Wohnungen 0,8 und Häuser 2,3 Prozent nach — Köln minus 1,3 Prozent bei Kaufpreisen, während die Mieten dort um 5,3 Prozent stiegen (Hamburg: 6,8 Prozent). Die Rendite zehnjähriger Pfandbriefe legte seit Jahresbeginn um fast 70 Basispunkte zu, der Bauzins für zehnjährige Darlehen liegt laut Interhyp bei 4,3 Prozent (Stand 12.11.).",
+          "einordnung": "Für die MFH-Strategie ist das das brauchbarste Umfeld seit Jahren: stabile bis fallende Kaufpreise bei über vier Prozent Mietwachstum verbessern den Faktor. Der teurere Kredit frisst einen Teil davon — rechnen mit der realistischen Miete, nicht mit der Angebotsmiete.",
           "quellen": [
-            {"name": "Finanztip: Aktuelle Bauzinsen, Stand 10.11.2026", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"},
-            {"name": "Dr. Klein: Aktuelle Bauzinsen", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"}
+            {"name": "Haufe / IW-Wohnindex Q3 2026", "url": "https://www.haufe.de/immobilien/entwicklung-vermarktung/marktanalysen/iw-wohnindex-entwicklung-kaufpreise-und-mieten_84324_615168.html"},
+            {"name": "Interhyp – Bauzinsen", "url": "https://www.interhyp.de/zinsen/"}
           ]
         }
       ]
@@ -68,15 +76,13 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "DAX bei 26.663 Punkten — Eurozone-Inflation klettert auf 4,0 Prozent",
-          "aufmacher": "Der DAX hat am Mittwoch 1,2 Prozent zugelegt und bei 26.663 Punkten geschlossen, während die Teuerung im Euroraum im Oktober auf 4,0 Prozent gestiegen ist.",
-          "fakten": "Zum Xetra-Schluss stand der Index bei 26.663 Zählern, das Allzeithoch liegt knapp unter 26.700 Punkten. Getragen wurde der Anstieg von der Hoffnung auf eine Konjunkturerholung und bessere Unternehmensgewinne. Die Eurostat-Schnellschätzung für Oktober weist 4,0 Prozent Inflation aus, nach 3,8 Prozent im September. Die EZB hatte die Zinsen am 29. Oktober unverändert gelassen (Einlagesatz 2,50 Prozent, Hauptrefinanzierung 2,65 Prozent); die nächste Sitzung ist am 17. Dezember, eine Erhöhung gilt als wahrscheinlich. Heute legen unter anderem Siemens, Allianz, Munich Re und LEG Immobilien ihre Zahlen vor.",
-          "einordnung": "Steigende Inflation plus erwartete Zinserhöhung treffen den Hebel dort, wo er empfindlich ist: Die Anschlussfinanzierung wird teurer, während die Mieten zuletzt nur rund 3,5 Prozent zulegten. Wer 2027 aus der Zinsbindung läuft, sollte die Anschlussfinanzierung jetzt durchrechnen lassen.",
+          "titel": "DAX erstmals über 27.000 — dann der Nvidia-Schock",
+          "aufmacher": "Der DAX hat am Donnerstag erstmals die Marke von 27.000 Punkten erreicht und schloss nach dem Rücktritt von Nvidia-Chef Jensen Huang bei 26.774,23 Punkten — ein Plus von 0,42 Prozent.",
+          "fakten": "Nvidia brach nach Handelsbeginn in den USA um bis zu 13 Prozent ein; seit dem Oktober-Hoch hat die Aktie rund ein Drittel verloren. Huang geht nach einer Spionageaffäre, interim führt Finanzchefin Colette Kress. Der Nasdaq 100 lag zuletzt 0,5 Prozent im Minus, der Dow Jones bei 52.508 Punkten. Mercedes-Benz stoppte laut einem Intranet-Interview alle weiteren Investitionen an deutschen Standorten (Aktie minus 1,7 Prozent), während Siemens ein Rekordjahr mit einem Auftragseingang über 100 Milliarden Euro meldete und die Allianz ihr Ziel auf bis zu 18,6 Milliarden Euro Betriebsgewinn anhob.",
+          "einordnung": "Der Rekord hängt an wenigen KI-getriebenen Werten — genau das Klumpenrisiko, das ein breiter ETF-Sparplan abfedert. Einzelwetten auf einen Nvidia-Nachfolger sind derzeit Glücksspiel.",
           "quellen": [
-            {"name": "dts/CMC Markets: DAX legt 1,2 Prozent zu (11.11.2026)", "url": "https://www.wirtschaftsnetzwerk-deutschland.de/wirtschaft/dax-legt-12-prozent-zu-konjunkturhoffnung-und-ki-euphorie-stuetzen/"},
-            {"name": "dpa-AFX Tagesvorschau 12.11.2026", "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/tagesvorschau-termine-am-12-november-2026/5348828/"},
-            {"name": "Capitalo: Inflation Euroraum 4,0 Prozent — EZB vor Zinserhöhung", "url": "https://www.capitalo.de/anbieter/capitalo/news/inflation-euroraum"},
-            {"name": "LBBW: EZB-Zinsentscheid, aktueller Leitzins und Termine", "url": "https://www.lbbw.de/artikel/maerkte-verstehen/ezb-zinsentscheid-leitzins-prognosen_ait4bfmrfe_d.html"}
+            {"name": "tagesschau – Marktbericht", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-106.html"},
+            {"name": "Zeit/dpa – DAX-Konzerne steigern Gewinne", "url": "https://www.zeit.de/news/2026-11/13/dax-konzerne-steigern-gewinne-trotz-autokrise"}
           ]
         }
       ]
@@ -85,13 +91,13 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Systemstand: nur ein Dev-Build offen — Paperless-Update wartet noch",
-          "aufmacher": "Von 97 Update-Entities in Home Assistant steht genau eine auf 'on'; offen sind sonst nur das Paperless-Update von vorgestern und die Entscheidung, ob Hermes aktualisiert wird.",
-          "fakten": "Alle Add-ons, HACS-Integrationen sowie Shelly-, UniFi- und Geräte-Firmware melden 'aktuell'. Offen: Home Assistant MCP Server (Dev) von 9.3.0.dev3492 auf dev3501 (Nightly-Build, Auto-Update aktiv, keine Release-Notes) und paperless-ngx 3.4.1 auf 3.4.2 — ein Wartungsrelease mit 11 Fehlerkorrekturen und 14 Abhängigkeits-Updates, ohne Breaking Changes; ein unabhängiger Labortest des Docker-Upgrades lief ohne Auffälligkeiten. Hermes Agent läuft auf der stabilen v0.23.1; im Upstream-Repository sind 2.970 Commits aufgelaufen, aber ausschließlich Canary-Builds — es gibt keine neuere stabile Version.",
-          "einordnung": "Handlungsbedarf: Paperless-Update einspielen (vorher Export-Backup), Hermes bleibt auf stable — ein Wechsel auf Canary bringt nur ungetestete Commits. Für beides hole ich vorher Freigabe ein.",
+          "titel": "Paperless 3.4.2, Mushroom 5.3.0 und ein MCP-Dev-Build",
+          "aufmacher": "Drei Updates stehen an: paperless-ngx 3.4.1 → 3.4.2, die Dashboard-Karten Mushroom v5.2.3 → v5.3.0 und der Home-Assistant-MCP-Server als Dev-Build.",
+          "fakten": "Paperless 3.4.2 bringt elf Fehlerkorrekturen — mobiler Speichern-Button, Schutz des Ansichtsnamens beim Speichern, Bulk-Edit-Tasks in Celery-Workern und ein Warten der Index-Initialisierung auf die Tesseract-Sprachpakete; keine Breaking Changes. Mushroom 5.3.0 repariert den Visual Editor für more-info-Aktionen, ignoriert nicht unterstützte Fan- und Cover-Steuerungen, respektiert Nullgrenzen und Schrittweiten bei Zahlen-Buttons und zeigt die Luftfeuchtigkeit in der Klimakarte. Der MCP-Server läuft von dev3516 auf dev3519, Auto-Update ist aktiv.",
+          "einordnung": "Alle drei sind unkritisch: Paperless erst nach dem üblichen Backup einspielen (Retention 1–3), Mushroom über HACS aktualisieren, den Dev-Build lässt man selbst laufen.",
           "quellen": [
-            {"name": "GitHub: paperless-ngx v3.4.2 Release Notes", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.2"},
-            {"name": "releaselab.dev: Paperless-ngx 3.4.2 Upgrade-Test", "url": "https://releaselab.dev/releases/paperless-ngx/3.4.2/"}
+            {"name": "paperless-ngx Releases", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.2"},
+            {"name": "lovelace-mushroom v5.3.0", "url": "https://github.com/piitaya/lovelace-mushroom/releases/tag/v5.3.0"}
           ]
         }
       ]
