@@ -1,13 +1,13 @@
 {
-  "datum": "Freitag, 13.11.2026",
+  "datum": "Samstag, 14.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "1,6 °C · Regen 2 % · UV 1,9",
-          "aufmacher": "☀️ Klar und trocken — Tageshöchstwert 9,3 °C, Tiefstwert 1,3 °C.",
-          "fakten": "Aktuell 1,6 °C bei klarem Himmel. Regenwahrscheinlichkeit nur 2 %, UV-Index 1,9 (niedrig).",
+          "titel": "2,0 °C · Regen 4 % · UV 1,9",
+          "aufmacher": "🌤️ Überwiegend sonnig — Tageshöchstwert 9 °C, Tiefstwert 2 °C.",
+          "fakten": "Aktuell 2,0 °C bei überwiegend sonnigem Himmel. Regenwahrscheinlichkeit 4 %, UV-Index 1,85 (niedrig).",
           "einordnung": "",
           "quellen": []
         }
@@ -17,15 +17,15 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "13.11.2026 18:00 Uhr: Karnevalssitzung",
-          "aufmacher": "Heute Abend, 18:00 Uhr.",
+          "titel": "16.11.2026 15:00 Uhr: KGG – Krankengymnastik am Gerät (Heidrun)",
+          "aufmacher": "Montag, 15:00 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "16.11.2026 15:00 Uhr: KGG – Krankengymnastik am Gerät (Heidrun)",
-          "aufmacher": "Montag, 15:00 Uhr.",
+          "titel": "17.11.2026 19:00 Uhr: Live-Webinar – KI für Immobilieneinsteiger",
+          "aufmacher": "Dienstag, 19:00 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -36,23 +36,22 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Bonner Rat rettet das Melbbad — Sanierung kostet 29 Millionen Euro",
-          "aufmacher": "Der Bonner Stadtrat ist am Donnerstagabend dem Bürgerbegehren für das seit 2020 geschlossene Melbbad gefolgt — mit 34 von 63 Stimmen.",
-          "fakten": "Mehr als 22.000 Menschen hatten das Bürgerbegehren unterschrieben. Die Sanierung des 2020 durch Starkregen gefluteten Freibads soll rund 29 Millionen Euro kosten. Oberbürgermeister Guido Déus kündigte im Rat Steuererhöhungen an, unter anderem bei der Grundsteuer, und warnte vor weiteren Begehren zu Frankenbad und Oper. Der Stadtsportbund Bonn hatte in einem offenen Brief gegen das Begehren votiert, weil die gesamte Bäderlandschaft gefährdet sei. Teile des städtischen Bäderkonzepts mit Kombibädern in Römer-, Ennert- und Hardtbergbad sind damit hinfällig.",
-          "einordnung": "Für Mike als Eigentümer im Kreis relevant: Kommunale Großprojekte landen über die Hebesätze bei den Grundsteuer-Nebenkosten — bei der nächsten Kalkulation im Raum Bonn gehört ein Aufschlag in die Rechnung.",
+          "titel": "Neue Straßenreinigungssatzung: Troisdorfer Anlieger kehren künftig ihre Parkbuchten selbst",
+          "aufmacher": "Zum 1. Januar 2027 gilt in Troisdorf eine neue Straßenreinigungs- und Gebührensatzung — mehr Straßen werden ganzjährig gekehrt, dafür wandert die Reinigung der Parkbuchten in drei Reinigungsklassen zu den Anliegern.",
+          "fakten": "Der Rat hat die Neufassung am 13. Oktober 2026 beschlossen, bekannt gemacht wurde sie am 4. November. Straßen, die bisher nur im Laubkehrdienst von Anfang Oktober bis Mitte Dezember angefahren wurden, werden ab 2027 ganzjährig einmal pro Woche gereinigt; auch Straßen in den Industriegebieten kommen in die Klasse S 2. In den Klassen S 2, W 1 und W 2 übernehmen die Anlieger Gehwege und Parkbuchten — parkende Autos blockieren dort die Kehrmaschine, deshalb zieht die Stadt sich zurück. Die Winterwartung der Gehwege bleibt ohnehin bei den Anliegern. Die Gebühr wird weiter je Frontmeter des Grundstücks nach Reinigungsklasse erhoben; laut Stadt deckt die Anpassung nur höhere Kosten für Kraftstoff und Kehrichtentsorgung, zusätzliches Personal oder Maschinen sind nicht vorgesehen.",
+          "einordnung": "Für Mike als Eigentümer praktisch: Frontmeter nachzählen, Reinigungsklasse der eigenen Straße prüfen und beides in die Nebenkostenabrechnung 2027 einplanen — dazu kommt eine Reinigungspflicht für Parkbuchten, die man den Mietern schriftlich mitteilen sollte, sonst bleibt die Stadt auf der Beschwerde und der Eigentümer auf der Gebühr sitzen.",
           "quellen": [
-            {"name": "tagesschau/WDR", "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-nach-buergerbegehren-bonner-rat-entscheidet-ueber-zukunft-des-melbbads-100.html"},
-            {"name": "General-Anzeiger Bonn", "url": "https://ga.de/bonn/stadt-bonn/bonn-so-hat-der-stadtrat-ueber-das-buergerbegehren-zum-melbbad-entschieden_aid-158135369"}
+            {"name": "Rundblick Troisdorf – Straßenreinigung wird neu geregelt", "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3177862-strassenreinigung-wird-neu-geregelt/"},
+            {"name": "Stadt Troisdorf – Straßenreinigungssatzung vom 4. November 2026 (PDF)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/bekanntmachungen/neufassung-der-satzung-ueber-die-strassenreinigung-und-die-erhebung-von-strassenreinigungsgebuehren-strassenreinigungssatzung-der-stadt-troisdorf-vom-4.-november-2026.pdf?cid=242v"}
           ]
         },
         {
-          "titel": "Nadeln in Süßigkeiten: Rhein-Sieg-Kreis betroffen",
-          "aufmacher": "In Niederkassel im Rhein-Sieg-Kreis haben Eltern eine Stopfnadel in einer Weingummitüte gefunden — NRW-weit zählt der WDR inzwischen rund 24 Verdachtsfälle.",
-          "fakten": "Das Kind hatte an Halloween mit der Mutter von Tür zu Tür gesammelt, die Anzeige ging am Dienstag bei der Polizei ein. Am Donnerstagabend kam ein neuer Fall aus Hückeswagen dazu: Nach einem Martinsumzug fand ein Mädchen eine Nadel in einem Schokoriegel. In Bochum biss eine Neunjährige auf eine Nadel und verletzte sich leicht; in Bottrop entdeckte ein Kind die Nadel mit einem Magneten. Die Polizei bittet, jeden Verdacht anzuzeigen, weil sich Taten so zuordnen lassen.",
-          "einordnung": "Die Martinszüge im Kreis laufen gerade — Süßigkeiten vor dem Verzehr durchbrechen und mit einem Magneten prüfen kostet eine Minute.",
+          "titel": "Parkplatz Friedrichstraße zwei Wochen gesperrt — Kanalbau ab Montag",
+          "aufmacher": "Ab Montag, 16. November, ist der Parkplatz an der Troisdorfer Friedrichstraße für voraussichtlich zwei Wochen vollständig gesperrt.",
+          "fakten": "Grund sind Kanalbauarbeiten. Auch Pendlerinnen und Pendler können die Fläche in dieser Zeit nicht nutzen. Wann der Platz wieder freigegeben wird, teilen das ausführende Unternehmen und der Abwasserbetrieb erst nach Abschluss der Arbeiten mit.",
+          "einordnung": "Zwei Wochen ohne Pendlerparkplatz in der Innenstadt — wer dort tagsüber steht, sollte früh eine Alternative festlegen statt morgens zu suchen.",
           "quellen": [
-            {"name": "tagesschau/WDR", "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-nrw-karte-hier-sind-manipulierte-halloween-suessigkeiten-aufgetaucht-100.html"},
-            {"name": "WDR – Übersicht der Fälle", "url": "https://www1.wdr.de/nrw/halloween-suessigkeiten-nadeln-ueberblick-100.html"}
+            {"name": "Stadt Troisdorf – Parkplatz an der Friedrichstraße wird gesperrt", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/parkplatz-an-der-friedrichstrasse-wird-gesperrt/"}
           ]
         }
       ]
@@ -61,13 +60,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Mieten steigen 4,5 Prozent — Kaufpreise stagnieren",
-          "aufmacher": "Die Kaufpreise für Wohnimmobilien bewegen sich seitwärts, die Angebotsmieten zogen im dritten Quartal 2026 um 4,5 Prozent gegenüber dem Vorjahr an.",
-          "fakten": "Laut IW-Wohnindex verteuerten sich Eigentumswohnungen nur um 0,3 Prozent, Ein- und Zweifamilienhäuser um 0,4 Prozent; gegenüber dem Höchststand von 2022 liegen die Preise rund zehn Prozent niedriger. In den sieben teuersten Städten gaben Wohnungen 0,8 und Häuser 2,3 Prozent nach — Köln minus 1,3 Prozent bei Kaufpreisen, während die Mieten dort um 5,3 Prozent stiegen (Hamburg: 6,8 Prozent). Die Rendite zehnjähriger Pfandbriefe legte seit Jahresbeginn um fast 70 Basispunkte zu, der Bauzins für zehnjährige Darlehen liegt laut Interhyp bei 4,3 Prozent (Stand 12.11.).",
-          "einordnung": "Für die MFH-Strategie ist das das brauchbarste Umfeld seit Jahren: stabile bis fallende Kaufpreise bei über vier Prozent Mietwachstum verbessern den Faktor. Der teurere Kredit frisst einen Teil davon — rechnen mit der realistischen Miete, nicht mit der Angebotsmiete.",
+          "titel": "Bauzins bleibt bei 4,3 Prozent — Bankenpanel sieht vorerst keine Bewegung",
+          "aufmacher": "Der Bauzins für zehnjährige Darlehen liegt laut Interhyp bei 4,3 Prozent (Stand 12.11.), und 80 Prozent der vom Institut befragten Banken rechnen kurzfristig mit gleichbleibenden Konditionen.",
+          "fakten": "Im Zinsvergleich kostet ein Darlehen mit zehn Jahren Zinsbindung und 80 Prozent Beleihungsauslauf 4,17 Prozent effektiv, unter 70 Prozent Beleihungsauslauf 4,08 Prozent; bei 15 Jahren Zinsbindung sind es 4,28, bei 20 Jahren 4,34 Prozent. Über 90 Prozent Beleihung schlägt mit 4,41 Prozent zu Buche — für die Strategie mit minimalem Eigenkapital ist das die relevante Zeile. Finanztip nennt für Mitte November eine Spanne von 4,3 bis 4,8 Prozent. Mittelfristig ist das Panel gespalten: 60 Prozent erwarten fallende, 40 Prozent steigende Zinsen. Interhyp verweist zugleich darauf, dass die Kaufpreise den dritten Monat in Folge nachgegeben haben und rät zum Verhandeln statt zum Warten.",
+          "einordnung": "Bei 4,3 Prozent Zins und zwei Prozent Anfangstilgung liegt die Annuität bei 6,3 Prozent des Darlehens pro Jahr — der Cashflow muss aus der Miete kommen, nicht aus der Hoffnung auf fallende Zinsen. Das Verhandlungsfenster beim Kaufpreis ist derzeit mehr wert als jede Zinsprognose.",
           "quellen": [
-            {"name": "Haufe / IW-Wohnindex Q3 2026", "url": "https://www.haufe.de/immobilien/entwicklung-vermarktung/marktanalysen/iw-wohnindex-entwicklung-kaufpreise-und-mieten_84324_615168.html"},
-            {"name": "Interhyp – Bauzinsen", "url": "https://www.interhyp.de/zinsen/"}
+            {"name": "Interhyp – Bauzinsen aktuell (Stand 12.11.2026)", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Finanztip – Aktuelle Bauzinsen November 2026", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
           ]
         }
       ]
@@ -76,13 +75,13 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "DAX erstmals über 27.000 — dann der Nvidia-Schock",
-          "aufmacher": "Der DAX hat am Donnerstag erstmals die Marke von 27.000 Punkten erreicht und schloss nach dem Rücktritt von Nvidia-Chef Jensen Huang bei 26.774,23 Punkten — ein Plus von 0,42 Prozent.",
-          "fakten": "Nvidia brach nach Handelsbeginn in den USA um bis zu 13 Prozent ein; seit dem Oktober-Hoch hat die Aktie rund ein Drittel verloren. Huang geht nach einer Spionageaffäre, interim führt Finanzchefin Colette Kress. Der Nasdaq 100 lag zuletzt 0,5 Prozent im Minus, der Dow Jones bei 52.508 Punkten. Mercedes-Benz stoppte laut einem Intranet-Interview alle weiteren Investitionen an deutschen Standorten (Aktie minus 1,7 Prozent), während Siemens ein Rekordjahr mit einem Auftragseingang über 100 Milliarden Euro meldete und die Allianz ihr Ziel auf bis zu 18,6 Milliarden Euro Betriebsgewinn anhob.",
-          "einordnung": "Der Rekord hängt an wenigen KI-getriebenen Werten — genau das Klumpenrisiko, das ein breiter ETF-Sparplan abfedert. Einzelwetten auf einen Nvidia-Nachfolger sind derzeit Glücksspiel.",
+          "titel": "DAX schließt bei 26.750 Punkten — stärkste Woche seit Monaten",
+          "aufmacher": "Der DAX ging am Freitag mit 26.749,95 Punkten aus dem Handel, ein Minus von 0,08 Prozent — auf Wochensicht aber ein Plus von 4,2 Prozent.",
+          "fakten": "Am Donnerstag hatte der Index erstmals in seiner Geschichte die 27.000-Punkte-Marke übersprungen. Rückenwind kam aus der Bilanzsaison: Nach der EY-Auswertung haben 27 DAX-Konzerne im dritten Quartal operativ 37,7 Milliarden Euro verdient, 4,6 Prozent mehr als im Vorjahr, bei 460,5 Milliarden Euro Umsatz (plus 4,5 Prozent). Die DZ Bank sieht den DAX bis Ende 2027 bei 28.500 Punkten. Belastend bleibt die KI-Seite: Der Nasdaq 100 verlor rund zwei Prozent, Infineon 4,3 Prozent, Rheinmetall fiel auf 754,20 Euro — 60 Prozent unter dem Januarhoch von 1.966 Euro. Die Erzeugerpreise in den USA stiegen im Oktober um 6,5 Prozent gegenüber Vorjahr; an den Märkten gilt eine Zinserhöhung der Fed im Dezember zu 90 Prozent als ausgemacht.",
+          "einordnung": "Vier Prozent Wochenplus beim DAX bei minus zwei Prozent beim Nasdaq zeigt die Rotation: weg von KI-Halbleitern, hin zu Energie, Infrastruktur und Rüstung. Für einen breiten ETF-Sparplan ist das Rauschen — für Einzelwetten auf einen Nvidia-Nachfolger bleibt es Glücksspiel.",
           "quellen": [
-            {"name": "tagesschau – Marktbericht", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-106.html"},
-            {"name": "Zeit/dpa – DAX-Konzerne steigern Gewinne", "url": "https://www.zeit.de/news/2026-11/13/dax-konzerne-steigern-gewinne-trotz-autokrise"}
+            {"name": "tagesschau – Marktbericht vom 13.11.2026", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-100.html"},
+            {"name": "EY – Analyse DAX 40, Q3 2026", "url": "https://www.ey.com/de_de/newsroom/2026/11/ey-analyse-dax40-q3-2026"}
           ]
         }
       ]
@@ -91,13 +90,13 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Paperless 3.4.2, Mushroom 5.3.0 und ein MCP-Dev-Build",
-          "aufmacher": "Drei Updates stehen an: paperless-ngx 3.4.1 → 3.4.2, die Dashboard-Karten Mushroom v5.2.3 → v5.3.0 und der Home-Assistant-MCP-Server als Dev-Build.",
-          "fakten": "Paperless 3.4.2 bringt elf Fehlerkorrekturen — mobiler Speichern-Button, Schutz des Ansichtsnamens beim Speichern, Bulk-Edit-Tasks in Celery-Workern und ein Warten der Index-Initialisierung auf die Tesseract-Sprachpakete; keine Breaking Changes. Mushroom 5.3.0 repariert den Visual Editor für more-info-Aktionen, ignoriert nicht unterstützte Fan- und Cover-Steuerungen, respektiert Nullgrenzen und Schrittweiten bei Zahlen-Buttons und zeigt die Luftfeuchtigkeit in der Klimakarte. Der MCP-Server läuft von dev3516 auf dev3519, Auto-Update ist aktiv.",
-          "einordnung": "Alle drei sind unkritisch: Paperless erst nach dem üblichen Backup einspielen (Retention 1–3), Mushroom über HACS aktualisieren, den Dev-Build lässt man selbst laufen.",
+          "titel": "ConnectLife 1.0, Shelly 2.2.0 — und eine Shelly-Falle",
+          "aufmacher": "Drei Updates stehen an: ConnectLife springt von 0.56.0 auf 1.0.0, der Shelly am Outdoor-Kühlschrank von 2.1.1 auf 2.2.0, der HA-MCP-Server läuft als Dev-Build weiter.",
+          "fakten": "ConnectLife 1.0.0 (13.11.) ersetzt die Aktions-Auswahllisten durch echte Start-, Pause- und Stopp-Buttons an Waschmaschinen, Trocknern und Öfen, prüft alle Mappings gegen die Property-Listen des Herstellers — nicht bedienbare Steuerungen werden zu Sensoren — und bringt neun neue Geräte-Mappings sowie einen neuen Gerätetyp für Hisense-Hi-Therma-II-VRF-Innengeräte (045), dort ist das Schreiben von Modus und Lüfterstufe ausdrücklich experimentell. Breaking Changes gibt es ab jetzt nur noch in Major-Versionen. Shelly 2.2.0 (11.11.) bringt LoRa-Erweiterungen, Switch.SetAll/SetMany, eine Einschaltverzögerung nach Stromausfall, mDNS-Discovery und Konfigurations-Backups — aber dieselbe Version hat auf 1PM Mini Gen3/Gen4 die Geräte-ID umbenannt und damit Passwort-Login und MQTT-Topic zerschossen; 2.2.1 (13.11.) stellt die ursprüngliche ID wieder her und repariert zusätzlich das BLE-Relay am Pro 3EM sowie einen Crash im 2PM Gen4. Der MCP-Server steht bei dev3528, verfügbar ist dev3537, Auto-Update aktiv.",
+          "einordnung": "Reihenfolge: ConnectLife über HACS einspielen — der Gewinn liegt bei Waschmaschine und Ofen, für die Wohnzimmer-Klima ändert sich nichts. Beim Shelly am Outdoor-Kühlschrank nicht 2.2.0, sondern 2.2.1 abwarten: die Pro-3EM-Korrektur ist für die Unterverteilung wichtiger als die neuen Funktionen, und die ID-Umbenennung spart man sich damit komplett.",
           "quellen": [
-            {"name": "paperless-ngx Releases", "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.2"},
-            {"name": "lovelace-mushroom v5.3.0", "url": "https://github.com/piitaya/lovelace-mushroom/releases/tag/v5.3.0"}
+            {"name": "ConnectLife HA – Release v1.0.0", "url": "https://github.com/oyvindwe/connectlife-ha/releases/tag/v1.0.0"},
+            {"name": "Shelly Gen2+ – Changelog (2.2.0 / 2.2.1)", "url": "https://shelly-api-docs.shelly.cloud/gen2/changelog/"}
           ]
         }
       ]
@@ -118,11 +117,15 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Deutsche/europäische KI: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "Paris Call: Mistral und Black Forest Labs unterschreiben KI-Sicherheitserklärung",
+          "aufmacher": "Am 9. November haben 17 Staaten — darunter Deutschland und Frankreich — sowie zehn KI-Unternehmen, unter ihnen Mistral AI und Black Forest Labs, eine gemeinsame Erklärung zur Sicherheit von KI-Modellen unterzeichnet.",
+          "fakten": "Die Unterzeichner verpflichten sich auf drei Punkte: ein gemeinsames Rahmenwerk zur Bewertung und Risikosteuerung von Frontier-Modellen mit einheitlichen technischen Standards und Prüfwerkzeugen, die Veröffentlichung nicht-sensibler Testergebnisse in einem öffentlich zugänglichen gemeinsamen Repositorium, und klare Verantwortlichkeiten je Rolle im KI-Ökosystem. Entwickler sollen Fähigkeiten, Grenzen und bekannte Risiken offenlegen und Mechanismen einbauen, mit denen sich ein Modell während Training und Betrieb abschalten lässt — ausdrücklich unter Wahrung der Vorteile offener Gewichte. Neben Mistral und Black Forest Labs zeichneten Anthropic, Cohere, Hugging Face, Microsoft, OpenAI, Sakana AI, Domyn und Synthesia sowie aus der Zivilgesellschaft LawZero von Yoshua Bengio. Die Erklärung ist rechtlich nicht bindend und bleibt laut Élysée offen für weitere Unterzeichner.",
+          "einordnung": "Für die europäische Szene ist das der erste gemeinsame Prüfstandard, in dem Mistral und Black Forest Labs neben OpenAI und Anthropic auf derselben Liste stehen — das Argument 'souverän und trotzdem anschlussfähig' wird damit belegbar, statt bloßes Marketing zu bleiben.",
+          "quellen": [
+            {"name": "Élysée – Paris Call for AI Safety and Security (09.11.2026)", "url": "https://www.elysee.fr/en/emmanuel-macron/2026/11/09/paris-call-for-ai-safety-and-security"},
+            {"name": "Regierung Kanadas – Joint declaration on Paris Call", "url": "https://www.pm.gc.ca/en/news/statements/2026/11/09/joint-declaration-paris-call-ai-safety-and-security"},
+            {"name": "CASRAI – Einordnung der Erklärung", "url": "https://casrai.org/news/paris-call-ai-safety-security-joint-declaration-2026"}
+          ]
         }
       ]
     }
