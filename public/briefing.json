@@ -1,13 +1,13 @@
 {
-  "datum": "Samstag, 14.11.2026",
+  "datum": "Sonntag, 15.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "2,0 °C · Regen 4 % · UV 1,9",
-          "aufmacher": "🌤️ Überwiegend sonnig — Tageshöchstwert 9 °C, Tiefstwert 2 °C.",
-          "fakten": "Aktuell 2,0 °C bei überwiegend sonnigem Himmel. Regenwahrscheinlichkeit 4 %, UV-Index 1,85 (niedrig).",
+          "titel": "3,5 °C · Regen 92 % · UV 1,6",
+          "aufmacher": "🌦️ Niesel, kaum Sonne — Tagesspanne 2,2 bis 9,3 °C.",
+          "fakten": "Durchgehend hohe Regenwahrscheinlichkeit (92 %), UV-Index unkritisch bei 1,6. Für draußen: wasserfest, und Elektroarbeiten im Freien besser verschieben.",
           "einordnung": "",
           "quellen": []
         }
@@ -18,14 +18,28 @@
       "artikel": [
         {
           "titel": "16.11.2026 15:00 Uhr: KGG – Krankengymnastik am Gerät (Heidrun)",
-          "aufmacher": "Montag, 15:00 Uhr.",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
           "titel": "17.11.2026 19:00 Uhr: Live-Webinar – KI für Immobilieneinsteiger",
-          "aufmacher": "Dienstag, 19:00 Uhr.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "18.11.2026 09:00 Uhr: Quixx-Meeting",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "18.11.2026 15:00 Uhr: KGG – Krankengymnastik am Gerät (Melvin)",
+          "aufmacher": "",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -36,22 +50,31 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Neue Straßenreinigungssatzung: Troisdorfer Anlieger kehren künftig ihre Parkbuchten selbst",
-          "aufmacher": "Zum 1. Januar 2027 gilt in Troisdorf eine neue Straßenreinigungs- und Gebührensatzung — mehr Straßen werden ganzjährig gekehrt, dafür wandert die Reinigung der Parkbuchten in drei Reinigungsklassen zu den Anliegern.",
-          "fakten": "Der Rat hat die Neufassung am 13. Oktober 2026 beschlossen, bekannt gemacht wurde sie am 4. November. Straßen, die bisher nur im Laubkehrdienst von Anfang Oktober bis Mitte Dezember angefahren wurden, werden ab 2027 ganzjährig einmal pro Woche gereinigt; auch Straßen in den Industriegebieten kommen in die Klasse S 2. In den Klassen S 2, W 1 und W 2 übernehmen die Anlieger Gehwege und Parkbuchten — parkende Autos blockieren dort die Kehrmaschine, deshalb zieht die Stadt sich zurück. Die Winterwartung der Gehwege bleibt ohnehin bei den Anliegern. Die Gebühr wird weiter je Frontmeter des Grundstücks nach Reinigungsklasse erhoben; laut Stadt deckt die Anpassung nur höhere Kosten für Kraftstoff und Kehrichtentsorgung, zusätzliches Personal oder Maschinen sind nicht vorgesehen.",
-          "einordnung": "Für Mike als Eigentümer praktisch: Frontmeter nachzählen, Reinigungsklasse der eigenen Straße prüfen und beides in die Nebenkostenabrechnung 2027 einplanen — dazu kommt eine Reinigungspflicht für Parkbuchten, die man den Mietern schriftlich mitteilen sollte, sonst bleibt die Stadt auf der Beschwerde und der Eigentümer auf der Gebühr sitzen.",
+          "titel": "Polizei warnt: Falsche „IT-Mitarbeiter“ holen Geld von 85-Jähriger",
+          "aufmacher": "In Hennef hat eine 85-Jährige am 11. November einen hohen dreistelligen Betrag an Betrüger überwiesen, die sich als IT-Support ausgaben.",
+          "fakten": "Die Täter blendeten am Rechner ein angebliches Sicherheitsproblem ein und riefen anschließend an, um sich als IT-Mitarbeiter auszugeben. Die Kreispolizei Rhein-Sieg-Kreis nutzt den Fall für eine ausdrückliche Warnung vor der Masche.",
+          "einordnung": "Hausregel für alle, die Support machen: Niemand ruft unaufgefordert an, und Fernzugriff gibt es nur nach Rückruf über eine bekannte Nummer.",
           "quellen": [
-            {"name": "Rundblick Troisdorf – Straßenreinigung wird neu geregelt", "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3177862-strassenreinigung-wird-neu-geregelt/"},
-            {"name": "Stadt Troisdorf – Straßenreinigungssatzung vom 4. November 2026 (PDF)", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/bekanntmachungen/neufassung-der-satzung-ueber-die-strassenreinigung-und-die-erhebung-von-strassenreinigungsgebuehren-strassenreinigungssatzung-der-stadt-troisdorf-vom-4.-november-2026.pdf?cid=242v"}
+            {
+              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis (ots)",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6389857"
+            }
           ]
         },
         {
-          "titel": "Parkplatz Friedrichstraße zwei Wochen gesperrt — Kanalbau ab Montag",
-          "aufmacher": "Ab Montag, 16. November, ist der Parkplatz an der Troisdorfer Friedrichstraße für voraussichtlich zwei Wochen vollständig gesperrt.",
-          "fakten": "Grund sind Kanalbauarbeiten. Auch Pendlerinnen und Pendler können die Fläche in dieser Zeit nicht nutzen. Wann der Platz wieder freigegeben wird, teilen das ausführende Unternehmen und der Abwasserbetrieb erst nach Abschluss der Arbeiten mit.",
-          "einordnung": "Zwei Wochen ohne Pendlerparkplatz in der Innenstadt — wer dort tagsüber steht, sollte früh eine Alternative festlegen statt morgens zu suchen.",
+          "titel": "Bornheim: Haftbefehl nach tödlichem Unfall mit 14-jähriger Radfahrerin",
+          "aufmacher": "Ein 21-Jähriger sitzt in Untersuchungshaft, nachdem er am 10. November in Bornheim-Sechtem eine 14-jährige Radfahrerin überfahren haben soll und weiterfuhr.",
+          "fakten": "Der Unfall geschah gegen 7:15 Uhr auf der Keldenicher Straße Richtung Wesseling, als der Wagen ein anderes Auto überholte. Der Fahrer flüchtete in einem schwarzen Mini Cooper, ohne zu helfen; die Polizei fand Kennzeichen an der Unfallstelle. Gegen den am Donnerstag festgenommenen 21-Jährigen wurde Haftbefehl erlassen.",
+          "einordnung": "Die Strecke ist Pendelverkehr — in der dunklen Jahreszeit dort mit Radfahrern aus den Feldwegen rechnen.",
           "quellen": [
-            {"name": "Stadt Troisdorf – Parkplatz an der Friedrichstraße wird gesperrt", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/parkplatz-an-der-friedrichstrasse-wird-gesperrt/"}
+            {
+              "name": "WDR",
+              "url": "https://www1.wdr.de/nrw/rheinland/rhein-sieg-kreis/unfall-fahrrad-toedlich-100.html"
+            },
+            {
+              "name": "General-Anzeiger Bonn",
+              "url": "https://ga.de/region/voreifel-und-vorgebirge/bornheim/bornheim-sechtem-u-haft-fuer-21-jaehrigen-nach-unfalltod-einer-14-jaehrigen_aid-158260377"
+            }
           ]
         }
       ]
@@ -60,13 +83,19 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzins bleibt bei 4,3 Prozent — Bankenpanel sieht vorerst keine Bewegung",
-          "aufmacher": "Der Bauzins für zehnjährige Darlehen liegt laut Interhyp bei 4,3 Prozent (Stand 12.11.), und 80 Prozent der vom Institut befragten Banken rechnen kurzfristig mit gleichbleibenden Konditionen.",
-          "fakten": "Im Zinsvergleich kostet ein Darlehen mit zehn Jahren Zinsbindung und 80 Prozent Beleihungsauslauf 4,17 Prozent effektiv, unter 70 Prozent Beleihungsauslauf 4,08 Prozent; bei 15 Jahren Zinsbindung sind es 4,28, bei 20 Jahren 4,34 Prozent. Über 90 Prozent Beleihung schlägt mit 4,41 Prozent zu Buche — für die Strategie mit minimalem Eigenkapital ist das die relevante Zeile. Finanztip nennt für Mitte November eine Spanne von 4,3 bis 4,8 Prozent. Mittelfristig ist das Panel gespalten: 60 Prozent erwarten fallende, 40 Prozent steigende Zinsen. Interhyp verweist zugleich darauf, dass die Kaufpreise den dritten Monat in Folge nachgegeben haben und rät zum Verhandeln statt zum Warten.",
-          "einordnung": "Bei 4,3 Prozent Zins und zwei Prozent Anfangstilgung liegt die Annuität bei 6,3 Prozent des Darlehens pro Jahr — der Cashflow muss aus der Miete kommen, nicht aus der Hoffnung auf fallende Zinsen. Das Verhandlungsfenster beim Kaufpreis ist derzeit mehr wert als jede Zinsprognose.",
+          "titel": "Bauzins bei 4,24 Prozent — Kaufpreise geben den dritten Monat nach",
+          "aufmacher": "Zehnjährige Baudarlehen sind von ihrem Rekordstand leicht zurückgekommen, während die Kaufpreise weiter nachgeben — das ist derzeit das beste Verhandlerfenster seit dem Sommer.",
+          "fakten": "Der Zins für 10-jährige Darlehen liegt bei rund 4,24 Prozent, etwa 0,2 Prozentpunkte unter Oktober, als das Niveau den höchsten Stand seit 2009 erreicht hatte. Interhyp nennt effektiv 4,08 Prozent bei unter 70 Prozent Beleihung bis 4,41 Prozent bei über 90 Prozent (Konditionen 2.–8. November). Der Interhyp-Immobilienpreisindex lag im Oktober 1,4 Prozent unter dem Juli-Wert; Eigentumswohnungen minus 0,4 Prozent im Monat, Häuser minus 0,9 Prozent, Angebotspreise für Eigentumswohnungen erstmals seit Herbst 2024 unter Vorjahr.",
+          "einordnung": "Für ein MFH wird der Preis verhandelt, nicht der Zins: Der Hebel trägt nur, wenn die Nettomietrendite die gut 4,2 Prozent Zins plus Bewirtschaftung schlägt — Kaufnebenkosten aus EK, Rest über Bank bleibt die Bedingung.",
           "quellen": [
-            {"name": "Interhyp – Bauzinsen aktuell (Stand 12.11.2026)", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Finanztip – Aktuelle Bauzinsen November 2026", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"}
+            {
+              "name": "Interhyp: Bauzinsen aktuell",
+              "url": "https://www.interhyp.de/zinsen"
+            },
+            {
+              "name": "ad-hoc-news: Bauzinsen November 2026",
+              "url": "https://www.ad-hoc-news.de/wirtschaft/bauzinsen-zehnjaehrige-darlehen-sinken-auf-4-24-prozent-im-november/70500510"
+            }
           ]
         }
       ]
@@ -75,13 +104,23 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "DAX schließt bei 26.750 Punkten — stärkste Woche seit Monaten",
-          "aufmacher": "Der DAX ging am Freitag mit 26.749,95 Punkten aus dem Handel, ein Minus von 0,08 Prozent — auf Wochensicht aber ein Plus von 4,2 Prozent.",
-          "fakten": "Am Donnerstag hatte der Index erstmals in seiner Geschichte die 27.000-Punkte-Marke übersprungen. Rückenwind kam aus der Bilanzsaison: Nach der EY-Auswertung haben 27 DAX-Konzerne im dritten Quartal operativ 37,7 Milliarden Euro verdient, 4,6 Prozent mehr als im Vorjahr, bei 460,5 Milliarden Euro Umsatz (plus 4,5 Prozent). Die DZ Bank sieht den DAX bis Ende 2027 bei 28.500 Punkten. Belastend bleibt die KI-Seite: Der Nasdaq 100 verlor rund zwei Prozent, Infineon 4,3 Prozent, Rheinmetall fiel auf 754,20 Euro — 60 Prozent unter dem Januarhoch von 1.966 Euro. Die Erzeugerpreise in den USA stiegen im Oktober um 6,5 Prozent gegenüber Vorjahr; an den Märkten gilt eine Zinserhöhung der Fed im Dezember zu 90 Prozent als ausgemacht.",
-          "einordnung": "Vier Prozent Wochenplus beim DAX bei minus zwei Prozent beim Nasdaq zeigt die Rotation: weg von KI-Halbleitern, hin zu Energie, Infrastruktur und Rüstung. Für einen breiten ETF-Sparplan ist das Rauschen — für Einzelwetten auf einen Nvidia-Nachfolger bleibt es Glücksspiel.",
+          "titel": "Euroraum-Inflation 4,0 Prozent — EZB lässt den Zins bei 2,50 Prozent",
+          "aufmacher": "Die Teuerung im Euroraum steigt weiter, getrieben von Energie — die Notenbank hält still.",
+          "fakten": "Die HVPI-Inflation im Euroraum lag im Oktober 2026 bei 4,0 Prozent, nach 3,8 Prozent im September; Energie verteuerte sich um 20,8 Prozent. In Deutschland lag die Inflationsrate bei plus 2,8 Prozent (bestätigt am 11. November). Der EZB-Einlagensatz bleibt bei 2,50 Prozent, gültig seit 16. September 2026; nächste Sitzung am 17. Dezember.",
+          "einordnung": "Real bleibt Geld billig, Kredit ist teuer: Das Sachwertargument für Immobilien bleibt intakt, der Engpass ist die Finanzierung — Refinanzierung erst nach stabilisiertem Cashflow.",
           "quellen": [
-            {"name": "tagesschau – Marktbericht vom 13.11.2026", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-100.html"},
-            {"name": "EY – Analyse DAX 40, Q3 2026", "url": "https://www.ey.com/de_de/newsroom/2026/11/ey-analyse-dax40-q3-2026"}
+            {
+              "name": "Eurostat: Inflation im Euroraum",
+              "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Inflation_in_the_euro_area"
+            },
+            {
+              "name": "Statistisches Bundesamt",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_392_611.html"
+            },
+            {
+              "name": "EZB: Key ECB interest rates",
+              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+            }
           ]
         }
       ]
@@ -90,14 +129,23 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "ConnectLife 1.0, Shelly 2.2.0 — und eine Shelly-Falle",
-          "aufmacher": "Drei Updates stehen an: ConnectLife springt von 0.56.0 auf 1.0.0, der Shelly am Outdoor-Kühlschrank von 2.1.1 auf 2.2.0, der HA-MCP-Server läuft als Dev-Build weiter.",
-          "fakten": "ConnectLife 1.0.0 (13.11.) ersetzt die Aktions-Auswahllisten durch echte Start-, Pause- und Stopp-Buttons an Waschmaschinen, Trocknern und Öfen, prüft alle Mappings gegen die Property-Listen des Herstellers — nicht bedienbare Steuerungen werden zu Sensoren — und bringt neun neue Geräte-Mappings sowie einen neuen Gerätetyp für Hisense-Hi-Therma-II-VRF-Innengeräte (045), dort ist das Schreiben von Modus und Lüfterstufe ausdrücklich experimentell. Breaking Changes gibt es ab jetzt nur noch in Major-Versionen. Shelly 2.2.0 (11.11.) bringt LoRa-Erweiterungen, Switch.SetAll/SetMany, eine Einschaltverzögerung nach Stromausfall, mDNS-Discovery und Konfigurations-Backups — aber dieselbe Version hat auf 1PM Mini Gen3/Gen4 die Geräte-ID umbenannt und damit Passwort-Login und MQTT-Topic zerschossen; 2.2.1 (13.11.) stellt die ursprüngliche ID wieder her und repariert zusätzlich das BLE-Relay am Pro 3EM sowie einen Crash im 2PM Gen4. Der MCP-Server steht bei dev3528, verfügbar ist dev3537, Auto-Update aktiv.",
-          "einordnung": "Reihenfolge: ConnectLife über HACS einspielen — der Gewinn liegt bei Waschmaschine und Ofen, für die Wohnzimmer-Klima ändert sich nichts. Beim Shelly am Outdoor-Kühlschrank nicht 2.2.0, sondern 2.2.1 abwarten: die Pro-3EM-Korrektur ist für die Unterverteilung wichtiger als die neuen Funktionen, und die ID-Umbenennung spart man sich damit komplett.",
+          "titel": "Home Assistant MCP Server (Dev): dev3554 → dev3558",
+          "aufmacher": "Das Dev-Addon zieht automatisch nach — inhaltlich sind es Vorbereitungs-Builds auf den stabilen 9.3.0.",
+          "fakten": "Die Builds sind Snapshots vor dem stabilen 9.3.0-Release; die Änderungen betreffen derzeit im Wesentlichen Tests und interne Abläufe. Upstream liegt bereits dev3560. Alle übrigen Update-Entities (HA Core, Supervisor, OS, Add-ons, HACS, UniFi-, Shelly- und Zigbee-Firmware) stehen auf „kein Update“.",
+          "einordnung": "Kein Handlungsbedarf — beim stabilen 9.3.0 dann mit Backup aktualisieren.",
           "quellen": [
-            {"name": "ConnectLife HA – Release v1.0.0", "url": "https://github.com/oyvindwe/connectlife-ha/releases/tag/v1.0.0"},
-            {"name": "Shelly Gen2+ – Changelog (2.2.0 / 2.2.1)", "url": "https://shelly-api-docs.shelly.cloud/gen2/changelog/"}
+            {
+              "name": "ha-mcp Releases (GitHub)",
+              "url": "https://github.com/homeassistant-ai/ha-mcp/releases"
+            }
           ]
+        },
+        {
+          "titel": "Docker: /omnivoice seit vier Wochen gestoppt",
+          "aufmacher": "Auf dem Docker-Host läuft ein Container nicht mehr — und zwar seit vier Wochen.",
+          "fakten": "Von 26 Containern sind zwei gestoppt: /omnivoice mit Exit 137 (SIGKILL, typisch bei Speichermangel oder manuellem Kill) vor vier Wochen, der Firecrawl-Init-Container regulär mit Exit 0.",
+          "einordnung": "Exit 137 ist kein normales Update, sondern ein Abbruch. Prüfung und Neustart nur auf Freigabe.",
+          "quellen": []
         }
       ]
     },
@@ -117,15 +165,11 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Paris Call: Mistral und Black Forest Labs unterschreiben KI-Sicherheitserklärung",
-          "aufmacher": "Am 9. November haben 17 Staaten — darunter Deutschland und Frankreich — sowie zehn KI-Unternehmen, unter ihnen Mistral AI und Black Forest Labs, eine gemeinsame Erklärung zur Sicherheit von KI-Modellen unterzeichnet.",
-          "fakten": "Die Unterzeichner verpflichten sich auf drei Punkte: ein gemeinsames Rahmenwerk zur Bewertung und Risikosteuerung von Frontier-Modellen mit einheitlichen technischen Standards und Prüfwerkzeugen, die Veröffentlichung nicht-sensibler Testergebnisse in einem öffentlich zugänglichen gemeinsamen Repositorium, und klare Verantwortlichkeiten je Rolle im KI-Ökosystem. Entwickler sollen Fähigkeiten, Grenzen und bekannte Risiken offenlegen und Mechanismen einbauen, mit denen sich ein Modell während Training und Betrieb abschalten lässt — ausdrücklich unter Wahrung der Vorteile offener Gewichte. Neben Mistral und Black Forest Labs zeichneten Anthropic, Cohere, Hugging Face, Microsoft, OpenAI, Sakana AI, Domyn und Synthesia sowie aus der Zivilgesellschaft LawZero von Yoshua Bengio. Die Erklärung ist rechtlich nicht bindend und bleibt laut Élysée offen für weitere Unterzeichner.",
-          "einordnung": "Für die europäische Szene ist das der erste gemeinsame Prüfstandard, in dem Mistral und Black Forest Labs neben OpenAI und Anthropic auf derselben Liste stehen — das Argument 'souverän und trotzdem anschlussfähig' wird damit belegbar, statt bloßes Marketing zu bleiben.",
-          "quellen": [
-            {"name": "Élysée – Paris Call for AI Safety and Security (09.11.2026)", "url": "https://www.elysee.fr/en/emmanuel-macron/2026/11/09/paris-call-for-ai-safety-and-security"},
-            {"name": "Regierung Kanadas – Joint declaration on Paris Call", "url": "https://www.pm.gc.ca/en/news/statements/2026/11/09/joint-declaration-paris-call-ai-safety-and-security"},
-            {"name": "CASRAI – Einordnung der Erklärung", "url": "https://casrai.org/news/paris-call-ai-safety-security-joint-declaration-2026"}
-          ]
+          "titel": "Deutsche/europäische KI: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     }
