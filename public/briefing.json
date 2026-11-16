@@ -1,13 +1,13 @@
 {
-  "datum": "Sonntag, 15.11.2026",
+  "datum": "Montag, 16.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "3,5 °C · Regen 92 % · UV 1,6",
-          "aufmacher": "🌦️ Niesel, kaum Sonne — Tagesspanne 2,2 bis 9,3 °C.",
-          "fakten": "Durchgehend hohe Regenwahrscheinlichkeit (92 %), UV-Index unkritisch bei 1,6. Für draußen: wasserfest, und Elektroarbeiten im Freien besser verschieben.",
+          "titel": "9,2 °C · Regen 85 % · UV 1,5",
+          "aufmacher": "🌦️ Niesel den ganzen Tag, Tagesspanne 6,4 bis 10,0 °C.",
+          "fakten": "Regenwahrscheinlichkeit 85 %, UV-Index 1,5 — unkritisch. Draußen wasserfeste Kleidung; Elektroarbeiten im Freien besser verschieben.",
           "einordnung": "",
           "quellen": []
         }
@@ -43,6 +43,13 @@
           "fakten": "",
           "einordnung": "",
           "quellen": []
+        },
+        {
+          "titel": "19.11.2026: Julian Wiegand hat Geburtstag",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     },
@@ -50,30 +57,34 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Polizei warnt: Falsche „IT-Mitarbeiter“ holen Geld von 85-Jähriger",
-          "aufmacher": "In Hennef hat eine 85-Jährige am 11. November einen hohen dreistelligen Betrag an Betrüger überwiesen, die sich als IT-Support ausgaben.",
-          "fakten": "Die Täter blendeten am Rechner ein angebliches Sicherheitsproblem ein und riefen anschließend an, um sich als IT-Mitarbeiter auszugeben. Die Kreispolizei Rhein-Sieg-Kreis nutzt den Fall für eine ausdrückliche Warnung vor der Masche.",
-          "einordnung": "Hausregel für alle, die Support machen: Niemand ruft unaufgefordert an, und Fernzugriff gibt es nur nach Rückruf über eine bekannte Nummer.",
+          "titel": "Troisdorf: Straßenreinigung ab 2027 ganzjährig — Parkbuchten werden Anliegersache",
+          "aufmacher": "Troisdorf kehrt ab 1. Januar 2027 deutlich mehr Straßen das ganze Jahr über — der bisherige Laubkehrdienst von Oktober bis Mitte Dezember wird zur wöchentlichen Dauerreinigung.",
+          "fakten": "Der Stadtrat hat die Neufassung am 13. Oktober 2026 beschlossen, die Satzung datiert vom 4. November 2026 und tritt am 1. Januar 2027 in Kraft. Bisherige Laubkehr-Straßen werden künftig ganzjährig einmal pro Woche gekehrt; Straßen in den Industriegebieten kommen neu in die Reinigungsklasse S 2. Die Gebühr je Frontmeter und Jahr beträgt 2,60 Euro (S 2), 2,44 Euro (W 1), 2,62 Euro (W 2) und 36,30 Euro (F 1), zusätzlich Winterwartung 0,31 / 0,36 / 0,45 Euro. Wesentliche Änderung: In den Klassen S 2, W 1 und W 2 müssen Anlieger die Parkbuchten selbst reinigen, weil parkende Autos die Maschinenreinigung blockieren.",
+          "einordnung": "Für Moselstr. und die MFH zählt die Grundstücksfront in Metern, nicht die Wohnfläche — bei Eckgrundstücken beide Fronten. Dazu kommt die neue Parkbuchten-Pflicht, also ein zusätzlicher Punkt für Mietvertrag und Hausordnung.",
           "quellen": [
             {
-              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis (ots)",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6389857"
+              "name": "Stadt Troisdorf — Straßenreinigungssatzung vom 04.11.2026 (PDF)",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/bekanntmachungen/neufassung-der-satzung-ueber-die-strassenreinigung-und-die-erhebung-von-strassenreinigungsgebuehren-strassenreinigungssatzung-der-stadt-troisdorf-vom-4.-november-2026.pdf?cid=242v"
+            },
+            {
+              "name": "Rundblick Troisdorf — Straßenreinigung wird neu geregelt",
+              "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3177862-strassenreinigung-wird-neu-geregelt/"
             }
           ]
         },
         {
-          "titel": "Bornheim: Haftbefehl nach tödlichem Unfall mit 14-jähriger Radfahrerin",
-          "aufmacher": "Ein 21-Jähriger sitzt in Untersuchungshaft, nachdem er am 10. November in Bornheim-Sechtem eine 14-jährige Radfahrerin überfahren haben soll und weiterfuhr.",
-          "fakten": "Der Unfall geschah gegen 7:15 Uhr auf der Keldenicher Straße Richtung Wesseling, als der Wagen ein anderes Auto überholte. Der Fahrer flüchtete in einem schwarzen Mini Cooper, ohne zu helfen; die Polizei fand Kennzeichen an der Unfallstelle. Gegen den am Donnerstag festgenommenen 21-Jährigen wurde Haftbefehl erlassen.",
-          "einordnung": "Die Strecke ist Pendelverkehr — in der dunklen Jahreszeit dort mit Radfahrern aus den Feldwegen rechnen.",
+          "titel": "Friedrichstraße: Parkplatz ab heute zwei Wochen komplett gesperrt",
+          "aufmacher": "Wegen Kanalbauarbeiten ist der Parkplatz an der Friedrichstraße ab Montag, 16. November, für voraussichtlich zwei Wochen voll gesperrt — auch für Pendler.",
+          "fakten": "Wann wieder freigegeben wird, teilt der ausführende Betrieb nach Abschluss der Arbeiten mit. Parallel ist der Akazienweg in Kriegsdorf vom 16. bis 27. November wegen abschließender Glasfaserarbeiten in mehreren Bauabschnitten gesperrt — Fußgänger behalten 1,30 Meter Restbreite, eine Umleitung wird ausgeschildert.",
+          "einordnung": "Zwei Wochen weniger Parkraum rund um die Friedrichstraße heißt mehr Suchverkehr Richtung Bahn und Innenstadt. Wer morgens pendelt, sollte Route oder Parkplatz tauschen.",
           "quellen": [
             {
-              "name": "WDR",
-              "url": "https://www1.wdr.de/nrw/rheinland/rhein-sieg-kreis/unfall-fahrrad-toedlich-100.html"
+              "name": "Stadt Troisdorf — Parkplatz Friedrichstraße wird gesperrt",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/parkplatz-an-der-friedrichstrasse-wird-gesperrt/"
             },
             {
-              "name": "General-Anzeiger Bonn",
-              "url": "https://ga.de/region/voreifel-und-vorgebirge/bornheim/bornheim-sechtem-u-haft-fuer-21-jaehrigen-nach-unfalltod-einer-14-jaehrigen_aid-158260377"
+              "name": "Rundblick Troisdorf — Aktuelle Verkehrsmeldungen",
+              "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3177648-aktuelle-verkehrsmeldungen-fuer-troisdorf/"
             }
           ]
         }
@@ -83,18 +94,18 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzins bei 4,24 Prozent — Kaufpreise geben den dritten Monat nach",
-          "aufmacher": "Zehnjährige Baudarlehen sind von ihrem Rekordstand leicht zurückgekommen, während die Kaufpreise weiter nachgeben — das ist derzeit das beste Verhandlerfenster seit dem Sommer.",
-          "fakten": "Der Zins für 10-jährige Darlehen liegt bei rund 4,24 Prozent, etwa 0,2 Prozentpunkte unter Oktober, als das Niveau den höchsten Stand seit 2009 erreicht hatte. Interhyp nennt effektiv 4,08 Prozent bei unter 70 Prozent Beleihung bis 4,41 Prozent bei über 90 Prozent (Konditionen 2.–8. November). Der Interhyp-Immobilienpreisindex lag im Oktober 1,4 Prozent unter dem Juli-Wert; Eigentumswohnungen minus 0,4 Prozent im Monat, Häuser minus 0,9 Prozent, Angebotspreise für Eigentumswohnungen erstmals seit Herbst 2024 unter Vorjahr.",
-          "einordnung": "Für ein MFH wird der Preis verhandelt, nicht der Zins: Der Hebel trägt nur, wenn die Nettomietrendite die gut 4,2 Prozent Zins plus Bewirtschaftung schlägt — Kaufnebenkosten aus EK, Rest über Bank bleibt die Bedingung.",
+          "titel": "Bauzins bleibt bei 4,3 Prozent — Mehrfamilienhäuser verlieren den Anschluss",
+          "aufmacher": "Zehnjährige Baufinanzierungen kosten weiterhin rund 4,3 Prozent, während sich Wohnimmobilien kaum noch verteuern — und Mehrfamilienhäuser das schwächste Segment sind.",
+          "fakten": "Interhyp nennt für 10 Jahre Zinsbindung 4,3 Prozent (Stand 12.11.2026), bei 80 Prozent Beleihung 4,17 und über 90 Prozent 4,41 Prozent. 80 Prozent der befragten Institute erwarten kurzfristig gleichbleibende Zinsen, mittelfristig 60 Prozent fallende. Der vdp-Index zeigt für das dritte Quartal 2026 nur noch plus 1,0 Prozent bei Wohnimmobilien (Q1: +2,3, Q2: +1,9 Prozent) — Mehrfamilienhäuser plus 0,5 Prozent, Eigentumswohnungen plus 2,3 Prozent. Neuvertragsmieten legten um 3,5 Prozent zu, die Liegenschaftszinsen um 2,9 Prozent.",
+          "einordnung": "Interhyp meldet fallende Kaufpreise im Monatsvergleich (dritter Monat in Folge), der vdp im Jahresvergleich noch ein Plus — beides stimmt: Trend kurzfristig abwärts, Niveau über Vorjahr. Für MFH ist das die brauchbarste Lage seit Jahren: stagnierende Preise, +3,5 Prozent Mieten, steigende Renditen. Bei 4,3 Prozent Zins trägt sich ein Objekt nur mit klar unter Faktor 20 — Kaufnebenkosten aus EK, Rest über die Bank bleibt der Hebel, den die Institute mitgehen.",
           "quellen": [
             {
-              "name": "Interhyp: Bauzinsen aktuell",
-              "url": "https://www.interhyp.de/zinsen"
+              "name": "Interhyp — Bauzinsen aktuell (Stand 12.11.2026)",
+              "url": "https://www.interhyp.de/zinsen/"
             },
             {
-              "name": "ad-hoc-news: Bauzinsen November 2026",
-              "url": "https://www.ad-hoc-news.de/wirtschaft/bauzinsen-zehnjaehrige-darlehen-sinken-auf-4-24-prozent-im-november/70500510"
+              "name": "Cash. — vdp-Immobilienpreisindex Q3 2026",
+              "url": "https://www.cash-online.de/a/immobilienpreise-in-deutschland-vdp-index-zeigt-deutlich-schwaecheres-wachstum-729954/"
             }
           ]
         }
@@ -104,22 +115,22 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Euroraum-Inflation 4,0 Prozent — EZB lässt den Zins bei 2,50 Prozent",
-          "aufmacher": "Die Teuerung im Euroraum steigt weiter, getrieben von Energie — die Notenbank hält still.",
-          "fakten": "Die HVPI-Inflation im Euroraum lag im Oktober 2026 bei 4,0 Prozent, nach 3,8 Prozent im September; Energie verteuerte sich um 20,8 Prozent. In Deutschland lag die Inflationsrate bei plus 2,8 Prozent (bestätigt am 11. November). Der EZB-Einlagensatz bleibt bei 2,50 Prozent, gültig seit 16. September 2026; nächste Sitzung am 17. Dezember.",
-          "einordnung": "Real bleibt Geld billig, Kredit ist teuer: Das Sachwertargument für Immobilien bleibt intakt, der Engpass ist die Finanzierung — Refinanzierung erst nach stabilisiertem Cashflow.",
+          "titel": "EZB lässt bei 2,5 Prozent — Dezember-Erhöhung ist eingepreist",
+          "aufmacher": "Die EZB hat den Leitzins am 29. Oktober bei 2,5 Prozent belassen, doch die Finanzmärkte rechnen bereits mit einer Anhebung im Dezember.",
+          "fakten": "Die Inflation im Euroraum lag im Oktober bei 4,0 Prozent, dem höchsten Wert seit September 2023 (September: 3,8 Prozent). In Deutschland betrug sie 2,8 Prozent, die Verbraucherpreise gingen gegenüber September um 0,2 Prozent zurück (Destatis). Bundesbank-Präsident Nagel hält eine Anpassung im Dezember für wahrscheinlich: An den Märkten seien zwei weitere Erhöhungen eingepreist, 2,5 Prozent seien noch neutral, die nächsten Schritte führten in einen restriktiven Bereich. Zusätzlich: EZB-Präsidentin Lagarde tritt ihr Amt im Februar vorzeitig ab; als Nachfolger gelten Klaas Knot und Pablo Hernández de Cos.",
+          "einordnung": "Steigende Zinsen verteuern Anschlussfinanzierungen und die Kalkulation neuer Objekte. Wer 2027 eine Prolongation hat, sollte jetzt eine lange Zinsbindung prüfen statt auf fallende Zinsen zu spekulieren — der Markt preist den Anstieg schon ein.",
           "quellen": [
             {
-              "name": "Eurostat: Inflation im Euroraum",
-              "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Inflation_in_the_euro_area"
+              "name": "tagesschau — EZB hält Leitzins unverändert (29.10.2026)",
+              "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/ezb-570.html"
             },
             {
-              "name": "Statistisches Bundesamt",
+              "name": "Cash. — Nagel erwartet weitere Zinsschritte",
+              "url": "https://www.cash-online.de/a/ezb-zinsentscheid-im-dezember-nagel-erwartet-weitere-zinsschritte-730418/"
+            },
+            {
+              "name": "Destatis — Inflationsrate Oktober 2026 bei +2,8 %",
               "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_392_611.html"
-            },
-            {
-              "name": "EZB: Key ECB interest rates",
-              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
             }
           ]
         }
@@ -129,22 +140,17 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Home Assistant MCP Server (Dev): dev3554 → dev3558",
-          "aufmacher": "Das Dev-Addon zieht automatisch nach — inhaltlich sind es Vorbereitungs-Builds auf den stabilen 9.3.0.",
-          "fakten": "Die Builds sind Snapshots vor dem stabilen 9.3.0-Release; die Änderungen betreffen derzeit im Wesentlichen Tests und interne Abläufe. Upstream liegt bereits dev3560. Alle übrigen Update-Entities (HA Core, Supervisor, OS, Add-ons, HACS, UniFi-, Shelly- und Zigbee-Firmware) stehen auf „kein Update“.",
-          "einordnung": "Kein Handlungsbedarf — beim stabilen 9.3.0 dann mit Backup aktualisieren.",
-          "quellen": [
-            {
-              "name": "ha-mcp Releases (GitHub)",
-              "url": "https://github.com/homeassistant-ai/ha-mcp/releases"
-            }
-          ]
+          "titel": "Home Assistant MCP Server (Dev): 9.3.0.dev3566 → 9.3.0.dev3575",
+          "aufmacher": "Das MCP-Add-on hängt neun Dev-Builds zurück, Auto-Update ist aktiv — es zieht von selbst nach.",
+          "fakten": "Installiert ist 9.3.0.dev3566, verfügbar 9.3.0.dev3575. Für Dev-Builds veröffentlicht das Projekt kein öffentliches Changelog; was in den neun Builds steckt, ist nicht verifiziert.",
+          "einordnung": "Dev-Kanal heißt bewusstes Vorab-Testen. Wenn die HA-Steuerung über MCP nach dem Sprung hakt, ist dieses Add-on die erste Adresse — im Zweifel auf die letzte stabile Version zurück.",
+          "quellen": []
         },
         {
-          "titel": "Docker: /omnivoice seit vier Wochen gestoppt",
-          "aufmacher": "Auf dem Docker-Host läuft ein Container nicht mehr — und zwar seit vier Wochen.",
-          "fakten": "Von 26 Containern sind zwei gestoppt: /omnivoice mit Exit 137 (SIGKILL, typisch bei Speichermangel oder manuellem Kill) vor vier Wochen, der Firecrawl-Init-Container regulär mit Exit 0.",
-          "einordnung": "Exit 137 ist kein normales Update, sondern ein Abbruch. Prüfung und Neustart nur auf Freigabe.",
+          "titel": "Shelly-Steckdose „Rechner“: Firmware 1.7.5 → 1.7.6",
+          "aufmacher": "Die Steckdose, an der der Rechner hängt, bekommt ein Firmware-Update — Auto-Update ist aus, es muss von Hand angestoßen werden.",
+          "fakten": "Installiert 1.7.5, verfügbar 1.7.6. Shelly führt für dieses Patch-Release kein öffentliches Changelog; Inhalt nicht verifiziert. Alle übrigen Update-Entities im System stehen auf „kein Update“.",
+          "einordnung": "Das Gerät rebootet beim Update; ob die Steckdose dabei kurz abschaltet, hängt an der Relay-Konfiguration. Also nicht mitten in einer laufenden Sicherung anstoßen.",
           "quellen": []
         }
       ]
