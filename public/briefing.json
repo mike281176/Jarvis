@@ -1,13 +1,13 @@
 {
-  "datum": "Dienstag, 17.11.2026",
+  "datum": "Mittwoch, 18.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "5,7 °C · Regen 100 % · UV 1,5",
-          "aufmacher": "🌧️ Niesel den ganzen Tag, Tagesspanne 4,7 bis 14,6 °C.",
-          "fakten": "Regenwahrscheinlichkeit 100 %, UV-Index 1,5 — unkritisch. Dauerregen heißt: Dach-, Fassaden- und Elektroarbeiten im Freien verschieben.",
+          "titel": "9,9 °C · Regen 100 % · UV 0,25",
+          "aufmacher": "🌦️ Niesel den ganzen Tag, Tagesspanne 9,1 bis 12,4 °C.",
+          "fakten": "Regenwahrscheinlichkeit 100 %, UV-Index 0,25 — unkritisch. Dauerfeuchte heißt: Außenarbeiten an Dach, Fassade und Elektro im Freien verschieben.",
           "einordnung": "",
           "quellen": []
         }
@@ -16,13 +16,6 @@
     {
       "titel": "📅 Termine",
       "artikel": [
-        {
-          "titel": "17.11.2026 19:00 Uhr: Live-Webinar – KI für Immobilieneinsteiger",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
         {
           "titel": "18.11.2026 09:00 Uhr: Quixx-Meeting",
           "aufmacher": "",
@@ -38,7 +31,7 @@
           "quellen": []
         },
         {
-          "titel": "19.11.2026: Julian Wiegand hat Geburtstag",
+          "titel": "19.11.2026: Julian Wiegand hat Geburtstag (neuer Fahrer)",
           "aufmacher": "",
           "fakten": "",
           "einordnung": "",
@@ -50,26 +43,30 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "L 332n: Spicher Straße bis August 2028 gesperrt, Spatzenweg ab heute dicht",
-          "aufmacher": "Der Neubau der L 332n nimmt Troisdorf zwei Achsen für mehr als ein Jahr aus dem Verkehr — und in Kriegsdorf beginnt heute die nächste Vollsperrung.",
-          "fakten": "Die Spicher Straße ist seit 16. November 2026 bis 31. August 2028 voll gesperrt, inklusive Geh- und Radweg; Anlieger kommen nur bis Hausnummer 73 durch. Die Pastorsbitze an der Einmündung zur Spicher Straße ist im gleichen Zeitraum dicht. Der Spatzenweg in Kriegsdorf wird ab 17. November 2026 bis 29. April 2027 voll gesperrt — wegen neuer Ver- und Entsorgungsleitungen und anschließendem Straßenausbau, in mehreren Bauabschnitten; die Häuser bleiben zu Fuß erreichbar.",
-          "einordnung": "Für Besichtigungen, Mieterwechsel und Handwerkertermine in Sieglar und Kriegsdorf heißt das dauerhaft längere Wege. Bei Objekten an der Spicher Straße zählt die Anliegerregelung bis Hausnummer 73 — Zufahrten vorher prüfen, nicht auf Navi verlassen.",
+          "titel": "Troisdorf: Straßenreinigung ab 2027 ganzjährig — mit neuen Gebühren",
+          "aufmacher": "Die Stadt Troisdorf ersetzt ihren zeitlich begrenzten Laubkehrdienst zum 1. Januar 2027 durch eine ganzjährige wöchentliche Reinigung und fasst dafür die Reinigungsklassen neu.",
+          "fakten": "Bisher wurden die Straßen des Laubkehrdienstes nur von Anfang Oktober bis Mitte Dezember gekehrt, künftig ganzjährig einmal pro Woche. Auch Straßen in den Industriegebieten werden neu der Klasse S 2 zugeordnet. In S 2 reinigt die Stadt wöchentlich die Fahrbahn, Gehwege, Parkbuchten und deren Winterwartung bleiben bei den Anliegern; in W 1/W 2 übernimmt die Stadt zusätzlich die Winterwartung der Fahrbahn, in F 1 reinigt sie Gehwege und Fahrbahnen an fünf Tagen pro Woche. Die konkreten Gebührensätze nennt die Mitteilung nicht — Höhe nicht verifiziert. Eine unabhängige zweite Quelle zur Satzungsänderung liegt bislang nicht vor, nur die städtische Veröffentlichung.",
+          "einordnung": "Für die MFH in Troisdorf entscheidet die Klasseneinstufung der jeweiligen Straße darüber, wer künftig kehrt und zahlt. Vor dem 1. Januar das Straßenverzeichnis der neuen Satzung prüfen — sonst tauchen die Gebühren ungeprüft in der Betriebskostenabrechnung 2027 auf.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf – Aktuelle Verkehrsmeldungen",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/aktuelle-verkehrsmeldungen-fuer-troisdorf-1/"
+              "name": "Stadt Troisdorf – Pressemitteilung 17.11.2026",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/ganzjaehrige-reinigung-und-angepasste-gebuehren/"
             }
           ]
         },
         {
-          "titel": "Klimakonzept Troisdorf: Beteiligung beendet, Papier kommt Anfang 2027",
-          "aufmacher": "Die Akteurs-Beteiligung am fortgeschriebenen Klimakonzept ist abgeschlossen — die Stadt will das Konzept Anfang 2027 fertigstellen.",
-          "fakten": "In mehreren Dialogformaten brachten Kinder, Jugendliche, Bürger, Politik und Wirtschaft ihre Ideen ein: bessere Mülltrennung und mehr Grün auf Schulhöfen, zusätzliche Bildungsangebote zum Klimaschutz, nachhaltigere Mobilität und den Ausbau erneuerbarer Energien. Die Ergebnisse fließen in die Fortschreibung des Klimakonzepts ein, das Anfang 2027 vorliegen soll und als strategischer Rahmen der Stadtentwicklung dient.",
-          "einordnung": "Das Papier wird der Maßstab für Wärme- und PV-Vorgaben in Troisdorf — für den Ausbau in der Moselstraße (PV, Wärmepumpe) relevant, verbindliche Beschlüsse gibt es aber noch nicht.",
+          "titel": "Rhein-Sieg-Kreis: 3,545 Milliarden Schulden — Kreisumlage soll steigen",
+          "aufmacher": "Kreis und seine 19 Kommunen stehen Ende 2025 bei 3,545 Milliarden Euro integrierten Schulden — die höchste absolute Summe aller 31 NRW-Landkreise.",
+          "fakten": "Pro Einwohner sind das 5.864 Euro (Rang 5 in NRW, Rang 30 bundesweit). Rund 3,2 Milliarden entfallen auf die 19 Rathäuser, nur 0,32 Milliarden auf die Kreisebene. Der Haushaltsentwurf 2027 hat ein Volumen von rund 1.175 Millionen Euro, davon etwa 720 Millionen Transferaufwendungen (über 60 Prozent); die Gesamtaufwendungen steigen gegenüber 2026 um rund 95 Millionen Euro. Die Kreisverwaltung will für 2027 und 2028 mehr Kreisumlage von den Kommunen; der Kreistag verabschiedet den Haushalt am 14. Dezember 2026.",
+          "einordnung": "Der Kreis hat keine eigenen Steuern — er refinanziert sich über die Kreisumlage der Städte, und die holen es über Grund- und Realsteuern zurück. Für den Troisdorfer Bestand heißt das: Hebesatz- und Grundsteuerentwicklung 2027 einplanen, nicht als konstante Nebenkosten behandeln.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf – Klimakonzept-Beteiligungsphase",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/klimakonzept-beteiligungsphase-abgeschlossen/"
+              "name": "Rhein-Sieg-Kreis – Haushaltsentwurf 2027 (15.10.2026)",
+              "url": "https://www.rhein-sieg-kreis.de/presseinformationen/oktober/haushaltsetat.php"
+            },
+            {
+              "name": "Kölner Stadt-Anzeiger, 04.11.2026",
+              "url": "https://www.ksta.de/region/rhein-sieg-bonn/siegburg/3-5-milliarden-euro-rhein-sieg-kreis-fuehrt-bei-schulden-1-1407737"
             }
           ]
         }
@@ -79,18 +76,18 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Kurze Zinsbindung kostet mehr als die lange",
-          "aufmacher": "Bei Baufinanzierungen ist die fünfjährige Bindung derzeit teurer als die zehnjährige — Sicherheit gibt es also ohne Laufzeit-Aufschlag.",
-          "fakten": "Bei 90 Prozent Beleihung liegt die fünfjährige Bindung bei 4,44 Prozent, die zehnjährige bei 4,33 Prozent, die 15-jährige bei 4,58 und die 20-jährige bei 4,69 Prozent (Stand 30.10.2026). Wer nur 60 Prozent Beleihung braucht, bekommt zehn Jahre für 3,90 Prozent — dieser Unterschied von 0,43 Prozentpunkten macht rund 35 Euro im Monat je 100.000 Euro Darlehen aus. Dr. Klein nennt Topzinsen zwischen 4,03 und 4,55 Prozent je Bindung, ein Niveau von rund 4,2 Prozent Anfang November und für zehnjährige Darlehen bis Jahresende eine Spanne von 4,0 bis 4,5 Prozent.",
-          "einordnung": "Für MFH-Käufe heißt das: lange Zinsbindung statt kurzer, und Eigenkapital, das den Beleihungsauslauf drückt, wirkt stärker als jede Laufzeitoptimierung. Genau die Konstellation, in der sich mehrere Banken parallel anfragen lassen.",
+          "titel": "Bauzinsen bleiben bei 4,4 bis 4,5 Prozent — Luft nach unten ist dünn",
+          "aufmacher": "Für zehnjährige Zinsbindung zahlen Käufer Mitte November 2026 rund 4,4 bis 4,5 Prozent — nach einem deutlichen Anstieg zwischen Juli und Oktober.",
+          "fakten": "Finanztip nennt mit Stand 17. November 2026 bei zehn Jahren 4,4 Prozent (60 Prozent Beleihung) und 4,5 Prozent (80 Prozent); bei 15 Jahren 4,7 und 4,8 Prozent, bei 20 Jahren 4,9 und 5,0 Prozent. Dr. Klein beziffert die Top-Zinsen je Bindung mit 4,11 bis 4,53 Prozent effektivem Jahreszins. Finanztip erwartet kurzfristig nur Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen.",
+          "einordnung": "Bei der Hebel-Strategie — nur Kaufnebenkosten aus Eigenkapital, Rest Bankdarlehen — schlägt jeder Prozentpunkt voll durch: Auf 600.000 Euro Darlehen sind ein Prozentpunkt 6.000 Euro Zins pro Jahr — 60.000 Euro über zehn Jahre Zinsbindung, bevor Tilgung und AfA greifen. Bei dieser Zinslage ist eine lange Zinsbindung oder ein Forward-Darlehen vor dem nächsten Ankauf günstiger als die Hoffnung auf fallende Sätze.",
           "quellen": [
             {
-              "name": "Baufivergleich – aktuelle Bauzinsen (Zinsupdate 30.10.2026)",
-              "url": "https://baufivergleich.de/aktuelle-zinsen/"
+              "name": "Finanztip – Bauzinsen (Stand 17.11.2026)",
+              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
             },
             {
-              "name": "Dr. Klein – Zinsentwicklung und Prognose",
-              "url": "https://www.drklein.de/zinsentwicklung-prognose.html"
+              "name": "Dr. Klein – aktuelle Bauzinsen",
+              "url": "https://www.drklein.de/aktuelle-bauzinsen.html"
             }
           ]
         }
@@ -100,22 +97,42 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Google-Chips erobern fremde Clouds — Nvidias Vormacht bröckelt",
-          "aufmacher": "Oracle bringt Googles KI-Chips (TPUs) ab 2027 als erster fremder Cloud-Anbieter in sein Rechenzentrumsangebot.",
-          "fakten": "Oracle kündigte am 27. Oktober 2026 an, Google-TPUs in Oracle Cloud Infrastructure anzubieten — verfügbar ab 2027, über mehrere Jahre hochgefahren. Google zufolge liefert der TPU 8t knapp dreimal so viel Rechenleistung pro Pod wie die Vorgängergeneration, der TPU 8i ist auf viele spezialisierte Agenten ausgelegt. Die tagesschau meldet rund 100 Kunden für Googles Chips und Pläne von OpenAI, TPUs zu kaufen; Nvidia hatte nach dem Abgang von Jensen Huang deutliche Kursverluste.",
-          "einordnung": "Für Technologie- und Halbleiter-ETFs verschiebt sich die Geschichte: Nvidia bleibt der Platzhirsch, bekommt aber im Kerngeschäft Konkurrenz aus dem Hyperscaler-Lager. Wer breit gestreut ist, hat beides im Depot — Klumpenrisiko bleibt trotzdem ein Prüfpunkt.",
+          "titel": "ZEW-Erwartungen springen auf plus 35,6 Punkte",
+          "aufmacher": "Die Konjunkturerwartungen für Deutschland sind im November auf plus 35,6 Punkte gestiegen — 7,5 Punkte mehr als im Oktober.",
+          "fakten": "Im Oktober lag der ZEW-Index bei plus 28,1 Punkten. Für die Eurozone verbesserten sich die Erwartungen um 8,0 Punkte auf plus 26,5 Punkte. Der DAX schloss am 11. November bei 26.662,77 Punkten (+1,2 Prozent) und lag damit knapp unter seinem Rekord vom 5. November (26.692 Punkte). Die Wirtschaftsweisen erwarten laut Jahresgutachten 2026 ein BIP-Plus von 1,3 Prozent und 2027 von weiteren 1,0 Prozent.",
+          "einordnung": "Steigende Erwartungen sind Stimmung, nicht Cashflow — für Immobilien entscheidet weiter die Zinsseite, nicht das ZEW. Als Frühindikator taugt der Sprung trotzdem: Er stützt Aktien, nicht die Baufinanzierung.",
           "quellen": [
             {
-              "name": "Oracle – Google TPUs auf OCI (27.10.2026)",
-              "url": "https://www.oracle.com/news/announcement/ai-world-oracle-brings-google-tpus-to-oracle-cloud-infrastructure-2026-10-27/"
+              "name": "ZEW – Presse (November 2026)",
+              "url": "https://www.zew.de/presse"
             },
             {
-              "name": "Google Cloud Blog – TPUs bei Oracle",
-              "url": "https://cloud.google.com/blog/products/infrastructure/bringing-google-tpus-to-oracle-cloud-infrastructure"
+              "name": "MarketScreener, 17.11.2026",
+              "url": "https://de.marketscreener.com/boerse-nachrichten/zew-konjunkturerwartungen-deutschland-steigen-im-november-unerwartet-ce785edfd08ffe2d"
             },
             {
-              "name": "tagesschau – KI-Chipindustrie (17.11.2026)",
-              "url": "https://www.tagesschau.de/wirtschaft/technologie/ki-chipindustrie-nvidia-100.html"
+              "name": "tagesschau – Marktbericht 11.11.2026",
+              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nasdaq-eon-nvidia-100.html"
+            }
+          ]
+        },
+        {
+          "titel": "Inflation Oktober 2,8 Prozent — EZB lässt den Leitzins bei 2,50 Prozent",
+          "aufmacher": "Die deutsche Inflationsrate lag im Oktober 2026 bei 2,8 Prozent; die EZB beließ ihre Leitzinsen am 29. Oktober unverändert bei 2,50 Prozent.",
+          "fakten": "Destatis bestätigte die Rate in einer Korrekturmitteilung: Veränderung des Verbraucherpreisindex zum Vorjahresmonat +2,8 Prozent. Der EZB-Rat beschloss am 29. Oktober 2026, die drei Leitzinssätze nicht zu verändern; der maßgebliche Satz liegt bei 2,50 Prozent. Die EZB begründet das mit weiter gestiegenen Energiepreisen, die Aufwärtsrisiken für die Inflation und Abwärtsrisiken für das Wachstum erzeugen. Die Wirtschaftsweisen rechnen mit 2,8 Prozent Teuerung 2026 und 3,3 Prozent 2027.",
+          "einordnung": "Bei 2,8 Prozent Inflation und 2,50 Prozent Leitzins ist der Realzins negativ — Festgeld bringt real nichts. Wer liquide Mittel für den nächsten MFH-Kauf parkt, verliert Kaufkraft; das spricht dafür, die Kaufentscheidung an der Finanzierungsstruktur festzumachen statt am Sparzins.",
+          "quellen": [
+            {
+              "name": "Destatis – Pressemitteilung Oktober 2026 (Korrektur)",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_392_611.html"
+            },
+            {
+              "name": "Deutsche Bundesbank / EZB – geldpolitische Beschlüsse 29.10.2026",
+              "url": "https://www.bundesbank.de/de/presse/pressemitteilungen/ezb/geldpolitische-beschluesse-vom-29-oktober-2026-959126"
+            },
+            {
+              "name": "ZEIT online, 29.10.2026",
+              "url": "https://www.zeit.de/wirtschaft/2026-10/ezb-leitzins-zinsentscheidung-euroraum-inflation-gxe"
             }
           ]
         }
@@ -125,47 +142,28 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "paperless-ngx 3.4.2 → 3.5.0 (heute veröffentlicht)",
-          "aufmacher": "Das Update bringt manuell auslösbare Workflows und Notizen als Markdown.",
-          "fakten": "Neu in 3.5.0: Workflows lassen sich von Hand starten, Dokumentnotizen werden als Markdown gerendert, Sammelaktionen laufen asynchron und blockieren die Oberfläche nicht mehr, dazu automatisches Aufräumen alter Sitzungen. Behoben wurden unter anderem ein PostgreSQL-Problem bei Workflow-Dateifiltern und ein Thumbnail-Fehler bei Dokumenten ohne Archivversion (Release vom 17.11.2026, 03:36 Uhr).",
-          "einordnung": "Sinnvoll fürs Archiv, aber Produktivsystem — Update erst nach Backup und nur mit Freigabe.",
+          "titel": "paperless-ngx 3.5.0 → 3.5.1: reines Bugfix-Release (heute erschienen)",
+          "aufmacher": "Paperless-ngx 3.5.1 ist heute Morgen veröffentlicht worden und behebt vier Fehler — neue Funktionen bringt es nicht.",
+          "fakten": "Behoben werden: KI-Chat-Antworten, die unter ASGI nicht gestreamt wurden; ein set_actor-Fehler in Tasks bei deaktiviertem Audit-Log; die verlorene Auswahl nach dem Einreihen einer Massenbearbeitung; dazu das Timing beim Chat-Streaming. Breaking Changes sind nicht angekündigt.",
+          "einordnung": "Ein Patch ohne Schema-Änderung — Aufwand gering, Container-Backup vorher reicht. Betroffen sind nur KI-Chat und Massenbearbeitung; der Dokumenten-Workflow läuft unverändert.",
           "quellen": [
             {
-              "name": "paperless-ngx v3.5.0",
-              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.5.0"
+              "name": "GitHub – paperless-ngx v3.5.1",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.5.1"
             }
           ]
         },
         {
-          "titel": "Home Assistant Core 2026.11.1 → 2026.11.2",
-          "aufmacher": "Das Patch-Release vom 16. November räumt vor allem bei Alexa Devices und FRITZ!Box auf.",
-          "fakten": "Alexa Devices: Ein Sprachbefehl wird nach einem Reload nicht mehr erneut ausgeführt, Kontokennungen werden in den Daten maskiert. Dazu Fixes für Axis-Kameras (Basic Auth, Stream-Aufräumen), die Erkennung älterer FRITZ!OS-Versionen und ein neues Frontend (20261028.6).",
-          "einordnung": "Der Alexa-Fix ist für die Echo-Geräte im Haus der interessante Teil — genau der Fehler, bei dem ein Befehl doppelt ankommt.",
+          "titel": "Sonst ist der Bestand aktuell — zwei gestoppte Container sind unkritisch",
+          "aufmacher": "Der Update-Scan meldet neben Paperless nur zwei gestoppte Docker-Container — beide erwartbar, kein Handlungsbedarf.",
+          "fakten": "Gestoppt sind „omnivoice“ (Exited 137, seit vier Wochen) und „firecrawl-starter-monitor-db-init-1“ (Exited 0, seit sieben Wochen — ein Init-Container, der planmäßig endet). Von 26 Containern läuft der Rest. In Home Assistant sind Core, Supervisor, Betriebssystem und alle Add-ons aktuell; offen sind lediglich die 3RSPK-Firmware (A8E291156405) und das Dev-Add-on „Home Assistant MCP Server“.",
+          "einordnung": "Bei „omnivoice“ lohnt eine Entscheidung statt eines Dauerzustands: neu starten oder aus dem Stack nehmen — ein seit vier Wochen totes Sprachmodul belegt nur Verzeichnisse. Die 3RSPK-Firmware ist der Satellit im Sprachkanal, die flashe ich nicht ohne Rückfrage.",
           "quellen": [
             {
-              "name": "Home Assistant 2026.11 Changelog",
-              "url": "https://www.home-assistant.io/changelogs/core-2026.11/"
+              "name": "Update-Scan und HA-Update-Entities, 18.11.2026",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
             }
           ]
-        },
-        {
-          "titel": "Frigate-Integration v5.15.6 → v5.15.7",
-          "aufmacher": "Die Integration bekommt Proxy-Anmeldung und eine Vorschau-Ansicht, der VOD-Zugriff ist repariert.",
-          "fakten": "Neu: konfigurierbarer Auth-Modus für Proxy-Authentifizierung, eine Ansicht für Frigates Vorschau-Video (Kamera und Zeitraum) und signaturfreier Zugriff auf VOD-Segmente für angemeldete Nutzer. Behoben: VOD-Zugriff ohne HA-Signatur-Secret und fehlende Detektor-Temperatursensoren unter Frigate 0.18 (Release 16.11.2026).",
-          "einordnung": "Unkritisch — kann mitgezogen werden, wenn ohnehin neu gestartet wird.",
-          "quellen": [
-            {
-              "name": "frigate-hass-integration v5.15.7",
-              "url": "https://github.com/blakeblackshear/frigate-hass-integration/releases/tag/v5.15.7"
-            }
-          ]
-        },
-        {
-          "titel": "UniFi-Switch US-8-150W: Firmware 7.5.15 → 7.6.11",
-          "aufmacher": "Für den Switch im Serverschrank liegt eine neue Firmware bereit.",
-          "fakten": "Installiert ist 7.5.15.17146, verfügbar 7.6.11.17272. Was das Update inhaltlich ändert, ist nicht verifiziert — Ubiquiti veröffentlicht zu diesem Modell keine öffentlich abrufbaren Release Notes.",
-          "einordnung": "Netzwerkgerät mit Server und NAS dahinter: nur im Wartungsfenster und mit Freigabe.",
-          "quellen": []
         }
       ]
     },
@@ -173,20 +171,11 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Tesla fertigt Optimus in Serie — verkaufen will Musk ihn offenbar nicht",
-          "aufmacher": "Tesla baut Optimus seit Oktober 2026 auf einer Serienlinie in Fremont, nennt aber weiterhin keinen Preis und nimmt keine Bestellungen an.",
-          "fakten": "Im Quartalsbericht zum dritten Quartal 2026 führt Tesla die Optimus-Fertigung in Kalifornien mit dem Status „Early Ramp“; Musk sprach von „early production“ und erwartet Lieferungen an externe Kunden gegen Ende 2027, zuerst für industrielle Aufgaben. Auf der Baron-Investment-Konferenz am 6. November 2026 sagte Musk auf die Frage Miete oder Verkauf: „I think probably rent them“. Die genannten rund 30.000 US-Dollar zu Beginn, fallend Richtung 20.000 US-Dollar, sind Stückkosten — kein Verkaufspreis. Verkaufspreis in Euro, Bestellstart und ein Mietpreis sind nicht veröffentlicht (nicht verifiziert). Nächster Termin: Hauptversammlung am 3. Dezember 2026.",
-          "einordnung": "Damit verschiebt sich der Privatmarkt weiter nach hinten: erst Industrie, dann Miete statt Kauf, und für den Haushalt bleibt vorerst 1X NEO das einzige bestellbare Modell.",
-          "quellen": [
-            {
-              "name": "drohnen.de – Tesla Optimus Status (11.11.2026)",
-              "url": "https://www.drohnen.de/95962/tesla-optimus-produktion-kaufen-preis-start/"
-            },
-            {
-              "name": "Tech Insider – Musks Miet-Aussage (07.11.2026)",
-              "url": "https://tech-insider.org/tesla-optimus-rent-not-sell-musk-30000-build-cost-2026/"
-            }
-          ]
+          "titel": "Haushaltsroboter: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     },
@@ -194,20 +183,11 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Mistral gibt sein Flaggschiff frei: „Le Chonk“ mit offenen Gewichten",
-          "aufmacher": "Mistral hat die Gewichte von Mistral Large 4 veröffentlicht — ein Billion-Parameter-Modell, trainiert auf europäischer Infrastruktur.",
-          "fakten": "Mistral Large 4 hat 1 Billion Parameter, davon 52 Milliarden pro Token aktiv, und verarbeitet Text und Bilder. Trainiert wurde es laut Mistral auf 3.800 Nvidia-Grace-Blackwell-GPUs in eigenen Rechenzentren in Europa. Die Gewichte sind seit 29. Oktober 2026 frei verfügbar; Mistral nennt ML4 das beste offene Modell für Coding und defensive Cybersicherheit. Die API kostet 0,70 US-Dollar je Million Input-Token (gecacht 0,07) und 2,10 US-Dollar je Million Output-Token. Seit 5. November ergänzt Mistral Studio managed Agents und Workflows, wahlweise in der Cloud, im eigenen VPC oder on-premises; als produktive Kunden nennt Mistral unter anderem BNP Paribas, ABANCA, Capgemini und Tata Consultancy Services.",
-          "einordnung": "Offene Gewichte plus europäische Herkunft sind für Selbsthosting der interessante Teil: eigene Inferenz auf eigener Hardware, ohne Datenabfluss — bei 0,70 US-Dollar je Million Input-Token bleibt die API zugleich eine günstige Referenz.",
-          "quellen": [
-            {
-              "name": "Mistral – Mistral Large 4 open weights (29.10.2026)",
-              "url": "https://mistral.ai/news/mistral-large-4-oss/"
-            },
-            {
-              "name": "Mistral – Studio (05.11.2026)",
-              "url": "https://mistral.ai/news/build-with-studio/"
-            }
-          ]
+          "titel": "Deutsche/europäische KI: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     }
