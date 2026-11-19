@@ -1,14 +1,14 @@
 {
-  "datum": "Mittwoch, 18.11.2026",
+  "datum": "Donnerstag, 19.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "9,9 °C · Regen 100 % · UV 0,25",
-          "aufmacher": "🌦️ Niesel den ganzen Tag, Tagesspanne 9,1 bis 12,4 °C.",
-          "fakten": "Regenwahrscheinlichkeit 100 %, UV-Index 0,25 — unkritisch. Dauerfeuchte heißt: Außenarbeiten an Dach, Fassade und Elektro im Freien verschieben.",
-          "einordnung": "",
+          "titel": "9,9 °C · Regen 100 % · UV 1,25",
+          "aufmacher": "☁️ bedeckt, Tageshöchstwert 11,9 °C bei einem Tief von 8,5 °C.",
+          "fakten": "Durchgehende Regenwahrscheinlichkeit, kaum Sonne — der UV-Index bleibt mit 1,25 unkritisch.",
+          "einordnung": "Regenkleidung für Kontrollgänge an den Objekten; die PV-Anlage bleibt heute ertragsarm.",
           "quellen": []
         }
       ]
@@ -17,23 +17,23 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "18.11.2026 09:00 Uhr: Quixx-Meeting",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "18.11.2026 15:00 Uhr: KGG – Krankengymnastik am Gerät (Melvin)",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
           "titel": "19.11.2026: Julian Wiegand hat Geburtstag (neuer Fahrer)",
-          "aufmacher": "",
-          "fakten": "",
+          "aufmacher": "Ganztägiger Termin.",
+          "fakten": "Geburtstag Julian Wiegand — neuer Fahrer.",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "22.11.2026: Martin Wilberg hat Geburtstag",
+          "aufmacher": "Sonntag, ganztägig.",
+          "fakten": "Geburtstag Martin Wilberg.",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "22.11.2026: Martin Wilberg hat einen Jahrestag",
+          "aufmacher": "Sonntag, ganztägig.",
+          "fakten": "Jahrestag Martin Wilberg.",
           "einordnung": "",
           "quellen": []
         }
@@ -43,30 +43,34 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Straßenreinigung ab 2027 ganzjährig — mit neuen Gebühren",
-          "aufmacher": "Die Stadt Troisdorf ersetzt ihren zeitlich begrenzten Laubkehrdienst zum 1. Januar 2027 durch eine ganzjährige wöchentliche Reinigung und fasst dafür die Reinigungsklassen neu.",
-          "fakten": "Bisher wurden die Straßen des Laubkehrdienstes nur von Anfang Oktober bis Mitte Dezember gekehrt, künftig ganzjährig einmal pro Woche. Auch Straßen in den Industriegebieten werden neu der Klasse S 2 zugeordnet. In S 2 reinigt die Stadt wöchentlich die Fahrbahn, Gehwege, Parkbuchten und deren Winterwartung bleiben bei den Anliegern; in W 1/W 2 übernimmt die Stadt zusätzlich die Winterwartung der Fahrbahn, in F 1 reinigt sie Gehwege und Fahrbahnen an fünf Tagen pro Woche. Die konkreten Gebührensätze nennt die Mitteilung nicht — Höhe nicht verifiziert. Eine unabhängige zweite Quelle zur Satzungsänderung liegt bislang nicht vor, nur die städtische Veröffentlichung.",
-          "einordnung": "Für die MFH in Troisdorf entscheidet die Klasseneinstufung der jeweiligen Straße darüber, wer künftig kehrt und zahlt. Vor dem 1. Januar das Straßenverzeichnis der neuen Satzung prüfen — sonst tauchen die Gebühren ungeprüft in der Betriebskostenabrechnung 2027 auf.",
+          "titel": "Troisdorf verhängt Haushaltssperre — Grundsteuer B soll auf 790 Prozent steigen",
+          "aufmacher": "Die Stadt Troisdorf hat mit sofortiger Wirkung eine Haushaltssperre für 2026 und 2027 erlassen und will die Grundsteuer B deutlich anheben.",
+          "fakten": "Grund sind zusätzliche Einnahmeausfälle von rund 15 Millionen Euro in diesem Jahr, überwiegend bei der Gewerbesteuer; für 2026 erwartet die Stadt einen Fehlbetrag von rund 40 Millionen Euro, für 2027 bislang keine Besserung. Kämmerin Sabine Wendt schlägt vor, den Hebesatz der Grundsteuer B ab 2027 von 640 auf 790 Prozentpunkte zu heben — ein Plus von 23,4 Prozent. Der Haupt- und Finanzausschuss berät am 24. November, der Stadtrat am 8. Dezember. Bis dahin gilt: frei werdende Stellen frühestens nach neun Monaten und nur für Pflichtaufgaben, freiwillige Leistungen nur bei vertraglichen Verpflichtungen, Investitionen nur für gesetzlich vorgeschriebene Aufgaben. Bürgermeister Alexander Biber will den Haushalt 2028 erstmals vom finanziellen Rahmen her aufstellen statt aus den Wünschen der Fachbereiche.",
+          "einordnung": "Für den Bestand in Troisdorf der wichtigste Posten des Tages: Die Grundsteuer B ist auf Mieten umlegbar, trifft im Leerstand aber direkt den Cashflow. Bei Ankaufskalkulationen im Stadtgebiet sollte ab 2027 mit dem 790er-Hebesatz gerechnet werden, nicht mit 640.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf – Pressemitteilung 17.11.2026",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/ganzjaehrige-reinigung-und-angepasste-gebuehren/"
+              "name": "Stadt Troisdorf, Pressemitteilung 13.11.2026 (via Rheinische Anzeigenblätter)",
+              "url": "https://www.rheinische-anzeigenblaetter.de/troisdorf/c-nachrichten/kaemmerin-erlaesst-haushaltssperre_a382967"
+            },
+            {
+              "name": "General-Anzeiger: Das steckt hinter der städtischen Finanzkrise",
+              "url": "https://ga.de/region/sieg-und-rhein/troisdorf/troisdorf-das-steckt-hinter-der-staedtischen-finanzkrise_aid-158338449"
             }
           ]
         },
         {
-          "titel": "Rhein-Sieg-Kreis: 3,545 Milliarden Schulden — Kreisumlage soll steigen",
-          "aufmacher": "Kreis und seine 19 Kommunen stehen Ende 2025 bei 3,545 Milliarden Euro integrierten Schulden — die höchste absolute Summe aller 31 NRW-Landkreise.",
-          "fakten": "Pro Einwohner sind das 5.864 Euro (Rang 5 in NRW, Rang 30 bundesweit). Rund 3,2 Milliarden entfallen auf die 19 Rathäuser, nur 0,32 Milliarden auf die Kreisebene. Der Haushaltsentwurf 2027 hat ein Volumen von rund 1.175 Millionen Euro, davon etwa 720 Millionen Transferaufwendungen (über 60 Prozent); die Gesamtaufwendungen steigen gegenüber 2026 um rund 95 Millionen Euro. Die Kreisverwaltung will für 2027 und 2028 mehr Kreisumlage von den Kommunen; der Kreistag verabschiedet den Haushalt am 14. Dezember 2026.",
-          "einordnung": "Der Kreis hat keine eigenen Steuern — er refinanziert sich über die Kreisumlage der Städte, und die holen es über Grund- und Realsteuern zurück. Für den Troisdorfer Bestand heißt das: Hebesatz- und Grundsteuerentwicklung 2027 einplanen, nicht als konstante Nebenkosten behandeln.",
+          "titel": "Stromsteuer fällt 2027 auf 0,1 Cent — aber nur für ein Jahr",
+          "aufmacher": "Union und SPD haben sich im Koalitionsausschuss darauf verständigt, die Stromsteuer ab 1. Januar 2027 von 2,05 auf 0,1 Cent je Kilowattstunde zu senken — befristet auf zwölf Monate.",
+          "fakten": "Verivox rechnet für eine Familie mit 4.000 Kilowattstunden Jahresverbrauch mit rund 7,75 Euro Entlastung im Monat, für einen Single mit 1.500 Kilowattstunden mit etwa drei Euro. Finanziert werden soll die Senkung über Spielräume im EEG-Konto, Kosten rund 5,4 Milliarden Euro; eine Fortsetzung ab 2028 ist offen, im Etat klafft bereits eine Lücke von rund 25 Milliarden Euro. Parallel löst ein Spritpreisdeckel ab 1. Januar 2027 den Ende Dezember auslaufenden Tankrabatt ab, zunächst für drei Monate — die konkrete Ersparnis ist noch nicht beziffert. Ob die Entlastung vollständig ankommt, hängt an der Weitergabe der Versorger.",
+          "einordnung": "Bei 10.000 Kilowattstunden Bezug — realistisch mit Wärmepumpe plus Wallbox im Ausbau-Zielzustand — sind es rund 195 Euro im Jahr. Die Wirtschaftlichkeitsrechnung für Wärmepumpe, Speicher und Wallbox darf darauf nicht aufbauen, weil 2028 die alte Steuerlast zurückkommen kann.",
           "quellen": [
             {
-              "name": "Rhein-Sieg-Kreis – Haushaltsentwurf 2027 (15.10.2026)",
-              "url": "https://www.rhein-sieg-kreis.de/presseinformationen/oktober/haushaltsetat.php"
+              "name": "tagesschau.de: Einigung im Koalitionsausschuss",
+              "url": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-einigung-stromsteuer-spritpreisdeckel-100.html"
             },
             {
-              "name": "Kölner Stadt-Anzeiger, 04.11.2026",
-              "url": "https://www.ksta.de/region/rhein-sieg-bonn/siegburg/3-5-milliarden-euro-rhein-sieg-kreis-fuehrt-bei-schulden-1-1407737"
+              "name": "ad-hoc-news/dpa: Stromsteuer sinkt 2027, Spritpreisdeckel bleibt offen",
+              "url": "https://www.ad-hoc-news.de/politik/stromsteuer-sinkt-2027-spritpreisdeckel-bleibt-offen/70530896"
             }
           ]
         }
@@ -76,18 +80,22 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben bei 4,4 bis 4,5 Prozent — Luft nach unten ist dünn",
-          "aufmacher": "Für zehnjährige Zinsbindung zahlen Käufer Mitte November 2026 rund 4,4 bis 4,5 Prozent — nach einem deutlichen Anstieg zwischen Juli und Oktober.",
-          "fakten": "Finanztip nennt mit Stand 17. November 2026 bei zehn Jahren 4,4 Prozent (60 Prozent Beleihung) und 4,5 Prozent (80 Prozent); bei 15 Jahren 4,7 und 4,8 Prozent, bei 20 Jahren 4,9 und 5,0 Prozent. Dr. Klein beziffert die Top-Zinsen je Bindung mit 4,11 bis 4,53 Prozent effektivem Jahreszins. Finanztip erwartet kurzfristig nur Schwankungen von 0,1 bis 0,2 Prozentpunkten in beide Richtungen.",
-          "einordnung": "Bei der Hebel-Strategie — nur Kaufnebenkosten aus Eigenkapital, Rest Bankdarlehen — schlägt jeder Prozentpunkt voll durch: Auf 600.000 Euro Darlehen sind ein Prozentpunkt 6.000 Euro Zins pro Jahr — 60.000 Euro über zehn Jahre Zinsbindung, bevor Tilgung und AfA greifen. Bei dieser Zinslage ist eine lange Zinsbindung oder ein Forward-Darlehen vor dem nächsten Ankauf günstiger als die Hoffnung auf fallende Sätze.",
+          "titel": "Bauzinsen: 4,30 Prozent im Tagesmittel, das beste Angebot bei 4,14",
+          "aufmacher": "Für zehn Jahre Zinsbindung kostet eine Baufinanzierung heute im Mittel der fünf günstigsten Banken 4,30 Prozent Sollzins (effektiv 4,41 Prozent) bei 80 Prozent Beleihung.",
+          "fakten": "Das günstigste Angebot im Tagesvergleich liegt bei 4,14 Prozent; gegenüber der Vorwoche ist der Zins um 0,09 Prozentpunkte gestiegen, gegenüber dem Vormonat um 0,05 Punkte gefallen. Über 15 Jahre werden 4,49 Prozent, über 20 Jahre 4,58 Prozent aufgerufen. Bei 400.000 Euro Darlehen und zwei Prozent Tilgung ergibt das rund 2.100 Euro Rate im Monat — jeder Zehntelprozentpunkt macht dort etwa 33 Euro aus. Hypofriend beziffert den Anstieg der Zehnjahreszinsen in sechs Monaten von 3,94 auf 4,22 Prozent. Die Portale nennen unterschiedliche Werte, weil Beleihung und Auswahlbasis abweichen: Finanztip kommt bei 80 Prozent Beleihung auf 4,5 Prozent, Heimziel auf 4,30 Prozent für die fünf besten Häuser.",
+          "einordnung": "Bei maximalem Hebel — nur Kaufnebenkosten aus Eigenkapital — schlägt jeder Zehntelpunkt direkt durch: auf 600.000 Euro Darlehen rund 50 Euro Zins im Monat, 6.000 Euro über zehn Jahre. Für die Kalkulation mit 4,30 bis 4,40 Prozent rechnen; die 4,14 Prozent sind ein Spitzenangebot, kein Marktpreis.",
           "quellen": [
             {
-              "name": "Finanztip – Bauzinsen (Stand 17.11.2026)",
-              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
+              "name": "Heimziel Zinsbarometer, Stand 19.11.2026",
+              "url": "https://heimziel.de/ratgeber/bauzinsen-aktuell"
             },
             {
-              "name": "Dr. Klein – aktuelle Bauzinsen",
-              "url": "https://www.drklein.de/aktuelle-bauzinsen.html"
+              "name": "Hypofriend Bauzinsen, Stand 16.11.2026",
+              "url": "https://hypofriend.de/de/bauzinsen"
+            },
+            {
+              "name": "Interhyp Bauzinsen aktuell",
+              "url": "https://www.interhyp.de/zinsen/"
             }
           ]
         }
@@ -97,42 +105,22 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "ZEW-Erwartungen springen auf plus 35,6 Punkte",
-          "aufmacher": "Die Konjunkturerwartungen für Deutschland sind im November auf plus 35,6 Punkte gestiegen — 7,5 Punkte mehr als im Oktober.",
-          "fakten": "Im Oktober lag der ZEW-Index bei plus 28,1 Punkten. Für die Eurozone verbesserten sich die Erwartungen um 8,0 Punkte auf plus 26,5 Punkte. Der DAX schloss am 11. November bei 26.662,77 Punkten (+1,2 Prozent) und lag damit knapp unter seinem Rekord vom 5. November (26.692 Punkte). Die Wirtschaftsweisen erwarten laut Jahresgutachten 2026 ein BIP-Plus von 1,3 Prozent und 2027 von weiteren 1,0 Prozent.",
-          "einordnung": "Steigende Erwartungen sind Stimmung, nicht Cashflow — für Immobilien entscheidet weiter die Zinsseite, nicht das ZEW. Als Frühindikator taugt der Sprung trotzdem: Er stützt Aktien, nicht die Baufinanzierung.",
+          "titel": "Nvidia verdoppelt den Umsatz auf 115,8 Milliarden Dollar — die Marge sinkt trotzdem",
+          "aufmacher": "Nvidia hat am 17. November die Zahlen für das dritte Quartal des Geschäftsjahres 2027 vorgelegt: 115,8 Milliarden Dollar Umsatz, 103 Prozent mehr als im Vorjahr.",
+          "fakten": "Der Nettogewinn nach US-Rechnungslegung stieg um rund 105 Prozent auf etwa 65,3 Milliarden Dollar. Das Rechenzentrumsgeschäft trug 107,6 Milliarden Dollar bei, ein Plus von rund 110 Prozent. Analysten hatten im Schnitt 109,3 Milliarden Dollar erwartet. Die Bruttomarge lag mit 74,8 Prozent 0,2 Punkte unter dem Vorquartal; für das laufende Quartal stellt Nvidia nur 71 bis 72 Prozent in Aussicht und nennt rund 130 Milliarden Dollar Umsatz — China-Umsätze sind darin nicht enthalten. Die Aktie legte zunächst zu, der Dow Jones schloss am Mittwoch 1,11 Prozent tiefer, der DAX verlor 1,28 Prozent auf 25.739,18 Punkte.",
+          "einordnung": "Die sinkende Marge bei explodierendem Umsatz ist das eigentliche Signal: Der Hochlauf der neuen Plattform Vera Rubin NVL72 kostet Rendite. In Weltindex-Depots bleibt Nvidia der größte Einzelwert — das Klumpenrisiko ist nicht kleiner geworden.",
           "quellen": [
             {
-              "name": "ZEW – Presse (November 2026)",
-              "url": "https://www.zew.de/presse"
+              "name": "wallstreetONLINE: Nvidia legt Quartalszahlen vor",
+              "url": "https://www.wallstreet-online.de/nachricht/21711006-nvidia-legt-quartalszahlen"
             },
             {
-              "name": "MarketScreener, 17.11.2026",
-              "url": "https://de.marketscreener.com/boerse-nachrichten/zew-konjunkturerwartungen-deutschland-steigen-im-november-unerwartet-ce785edfd08ffe2d"
+              "name": "finanzen.net: Nvidia-Aktie im Fokus",
+              "url": "https://www.finanzen.net/nachricht/aktien/nvidia-ohne-huang-nvidia-aktie-im-fokus-verwaltungsrat-wird-jensen-huang-nicht-wieder-einsetzen-16071851"
             },
             {
-              "name": "tagesschau – Marktbericht 11.11.2026",
-              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nasdaq-eon-nvidia-100.html"
-            }
-          ]
-        },
-        {
-          "titel": "Inflation Oktober 2,8 Prozent — EZB lässt den Leitzins bei 2,50 Prozent",
-          "aufmacher": "Die deutsche Inflationsrate lag im Oktober 2026 bei 2,8 Prozent; die EZB beließ ihre Leitzinsen am 29. Oktober unverändert bei 2,50 Prozent.",
-          "fakten": "Destatis bestätigte die Rate in einer Korrekturmitteilung: Veränderung des Verbraucherpreisindex zum Vorjahresmonat +2,8 Prozent. Der EZB-Rat beschloss am 29. Oktober 2026, die drei Leitzinssätze nicht zu verändern; der maßgebliche Satz liegt bei 2,50 Prozent. Die EZB begründet das mit weiter gestiegenen Energiepreisen, die Aufwärtsrisiken für die Inflation und Abwärtsrisiken für das Wachstum erzeugen. Die Wirtschaftsweisen rechnen mit 2,8 Prozent Teuerung 2026 und 3,3 Prozent 2027.",
-          "einordnung": "Bei 2,8 Prozent Inflation und 2,50 Prozent Leitzins ist der Realzins negativ — Festgeld bringt real nichts. Wer liquide Mittel für den nächsten MFH-Kauf parkt, verliert Kaufkraft; das spricht dafür, die Kaufentscheidung an der Finanzierungsstruktur festzumachen statt am Sparzins.",
-          "quellen": [
-            {
-              "name": "Destatis – Pressemitteilung Oktober 2026 (Korrektur)",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_392_611.html"
-            },
-            {
-              "name": "Deutsche Bundesbank / EZB – geldpolitische Beschlüsse 29.10.2026",
-              "url": "https://www.bundesbank.de/de/presse/pressemitteilungen/ezb/geldpolitische-beschluesse-vom-29-oktober-2026-959126"
-            },
-            {
-              "name": "ZEIT online, 29.10.2026",
-              "url": "https://www.zeit.de/wirtschaft/2026-10/ezb-leitzins-zinsentscheidung-euroraum-inflation-gxe"
+              "name": "n-tv: Der Börsen-Tag vom 18. November 2026",
+              "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Mittwoch-18-November-2026-id31546208.html"
             }
           ]
         }
@@ -142,26 +130,18 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "paperless-ngx 3.5.0 → 3.5.1: reines Bugfix-Release (heute erschienen)",
-          "aufmacher": "Paperless-ngx 3.5.1 ist heute Morgen veröffentlicht worden und behebt vier Fehler — neue Funktionen bringt es nicht.",
-          "fakten": "Behoben werden: KI-Chat-Antworten, die unter ASGI nicht gestreamt wurden; ein set_actor-Fehler in Tasks bei deaktiviertem Audit-Log; die verlorene Auswahl nach dem Einreihen einer Massenbearbeitung; dazu das Timing beim Chat-Streaming. Breaking Changes sind nicht angekündigt.",
-          "einordnung": "Ein Patch ohne Schema-Änderung — Aufwand gering, Container-Backup vorher reicht. Betroffen sind nur KI-Chat und Massenbearbeitung; der Dokumenten-Workflow läuft unverändert.",
+          "titel": "U7-Pro-Wall: Firmware 8.8.14 wartet — Mesh jetzt über 5 und 6 GHz",
+          "aufmacher": "Für den U7-Pro-Wall liegt Firmware 8.8.14 bereit; installiert ist noch 8.7.11, das Update ist nicht automatisch aktiv.",
+          "fakten": "Der Sprung geht von 8.7.11.19419 auf 8.8.14.20179. Laut Release-Notes vom 3. November unterstützen U7-Zugangspunkte damit Mesh-Verbindungen über Multi-Link-Operation (MLO) im 5- und 6-GHz-Band, außerdem kommt Multicast Suppression für WLAN-Netze hinzu — beides senkt Funklast und Abbrüche in dichten Netzen. Der übrige Bestand ist aktuell: Home Assistant Core, Supervisor, Betriebssystem und alle Add-ons melden keinen offenen Stand; der HA MCP Server (Dev) zieht seine Builds automatisch (9.3.0.dev3626 → dev3631). Offen bleibt paperless-ngx 3.5.0 → 3.5.1 (Bugfix, gestern gemeldet), unverändert zwei gestoppte Container.",
+          "einordnung": "Vor dem Update Snapshot der Netzwerkkonfiguration und ein ruhiges Zeitfenster: Der Vorgänger 8.7.11 hatte in der Community bei genau diesem Modell Auffälligkeiten. MLO-Mesh lohnt nur, wenn der AP als Mesh-Knoten läuft; die meisten APs im Haus hängen am Kabel. Paperless 3.5.1 kann am Wochenende mit, zusammen mit dem Backup-Lauf.",
           "quellen": [
             {
-              "name": "GitHub – paperless-ngx v3.5.1",
-              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.5.1"
-            }
-          ]
-        },
-        {
-          "titel": "Sonst ist der Bestand aktuell — zwei gestoppte Container sind unkritisch",
-          "aufmacher": "Der Update-Scan meldet neben Paperless nur zwei gestoppte Docker-Container — beide erwartbar, kein Handlungsbedarf.",
-          "fakten": "Gestoppt sind „omnivoice“ (Exited 137, seit vier Wochen) und „firecrawl-starter-monitor-db-init-1“ (Exited 0, seit sieben Wochen — ein Init-Container, der planmäßig endet). Von 26 Containern läuft der Rest. In Home Assistant sind Core, Supervisor, Betriebssystem und alle Add-ons aktuell; offen sind lediglich die 3RSPK-Firmware (A8E291156405) und das Dev-Add-on „Home Assistant MCP Server“.",
-          "einordnung": "Bei „omnivoice“ lohnt eine Entscheidung statt eines Dauerzustands: neu starten oder aus dem Stack nehmen — ein seit vier Wochen totes Sprachmodul belegt nur Verzeichnisse. Die 3RSPK-Firmware ist der Satellit im Sprachkanal, die flashe ich nicht ohne Rückfrage.",
-          "quellen": [
+              "name": "Ubiquiti Community: UniFi Access Point & Wireless Bridge 8.8.14",
+              "url": "https://community.ui.com/releases/UniFi-Access-Point-and-Wireless-Bridge-8-8-14/10247e29-044d-48b2-9e83-e7c5fb17305a"
+            },
             {
-              "name": "Update-Scan und HA-Update-Entities, 18.11.2026",
-              "url": "https://github.com/paperless-ngx/paperless-ngx/releases"
+              "name": "Ubiquiti Downloads: UniFi Firmware",
+              "url": "https://www.ui.com/download/unifi/"
             }
           ]
         }
@@ -171,11 +151,20 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Haushaltsroboter: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "StarBot Spark: 7.999 Dollar für einen 90-Zentimeter-Humanoiden — ohne Liefertermin",
+          "aufmacher": "Der US-Hersteller StarBot Robotics hat am 4. November den Humanoiden Spark vorgestellt: 90 Zentimeter groß, 22 Freiheitsgrade, ab 7.999 US-Dollar — umgerechnet rund 7.290 Euro.",
+          "fakten": "Für 200 Dollar Anzahlung nimmt das Unternehmen Reservierungen an; ein Lieferfenster wurde nicht veröffentlicht, ebenso wenig ein technisches Datenblatt. Zielgruppen sind Schulen und Entwickler, nicht Haushalte: beworben werden Programmierenlernen und eine offene Entwicklungsplattform, keine Tätigkeiten im Haushalt. Gefertigt wird in den USA; mit 8.000 Dollar liegt Spark auf dem Preisniveau eines Unitree R1 und weit unter dem 1X NEO, kann aber nichts von dem, was den NEO zum Haushaltsmodell macht. Umrechnung auf Basis 1 Euro = 1,0968 US-Dollar (EZB-Referenzkurs 18.11.2026).",
+          "einordnung": "Die Nachricht ist der Preis, nicht das Können: Unter 8.000 Dollar gibt es inzwischen echte Hardware mit 22 Gelenken — die Aufgaben (Wäsche, Geschirr, Aufräumen) kommen nicht mitgeliefert. Für den Haushalt bleibt der NEO das einzige bestellbare Modell; Spark ist Entwicklerplattform ohne Alltagsnutzen.",
+          "quellen": [
+            {
+              "name": "GlobeNewswire: StarBot startet Spark (04.11.2026)",
+              "url": "https://www.globenewswire.com/news-release/2026/11/04/3395568/0/en/made-in-america-and-priced-at-7-999-starbot-launches-spark-humanoid-robot.html"
+            },
+            {
+              "name": "RoboticsIntl: StarBot Spark Opens $200 Reservations",
+              "url": "https://www.roboticsintl.com/article/starbot-spark-humanoid-opens-200-reservations-starts-at-7999"
+            }
+          ]
         }
       ]
     },
@@ -183,11 +172,20 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Deutsche/europäische KI: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "Mistral bringt Vibe als Desktop-App — Pro für Europas Entwickler drei Monate gratis",
+          "aufmacher": "Mistral AI hat am 18. November seine Agenten-Plattform Vibe als Desktop-Anwendung für macOS und Windows veröffentlicht; Linux folgt laut Produktseite später.",
+          "fakten": "Vibe (früher Le Chat) führt Agenten wahlweise lokal oder remote aus und verbindet sich aus der App heraus mit Repositories. Zum Start ist der Pro-Tarif für Entwickler in Europa drei Monate kostenlos, Einlösung über den Aktionscode LECHONK; das Kontingent war zwischenzeitlich erschöpft und wurde aufgestockt. Als Modell steht Mistral Large 4 bereit, für Unternehmen gibt es Betrieb auf eigener Infrastruktur mit Datenresidenz. Aleph Alpha und Black Forest Labs: nichts Neues.",
+          "einordnung": "Damit hat Europa erstmals ein eigenes Desktop-Gegenstück zu Claude Code und Codex — interessant, weil Agenten lokal oder in der EU-Cloud laufen können statt bei einem US-Anbieter. Die Drei-Monats-Aktion ist ein Einstiegspreis, keine Kalkulationsgrundlage für Dauerbetrieb.",
+          "quellen": [
+            {
+              "name": "Mistral AI: Vibe Produktseite",
+              "url": "https://mistral.ai/products/vibe/"
+            },
+            {
+              "name": "Mistral AI (offizieller Kanal): Ankündigung Vibe Desktop, 18.11.2026",
+              "url": "https://x.com/MistralAI/status/2123073168659141119"
+            }
+          ]
         }
       ]
     }
