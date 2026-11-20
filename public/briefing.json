@@ -1,13 +1,13 @@
 {
-  "datum": "Donnerstag, 19.11.2026",
+  "datum": "Freitag, 20.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "9,9 °C · Regen 100 % · UV 1,25",
-          "aufmacher": "☁️ bedeckt, Tageshöchstwert 11,9 °C bei einem Tief von 8,5 °C.",
-          "fakten": "Durchgehende Regenwahrscheinlichkeit, kaum Sonne — der UV-Index bleibt mit 1,25 unkritisch.",
+          "titel": "9 °C · Regen 100 % · UV 1,15",
+          "aufmacher": "🌧️ Niesel den ganzen Tag, Höchstwert 10 °C bei einem Tief von 2,7 °C.",
+          "fakten": "Durchgehende Regenwahrscheinlichkeit, kaum Sonne — der UV-Index bleibt mit 1,15 unkritisch.",
           "einordnung": "Regenkleidung für Kontrollgänge an den Objekten; die PV-Anlage bleibt heute ertragsarm.",
           "quellen": []
         }
@@ -17,23 +17,23 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "19.11.2026: Julian Wiegand hat Geburtstag (neuer Fahrer)",
-          "aufmacher": "Ganztägiger Termin.",
-          "fakten": "Geburtstag Julian Wiegand — neuer Fahrer.",
+          "titel": "22.11.2026 00:00: Martin Wilberg hat Geburtstag",
+          "aufmacher": "Sonntag, 22. November — Geburtstag Martin Wilberg.",
+          "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "22.11.2026: Martin Wilberg hat Geburtstag",
-          "aufmacher": "Sonntag, ganztägig.",
-          "fakten": "Geburtstag Martin Wilberg.",
+          "titel": "22.11.2026 00:00: Jahrestag Martin Wilberg",
+          "aufmacher": "Sonntag, 22. November — Jahrestag, gleicher Kalendereintrag.",
+          "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
-          "titel": "22.11.2026: Martin Wilberg hat einen Jahrestag",
-          "aufmacher": "Sonntag, ganztägig.",
-          "fakten": "Jahrestag Martin Wilberg.",
+          "titel": "23.11.2026 15:00: KGG – Krankengymnastik am Gerät (Luisa Köhn)",
+          "aufmacher": "Montag, 23. November, 15 Uhr — Krankengymnastik am Gerät.",
+          "fakten": "",
           "einordnung": "",
           "quellen": []
         }
@@ -43,34 +43,26 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf verhängt Haushaltssperre — Grundsteuer B soll auf 790 Prozent steigen",
-          "aufmacher": "Die Stadt Troisdorf hat mit sofortiger Wirkung eine Haushaltssperre für 2026 und 2027 erlassen und will die Grundsteuer B deutlich anheben.",
-          "fakten": "Grund sind zusätzliche Einnahmeausfälle von rund 15 Millionen Euro in diesem Jahr, überwiegend bei der Gewerbesteuer; für 2026 erwartet die Stadt einen Fehlbetrag von rund 40 Millionen Euro, für 2027 bislang keine Besserung. Kämmerin Sabine Wendt schlägt vor, den Hebesatz der Grundsteuer B ab 2027 von 640 auf 790 Prozentpunkte zu heben — ein Plus von 23,4 Prozent. Der Haupt- und Finanzausschuss berät am 24. November, der Stadtrat am 8. Dezember. Bis dahin gilt: frei werdende Stellen frühestens nach neun Monaten und nur für Pflichtaufgaben, freiwillige Leistungen nur bei vertraglichen Verpflichtungen, Investitionen nur für gesetzlich vorgeschriebene Aufgaben. Bürgermeister Alexander Biber will den Haushalt 2028 erstmals vom finanziellen Rahmen her aufstellen statt aus den Wünschen der Fachbereiche.",
-          "einordnung": "Für den Bestand in Troisdorf der wichtigste Posten des Tages: Die Grundsteuer B ist auf Mieten umlegbar, trifft im Leerstand aber direkt den Cashflow. Bei Ankaufskalkulationen im Stadtgebiet sollte ab 2027 mit dem 790er-Hebesatz gerechnet werden, nicht mit 640.",
+          "titel": "Troisdorf: Lichterzug gegen Gewalt an Frauen am 25. November",
+          "aufmacher": "Am 25. November zieht ab 17 Uhr ein Lichterzug von der Stadtbibliothek durch die Troisdorfer Fußgängerzone, um auf häusliche Gewalt aufmerksam zu machen.",
+          "fakten": "Start ist um 17 Uhr vor der Stadtbibliothek, Kölner Straße 69. Die Route führt über Wilhelm-Hamacher-Straße, Am Bürgerhaus, Fischerplatz und Hippolytusstraße zum Kölner Platz, Abschluss ist ein Austausch im Frauenzentrum, Hospitalstraße 2. Zusätzlich werden zwei „Orange Bänke gegen Gewalt“ eingeweiht: am 20. November an der Kapellenstraße/Ecke Menzelstraße in Eschmar und am 23. November um 11 Uhr am Zeppelinplatz.",
+          "einordnung": "Termin für den Kalender — wer am 25. ab 17 Uhr in der Innenstadt zu tun hat, sollte Fußgängerverkehr und kurze Sperrungen einplanen.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf, Pressemitteilung 13.11.2026 (via Rheinische Anzeigenblätter)",
-              "url": "https://www.rheinische-anzeigenblaetter.de/troisdorf/c-nachrichten/kaemmerin-erlaesst-haushaltssperre_a382967"
-            },
-            {
-              "name": "General-Anzeiger: Das steckt hinter der städtischen Finanzkrise",
-              "url": "https://ga.de/region/sieg-und-rhein/troisdorf/troisdorf-das-steckt-hinter-der-staedtischen-finanzkrise_aid-158338449"
+              "name": "Stadt Troisdorf, Pressemeldung 18.11.2026",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/lichterzug-durch-troisdorf-setzt-ein-zeichen-der-solidaritaet/"
             }
           ]
         },
         {
-          "titel": "Stromsteuer fällt 2027 auf 0,1 Cent — aber nur für ein Jahr",
-          "aufmacher": "Union und SPD haben sich im Koalitionsausschuss darauf verständigt, die Stromsteuer ab 1. Januar 2027 von 2,05 auf 0,1 Cent je Kilowattstunde zu senken — befristet auf zwölf Monate.",
-          "fakten": "Verivox rechnet für eine Familie mit 4.000 Kilowattstunden Jahresverbrauch mit rund 7,75 Euro Entlastung im Monat, für einen Single mit 1.500 Kilowattstunden mit etwa drei Euro. Finanziert werden soll die Senkung über Spielräume im EEG-Konto, Kosten rund 5,4 Milliarden Euro; eine Fortsetzung ab 2028 ist offen, im Etat klafft bereits eine Lücke von rund 25 Milliarden Euro. Parallel löst ein Spritpreisdeckel ab 1. Januar 2027 den Ende Dezember auslaufenden Tankrabatt ab, zunächst für drei Monate — die konkrete Ersparnis ist noch nicht beziffert. Ob die Entlastung vollständig ankommt, hängt an der Weitergabe der Versorger.",
-          "einordnung": "Bei 10.000 Kilowattstunden Bezug — realistisch mit Wärmepumpe plus Wallbox im Ausbau-Zielzustand — sind es rund 195 Euro im Jahr. Die Wirtschaftlichkeitsrechnung für Wärmepumpe, Speicher und Wallbox darf darauf nicht aufbauen, weil 2028 die alte Steuerlast zurückkommen kann.",
+          "titel": "Auffahrunfall auf der Kriegsdorfer Straße: zwei Verletzte, 22.000 Euro Schaden",
+          "aufmacher": "Vier Fahrzeuge, zwei Leichtverletzte und rund 22.000 Euro Sachschaden — Bilanz eines Auffahrunfalls am Mittwochmittag in Troisdorf.",
+          "fakten": "Gegen 12:10 Uhr fuhr eine 18-Jährige aus Sinzig auf der Kriegsdorfer Straße in Richtung Kriegsdorf auf den stehenden Skoda eines 19-Jährigen auf; der Skoda wurde auf den Ford eines 37-jährigen Troisdorfers und dieser auf einen Renault geschoben. Beide Männer kamen mit leichten Verletzungen in Krankenhäuser. Gegen die Unfallverursacherin läuft ein Verfahren wegen fahrlässiger Körperverletzung.",
+          "einordnung": "Die Kriegsdorfer Straße ist Pendlerstrecke — auf Fahrten zwischen Moselstraße und Gewerbegebiet weiter mit stockendem Verkehr rechnen.",
           "quellen": [
             {
-              "name": "tagesschau.de: Einigung im Koalitionsausschuss",
-              "url": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-einigung-stromsteuer-spritpreisdeckel-100.html"
-            },
-            {
-              "name": "ad-hoc-news/dpa: Stromsteuer sinkt 2027, Spritpreisdeckel bleibt offen",
-              "url": "https://www.ad-hoc-news.de/politik/stromsteuer-sinkt-2027-spritpreisdeckel-bleibt-offen/70530896"
+              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis, OTS 19.11.2026",
+              "url": "https://www.presseportal.de/blaulicht/pm/65853/6393722"
             }
           ]
         }
@@ -80,22 +72,30 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen: 4,30 Prozent im Tagesmittel, das beste Angebot bei 4,14",
-          "aufmacher": "Für zehn Jahre Zinsbindung kostet eine Baufinanzierung heute im Mittel der fünf günstigsten Banken 4,30 Prozent Sollzins (effektiv 4,41 Prozent) bei 80 Prozent Beleihung.",
-          "fakten": "Das günstigste Angebot im Tagesvergleich liegt bei 4,14 Prozent; gegenüber der Vorwoche ist der Zins um 0,09 Prozentpunkte gestiegen, gegenüber dem Vormonat um 0,05 Punkte gefallen. Über 15 Jahre werden 4,49 Prozent, über 20 Jahre 4,58 Prozent aufgerufen. Bei 400.000 Euro Darlehen und zwei Prozent Tilgung ergibt das rund 2.100 Euro Rate im Monat — jeder Zehntelprozentpunkt macht dort etwa 33 Euro aus. Hypofriend beziffert den Anstieg der Zehnjahreszinsen in sechs Monaten von 3,94 auf 4,22 Prozent. Die Portale nennen unterschiedliche Werte, weil Beleihung und Auswahlbasis abweichen: Finanztip kommt bei 80 Prozent Beleihung auf 4,5 Prozent, Heimziel auf 4,30 Prozent für die fünf besten Häuser.",
-          "einordnung": "Bei maximalem Hebel — nur Kaufnebenkosten aus Eigenkapital — schlägt jeder Zehntelpunkt direkt durch: auf 600.000 Euro Darlehen rund 50 Euro Zins im Monat, 6.000 Euro über zehn Jahre. Für die Kalkulation mit 4,30 bis 4,40 Prozent rechnen; die 4,14 Prozent sind ein Spitzenangebot, kein Marktpreis.",
+          "titel": "Bauzinsen bleiben über vier Prozent — Eigenkapital senkt den Satz um 0,43 Punkte",
+          "aufmacher": "Für zehnjährige Finanzierungen liegt der Topzins bei 90 Prozent Beleihung bei 4,33 Prozent, bei 60 Prozent Beleihung bei 3,90 Prozent.",
+          "fakten": "Grundlage ist die Rendite zehnjähriger Bundesanleihen von 3,40 Prozent plus 0,50 Prozent Bankmarge (Stand 30.10.2026). Die EZB hält den Einlagesatz seit dem 16. September 2026 bei 2,50 Prozent, der nächste Entscheid fällt am 17. Dezember. 15 Jahre Bindung kosten 4,58 Prozent, 20 Jahre 4,69 Prozent.",
+          "einordnung": "Bei maximalem Hebel — nur Kaufnebenkosten aus Eigenkapital — kostet der 90-Prozent-Satz voll: die 0,43 Punkte Unterschied sind rund 35 Euro im Monat je 100.000 Euro Darlehen, bei 1,2 Mio. Euro Darlehen rund 420 Euro monatlich. Das ist der Preis der reinen Bankfinanzierung.",
           "quellen": [
             {
-              "name": "Heimziel Zinsbarometer, Stand 19.11.2026",
-              "url": "https://heimziel.de/ratgeber/bauzinsen-aktuell"
+              "name": "Baufivergleich, Zinsupdate 30.10.2026",
+              "url": "https://baufivergleich.de/aktuelle-zinsen/"
             },
             {
-              "name": "Hypofriend Bauzinsen, Stand 16.11.2026",
-              "url": "https://hypofriend.de/de/bauzinsen"
-            },
+              "name": "EZB, Key ECB interest rates",
+              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+            }
+          ]
+        },
+        {
+          "titel": "Mieten in Troisdorf steigen auf 10,74 Euro je Quadratmeter",
+          "aufmacher": "In Troisdorf liegt die durchschnittliche Nettokaltmiete im dritten Quartal 2026 bei 10,74 Euro je Quadratmeter — 6,9 Prozent mehr als ein Jahr zuvor.",
+          "fakten": "Die Spanne reicht von 9,93 bis 11,87 Euro/m²; im Rhein-Sieg-Kreis liegt der Schnitt bei 10,22 Euro/m² mit plus 6,2 Prozent. Die Werte sind Angebotsmieten von ImmoScout24, ausdrücklich kein amtlicher Mietspiegel nach § 558d BGB.",
+          "einordnung": "6,9 Prozent Mietplus gegen 4,33 Prozent Zins klingt nach positivem Hebel — beim 20-fachen Kaufpreis liegt die Bruttorendite aber nur bei 5 Prozent, unter Zins plus Tilgung. Cashflow entsteht erst über Eigenkapital, Wertsteigerung oder günstigeren Einkauf.",
+          "quellen": [
             {
-              "name": "Interhyp Bauzinsen aktuell",
-              "url": "https://www.interhyp.de/zinsen/"
+              "name": "ImmoScout24, Mietspiegel Troisdorf Q3 2026",
+              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
             }
           ]
         }
@@ -105,22 +105,34 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Nvidia verdoppelt den Umsatz auf 115,8 Milliarden Dollar — die Marge sinkt trotzdem",
-          "aufmacher": "Nvidia hat am 17. November die Zahlen für das dritte Quartal des Geschäftsjahres 2027 vorgelegt: 115,8 Milliarden Dollar Umsatz, 103 Prozent mehr als im Vorjahr.",
-          "fakten": "Der Nettogewinn nach US-Rechnungslegung stieg um rund 105 Prozent auf etwa 65,3 Milliarden Dollar. Das Rechenzentrumsgeschäft trug 107,6 Milliarden Dollar bei, ein Plus von rund 110 Prozent. Analysten hatten im Schnitt 109,3 Milliarden Dollar erwartet. Die Bruttomarge lag mit 74,8 Prozent 0,2 Punkte unter dem Vorquartal; für das laufende Quartal stellt Nvidia nur 71 bis 72 Prozent in Aussicht und nennt rund 130 Milliarden Dollar Umsatz — China-Umsätze sind darin nicht enthalten. Die Aktie legte zunächst zu, der Dow Jones schloss am Mittwoch 1,11 Prozent tiefer, der DAX verlor 1,28 Prozent auf 25.739,18 Punkte.",
-          "einordnung": "Die sinkende Marge bei explodierendem Umsatz ist das eigentliche Signal: Der Hochlauf der neuen Plattform Vera Rubin NVL72 kostet Rendite. In Weltindex-Depots bleibt Nvidia der größte Einzelwert — das Klumpenrisiko ist nicht kleiner geworden.",
+          "titel": "Wirtschaftsweise heben Wachstumsprognose auf 1,3 Prozent",
+          "aufmacher": "Der Sachverständigenrat erwartet für 2026 ein BIP-Plus von 1,3 Prozent — 0,8 Punkte mehr als im Frühjahrsgutachten.",
+          "fakten": "Für 2027 rechnet der Rat mit 1,0 Prozent. Treiber sind überraschend starke Exporte und Staatsausgaben; 2027 sollen staatliche Investitionen und privater Konsum tragen. Die Inflation veranschlagt der Rat für 2026 mit 2,8 Prozent, für 2027 mit 3,3 Prozent.",
+          "einordnung": "Wachstum stützt Vermietung und das Quixx-Geschäft. Die erwarteten 3,3 Prozent Inflation für 2027 sprechen eher für lange Zinsbindung als für Wetten auf fallende Zinsen.",
           "quellen": [
             {
-              "name": "wallstreetONLINE: Nvidia legt Quartalszahlen vor",
-              "url": "https://www.wallstreet-online.de/nachricht/21711006-nvidia-legt-quartalszahlen"
+              "name": "tagesschau.de, Jahresgutachten 11.11.2026",
+              "url": "https://www.tagesschau.de/wirtschaft/konjunktur/wirtschaftsweise-jahresgutachten-2026-100.html"
+            }
+          ]
+        },
+        {
+          "titel": "EZB pausiert bei 2,50 Prozent — Entscheidung am 17. Dezember",
+          "aufmacher": "Die EZB hat die Leitzinsen am 29. Oktober unverändert gelassen; der Einlagesatz bleibt bei 2,50 Prozent.",
+          "fakten": "Die Inflationsrate in Deutschland lag im Oktober 2026 bei 2,8 Prozent (Destatis). Im Euroraum waren es im September 3,8 Prozent, das EZB-Ziel liegt bei 2,0 Prozent. Ökonomen rechnen für Dezember mit einem weiteren Schritt. EZB-Präsidentin Lagarde hat ihren vorzeitigen Rücktritt für Februar angekündigt.",
+          "einordnung": "Kein Grund, eine Anschlussfinanzierung zu überstürzen — aber auch kein Fenster für Zinsspekulation: Forward-Darlehen prüfen, solange die Dezember-Erwartung bereits eingepreist ist.",
+          "quellen": [
+            {
+              "name": "EZB, Key ECB interest rates",
+              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
             },
             {
-              "name": "finanzen.net: Nvidia-Aktie im Fokus",
-              "url": "https://www.finanzen.net/nachricht/aktien/nvidia-ohne-huang-nvidia-aktie-im-fokus-verwaltungsrat-wird-jensen-huang-nicht-wieder-einsetzen-16071851"
+              "name": "Destatis, Pressemitteilung 11.11.2026",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_392_611.html"
             },
             {
-              "name": "n-tv: Der Börsen-Tag vom 18. November 2026",
-              "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Mittwoch-18-November-2026-id31546208.html"
+              "name": "tagesschau.de, EZB-Entscheid 29.10.2026",
+              "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/ezb-570.html"
             }
           ]
         }
@@ -130,20 +142,35 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "U7-Pro-Wall: Firmware 8.8.14 wartet — Mesh jetzt über 5 und 6 GHz",
-          "aufmacher": "Für den U7-Pro-Wall liegt Firmware 8.8.14 bereit; installiert ist noch 8.7.11, das Update ist nicht automatisch aktiv.",
-          "fakten": "Der Sprung geht von 8.7.11.19419 auf 8.8.14.20179. Laut Release-Notes vom 3. November unterstützen U7-Zugangspunkte damit Mesh-Verbindungen über Multi-Link-Operation (MLO) im 5- und 6-GHz-Band, außerdem kommt Multicast Suppression für WLAN-Netze hinzu — beides senkt Funklast und Abbrüche in dichten Netzen. Der übrige Bestand ist aktuell: Home Assistant Core, Supervisor, Betriebssystem und alle Add-ons melden keinen offenen Stand; der HA MCP Server (Dev) zieht seine Builds automatisch (9.3.0.dev3626 → dev3631). Offen bleibt paperless-ngx 3.5.0 → 3.5.1 (Bugfix, gestern gemeldet), unverändert zwei gestoppte Container.",
-          "einordnung": "Vor dem Update Snapshot der Netzwerkkonfiguration und ein ruhiges Zeitfenster: Der Vorgänger 8.7.11 hatte in der Community bei genau diesem Modell Auffälligkeiten. MLO-Mesh lohnt nur, wenn der AP als Mesh-Knoten läuft; die meisten APs im Haus hängen am Kabel. Paperless 3.5.1 kann am Wochenende mit, zusammen mit dem Backup-Lauf.",
+          "titel": "Hermes Agent v0.23.2 — 1.781 Commits Rückstand auf origin/main",
+          "aufmacher": "Der Update-Scan meldet für Hermes Agent v0.23.2 ein Update; gegenüber origin/main fehlen 1.781 Commits.",
+          "fakten": "Die ausstehenden Änderungen sind überwiegend Fehlerbehebungen: /learn-Handoff im Web-Interface samt ANSI-Bereinigung, Gateway-Statusmeldungen für Unteragenten, Tastenübernahme beim Desktop-Cold-Start. Neue Funktionen sind im Commit-Log nicht ausgewiesen.",
+          "einordnung": "Nicht blind durchziehen: bei 1.781 Commits ist das ein Sprung über viele Versionen. Erst Backup, dann schrittweise über Tags — und nur mit Freigabe.",
           "quellen": [
             {
-              "name": "Ubiquiti Community: UniFi Access Point & Wireless Bridge 8.8.14",
-              "url": "https://community.ui.com/releases/UniFi-Access-Point-and-Wireless-Bridge-8-8-14/10247e29-044d-48b2-9e83-e7c5fb17305a"
-            },
-            {
-              "name": "Ubiquiti Downloads: UniFi Firmware",
-              "url": "https://www.ui.com/download/unifi/"
+              "name": "Hermes Agent Releases",
+              "url": "https://github.com/NousResearch/hermes-agent/releases"
             }
           ]
+        },
+        {
+          "titel": "paperless-ngx 3.5.1 behebt Fehler beim KI-Chat",
+          "aufmacher": "paperless-ngx ist von 3.5.0 auf 3.5.1 verfügbar (Release vom 18.11.2026).",
+          "fakten": "Das Patch-Release behebt das Streaming von KI-Chat-Antworten unter ASGI, verhindert set_actor-Aufrufe bei deaktiviertem Audit-Log und behält die Auswahl nach Sammelbearbeitungen. Vier Änderungen, keine Migration.",
+          "einordnung": "Für die Paperless-Anbindung relevant, weil der KI-Chat über ASGI läuft. Update unkritisch, Container-Neustart nötig — Freigabe vorausgesetzt.",
+          "quellen": [
+            {
+              "name": "paperless-ngx v3.5.1 Release Notes",
+              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.5.1"
+            }
+          ]
+        },
+        {
+          "titel": "⚠️ omnivoice-Container seit fünf Wochen gestoppt",
+          "aufmacher": "Der Docker-Container omnivoice steht auf der Synology seit rund fünf Wochen auf „exited“ mit Code 137.",
+          "fakten": "Exit-Code 137 heißt: der Prozess wurde zwangsbeendet, typisch bei Speicherdruck (OOM). Der zweite gestoppte Container, firecrawl-starter-monitor-db-init, ist ein einmaliger Init-Job und unauffällig.",
+          "einordnung": "Damit fehlt die lokale TTS-Kette. Vor einem Neustart das Speicherlimit prüfen, sonst wiederholt sich der Kill. Ich warte auf Freigabe.",
+          "quellen": []
         }
       ]
     },
@@ -151,18 +178,18 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "StarBot Spark: 7.999 Dollar für einen 90-Zentimeter-Humanoiden — ohne Liefertermin",
-          "aufmacher": "Der US-Hersteller StarBot Robotics hat am 4. November den Humanoiden Spark vorgestellt: 90 Zentimeter groß, 22 Freiheitsgrade, ab 7.999 US-Dollar — umgerechnet rund 7.290 Euro.",
-          "fakten": "Für 200 Dollar Anzahlung nimmt das Unternehmen Reservierungen an; ein Lieferfenster wurde nicht veröffentlicht, ebenso wenig ein technisches Datenblatt. Zielgruppen sind Schulen und Entwickler, nicht Haushalte: beworben werden Programmierenlernen und eine offene Entwicklungsplattform, keine Tätigkeiten im Haushalt. Gefertigt wird in den USA; mit 8.000 Dollar liegt Spark auf dem Preisniveau eines Unitree R1 und weit unter dem 1X NEO, kann aber nichts von dem, was den NEO zum Haushaltsmodell macht. Umrechnung auf Basis 1 Euro = 1,0968 US-Dollar (EZB-Referenzkurs 18.11.2026).",
-          "einordnung": "Die Nachricht ist der Preis, nicht das Können: Unter 8.000 Dollar gibt es inzwischen echte Hardware mit 22 Gelenken — die Aufgaben (Wäsche, Geschirr, Aufräumen) kommen nicht mitgeliefert. Für den Haushalt bleibt der NEO das einzige bestellbare Modell; Spark ist Entwicklerplattform ohne Alltagsnutzen.",
+          "titel": "Humanoide Roboter erstmals in deutschen Shops bestellbar — Haushaltshelfer weiterhin nicht",
+          "aufmacher": "Seit November 2026 führen deutsche Händler Unitree-Humanoide mit Euro-Preis und Lieferzeit; der günstigste, R1 Air, kostet 5.799 Euro.",
+          "fakten": "Bei Joybuy kosten R1 Air 5.799 Euro, R1 6.898,99 Euro, R1 EDU 13.599 Euro und G1 16.999 Euro; reichelt listet sieben R1-Ausführungen von 9.930 bis 33.200 Euro, Funduino den R1 ab 9.996 Euro. MediaMarkt führt den R1 EDU als Marktplatzangebot für 13.099 Euro (rot) und 13.599 Euro (weiß) mit Lieferung am 23./24. November, dazu den AGIBOT X2 für 25.999 Euro ab Januar 2027. Ein humanoider Haushaltsroboter mit Deutschland-Lieferung bleibt nicht bestellbar: 1X NEO weiter 20.000 Dollar oder 499 Dollar im Monat, nur USA.",
+          "einordnung": "Für den Haushalt nichts, für den Spieltrieb eine Option — der Preisrutsch bei Entwickler-Hardware zeigt aber, wohin die Reise 2027 geht. Ein echter Haushaltshelfer bleibt ein Zehn-Jahres-Thema.",
           "quellen": [
             {
-              "name": "GlobeNewswire: StarBot startet Spark (04.11.2026)",
-              "url": "https://www.globenewswire.com/news-release/2026/11/04/3395568/0/en/made-in-america-and-priced-at-7-999-starbot-launches-spark-humanoid-robot.html"
+              "name": "drohnen.de, Kaufübersicht Stand 11.11.2026",
+              "url": "https://www.drohnen.de/97662/humanoide-roboter-kaufen/"
             },
             {
-              "name": "RoboticsIntl: StarBot Spark Opens $200 Reservations",
-              "url": "https://www.roboticsintl.com/article/starbot-spark-humanoid-opens-200-reservations-starts-at-7999"
+              "name": "MediaMarkt, Kategorie Humanoide Roboter",
+              "url": "https://www.mediamarkt.de/de/category/humanoide-roboter-9102.html"
             }
           ]
         }
@@ -172,18 +199,18 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Mistral bringt Vibe als Desktop-App — Pro für Europas Entwickler drei Monate gratis",
-          "aufmacher": "Mistral AI hat am 18. November seine Agenten-Plattform Vibe als Desktop-Anwendung für macOS und Windows veröffentlicht; Linux folgt laut Produktseite später.",
-          "fakten": "Vibe (früher Le Chat) führt Agenten wahlweise lokal oder remote aus und verbindet sich aus der App heraus mit Repositories. Zum Start ist der Pro-Tarif für Entwickler in Europa drei Monate kostenlos, Einlösung über den Aktionscode LECHONK; das Kontingent war zwischenzeitlich erschöpft und wurde aufgestockt. Als Modell steht Mistral Large 4 bereit, für Unternehmen gibt es Betrieb auf eigener Infrastruktur mit Datenresidenz. Aleph Alpha und Black Forest Labs: nichts Neues.",
-          "einordnung": "Damit hat Europa erstmals ein eigenes Desktop-Gegenstück zu Claude Code und Codex — interessant, weil Agenten lokal oder in der EU-Cloud laufen können statt bei einem US-Anbieter. Die Drei-Monats-Aktion ist ein Einstiegspreis, keine Kalkulationsgrundlage für Dauerbetrieb.",
+          "titel": "Telekom steigt mit 100 Millionen Euro bei Mistral AI ein",
+          "aufmacher": "Der T.Capital Tech Fund der Deutschen Telekom hat 100 Millionen Euro in die Series-D-Runde von Mistral AI investiert.",
+          "fakten": "Die Beteiligung vom 19.11.2026 ist laut Telekom der erste Schritt zu einer strategischen Partnerschaft: Die souveräne Infrastruktur des Konzerns, darunter die neu eröffnete KI-Fabrik in München, soll mit Mistrals Modellen und Unternehmenssoftware für Industrie, Behörden und regulierte Branchen zusammengeführt werden. Mistral hat parallel einen Standort in München eröffnet; T.Capital verwaltet mehr als 2 Milliarden Euro. Angaben zu Bewertung und Gesamtvolumen der Runde machte die Telekom nicht, die Aktie gab zeitweise 0,8 Prozent auf 26,12 Euro nach.",
+          "einordnung": "Erstmals ein deutscher DAX-Konzern als Ankerinvestor der europäischen KI — für die Souveränitätsfrage relevanter als jede Bewertungszahl: Rechenkapazität und Vertrieb kommen aus Bonn, die Modelle aus Paris. Aleph Alpha und Black Forest Labs: nichts Neues.",
           "quellen": [
             {
-              "name": "Mistral AI: Vibe Produktseite",
-              "url": "https://mistral.ai/products/vibe/"
+              "name": "Deutsche Telekom, Medieninformation 19.11.2026",
+              "url": "https://www.telekom.com/de/newsroom/aktuelles/medieninformationen/2026/11/deutsche-telekom-staerkt-souveraene-ki-in-deutschland"
             },
             {
-              "name": "Mistral AI (offizieller Kanal): Ankündigung Vibe Desktop, 18.11.2026",
-              "url": "https://x.com/MistralAI/status/2123073168659141119"
+              "name": "aktiencheck.de, 19.11.2026",
+              "url": "https://aktiencheck.de/artikel/deutsche-telekom-aktie-100-millionen-euro-fuer-mistral-ai-telekom-setzt-auf"
             }
           ]
         }
