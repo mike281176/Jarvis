@@ -1,14 +1,14 @@
 {
-  "datum": "Freitag, 20.11.2026",
+  "datum": "Samstag, 21.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "9 °C · Regen 100 % · UV 1,15",
-          "aufmacher": "🌧️ Niesel den ganzen Tag, Höchstwert 10 °C bei einem Tief von 2,7 °C.",
-          "fakten": "Durchgehende Regenwahrscheinlichkeit, kaum Sonne — der UV-Index bleibt mit 1,15 unkritisch.",
-          "einordnung": "Regenkleidung für Kontrollgänge an den Objekten; die PV-Anlage bleibt heute ertragsarm.",
+          "titel": "9 °C · Regen 4 % · UV 1,6",
+          "aufmacher": "☁️ Bedeckt, aber trocken: Höchstwert 9 °C, Tief 1,8 °C, aktuell 3,2 °C.",
+          "fakten": "Die Regenwahrscheinlichkeit liegt bei 4 Prozent, der UV-Index bei 1,6 — unkritisch. Es bleibt den ganzen Tag bedeckt, kaum Sonne.",
+          "einordnung": "Gute Bedingungen für Arbeiten an der Fassade oder im Heizungskeller; die PV-Anlage bleibt bei geschlossener Wolkendecke ertragsarm.",
           "quellen": []
         }
       ]
@@ -43,26 +43,38 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Lichterzug gegen Gewalt an Frauen am 25. November",
-          "aufmacher": "Am 25. November zieht ab 17 Uhr ein Lichterzug von der Stadtbibliothek durch die Troisdorfer Fußgängerzone, um auf häusliche Gewalt aufmerksam zu machen.",
-          "fakten": "Start ist um 17 Uhr vor der Stadtbibliothek, Kölner Straße 69. Die Route führt über Wilhelm-Hamacher-Straße, Am Bürgerhaus, Fischerplatz und Hippolytusstraße zum Kölner Platz, Abschluss ist ein Austausch im Frauenzentrum, Hospitalstraße 2. Zusätzlich werden zwei „Orange Bänke gegen Gewalt“ eingeweiht: am 20. November an der Kapellenstraße/Ecke Menzelstraße in Eschmar und am 23. November um 11 Uhr am Zeppelinplatz.",
-          "einordnung": "Termin für den Kalender — wer am 25. ab 17 Uhr in der Innenstadt zu tun hat, sollte Fußgängerverkehr und kurze Sperrungen einplanen.",
+          "titel": "Troisdorf verhängt Haushaltssperre bis Ende 2027 — 40 Millionen Euro fehlen",
+          "aufmacher": "Troisdorf hat mit sofortiger Wirkung eine Haushaltssperre für 2026 und 2027 erlassen; das Defizit im Jahresabschluss 2026 wächst auf rund 40 Millionen Euro.",
+          "fakten": "Auslöser ist ein Einbruch der Gewerbesteuer: Stadtkämmerin Sabine Wendt beziffert die Mindererträge auf rund 16 Millionen Euro, das Gesamtdefizit steigt damit von den im Sommer veranschlagten Werten auf etwa 40 Millionen Euro — die größte Kommune des Rhein-Sieg-Kreises mit rund 70.000 Einwohnern. Bis Ende 2027 sind keine neuen Investitionen und keine neuen Stellen möglich. Der Rat hatte den Doppelhaushalt erst im August beschlossen. Im Rat ist ein offener Streit entbrannt: FDP/UWG und Bürgermeister Alexander Biber sehen Kreis, Landschaftsverband, Bund und Land in der Pflicht, SPD und Grüne verweisen auch auf hausgemachte Probleme. Die Grünen beziffern die zusätzliche Belastung aus der Kreisumlage auf rund 25 Millionen Euro über vier Jahre, wirksam ab 2027. Leistungskürzungen sowie steigende Steuern, Gebühren und Entgelte sind laut Kämmerin möglich.",
+          "einordnung": "Für Vermieter heißt das: kommunale Gebühren und Grundsteuer-Hebesätze werden zum Risiko im Cashflow, nicht die Miete. Wer 2027 einen Bauantrag oder eine Erschließungsmaßnahme in Troisdorf plant, sollte mit längeren Bearbeitungszeiten rechnen — Investitionen sind gesperrt. Für Quixx24 ist die Gewerbesteuer-Klage der eigentliche Punkt: der Einbruch trifft die Stadt, nicht die Firma.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf, Pressemeldung 18.11.2026",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/lichterzug-durch-troisdorf-setzt-ein-zeichen-der-solidaritaet/"
+              "name": "Rundschau Online, Streit um 40 Millionen Euro (20.11.2026)",
+              "url": "https://www.rundschau-online.de/region/rhein-sieg/siegburg/troisdorf-haushaltssperre-loest-streit-um-40-millionen-euro-aus-1-1419535"
+            },
+            {
+              "name": "Rundblick Troisdorf, Biber: Handlungsfähigkeit sichern (20.11.2026)",
+              "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3179404-biber-handlungsfaehigkeit-sichern/"
+            },
+            {
+              "name": "General-Anzeiger, Troisdorfer Finanzkrise (15.11.2026)",
+              "url": "https://ga.de/region/sieg-und-rhein/troisdorf/troisdorf-das-steckt-hinter-der-staedtischen-finanzkrise_aid-158338449"
             }
           ]
         },
         {
-          "titel": "Auffahrunfall auf der Kriegsdorfer Straße: zwei Verletzte, 22.000 Euro Schaden",
-          "aufmacher": "Vier Fahrzeuge, zwei Leichtverletzte und rund 22.000 Euro Sachschaden — Bilanz eines Auffahrunfalls am Mittwochmittag in Troisdorf.",
-          "fakten": "Gegen 12:10 Uhr fuhr eine 18-Jährige aus Sinzig auf der Kriegsdorfer Straße in Richtung Kriegsdorf auf den stehenden Skoda eines 19-Jährigen auf; der Skoda wurde auf den Ford eines 37-jährigen Troisdorfers und dieser auf einen Renault geschoben. Beide Männer kamen mit leichten Verletzungen in Krankenhäuser. Gegen die Unfallverursacherin läuft ein Verfahren wegen fahrlässiger Körperverletzung.",
-          "einordnung": "Die Kriegsdorfer Straße ist Pendlerstrecke — auf Fahrten zwischen Moselstraße und Gewerbegebiet weiter mit stockendem Verkehr rechnen.",
+          "titel": "Hochwasser: Zehn Wege in Troisdorf-West und Müllekoven gesperrt",
+          "aufmacher": "Steigende Pegel an Sieg und Agger — die Stadt Troisdorf hat zehn Zugänge zu Geh- und Radwegen vorsorglich sperren lassen, mindestens bis Montag, 23. November.",
+          "fakten": "Betroffen sind Absperrstellen im Bereich Troisdorf-West und in Müllekoven; die Zugänge sind mit Absperranlagen gesichert. Teilweise stehen die Wege bereits unter Wasser. Eine Verlängerung über Montag hinaus ist je nach Pegelentwicklung möglich. Auch Sankt Augustin hat den Weg an der Sieg zwischen Buisdorf und Mülldorf gesperrt.",
+          "einordnung": "Für Kontrollgänge an Objekten nahe der Sieg-Aue: Zufahrten prüfen, Kellerlichtschächte und Rückstauklappen im Blick behalten. Die Sperrungen betreffen keine Straßen — der Verkehr läuft.",
           "quellen": [
             {
-              "name": "Kreispolizeibehörde Rhein-Sieg-Kreis, OTS 19.11.2026",
-              "url": "https://www.presseportal.de/blaulicht/pm/65853/6393722"
+              "name": "Stadt Troisdorf, Pressemeldung 20.11.2026",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/stadt-troisdorf-sperrt-geh-und-radwege-wegen-steigender-pegelstaende/"
+            },
+            {
+              "name": "Radio Bonn/Rhein-Sieg, 20.11.2026",
+              "url": "https://www.radiobonn.de/artikel/hochwasser-troisdorf-und-sankt-augustin-sperren-wege-2812293"
             }
           ]
         }
@@ -72,30 +84,22 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben über vier Prozent — Eigenkapital senkt den Satz um 0,43 Punkte",
-          "aufmacher": "Für zehnjährige Finanzierungen liegt der Topzins bei 90 Prozent Beleihung bei 4,33 Prozent, bei 60 Prozent Beleihung bei 3,90 Prozent.",
-          "fakten": "Grundlage ist die Rendite zehnjähriger Bundesanleihen von 3,40 Prozent plus 0,50 Prozent Bankmarge (Stand 30.10.2026). Die EZB hält den Einlagesatz seit dem 16. September 2026 bei 2,50 Prozent, der nächste Entscheid fällt am 17. Dezember. 15 Jahre Bindung kosten 4,58 Prozent, 20 Jahre 4,69 Prozent.",
-          "einordnung": "Bei maximalem Hebel — nur Kaufnebenkosten aus Eigenkapital — kostet der 90-Prozent-Satz voll: die 0,43 Punkte Unterschied sind rund 35 Euro im Monat je 100.000 Euro Darlehen, bei 1,2 Mio. Euro Darlehen rund 420 Euro monatlich. Das ist der Preis der reinen Bankfinanzierung.",
+          "titel": "Bauzinsen bei 4,11 Prozent — Bundesanleihe gibt nach, der Druck lässt kurzfristig nach",
+          "aufmacher": "Für zehn Jahre Zinsbindung liegt der beste Effektivzins am 21. November bei 4,11 Prozent (4,01 Prozent Sollzins); bei 80 Prozent Beleihung sind es 4,17 Prozent.",
+          "fakten": "Die Zinskurve bleibt steil: 5 Jahre 4,24 Prozent effektiv, 15 Jahre 4,26 Prozent, 20 Jahre 4,35 Prozent, 30 Jahre 4,56 Prozent. Seit Juli 2026 sind die Bauzinsen um rund 0,8 Prozentpunkte gestiegen, mit Jahreshoch im September. Der Dr. Klein-Expertenrat erwartet bis Jahresende stabile bis leicht steigende Sätze und einen Korridor von 4,0 bis 4,5 Prozent für zehnjährige Darlehen. Am 20. November fiel die Rendite zehnjähriger Bundesanleihen von 3,410 auf 3,298 Prozent, weil Anleger nach dem Kursrutsch am Aktienmarkt in Staatsanleihen flüchteten. Die EZB hält den Einlagesatz bei 2,50 Prozent, nächster Entscheid am 17. Dezember.",
+          "einordnung": "Die rund elf Basispunkte weniger bei der Bundesanleihe sind kein Zinsfenster, aber ein Signal: Wenn die Flucht in Anleihen anhält, kommen die Bauzinsen von den 4,5 Prozent wieder weg. Bei maximalem Hebel — nur Kaufnebenkosten aus Eigenkapital — entscheidet jeder Zehntelpunkt über rund 100 Euro im Monat je 100.000 Euro Darlehen. Wer jetzt kauft, sollte ein Forward-Darlehen prüfen, statt auf fallende Zinsen zu warten.",
           "quellen": [
             {
-              "name": "Baufivergleich, Zinsupdate 30.10.2026",
-              "url": "https://baufivergleich.de/aktuelle-zinsen/"
+              "name": "Dr. Klein, Bauzinsen aktuell (Stand 21.11.2026)",
+              "url": "https://www.drklein.de/aktuelle-bauzinsen.html"
             },
             {
-              "name": "EZB, Key ECB interest rates",
-              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
-            }
-          ]
-        },
-        {
-          "titel": "Mieten in Troisdorf steigen auf 10,74 Euro je Quadratmeter",
-          "aufmacher": "In Troisdorf liegt die durchschnittliche Nettokaltmiete im dritten Quartal 2026 bei 10,74 Euro je Quadratmeter — 6,9 Prozent mehr als ein Jahr zuvor.",
-          "fakten": "Die Spanne reicht von 9,93 bis 11,87 Euro/m²; im Rhein-Sieg-Kreis liegt der Schnitt bei 10,22 Euro/m² mit plus 6,2 Prozent. Die Werte sind Angebotsmieten von ImmoScout24, ausdrücklich kein amtlicher Mietspiegel nach § 558d BGB.",
-          "einordnung": "6,9 Prozent Mietplus gegen 4,33 Prozent Zins klingt nach positivem Hebel — beim 20-fachen Kaufpreis liegt die Bruttorendite aber nur bei 5 Prozent, unter Zins plus Tilgung. Cashflow entsteht erst über Eigenkapital, Wertsteigerung oder günstigeren Einkauf.",
-          "quellen": [
+              "name": "finanzierung-mit-kopf.de, Bauzinsen 21.11.2026",
+              "url": "https://finanzierung-mit-kopf.de/aktuelle-zinsen-baufinanzierung/"
+            },
             {
-              "name": "ImmoScout24, Mietspiegel Troisdorf Q3 2026",
-              "url": "https://www.immobilienscout24.de/immobilienpreise/nordrhein-westfalen/rhein-sieg-kreis/troisdorf/mietspiegel"
+              "name": "n-tv, Der Börsen-Tag 20.11.2026 (Rendite Bundesanleihe)",
+              "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Freitag-20-November-2026-id31556555.html"
             }
           ]
         }
@@ -105,34 +109,22 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Wirtschaftsweise heben Wachstumsprognose auf 1,3 Prozent",
-          "aufmacher": "Der Sachverständigenrat erwartet für 2026 ein BIP-Plus von 1,3 Prozent — 0,8 Punkte mehr als im Frühjahrsgutachten.",
-          "fakten": "Für 2027 rechnet der Rat mit 1,0 Prozent. Treiber sind überraschend starke Exporte und Staatsausgaben; 2027 sollen staatliche Investitionen und privater Konsum tragen. Die Inflation veranschlagt der Rat für 2026 mit 2,8 Prozent, für 2027 mit 3,3 Prozent.",
-          "einordnung": "Wachstum stützt Vermietung und das Quixx-Geschäft. Die erwarteten 3,3 Prozent Inflation für 2027 sprechen eher für lange Zinsbindung als für Wetten auf fallende Zinsen.",
+          "titel": "Anthropic sammelt 81,3 Milliarden Dollar ein — und die Aktie fällt am zweiten Tag um zehn Prozent",
+          "aufmacher": "Der Börsengang von Anthropic ist der größte der Geschichte, doch die Begeisterung hielt keinen Tag: Am Freitag verlor die Aktie mehr als zehn Prozent und der DAX schloss mit 24.803 Punkten so tief wie zuletzt Anfang Oktober.",
+          "fakten": "Anthropic nahm mit der Emission 81,3 Milliarden Dollar ein — mehr als SpaceX je bei einem Börsengang erlöste. Der Ausgabepreis lag bei 83 Dollar, die Aktie eröffnete bei 111,50 Dollar und schloss den ersten Handelstag bei 97,17 Dollar, ein Plus von rund 17 Prozent. Am zweiten Tag fiel sie unter 90 Dollar, fast auf den Ausgabepreis. Der DAX verlor am Freitag 2,6 Prozent oder 661 Punkte auf 24.803 Zähler und damit in der Woche 7,3 Prozent; das Jahresplus schrumpfte von rund zehn auf etwa zwei Prozent. Der Nasdaq gab rund ein Prozent nach, der Dow notierte 0,4 Prozent höher bei 49.339 Punkten. Die Rendite zehnjähriger Bundesanleihen sank auf 3,298 Prozent, Bitcoin fiel erstmals seit Juli unter 60.000 Dollar. Laut Bank of America haben institutionelle Anleger ihre Technologie-Übergewichtung so stark reduziert wie seit 2006 nicht mehr.",
+          "einordnung": "Ein Rekord-IPO, der die Stimmung nicht dreht, ist ein Bewertungssignal, kein Wachstumssignal: Die KI-Erzählung trägt keine beliebigen Kurse mehr. Für das Depot heißt das nicht aussteigen, sondern Gewichte prüfen — und die Kursruhe bei Anleihen ist derzeit der nützlichere Teil des Portfolios. Nach Abgeltungssteuer ohne Kirchensteuer bleiben von Gewinnen 73,625 Prozent.",
           "quellen": [
             {
-              "name": "tagesschau.de, Jahresgutachten 11.11.2026",
-              "url": "https://www.tagesschau.de/wirtschaft/konjunktur/wirtschaftsweise-jahresgutachten-2026-100.html"
-            }
-          ]
-        },
-        {
-          "titel": "EZB pausiert bei 2,50 Prozent — Entscheidung am 17. Dezember",
-          "aufmacher": "Die EZB hat die Leitzinsen am 29. Oktober unverändert gelassen; der Einlagesatz bleibt bei 2,50 Prozent.",
-          "fakten": "Die Inflationsrate in Deutschland lag im Oktober 2026 bei 2,8 Prozent (Destatis). Im Euroraum waren es im September 3,8 Prozent, das EZB-Ziel liegt bei 2,0 Prozent. Ökonomen rechnen für Dezember mit einem weiteren Schritt. EZB-Präsidentin Lagarde hat ihren vorzeitigen Rücktritt für Februar angekündigt.",
-          "einordnung": "Kein Grund, eine Anschlussfinanzierung zu überstürzen — aber auch kein Fenster für Zinsspekulation: Forward-Darlehen prüfen, solange die Dezember-Erwartung bereits eingepreist ist.",
-          "quellen": [
-            {
-              "name": "EZB, Key ECB interest rates",
-              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+              "name": "tagesschau.de, Marktbericht 20.11.2026",
+              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-102.html"
             },
             {
-              "name": "Destatis, Pressemitteilung 11.11.2026",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_392_611.html"
+              "name": "tagesschau.de, Anthropic-Aktie stürzt ab (20.11.2026)",
+              "url": "https://www.tagesschau.de/wirtschaft/boerse/anthropic-ki-tech-werte-boersen-100.html"
             },
             {
-              "name": "tagesschau.de, EZB-Entscheid 29.10.2026",
-              "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/ezb-570.html"
+              "name": "n-tv, Der Börsen-Tag 20.11.2026",
+              "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Freitag-20-November-2026-id31556555.html"
             }
           ]
         }
@@ -142,35 +134,48 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Hermes Agent v0.23.2 — 1.781 Commits Rückstand auf origin/main",
-          "aufmacher": "Der Update-Scan meldet für Hermes Agent v0.23.2 ein Update; gegenüber origin/main fehlen 1.781 Commits.",
-          "fakten": "Die ausstehenden Änderungen sind überwiegend Fehlerbehebungen: /learn-Handoff im Web-Interface samt ANSI-Bereinigung, Gateway-Statusmeldungen für Unteragenten, Tastenübernahme beim Desktop-Cold-Start. Neue Funktionen sind im Commit-Log nicht ausgewiesen.",
-          "einordnung": "Nicht blind durchziehen: bei 1.781 Commits ist das ein Sprung über viele Versionen. Erst Backup, dann schrittweise über Tags — und nur mit Freigabe.",
+          "titel": "⚠️ Synology DSM: kritisches Sicherheitsupdate wartet — CVSS 8,1",
+          "aufmacher": "Das DSM920+ hat Update 1 installiert, Update 2 (7.4.1-90080-2) ist verfügbar — und es schließt eine kritische Lücke im NGINX-HTTP/2-Stack.",
+          "fakten": "Synology führt die Lücke als CVE-2026-123007 mit CVSS-Basisscore 8,1 und dem Schweregrad „Critical“. Ursache ist ein Out-of-bounds-Write im Flow-Control-Fenster von NGINX bei HTTP/2-Verkehr: Angreifer können aus der Ferne beliebige Dateien lesen und schreiben, Denial-of-Service auslösen und bei deaktiviertem ASLR Code ausführen. Betroffen sind alle DSM-7.4-Installationen; die Behebung ist Update 2 vom 20. November. Als Übergangslösung nennt Synology das Abschalten von HTTP/2 unter Systemsteuerung → Netzwerk → Konnektivität. Parallel listet Synology unter SA-26:21 eine weitere kritische DSM-Lücke.",
+          "einordnung": "Nicht warten: Der NAS hält Vault, Paperless und die Docker-Container — ein erfolgreicher Datei-Schreibzugriff trifft alle drei. Ich fasse das Update ohne deine Freigabe nicht an. Wenn du es freigibst, sichere ich vorher die Konfiguration und prüfe danach, ob Docker und die Freigaben sauber hochkommen.",
           "quellen": [
             {
-              "name": "Hermes Agent Releases",
-              "url": "https://github.com/NousResearch/hermes-agent/releases"
+              "name": "Synology Security Advisory SA-26:20 (NGINX2Root)",
+              "url": "https://www.synology.com/en-us/security/advisory/Synology_SA_26_20"
             }
           ]
         },
         {
-          "titel": "paperless-ngx 3.5.1 behebt Fehler beim KI-Chat",
-          "aufmacher": "paperless-ngx ist von 3.5.0 auf 3.5.1 verfügbar (Release vom 18.11.2026).",
-          "fakten": "Das Patch-Release behebt das Streaming von KI-Chat-Antworten unter ASGI, verhindert set_actor-Aufrufe bei deaktiviertem Audit-Log und behält die Auswahl nach Sammelbearbeitungen. Vier Änderungen, keine Migration.",
-          "einordnung": "Für die Paperless-Anbindung relevant, weil der KI-Chat über ASGI läuft. Update unkritisch, Container-Neustart nötig — Freigabe vorausgesetzt.",
+          "titel": "Music Assistant 2.10.13 und ConnectLife 1.1.0 — zwei Add-ons mit echtem Nutzen",
+          "aufmacher": "Music Assistant springt auf 2.10.13, die ConnectLife-Integration auf 1.1.0 — beide Updates beheben Fehler, die im Alltag auffallen.",
+          "fakten": "Music Assistant 2.10.13 (Release 21.11., 00:11 Uhr) behebt, dass AirPlay-1-Lautsprecher nach einem Neustart der Live-Eingabe stumm bleiben, erhält das Albumbild bei AirPlay über Titelwechsel desselben Albums, repariert den ARD-Sounds-Login samt Abo- und Fortschrittssync und härtet die Prüfung der Rückkehr-URL im Auth-Callback. ConnectLife 1.1.0 (20.11.) bringt Push-Updates: Änderungen aus der App, vom Gerät und Befehlsfolgen erscheinen binnen Sekunden statt binnen einer Minute in Home Assistant; dazu sechs neue Geräte und die korrekte Einheit Watt für Klima-Heiz- und Kühlleistung. Der Home Assistant MCP Server läuft auf dem Nightly-Kanal 9.3.0.dev3649, verfügbar ist dev3655 — sechs Commits ohne Release-Notes, dazu sagt die Quelle nichts Belastbares.",
+          "einordnung": "Music Assistant zuerst: das betrifft die Multiroom-Wiedergabe im Haus. ConnectLife ist der Gewinn für die Klimaanlage im Wohnzimmer — die Heizleistung in Watt ist die Zahl, die für die Auslegung der künftigen Wärmepumpe zählt. Beides braucht einen Add-on-Neustart.",
           "quellen": [
             {
-              "name": "paperless-ngx v3.5.1 Release Notes",
-              "url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.5.1"
+              "name": "Music Assistant 2.10.13 Release Notes",
+              "url": "https://github.com/music-assistant/server/releases/tag/2.10.13"
+            },
+            {
+              "name": "ConnectLife HA v1.1.0 Release Notes",
+              "url": "https://github.com/oyvindwe/connectlife-ha/releases/tag/v1.1.0"
             }
           ]
         },
         {
-          "titel": "⚠️ omnivoice-Container seit fünf Wochen gestoppt",
-          "aufmacher": "Der Docker-Container omnivoice steht auf der Synology seit rund fünf Wochen auf „exited“ mit Code 137.",
-          "fakten": "Exit-Code 137 heißt: der Prozess wurde zwangsbeendet, typisch bei Speicherdruck (OOM). Der zweite gestoppte Container, firecrawl-starter-monitor-db-init, ist ein einmaliger Init-Job und unauffällig.",
-          "einordnung": "Damit fehlt die lokale TTS-Kette. Vor einem Neustart das Speicherlimit prüfen, sonst wiederholt sich der Kill. Ich warte auf Freigabe.",
-          "quellen": []
+          "titel": "Hermes Agent zieht in Microsoft Teams ein",
+          "aufmacher": "Nous Research bringt den Open-Source-Agenten Hermes Agent als Enterprise-Variante in Microsoft Teams — Mitarbeiter können Finanzanalysen, Dokumententwürfe oder Posteingang direkt im Chat abgeben.",
+          "fakten": "Die Agenten laufen laut Nous Research in Azure Container Apps Sandboxes, also isolierten MicroVMs. Neu ist „Collective Wisdom“: Hermes macht aus erfolgreichen Lösungswegen automatisch Skills aus Beschreibung und Code, die Mitarbeiter nach Prüfung für ihr Team freigeben — das Wissen bleibt im Unternehmen und fließt nicht ins Training eines KI-Anbieters. Nous Research gehört zum Portfolio von M12, dem Wagniskapitalfonds von Microsoft; laut eigenen Angaben ist Hermes der meistgenutzte offene Agent auf OpenRouter mit fast zwei Billionen verarbeiteten Token pro Tag. Die Desktop-App steht im Microsoft Store.",
+          "einordnung": "Das ist die Funktion, die hier schon läuft: Skills als wiederverwendbare Lösungswege. Interessant ist weniger Teams als der Beleg, dass der Unterbau trägt — und die Frage, ob „Collective Wisdom“ irgendwann meinen lokalen Skill-Bestand ersetzt. Antwort: nein, so lange die Daten im Haus bleiben sollen.",
+          "quellen": [
+            {
+              "name": "the-decoder.de, 20.11.2026",
+              "url": "https://the-decoder.de/hermes-beliebter-open-source-agent-zieht-in-microsoft-teams-ein/"
+            },
+            {
+              "name": "Nous Research, Hermes Enterprise in Microsoft Teams",
+              "url": "https://nousresearch.com/hermes-enterprise-in-microsoft-teams"
+            }
+          ]
         }
       ]
     },
@@ -178,20 +183,11 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Humanoide Roboter erstmals in deutschen Shops bestellbar — Haushaltshelfer weiterhin nicht",
-          "aufmacher": "Seit November 2026 führen deutsche Händler Unitree-Humanoide mit Euro-Preis und Lieferzeit; der günstigste, R1 Air, kostet 5.799 Euro.",
-          "fakten": "Bei Joybuy kosten R1 Air 5.799 Euro, R1 6.898,99 Euro, R1 EDU 13.599 Euro und G1 16.999 Euro; reichelt listet sieben R1-Ausführungen von 9.930 bis 33.200 Euro, Funduino den R1 ab 9.996 Euro. MediaMarkt führt den R1 EDU als Marktplatzangebot für 13.099 Euro (rot) und 13.599 Euro (weiß) mit Lieferung am 23./24. November, dazu den AGIBOT X2 für 25.999 Euro ab Januar 2027. Ein humanoider Haushaltsroboter mit Deutschland-Lieferung bleibt nicht bestellbar: 1X NEO weiter 20.000 Dollar oder 499 Dollar im Monat, nur USA.",
-          "einordnung": "Für den Haushalt nichts, für den Spieltrieb eine Option — der Preisrutsch bei Entwickler-Hardware zeigt aber, wohin die Reise 2027 geht. Ein echter Haushaltshelfer bleibt ein Zehn-Jahres-Thema.",
-          "quellen": [
-            {
-              "name": "drohnen.de, Kaufübersicht Stand 11.11.2026",
-              "url": "https://www.drohnen.de/97662/humanoide-roboter-kaufen/"
-            },
-            {
-              "name": "MediaMarkt, Kategorie Humanoide Roboter",
-              "url": "https://www.mediamarkt.de/de/category/humanoide-roboter-9102.html"
-            }
-          ]
+          "titel": "Haushaltsroboter: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     },
@@ -199,20 +195,11 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Telekom steigt mit 100 Millionen Euro bei Mistral AI ein",
-          "aufmacher": "Der T.Capital Tech Fund der Deutschen Telekom hat 100 Millionen Euro in die Series-D-Runde von Mistral AI investiert.",
-          "fakten": "Die Beteiligung vom 19.11.2026 ist laut Telekom der erste Schritt zu einer strategischen Partnerschaft: Die souveräne Infrastruktur des Konzerns, darunter die neu eröffnete KI-Fabrik in München, soll mit Mistrals Modellen und Unternehmenssoftware für Industrie, Behörden und regulierte Branchen zusammengeführt werden. Mistral hat parallel einen Standort in München eröffnet; T.Capital verwaltet mehr als 2 Milliarden Euro. Angaben zu Bewertung und Gesamtvolumen der Runde machte die Telekom nicht, die Aktie gab zeitweise 0,8 Prozent auf 26,12 Euro nach.",
-          "einordnung": "Erstmals ein deutscher DAX-Konzern als Ankerinvestor der europäischen KI — für die Souveränitätsfrage relevanter als jede Bewertungszahl: Rechenkapazität und Vertrieb kommen aus Bonn, die Modelle aus Paris. Aleph Alpha und Black Forest Labs: nichts Neues.",
-          "quellen": [
-            {
-              "name": "Deutsche Telekom, Medieninformation 19.11.2026",
-              "url": "https://www.telekom.com/de/newsroom/aktuelles/medieninformationen/2026/11/deutsche-telekom-staerkt-souveraene-ki-in-deutschland"
-            },
-            {
-              "name": "aktiencheck.de, 19.11.2026",
-              "url": "https://aktiencheck.de/artikel/deutsche-telekom-aktie-100-millionen-euro-fuer-mistral-ai-telekom-setzt-auf"
-            }
-          ]
+          "titel": "Deutsche/europäische KI: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     }
