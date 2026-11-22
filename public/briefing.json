@@ -1,14 +1,14 @@
 {
-  "datum": "Samstag, 21.11.2026",
+  "datum": "Sonntag, 22.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "9 °C · Regen 4 % · UV 1,6",
-          "aufmacher": "☁️ Bedeckt, aber trocken: Höchstwert 9 °C, Tief 1,8 °C, aktuell 3,2 °C.",
-          "fakten": "Die Regenwahrscheinlichkeit liegt bei 4 Prozent, der UV-Index bei 1,6 — unkritisch. Es bleibt den ganzen Tag bedeckt, kaum Sonne.",
-          "einordnung": "Gute Bedingungen für Arbeiten an der Fassade oder im Heizungskeller; die PV-Anlage bleibt bei geschlossener Wolkendecke ertragsarm.",
+          "titel": "1 °C · Regen 0 % · UV 1,3",
+          "aufmacher": "☁️ bedeckt, aber trocken — tagsüber bis 7,3 °C, früh nur 0,7 °C.",
+          "fakten": "Kein Niederschlag zu erwarten, UV-Index 1,3 (niedrig). Die Temperatur steigt im Tagesverlauf deutlich, in den Morgenstunden bleibt es frostnah.",
+          "einordnung": "Trüb, aber brauchbar — guter Tag für Arbeiten an der Hülle statt im Garten. Die PV-Anlage bleibt bei geschlossener Wolkendecke ertragsarm.",
           "quellen": []
         }
       ]
@@ -18,21 +18,28 @@
       "artikel": [
         {
           "titel": "22.11.2026 00:00: Martin Wilberg hat Geburtstag",
-          "aufmacher": "Sonntag, 22. November — Geburtstag Martin Wilberg.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "22.11.2026 00:00: Jahrestag Martin Wilberg",
-          "aufmacher": "Sonntag, 22. November — Jahrestag, gleicher Kalendereintrag.",
+          "aufmacher": "Sonntag, 22. November — Geburtstag, ganztägig im Kalender.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
         },
         {
           "titel": "23.11.2026 15:00: KGG – Krankengymnastik am Gerät (Luisa Köhn)",
-          "aufmacher": "Montag, 23. November, 15 Uhr — Krankengymnastik am Gerät.",
+          "aufmacher": "Montag, 15:00 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "25.11.2026 09:00: Quixx-Meeting",
+          "aufmacher": "Mittwoch, 09:00 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "25.11.2026 15:00: KGG – Krankengymnastik am Gerät (Melvin)",
+          "aufmacher": "Mittwoch, 15:00 Uhr.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -43,38 +50,34 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf verhängt Haushaltssperre bis Ende 2027 — 40 Millionen Euro fehlen",
-          "aufmacher": "Troisdorf hat mit sofortiger Wirkung eine Haushaltssperre für 2026 und 2027 erlassen; das Defizit im Jahresabschluss 2026 wächst auf rund 40 Millionen Euro.",
-          "fakten": "Auslöser ist ein Einbruch der Gewerbesteuer: Stadtkämmerin Sabine Wendt beziffert die Mindererträge auf rund 16 Millionen Euro, das Gesamtdefizit steigt damit von den im Sommer veranschlagten Werten auf etwa 40 Millionen Euro — die größte Kommune des Rhein-Sieg-Kreises mit rund 70.000 Einwohnern. Bis Ende 2027 sind keine neuen Investitionen und keine neuen Stellen möglich. Der Rat hatte den Doppelhaushalt erst im August beschlossen. Im Rat ist ein offener Streit entbrannt: FDP/UWG und Bürgermeister Alexander Biber sehen Kreis, Landschaftsverband, Bund und Land in der Pflicht, SPD und Grüne verweisen auch auf hausgemachte Probleme. Die Grünen beziffern die zusätzliche Belastung aus der Kreisumlage auf rund 25 Millionen Euro über vier Jahre, wirksam ab 2027. Leistungskürzungen sowie steigende Steuern, Gebühren und Entgelte sind laut Kämmerin möglich.",
-          "einordnung": "Für Vermieter heißt das: kommunale Gebühren und Grundsteuer-Hebesätze werden zum Risiko im Cashflow, nicht die Miete. Wer 2027 einen Bauantrag oder eine Erschließungsmaßnahme in Troisdorf plant, sollte mit längeren Bearbeitungszeiten rechnen — Investitionen sind gesperrt. Für Quixx24 ist die Gewerbesteuer-Klage der eigentliche Punkt: der Einbruch trifft die Stadt, nicht die Firma.",
+          "titel": "Troisdorf rechnet die Straßenreinigung neu ab — künftig pro Frontmeter",
+          "aufmacher": "Zum 1. Januar 2027 gilt in Troisdorf eine neue Straßenreinigungs- und Gebührensatzung: mehr ganzjährige Reinigung, neue Gebührensätze, neue Pflichten für Anlieger.",
+          "fakten": "Straßen, die bisher nur im Laubkehrdienst liefen (Anfang Oktober bis Mitte Dezember), werden ab 2027 ganzjährig einmal pro Woche gekehrt. Auch Straßen in den Industriegebieten kommen neu in die Reinigungsklasse S 2. Die Jahresgebühr je Frontmeter beträgt 2,60 Euro (S 2), 2,44 Euro (W 1), 2,62 Euro (W 2) und 36,30 Euro (F 1). Neu ist außerdem, dass die Reinigung der Parkbuchten in den Klassen S 2, W 1 und W 2 auf die Anlieger übergeht — samt Winterwartung der Gehwege.",
+          "einordnung": "Für Moselstraße und jedes MFH heißt das: Grundbesitzabgaben nachrechnen und Winterdienst sauber in Betriebskosten und Mietvertrag abbilden. Bei 20 Metern Frontlänge sind es je nach Klasse rund 49 bis 52 Euro im Jahr — kein Drama, aber ein Posten, der in der Nebenkostenabrechnung auftauchen muss.",
           "quellen": [
             {
-              "name": "Rundschau Online, Streit um 40 Millionen Euro (20.11.2026)",
-              "url": "https://www.rundschau-online.de/region/rhein-sieg/siegburg/troisdorf-haushaltssperre-loest-streit-um-40-millionen-euro-aus-1-1419535"
+              "name": "Stadt Troisdorf – Ganzjährige Reinigung und angepasste Gebühren (17.11.2026)",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/ganzjaehrige-reinigung-und-angepasste-gebuehren"
             },
             {
-              "name": "Rundblick Troisdorf, Biber: Handlungsfähigkeit sichern (20.11.2026)",
-              "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3179404-biber-handlungsfaehigkeit-sichern/"
-            },
-            {
-              "name": "General-Anzeiger, Troisdorfer Finanzkrise (15.11.2026)",
-              "url": "https://ga.de/region/sieg-und-rhein/troisdorf/troisdorf-das-steckt-hinter-der-staedtischen-finanzkrise_aid-158338449"
+              "name": "troisdorf-lokal.de – Straßenreinigung 2027: Gebühren und Pflichten",
+              "url": "https://troisdorf-lokal.de/strassenreinigung-troisdorf-2027-gebuehren-pflichten"
             }
           ]
         },
         {
-          "titel": "Hochwasser: Zehn Wege in Troisdorf-West und Müllekoven gesperrt",
-          "aufmacher": "Steigende Pegel an Sieg und Agger — die Stadt Troisdorf hat zehn Zugänge zu Geh- und Radwegen vorsorglich sperren lassen, mindestens bis Montag, 23. November.",
-          "fakten": "Betroffen sind Absperrstellen im Bereich Troisdorf-West und in Müllekoven; die Zugänge sind mit Absperranlagen gesichert. Teilweise stehen die Wege bereits unter Wasser. Eine Verlängerung über Montag hinaus ist je nach Pegelentwicklung möglich. Auch Sankt Augustin hat den Weg an der Sieg zwischen Buisdorf und Mülldorf gesperrt.",
-          "einordnung": "Für Kontrollgänge an Objekten nahe der Sieg-Aue: Zufahrten prüfen, Kellerlichtschächte und Rückstauklappen im Blick behalten. Die Sperrungen betreffen keine Straßen — der Verkehr läuft.",
+          "titel": "Zehnte Orange Bank in Eschmar eingeweiht — Montag folgt Troisdorf-West",
+          "aufmacher": "Troisdorf setzt sein Zeichen gegen Gewalt an Frauen in immer mehr Stadtteile: In Eschmar steht die zehnte Bank, am Montag kommt die elfte dazu.",
+          "fakten": "Gestaltet wurde die Bank an der Kapellenstraße/Ecke Menzelstraße von Schülerinnen und Schülern der Gertrud-Koch-Gesamtschule. Nach der Einweihung in Troisdorf-West am Montag stehen die Bänke in zehn der zwölf Stadtteile. Jede Bank trägt eine Plakette mit QR-Code, der zu Beratungs- und Hilfsangeboten führt. Hintergrund sind die Troisdorfer Aktionstage gegen Gewalt an Frauen, die bis zum 25. November laufen.",
+          "einordnung": "Regional notiert. Der 25. November ist der Internationale Tag gegen Gewalt an Frauen — an dem Tag fahren in Troisdorf mehrere Institutionen eine gemeinsame Aktion.",
           "quellen": [
             {
-              "name": "Stadt Troisdorf, Pressemeldung 20.11.2026",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/stadt-troisdorf-sperrt-geh-und-radwege-wegen-steigender-pegelstaende/"
+              "name": "Stadt Troisdorf – Zehnte Orange Bank eingeweiht (20.11.2026)",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/zehnte-orange-bank-in-troisdorf-eingeweiht"
             },
             {
-              "name": "Radio Bonn/Rhein-Sieg, 20.11.2026",
-              "url": "https://www.radiobonn.de/artikel/hochwasser-troisdorf-und-sankt-augustin-sperren-wege-2812293"
+              "name": "WDR – Troisdorf kämpft gegen Gewalt gegen Frauen",
+              "url": "https://www1.wdr.de/nrw/rheinland/rhein-sieg-kreis/troisdorf-aktionen-gegen-gewalt-an-frauen-100.html"
             }
           ]
         }
@@ -84,22 +87,34 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bei 4,11 Prozent — Bundesanleihe gibt nach, der Druck lässt kurzfristig nach",
-          "aufmacher": "Für zehn Jahre Zinsbindung liegt der beste Effektivzins am 21. November bei 4,11 Prozent (4,01 Prozent Sollzins); bei 80 Prozent Beleihung sind es 4,17 Prozent.",
-          "fakten": "Die Zinskurve bleibt steil: 5 Jahre 4,24 Prozent effektiv, 15 Jahre 4,26 Prozent, 20 Jahre 4,35 Prozent, 30 Jahre 4,56 Prozent. Seit Juli 2026 sind die Bauzinsen um rund 0,8 Prozentpunkte gestiegen, mit Jahreshoch im September. Der Dr. Klein-Expertenrat erwartet bis Jahresende stabile bis leicht steigende Sätze und einen Korridor von 4,0 bis 4,5 Prozent für zehnjährige Darlehen. Am 20. November fiel die Rendite zehnjähriger Bundesanleihen von 3,410 auf 3,298 Prozent, weil Anleger nach dem Kursrutsch am Aktienmarkt in Staatsanleihen flüchteten. Die EZB hält den Einlagesatz bei 2,50 Prozent, nächster Entscheid am 17. Dezember.",
-          "einordnung": "Die rund elf Basispunkte weniger bei der Bundesanleihe sind kein Zinsfenster, aber ein Signal: Wenn die Flucht in Anleihen anhält, kommen die Bauzinsen von den 4,5 Prozent wieder weg. Bei maximalem Hebel — nur Kaufnebenkosten aus Eigenkapital — entscheidet jeder Zehntelpunkt über rund 100 Euro im Monat je 100.000 Euro Darlehen. Wer jetzt kauft, sollte ein Forward-Darlehen prüfen, statt auf fallende Zinsen zu warten.",
+          "titel": "Baugenehmigungen brechen um 14,8 Prozent ein — der Neubau ist das Sorgenkind",
+          "aufmacher": "Im September 2026 wurden in Deutschland nur 20.800 Wohnungen genehmigt — 14,8 Prozent weniger als im Vorjahresmonat.",
+          "fakten": "Im Neubau sank die Zahl um 19,9 Prozent auf 16.800 Wohnungen, 4.200 weniger als im September 2025. Das Statistische Bundesamt weist darauf hin, dass der Rückgang auch am sehr hohen Vorjahresmonat liegt. Genehmigungen sind der Frühindikator für das, was 18 bis 24 Monate später auf den Markt kommt.",
+          "einordnung": "Wenig Neubau heißt: Das Angebot bleibt knapp, Mieten und Bestandswerte halten — gut für den Cashflow der Bestände, schlecht für jeden Zukauf. Für Fix&Flip zählt weiter der Einkaufspreis, nicht die Genehmigungsstatistik; die Konkurrenz um sanierungsfähige Objekte wird aber nicht kleiner.",
           "quellen": [
             {
-              "name": "Dr. Klein, Bauzinsen aktuell (Stand 21.11.2026)",
-              "url": "https://www.drklein.de/aktuelle-bauzinsen.html"
+              "name": "Destatis – Baugenehmigungen für Wohnungen im September 2026 (18.11.2026)",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_402_3111.html"
             },
             {
-              "name": "finanzierung-mit-kopf.de, Bauzinsen 21.11.2026",
-              "url": "https://finanzierung-mit-kopf.de/aktuelle-zinsen-baufinanzierung/"
+              "name": "aktiencheck.de – 20.800 Wohnungen, minus 14,8 Prozent",
+              "url": "https://aktiencheck.de/artikel/baugenehmigungen-im-september-20800-wohnungen-minus-148-prozent-bleibt-die"
+            }
+          ]
+        },
+        {
+          "titel": "Mietrecht II kann noch 2026 kommen — und trifft möblierte Kurzzeitvermietung",
+          "aufmacher": "Das Bundesjustizministerium sagt, ein Gesetzentwurf zu möblierten Wohnungen und Kurzzeitvermietungen könne noch in diesem Jahr vom Bundestag beschlossen werden.",
+          "fakten": "Auf der Regierungspressekonferenz am 6. November erklärte das BMJV, der Gesetzentwurf befinde sich im parlamentarischen Verfahren; Kern seien das für die Mietpreisbremse sehr relevante Thema möblierter Wohnungen und gleichzeitig der Kurzzeitvermietungen. Beides könne der Bundestag noch 2026 beschließen. Zugleich wies das Ministerium ein hessisches Urteil zur Mietpreisbremse zurück: Das Bundesgesetz zur Verlängerung bis 2029 sei wirksam, in Hessen sei eine Landesverordnung gescheitert.",
+          "einordnung": "Das ist der Knackpunkt für das Business-Apartment-Modell: Wird die möblierte Vermietung schärfer an die Mietpreisbremse gebunden, schrumpft der Möblierungszuschlag — und damit die Rechnung, mit der sich Kurzzeitvermietung gegen Dauerwohnen rechnet. Vor dem nächsten Ankauf lohnt der Blick auf den dann gültigen Text, nicht auf den heutigen.",
+          "quellen": [
+            {
+              "name": "Bundesregierung – Regierungspressekonferenz vom 6. November 2026",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/regierungspressekonferenz-vom-6-november-2026-2460276"
             },
             {
-              "name": "n-tv, Der Börsen-Tag 20.11.2026 (Rendite Bundesanleihe)",
-              "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Freitag-20-November-2026-id31556555.html"
+              "name": "Haufe – Mietrechtsreform 2026: Was jetzt noch verhandelt wird",
+              "url": "https://www.haufe.de/immobilien/wirtschaft-politik/mietrechtsreform-2026_84342_684280.html"
             }
           ]
         }
@@ -109,22 +124,38 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Anthropic sammelt 81,3 Milliarden Dollar ein — und die Aktie fällt am zweiten Tag um zehn Prozent",
-          "aufmacher": "Der Börsengang von Anthropic ist der größte der Geschichte, doch die Begeisterung hielt keinen Tag: Am Freitag verlor die Aktie mehr als zehn Prozent und der DAX schloss mit 24.803 Punkten so tief wie zuletzt Anfang Oktober.",
-          "fakten": "Anthropic nahm mit der Emission 81,3 Milliarden Dollar ein — mehr als SpaceX je bei einem Börsengang erlöste. Der Ausgabepreis lag bei 83 Dollar, die Aktie eröffnete bei 111,50 Dollar und schloss den ersten Handelstag bei 97,17 Dollar, ein Plus von rund 17 Prozent. Am zweiten Tag fiel sie unter 90 Dollar, fast auf den Ausgabepreis. Der DAX verlor am Freitag 2,6 Prozent oder 661 Punkte auf 24.803 Zähler und damit in der Woche 7,3 Prozent; das Jahresplus schrumpfte von rund zehn auf etwa zwei Prozent. Der Nasdaq gab rund ein Prozent nach, der Dow notierte 0,4 Prozent höher bei 49.339 Punkten. Die Rendite zehnjähriger Bundesanleihen sank auf 3,298 Prozent, Bitcoin fiel erstmals seit Juli unter 60.000 Dollar. Laut Bank of America haben institutionelle Anleger ihre Technologie-Übergewichtung so stark reduziert wie seit 2006 nicht mehr.",
-          "einordnung": "Ein Rekord-IPO, der die Stimmung nicht dreht, ist ein Bewertungssignal, kein Wachstumssignal: Die KI-Erzählung trägt keine beliebigen Kurse mehr. Für das Depot heißt das nicht aussteigen, sondern Gewichte prüfen — und die Kursruhe bei Anleihen ist derzeit der nützlichere Teil des Portfolios. Nach Abgeltungssteuer ohne Kirchensteuer bleiben von Gewinnen 73,625 Prozent.",
+          "titel": "DAX unter 25.000 — und Asiens Börsen fallen mit",
+          "aufmacher": "Der deutsche Leitindex hat die Marke von 25.000 Punkten verloren; vom Rekord vor zehn Tagen sind es rund acht Prozent Abstand.",
+          "fakten": "Die L&S-Indikation für den DAX notierte zum Handelsschluss am Freitag bei 24.772 Punkten, ein Minus von 1,83 Prozent; die Xetra-Schlusskurse der Anbieter liegen bei rund 24.800. Am 12. November hatte der Index erstmals die 27.000-Punkte-Marke erreicht — vom Hoch sind es rund 2.230 Punkte oder 8,25 Prozent. Belastet wurde der Handel von schwachen Technologiewerten. Auch in Asien ging es abwärts: Der Nikkei schloss auf einem Siebenmonatstief, die Wall Street gab nach.",
+          "einordnung": "Für einen Sparplan ist das Rauschen. Für Nachkäufe aus der Liquidität ist es die erste ernsthafte Korrektur seit dem Rekord — Anlass, Tranchen zu staffeln statt alles auf einmal zu setzen. Die Zinsseite bleibt davon unberührt.",
           "quellen": [
             {
-              "name": "tagesschau.de, Marktbericht 20.11.2026",
-              "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-102.html"
+              "name": "finanzen.at – L&S-DAX schlussendlich im Minus (20.11.2026)",
+              "url": "https://www.finanzen.at/nachrichten/aktien/boerse-frankfurt-in-rot-lus-dax-schlussendlich-im-minus-1036788512"
             },
             {
-              "name": "tagesschau.de, Anthropic-Aktie stürzt ab (20.11.2026)",
-              "url": "https://www.tagesschau.de/wirtschaft/boerse/anthropic-ki-tech-werte-boersen-100.html"
+              "name": "Handelsblatt – Dax startet im Minus und könnte unter 25.000 Punkte rutschen",
+              "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-startet-im-minus-und-koennte-unter-25.000-punkte-rutschen/100271464.html"
             },
             {
-              "name": "n-tv, Der Börsen-Tag 20.11.2026",
-              "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Freitag-20-November-2026-id31556555.html"
+              "name": "CapTrader – DAX erreicht erstmals 27.000 Punkte (12.11.2026)",
+              "url": "https://www.captrader.com/research/dax-erreicht-erstmals-27-000-punkte-marke"
+            }
+          ]
+        },
+        {
+          "titel": "Inflation bei 2,8 Prozent — aber Energie verteuert sich um 12,7 Prozent",
+          "aufmacher": "Die Teuerung in Deutschland ist im Oktober auf 2,8 Prozent gefallen; der Treiber bleibt die Energie, nicht der Konsum.",
+          "fakten": "Das Statistische Bundesamt hat die Zahlen am 17. November korrigiert bestätigt: Verbraucherpreisindex plus 2,8 Prozent zum Vorjahresmonat, zum Vormonat minus 0,1 Prozent, harmonisierter Index plus 2,9 Prozent. Energieprodukte kosteten 12,7 Prozent mehr als im Oktober 2025, leichtes Heizöl 84,5 Prozent mehr, Kraftstoffe 28,9 Prozent mehr. Strom war dagegen 5,2 Prozent billiger, Erdgas ohne Betriebskosten 1,2 Prozent billiger. Der seit 1. Oktober geltende Tankrabatt hat die Teuerung gedämpft. Die EZB beließ am 29. Oktober alle drei Leitzinsen unverändert, der Einlagesatz bleibt bei 2,50 Prozent; nächste Sitzung ist der 17. Dezember.",
+          "einordnung": "Solange die EZB wartet, bleiben die Bauzinsen im Korridor um 4,1 bis 4,3 Prozent — Zuwarten verbilligt die Anschlussfinanzierung nicht. Wer 2026 noch eine Zusage braucht, sollte sie vor dem 17. Dezember sichern; die nächste Gelegenheit ist danach erst im Februar.",
+          "quellen": [
+            {
+              "name": "Destatis – Inflationsrate im Oktober 2026 bei +2,8 % (korrigiert 17.11.2026)",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_392_611.html"
+            },
+            {
+              "name": "EZB – Geldpolitische Beschlüsse vom 29. Oktober 2026",
+              "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.de.html"
             }
           ]
         }
@@ -134,48 +165,35 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "⚠️ Synology DSM: kritisches Sicherheitsupdate wartet — CVSS 8,1",
-          "aufmacher": "Das DSM920+ hat Update 1 installiert, Update 2 (7.4.1-90080-2) ist verfügbar — und es schließt eine kritische Lücke im NGINX-HTTP/2-Stack.",
-          "fakten": "Synology führt die Lücke als CVE-2026-123007 mit CVSS-Basisscore 8,1 und dem Schweregrad „Critical“. Ursache ist ein Out-of-bounds-Write im Flow-Control-Fenster von NGINX bei HTTP/2-Verkehr: Angreifer können aus der Ferne beliebige Dateien lesen und schreiben, Denial-of-Service auslösen und bei deaktiviertem ASLR Code ausführen. Betroffen sind alle DSM-7.4-Installationen; die Behebung ist Update 2 vom 20. November. Als Übergangslösung nennt Synology das Abschalten von HTTP/2 unter Systemsteuerung → Netzwerk → Konnektivität. Parallel listet Synology unter SA-26:21 eine weitere kritische DSM-Lücke.",
-          "einordnung": "Nicht warten: Der NAS hält Vault, Paperless und die Docker-Container — ein erfolgreicher Datei-Schreibzugriff trifft alle drei. Ich fasse das Update ohne deine Freigabe nicht an. Wenn du es freigibst, sichere ich vorher die Konfiguration und prüfe danach, ob Docker und die Freigaben sauber hochkommen.",
+          "titel": "⚠️ Synology hat Update 2 veröffentlicht — der Patch für die NGINX- und OAuth-Lücke liegt bereit",
+          "aufmacher": "DSM 7.4.1-90080 Update 2 ist seit dem 20. November verfügbar; es schließt SA-26:20 und SA-26:21. Installiert ist auf dem NAS noch Update 1.",
+          "fakten": "Synology führt in den Release Notes zu Update 2 zwei Advisories: SA-26:20 (NGINX-HTTP/2, CVE-2026-123007) und SA-26:21 (OAuth-API, CVE-2026-120382, kritisch — laut Sicherheitsanalysten mit beliebigem Dateizugriff). Die Fix-Version für DSM ist explizit 7.4.1-90080-2, für DSM 7.3 lautet sie 7.3.2-86009-6. Das Update startet das NAS neu. Nicht enthalten ist eine neue Apache-Version: Apache 2.4.63 bleibt anfällig für CVE-2026-119618.",
+          "einordnung": "Das ist der wichtigste offene Punkt im Heimnetz — der NAS hält Vault, Paperless und die Container. Ich fasse den Neustart ohne deine Freigabe nicht an. Wenn du ihn freigibst: Konfiguration sichern, Update einspielen, danach prüfen, ob Docker und die Freigaben sauber hochkommen.",
           "quellen": [
             {
-              "name": "Synology Security Advisory SA-26:20 (NGINX2Root)",
-              "url": "https://www.synology.com/en-us/security/advisory/Synology_SA_26_20"
+              "name": "Synology Advisory SA-26:21 (CVE-2026-120382)",
+              "url": "https://www.synology.com/en-global/security/advisory/Synology_SA_26_21"
+            },
+            {
+              "name": "Synology Advisory SA-26:20 (CVE-2026-123007)",
+              "url": "https://www.synology.com/en-global/security/advisory/Synology_SA_26_20"
+            },
+            {
+              "name": "Marius Hosting – DSM 7.4.1-90080 Update 2 released (20.11.2026)",
+              "url": "https://mariushosting.com/synology-dsm-7-4-1-90080-2-update-2-released"
+            },
+            {
+              "name": "SOC Prime – CVE-2026-120382",
+              "url": "https://socprime.com/blog/cve-2026-120382-critical-synology-dsm-oauth-flaw-enables-arbitrary-file-access"
             }
           ]
         },
         {
-          "titel": "Music Assistant 2.10.13 und ConnectLife 1.1.0 — zwei Add-ons mit echtem Nutzen",
-          "aufmacher": "Music Assistant springt auf 2.10.13, die ConnectLife-Integration auf 1.1.0 — beide Updates beheben Fehler, die im Alltag auffallen.",
-          "fakten": "Music Assistant 2.10.13 (Release 21.11., 00:11 Uhr) behebt, dass AirPlay-1-Lautsprecher nach einem Neustart der Live-Eingabe stumm bleiben, erhält das Albumbild bei AirPlay über Titelwechsel desselben Albums, repariert den ARD-Sounds-Login samt Abo- und Fortschrittssync und härtet die Prüfung der Rückkehr-URL im Auth-Callback. ConnectLife 1.1.0 (20.11.) bringt Push-Updates: Änderungen aus der App, vom Gerät und Befehlsfolgen erscheinen binnen Sekunden statt binnen einer Minute in Home Assistant; dazu sechs neue Geräte und die korrekte Einheit Watt für Klima-Heiz- und Kühlleistung. Der Home Assistant MCP Server läuft auf dem Nightly-Kanal 9.3.0.dev3649, verfügbar ist dev3655 — sechs Commits ohne Release-Notes, dazu sagt die Quelle nichts Belastbares.",
-          "einordnung": "Music Assistant zuerst: das betrifft die Multiroom-Wiedergabe im Haus. ConnectLife ist der Gewinn für die Klimaanlage im Wohnzimmer — die Heizleistung in Watt ist die Zahl, die für die Auslegung der künftigen Wärmepumpe zählt. Beides braucht einen Add-on-Neustart.",
-          "quellen": [
-            {
-              "name": "Music Assistant 2.10.13 Release Notes",
-              "url": "https://github.com/music-assistant/server/releases/tag/2.10.13"
-            },
-            {
-              "name": "ConnectLife HA v1.1.0 Release Notes",
-              "url": "https://github.com/oyvindwe/connectlife-ha/releases/tag/v1.1.0"
-            }
-          ]
-        },
-        {
-          "titel": "Hermes Agent zieht in Microsoft Teams ein",
-          "aufmacher": "Nous Research bringt den Open-Source-Agenten Hermes Agent als Enterprise-Variante in Microsoft Teams — Mitarbeiter können Finanzanalysen, Dokumententwürfe oder Posteingang direkt im Chat abgeben.",
-          "fakten": "Die Agenten laufen laut Nous Research in Azure Container Apps Sandboxes, also isolierten MicroVMs. Neu ist „Collective Wisdom“: Hermes macht aus erfolgreichen Lösungswegen automatisch Skills aus Beschreibung und Code, die Mitarbeiter nach Prüfung für ihr Team freigeben — das Wissen bleibt im Unternehmen und fließt nicht ins Training eines KI-Anbieters. Nous Research gehört zum Portfolio von M12, dem Wagniskapitalfonds von Microsoft; laut eigenen Angaben ist Hermes der meistgenutzte offene Agent auf OpenRouter mit fast zwei Billionen verarbeiteten Token pro Tag. Die Desktop-App steht im Microsoft Store.",
-          "einordnung": "Das ist die Funktion, die hier schon läuft: Skills als wiederverwendbare Lösungswege. Interessant ist weniger Teams als der Beleg, dass der Unterbau trägt — und die Frage, ob „Collective Wisdom“ irgendwann meinen lokalen Skill-Bestand ersetzt. Antwort: nein, so lange die Daten im Haus bleiben sollen.",
-          "quellen": [
-            {
-              "name": "the-decoder.de, 20.11.2026",
-              "url": "https://the-decoder.de/hermes-beliebter-open-source-agent-zieht-in-microsoft-teams-ein/"
-            },
-            {
-              "name": "Nous Research, Hermes Enterprise in Microsoft Teams",
-              "url": "https://nousresearch.com/hermes-enterprise-in-microsoft-teams"
-            }
-          ]
+          "titel": "Home Assistant: von 101 Update-Entitäten stehen nur zwei offen",
+          "aufmacher": "Der Rest des Hauses ist aktuell — offen sind nur das NAS und ein Dev-Build des MCP-Servers.",
+          "fakten": "Der Home Assistant MCP Server (Dev) springt von 9.3.0.dev3659 auf 9.3.0.dev3674; Auto-Update ist aktiv, Release Notes liefert die Entität nicht. Core, Supervisor, Betriebssystem, Music Assistant, Zigbee2MQTT, Frigate sowie alle Shelly- und UniFi-Firmwarestände stehen auf \"off\". Der Watchdog meldet zusätzlich einen gestoppten Docker-Container; Docker selbst läuft nicht auf diesem Host, die Meldung kommt über die Container-API des NAS.",
+          "einordnung": "Der Dev-Sprung ist ein Build-Wechsel ohne erkennbare Neuerung — den nehme ich beim nächsten Wartungsfenster mit, nicht heute. Der gestoppte Container gehört auf dieselbe Liste wie das DSM-Update.",
+          "quellen": []
         }
       ]
     },
@@ -195,11 +213,32 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Deutsche/europäische KI: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "Telekom steckt 100 Millionen Euro in Mistral",
+          "aufmacher": "Der T.Capital Tech Fund der Deutschen Telekom hat sich am 19. November mit 100 Millionen Euro an der Series-D-Runde von Mistral AI beteiligt.",
+          "fakten": "T.Capital verwaltet laut Telekom mehr als 2 Milliarden Euro und investiert in Unternehmen, die strategische Prioritäten des Konzerns stützen. Die Telekom nennt die Beteiligung einen ersten Schritt, um souveräne Infrastruktur, Kundenbeziehungen und Mistrals Modelle zusammenzubringen — Zielgruppe sind deutsche Unternehmen und öffentliche Stellen, besonders in industriellen und regulierten Branchen. Das Wall Street Journal beziffert den Betrag mit 110 Millionen US-Dollar. Mistral hatte im September einen deutschen Standort eröffnet.",
+          "einordnung": "Damit bekommt die europäische KI eine Vertriebsstraße über einen DAX-Konzern mit Zugang zu Behörden und Industrie — der Punkt, an dem Datenschutzargumente zu Aufträgen werden. Für Quixx24 und Kundendaten bleibt es dabei: lokal oder EU-Region, nicht US-Cloud.",
+          "quellen": [
+            {
+              "name": "Deutsche Telekom – T.Capital investiert 100 Mio. Euro in Mistral (19.11.2026)",
+              "url": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/deutsche-telekom-advances-sovereign-ai-in-germany"
+            },
+            {
+              "name": "Wall Street Journal – Telekom-Fonds investiert 110 Mio. USD in Mistral AI",
+              "url": "https://www.wsj.com/business/deutsche-telekoms-tech-fund-invests-110-million-in-mistral-ai-13597573"
+            }
+          ]
+        },
+        {
+          "titel": "Nvidia-Forscher: Lange Kontextfenster sind oft Geldverschwendung",
+          "aufmacher": "Ein Forschungsteam von Nvidia hält die riesigen Kontextfenster heutiger Sprachmodelle für überdimensioniert — Zwischenzusammenfassungen und gezieltes Nachschlagen lieferten in Tests meist gleichwertige Ergebnisse zu einem Bruchteil der Kosten.",
+          "fakten": "Der Beitrag erschien am 21. November bei the-decoder.de. Zum Vergleich: GPT-4 startete im März 2023 mit 8.192 Token Kontext, aktuelle Modelle verarbeiten rund eine Million Token, etwa das 120-Fache. Das Team schlägt zusätzlich einen Modelltyp vor, der mit kurzen Notizzetteln statt langem Kontext arbeitet. Stichprobe, Testaufbau und die konkreten Kostenersparnisse stehen hinter der Bezahlschranke und sind hier nicht verifiziert.",
+          "einordnung": "Genau das Prinzip, nach dem der Vault-Index arbeitet: erst suchen, dann lesen — nicht das ganze Archiv in den Kontext schieben. Die Meldung bestätigt den lokalen RAG-Weg, auch wenn die Zahlen noch fehlen.",
+          "quellen": [
+            {
+              "name": "the-decoder.de – Gezielte Suche schlägt vollständiges Einlesen (21.11.2026)",
+              "url": "https://the-decoder.de/gezielte-suche-schlaegt-das-vollstaendige-einlesen-langer-dokumente-in-ki-modelle"
+            }
+          ]
         }
       ]
     }
