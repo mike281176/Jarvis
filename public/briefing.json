@@ -1,13 +1,13 @@
 {
-  "datum": "Montag, 23.11.2026",
+  "datum": "Dienstag, 24.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "0,7 °C · Regen 0 % · UV 1,6",
-          "aufmacher": "☁️ bedeckt — Tageshöchstwert 2,9 °C, Tiefstwert -1,8 °C.",
-          "fakten": "Trocken bei 0 % Regenwahrscheinlichkeit, UV-Index 1,6 (niedrig).",
+          "titel": "-2,0 °C · Regen 0 % · UV 1,5",
+          "aufmacher": "☀️ klar und frostig, Tageshöchstwert 4,1 °C, Tiefstwert -2,2 °C.",
+          "fakten": "Trocken bei 0 % Regenwahrscheinlichkeit, UV-Index 1,5 (niedrig).",
           "einordnung": "",
           "quellen": []
         }
@@ -17,13 +17,6 @@
       "titel": "📅 Termine",
       "artikel": [
         {
-          "titel": "23.11.2026 15:00: KGG – Krankengymnastik am Gerät (Luisa Köhn)",
-          "aufmacher": "Heute Nachmittag.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
           "titel": "25.11.2026 09:00: Quixx-Meeting",
           "aufmacher": "Mittwochvormittag.",
           "fakten": "",
@@ -32,7 +25,14 @@
         },
         {
           "titel": "25.11.2026 15:00: KGG – Krankengymnastik am Gerät (Melvin)",
-          "aufmacher": "Mittwoch-Nachmittag, direkt nach dem Quixx-Meeting.",
+          "aufmacher": "Mittwoch-Nachmittag, nach dem Quixx-Meeting.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        },
+        {
+          "titel": "28.11.2026 00:00: Geburtstag Mike",
+          "aufmacher": "Samstag, ganztägig eingetragen.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -43,25 +43,22 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf verhängt Haushaltssperre — Grundsteuer B soll auf 790 Punkte steigen",
-          "aufmacher": "Die Stadt Troisdorf hat mit sofortiger Wirkung eine Haushaltssperre für 2026 und 2027 verhängt; für das laufende Jahr fehlen voraussichtlich rund 40 Millionen Euro.",
-          "fakten": "Allein aus der nach unten korrigierten Gewerbesteuerprognose ergibt sich ein Fehlbetrag von rund 25 Millionen Euro, weitere rund 15 Millionen Euro kommen aus Nachveranlagungen des Finanzamts — gesunkene Unternehmensgewinne führen gleichzeitig zu Rückerstattungen und zu geringeren Vorauszahlungen. Die Kämmerin schlägt vor, den Hebesatz der Grundsteuer B ab 2027 von 640 auf 790 Punkte anzuheben; Haupt- und Finanzausschuss beraten am 24. November, der Rat entscheidet am 8. Dezember. Mit 640 Punkten liegt Troisdorf im Vergleich der Kommunen im Rhein-Sieg-Kreis einschließlich Bonn derzeit am unteren Ende.",
-          "einordnung": "Für Mikes Objekte in Troisdorf bedeutet 790 Punkte rund 23 Prozent mehr Grundsteuer-B-Messbetrag — bei vermieteten Flächen über die Nebenkosten weitgehend umlagefähig, bei Leerstand und Eigennutzung volle eigene Last. Steigende Standortabgaben drücken zugleich die erzielbaren Kaufpreise, relevant für Ankauf und Exit-Bewertung.",
+          "titel": "Warnstreik in Troisdorf: 670 Mannstaedt-Beschäftigte — heute Kundgebung",
+          "aufmacher": "Seit Montag 14 Uhr streiken rund 670 Beschäftigte der Mannstaedt GmbH in Troisdorf; für heute ist eine große Kundgebung angekündigt, zu der sich die Streikenden aus dem Rhein-Sieg-Kreis in Troisdorf versammeln.",
+          "fakten": "Die IG Metall fordert 5 Prozent mehr Geld, die Arbeitgeber boten bislang 1,3 Prozent — aus Sicht der Gewerkschaft nicht verhandlungsfähig. Neben Mannstaedt sollen weitere Betriebe dazukommen, darunter Walterscheid, Reifenhäuser und ZF Friedrichshafen. Der Ausstand läuft als 24-Stunden-Warnstreik und begann am Montag um 14 Uhr.",
+          "einordnung": "Troisdorf ist Industriestandort mit Zulieferern — ein längerer Arbeitskampf trifft Beschäftigte und eine Stadtkasse, die ohnehin ein Defizit von rund 40 Millionen Euro verkraften muss.",
           "quellen": [
-            {"name": "Rundblick Troisdorf", "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3179404-biber-handlungsfaehigkeit-sichern"},
-            {"name": "Kölner Stadt-Anzeiger", "url": "https://www.ksta.de/region/rhein-sieg-bonn/siegburg/troisdorf-haushaltssperre-loest-streit-um-40-millionen-euro-aus-1-1419535"},
-            {"name": "SPD Troisdorf", "url": "https://www.spd-troisdorf.de/2026/11/22/haushaltssperre-gerechte-verteilung-finanzielle-lasten-grundsteuer-gewerbesteuer"},
-            {"name": "treffpunkt-troisdorf", "url": "https://treffpunkt-troisdorf.de/haushaltssperre"}
+            {"name": "Radio Bonn/Rhein-Sieg, 23.11.2026", "url": "https://www.radiobonn.de/artikel/ig-metall-24-stunden-warnstreik-im-rhein-sieg-kreis-2813468"},
+            {"name": "Honnef heute, Abendbrief 23.11.2026", "url": "https://honnef-heute.de/guten-abend-bad-honnef"}
           ]
         },
         {
-          "titel": "Hochwasser: Troisdorf sperrt zehn Zugänge an Sieg und Agger",
-          "aufmacher": "Wegen steigender Pegelstände von Sieg und Agger hat die Stadt Troisdorf vorsorglich zehn Zugänge zu den Uferwegen gesperrt.",
-          "fakten": "Teilweise waren die Geh- und Radwege bereits überflutet. Auch Sankt Augustin sperrte Uferwege, dort ist der Sieg-Weg zwischen Buisdorf und Mülldorf nicht nutzbar.",
-          "einordnung": "Kein Handlungsbedarf am Haus, aber die Uferwege bleiben gesperrt — für Runden mit Elvis die Straßenseite wählen.",
+          "titel": "Bombendrohungen an Hunderten Schulen — auch Nordrhein-Westfalen betroffen",
+          "aufmacher": "Bundesweit haben Hunderte Schulen Drohschreiben per E-Mail erhalten, auch in Nordrhein-Westfalen; die Polizei sieht bislang keine Hinweise auf eine konkrete Gefahr.",
+          "fakten": "Allein in Baden-Württemberg gingen Drohungen an mehr als 450 Schulen ein, Sachsen-Anhalt meldet 260 betroffene Schulen, in Hamburg waren es bis zum Mittag zwölf. Einzelne Schulen wurden vorsorglich geräumt; ermittelt wird wegen Störung des öffentlichen Friedens durch die Androhung von Straftaten.",
+          "einordnung": "Die Welle reiht sich in eine hohe abstrakte Gefährdungslage; ähnliche Drohungen gab es zuvor in Italien, Großbritannien, Irland und Dänemark. Schulen sind angehalten, die Polizei einzuschalten und Anzeige zu erstatten.",
           "quellen": [
-            {"name": "Stadt Troisdorf", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/stadt-troisdorf-sperrt-geh-und-radwege-wegen-steigender-pegelstaende"},
-            {"name": "Radio Bonn", "url": "https://www.radiobonn.de/artikel/hochwasser-troisdorf-und-sankt-augustin-sperren-wege-2812293"}
+            {"name": "tagesschau.de, 23.11.2026", "url": "https://www.tagesschau.de/inland/gesellschaft/bombendrohungen-schulen-102.html"}
           ]
         }
       ]
@@ -70,13 +67,14 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzinsen bleiben bei 4,3 Prozent — die Kaufpreise geben nach",
-          "aufmacher": "Für zehnjährige Darlehen liegen die Bauzinsen aktuell bei 4,3 Prozent, und das Interhyp-Bankenpanel erwartet kurzfristig eine Seitwärtsbewegung.",
-          "fakten": "In der Zinstabelle für den Zeitraum 9. bis 15. November kosten zehn Jahre bei unter 70 Prozent Beleihung 4,01 Prozent, bei 80 Prozent 4,09 Prozent und über 90 Prozent 4,35 Prozent; fünf Jahre liegen zwischen 4,07 und 4,49 Prozent. 80 Prozent der befragten Institute rechnen kurzfristig mit gleichbleibenden Zinsen, mittelfristig erwarten 60 Prozent fallende und 40 Prozent steigende Konditionen. Finanztip nennt aktuell Einstiegssätze ab etwa 4,2 Prozent. Laut Interhyp haben die Immobilienpreise den dritten Monat in Folge nachgegeben, was Verhandlungsspielraum bei Bestandsobjekten schafft.",
-          "einordnung": "Zwischen 70 und über 90 Prozent Beleihung liegen 0,34 Prozentpunkte — pro 100.000 Euro Darlehen rund 28 Euro Mehrkosten im Monat. Wer nur die Kaufnebenkosten aus Eigenkapital stemmt, finanziert im teuren LTV-Bereich und sollte diese Mehrkosten fest einrechnen.",
+          "titel": "Bauzins bei 4,06 Prozent — der Dezember-Termin der EZB wird zum Risiko",
+          "aufmacher": "Der günstigste zehnjährige Bauzins liegt am 24.11. bei 4,02 Prozent Sollzins und 4,12 Prozent effektiv bei 60 Prozent Beleihung; im Regelfall mit 80 Prozent Beleihung sind es 4,06 Prozent Soll und 4,17 Prozent effektiv.",
+          "fakten": "Dr. Klein beziffert die Top-Konditionen aktuell mit einer Spanne von 4,07 bis 4,54 Prozent, je nach Beleihung und Zinsbindung. Die Rendite zehnjähriger Bundesanleihen liegt bei 3,28 Prozent und damit auf erhöhtem Niveau, weil die EZB für Dezember eine Leitzinserhöhung vorbereitet.",
+          "einordnung": "Für MFH-Kalkulationen zählt der Effektivzins: Bei 1,5 Millionen Euro Darlehen kostet jeder Zehntelprozentpunkt rund 1.500 Euro Zins im Jahr. Wer heuer noch kauft, sollte lange Zinsbindung prüfen, statt auf fallende Zinsen zu warten.",
           "quellen": [
-            {"name": "Interhyp: Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen"},
-            {"name": "Finanztip: Bauzinsen", "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen"}
+            {"name": "finanzierung-mit-kopf.de, Stand 24.11.2026", "url": "https://finanzierung-mit-kopf.de/aktuelle-zinsen-baufinanzierung"},
+            {"name": "Dr. Klein, Bauzinsen aktuell", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"},
+            {"name": "Kreissparkasse Köln, Börse kompakt 23.11.2026", "url": "https://www.ksk-koeln.de/content/dam/myif/kskkoeln/work/dokumente/pdf/vertragsbedingungen/wp/261123-boerse-kompakt.pdf"}
           ]
         }
       ]
@@ -85,13 +83,14 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "Zwei Zahlen entscheiden die Börsenwoche: ifo und US-Inflation",
-          "aufmacher": "Nach der schwächsten Börsenwoche seit April 2025 stehen am Dienstag das ifo-Geschäftsklima und am Mittwoch die US-PCE-Kernrate im Fokus; Thanksgiving verkürzt den US-Handel.",
-          "fakten": "Der DAX schloss am Freitag bei 24.802,78 Punkten und verlor in der Woche 7,3 Prozent, der S&P 500 gab 8,6 Prozent auf 6.910,39 Punkte ab, der Nasdaq Composite 10,0 Prozent. Nvidia verlor fast 23 Prozent auf 125,53 Dollar, der VIX stieg über 30 Punkte, die Rendite zehnjähriger US-Anleihen fiel von 5,15 auf 4,92 Prozent. Für das ifo-Geschäftsklima im November erwarten Volkswirte 90,5 Punkte nach 90,2 im Vormonat, Veröffentlichung am Dienstag um 10 Uhr; die PCE-Kernrate folgt am Mittwoch um 14:30 Uhr (Konsens plus 0,3 Prozent zum Vormonat). Fed-Sitzung am 8./9. Dezember, EZB am 16./17. Dezember.",
-          "einordnung": "Die gefallene US-Rendite ist der interessantere Teil des Ausverkaufs: Sie stützt Pfandbrief- und damit Bauzinsen. Für den MFH-Ankauf heißt das, die Cash-Reserve nicht in den KI-Ausverkauf zu werfen, sondern auf ein mögliches Zinsfenster im ersten Quartal zu warten.",
+          "titel": "EZB und Fed drehen im Dezember — Leitzins bleibt bis dahin bei 2,50 Prozent",
+          "aufmacher": "Die EZB hat den Einlagensatz am 29. Oktober bei 2,50 Prozent belassen; am Markt gilt nun für Dezember sowohl bei EZB als auch bei US-Notenbank ein Schritt um 25 Basispunkte als wahrscheinlich.",
+          "fakten": "Der Hauptrefinanzierungssatz liegt bei 2,65 Prozent, die Spitzenrefinanzierungsfazilität bei 2,90 Prozent. Treiber ist die Energiepreisentwicklung: Die Inflationsrate im Euroraum stieg im Oktober auf 4 Prozent. Der DAX stand am 23.11. bei 24.803 Punkten, die zehnjährige Bundesanleihe rentiert bei 3,28 Prozent.",
+          "einordnung": "Steigende Kurzfristzinsen verteuern Anschlussfinanzierungen. Für geplante MFH-Käufe heißt das: Zinsbindung heute sichern statt auf Entspannung zu setzen.",
           "quellen": [
-            {"name": "finanzimpuls: Börsenwoche 23.–27.11.", "url": "https://finanzimpuls.net/boersenwoche-ausblick-thanksgiving-pce-inflation-dell-november-2026"},
-            {"name": "ifo Institut: Geschäftsklima November 2026", "url": "https://www.ifo.de/ifo-geschaeftsklima-deutschland-november-2026"}
+            {"name": "EZB, Geldpolitische Beschlüsse 29.10.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.de.html"},
+            {"name": "Morningstar, Eurozone-Inflation Oktober 2026", "url": "https://global.morningstar.com/de/wirtschaft/inflation-der-eurozone-steigt-auf-4-prozent-ezb-zinserhhung-im-dezember-erwartet"},
+            {"name": "Kreissparkasse Köln, Börse kompakt 23.11.2026", "url": "https://www.ksk-koeln.de/content/dam/myif/kskkoeln/work/dokumente/pdf/vertragsbedingungen/wp/261123-boerse-kompakt.pdf"}
           ]
         }
       ]
@@ -100,23 +99,30 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "ConnectLife 1.1.1 korrigiert die Leistungswerte der Klimaanlagen",
-          "aufmacher": "Die ConnectLife-Integration steht in Version 1.1.1 bereit und behebt die falsche Leistungsanzeige der Klimaanlagen: Statt Watt zeigte Home Assistant BTU/h, und ältere Langzeitstatistiken lagen bei etwa 29 Prozent des echten Werts.",
-          "fakten": "Der Fix betrifft Gerätecode 009 (Klimaanlagen); eine einmalige Migration stellt die Anzeige auf Watt um — außer man hat die Einheit selbst gewählt — und korrigiert die Statistik. Werte, die zwischen dem Update auf 1.1.0 und 1.1.1 aufgezeichnet wurden, liegen rund 3,4-fach zu hoch. Zusätzlich wird die Variationstemperatur des Hisense-Kühlschranks RQ5P470SEIE sichtbar statt versteckt geführt. Status: Von 101 Update-Entitäten ist ConnectLife die einzige offene Integration; Synology DSM 7.4.1-90080 Update 2 (Critical-Patch für CVE-2026-120382 im OAuth-API) ist weiterhin nicht installiert. Docker auf dem NAS: 28 Container, 27 laufen — der einzige gestoppte ist der einmalige Firecrawl-Datenbank-Init (Exited 0, seit sieben Wochen), kein Fehlerbild.",
-          "einordnung": "Für die Wohnzimmer-Klimaanlage heißt das: Verbrauchswerte werden nach dem Update erstmals vergleichbar mit den Stromzählern, und die PV-Eigenverbrauchsrechnung stimmt wieder.",
+          "titel": "Synology DSM: Update 2 schließt zwei Sicherheitslücken",
+          "aufmacher": "Für das NAS steht ein Sicherheitsupdate bereit: DSM 7.4.1-90080 Update 2 vom 20.11.2026 behebt zwei Schwachstellen (Synology-SA-26:20 und SA-26:21) und startet das Gerät dabei neu.",
+          "fakten": "Installiert ist Update 1, verfügbar ist Update 2 mit dem Hinweis „Important Update“; Synology verteilt es regional gestaffelt. Home-Assistant-seitig sind von 101 Update-Entitäten nur noch drei offen: dieses DSM-Update, Home Connect Alt 1.5.1 und der Dev-Build des HA-MCP-Servers, der sich selbst aktualisiert.",
+          "einordnung": "Das NAS trägt Vault und Backups — das Update ist wichtig, der Neustart sollte aber bewusst gelegt werden, weil Docker-Dienste und Freigaben kurz ausfallen.",
           "quellen": [
-            {"name": "GitHub: ConnectLife HA v1.1.1", "url": "https://github.com/oyvindwe/connectlife-ha/releases/tag/v1.1.1"}
+            {"name": "Synology Release Notes DSM 7.4.1-90080-2", "url": "https://update.synology.com/autoupdate/whatsnew.php?model=DS920%2B&update_version=90080-2"}
           ]
         },
         {
-          "titel": "KI-Lieferkette: Zwei Millionen Testanfragen legen Datenabfluss offen",
-          "aufmacher": "Sicherheitsforscher von Dragos haben mit rund zwei Millionen präparierten Anfragen über fünf Monate mindestens drei kompromittierte KI-Anbieter gefunden; OpenRouter entfernte daraufhin drei Anbieter und entzog 125 Endpunkten die Zulassung für Null-Datenhaltung.",
-          "fakten": "Beim größten Vorfall wurden Hunderte AWS-Schlüssel abgegriffen, teils aus Anfragen, die der Anbieter vor der Verarbeitung abgelehnt hatte; Angreifer testeten die Schlüssel innerhalb von Stunden und versuchten, sich dauerhaften Zugang zu sichern. Marktplatz-Wiederverkäufer mussten keine Lücke ausnutzen — es reichte, ein Modell am billigsten anzubieten und die Protokollierung einzuschalten. Datenschutzeinstellungen wie „Zero Data Retention“ wurden vielfach ignoriert: Ein chinesisches Labor rief geheime Test-URLs aus mehr als der Hälfte aller Anfragen ab, ein US-Anbieter noch mehr als zwei Monate nach einer einzelnen Anfrage. Die Forscher raten, den Datenweg selbst zu wählen und eigene Canary-Tokens einzusetzen.",
-          "einordnung": "Jede Zwischenstation zwischen Hermes und einem Cloud-Modell kann mitlesen — betroffen sind Router und Marktplätze, nicht nur die Modellanbieter. Konsequenz: keine Zugangsdaten oder Steuerunterlagen in Prompts, Modellrouten bewusst wählen, Anbieter mit eigener Infrastruktur bevorzugen.",
+          "titel": "Home Connect Alt 1.5.1 korrigiert Zeitversatz bei Hausgeräten",
+          "aufmacher": "Die Integration Home Connect Alt ist in Version 1.5.1 erschienen; sie verhindert, dass Zeit-Entitäten zwischen zwei Zeitupdates auseinanderlaufen.",
+          "fakten": "Das Release vom 23.11.2026 enthält neben der Zeit-Korrektur Aufräumarbeiten an Typannotationen und Korrekturen an der Entwicklungsumgebung. Automatische Aktualisierung ist nicht aktiv, installiert ist 1.5.0.",
+          "einordnung": "Klein, aber relevant für Zeitpläne: falsch laufende Zeitstempel verfälschen Start- und Endzeiten von Spülmaschine und Co. in Automationen.",
           "quellen": [
-            {"name": "the-decoder", "url": "https://the-decoder.de/sicherheitsforscher-schicken-zwei-millionen-ki-anfragen-mit-gefaelschten-zugangsdaten-und-decken-gravierende-luecken-auf"},
-            {"name": "Dragos", "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"},
-            {"name": "OpenRouter", "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers"}
+            {"name": "GitHub ekutner/home-connect-hass, Release 1.5.1", "url": "https://github.com/ekutner/home-connect-hass/releases/tag/1.5.1"}
+          ]
+        },
+        {
+          "titel": "OpenAI tauscht Standardmodell: GPT-6.2 Sol",
+          "aufmacher": "OpenAI rollt GPT-6.2 Sol weltweit als neues Standardmodell im Chat-Bereich von ChatGPT aus.",
+          "fakten": "In internen Tests verbessert sich das Bildverständnis von 47,4 auf 71,7 Prozent, bei schwierigen Anweisungen steigt die Trefferquote auf 78,1 Prozent; auch die Einhaltung von Sicherheitsrichtlinien legt zu.",
+          "einordnung": "Für die Modellwahl im Hintergrund relevant: besseres Bildverständnis hilft bei Dokumenten- und Screenshot-Auswertung, sobald das Modell über die API verfügbar ist.",
+          "quellen": [
+            {"name": "the-decoder.de, 23.11.2026", "url": "https://the-decoder.de/grosses-chatgpt-update-bessere-antworten-sicherere-gespraeche-und-genauere-websuche"}
           ]
         }
       ]
@@ -137,13 +143,42 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Mistral eröffnet Asien-Pazifik-Zentrale in Singapur",
-          "aufmacher": "Mistral hat am 20. November 2026 sein Regional-Hauptquartier für Asien-Pazifik in Singapur eröffnet und will dort bis 2027 rund 200 Mitarbeiter beschäftigen — mehr als doppelt so viele wie heute in der Region.",
-          "fakten": "Das Büro wird als Erweiterung des Science Hub geführt und entwickelt Modelle für öffentlichen Sektor, Hochtechnik-Industrie und Robotik. Es baut auf Kooperationen mit Singapurs Verteidigungsministerium, DSTA und DSO National Laboratories (seit März 2025) sowie der Sicherheitsbehörde HTX auf, für die das Sprachmodell Phoenix entstand. Die Eröffnung folgt knapp zwei Monate nach dem Münchener Hub vom 28. September; zuletzt investierte die Deutsche Telekom 100 Millionen Euro. Für die Robotik verweist das Unternehmen auf Robostral Navigate, ein Modell mit 8 Milliarden Parametern, das einen Roboter aus einer einzigen Farbkamera und einer Sprachanweisung navigiert.",
-          "einordnung": "Der europäische Champion verkauft Souveränität inzwischen exportfähig — ein Signal, dass Mistral nicht von EU-Förderung lebt, sondern von Regierungsaufträgen weltweit. Für die deutsche Standortpolitik ist das die unangenehme Variante: Die Wertschöpfung wandert dorthin, wo die Aufträge sind.",
+          "titel": "Deutsche/europäische KI: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
+        }
+      ]
+    },
+    {
+      "titel": "Ausland über Deutschland",
+      "artikel": [
+        {
+          "titel": "🇮🇹 Italien: Rom und Berlin bündeln die Industriepolitik",
+          "aufmacher": "Italien und Deutschland haben in Berlin eine gemeinsame Erklärung zur Industriepolitik unterzeichnet — beim dritten deutsch-italienischen Ministerforum zwischen dem italienischen Wirtschaftsministerium (Mimit) und dem Bundeswirtschaftsministerium.",
+          "fakten": "Italiens Industrieminister Adolfo Urso verweist darauf, dass beide Länder zusammen rund 40 Prozent der europäischen Industrie stellen, und fordert weniger Bürokratie, mehr Technologieoffenheit bei der Dekarbonisierung sowie eine Reform des ETS. Vereinbart sind zudem mehr Zusammenarbeit bei kritischen Rohstoffen, Mikroelektronik und KI-Projekten (IPCEI).",
+          "einordnung": "Für Deutschland relevant, weil Berlin industriepolitisch näher an Rom rückt und beim Verbrenner-Aus sowie bei ETS-Entlastungen gemeinsame Sache macht.",
           "quellen": [
-            {"name": "ActuIA", "url": "https://www.actuia.com/en/news/mistral-ai-makes-singapore-its-asia-pacific-hq-and-research-hub/"},
-            {"name": "CRN Asia", "url": "https://www.crnasia.com/news/2026/artificial-intelligence/mistral-ai-opens-singapore-headquarters-for-asia-pacific"}
+            {"name": "🇮🇹 Italien — Teleborsa/ANSA, 23.11.2026 (Original: „Imprese e competitività, Italia e Germania insieme per le riforme UE“)", "url": "https://teleborsa.ansa.it/notiziario/economia/imprese-e-competitivita-italia-e-germania-insieme-per-le-riforme-ue"}
+          ]
+        },
+        {
+          "titel": "🇳🇱 Niederlande: Erste CDU-Ministerin für Prüfung eines AfD-Verbots",
+          "aufmacher": "NOS meldet, dass sich erstmals eine CDU-Ministerin dafür ausspricht, ein Verbot der AfD prüfen zu lassen: Bildungs- und Familienministerin Karin Prien, die in den Niederlanden geboren wurde.",
+          "fakten": "Anlass sind die Schulpläne der AfD in Sachsen-Anhalt, wo die Partei möglicherweise regieren wird; Prien verweist auf einen Gastbeitrag in der FAZ. CDU/CSU hatte ein Parteiverbot bislang abgelehnt, SPD und linke Parteien fordern es seit längerem.",
+          "einordnung": "Für Deutschland relevant, weil der Verbotsstreit damit in der Regierungspartei selbst angekommen ist — wenige Wochen nach den AfD-Wahlerfolgen im Osten.",
+          "quellen": [
+            {"name": "🇳🇱 Niederlande — NOS, 23.11.2026 (Original: „Duitse minister van Onderwijs (CDU) spreekt zich uit voor AfD-verbod“)", "url": "https://nos.nl/artikel/2640689-duitse-minister-van-onderwijs-cdu-spreekt-zich-uit-voor-afd-verbod"}
+          ]
+        },
+        {
+          "titel": "🇫🇷 Frankreich: Paris schaut auf die deutsche Schuldenbremse",
+          "aufmacher": "franceinfo erklärt französischen Lesern die deutsche Schuldenbremse, weil Emmanuel Macron im Januar eine „règle d'or“ in die Verfassung schreiben will und sich dafür am deutschen Modell orientiert.",
+          "fakten": "Deutschland verankerte 2009, dass der Bund jährlich höchstens 0,35 Prozent des BIP neu Schulden machen darf, schrittweise bis 2016; ab 2020 galt die Regel auch für die Länder. Merz lockerte sie 2025: Verteidigungsausgaben über 1 Prozent des BIP fallen heraus, dazu kommt ein Sonderfonds von 500 Milliarden Euro über zwölf Jahre, davon 100 Milliarden für Klimaschutz — im ersten Halbjahr 2026 lag das deutsche Defizit erstmals seit Corona wieder über 3 Prozent.",
+          "einordnung": "Frankreich diskutiert ein Instrument, das Deutschland selbst gerade aufweicht; für die Bauzinsen heißt das mittelfristig eher Aufwärtsdruck.",
+          "quellen": [
+            {"name": "🇫🇷 Frankreich — franceinfo, 23.11.2026 (Original: „En Allemagne, «le frein à la dette» est inscrit dans la Constitution depuis 2009 mais a été assoupli“)", "url": "https://www.franceinfo.fr/monde/europe/allemagne/en-allemagne-le-frein-a-la-dette-est-inscrit-dans-la-constitution-depuis-2009-mais-a-ete-assoupli_8296088.html"}
           ]
         }
       ]
