@@ -1,13 +1,13 @@
 {
-  "datum": "Dienstag, 24.11.2026",
+  "datum": "Mittwoch, 25.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "-2,0 °C · Regen 0 % · UV 1,5",
-          "aufmacher": "☀️ klar und frostig, Tageshöchstwert 4,1 °C, Tiefstwert -2,2 °C.",
-          "fakten": "Trocken bei 0 % Regenwahrscheinlichkeit, UV-Index 1,5 (niedrig).",
+          "titel": "-1,0 °C · Regen 0 % · UV 1,4",
+          "aufmacher": "☁️ bedeckt, frostiger Start mit Tageshöchstwert 5,1 °C und Tiefstwert -1,1 °C.",
+          "fakten": "Trocken bei 0 % Regenwahrscheinlichkeit, UV-Index 1,4 (niedrig). In der Nacht bleibt es bei oder unter 0 °C — Glätte auf Brücken und Radwegen ist wahrscheinlich.",
           "einordnung": "",
           "quellen": []
         }
@@ -25,7 +25,7 @@
         },
         {
           "titel": "25.11.2026 15:00: KGG – Krankengymnastik am Gerät (Melvin)",
-          "aufmacher": "Mittwoch-Nachmittag, nach dem Quixx-Meeting.",
+          "aufmacher": "Mittwochnachmittag, nach dem Quixx-Meeting.",
           "fakten": "",
           "einordnung": "",
           "quellen": []
@@ -43,22 +43,23 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Warnstreik in Troisdorf: 670 Mannstaedt-Beschäftigte — heute Kundgebung",
-          "aufmacher": "Seit Montag 14 Uhr streiken rund 670 Beschäftigte der Mannstaedt GmbH in Troisdorf; für heute ist eine große Kundgebung angekündigt, zu der sich die Streikenden aus dem Rhein-Sieg-Kreis in Troisdorf versammeln.",
-          "fakten": "Die IG Metall fordert 5 Prozent mehr Geld, die Arbeitgeber boten bislang 1,3 Prozent — aus Sicht der Gewerkschaft nicht verhandlungsfähig. Neben Mannstaedt sollen weitere Betriebe dazukommen, darunter Walterscheid, Reifenhäuser und ZF Friedrichshafen. Der Ausstand läuft als 24-Stunden-Warnstreik und begann am Montag um 14 Uhr.",
-          "einordnung": "Troisdorf ist Industriestandort mit Zulieferern — ein längerer Arbeitskampf trifft Beschäftigte und eine Stadtkasse, die ohnehin ein Defizit von rund 40 Millionen Euro verkraften muss.",
+          "titel": "Troisdorf: Ex-Forum am Ursulaplatz soll Wohnquartier werden — Bebauungsplan T 222 startet",
+          "aufmacher": "Der Ausschuss für Stadtentwicklung, Klimaschutz und Denkmalschutz hat am 19. November 2026 die Aufstellung des Bebauungsplans T 222 beschlossen — auf dem 7.500 Quadratmeter großen Ex-Forum-Grundstück sollen Wohnungen über Gewerbeflächen entstehen.",
+          "fakten": "Das Areal zwischen Ursulaplatz, Kölner Straße, Kirchstraße und Klevstraße soll ein urbanes Quartier werden: Wohnungen in den Obergeschossen, Einzelhandel, Gastronomie und Dienstleistungen im Erdgeschoss. Das Verfahren läuft im beschleunigten Innenentwicklungs-Verfahren nach § 13a Baugesetzbuch. Als Nächstes folgt ein städtebaulicher Vorentwurf, danach die frühzeitige Beteiligung der Öffentlichkeit; Festsetzungen zu Verkehr, Lärm sowie Dach- und Fassadenbegrünung stehen noch aus.",
+          "einordnung": "Wohnraum über Läden ist in Troisdorf das Modell, das Mietfläche ohne neues Baugebiet schafft — für MFH-Vergleiche im Umfeld lohnt es, das Mietniveau dieses Quartiers im Auge zu behalten, sobald der Vorentwurf Zahlen nennt.",
           "quellen": [
-            {"name": "Radio Bonn/Rhein-Sieg, 23.11.2026", "url": "https://www.radiobonn.de/artikel/ig-metall-24-stunden-warnstreik-im-rhein-sieg-kreis-2813468"},
-            {"name": "Honnef heute, Abendbrief 23.11.2026", "url": "https://honnef-heute.de/guten-abend-bad-honnef"}
+            {"name": "Stadt Troisdorf, Pressemeldung 24.11.2026", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/ehemaliger-forum-standort-erhaelt-neue-zukunft/"},
+            {"name": "Erftkreis News, 24.11.2026", "url": "https://www.erftkreis-news.de/politik-wirtschaft/forum-standort-troisdorf-erhalt-neue-nutzung-erftkreis-news"}
           ]
         },
         {
-          "titel": "Bombendrohungen an Hunderten Schulen — auch Nordrhein-Westfalen betroffen",
-          "aufmacher": "Bundesweit haben Hunderte Schulen Drohschreiben per E-Mail erhalten, auch in Nordrhein-Westfalen; die Polizei sieht bislang keine Hinweise auf eine konkrete Gefahr.",
-          "fakten": "Allein in Baden-Württemberg gingen Drohungen an mehr als 450 Schulen ein, Sachsen-Anhalt meldet 260 betroffene Schulen, in Hamburg waren es bis zum Mittag zwölf. Einzelne Schulen wurden vorsorglich geräumt; ermittelt wird wegen Störung des öffentlichen Friedens durch die Androhung von Straftaten.",
-          "einordnung": "Die Welle reiht sich in eine hohe abstrakte Gefährdungslage; ähnliche Drohungen gab es zuvor in Italien, Großbritannien, Irland und Dänemark. Schulen sind angehalten, die Polizei einzuschalten und Anzeige zu erstatten.",
+          "titel": "Troisdorf: Trickbetrug — Seniorin in eigener Wohnung bedrängt und bestohlen",
+          "aufmacher": "Zwei Unbekannte haben am Sonntag eine fast 90-jährige Frau in ihrer Wohnung an der Adolf-Friedrich-Straße bedrängt und ihre Geldbörse sowie Modeschmuck mitgenommen.",
+          "fakten": "Gegen 12 Uhr klingelte eine fremde Frau, drängte sich in die Wohnung im dritten Obergeschoss und bot in gebrochenem Deutsch einen Pflegedienst an; beim Wasserholen folgte sie der Seniorin in die Küche. Erst nachdem die Troisdorferin die Frau hinausgewiesen hatte, bemerkte sie eine zweite Person in der Wohnung. Aus dem Portemonnaie fehlt ein dreistelliger Bargeldbetrag; die Polizei Rhein-Sieg-Kreis sucht Zeugen unter 02241 541-3221.",
+          "einordnung": "Für vermietete Häuser mit älteren Alleinmietern ein konkreter Anlass, im Treppenhaus auf die Masche hinzuweisen — die Täter suchen genau diese Wohnungen.",
           "quellen": [
-            {"name": "tagesschau.de, 23.11.2026", "url": "https://www.tagesschau.de/inland/gesellschaft/bombendrohungen-schulen-102.html"}
+            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis (POL-SU), Presseportal", "url": "https://www.presseportal.de/blaulicht/pm/65853/6396702"},
+            {"name": "ANTENNE NRW, 24.11.2026", "url": "https://antenne.nrw/blaulicht/trickbetrug-in-troisdorf-seniorin-in-eigener-wohnung-bestohlen/"}
           ]
         }
       ]
@@ -67,14 +68,13 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzins bei 4,06 Prozent — der Dezember-Termin der EZB wird zum Risiko",
-          "aufmacher": "Der günstigste zehnjährige Bauzins liegt am 24.11. bei 4,02 Prozent Sollzins und 4,12 Prozent effektiv bei 60 Prozent Beleihung; im Regelfall mit 80 Prozent Beleihung sind es 4,06 Prozent Soll und 4,17 Prozent effektiv.",
-          "fakten": "Dr. Klein beziffert die Top-Konditionen aktuell mit einer Spanne von 4,07 bis 4,54 Prozent, je nach Beleihung und Zinsbindung. Die Rendite zehnjähriger Bundesanleihen liegt bei 3,28 Prozent und damit auf erhöhtem Niveau, weil die EZB für Dezember eine Leitzinserhöhung vorbereitet.",
-          "einordnung": "Für MFH-Kalkulationen zählt der Effektivzins: Bei 1,5 Millionen Euro Darlehen kostet jeder Zehntelprozentpunkt rund 1.500 Euro Zins im Jahr. Wer heuer noch kauft, sollte lange Zinsbindung prüfen, statt auf fallende Zinsen zu warten.",
+          "titel": "Bauzins bleibt bei gut 4 Prozent — der Verhandlungsspielraum liegt im Preis",
+          "aufmacher": "Der effektive Jahreszins für zehnjährige Darlehen liegt bei 4,04 Prozent (Beleihung unter 70 Prozent) und 4,13 Prozent (80 Prozent); Dr. Klein nennt für den 25.11. einen Topzins von 4,07 Prozent.",
+          "fakten": "Bei 15 Jahren Zinsbindung sind es 4,24 bis 4,36 Prozent effektiv, bei 20 Jahren 4,27 bis 4,35 Prozent (Interhyp-Konditionen vom 16. bis 22.11.2026). Das Interhyp-Bankenpanel erwartet kurzfristig zu 80 Prozent gleichbleibende Zinsen und mittelfristig zu 60 Prozent fallende; Commerzbank und Deutsche Bank sehen Aufwärtsrisiken. Die Kaufpreise haben laut Interhyp den dritten Monat in Folge nachgegeben.",
+          "einordnung": "Bei 4,1 Prozent Sollzins und 2 Prozent Tilgung frisst der Kapitaldienst allein 6,1 Prozent des Darlehens pro Jahr — bei 80 Prozent Beleihung müssen rund 4,9 Prozent Bruttorendite des Objekts nur für den Kredit reichen, bevor Bewirtschaftung beginnt. Da der Zins seitwärts läuft, kommt der Hebel derzeit über den Kaufpreis.",
           "quellen": [
-            {"name": "finanzierung-mit-kopf.de, Stand 24.11.2026", "url": "https://finanzierung-mit-kopf.de/aktuelle-zinsen-baufinanzierung"},
-            {"name": "Dr. Klein, Bauzinsen aktuell", "url": "https://www.drklein.de/aktuelle-bauzinsen.html"},
-            {"name": "Kreissparkasse Köln, Börse kompakt 23.11.2026", "url": "https://www.ksk-koeln.de/content/dam/myif/kskkoeln/work/dokumente/pdf/vertragsbedingungen/wp/261123-boerse-kompakt.pdf"}
+            {"name": "Interhyp: Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
+            {"name": "Dr. Klein: Zinsvergleich, Stand 25.11.2026", "url": "https://www.drklein.de/zinsvergleich.html"}
           ]
         }
       ]
@@ -83,14 +83,13 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB und Fed drehen im Dezember — Leitzins bleibt bis dahin bei 2,50 Prozent",
-          "aufmacher": "Die EZB hat den Einlagensatz am 29. Oktober bei 2,50 Prozent belassen; am Markt gilt nun für Dezember sowohl bei EZB als auch bei US-Notenbank ein Schritt um 25 Basispunkte als wahrscheinlich.",
-          "fakten": "Der Hauptrefinanzierungssatz liegt bei 2,65 Prozent, die Spitzenrefinanzierungsfazilität bei 2,90 Prozent. Treiber ist die Energiepreisentwicklung: Die Inflationsrate im Euroraum stieg im Oktober auf 4 Prozent. Der DAX stand am 23.11. bei 24.803 Punkten, die zehnjährige Bundesanleihe rentiert bei 3,28 Prozent.",
-          "einordnung": "Steigende Kurzfristzinsen verteuern Anschlussfinanzierungen. Für geplante MFH-Käufe heißt das: Zinsbindung heute sichern statt auf Entspannung zu setzen.",
+          "titel": "DAX zurück auf 25.017 Punkten — Zweifel an der Nvidia-Rally, neue US-Zölle im Gespräch",
+          "aufmacher": "Der DAX hat am Dienstag 1,3 Prozent auf 25.017 Punkte verloren, einen Tag nach dem Plus von 2,2 Prozent auf 25.337 Punkte.",
+          "fakten": "Zuvor war der Leitindex sechs Handelstage in Folge gefallen und vom Rekord bei etwas mehr als 27.000 Punkten um über acht Prozent abgerutscht. Die Aktie des KI-Anbieters Anthropic notierte erstmals unter ihrem Ausgabepreis von 83 Dollar, Infineon verlor fast zehn Prozent und erreichte ein Sieben-Monats-Tief. Der ifo-Geschäftsklimaindex stieg im November auf 90,6 Punkte (Oktober: 90,1) — der siebte Anstieg in Folge; Bundesregierung und Bundesbank trauen der Wirtschaft 2026 ein Wachstum von 1,3 Prozent zu.",
+          "einordnung": "Konjunktur und Börse laufen derzeit auseinander: Die Ifo-Reihe stützt die Vermietbarkeit von Gewerbeflächen, der KI-Ausverkauf drückt die Depots. Für Objektentscheidungen bleibt der Kaufpreis die Größe, die zählt.",
           "quellen": [
-            {"name": "EZB, Geldpolitische Beschlüsse 29.10.2026", "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.de.html"},
-            {"name": "Morningstar, Eurozone-Inflation Oktober 2026", "url": "https://global.morningstar.com/de/wirtschaft/inflation-der-eurozone-steigt-auf-4-prozent-ezb-zinserhhung-im-dezember-erwartet"},
-            {"name": "Kreissparkasse Köln, Börse kompakt 23.11.2026", "url": "https://www.ksk-koeln.de/content/dam/myif/kskkoeln/work/dokumente/pdf/vertragsbedingungen/wp/261123-boerse-kompakt.pdf"}
+            {"name": "tagesschau Marktbericht, 24.11.2026", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-102.html"},
+            {"name": "Milano Finanza, 25.11.2026", "url": "https://www.milanofinanza.it/news"}
           ]
         }
       ]
@@ -99,30 +98,21 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "Synology DSM: Update 2 schließt zwei Sicherheitslücken",
-          "aufmacher": "Für das NAS steht ein Sicherheitsupdate bereit: DSM 7.4.1-90080 Update 2 vom 20.11.2026 behebt zwei Schwachstellen (Synology-SA-26:20 und SA-26:21) und startet das Gerät dabei neu.",
-          "fakten": "Installiert ist Update 1, verfügbar ist Update 2 mit dem Hinweis „Important Update“; Synology verteilt es regional gestaffelt. Home-Assistant-seitig sind von 101 Update-Entitäten nur noch drei offen: dieses DSM-Update, Home Connect Alt 1.5.1 und der Dev-Build des HA-MCP-Servers, der sich selbst aktualisiert.",
-          "einordnung": "Das NAS trägt Vault und Backups — das Update ist wichtig, der Neustart sollte aber bewusst gelegt werden, weil Docker-Dienste und Freigaben kurz ausfallen.",
+          "titel": "HA-MCP (Dev) 9.3.0.dev3717 → dev3725: Speicher beim Logbook-Auslesen begrenzt",
+          "aufmacher": "Für den Home-Assistant-MCP-Server liegt der Dev-Build dev3725 bereit; er begrenzt den Speicherverbrauch beim Lesen des Home-Assistant-Logbooks.",
+          "fakten": "Die Vorversionen brachten einen Deep-Link auf Registerkarte und Freigabekarte im Panel (dev3723) und einen Schutz für Automations- und Skript-Rümpfe bei der Konfigurationssuche (dev3717). Auto-Update ist aktiv, der Build installiert sich selbst.",
+          "einordnung": "",
           "quellen": [
-            {"name": "Synology Release Notes DSM 7.4.1-90080-2", "url": "https://update.synology.com/autoupdate/whatsnew.php?model=DS920%2B&update_version=90080-2"}
+            {"name": "ha-mcp Releases (Dev 9.3.0.dev3725)", "url": "https://github.com/homeassistant-ai/ha-mcp/releases"}
           ]
         },
         {
-          "titel": "Home Connect Alt 1.5.1 korrigiert Zeitversatz bei Hausgeräten",
-          "aufmacher": "Die Integration Home Connect Alt ist in Version 1.5.1 erschienen; sie verhindert, dass Zeit-Entitäten zwischen zwei Zeitupdates auseinanderlaufen.",
-          "fakten": "Das Release vom 23.11.2026 enthält neben der Zeit-Korrektur Aufräumarbeiten an Typannotationen und Korrekturen an der Entwicklungsumgebung. Automatische Aktualisierung ist nicht aktiv, installiert ist 1.5.0.",
-          "einordnung": "Klein, aber relevant für Zeitpläne: falsch laufende Zeitstempel verfälschen Start- und Endzeiten von Spülmaschine und Co. in Automationen.",
+          "titel": "NAS: DSM 7.4.1-90080 Update 2 weiterhin nicht installiert",
+          "aufmacher": "Das Synology DS920+ meldet Update 2 als verfügbar, installiert ist weiterhin Update 1.",
+          "fakten": "Die Installation startet das Gerät neu; die Release Notes stehen bei Synology unter whatsnew für Modell und Version. Von 101 Update-Entitäten in Home Assistant sind damit nur noch zwei offen — dieses DSM-Update und der Dev-Build des HA-MCP-Servers.",
+          "einordnung": "",
           "quellen": [
-            {"name": "GitHub ekutner/home-connect-hass, Release 1.5.1", "url": "https://github.com/ekutner/home-connect-hass/releases/tag/1.5.1"}
-          ]
-        },
-        {
-          "titel": "OpenAI tauscht Standardmodell: GPT-6.2 Sol",
-          "aufmacher": "OpenAI rollt GPT-6.2 Sol weltweit als neues Standardmodell im Chat-Bereich von ChatGPT aus.",
-          "fakten": "In internen Tests verbessert sich das Bildverständnis von 47,4 auf 71,7 Prozent, bei schwierigen Anweisungen steigt die Trefferquote auf 78,1 Prozent; auch die Einhaltung von Sicherheitsrichtlinien legt zu.",
-          "einordnung": "Für die Modellwahl im Hintergrund relevant: besseres Bildverständnis hilft bei Dokumenten- und Screenshot-Auswertung, sobald das Modell über die API verfügbar ist.",
-          "quellen": [
-            {"name": "the-decoder.de, 23.11.2026", "url": "https://the-decoder.de/grosses-chatgpt-update-bessere-antworten-sicherere-gespraeche-und-genauere-websuche"}
+            {"name": "Synology: What's new DSM 7.4.1-90080 Update 2", "url": "http://update.synology.com/autoupdate/whatsnew.php?model=DS920%2B&update_version=90080-2"}
           ]
         }
       ]
@@ -131,11 +121,14 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "Haushaltsroboter: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "NEURA 4NE1: Preis steht — 98.000 Euro netto, Lieferung Ende 2026 geplant",
+          "aufmacher": "Der Metzingen-Humanoide 4NE1 Gen 3.5 ist mit voraussichtlich 98.000 Euro netto pro Einheit (Abnahme 1 bis 19 Stück) und 60.000 Euro ab 20 Stück gelistet.",
+          "fakten": "Die Reservierung kostet 100 Euro, ist erstattungsfähig und wird auf den Kaufpreis angerechnet; laut Reservierungsseite soll der Roboter Ende 2026 verfügbar sein, NEURA behält sich Änderungen an Hardware und Aussehen vor. Datenblatt Gen 3: 180 Zentimeter, 80 Kilogramm, 55 Freiheitsgrade, 20 Kilogramm Armlast. Der 4NE1 Mini kostet 19.999 Euro, die Pro-Version 29.999 Euro. 1X NEO bleibt bei 20.000 US-Dollar Early Access oder 499 Dollar im Monat — nach Kurs vom 24.11. rund 18.240 Euro.",
+          "einordnung": "Damit ist 4NE1 das zweite Modell mit Preis, aber weiterhin kein Haushaltshelfer: Bei 98.000 Euro netto je Einheit liegt die Amortisation über Mieteinnahmen weit jenseits jeder MFH-Rechnung. Beide Systeme bleiben Beobachtungsposten, keine Beschaffung.",
+          "quellen": [
+            {"name": "Roboterwelt: NEURA 4NE1 — Daten, Preise, Lieferstand", "url": "https://www.roboterwelt.de/magazin/w4o5/humanoide-robotik-neu-gedacht-was-4ne1-wirklich-leisten-kann"},
+            {"name": "NEURA Robotics: 4NE1 reservieren", "url": "https://neura-robotics.com/product/4ne1-reservation/"}
+          ]
         }
       ]
     },
@@ -143,11 +136,22 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Deutsche/europäische KI: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
+          "titel": "Telekom steckt 100 Millionen Euro in Mistral — gemeinsame KI für Behörden und Industrie",
+          "aufmacher": "Der T.Capital Tech Fund der Deutschen Telekom hat am 19. November 2026 100 Millionen Euro in die laufende Series D von Mistral AI investiert.",
+          "fakten": "Geplant ist eine strategische Partnerschaft, die Mistrals Modelle mit der Telekom-Infrastruktur — der Industrial AI Cloud — an deutsche Unternehmen und öffentliche Stellen bringen soll, vor allem in regulierten Branchen; Mistral betreibt seit kurzem einen Standort in München. T.Capital verwaltet über zwei Milliarden Euro. Zur Bewertung macht die Telekom keine Angabe; die Series D vom 8. September 2026 lag bei über 21 Milliarden Euro.",
+          "einordnung": "Ein französisches Modell auf deutscher Infrastruktur ist für Datenschutzfragen relevanter als ein US-Anbieter — es bleibt aber eine Cloud-Lösung, also nur mit Freigabe für sensible Daten.",
+          "quellen": [
+            {"name": "Deutsche Telekom, Media Information 19.11.2026", "url": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/deutsche-telekom-advances-sovereign-ai-in-germany"}
+          ]
+        },
+        {
+          "titel": "Aleph Alpha: Kolibri 1.1 braucht 3,4-mal weniger GPU-Zeit",
+          "aufmacher": "Sieben Wochen nach Kolibri 1.0 hat Aleph Alpha am 23. November 2026 Kolibri 1.1 veröffentlicht — Apache-2.0-Lizenz, sofort auf Hugging Face verfügbar.",
+          "fakten": "Laut Hersteller benötigt das Modell 3,4-mal weniger GPU-Zeit pro Aufgabe und erzeugt 41 Prozent weniger Ausgabe-Tokens, bei 3 Milliarden aktiven und 75 Milliarden gesamten Parametern. Es läuft auf GPUs mit 24 GB VRAM, hat ein Kontextfenster von einer Million Token und nennt Belegstellen in 89,1 Prozent der Fälle korrekt; Prompt-Injection-Abwehr 99,1 Prozent bei externen Tools, 93,2 Prozent bei Nutzereingaben. Alle Werte sind Herstellerangaben, nicht unabhängig geprüft.",
+          "einordnung": "24 GB VRAM heißt: auf einer einzelnen Mittelklasse-GPU lokal betreibbar — genau die Größenklasse, in der ein eigener Assistent ohne Cloud laufen könnte.",
+          "quellen": [
+            {"name": "Aleph Alpha, Pressemitteilung 23.11.2026", "url": "https://aleph-alpha.com/en/news/kolibri-1-1-release/"}
+          ]
         }
       ]
     },
@@ -155,30 +159,31 @@
       "titel": "Ausland über Deutschland",
       "artikel": [
         {
-          "titel": "🇮🇹 Italien: Rom und Berlin bündeln die Industriepolitik",
-          "aufmacher": "Italien und Deutschland haben in Berlin eine gemeinsame Erklärung zur Industriepolitik unterzeichnet — beim dritten deutsch-italienischen Ministerforum zwischen dem italienischen Wirtschaftsministerium (Mimit) und dem Bundeswirtschaftsministerium.",
-          "fakten": "Italiens Industrieminister Adolfo Urso verweist darauf, dass beide Länder zusammen rund 40 Prozent der europäischen Industrie stellen, und fordert weniger Bürokratie, mehr Technologieoffenheit bei der Dekarbonisierung sowie eine Reform des ETS. Vereinbart sind zudem mehr Zusammenarbeit bei kritischen Rohstoffen, Mikroelektronik und KI-Projekten (IPCEI).",
-          "einordnung": "Für Deutschland relevant, weil Berlin industriepolitisch näher an Rom rückt und beim Verbrenner-Aus sowie bei ETS-Entlastungen gemeinsame Sache macht.",
+          "titel": "🇮🇹 Italien: Ifo 90,6 — Mailand sieht Erholung ohne Breite",
+          "aufmacher": "Der ifo-Geschäftsklimaindex ist im November auf 90,6 Punkte gestiegen, nach 90,1 im Oktober, und lag über den erwarteten 90,5 Punkten.",
+          "fakten": "Teleborsa zitiert das Ifo-Institut mit „Die Erholung der deutschen Wirtschaft kommt voran, es fehlt jedoch an Breite“ und verweist auf nachgebende Erwartungen im Verarbeitenden Gewerbe sowie leicht eingetrübte Stimmung im Bau. Für Deutschland relevant, weil italienische Zulieferer direkt an der deutschen Industriekonjunktur hängen — das Bau-Minus betrifft auch deutsche Baustoff- und Heizungshersteller.",
+          "einordnung": "🇮🇹 Italien — Teleborsa, 24.11.2026 — https://www.teleborsa.it/News/2026/11/24/germania-indice-ifo-sale-leggermente-a-90-6-sopra-le-attese-45.html (Original: „Germania, indice Ifo sale leggermente a 90,6 sopra le attese“).",
           "quellen": [
-            {"name": "🇮🇹 Italien — Teleborsa/ANSA, 23.11.2026 (Original: „Imprese e competitività, Italia e Germania insieme per le riforme UE“)", "url": "https://teleborsa.ansa.it/notiziario/economia/imprese-e-competitivita-italia-e-germania-insieme-per-le-riforme-ue"}
+            {"name": "Teleborsa, 24.11.2026", "url": "https://www.teleborsa.it/News/2026/11/24/germania-indice-ifo-sale-leggermente-a-90-6-sopra-le-attese-45.html"}
           ]
         },
         {
-          "titel": "🇳🇱 Niederlande: Erste CDU-Ministerin für Prüfung eines AfD-Verbots",
-          "aufmacher": "NOS meldet, dass sich erstmals eine CDU-Ministerin dafür ausspricht, ein Verbot der AfD prüfen zu lassen: Bildungs- und Familienministerin Karin Prien, die in den Niederlanden geboren wurde.",
-          "fakten": "Anlass sind die Schulpläne der AfD in Sachsen-Anhalt, wo die Partei möglicherweise regieren wird; Prien verweist auf einen Gastbeitrag in der FAZ. CDU/CSU hatte ein Parteiverbot bislang abgelehnt, SPD und linke Parteien fordern es seit längerem.",
-          "einordnung": "Für Deutschland relevant, weil der Verbotsstreit damit in der Regierungspartei selbst angekommen ist — wenige Wochen nach den AfD-Wahlerfolgen im Osten.",
+          "titel": "🇳🇱 Niederlande: Zwei Angriffe auf Kommunalpolitiker in Deutschland",
+          "aufmacher": "In Schwerte bei Dortmund ist am Montagabend eine Fraktionssitzung der Grünen mit Gewalt gestört worden; die Polizei prüft ein politisches Motiv.",
+          "fakten": "Ein maskierter Täter drang in das Parteibüro ein, sprühte Pfefferspray und schlug zu — drei Verletzte kamen ins Krankenhaus. Am Wochenende wurde die FDP-Politikerin Karoline Preisler am Rand einer pro-palästinensischen Demonstration in Berlin getreten und geschlagen, eine 25-Jährige wurde festgenommen. NOS nennt die Polizeistatistik: 5.140 Straftaten gegen Politiker und Parteimitglieder im Jahr 2025 nach 3.690 im Jahr 2024.",
+          "einordnung": "🇳🇱 Niederlande — NOS, 24.11.2026 — https://nos.nl/artikel/2640817-politici-aangevallen-in-duitsland-pepperspray-in-kantoor-lokale-groenen (Original: „Politici aangevallen in Duitsland, pepperspray in kantoor lokale Groenen“).",
           "quellen": [
-            {"name": "🇳🇱 Niederlande — NOS, 23.11.2026 (Original: „Duitse minister van Onderwijs (CDU) spreekt zich uit voor AfD-verbod“)", "url": "https://nos.nl/artikel/2640689-duitse-minister-van-onderwijs-cdu-spreekt-zich-uit-voor-afd-verbod"}
+            {"name": "NOS, 24.11.2026", "url": "https://nos.nl/artikel/2640817-politici-aangevallen-in-duitsland-pepperspray-in-kantoor-lokale-groenen"}
           ]
         },
         {
-          "titel": "🇫🇷 Frankreich: Paris schaut auf die deutsche Schuldenbremse",
-          "aufmacher": "franceinfo erklärt französischen Lesern die deutsche Schuldenbremse, weil Emmanuel Macron im Januar eine „règle d'or“ in die Verfassung schreiben will und sich dafür am deutschen Modell orientiert.",
-          "fakten": "Deutschland verankerte 2009, dass der Bund jährlich höchstens 0,35 Prozent des BIP neu Schulden machen darf, schrittweise bis 2016; ab 2020 galt die Regel auch für die Länder. Merz lockerte sie 2025: Verteidigungsausgaben über 1 Prozent des BIP fallen heraus, dazu kommt ein Sonderfonds von 500 Milliarden Euro über zwölf Jahre, davon 100 Milliarden für Klimaschutz — im ersten Halbjahr 2026 lag das deutsche Defizit erstmals seit Corona wieder über 3 Prozent.",
-          "einordnung": "Frankreich diskutiert ein Instrument, das Deutschland selbst gerade aufweicht; für die Bauzinsen heißt das mittelfristig eher Aufwärtsdruck.",
+          "titel": "🇫🇷 Frankreich: VW und IG Metall — „ein noch nie gekannter Konflikt“",
+          "aufmacher": "In Emden hat am 24. November die erste Runde der Haustarif-Verhandlungen zwischen Volkswagen und IG Metall begonnen.",
+          "fakten": "Es geht um rund 120.000 Beschäftigte in Deutschland; Volkswagen fordert laut IG Metall das Ende der 35-Stunden-Woche, längeres Arbeiten ohne Lohnausgleich und Nullrunden für 2027 und 2028, die Gewerkschaft verlangt fünf Prozent mehr. Le Figaro beschreibt die Auseinandersetzung als „einen noch nie gekannten Konflikt“ und schildert Särge und Grabstein als Protestrequisiten vor der Nordseehalle. Für Deutschland relevant, weil der VW-Haustarif Signalwirkung für die gesamte Metallbranche hat.",
+          "einordnung": "🇫🇷 Frankreich — Le Figaro, 24.11.2026 — https://www.lefigaro.fr/societes/un-conflit-encore-jamais-connu-en-basse-saxe-volkswagen-entame-un-bras-de-fer-sous-haute-tension-avec-le-syndicat-ig-metall-20261124 (Original: „« Un conflit encore jamais connu » : en Basse-Saxe, Volkswagen entame un bras de fer sous haute tension avec le syndicat IG Metall“).",
           "quellen": [
-            {"name": "🇫🇷 Frankreich — franceinfo, 23.11.2026 (Original: „En Allemagne, «le frein à la dette» est inscrit dans la Constitution depuis 2009 mais a été assoupli“)", "url": "https://www.franceinfo.fr/monde/europe/allemagne/en-allemagne-le-frein-a-la-dette-est-inscrit-dans-la-constitution-depuis-2009-mais-a-ete-assoupli_8296088.html"}
+            {"name": "Le Figaro, 24.11.2026", "url": "https://www.lefigaro.fr/societes/un-conflit-encore-jamais-connu-en-basse-saxe-volkswagen-entame-un-bras-de-fer-sous-haute-tension-avec-le-syndicat-ig-metall-20261124"},
+            {"name": "tagesschau: VW-Tarifrunde beginnt in Emden", "url": "https://www.tagesschau.de/wirtschaft/unternehmen/volkswagen-tarifrunde-emden-auftakt-100.html"}
           ]
         }
       ]
