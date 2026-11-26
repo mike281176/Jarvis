@@ -1,13 +1,13 @@
 {
-  "datum": "Mittwoch, 25.11.2026",
+  "datum": "Donnerstag, 26.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "-1,0 °C · Regen 0 % · UV 1,4",
-          "aufmacher": "☁️ bedeckt, frostiger Start mit Tageshöchstwert 5,1 °C und Tiefstwert -1,1 °C.",
-          "fakten": "Trocken bei 0 % Regenwahrscheinlichkeit, UV-Index 1,4 (niedrig). In der Nacht bleibt es bei oder unter 0 °C — Glätte auf Brücken und Radwegen ist wahrscheinlich.",
+          "titel": "-2,6 °C · Regen 0 % · UV 1,45",
+          "aufmacher": "🌤️ Überwiegend sonnig, Tageshöchstwert 3,0 °C bei Tiefstwert -2,8 °C.",
+          "fakten": "Trocken bei 0 % Regenwahrscheinlichkeit, UV-Index 1,45 (niedrig). Am Morgen liegt die Temperatur bei -2,6 °C — bis zum Vormittag ist Glätte auf Brücken und Nebenstraßen möglich.",
           "einordnung": "",
           "quellen": []
         }
@@ -16,20 +16,6 @@
     {
       "titel": "📅 Termine",
       "artikel": [
-        {
-          "titel": "25.11.2026 09:00: Quixx-Meeting",
-          "aufmacher": "Mittwochvormittag.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "25.11.2026 15:00: KGG – Krankengymnastik am Gerät (Melvin)",
-          "aufmacher": "Mittwochnachmittag, nach dem Quixx-Meeting.",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
         {
           "titel": "28.11.2026 00:00: Geburtstag Mike",
           "aufmacher": "Samstag, ganztägig eingetragen.",
@@ -43,23 +29,31 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf: Ex-Forum am Ursulaplatz soll Wohnquartier werden — Bebauungsplan T 222 startet",
-          "aufmacher": "Der Ausschuss für Stadtentwicklung, Klimaschutz und Denkmalschutz hat am 19. November 2026 die Aufstellung des Bebauungsplans T 222 beschlossen — auf dem 7.500 Quadratmeter großen Ex-Forum-Grundstück sollen Wohnungen über Gewerbeflächen entstehen.",
-          "fakten": "Das Areal zwischen Ursulaplatz, Kölner Straße, Kirchstraße und Klevstraße soll ein urbanes Quartier werden: Wohnungen in den Obergeschossen, Einzelhandel, Gastronomie und Dienstleistungen im Erdgeschoss. Das Verfahren läuft im beschleunigten Innenentwicklungs-Verfahren nach § 13a Baugesetzbuch. Als Nächstes folgt ein städtebaulicher Vorentwurf, danach die frühzeitige Beteiligung der Öffentlichkeit; Festsetzungen zu Verkehr, Lärm sowie Dach- und Fassadenbegrünung stehen noch aus.",
-          "einordnung": "Wohnraum über Läden ist in Troisdorf das Modell, das Mietfläche ohne neues Baugebiet schafft — für MFH-Vergleiche im Umfeld lohnt es, das Mietniveau dieses Quartiers im Auge zu behalten, sobald der Vorentwurf Zahlen nennt.",
+          "titel": "Troisdorf verhängt Haushaltssperre — rund 40 Millionen Euro fehlen",
+          "aufmacher": "Die Stadt Troisdorf hat mit sofortiger Wirkung eine Haushaltssperre für 2026 und 2027 verhängt.",
+          "fakten": "Auslöser sind die eingebrochenen Gewerbesteuereinnahmen: rund 25 Millionen Euro weniger im Ansatz, dazu weitere etwa 15 Millionen Euro aus herabgesetzten Steuermessbeträgen und Rückzahlungen. Damit summiert sich der Fehlbetrag für 2026 auf voraussichtlich rund 40 Millionen Euro. Frei werdende Stellen dürfen frühestens nach neun Monaten wieder besetzt werden, freiwillige Leistungen sind nur noch bei vertraglicher Pflicht möglich. Die Kämmerei schlägt vor, den Hebesatz der Grundsteuer B ab 2027 von 640 auf 790 Prozentpunkte anzuheben; der Haupt- und Finanzausschuss hat am 24. November beraten, der Rat entscheidet am 8. Dezember.",
+          "einordnung": "Für Mike doppelt relevant: Ein höherer Grundsteuer-Hebesatz landet über die Betriebskosten bei den Mietern seiner Objekte, und die Gewerbesteuer-Misere zeigt, wie hart die Wirtschaftskrise in der Region auf die Kommunalfinanzen durchschlägt.",
           "quellen": [
-            {"name": "Stadt Troisdorf, Pressemeldung 24.11.2026", "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/ehemaliger-forum-standort-erhaelt-neue-zukunft/"},
-            {"name": "Erftkreis News, 24.11.2026", "url": "https://www.erftkreis-news.de/politik-wirtschaft/forum-standort-troisdorf-erhalt-neue-nutzung-erftkreis-news"}
+            {
+              "name": "Rundblick Troisdorf, 20.11.2026",
+              "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3179404-biber-handlungsfaehigkeit-sichern/"
+            },
+            {
+              "name": "Kölner Stadt-Anzeiger, 20.11.2026",
+              "url": "https://www.ksta.de/region/rhein-sieg-bonn/siegburg/troisdorf-haushaltssperre-loest-streit-um-40-millionen-euro-aus-1-1419535"
+            }
           ]
         },
         {
-          "titel": "Troisdorf: Trickbetrug — Seniorin in eigener Wohnung bedrängt und bestohlen",
-          "aufmacher": "Zwei Unbekannte haben am Sonntag eine fast 90-jährige Frau in ihrer Wohnung an der Adolf-Friedrich-Straße bedrängt und ihre Geldbörse sowie Modeschmuck mitgenommen.",
-          "fakten": "Gegen 12 Uhr klingelte eine fremde Frau, drängte sich in die Wohnung im dritten Obergeschoss und bot in gebrochenem Deutsch einen Pflegedienst an; beim Wasserholen folgte sie der Seniorin in die Küche. Erst nachdem die Troisdorferin die Frau hinausgewiesen hatte, bemerkte sie eine zweite Person in der Wohnung. Aus dem Portemonnaie fehlt ein dreistelliger Bargeldbetrag; die Polizei Rhein-Sieg-Kreis sucht Zeugen unter 02241 541-3221.",
-          "einordnung": "Für vermietete Häuser mit älteren Alleinmietern ein konkreter Anlass, im Treppenhaus auf die Masche hinzuweisen — die Täter suchen genau diese Wohnungen.",
+          "titel": "K 29 in Sieglar ab Montag sechs Monate dicht",
+          "aufmacher": "Der Schmelzer Weg und die Alemannenstraße (K 29) werden vom 30. November 2026 bis 31. Mai 2027 abschnittsweise voll gesperrt.",
+          "fakten": "Grund sind neue Versorgungsleitungen sowie Kanalanschlüsse und ein Hauptkanal; die Bauabschnitte folgen nacheinander mit ausgeschilderten Umleitungen. Ebenfalls ab der Woche vom 30. November wird die Grabenstraße 1–11 saniert (Hauptkanäle, Anschlussleitungen, Straßenbeleuchtung), voraussichtlich bis März 2027. Die Josef-Frank-Straße 10–18 in Spich bleibt bis 9. Dezember gesperrt, der Krähenweg in Müllekoven bis 11. Dezember.",
+          "einordnung": "Bei Objekten in Sieglar oder Spich können Zufahrten und Parkplätze zeitweise entfallen — Mieter früh informieren und Handwerkertermine umplanen.",
           "quellen": [
-            {"name": "Kreispolizeibehörde Rhein-Sieg-Kreis (POL-SU), Presseportal", "url": "https://www.presseportal.de/blaulicht/pm/65853/6396702"},
-            {"name": "ANTENNE NRW, 24.11.2026", "url": "https://antenne.nrw/blaulicht/trickbetrug-in-troisdorf-seniorin-in-eigener-wohnung-bestohlen/"}
+            {
+              "name": "Stadt Troisdorf, Verkehrsmeldungen, 25.11.2026",
+              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/aktuelle-verkehrsmeldungen-fuer-troisdorf-3/"
+            }
           ]
         }
       ]
@@ -68,13 +62,23 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Bauzins bleibt bei gut 4 Prozent — der Verhandlungsspielraum liegt im Preis",
-          "aufmacher": "Der effektive Jahreszins für zehnjährige Darlehen liegt bei 4,04 Prozent (Beleihung unter 70 Prozent) und 4,13 Prozent (80 Prozent); Dr. Klein nennt für den 25.11. einen Topzins von 4,07 Prozent.",
-          "fakten": "Bei 15 Jahren Zinsbindung sind es 4,24 bis 4,36 Prozent effektiv, bei 20 Jahren 4,27 bis 4,35 Prozent (Interhyp-Konditionen vom 16. bis 22.11.2026). Das Interhyp-Bankenpanel erwartet kurzfristig zu 80 Prozent gleichbleibende Zinsen und mittelfristig zu 60 Prozent fallende; Commerzbank und Deutsche Bank sehen Aufwärtsrisiken. Die Kaufpreise haben laut Interhyp den dritten Monat in Folge nachgegeben.",
-          "einordnung": "Bei 4,1 Prozent Sollzins und 2 Prozent Tilgung frisst der Kapitaldienst allein 6,1 Prozent des Darlehens pro Jahr — bei 80 Prozent Beleihung müssen rund 4,9 Prozent Bruttorendite des Objekts nur für den Kredit reichen, bevor Bewirtschaftung beginnt. Da der Zins seitwärts läuft, kommt der Hebel derzeit über den Kaufpreis.",
+          "titel": "Amtliche Preise nur noch +0,6 Prozent — in den Metropolen drehen Eigentumswohnungen ins Minus",
+          "aufmacher": "Wohnimmobilien in Deutschland verteuerten sich im zweiten Quartal 2026 nur noch um 0,6 Prozent zum Vorjahr und 0,3 Prozent zum Vorquartal.",
+          "fakten": "In den sieben Metropolen gaben Eigentumswohnungen 0,4 Prozent zum Vorjahr und 0,5 Prozent zum Vorquartal nach, Einfamilienhäuser dort minus 0,6 Prozent zum Vorquartal. Kreisfreie Großstädte außerhalb der Metropolen legten dagegen um 2,0 Prozent zu (Wohnungen), dicht besiedelte Landkreise verloren 1,8 Prozent bei Wohnungen. Parallel verharrt das Zinsniveau: Finanztip nennt am 17. November 4,4 bis 5,0 Prozent je nach Zinsbindung, die Interhyp-Konditionen der Vorwoche lagen bei 4,04 Prozent für zehn Jahre bei unter 70 Prozent Beleihung.",
+          "einordnung": "Der Trend läuft auseinander: Wohnungen in Metropolen werden billiger, Häuser im Umland teurer. Für MFH-Käufe im Rhein-Sieg-Kreis heißt das, den Preis pro Quadratmeter je Teilmarkt zu prüfen statt auf den Bundesdurchschnitt zu schauen — und den Faktor bei 4,2 Prozent Zins unter 20 zu halten.",
           "quellen": [
-            {"name": "Interhyp: Bauzinsen aktuell", "url": "https://www.interhyp.de/zinsen/"},
-            {"name": "Dr. Klein: Zinsvergleich, Stand 25.11.2026", "url": "https://www.drklein.de/zinsvergleich.html"}
+            {
+              "name": "Destatis, Häuserpreisindex 2. Quartal 2026 (Pressemitteilung 336/2026)",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_336_61262.html"
+            },
+            {
+              "name": "Finanztip, Bauzinsen, Stand 17.11.2026",
+              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
+            },
+            {
+              "name": "Interhyp, Bauzinsen aktuell",
+              "url": "https://www.interhyp.de/zinsen/"
+            }
           ]
         }
       ]
@@ -83,13 +87,27 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "DAX zurück auf 25.017 Punkten — Zweifel an der Nvidia-Rally, neue US-Zölle im Gespräch",
-          "aufmacher": "Der DAX hat am Dienstag 1,3 Prozent auf 25.017 Punkte verloren, einen Tag nach dem Plus von 2,2 Prozent auf 25.337 Punkte.",
-          "fakten": "Zuvor war der Leitindex sechs Handelstage in Folge gefallen und vom Rekord bei etwas mehr als 27.000 Punkten um über acht Prozent abgerutscht. Die Aktie des KI-Anbieters Anthropic notierte erstmals unter ihrem Ausgabepreis von 83 Dollar, Infineon verlor fast zehn Prozent und erreichte ein Sieben-Monats-Tief. Der ifo-Geschäftsklimaindex stieg im November auf 90,6 Punkte (Oktober: 90,1) — der siebte Anstieg in Folge; Bundesregierung und Bundesbank trauen der Wirtschaft 2026 ein Wachstum von 1,3 Prozent zu.",
-          "einordnung": "Konjunktur und Börse laufen derzeit auseinander: Die Ifo-Reihe stützt die Vermietbarkeit von Gewerbeflächen, der KI-Ausverkauf drückt die Depots. Für Objektentscheidungen bleibt der Kaufpreis die Größe, die zählt.",
+          "titel": "EZB dürfte am 17. Dezember noch einmal um 25 Basispunkte erhöhen",
+          "aufmacher": "Vor der letzten Zinssitzung des Jahres am 17. Dezember gilt ein Schritt um 25 Basispunkte als sehr wahrscheinlich.",
+          "fakten": "Der Einlagensatz liegt seit dem 16. September 2026 unverändert bei 2,50 Prozent, die Hauptrefinanzierung bei 2,65 Prozent. Die Inflation im Euroraum stieg im Oktober auf 4,0 Prozent nach 3,8 Prozent im September, getrieben vor allem von Energie mit plus 21,0 Prozent. Die KfW erwartet für Deutschland 2027 drei Prozent Teuerung (0,7 Punkte mehr als zuvor) und hält beim Dezember-Entscheid einen letzten Zinsschritt für sehr wahrscheinlich — danach sei der Straffungszyklus aus ihrer Sicht beendet.",
+          "einordnung": "Jeder weitere Schritt verteuert Anschlussfinanzierungen. Bei geplantem Bankdarlehen für das MFH spricht das dafür, eine lange Zinsbindung früh zu sichern statt auf fallende Zinsen zu setzen.",
           "quellen": [
-            {"name": "tagesschau Marktbericht, 24.11.2026", "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-102.html"},
-            {"name": "Milano Finanza, 25.11.2026", "url": "https://www.milanofinanza.it/news"}
+            {
+              "name": "EZB, Key ECB interest rates",
+              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+            },
+            {
+              "name": "Eurostat, Inflation im Euroraum (Oktober 2026)",
+              "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Inflation_in_the_euro_area"
+            },
+            {
+              "name": "Cash., 25.11.2026: KfW erwartet Zinsschritt im Dezember",
+              "url": "https://www.cash-online.de/a/ezb-zinsentscheid-im-dezember-kfw-erhoeht-inflationsprognose-731560/"
+            },
+            {
+              "name": "EZB, Sitzungskalender",
+              "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+            }
           ]
         }
       ]
@@ -98,21 +116,19 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "HA-MCP (Dev) 9.3.0.dev3717 → dev3725: Speicher beim Logbook-Auslesen begrenzt",
-          "aufmacher": "Für den Home-Assistant-MCP-Server liegt der Dev-Build dev3725 bereit; er begrenzt den Speicherverbrauch beim Lesen des Home-Assistant-Logbooks.",
-          "fakten": "Die Vorversionen brachten einen Deep-Link auf Registerkarte und Freigabekarte im Panel (dev3723) und einen Schutz für Automations- und Skript-Rümpfe bei der Konfigurationssuche (dev3717). Auto-Update ist aktiv, der Build installiert sich selbst.",
-          "einordnung": "",
+          "titel": "HA-MCP: stabiles 9.3.0 da — Szenen aus Live-Zuständen, Logs-Werkzeug, Update-Pfade wie Core",
+          "aufmacher": "Das HA-MCP-Add-on ist am 25. November von 9.2.0 auf die stabile Version 9.3.0 gehoben worden (der Dev-Kanal von gestern ist eine separate Installation).",
+          "fakten": "Neu im stabilen Release: Szenen lassen sich aus aktuellen Gerätezuständen erzeugen, das Update-Werkzeug folgt den Update- und Repairs-Pfaden von Home Assistant Core und liest Breaking Changes, die Backup-vor-Update-Einstellungen sind les- und änderbar, dazu kommen ein Log-Werkzeug (ha_manage_logs), Kamerabilder aus Image-Entities und ein Export/Import der Einstellungen zwischen Installationen. Weiter offen bleibt nur das NAS: DSM 7.4.1-90080 Update 2 ist seit dem 20. November verfügbar (behebt Synology-SA-26:20 und SA-26:21, Neustart nötig), alle anderen 99 Update-Entitäten melden keinen offenen Stand.",
+          "einordnung": "Beides braucht einen Neustart des jeweiligen Systems — HA-Add-on und NAS —, deshalb warte ich auf deine Freigabe; das DSM-Update ist ein Sicherheitsupdate und sollte zeitnah eingespielt werden.",
           "quellen": [
-            {"name": "ha-mcp Releases (Dev 9.3.0.dev3725)", "url": "https://github.com/homeassistant-ai/ha-mcp/releases"}
-          ]
-        },
-        {
-          "titel": "NAS: DSM 7.4.1-90080 Update 2 weiterhin nicht installiert",
-          "aufmacher": "Das Synology DS920+ meldet Update 2 als verfügbar, installiert ist weiterhin Update 1.",
-          "fakten": "Die Installation startet das Gerät neu; die Release Notes stehen bei Synology unter whatsnew für Modell und Version. Von 101 Update-Entitäten in Home Assistant sind damit nur noch zwei offen — dieses DSM-Update und der Dev-Build des HA-MCP-Servers.",
-          "einordnung": "",
-          "quellen": [
-            {"name": "Synology: What's new DSM 7.4.1-90080 Update 2", "url": "http://update.synology.com/autoupdate/whatsnew.php?model=DS920%2B&update_version=90080-2"}
+            {
+              "name": "GitHub, ha-mcp Release v9.3.0",
+              "url": "https://github.com/homeassistant-ai/ha-mcp/releases/tag/v9.3.0"
+            },
+            {
+              "name": "Synology, Release Notes DSM 7.4.1-90080 Update 2",
+              "url": "http://update.synology.com/autoupdate/whatsnew.php?model=DS920%2B&update_version=90080-2"
+            }
           ]
         }
       ]
@@ -121,14 +137,11 @@
       "titel": "Haushaltsroboter",
       "artikel": [
         {
-          "titel": "NEURA 4NE1: Preis steht — 98.000 Euro netto, Lieferung Ende 2026 geplant",
-          "aufmacher": "Der Metzingen-Humanoide 4NE1 Gen 3.5 ist mit voraussichtlich 98.000 Euro netto pro Einheit (Abnahme 1 bis 19 Stück) und 60.000 Euro ab 20 Stück gelistet.",
-          "fakten": "Die Reservierung kostet 100 Euro, ist erstattungsfähig und wird auf den Kaufpreis angerechnet; laut Reservierungsseite soll der Roboter Ende 2026 verfügbar sein, NEURA behält sich Änderungen an Hardware und Aussehen vor. Datenblatt Gen 3: 180 Zentimeter, 80 Kilogramm, 55 Freiheitsgrade, 20 Kilogramm Armlast. Der 4NE1 Mini kostet 19.999 Euro, die Pro-Version 29.999 Euro. 1X NEO bleibt bei 20.000 US-Dollar Early Access oder 499 Dollar im Monat — nach Kurs vom 24.11. rund 18.240 Euro.",
-          "einordnung": "Damit ist 4NE1 das zweite Modell mit Preis, aber weiterhin kein Haushaltshelfer: Bei 98.000 Euro netto je Einheit liegt die Amortisation über Mieteinnahmen weit jenseits jeder MFH-Rechnung. Beide Systeme bleiben Beobachtungsposten, keine Beschaffung.",
-          "quellen": [
-            {"name": "Roboterwelt: NEURA 4NE1 — Daten, Preise, Lieferstand", "url": "https://www.roboterwelt.de/magazin/w4o5/humanoide-robotik-neu-gedacht-was-4ne1-wirklich-leisten-kann"},
-            {"name": "NEURA Robotics: 4NE1 reservieren", "url": "https://neura-robotics.com/product/4ne1-reservation/"}
-          ]
+          "titel": "Haushaltsroboter: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     },
@@ -136,21 +149,22 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Telekom steckt 100 Millionen Euro in Mistral — gemeinsame KI für Behörden und Industrie",
-          "aufmacher": "Der T.Capital Tech Fund der Deutschen Telekom hat am 19. November 2026 100 Millionen Euro in die laufende Series D von Mistral AI investiert.",
-          "fakten": "Geplant ist eine strategische Partnerschaft, die Mistrals Modelle mit der Telekom-Infrastruktur — der Industrial AI Cloud — an deutsche Unternehmen und öffentliche Stellen bringen soll, vor allem in regulierten Branchen; Mistral betreibt seit kurzem einen Standort in München. T.Capital verwaltet über zwei Milliarden Euro. Zur Bewertung macht die Telekom keine Angabe; die Series D vom 8. September 2026 lag bei über 21 Milliarden Euro.",
-          "einordnung": "Ein französisches Modell auf deutscher Infrastruktur ist für Datenschutzfragen relevanter als ein US-Anbieter — es bleibt aber eine Cloud-Lösung, also nur mit Freigabe für sensible Daten.",
-          "quellen": [
-            {"name": "Deutsche Telekom, Media Information 19.11.2026", "url": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/deutsche-telekom-advances-sovereign-ai-in-germany"}
-          ]
+          "titel": "Deutsche/europäische KI: nichts Neues.",
+          "aufmacher": "",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         },
         {
-          "titel": "Aleph Alpha: Kolibri 1.1 braucht 3,4-mal weniger GPU-Zeit",
-          "aufmacher": "Sieben Wochen nach Kolibri 1.0 hat Aleph Alpha am 23. November 2026 Kolibri 1.1 veröffentlicht — Apache-2.0-Lizenz, sofort auf Hugging Face verfügbar.",
-          "fakten": "Laut Hersteller benötigt das Modell 3,4-mal weniger GPU-Zeit pro Aufgabe und erzeugt 41 Prozent weniger Ausgabe-Tokens, bei 3 Milliarden aktiven und 75 Milliarden gesamten Parametern. Es läuft auf GPUs mit 24 GB VRAM, hat ein Kontextfenster von einer Million Token und nennt Belegstellen in 89,1 Prozent der Fälle korrekt; Prompt-Injection-Abwehr 99,1 Prozent bei externen Tools, 93,2 Prozent bei Nutzereingaben. Alle Werte sind Herstellerangaben, nicht unabhängig geprüft.",
-          "einordnung": "24 GB VRAM heißt: auf einer einzelnen Mittelklasse-GPU lokal betreibbar — genau die Größenklasse, in der ein eigener Assistent ohne Cloud laufen könnte.",
+          "titel": "📡 the-decoder.de: OpenAI testet „Private Inference“ für Firmendaten",
+          "aufmacher": "OpenAI testet mit ersten Unternehmenskunden ein Angebot, bei dem der Anbieter die verarbeiteten Daten selbst nicht zu sehen bekommt.",
+          "fakten": "Bei „Private Inference“ laufen Anfragen auf besonders abgeschirmter Hardware, deren Schutz überprüfbar sein soll; ergänzend sucht „Private Safety Processing“ nach Missbrauch, ohne Kundendaten zu speichern — auffällige Inhalte bleiben verschlüsselt im Speicher des Kunden. OpenAI baut die Rechenkapazität dafür aus. Bislang nutzt OpenAI Geschäftskundendaten ohnehin nicht fürs Training, private ChatGPT-Chats dagegen standardmäßig, sofern Nutzer nicht widersprechen. Google verfolgt mit „Private AI Compute“ einen ähnlichen Ansatz.",
+          "einordnung": "Datenschutz wird zum Produktmerkmal — relevant, falls Quixx24 KI auf Vertrags- oder Kundendaten ansetzen will, ohne die Daten aus der Hand zu geben.",
           "quellen": [
-            {"name": "Aleph Alpha, Pressemitteilung 23.11.2026", "url": "https://aleph-alpha.com/en/news/kolibri-1-1-release/"}
+            {
+              "name": "the-decoder.de, 25.11.2026",
+              "url": "https://the-decoder.de/openai-will-firmendaten-mit-private-inference-vor-sich-selbst-verstecken/"
+            }
           ]
         }
       ]
@@ -159,31 +173,39 @@
       "titel": "Ausland über Deutschland",
       "artikel": [
         {
-          "titel": "🇮🇹 Italien: Ifo 90,6 — Mailand sieht Erholung ohne Breite",
-          "aufmacher": "Der ifo-Geschäftsklimaindex ist im November auf 90,6 Punkte gestiegen, nach 90,1 im Oktober, und lag über den erwarteten 90,5 Punkten.",
-          "fakten": "Teleborsa zitiert das Ifo-Institut mit „Die Erholung der deutschen Wirtschaft kommt voran, es fehlt jedoch an Breite“ und verweist auf nachgebende Erwartungen im Verarbeitenden Gewerbe sowie leicht eingetrübte Stimmung im Bau. Für Deutschland relevant, weil italienische Zulieferer direkt an der deutschen Industriekonjunktur hängen — das Bau-Minus betrifft auch deutsche Baustoff- und Heizungshersteller.",
-          "einordnung": "🇮🇹 Italien — Teleborsa, 24.11.2026 — https://www.teleborsa.it/News/2026/11/24/germania-indice-ifo-sale-leggermente-a-90-6-sopra-le-attese-45.html (Original: „Germania, indice Ifo sale leggermente a 90,6 sopra le attese“).",
+          "titel": "🇮🇹 Italien: Merz bremst im Bundestag — „Wir können nicht alles finanzieren“",
+          "aufmacher": "Bei der Debatte über den Bundeshaushalt 2027 hat Kanzler Friedrich Merz die Lage als schwierig bezeichnet und weitere Ausgabenwünsche gebremst.",
+          "fakten": "Merz sagte nach ANSA-Bericht aus Berlin, Deutschland sei in einer schwierigen Situation, man könne nicht alles finanzieren; alle müssten „auf einige Ideen verzichten“. Eine konkrete Einsparsumme nennt die Meldung nicht. Die Schlussabstimmung im Bundestag ist für Freitag angesetzt — derselbe Etat, aus dem EU-Beiträge und Ukraine-Hilfen vorfinanziert werden.",
+          "einordnung": "🇮🇹 Italien — ANSA, 25.11.2026, 12:39 — https://www.ansa.it/nuova_europa/it/notizie/rubriche/altrenews/2026/11/25/merz-la-germania-e-in-una-situazione-difficile-non-possiamo-finanziare-tutto_9bf2bc26-26ed-45fb-ae95-be38442fd03d.html (Original: „Merz, 'la Germania è in una situazione difficile, non possiamo finanziare tutto'“)",
           "quellen": [
-            {"name": "Teleborsa, 24.11.2026", "url": "https://www.teleborsa.it/News/2026/11/24/germania-indice-ifo-sale-leggermente-a-90-6-sopra-le-attese-45.html"}
+            {
+              "name": "ANSA, 25.11.2026",
+              "url": "https://www.ansa.it/nuova_europa/it/notizie/rubriche/altrenews/2026/11/25/merz-la-germania-e-in-una-situazione-difficile-non-possiamo-finanziare-tutto_9bf2bc26-26ed-45fb-ae95-be38442fd03d.html"
+            }
           ]
         },
         {
-          "titel": "🇳🇱 Niederlande: Zwei Angriffe auf Kommunalpolitiker in Deutschland",
-          "aufmacher": "In Schwerte bei Dortmund ist am Montagabend eine Fraktionssitzung der Grünen mit Gewalt gestört worden; die Polizei prüft ein politisches Motiv.",
-          "fakten": "Ein maskierter Täter drang in das Parteibüro ein, sprühte Pfefferspray und schlug zu — drei Verletzte kamen ins Krankenhaus. Am Wochenende wurde die FDP-Politikerin Karoline Preisler am Rand einer pro-palästinensischen Demonstration in Berlin getreten und geschlagen, eine 25-Jährige wurde festgenommen. NOS nennt die Polizeistatistik: 5.140 Straftaten gegen Politiker und Parteimitglieder im Jahr 2025 nach 3.690 im Jahr 2024.",
-          "einordnung": "🇳🇱 Niederlande — NOS, 24.11.2026 — https://nos.nl/artikel/2640817-politici-aangevallen-in-duitsland-pepperspray-in-kantoor-lokale-groenen (Original: „Politici aangevallen in Duitsland, pepperspray in kantoor lokale Groenen“).",
+          "titel": "🇳🇱 Niederlande: Festnahmen von 14- und 15-Jährigen wegen rechtsextremer Anschlagspläne",
+          "aufmacher": "Die deutsche Polizei hat bei Durchsuchungen drei Jugendliche im Alter von 14 und 15 Jahren festgenommen, die zur Gruppe „Terror 18“ gehören sollen.",
+          "fakten": "Nach Angaben der Justiz plant die Gruppe Brandanschläge und Mordanschläge, vor allem gegen Ausländer und politische Gegner; ein Anschlag auf eine Flüchtlingsunterkunft im niedersächsischen Winsen bei Hamburg sei Ende Oktober vereitelt worden, damals wurden drei weitere Verdächtige festgenommen. Die Zahl 18 verweist in der Neonazi-Szene auf die Initialen Adolf Hitlers.",
+          "einordnung": "🇳🇱 Niederlande — NOS, 25.11.2026, 12:11 — https://nos.nl/artikel/2640959-duitse-politie-pakt-14-en-15-jarigen-op-voor-rechts-extremistische-aanslagplannen (Original: „Duitse politie pakt 14- en 15-jarigen op voor rechts-extremistische aanslagplannen“)",
           "quellen": [
-            {"name": "NOS, 24.11.2026", "url": "https://nos.nl/artikel/2640817-politici-aangevallen-in-duitsland-pepperspray-in-kantoor-lokale-groenen"}
+            {
+              "name": "NOS, 25.11.2026",
+              "url": "https://nos.nl/artikel/2640959-duitse-politie-pakt-14-en-15-jarigen-op-voor-rechts-extremistische-aanslagplannen"
+            }
           ]
         },
         {
-          "titel": "🇫🇷 Frankreich: VW und IG Metall — „ein noch nie gekannter Konflikt“",
-          "aufmacher": "In Emden hat am 24. November die erste Runde der Haustarif-Verhandlungen zwischen Volkswagen und IG Metall begonnen.",
-          "fakten": "Es geht um rund 120.000 Beschäftigte in Deutschland; Volkswagen fordert laut IG Metall das Ende der 35-Stunden-Woche, längeres Arbeiten ohne Lohnausgleich und Nullrunden für 2027 und 2028, die Gewerkschaft verlangt fünf Prozent mehr. Le Figaro beschreibt die Auseinandersetzung als „einen noch nie gekannten Konflikt“ und schildert Särge und Grabstein als Protestrequisiten vor der Nordseehalle. Für Deutschland relevant, weil der VW-Haustarif Signalwirkung für die gesamte Metallbranche hat.",
-          "einordnung": "🇫🇷 Frankreich — Le Figaro, 24.11.2026 — https://www.lefigaro.fr/societes/un-conflit-encore-jamais-connu-en-basse-saxe-volkswagen-entame-un-bras-de-fer-sous-haute-tension-avec-le-syndicat-ig-metall-20261124 (Original: „« Un conflit encore jamais connu » : en Basse-Saxe, Volkswagen entame un bras de fer sous haute tension avec le syndicat IG Metall“).",
+          "titel": "🇫🇷 Frankreich: Berlin führt die Sparsamen im EU-Budgetstreit an",
+          "aufmacher": "Vor dem Sondergipfel am Donnerstag und Freitag pocht Berlin auf Kürzungen im EU-Haushalt.",
+          "fakten": "Deutschland war 2025 mit 14,9 Milliarden Euro größter Nettozahler der EU, nach einer am Dienstag veröffentlichten Studie des Instituts der deutschen Wirtschaft (IW Köln). Auf dem Gipfel geht es um den nächsten mehrjährigen Finanzrahmen, die Ukraine-Finanzierung 2027 und die Neubesetzung der EZB-Führung; parallel stimmt der Bundestag am Freitag über den deutschen Haushalt 2027 ab.",
+          "einordnung": "🇫🇷 Frankreich — Le Figaro, 25.11.2026, 21:30 — https://www.lefigaro.fr/international/budget-de-l-ue-les-exigences-de-l-allemagne-chef-de-file-des-frugaux-et-premier-contributeur-net-20261125 (Original: „Budget de l'UE : les exigences de l'Allemagne, chef de file des « frugaux » et premier contributeur net“)",
           "quellen": [
-            {"name": "Le Figaro, 24.11.2026", "url": "https://www.lefigaro.fr/societes/un-conflit-encore-jamais-connu-en-basse-saxe-volkswagen-entame-un-bras-de-fer-sous-haute-tension-avec-le-syndicat-ig-metall-20261124"},
-            {"name": "tagesschau: VW-Tarifrunde beginnt in Emden", "url": "https://www.tagesschau.de/wirtschaft/unternehmen/volkswagen-tarifrunde-emden-auftakt-100.html"}
+            {
+              "name": "Le Figaro, 25.11.2026",
+              "url": "https://www.lefigaro.fr/international/budget-de-l-ue-les-exigences-de-l-allemagne-chef-de-file-des-frugaux-et-premier-contributeur-net-20261125"
+            }
           ]
         }
       ]
