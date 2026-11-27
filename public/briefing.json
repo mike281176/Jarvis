@@ -1,13 +1,13 @@
 {
-  "datum": "Donnerstag, 26.11.2026",
+  "datum": "Freitag, 27.11.2026",
   "bereiche": [
     {
       "titel": "🌤️ Wetter heute",
       "artikel": [
         {
-          "titel": "-2,6 °C · Regen 0 % · UV 1,45",
-          "aufmacher": "🌤️ Überwiegend sonnig, Tageshöchstwert 3,0 °C bei Tiefstwert -2,8 °C.",
-          "fakten": "Trocken bei 0 % Regenwahrscheinlichkeit, UV-Index 1,45 (niedrig). Am Morgen liegt die Temperatur bei -2,6 °C — bis zum Vormittag ist Glätte auf Brücken und Nebenstraßen möglich.",
+          "titel": "-3,4 °C · Regen 0 % · UV 1,45",
+          "aufmacher": "🌤️ Überwiegend sonnig, Tageshöchstwert 1,8 °C bei Tiefstwert -3,6 °C.",
+          "fakten": "Trocken bei 0 % Regenwahrscheinlichkeit, UV-Index 1,45 (niedrig). Am Morgen liegt die Temperatur bei -3,4 °C — Glätte auf Brücken und Nebenstraßen ist weiter möglich.",
           "einordnung": "",
           "quellen": []
         }
@@ -22,6 +22,13 @@
           "fakten": "",
           "einordnung": "",
           "quellen": []
+        },
+        {
+          "titel": "30.11.2026 15:00: KGG – Krankengymnastik am Gerät (Heidrun)",
+          "aufmacher": "Montag, 15:00 Uhr.",
+          "fakten": "",
+          "einordnung": "",
+          "quellen": []
         }
       ]
     },
@@ -29,30 +36,18 @@
       "titel": "Regional/Überregional",
       "artikel": [
         {
-          "titel": "Troisdorf verhängt Haushaltssperre — rund 40 Millionen Euro fehlen",
-          "aufmacher": "Die Stadt Troisdorf hat mit sofortiger Wirkung eine Haushaltssperre für 2026 und 2027 verhängt.",
-          "fakten": "Auslöser sind die eingebrochenen Gewerbesteuereinnahmen: rund 25 Millionen Euro weniger im Ansatz, dazu weitere etwa 15 Millionen Euro aus herabgesetzten Steuermessbeträgen und Rückzahlungen. Damit summiert sich der Fehlbetrag für 2026 auf voraussichtlich rund 40 Millionen Euro. Frei werdende Stellen dürfen frühestens nach neun Monaten wieder besetzt werden, freiwillige Leistungen sind nur noch bei vertraglicher Pflicht möglich. Die Kämmerei schlägt vor, den Hebesatz der Grundsteuer B ab 2027 von 640 auf 790 Prozentpunkte anzuheben; der Haupt- und Finanzausschuss hat am 24. November beraten, der Rat entscheidet am 8. Dezember.",
-          "einordnung": "Für Mike doppelt relevant: Ein höherer Grundsteuer-Hebesatz landet über die Betriebskosten bei den Mietern seiner Objekte, und die Gewerbesteuer-Misere zeigt, wie hart die Wirtschaftskrise in der Region auf die Kommunalfinanzen durchschlägt.",
+          "titel": "Siegstrecke ab 13. Dezember sieben Monate dicht — zeitweise bis Troisdorf",
+          "aufmacher": "Vom 13. Dezember 2026, 0 Uhr, bis 9. Juli 2027, 21 Uhr, erneuert die DB InfraGO die Siegstrecke zwischen Troisdorf und Siegen.",
+          "fakten": "Auf insgesamt rund 80 Kilometern tauschen die Bautrupps 24 Kilometer Gleis, rund 40.000 Schwellen, 90.000 Tonnen Schotter und 16 Weichen; dazu kommen mehrere Eisenbahnbrücken, barrierefreie Bahnhöfe und verlängerte Bahnsteige. Gearbeitet wird unter anderem zwischen Troisdorf und Siegburg, von Merten über Eitorf bis Herchen sowie zwischen Niederschelden und Siegen, in Niederschelden entsteht ein Gleiswechselbetrieb. DB InfraGO beziffert das Gesamtvolumen auf mehr als 100 Millionen Euro; Autobahn GmbH und Straßen.NRW arbeiten parallel, deshalb wird die Sperrung zeitweise bis Siegburg und Troisdorf verlängert. Ersatzbusse fahren, die Fahrpläne bis zum Jahreswechsel liegen bereits in den Auskunftsmedien.",
+          "einordnung": "Sieben Monate Umweg über Siegburg treffen Pendler aus Troisdorf und Sieglar direkt — für Mieter und Handwerkertermine in den Objekten ein Planungsfaktor, und für Termine Richtung Köln oder Siegen ist die S-Bahn ab Siegburg die robustere Wahl.",
           "quellen": [
             {
-              "name": "Rundblick Troisdorf, 20.11.2026",
-              "url": "https://www.rundblick-troisdorf.de/themen-der-woche/3179404-biber-handlungsfaehigkeit-sichern/"
+              "name": "DB InfraGO, Pressemitteilung 26.11.2026",
+              "url": "https://www.deutschebahn.com/de/presse/presse-regional/pr-frankfurt-de/presseinformationen-regional/Troisdorf-Hennef-Siegen-DB-InfraGO-beginnt-im-Dezember-2026-mit-umfassender-Modernisierung-der-Siegstrecke-14101224"
             },
             {
-              "name": "Kölner Stadt-Anzeiger, 20.11.2026",
-              "url": "https://www.ksta.de/region/rhein-sieg-bonn/siegburg/troisdorf-haushaltssperre-loest-streit-um-40-millionen-euro-aus-1-1419535"
-            }
-          ]
-        },
-        {
-          "titel": "K 29 in Sieglar ab Montag sechs Monate dicht",
-          "aufmacher": "Der Schmelzer Weg und die Alemannenstraße (K 29) werden vom 30. November 2026 bis 31. Mai 2027 abschnittsweise voll gesperrt.",
-          "fakten": "Grund sind neue Versorgungsleitungen sowie Kanalanschlüsse und ein Hauptkanal; die Bauabschnitte folgen nacheinander mit ausgeschilderten Umleitungen. Ebenfalls ab der Woche vom 30. November wird die Grabenstraße 1–11 saniert (Hauptkanäle, Anschlussleitungen, Straßenbeleuchtung), voraussichtlich bis März 2027. Die Josef-Frank-Straße 10–18 in Spich bleibt bis 9. Dezember gesperrt, der Krähenweg in Müllekoven bis 11. Dezember.",
-          "einordnung": "Bei Objekten in Sieglar oder Spich können Zufahrten und Parkplätze zeitweise entfallen — Mieter früh informieren und Handwerkertermine umplanen.",
-          "quellen": [
-            {
-              "name": "Stadt Troisdorf, Verkehrsmeldungen, 25.11.2026",
-              "url": "https://www.troisdorf.de/de/rathaus-service/aktuell/pressemeldungen/2026/november/aktuelle-verkehrsmeldungen-fuer-troisdorf-3/"
+              "name": "General-Anzeiger, 26.11.2026",
+              "url": "https://ga.de/region/sieg-und-rhein/siegburg/siegstrecke-ab-dezember-gesperrt-zeitweise-bis-siegburg-und-troisdorf_aid-159036675"
             }
           ]
         }
@@ -62,22 +57,18 @@
       "titel": "Immobilien",
       "artikel": [
         {
-          "titel": "Amtliche Preise nur noch +0,6 Prozent — in den Metropolen drehen Eigentumswohnungen ins Minus",
-          "aufmacher": "Wohnimmobilien in Deutschland verteuerten sich im zweiten Quartal 2026 nur noch um 0,6 Prozent zum Vorjahr und 0,3 Prozent zum Vorquartal.",
-          "fakten": "In den sieben Metropolen gaben Eigentumswohnungen 0,4 Prozent zum Vorjahr und 0,5 Prozent zum Vorquartal nach, Einfamilienhäuser dort minus 0,6 Prozent zum Vorquartal. Kreisfreie Großstädte außerhalb der Metropolen legten dagegen um 2,0 Prozent zu (Wohnungen), dicht besiedelte Landkreise verloren 1,8 Prozent bei Wohnungen. Parallel verharrt das Zinsniveau: Finanztip nennt am 17. November 4,4 bis 5,0 Prozent je nach Zinsbindung, die Interhyp-Konditionen der Vorwoche lagen bei 4,04 Prozent für zehn Jahre bei unter 70 Prozent Beleihung.",
-          "einordnung": "Der Trend läuft auseinander: Wohnungen in Metropolen werden billiger, Häuser im Umland teurer. Für MFH-Käufe im Rhein-Sieg-Kreis heißt das, den Preis pro Quadratmeter je Teilmarkt zu prüfen statt auf den Bundesdurchschnitt zu schauen — und den Faktor bei 4,2 Prozent Zins unter 20 zu halten.",
+          "titel": "Kapitalanleger kehren zurück: Mieten +3,5 Prozent, Kaufpreise drei Monate in Folge billiger",
+          "aufmacher": "Der Anteil finanzierter Kapitalanlagen ist 2026 auf 26 Prozent gestiegen — der höchste Stand seit 2010.",
+          "fakten": "2023 lag der Anteil nach Interhyp-Daten noch bei 22 Prozent; der Zins für zehnjährige Darlehen beträgt bei Interhyp aktuell 4,29 Prozent (Stand 26.11.2026). Der Verband deutscher Pfandbriefbanken (VDP) meldet für das dritte Quartal 2026 Neuvertragsmieten 3,5 Prozent über dem Vorjahresquartal, während die Kaufpreise laut Interhyp den dritten Monat in Folge gesunken sind. Die Mietseite belegt eine IW-Studie: In Berlin stieg die Median-Nettokaltmiete für inserierte Wohnungen bis 40 Quadratmeter seit 2012 um 121 Prozent auf 624 Euro im ersten Halbjahr 2026, in München um 92 Prozent auf 845 Euro.",
+          "einordnung": "Das ist die Konstellation, auf die die MFH-Strategie setzt: weichende Kaufpreise, steigende Mieten, Zins bei 4,29 Prozent. Interhyp nennt rund 5 Prozent Bruttomietrendite als Schwelle, ab der sich ein Objekt von Beginn an trägt — bei 4,29 Prozent Zins heißt das Faktor unter 20 rechnen und die Mietsteigerung nicht doppelt in den Cashflow einpreisen.",
           "quellen": [
             {
-              "name": "Destatis, Häuserpreisindex 2. Quartal 2026 (Pressemitteilung 336/2026)",
-              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_336_61262.html"
+              "name": "Interhyp, 26.11.2026",
+              "url": "https://www.interhyp.de/ratgeber/news/immobilien-als-kapitalanlage-jetzt-wieder-attraktiver"
             },
             {
-              "name": "Finanztip, Bauzinsen, Stand 17.11.2026",
-              "url": "https://www.finanztip.de/baufinanzierung/hypothekenzinsen/"
-            },
-            {
-              "name": "Interhyp, Bauzinsen aktuell",
-              "url": "https://www.interhyp.de/zinsen/"
+              "name": "RP Online, 26.11.2026 (IW-Studie)",
+              "url": "https://rp-online.de/politik/deutschland/wohnungsmarkt-steigende-mieten-sinkendes-angebot-ergebnisse-einer-neuen-iw-studie_aid-159029087"
             }
           ]
         }
@@ -87,26 +78,22 @@
       "titel": "Finanzen",
       "artikel": [
         {
-          "titel": "EZB dürfte am 17. Dezember noch einmal um 25 Basispunkte erhöhen",
-          "aufmacher": "Vor der letzten Zinssitzung des Jahres am 17. Dezember gilt ein Schritt um 25 Basispunkte als sehr wahrscheinlich.",
-          "fakten": "Der Einlagensatz liegt seit dem 16. September 2026 unverändert bei 2,50 Prozent, die Hauptrefinanzierung bei 2,65 Prozent. Die Inflation im Euroraum stieg im Oktober auf 4,0 Prozent nach 3,8 Prozent im September, getrieben vor allem von Energie mit plus 21,0 Prozent. Die KfW erwartet für Deutschland 2027 drei Prozent Teuerung (0,7 Punkte mehr als zuvor) und hält beim Dezember-Entscheid einen letzten Zinsschritt für sehr wahrscheinlich — danach sei der Straffungszyklus aus ihrer Sicht beendet.",
-          "einordnung": "Jeder weitere Schritt verteuert Anschlussfinanzierungen. Bei geplantem Bankdarlehen für das MFH spricht das dafür, eine lange Zinsbindung früh zu sichern statt auf fallende Zinsen zu setzen.",
+          "titel": "DAX springt 2,1 Prozent — Zollangst lässt nach, Inflationszahl folgt Montag",
+          "aufmacher": "Der DAX hat am Donnerstag 2,1 Prozent zugelegt und bei 25.216 Punkten geschlossen.",
+          "fakten": "Auslöser waren nachlassende Sorgen vor US-Zöllen auf EU-Waren: Der Gesetzentwurf muss erst den Senat passieren, eine Anhörung wird nicht vor dem 25. Januar 2027 erwartet, und das Büro des US-Handelsbeauftragten will neue Zölle auf die niedrigeren Sätze aus laufenden Handelsgesprächen begrenzen — USA und EU hatten sich auf 15 Prozent verständigt. Bank- und Technologiewerte führten die Erholung an (Deutsche Bank +2,6 Prozent, Infineon +3,6 Prozent), der EuroStoxx50 schloss 2,3 Prozent höher bei 6027 Punkten; die Wall Street blieb wegen Thanksgiving geschlossen. Am Montag, 30. November, veröffentlicht Destatis die vorläufige Inflationsrate für November — im Oktober lag sie bei 2,8 Prozent, der harmonisierte Index bei 2,9 Prozent.",
+          "einordnung": "Nachlassender Zolldruck entlastet die Zulieferkette, für die Finanzierung zählt aber der 17. Dezember: Dann entscheidet die EZB, und ein weiterer Schritt um 25 Basispunkte gilt als wahrscheinlich. Wer das Bankdarlehen für das MFH braucht, sollte die Zinsbindung vorher sichern.",
           "quellen": [
             {
-              "name": "EZB, Key ECB interest rates",
-              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+              "name": "n-tv Börsen-Tag, 26.11.2026",
+              "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Donnerstag-26-November-2026-id31578571.html"
             },
             {
-              "name": "Eurostat, Inflation im Euroraum (Oktober 2026)",
-              "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Inflation_in_the_euro_area"
+              "name": "Handelsblatt, 26.11.2026",
+              "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-notiert-im-plus/100272884.html"
             },
             {
-              "name": "Cash., 25.11.2026: KfW erwartet Zinsschritt im Dezember",
-              "url": "https://www.cash-online.de/a/ezb-zinsentscheid-im-dezember-kfw-erhoeht-inflationsprognose-731560/"
-            },
-            {
-              "name": "EZB, Sitzungskalender",
-              "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+              "name": "Deutsche Bundesbank, HVPI-Veröffentlichungstermin 30.11.2026",
+              "url": "https://www.bundesbank.de/de/statistiken/konjunktur-und-preise/harmonisierter-verbraucherpreisindex/harmonisiert-verbraucherpreisindex-927952"
             }
           ]
         }
@@ -116,18 +103,18 @@
       "titel": "IT/Server",
       "artikel": [
         {
-          "titel": "HA-MCP: stabiles 9.3.0 da — Szenen aus Live-Zuständen, Logs-Werkzeug, Update-Pfade wie Core",
-          "aufmacher": "Das HA-MCP-Add-on ist am 25. November von 9.2.0 auf die stabile Version 9.3.0 gehoben worden (der Dev-Kanal von gestern ist eine separate Installation).",
-          "fakten": "Neu im stabilen Release: Szenen lassen sich aus aktuellen Gerätezuständen erzeugen, das Update-Werkzeug folgt den Update- und Repairs-Pfaden von Home Assistant Core und liest Breaking Changes, die Backup-vor-Update-Einstellungen sind les- und änderbar, dazu kommen ein Log-Werkzeug (ha_manage_logs), Kamerabilder aus Image-Entities und ein Export/Import der Einstellungen zwischen Installationen. Weiter offen bleibt nur das NAS: DSM 7.4.1-90080 Update 2 ist seit dem 20. November verfügbar (behebt Synology-SA-26:20 und SA-26:21, Neustart nötig), alle anderen 99 Update-Entitäten melden keinen offenen Stand.",
-          "einordnung": "Beides braucht einen Neustart des jeweiligen Systems — HA-Add-on und NAS —, deshalb warte ich auf deine Freigabe; das DSM-Update ist ein Sicherheitsupdate und sollte zeitnah eingespielt werden.",
+          "titel": "Frigate 0.18.3 schließt Root-Lücke im mitgelieferten nginx",
+          "aufmacher": "Frigate 0.18.3 behebt CVE-2026-123007 — eine nicht authentifizierte Remotecode-Ausführung als root über das gebündelte nginx 1.27.4 mit HTTP/2.",
+          "fakten": "Betroffen sind Installationen, die HTTP/2 im mitgelieferten nginx nutzen; daneben beschränkt das Release die go2rtc-Optionen für ffmpeg und ngrok sowie die Variablen-Expansion in Stream-Quellen. Installiert ist 0.18.2, verfügbar 0.18.3 — das ist ein Sicherheitsupdate. Ebenfalls offen: Spook 5.11.1 → 5.12.0 (auf großen Installationen deutlich schneller, neue Webseite in neun Sprachen inklusive Deutsch) und der HA-MCP-Dev-Kanal 9.3.1.dev3737 → 9.4.0.dev3750, dort ist Auto-Update aktiv. Der vom Watchdog gemeldete gestoppte Container ist firecrawl-starter-monitor-db-init-1, ein einmaliger Init-Job, der vor acht Wochen mit Code 0 fertig wurde — kein Handlungsbedarf. Die übrigen der 101 Update-Entitäten melden keinen offenen Stand.",
+          "einordnung": "Beide echten Updates kosten einen Neustart des jeweiligen Dienstes — ich warte auf deine Freigabe. Frigate würde ich wegen der Root-Lücke vorziehen.",
           "quellen": [
             {
-              "name": "GitHub, ha-mcp Release v9.3.0",
-              "url": "https://github.com/homeassistant-ai/ha-mcp/releases/tag/v9.3.0"
+              "name": "Frigate Release 0.18.3 (Security Advisory GHSA-7822-v38f-8p44)",
+              "url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.3"
             },
             {
-              "name": "Synology, Release Notes DSM 7.4.1-90080 Update 2",
-              "url": "http://update.synology.com/autoupdate/whatsnew.php?model=DS920%2B&update_version=90080-2"
+              "name": "Spook Release v5.12.0",
+              "url": "https://github.com/frenck/spook/releases/tag/v5.12.0"
             }
           ]
         }
@@ -149,21 +136,26 @@
       "titel": "Deutsche / europäische KI",
       "artikel": [
         {
-          "titel": "Deutsche/europäische KI: nichts Neues.",
-          "aufmacher": "",
-          "fakten": "",
-          "einordnung": "",
-          "quellen": []
-        },
-        {
-          "titel": "📡 the-decoder.de: OpenAI testet „Private Inference“ für Firmendaten",
-          "aufmacher": "OpenAI testet mit ersten Unternehmenskunden ein Angebot, bei dem der Anbieter die verarbeiteten Daten selbst nicht zu sehen bekommt.",
-          "fakten": "Bei „Private Inference“ laufen Anfragen auf besonders abgeschirmter Hardware, deren Schutz überprüfbar sein soll; ergänzend sucht „Private Safety Processing“ nach Missbrauch, ohne Kundendaten zu speichern — auffällige Inhalte bleiben verschlüsselt im Speicher des Kunden. OpenAI baut die Rechenkapazität dafür aus. Bislang nutzt OpenAI Geschäftskundendaten ohnehin nicht fürs Training, private ChatGPT-Chats dagegen standardmäßig, sofern Nutzer nicht widersprechen. Google verfolgt mit „Private AI Compute“ einen ähnlichen Ansatz.",
-          "einordnung": "Datenschutz wird zum Produktmerkmal — relevant, falls Quixx24 KI auf Vertrags- oder Kundendaten ansetzen will, ohne die Daten aus der Hand zu geben.",
+          "titel": "Bund beteiligt sich mit einem symbolischen Euro an Cohere — und prüft mehr",
+          "aufmacher": "Der Bund will sich mit einem symbolischen Euro am kanadisch-deutschen KI-Anbieter Cohere beteiligen; das Bundesdigitalministerium bestätigte am 26. November einen entsprechenden Bericht.",
+          "fakten": "Das Bundesfinanzministerium hat die Minibeteiligung genehmigt, die dem Bund weitgehende Sonderrechte einräumt: Cohere verpflichtet sich nach Angaben des Ministeriums, zur Wettbewerbsfähigkeit bei KI in Deutschland beizutragen und Arbeitsplätze, Forschung sowie Investitionen im Land zu sichern. Eine weitergehende Beteiligungsoption wird derzeit geprüft. Hintergrund ist der Zusammenschluss von Cohere mit dem Heidelberger Anbieter Aleph Alpha — de facto eine Übernahme; das Unternehmen soll souveräne KI für Verwaltung, Finanzen, Verteidigung, Energie, Telekommunikation und Gesundheitswesen liefern, unabhängig von großen US-Rechenzentren.",
+          "einordnung": "Relevant, sobald Quixx24 oder die Objektverwaltung KI auf Vertrags- und Kundendaten ansetzen will: ein europäischer Anbieter mit Bundesbeteiligung ist die politisch gewollte Option. Offen bleibt, was die Governance-Zusagen praktisch wert sind — ein Euro Beteiligung kauft keine Mitbestimmung.",
           "quellen": [
             {
-              "name": "the-decoder.de, 25.11.2026",
-              "url": "https://the-decoder.de/openai-will-firmendaten-mit-private-inference-vor-sich-selbst-verstecken/"
+              "name": "onvista/dpa-AFX, 26.11.2026",
+              "url": "https://www.onvista.de/news/2026/11-26-bund-beteiligt-sich-mit-einem-euro-an-ki-firma-cohere-0-10-26580982"
+            }
+          ]
+        },
+        {
+          "titel": "📡 the-decoder.de: KI-Framework ARTEX führt Angriffe in Minuten aus",
+          "aufmacher": "Microsoft hat offengelegt, wie das im Juli 2026 veröffentlichte Framework ARTEX Cyberangriffe mit spezialisierten KI-Agenten nahezu ohne menschliches Eingreifen führt.",
+          "fakten": "ARTEX erfindet keine neuen Techniken, sondern steuert vorhandene Werkzeuge: Nmap für offene Zugänge, Sqlmap für Datenbanken, Metasploit für bekannte Lücken, dazu Headless-Browser. Das System verteilt Aufgaben eigenständig, wechselt bei Fehlern zwischen Sprachmodellen und arbeitet in Maschinengeschwindigkeit, wodurch Verteidigern oft nur Minuten bleiben. Laut Microsoft nutzen staatliche Gruppen aus China und Nordkorea (Salt Typhoon, Onyx Sleet, Storm-0940) und finanziell motivierte Kriminelle das Framework, unter anderem für Lieferkettenangriffe. Als Gegenmittel empfiehlt Microsoft gezielte Täuschung — Scheinsysteme und vorgetäuschte Erfolgsmeldungen, die die Agenten zum Abbruch bringen.",
+          "einordnung": "Betrifft jede öffentlich erreichbare Oberfläche im Heimnetz: Reverse-Proxy, Fernzugriff, Cloud-Dienste. Wer Ports offen hat, sollte Patchstand und Zugriffsschutz prüfen — gegen agentische Angriffe hilft schnelles Einspielen von Sicherheitsupdates mehr als jedes Passwort.",
+          "quellen": [
+            {
+              "name": "the-decoder.de, 26.11.2026",
+              "url": "https://the-decoder.de/microsoft-zeigt-wie-hacker-aus-china-und-nordkorea-fremde-netzwerke-mit-autonomen-ki-agenten-in-minuten-uebernehmen"
             }
           ]
         }
@@ -173,38 +165,38 @@
       "titel": "Ausland über Deutschland",
       "artikel": [
         {
-          "titel": "🇮🇹 Italien: Merz bremst im Bundestag — „Wir können nicht alles finanzieren“",
-          "aufmacher": "Bei der Debatte über den Bundeshaushalt 2027 hat Kanzler Friedrich Merz die Lage als schwierig bezeichnet und weitere Ausgabenwünsche gebremst.",
-          "fakten": "Merz sagte nach ANSA-Bericht aus Berlin, Deutschland sei in einer schwierigen Situation, man könne nicht alles finanzieren; alle müssten „auf einige Ideen verzichten“. Eine konkrete Einsparsumme nennt die Meldung nicht. Die Schlussabstimmung im Bundestag ist für Freitag angesetzt — derselbe Etat, aus dem EU-Beiträge und Ukraine-Hilfen vorfinanziert werden.",
-          "einordnung": "🇮🇹 Italien — ANSA, 25.11.2026, 12:39 — https://www.ansa.it/nuova_europa/it/notizie/rubriche/altrenews/2026/11/25/merz-la-germania-e-in-una-situazione-difficile-non-possiamo-finanziare-tutto_9bf2bc26-26ed-45fb-ae95-be38442fd03d.html (Original: „Merz, 'la Germania è in una situazione difficile, non possiamo finanziare tutto'“)",
+          "titel": "🇮🇹 Italien: Merz sieht Positionen im EU-Budget „noch sehr weit entfernt“",
+          "aufmacher": "Beim Sondergipfel zum Finanzrahmen 2028–2034 sagte Kanzler Merz in Brüssel, die Positionen lägen noch sehr weit auseinander; der Gipfel wird nicht am Freitag fortgesetzt, sondern erst am 17. Dezember.",
+          "fakten": "Merz will den Kommissionsvorschlag um deutlich mehr als die von Ratspräsident Costa genannten 204 Milliarden Euro kürzen: „Mit 200 Milliarden ist man schon an der unteren Grenze dessen, was man mehrere hundert Milliarden nennen kann“, so der Kanzler. Deutschland führt damit die sieben Sparsamen gegen die von Italien geführte Gruppe der 17 Kohäsionsländer, die das EU-Budget nicht weiter schrumpfen lassen wollen.",
+          "einordnung": "🇮🇹 Italien — il Giornale, 26.11.2026, 13:00 — https://www.ilgiornale.it/news/interni/meloni-frena-su-bilancio-ue-siamo-a-anni-luce-da-una-soluzione-la-manovra-faremo-cio-che-serve-per-migliorarla (Original: „Meloni frena sul bilancio Ue: Siamo a anni luce da una soluzione. Merz: Posizioni ancora molto distanti, domani niente summit“)",
           "quellen": [
             {
-              "name": "ANSA, 25.11.2026",
-              "url": "https://www.ansa.it/nuova_europa/it/notizie/rubriche/altrenews/2026/11/25/merz-la-germania-e-in-una-situazione-difficile-non-possiamo-finanziare-tutto_9bf2bc26-26ed-45fb-ae95-be38442fd03d.html"
+              "name": "il Giornale, 26.11.2026",
+              "url": "https://www.ilgiornale.it/news/interni/meloni-frena-su-bilancio-ue-siamo-a-anni-luce-da-una-soluzione-la-manovra-faremo-cio-che-serve-per-migliorarla"
             }
           ]
         },
         {
-          "titel": "🇳🇱 Niederlande: Festnahmen von 14- und 15-Jährigen wegen rechtsextremer Anschlagspläne",
-          "aufmacher": "Die deutsche Polizei hat bei Durchsuchungen drei Jugendliche im Alter von 14 und 15 Jahren festgenommen, die zur Gruppe „Terror 18“ gehören sollen.",
-          "fakten": "Nach Angaben der Justiz plant die Gruppe Brandanschläge und Mordanschläge, vor allem gegen Ausländer und politische Gegner; ein Anschlag auf eine Flüchtlingsunterkunft im niedersächsischen Winsen bei Hamburg sei Ende Oktober vereitelt worden, damals wurden drei weitere Verdächtige festgenommen. Die Zahl 18 verweist in der Neonazi-Szene auf die Initialen Adolf Hitlers.",
-          "einordnung": "🇳🇱 Niederlande — NOS, 25.11.2026, 12:11 — https://nos.nl/artikel/2640959-duitse-politie-pakt-14-en-15-jarigen-op-voor-rechts-extremistische-aanslagplannen (Original: „Duitse politie pakt 14- en 15-jarigen op voor rechts-extremistische aanslagplannen“)",
+          "titel": "🇳🇱 Niederlande: Waffenscheine von zwei AfD-Mitgliedern zu Unrecht entzogen",
+          "aufmacher": "Das Bundesverwaltungsgericht in Leipzig hat entschieden, dass zwei Mitglieder der aufgelösten AfD-Jugendorganisation Junge Alternative ihre Waffenscheine 2022 zu Unrecht verloren haben.",
+          "fakten": "Nach dem Urteil reicht ein bloßer Verdacht auf rechtsextremistische Ziele nicht aus; die Behörden müssen nachweisen, dass eine Organisation tatsächlich verfassungswidrige Ziele verfolgt. Bei einem Mitglied der Reichsbürgerbewegung bestätigte das Gericht den Entzug dagegen. Deutschland hat eines der strengsten Waffengesetze Europas — Behörden dürfen Waffenscheine verweigern oder entziehen, wenn jemand als unzuverlässig gilt.",
+          "einordnung": "🇳🇱 Niederlande — NOS, 26.11.2026, 22:25 — https://nos.nl/artikel/2641163-wapenvergunningen-van-twee-afd-ers-onterecht-ingetrokken-oordeelt-hoogste-bestuursrechter (Original: „Wapenvergunningen van twee AfD’ers onterecht ingetrokken, oordeelt hoogste bestuursrechter“)",
           "quellen": [
             {
-              "name": "NOS, 25.11.2026",
-              "url": "https://nos.nl/artikel/2640959-duitse-politie-pakt-14-en-15-jarigen-op-voor-rechts-extremistische-aanslagplannen"
+              "name": "NOS, 26.11.2026",
+              "url": "https://nos.nl/artikel/2641163-wapenvergunningen-van-twee-afd-ers-onterecht-ingetrokken-oordeelt-hoogste-bestuursrechter"
             }
           ]
         },
         {
-          "titel": "🇫🇷 Frankreich: Berlin führt die Sparsamen im EU-Budgetstreit an",
-          "aufmacher": "Vor dem Sondergipfel am Donnerstag und Freitag pocht Berlin auf Kürzungen im EU-Haushalt.",
-          "fakten": "Deutschland war 2025 mit 14,9 Milliarden Euro größter Nettozahler der EU, nach einer am Dienstag veröffentlichten Studie des Instituts der deutschen Wirtschaft (IW Köln). Auf dem Gipfel geht es um den nächsten mehrjährigen Finanzrahmen, die Ukraine-Finanzierung 2027 und die Neubesetzung der EZB-Führung; parallel stimmt der Bundestag am Freitag über den deutschen Haushalt 2027 ab.",
-          "einordnung": "🇫🇷 Frankreich — Le Figaro, 25.11.2026, 21:30 — https://www.lefigaro.fr/international/budget-de-l-ue-les-exigences-de-l-allemagne-chef-de-file-des-frugaux-et-premier-contributeur-net-20261125 (Original: „Budget de l'UE : les exigences de l'Allemagne, chef de file des « frugaux » et premier contributeur net“)",
+          "titel": "🇫🇷 Frankreich: Macron nennt den EU-Haushaltskurs einen „strategischen Fehler“ und setzt ein Ultimatum",
+          "aufmacher": "Frankreichs Präsident Emmanuel Macron hat den Kurs beim EU-Budget als strategischen Fehler kritisiert und eine Frist bis Jahresende für einen Beschluss gesetzt.",
+          "fakten": "Nach Le Figaro sieht sich Macron in Brüssel isoliert gegenüber Deutschland und den übrigen Sparsamen und zog eigene rote Linien; ohne Einigung bis Ende des Jahres soll sein Nachfolger die Aufgabe übernehmen. Beim Gipfel am Donnerstag gab es keinen Abschluss, die Verhandlungen gehen am 17. Dezember weiter. Berlin verlangt als größter Nettozahler deutlich tiefere Kürzungen als die Kommission und der Ratsvorsitz.",
+          "einordnung": "🇫🇷 Frankreich — Le Figaro, 27.11.2026, 06:44 — https://www.lefigaro.fr/international/budget-europeen-macron-denonce-une-erreur-strategique-et-trace-ses-lignes-rouges-20261126 (Original: „Budget de l’UE : Emmanuel Macron dénonce une «erreur stratégique», trace ses lignes rouges et tacle la «drôle d’arrogance» de Marine Le Pen“)",
           "quellen": [
             {
-              "name": "Le Figaro, 25.11.2026",
-              "url": "https://www.lefigaro.fr/international/budget-de-l-ue-les-exigences-de-l-allemagne-chef-de-file-des-frugaux-et-premier-contributeur-net-20261125"
+              "name": "Le Figaro, 27.11.2026",
+              "url": "https://www.lefigaro.fr/international/budget-europeen-macron-denonce-une-erreur-strategique-et-trace-ses-lignes-rouges-20261126"
             }
           ]
         }
