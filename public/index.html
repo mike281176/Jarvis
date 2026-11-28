@@ -89,6 +89,31 @@ nav a.on{color:var(--acc)}
 #resetBox{display:none;width:100%}
 #login .fuss{margin-top:auto;font-size:11px;color:var(--mut);text-align:center;padding-top:24px}
 
+/* Haushaltsbuch */
+.hbmonate{display:flex;gap:6px;overflow-x:auto;margin-top:12px;padding-bottom:2px;scrollbar-width:none}
+.hbmonate::-webkit-scrollbar{display:none}
+.hbmonate button{flex:0 0 auto;background:var(--card2);border:1px solid var(--line);color:var(--mut);
+  font-family:inherit;font-size:11px;padding:5px 9px;border-radius:8px;cursor:pointer}
+.hbmonate button.on{background:var(--acc);border-color:var(--acc);color:#0a0e14;font-weight:600}
+.hbrow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:6px 0}
+.hbrow .n{font-size:12px;color:var(--fg)}
+.hbrow .s{font-size:12px;font-weight:600;white-space:nowrap}
+.hbbar{height:5px;border-radius:3px;background:#0c131c;overflow:hidden;margin:2px 0 8px}
+.hbbar i{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,#35d07f,#7ee0a8)}
+.hbbar i.w{background:linear-gradient(90deg,#f5a524,#ffcf7a)}
+.hbbar i.r{background:linear-gradient(90deg,#ff6b6b,#ff9c9c)}
+.hbsub{font-size:10px;color:var(--mut);margin-top:-4px}
+/* Kopfzeilen: Label und Wert dürfen nicht kollidieren */
+#view-haushalt .between{gap:12px;align-items:baseline}
+#view-haushalt .between > div:last-child{flex:0 0 auto;white-space:nowrap;text-align:right}
+.hbrow .n{flex:1 1 auto;min-width:0;overflow-wrap:anywhere}
+.hbrow .s{flex:0 0 auto}
+#view-haushalt{padding-bottom:34px}
+/* Auf dem Handy alles einspaltig — halbe Karten sind zu eng */
+@media (max-width:699px){
+  #view-haushalt .span2,#view-haushalt .span3{grid-column:span 4}
+  #view-haushalt .big{font-size:26px}
+}
 /* Bewertungs-App: Vollbild über allem, mit eigener Kopfleiste */
 #view-bewertung{position:fixed;inset:0;z-index:200;background:var(--bg);display:none;flex-direction:column}
 #view-bewertung.on{display:flex}
@@ -302,6 +327,53 @@ body.flip-offen{overflow:hidden}
   </div>
 </section>
 
+<section class="view" id="view-haushalt">
+  <div class="bento">
+    <div class="c span4"><div class="flex">
+      <div class="between"><div class="lbl">Haushaltsbuch · VR-Bank</div><div class="mut" id="hbStand">—</div></div>
+      <div style="display:flex;gap:18px;margin-top:12px;flex-wrap:wrap">
+        <div><div class="mid num ok" id="hbEin">—</div><div class="mut">Einnahmen</div></div>
+        <div><div class="mid num" id="hbAus">—</div><div class="mut">Ausgaben</div></div>
+        <div><div class="mid num" id="hbSaldo">—</div><div class="mut">Saldo</div></div>
+      </div>
+      <div class="hbmonate" id="hbMonate"></div>
+    </div></div>
+
+    <div class="c span2"><div class="flex">
+      <div class="between"><div class="lbl">Schuldenuhr</div><div class="mut" id="hbSuStand">—</div></div>
+      <div class="big num acc" id="hbSuRest">—</div>
+      <div class="mut">Restschuld</div>
+      <div class="hbbar" style="margin-top:10px"><i id="hbSuBar" style="width:0%"></i></div>
+      <div class="between"><div class="mut">getilgt <b id="hbSuPct" style="color:var(--fg)">—</b></div>
+        <div class="mut">Rate <b id="hbSuRate" style="color:var(--fg)">—</b></div></div>
+    </div></div>
+
+    <div class="c span2"><div class="flex">
+      <div class="lbl">Was bleibt</div>
+      <div class="big num" id="hbFrei">—</div>
+      <div class="mut" id="hbFreiText">Kommt aus Einnahmen minus Fixkosten minus Budget</div>
+      <div id="hbTipp" style="margin-top:10px"></div>
+    </div></div>
+
+    <div class="c span2"><div class="flex">
+      <div class="between"><div class="lbl">Feste Ausgaben</div><div class="mut num" id="hbFixSumme">—</div></div>
+      <div id="hbFix" style="margin-top:6px"><div class="mut">lade …</div></div>
+    </div></div>
+
+    <div class="c span2"><div class="flex">
+      <div class="between"><div class="lbl">Veränderlich</div><div class="mut" id="hbVarSumme">—</div></div>
+      <div id="hbVar" style="margin-top:6px"><div class="mut">lade …</div></div>
+    </div></div>
+
+    <div class="c span4"><div class="flex">
+      <div class="lbl">Auffälligkeiten</div>
+      <div id="hbWarnung" style="margin-top:6px"><div class="mut">nichts offen</div></div>
+      <div style="margin-top:12px"><a href="#" id="hbZumKassenbuch"
+        style="font-size:11px;color:var(--acc);text-decoration:none">Alle Buchungen im Kassenbuch →</a></div>
+    </div></div>
+  </div>
+</section>
+
 <section class="view" id="view-bewertung">
   <div class="kopf">
     <span class="titel">Bewertung &amp; Kalkulation</span>
@@ -313,6 +385,7 @@ body.flip-offen{overflow:hidden}
 <nav>
   <a href="#" class="on" data-view="immo">Immobilien</a>
   <a href="#" data-view="bewertung">Bewertung</a>
+  <a href="#" data-view="haushalt">Budget</a>
   <a href="#" data-view="haus">Haus</a>
   <a href="#" data-view="kameras">Kameras</a>
   <a href="#" data-view="system">System</a>
@@ -343,6 +416,7 @@ document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', e =>
   const v = $('view-' + a.dataset.view);
   if (v) v.classList.add('on');
   set('areaName', a.textContent.toUpperCase());
+  if (a.dataset.view === 'haushalt') { if (!hbDaten) ladeHaushalt(); else zeichneHaushalt(); }
   window.scrollTo({top:0});
 }));
 document.querySelectorAll('#login .wer button').forEach(b => b.addEventListener('click', () => {
@@ -554,6 +628,112 @@ async function ladeSystem() {
 
 // ============ Kassenbuch ============
 let kbDaten = null;
+// ============ Haushaltsbuch ============
+document.addEventListener('click', e => {
+  if (e.target && e.target.id === 'hbZumKassenbuch') { e.preventDefault(); oeffneKassenbuch(); }
+});
+let hbDaten = null, hbMonat = null;
+
+function monatKurz(m) {
+  const namen = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'];
+  if (!m || m.length < 7) return m || '—';
+  const [j, mo] = m.split('-');
+  return `${namen[parseInt(mo,10)-1]} ${j.slice(2)}`;
+}
+async function ladeHaushalt() {
+  try {
+    const r = await fetch(`${API}/haushaltsbuch`, {cache: 'no-store'});
+    const d = await r.json();
+    if (d.status !== 'ok') { set('hbStand', d.message || 'keine Daten'); return; }
+    hbDaten = d;
+    if (!hbMonat || !(d.monate || []).some(m => m.monat === hbMonat)) {
+      hbMonat = d.letzter_monat || (d.monate.length ? d.monate[d.monate.length-1].monat : null);
+    }
+    zeichneHaushalt();
+  } catch (e) { set('hbStand', 'nicht erreichbar'); }
+}
+function hbAktuell() {
+  return ((hbDaten && hbDaten.monate) || []).find(m => m.monat === hbMonat) || {};
+}
+function hbZeile(name, ist, budget, mitBalken) {
+  const quote = budget > 0 ? ist / budget : (ist > 0 ? 1.2 : 0);
+  const klasse = quote > 1.02 ? 'r' : quote > 0.9 ? 'w' : '';
+  const breite = Math.min(100, Math.round(quote * 100));
+  const zeile = `<div class="hbrow"><span class="n">${name}</span>
+      <span class="s ${quote > 1.02 ? 'warn' : ''}">${eur(ist)}<span class="mut"> / ${eur(budget)}</span></span></div>`;
+  return mitBalken ? zeile + `<div class="hbbar"><i class="${klasse}" style="width:${breite}%"></i></div>` : zeile;
+}
+function zeichneHaushalt() {
+  if (!hbDaten) return;
+  const d = hbDaten, m = hbAktuell();
+
+  set('hbStand', d.stand ? 'Bankstand ' + deutsch(d.stand.slice(0, 10)) : '—');
+
+  const monate = (d.monate || []).slice().reverse();
+  $('hbMonate').innerHTML = monate.map(x =>
+    `<button data-m="${x.monat}" class="${x.monat === hbMonat ? 'on' : ''}">${monatKurz(x.monat)}</button>`).join('');
+  $('hbMonate').querySelectorAll('button').forEach(b => {
+    b.onclick = () => { hbMonat = b.dataset.m; zeichneHaushalt(); };
+  });
+
+  set('hbEin', eur(m.einnahmen));
+  set('hbAus', eur(m.ausgaben));
+  const saldo = m.saldo || 0;
+  set('hbSaldo', eur(saldo));
+  $('hbSaldo').className = 'mid num ' + (saldo >= 0 ? 'ok' : 'warn');
+
+  // Schuldenuhr
+  const s = d.schulden || {};
+  set('hbSuRest', s.rest != null ? eur(s.rest) : '—');
+  set('hbSuPct', s.getilgt_pct != null ? String(s.getilgt_pct).replace('.', ',') + ' %' : '—');
+  set('hbSuRate', s.rate != null ? eur(s.rate) + ' / Monat' : '—');
+  set('hbSuStand', s.stand ? 'Kredite ' + deutsch(s.stand) : (s.geber || ''));
+  $('hbSuBar').style.width = Math.max(1, Math.min(100, s.getilgt_pct || 0)) + '%';
+
+  // Feste und veränderliche Ausgaben
+  const fix = (d.kategorien || []).filter(k => k.typ === 'fix');
+  const variabel = (d.kategorien || []).filter(k => k.typ !== 'fix');
+  const ist = name => (m.kategorien && m.kategorien[name]) || 0;
+
+  const zeigbar = k => !(ist(k.name) === 0 && k.budget < 5);
+  $('hbFix').innerHTML = fix.filter(zeigbar).map(k => hbZeile(k.name, ist(k.name), k.budget, true)).join('')
+    || '<div class="mut">keine Fixkosten erkannt</div>';
+  const fixBudget = fix.reduce((a, k) => a + k.budget, 0);
+  set('hbFixSumme', eur(m.fix != null ? m.fix : fixBudget) + ' / ' + eur(fixBudget));
+
+  $('hbVar').innerHTML = variabel.filter(zeigbar).map(k => hbZeile(k.name, ist(k.name), k.budget, true)).join('')
+    || '<div class="mut">keine Buchungen</div>';
+  const varBudget = variabel.reduce((a, k) => a + k.budget, 0);
+  set('hbVarSumme', eur(m.variabel != null ? m.variabel : 0) + ' / ' + eur(varBudget));
+
+  // Was bleibt (Plan: Einnahmen minus alle Budgets)
+  const plan = fixBudget + varBudget;
+  const frei = (m.einnahmen || 0) - plan;
+  set('hbFrei', eur(frei));
+  $('hbFrei').className = 'big num ' + (frei >= 0 ? 'ok' : 'warn');
+  set('hbFreiText', `${monatKurz(hbMonat)}: Einnahmen ${eur(m.einnahmen)} − Budgets ${eur(plan)}`);
+  const rate = s.rate || 0;
+  $('hbTipp').innerHTML = frei >= 0
+    ? `<div class="mut">Im Plan frei. Reicht für ${(frei / (rate || 1)).toFixed(1).replace('.', ',')}× Schuldenrate — oder als Sondertilgung einsetzen.</div>`
+    : `<div class="mut warn">Plan deckt die Ausgaben nicht. Prüfen, welche Kategorie über dem Budget liegt.</div>`;
+
+  // Auffälligkeiten
+  const offen = d.offene_zahlungen || [];
+  const dopp = d.doppelverdacht || [];
+  let warn = '';
+  if (offen.length) {
+    warn += offen.map(g => `<div class="kv"><span>${(g.empfaenger || '').slice(0, 30)}…<br>
+      <span class="mut">fällig ${deutsch(g.faelligkeit)}${g.grund ? ' · ' + String(g.grund).replace(/^AM04 /, '') : ''}</span></span>
+      <b class="num warn">${eur(g.betrag)}</b></div>`).join('');
+  }
+  if (dopp.length) {
+    warn += dopp.map(g => `<div class="kv"><span>Doppelzahlung? ${(g.empfaenger || '').slice(0, 26)}…<br>
+      <span class="mut">${(g.buchungen || []).map(x => deutsch(String(x).slice(0, 10))).join(' und ')}</span></span>
+      <b class="num warn">${eur(g.betrag)}</b></div>`).join('');
+  }
+  $('hbWarnung').innerHTML = warn || '<div class="mut">alle Zahlungen ausgeführt, keine Doppelungen</div>';
+}
+
 async function ladeKassenbuch() {
   try {
     const r = await fetch(`${API}/kassenbuch`, {cache:'no-store'});

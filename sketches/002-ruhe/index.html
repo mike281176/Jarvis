@@ -1,0 +1,61 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>B Ruhe</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#080b10;--card:#111823;--card2:#16202d;--line:#1e2a38;--fg:#e8eef6;--mut:#7b8ea6;--acc:#f5a524;--ok:#35d07f;--warn:#ff6b6b;--blue:#4ea8ff}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;background:var(--bg);color:var(--fg);line-height:1.45}
+.num{font-variant-numeric:tabular-nums}
+
+body{padding:26px 20px 108px;max-width:640px;margin:0 auto}
+.top{margin-bottom:26px}
+.kick{font-size:10px;letter-spacing:.2em;color:var(--mut);text-transform:uppercase}
+h1{font-size:29px;font-weight:300;letter-spacing:-.6px;margin-top:6px}
+h1 b{font-weight:600;color:var(--acc)}
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:14px}
+.card h2{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--mut);font-weight:500;margin-bottom:16px}
+.hero{font-size:52px;font-weight:300;letter-spacing:-2px;line-height:1}
+.hero small{font-size:16px;color:var(--mut);font-weight:400}
+.hero2{font-size:34px;font-weight:300;letter-spacing:-1px}
+.kv{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.045);font-size:13.5px}
+.kv:last-child{border:0}
+.mut{color:var(--mut)}.ok{color:var(--ok)}.warn{color:var(--warn)}.acc{color:var(--acc)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.split .kv{border:0;display:block}
+.btn{display:block;text-align:center;background:var(--acc);color:#12161c;text-decoration:none;padding:14px;border-radius:13px;font-weight:600;font-size:14px;margin-top:14px}
+nav{position:fixed;bottom:0;left:0;right:0;background:#080b10;backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;padding:10px 0 12px}
+nav a{flex:1;text-align:center;font-size:9.5px;letter-spacing:.06em;color:var(--mut);text-decoration:none;text-transform:uppercase}
+nav a.on{color:var(--acc)}
+</style></head><body>
+<div class="top"><div class="kick">Samstag, 28. November</div><h1>Guten Morgen, <b>Sir</b>.</h1></div>
+<div class="card">
+  <h2>Energie</h2>
+  <div class="hero num">151<small> W</small></div>
+  <div class="mut" style="font-size:13px;margin-top:6px">Erzeugung &middot; Speicher bei 78 %</div>
+  <div style="margin-top:18px">
+    <div class="kv"><span class="mut">Hausverbrauch</span><b class="num">412 W</b></div>
+    <div class="kv"><span class="mut">Netzbezug</span><b class="num acc">261 W</b></div>
+    <div class="kv"><span class="mut">Ertrag heute</span><b class="num">0,98 kWh</b></div>
+  </div>
+</div>
+<div class="card">
+  <h2>Immobilien</h2>
+  <div class="hero2 num acc">41.500 &euro;</div>
+  <div class="mut" style="font-size:13px;margin-top:4px">M&uuml;lheimer Str. &middot; Gewinn nach Sanierung</div>
+  <div style="margin-top:16px">
+    <div class="kv"><span class="mut">Kaufpreis</span><b class="num">189.000 &euro;</b></div>
+    <div class="kv"><span class="mut">Sanierung</span><b class="num">62.000 &euro;</b></div>
+    <div class="kv"><span class="mut">Marge</span><b class="num ok">16,4 %</b></div>
+  </div>
+  <a class="btn" href="#">Neue Bewertung starten</a>
+</div>
+<div class="card">
+  <h2>Haus</h2>
+  <div class="split">
+    <div class="kv"><span class="mut">Wohnzimmer</span><b class="num">21,5 &deg;</b></div>
+    <div class="kv"><span class="mut">Schlafzimmer</span><b class="num">19,8 &deg;</b></div>
+  </div>
+  <div class="kv" style="border-top:1px solid rgba(255,255,255,.045);margin-top:8px">
+    <span class="mut">Kameras</span><b><span class="ok">Haust&uuml;r</span> &middot; <span class="ok">Hinten</span> &middot; <span class="warn">Einfahrt</span></b></div>
+</div>
+<nav><a class="on">Haus</a><a>Immobilien</a><a>Kameras</a><a>KI</a><a>Mehr</a></nav>
+</body></html>

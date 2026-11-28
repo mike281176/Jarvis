@@ -250,6 +250,23 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             print(f"❌ Lokalpost Error: {e}")
             self.send_json_response({'status': 'error', 'message': str(e)}, 500)
 
+    def handle_haushaltsbuch(self):
+        """Haushaltsbuch: Kategorien, Budgets, Fixkosten und Schuldenuhr."""
+        pfad = os.path.expanduser('~/.hermes/data/haushaltsbuch.json')
+        try:
+            with open(pfad, encoding='utf-8') as f:
+                d = json.load(f)
+        except FileNotFoundError:
+            self.send_json_response({'status': 'leer',
+                                     'message': 'Haushaltsbuch noch nicht gebaut.'}, 200)
+            return
+        except Exception as e:
+            self.send_json_response({'status': 'error', 'message': str(e)}, 500)
+            return
+        d = dict(d)
+        d['status'] = 'ok'
+        self.send_json_response(d, 200)
+
     def handle_kassenbuch(self):
         """Liefert die aufbereiteten Buchungen aus dem Kassenbuch-Import."""
         pfad = os.path.expanduser('~/.hermes/data/kassenbuch.json')
@@ -351,6 +368,9 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             self.send_json_response({'status': 'error', 'message': f'Flip-Deal nicht erreichbar: {e}'}, 502)
 
     def do_GET(self):
+        if self.path.startswith('/api/jarvis/haushaltsbuch'):
+            self.handle_haushaltsbuch()
+            return
         if self.path.startswith('/api/jarvis/kassenbuch'):
             self.handle_kassenbuch()
             return
