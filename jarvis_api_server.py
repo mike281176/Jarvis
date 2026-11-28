@@ -322,7 +322,8 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
     def handle_flip_api(self, path, method='GET', body=None):
         """Reicht /api/flip/* an den Flip-Deal-Server (Port 8899) weiter."""
         try:
-            rel = path.replace('/api/flip', '', 1) or '/'
+            rel = path.replace('/api/jarvis/flipapi', '', 1)
+            rel = rel.replace('/api/flip', '', 1) or '/'
             if not rel.startswith('/'):
                 rel = '/' + rel
             url = f"http://{FLIP_BACKEND[0]}:{FLIP_BACKEND[1]}/api{rel}"
@@ -358,7 +359,7 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             self.handle_flip_static(self.path)
             return
 
-        if self.path.startswith('/api/flip/'):
+        if self.path.startswith('/api/flip/') or self.path.startswith('/api/jarvis/flipapi/'):
             self.handle_flip_api(self.path, 'GET')
             return
 
@@ -392,7 +393,7 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             self.send_json_response({'status': 'error', 'message': 'Endpunkt nicht gefunden'}, 404)
     
     def do_POST(self):
-        if self.path.startswith('/api/flip/'):
+        if self.path.startswith('/api/flip/') or self.path.startswith('/api/jarvis/flipapi/'):
             content_length = int(self.headers.get('Content-Length', 0))
             body = self.rfile.read(content_length) if content_length else None
             self.handle_flip_api(self.path, 'POST', body)
