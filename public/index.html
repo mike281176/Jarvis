@@ -126,9 +126,12 @@ nav a.on{color:var(--acc)}
   <button type="button" class="link" id="pwVergessen">Passwort vergessen?</button>
 
   <div id="resetBox">
+    <div style="border-top:1px solid var(--line);margin:16px 0 14px"></div>
+    <h3 style="font-size:14px;font-weight:600;margin-bottom:10px">Passwort zurücksetzen</h3>
     <p class="hinweis" id="resetInfo"></p>
-    <input type="text" id="resetCode" placeholder="6-stelliger Code aus der Mail"
-           inputmode="numeric" autocomplete="one-time-code" maxlength="6">
+    <input type="text" id="resetCode" placeholder="Code aus der Mail" inputmode="numeric"
+           autocomplete="one-time-code" maxlength="6"
+           style="text-align:center;letter-spacing:.42em;font-size:19px;font-variant-numeric:tabular-nums">
     <div class="pwfeld">
       <input type="password" id="resetPw" placeholder="Neues Passwort (mind. 8 Zeichen)" autocomplete="new-password">
       <button type="button" class="auge" id="resetAuge" aria-label="Passwort anzeigen" aria-pressed="false" title="Passwort anzeigen">
@@ -140,6 +143,7 @@ nav a.on{color:var(--acc)}
     </div>
     <button class="go" id="resetBtn">Neues Passwort speichern</button>
     <div class="err" id="resetErr"></div>
+    <button type="button" class="link" id="resetNochmal">Code erneut senden</button>
     <button type="button" class="link" id="resetBack">Zurück zur Anmeldung</button>
   </div>
   <div class="fuss">Moselstr. 46 · WohnAnker</div>
@@ -722,6 +726,10 @@ $('pwVergessen').addEventListener('click', async () => {
   } catch (e) {
     info.textContent = e.message;
   }
+});
+$('resetNochmal').addEventListener('click', () => {
+  $('resetErr').textContent = '';
+  $('pwVergessen').click();
 });
 $('resetBack').addEventListener('click', () => {
   $('resetBox').style.display = 'none';
