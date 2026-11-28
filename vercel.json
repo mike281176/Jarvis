@@ -10,6 +10,10 @@
     {
       "source": "/api/jarvis/:path*",
       "destination": "https://jarvis-api.quixx24.eu/api/jarvis/:path*"
+    },
+    {
+      "source": "/api/flip/:path*",
+      "destination": "https://jarvis-api.quixx24.eu/api/flip/:path*"
     }
   ]
 }

@@ -22,6 +22,8 @@ PORT = 8124
 HA_URL = "http://192.168.1.91:8123"
 OLLAMA_URL = os.environ.get('JARVIS_OLLAMA_URL', "http://192.168.1.170:11434")
 LOKALPOST_DIR = os.path.expanduser("~/tageszeitung")
+FLIP_DIR = os.path.expanduser("~/projects/flip-deal/public")
+FLIP_BACKEND = ("127.0.0.1", 8900)  # HTTP-Port; 8899 ist HTTPS
 
 # Token aus Hermes-Umgebung oder .env laden
 HA_TOKEN = os.environ.get('HASS_TOKEN', '')
@@ -248,7 +250,85 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             print(f"❌ Lokalpost Error: {e}")
             self.send_json_response({'status': 'error', 'message': str(e)}, 500)
 
+    def handle_flip_static(self, path):
+        """Liefert die Bewertungs-/Flip-App (statisch) unter /api/jarvis/flip/."""
+        try:
+            rel = path.replace('/api/jarvis/flip', '', 1) or '/'
+            rel = urllib.parse.unquote(rel.split('?')[0])
+            if rel in ('', '/'):
+                rel = '/index.html'
+            target = os.path.realpath(os.path.join(FLIP_DIR, rel.lstrip('/')))
+            if not target.startswith(os.path.realpath(FLIP_DIR)):
+                self.send_json_response({'status': 'error', 'message': 'Zugriff verweigert'}, 403)
+                return
+            if not os.path.isfile(target):
+                self.send_json_response({'status': 'error', 'message': 'Nicht gefunden'}, 404)
+                return
+            ext = os.path.splitext(target)[1].lower()
+            ctype = {
+                '.html': 'text/html; charset=utf-8',
+                '.css': 'text/css; charset=utf-8',
+                '.js': 'application/javascript',
+                '.json': 'application/json',
+                '.webmanifest': 'application/manifest+json',
+                '.png': 'image/png',
+                '.jpg': 'image/jpeg',
+                '.webp': 'image/webp',
+                '.svg': 'image/svg+xml',
+            }.get(ext, 'application/octet-stream')
+            with open(target, 'rb') as f:
+                data = f.read()
+            self.send_response(200)
+            self.send_header('Content-Type', ctype)
+            self.send_header('Content-Length', str(len(data)))
+            self.send_header('Cache-Control', 'no-cache')
+            for key, value in CORS_HEADERS.items():
+                self.send_header(key, value)
+            self.end_headers()
+            self.wfile.write(data)
+        except Exception as e:
+            print(f"❌ Flip-Static Error: {e}")
+            self.send_json_response({'status': 'error', 'message': str(e)}, 500)
+
+    def handle_flip_api(self, path, method='GET', body=None):
+        """Reicht /api/flip/* an den Flip-Deal-Server (Port 8899) weiter."""
+        try:
+            rel = path.replace('/api/flip', '', 1) or '/'
+            if not rel.startswith('/'):
+                rel = '/' + rel
+            url = f"http://{FLIP_BACKEND[0]}:{FLIP_BACKEND[1]}/api{rel}"
+            data = body if body else None
+            req = urllib.request.Request(url, data=data, method=method)
+            req.add_header('Content-Type', self.headers.get('Content-Type', 'application/json'))
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                payload = resp.read()
+                self.send_response(resp.status)
+                self.send_header('Content-Type', resp.headers.get('Content-Type', 'application/json'))
+                self.send_header('Content-Length', str(len(payload)))
+                for key, value in CORS_HEADERS.items():
+                    self.send_header(key, value)
+                self.end_headers()
+                self.wfile.write(payload)
+        except urllib.error.HTTPError as e:
+            payload = e.read()
+            self.send_response(e.code)
+            for key, value in CORS_HEADERS.items():
+                self.send_header(key, value)
+            self.end_headers()
+            self.wfile.write(payload)
+        except Exception as e:
+            print(f"❌ Flip-API Error: {e}")
+            self.send_json_response({'status': 'error', 'message': f'Flip-Deal nicht erreichbar: {e}'}, 502)
+
     def do_GET(self):
+        if self.path.startswith('/api/jarvis/flip/'):
+            self.handle_flip_static(self.path)
+            return
+
+        if self.path.startswith('/api/flip/'):
+            self.handle_flip_api(self.path, 'GET')
+            return
+
         if self.path.startswith('/api/jarvis/lokalpost'):
             self.handle_lokalpost(self.path)
             return
@@ -279,6 +359,12 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             self.send_json_response({'status': 'error', 'message': 'Endpunkt nicht gefunden'}, 404)
     
     def do_POST(self):
+        if self.path.startswith('/api/flip/'):
+            content_length = int(self.headers.get('Content-Length', 0))
+            body = self.rfile.read(content_length) if content_length else None
+            self.handle_flip_api(self.path, 'POST', body)
+            return
+
         if self.path.startswith('/api/jarvis/ollama/'):
             content_length = int(self.headers.get('Content-Length', 0))
             body = self.rfile.read(content_length) if content_length else None

@@ -1,1357 +1,526 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#000510">
-    <title>J.A.R.V.I.S.</title>
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%2300D4FF' stroke-width='3'/><circle cx='50' cy='50' r='25' fill='%2300D4FF' opacity='0.3'/><circle cx='50' cy='50' r='10' fill='%2300D4FF'/></svg>">
-    <link rel="stylesheet" href="styles.css?v=39">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <script src="imo-module.js?v=39"></script>
-    <script src="imo-subviews.js?v=39"></script>
-    <script src="imo-schuldenuhr.js?v=39"></script>
-    <script src="imo-debug.js?v=39"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080b10">
+<title>J.A.R.V.I.S. · Immobilien</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080b10; --card:#111823; --card2:#16202d; --line:#1e2a38;
+  --fg:#e8eef6; --mut:#7b8ea6; --acc:#f5a524; --ok:#35d07f; --warn:#ff6b6b; --blue:#4ea8ff;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;
+     background:var(--bg);color:var(--fg);line-height:1.45;padding:12px 12px 92px;max-width:720px;margin:0 auto}
+.num{font-variant-numeric:tabular-nums}
+header{display:flex;justify-content:space-between;align-items:center;padding:8px 2px 16px}
+h1{font-size:14px;letter-spacing:.22em;font-weight:500}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);display:inline-block;margin-right:6px}
+.dot.bad{background:var(--warn)}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:14px;position:relative;overflow:hidden}
+.c.glow::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 100% 0%,rgba(245,165,36,.08),transparent 60%);pointer-events:none}
+.span4{grid-column:span 4}.span3{grid-column:span 3}.span2{grid-column:span 2}.span1{grid-column:span 1}
+.lbl{font-size:9px;letter-spacing:.16em;color:var(--mut);text-transform:uppercase;font-weight:600}
+.big{font-size:32px;font-weight:600;letter-spacing:-1.2px}
+.mid{font-size:22px;font-weight:600;letter-spacing:-.6px}
+.sm{font-size:16px;font-weight:600}
+.mut{color:var(--mut);font-size:11px}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.acc{color:var(--acc)}
+.flex{display:flex;flex-direction:column;height:100%}
+.between{display:flex;justify-content:space-between;align-items:baseline}
+.bar{height:6px;border-radius:4px;background:#0c131c;overflow:hidden;margin-top:12px}
+.bar i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,#f5a524,#ffcf7a)}
+.bar i.g{background:linear-gradient(90deg,#35d07f,#7ee0a8)}
+.spark{display:flex;align-items:flex-end;gap:3px;height:32px;margin-top:10px}
+.spark i{flex:1;background:linear-gradient(180deg,var(--acc),rgba(245,165,36,.22));border-radius:2px 2px 0 0;opacity:.85}
+.btnrow{display:flex;gap:8px;margin-top:12px}
+.btn{flex:1;text-align:center;background:var(--card2);border:1px solid var(--line);border-radius:11px;padding:10px;
+     font-size:11.5px;color:var(--fg);text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--acc);border-color:var(--acc);color:#14181e;font-weight:700}
+.kv{display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.kv:last-child{border:0}
+.kv b{font-weight:500}
+.cam{position:relative;border-radius:12px;overflow:hidden;background:#0c131c;aspect-ratio:16/9}
+.cam img{width:100%;height:100%;object-fit:cover;display:block}
+.cam .cap{position:absolute;left:8px;bottom:7px;font-size:10.5px;background:rgba(0,0,0,.55);padding:2px 7px;border-radius:6px;backdrop-filter:blur(4px)}
+.cam .off{display:flex;align-items:center;justify-content:center;height:100%;font-size:11px;color:var(--warn)}
+nav{position:fixed;bottom:0;left:0;right:0;background:#0b1119;border-top:1px solid var(--line);display:flex;padding:9px 0 12px;z-index:9}
+nav a{flex:1;text-align:center;font-size:9.5px;color:var(--mut);text-decoration:none;letter-spacing:.06em}
+nav a.on{color:var(--acc)}
+.view{display:none}
+.view.on{display:block}
+.skel{color:#3b4a5c}
+
+/* Login */
+#login{position:fixed;inset:0;background:var(--bg);z-index:100;display:none;flex-direction:column;
+       justify-content:center;padding:32px 24px;max-width:420px;margin:0 auto}
+#login.on{display:flex}
+#login .marke{font-size:13px;letter-spacing:.3em;color:var(--acc);margin-bottom:6px}
+#login h2{font-size:26px;font-weight:300;letter-spacing:-.5px;margin-bottom:26px}
+#login .wer{display:flex;gap:8px;margin-bottom:16px}
+#login .wer button{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;
+       padding:13px;color:var(--fg);font-size:13px;cursor:pointer;font-family:inherit}
+#login .wer button.on{border-color:var(--acc);color:var(--acc);background:rgba(245,165,36,.08)}
+#login input{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:12px;
+       color:var(--fg);padding:14px;font-size:16px;font-family:inherit;margin-bottom:12px}
+#login input:focus{outline:none;border-color:var(--acc)}
+#login .go{width:100%;background:var(--acc);border:0;border-radius:12px;padding:15px;font-size:14px;
+       font-weight:700;color:#14181e;font-family:inherit;cursor:pointer}
+#login .err{color:var(--warn);font-size:12px;margin-top:10px;min-height:16px}
+#login .fuss{margin-top:auto;font-size:11px;color:var(--mut);text-align:center;padding-top:24px}
+
+/* Bewertungs-App im Vollbild */
+#view-bewertung{position:fixed;inset:0;z-index:60;background:var(--bg);display:none}
+#view-bewertung.on{display:block}
+#view-bewertung iframe{width:100%;height:100%;border:0;display:block}
+.zurueck{position:fixed;top:10px;right:10px;z-index:61;width:38px;height:38px;border-radius:50%;
+       background:rgba(10,14,20,.85);border:1px solid var(--line);color:var(--fg);font-size:17px;
+       display:flex;align-items:center;justify-content:center;backdrop-filter:blur(8px);cursor:pointer}
+</style>
 </head>
 <body>
-    <div id="app">
 
-        <!-- Login Screen -->
-        <div id="login-screen" class="screen login-screen">
-            <div class="hologram-container">
-                <div class="jarvis-ring ring-1"></div>
-                <div class="jarvis-ring ring-2"></div>
-                <div class="jarvis-ring ring-3"></div>
-                <div class="center-core"></div>
-            </div>
+<div id="login">
+  <div class="marke">J.A.R.V.I.S.</div>
+  <h2>Guten Tag, Sir.</h2>
+  <div class="wer">
+    <button class="on" data-user="mike">Mike</button>
+    <button data-user="tanja">Tanja</button>
+  </div>
+  <input type="password" id="pw" placeholder="Passwort" autocomplete="current-password">
+  <button class="go" id="loginBtn">Anmelden</button>
+  <div class="err" id="loginErr"></div>
+  <div class="fuss">Moselstr. 46 · J.A.R.V.I.S.</div>
+</div>
 
-            <div class="login-header">
-                <h1 class="jarvis-title">
-                    <span class="letter">J</span><span class="letter">.</span><span class="letter">A</span><span class="letter">.</span><span class="letter">R</span><span class="letter">.</span><span class="letter">V</span><span class="letter">.</span><span class="letter">I</span><span class="letter">.</span><span class="letter">S</span><span class="letter">.</span>
-                </h1>
-                <p class="subtitle">Just A Rather Very Intelligent System</p>
-            </div>
+<header>
+  <h1>J.A.R.V.I.S. <span style="color:var(--acc)">/</span> <span id="areaName">IMMOBILIEN</span></h1>
+  <div class="mut" id="sysState"><span class="dot"></span>Systeme normal</div>
+</header>
 
-            <div class="user-selection">
-                <p class="scan-line">Bitte identifizieren Sie sich...</p>
-                <div class="user-cards">
-                    <button class="user-card" data-user="mike">
-                        <div class="user-avatar">
-                            <div class="avatar-ring"></div>
-                            <span class="avatar-initial">M</span>
-                        </div>
-                        <span class="user-name">Mike</span>
-                        <span class="user-role">Administrator</span>
-                        <div class="card-glow"></div>
-                    </button>
-                    <button class="user-card" data-user="tanja">
-                        <div class="user-avatar">
-                            <div class="avatar-ring"></div>
-                            <span class="avatar-initial">T</span>
-                        </div>
-                        <span class="user-name">Tanja</span>
-                        <span class="user-role">Benutzer</span>
-                        <div class="card-glow"></div>
-                    </button>
-                </div>
-            </div>
+<!-- ============================ IMMOBILIEN ============================ -->
+<section class="view on" id="view-immo">
+  <div class="bento">
 
-            <div class="password-panel" id="passwordPanel" style="display: none;">
-                <div class="password-form">
-                    <div class="password-header">
-                        <div class="user-avatar-small">
-                            <span class="avatar-initial">M</span>
-                        </div>
-                        <span class="password-title">Sicherheitsauthentifizierung</span>
-                    </div>
-                    <div class="input-group password-group">
-                        <label class="hud-label">Passwort eingeben</label>
-                        <input type="password" id="passwordInput" class="hud-input password-input" placeholder="••••••••" autocomplete="off">
-                    </div>
-                    <div class="password-actions">
-                        <button class="hud-button secondary" id="cancelLogin">Abbrechen</button>
-                        <button class="hud-button primary" id="submitPassword">Authentifizieren</button>
-                    </div>
-                    <div class="password-error" id="passwordError" style="display: none;">
-                        <span class="error-icon">⚠</span>
-                        <span class="error-text">Falsches Passwort. Zugriff verweigert.</span>
-                    </div>
-                </div>
-            </div>
+    <div class="c span4 glow"><div class="flex">
+      <div class="between"><div class="lbl">Schuldenuhr</div><div class="mut" id="suStand">—</div></div>
+      <div class="between" style="margin-top:8px">
+        <div class="big num acc" id="suRest">—</div>
+        <div class="mut num" style="text-align:right"><span id="suRate">—</span><br>Rate / Monat</div>
+      </div>
+      <div class="bar"><i id="suBar" style="width:0%"></i></div>
+      <div class="between mut" style="margin-top:7px">
+        <span id="suGetilgt">getilgt 0 %</span><span id="suZins">Zins 0 % · Tilgung 0 %</span>
+      </div>
+    </div></div>
 
-            <div class="system-status">
-                <div class="status-indicator online"></div>
-                <span class="status-text">System Online</span>
-                <span class="version-display" id="versionDisplay"></span>
-            </div>
+    <div class="c span2"><div class="flex">
+      <div class="lbl">Bewertung / Flip</div>
+      <div class="mid num acc" id="flipGewinn" style="margin-top:10px">—</div>
+      <div class="mut" id="flipObjekt">kein Objekt in Arbeit</div>
+      <div class="btnrow"><a class="btn primary" href="#" onclick="openFlip();return false">Neue Bewertung</a></div>
+    </div></div>
 
-            <button class="settings-toggle" id="showSettings">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <path d="M12 1v6m0 6v6m4.22-10.22l4.24-4.24M6.34 17.66l-4.24 4.24M23 12h-6m-6 0H1m20.24 4.24l-4.24-4.24M6.34 6.34L2.1 2.1"></path>
-                </svg>
-                Einstellungen
-            </button>
+    <div class="c span2"><div class="flex">
+      <div class="lbl">Bestand</div>
+      <div class="mid num" id="bestandAnzahl" style="margin-top:10px">—</div>
+      <div class="mut" id="bestandWert">Objekte</div>
+      <div class="kv" style="margin-top:8px;border:0;padding:0"><span class="mut">Miete / Monat</span><b class="num" id="bestandMiete">—</b></div>
+      <div class="kv" style="border:0;padding:2px 0 0"><span class="mut">Cashflow</span><b class="num" id="bestandCash">—</b></div>
+    </div></div>
 
-            <div class="settings-panel" id="settingsPanel" style="display: none;">
-                <div class="input-group">
-                    <label class="hud-label">API Präfix</label>
-                    <input type="url" id="apiUrl" class="hud-input" value="" placeholder="/api/jarvis/... (leer = Standard)">
-                    <small class="input-hint">Leer lassen für Vercel-Proxy.</small>
-                </div>
-                <button class="hud-button" id="saveSettings">Speichern</button>
-            </div>
-        </div>
+    <div class="c span4"><div class="flex">
+      <div class="between"><div class="lbl">Kassenbuch</div><div class="mut" id="kbStand">—</div></div>
+      <div style="display:flex;gap:16px;margin-top:10px">
+        <div><div class="sm num ok" id="kbOffen">—</div><div class="mut">offen</div></div>
+        <div><div class="sm num warn" id="kbUeberfaellig">—</div><div class="mut">überfällig</div></div>
+        <div><div class="sm num" id="kbDoppelt">—</div><div class="mut">doppelt?</div></div>
+      </div>
+      <div class="mut" style="margin-top:9px" id="kbHinweis">Kontoauszüge aus Paperless werden noch nicht ausgewertet.</div>
+    </div></div>
 
-        <!-- Main Interface -->
-        <div id="main-interface" class="screen dashboard-interface" style="display: none;">
+    <div class="c span4"><div class="flex">
+      <div class="between"><div class="lbl">Anzeigen · Markt</div><div class="mut" id="anzStand">—</div></div>
+      <div id="anzListe" style="margin-top:8px"><div class="mut">Noch keine Inserate erfasst.</div></div>
+    </div></div>
 
-            <!-- Header -->
-            <header class="dashboard-header">
-                <div class="header-left">
-                    <div class="system-logo">
-                        <div class="mini-ring"></div>
-                        <span>J.A.R.V.I.S.</span>
-                    </div>
-                    <div class="system-status-badge" id="systemStatusBadge">
-                        <span class="status-dot online"></span>
-                        <span class="status-label">ONLINE</span>
-                    </div>
-                </div>
-                <div class="header-center">
-                    <div class="clock-widget">
-                        <span id="systemTime">14:00:00</span>
-                        <span id="systemDate" class="system-date">--</span>
-                    </div>
-                </div>
-                <div class="header-right">
-                    <span class="user-badge" id="currentUser">M</span>
-                    <button class="hud-button icon" id="chatToggle" title="Chat">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                    </button>
-                    <button class="hud-button icon" id="installPwaBtn" title="App installieren" style="display: none;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                    </button>
-                    <button class="hud-button icon" id="settingsHeaderBtn" title="Einstellungen">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M12 1v6m0 6v6m4.22-10.22l4.24-4.24M6.34 17.66l-4.24 4.24M23 12h-6m-6 0H1m20.24 4.24l-4.24-4.24M6.34 6.34L2.1 2.1"></path>
-                        </svg>
-                    </button>
-                    <button class="hud-button icon" id="dashboardRefresh" title="Aktualisieren">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
-                    </button>
-                    <button class="hud-button icon" id="ollamaBtn" title="Ollama VM Dashboard">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6v6l4 2"></path></svg>
-                    </button>
-                    <button class="logout-btn" id="logoutBtn">×</button>
-                </div>
-            </header>
+  </div>
+</section>
 
-            <!-- Layout: Menu | Main Stage | Status -->
-            <div class="layout-wrapper">
+<!-- ============================ HAUS ============================ -->
+<section class="view" id="view-haus">
+  <div class="bento">
+    <div class="c span4 glow"><div class="flex">
+      <div class="between"><div class="lbl">Energie · jetzt</div><div class="mut" id="enUpdate">—</div></div>
+      <div class="between" style="margin-top:10px;align-items:flex-end">
+        <div><div class="big num" id="enErzeugung">—</div><div class="mut">Erzeugung</div></div>
+        <div style="text-align:center"><div class="mid num" id="enHaus">—</div><div class="mut">Haus</div></div>
+        <div style="text-align:right"><div class="mid num acc" id="enNetz">—</div><div class="mut" id="enNetzLbl">Netz</div></div>
+      </div>
+      <div class="spark" id="spark"></div>
+      <div class="between mut" style="margin-top:8px">
+        <span id="enSpeicher">Speicher —</span><span id="enHeute">heute —</span>
+      </div>
+    </div></div>
 
-                <!-- Left Menu -->
-                <nav class="side-menu">
-                    <button class="menu-item active" data-view="home" data-label="HOME">
-                        <span class="menu-line"></span>
-                        <span class="menu-text">HOME</span>
-                    </button>
-                    <button class="menu-item" data-view="briefing" data-label="BRIEFING">
-                        <span class="menu-line"></span>
-                        <span class="menu-text">BRIEFING</span>
-                    </button>
-                    <button class="menu-item" data-view="imo" data-label="IMO">
-                        <span class="menu-line"></span>
-                        <span class="menu-text">IMO</span>
-                    </button>
-                    <button class="menu-item" data-view="cameras" data-label="KAMERAS">
-                        <span class="menu-line"></span>
-                        <span class="menu-text">KAMERAS</span>
-                    </button>
-                    <button class="menu-item" data-view="strom" data-label="STROM">
-                        <span class="menu-line"></span>
-                        <span class="menu-text">STROM</span>
-                    </button>
-                    <button class="menu-item" data-view="quixx24" data-label="QUIXX24">
-                        <span class="menu-line"></span>
-                        <span class="menu-text">QUIXX24</span>
-                    </button>
-                    <button class="menu-item" data-view="netzwerk" data-label="NETZWERK">
-                        <span class="menu-line"></span>
-                        <span class="menu-text">NETZWERK</span>
-                    </button>
-                    <button class="menu-item" data-view="geraete" data-label="GERÄTE">
-                        <span class="menu-line"></span>
-                        <span class="menu-text">GERÄTE</span>
-                    </button>
-                    <button class="menu-item" data-view="einstellungen" data-label="EINSTELLUNGEN">
-                        <span class="menu-line"></span>
-                        <span class="menu-text">EINSTELLUNGEN</span>
-                    </button>
-                </nav>
+    <div class="c span2"><div class="flex">
+      <div class="lbl">Klima</div>
+      <div id="klimaListe" style="margin-top:8px"><div class="mut">lade …</div></div>
+    </div></div>
 
-                <!-- Center Stage -->
-                <main class="main-stage">
+    <div class="c span2"><div class="flex">
+      <div class="lbl">Hausstatus</div>
+      <div id="hausStatus" style="margin-top:8px"><div class="mut">lade …</div></div>
+    </div></div>
+  </div>
+</section>
 
-                    <!-- AI Core Globe -->
-                    <div class="cc-core" id="aiCoreContainer" role="region" aria-label="Sprachsteuerung">
-                        <div class="pcb-traces"></div>
-                        <div class="globe-wrapper">
-                            <div class="voice-waves">
-                                <div class="voice-wave wave-1"></div>
-                                <div class="voice-wave wave-2"></div>
-                                <div class="voice-wave wave-3"></div>
-                                <div class="voice-wave wave-4"></div>
-                            </div>
-                            <div class="orbit orbit-1"><span class="orbit-dot"></span></div>
-                            <div class="orbit orbit-2"><span class="orbit-dot dot-1"></span><span class="orbit-dot dot-2"></span></div>
-                            <div class="orbit orbit-3"><span class="orbit-dot"></span></div>
-                            <div class="globe" id="voiceCore" role="button" aria-label="Spracheingabe aktivieren" aria-live="polite" tabindex="0">
-                                <div class="globe-mesh">
-                                    <div class="meridian"></div>
-                                    <div class="meridian"></div>
-                                    <div class="meridian"></div>
-                                    <div class="parallel"></div>
-                                    <div class="parallel"></div>
-                                    <div class="parallel"></div>
-                                </div>
-                                <div class="core-text core-glitch" aria-label="J.A.R.V.I.S.">
-                                    <span class="letter">J</span><span>.</span><span class="letter">A</span><span>.</span><span class="letter">R</span><span>.</span><span class="letter">V</span><span>.</span><span class="letter">I</span><span>.</span><span class="letter">S</span><span>.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="core-status" id="voiceStatusCenter" role="status" aria-live="polite" aria-atomic="true">BEREIT</div>
-                        <div class="core-hint">Zum Sprechen antippen</div>
-                    </div>
+<!-- ============================ KAMERAS ============================ -->
+<section class="view" id="view-kameras">
+  <div class="bento" id="camGrid"></div>
+</section>
 
-                    <!-- Dynamic View Containers -->
-                    <div class="view-container active" id="view-home">
-                        <div class="tile top-left" data-id="home-solar">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">SOLAR</span></div>
-                            <div class="tile-body">
-                                <div class="metric" id="homeSolarPower">0 <span>W</span></div>
-                                <div class="tile-sub" id="homeSolarToday">Heute: 0 kWh</div>
-                            </div>
-                        </div>
-                        <div class="tile top-right" data-id="home-battery">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">SPEICHER</span></div>
-                            <div class="tile-body">
-                                <div class="metric" id="homeBatterySoc">0 <span>%</span></div>
-                                <div class="tile-sub" id="homeBatteryFlow">Ruhe</div>
-                            </div>
-                        </div>
-                        <button class="tile bottom-left climate-tile" data-id="home-climate" id="homeClimateTile">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">KLIMA</span></div>
-                            <div class="tile-body">
-                                <div class="metric" id="homeClimateTarget">--°C</div>
-                                <div class="tile-sub" id="homeClimateCurrent">Ist: --°C</div>
-                                <div class="tile-sub mode" id="homeClimateMode">Aus</div>
-                                <div class="tile-hint">Zum Steuern antippen</div>
-                            </div>
-                        </button>
-                        <div class="tile bottom-right" data-id="home-house">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">HAUSHALT</span></div>
-                            <div class="tile-body">
-                                <div class="metric" id="homeHousePower">0 <span>W</span></div>
-                                <div class="tile-sub" id="homeGridStatus">Netzbezug</div>
-                            </div>
-                        </div>
-                    </div>
+<!-- ============================ SYSTEM ============================ -->
+<section class="view" id="view-system">
+  <div class="bento">
+    <div class="c span4"><div class="flex">
+      <div class="lbl">Infrastruktur</div>
+      <div id="infraListe" style="margin-top:10px"></div>
+    </div></div>
+    <div class="c span2"><div class="flex">
+      <div class="lbl">Lokale KI</div>
+      <div class="mid num" id="kiModelle" style="margin-top:10px">—</div>
+      <div class="mut" id="kiDetail">Modelle</div>
+    </div></div>
+    <div class="c span4"><div class="flex">
+      <div class="lbl">Sitzung</div>
+      <div class="btnrow"><a class="btn" href="#" onclick="abmelden();return false">Abmelden</a></div>
+    </div></div>
 
-                    <div class="view-container" id="view-briefing">
-                        <div class="briefing-wrap">
-                            <div class="briefing-tabs">
-                                <button class="briefing-tab active" id="tabRedaktions" data-target="redaktions">📰 Redaktions-Briefing</button>
-                                <button class="briefing-tab" id="tabLokalpost" data-target="lokalpost">🗞️ Lokalpost</button>
-                            </div>
-                            <div class="briefing-pane" id="pane-redaktions">
-                                <div class="briefing-header">
-                                    <span class="briefing-kicker">📰 REDAKTIONS-BRIEFING</span>
-                                    <h2 class="briefing-title">Dein täglicher Überblick</h2>
-                                    <p class="briefing-date" id="briefingDate">—</p>
-                                </div>
-                                <div class="briefing-content" id="briefingContent">
-                                    <p class="placeholder-text">Noch kein Briefing verfügbar. Das Redaktions-Briefing läuft täglich um 07:00 Uhr.</p>
-                                </div>
-                            </div>
-                            <div class="briefing-pane" id="pane-lokalpost" style="display:none;">
-                                <div class="briefing-header">
-                                    <span class="briefing-kicker">🗞️ LOKALPOST</span>
-                                    <h2 class="briefing-title">Deine Tageszeitung</h2>
-                                    <p class="briefing-date" id="lokalpostDate">—</p>
-                                </div>
-                                <iframe class="lokalpost-frame" id="lokalpostFrame" src="/api/jarvis/lokalpost/index.html" title="Lokalpost Tageszeitung"></iframe>
-                            </div>
-                        </div>
-                    </div>
+    <div class="c span2"><div class="flex">
+      <div class="lbl">Netzwerk</div>
+      <div class="mid num" id="netGeraete" style="margin-top:10px">—</div>
+      <div class="mut">Geräte online</div>
+    </div></div>
+  </div>
+</section>
 
-                    <div class="view-container" id="view-cameras">
-                        <div class="tile top-left camera-tile" data-id="cam-front" style="display:none;">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">FRONT DOOR</span></div>
-                            <div class="tile-body camera-body">
-                                <img id="camFrontImg" src="" alt="Front Door" loading="lazy">
-                                <div class="cam-overlay">
-                                    <div class="cam-meta">
-                                        <span id="camFrontFace">–</span>
-                                        <span id="camFrontPlate">–</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tile top-right camera-tile" data-id="cam-back">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">BACK DOOR</span></div>
-                            <div class="tile-body camera-body">
-                                <img id="camBackImg" src="" alt="Back Door" loading="lazy">
-                                <div class="cam-overlay">
-                                    <div class="cam-meta">
-                                        <span id="camBackFace">–</span>
-                                        <span id="camBackPlate">–</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tile bottom-left camera-tile" data-id="cam-einfahrt">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">EINFAHRT</span></div>
-                            <div class="tile-body camera-body">
-                                <img id="camEinfahrtImg" src="" alt="Einfahrt" loading="lazy">
-                                <div class="cam-overlay">
-                                    <div class="cam-meta">
-                                        <span id="camEinfahrtFace">–</span>
-                                        <span id="camEinfahrtPlate">–</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tile bottom-right camera-tile" data-id="cam-doorbird">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">DOORBIRD</span></div>
-                            <div class="tile-body camera-body">
-                                <img id="camDoorbirdImg" src="" alt="Doorbird" loading="lazy">
-                                <div class="cam-overlay">
-                                    <div class="cam-meta">
-                                        <span id="camDoorbirdFace">–</span>
-                                        <span id="camDoorbirdPlate">–</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<section class="view" id="view-bewertung">
+  <div class="zurueck" onclick="closeFlip()">&times;</div>
+  <iframe id="flipFrame" title="Bewertung"></iframe>
+</section>
 
-                    <div class="view-container" id="view-strom">
-                        <div class="tile top-left" data-id="strom-solar">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">SOLAR ERTRAG</span></div>
-                            <div class="tile-body">
-                                <div class="metric" id="stromSolarPower">0 <span>W</span></div>
-                                <div class="tile-sub" id="stromSolarToday">Heute: 0 kWh</div>
-                            </div>
-                        </div>
-                        <div class="tile top-right" data-id="strom-battery">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">BATTERIE</span></div>
-                            <div class="tile-body">
-                                <div class="metric" id="stromBatterySoc">0 <span>%</span></div>
-                                <div class="tile-sub" id="stromBatteryFlow">Ruhe</div>
-                            </div>
-                        </div>
-                        <div class="tile bottom-left" data-id="strom-consumption">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">VERBRAUCH</span></div>
-                            <div class="tile-body">
-                                <div class="metric" id="stromConsumption">0 <span>W</span></div>
-                                <div class="tile-sub" id="stromGrid">Netzbezug</div>
-                            </div>
-                        </div>
-                        <div class="tile bottom-right" data-id="strom-phases">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">PHASEN</span></div>
-                            <div class="tile-body">
-                                <div class="phase-row"><span>Haus Phase A</span><span class="phase-value" id="stromPhaseA">– W</span></div>
-                                <div class="phase-row"><span>Haus Phase B</span><span class="phase-value" id="stromPhaseB">– W</span></div>
-                                <div class="phase-row"><span>Haus Phase C</span><span class="phase-value" id="stromPhaseC">– W</span></div>
-                            </div>
-                        </div>
-                    </div>
+<nav>
+  <a href="#" class="on" data-view="immo">Immobilien</a>
+  <a href="#" data-view="bewertung">Bewertung</a>
+  <a href="#" data-view="haus">Haus</a>
+  <a href="#" data-view="kameras">Kameras</a>
+  <a href="#" data-view="system">System</a>
+</nav>
 
-                    <!-- IMO View Container (Immobilien Kalkulator) -->
-                    <div class="view-container" id="view-imo">
-                        <div class="imo-container">
-                            <div class="imo-header">
-                                <h2 class="imo-title">🏠 Immobilien Kalkulator</h2>
-                                <div class="imo-actions">
-                                    <button class="hud-button secondary" id="imoObjektSpeichern" title="Objekt speichern">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-                                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
-                                            <polyline points="17 21 17 13 7 13 7 21"></polyline>
-                                            <polyline points="7 3 7 8 15 8"></polyline>
-                                        </svg>
-                                        Speichern
-                                    </button>
-                                    <button class="hud-button secondary" id="imoObjektLaden" title="Objekt laden">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-                                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                                        </svg>
-                                        Laden
-                                    </button>
-                                    <button class="hud-button primary" id="imoExportPdf">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                            <polyline points="7 10 12 15 17 10"></polyline>
-                                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                                        </svg>
-                                        PDF Export
-                                    </button>
-                                </div>
-                            </div>
+<script>
+// ============ Basis ============
+const API = window.location.protocol === 'file:' || window.location.port === '8131'
+  ? 'http://127.0.0.1:8124/api/jarvis'
+  : '/api/jarvis';
 
-                            <!-- Objekt-Liste (Modul 2) -->
-                            <div class="imo-objekt-liste" id="imoObjektListe" style="display: none;">
-                                <div class="objekt-liste-header">
-                                    <h3>💾 Gespeicherte Objekte</h3>
-                                    <button class="hud-button icon" id="imoObjektListeSchliessen">×</button>
-                                </div>
-                                <div class="objekt-liste-content" id="imoObjektListeContent">
-                                    <!-- Wird dynamisch gefüllt -->
-                                </div>
-                            </div>
-                            
-                            <!-- IMO Sub-Navigation -->
-                            <div class="imo-subnav">
-                                <button class="imo-subnav-btn active" data-subview="cockpit">📊 Cockpit</button>
-                                <button class="imo-subnav-btn" data-subview="bankgespräch">🏦 Bankgespräch</button>
-                                <button class="imo-subnav-btn" data-subview="diagramme">📈 Diagramme</button>
-                                <button class="imo-subnav-btn" data-subview="verlauf">📉 Verlauf</button>
-                                <button class="imo-subnav-btn" data-subview="haushalt">🏠 Haushalt</button>
-                                <button class="imo-subnav-btn" data-subview="vermoegen">💰 Vermögen</button>
-                                <button class="imo-subnav-btn" data-subview="schuldenuhr">⏰ Schuldenuhr</button>
-                            </div>
-                            
-                            <!-- IMO Sub-Views Container (werden per Fetch gefüllt) -->
-                            <div id="imo-subviews-container"></div>
-                            <div id="imo-schuldenuhr-container"></div>
-                            
-                            <div class="imo-content" id="imo-cockpit-content">
-                                <!-- Linke Spalte: Eingaben -->
-                                <div class="imo-inputs">
-                                    <div class="imo-section">
-                                        <h3 class="imo-section-title">📍 Objekt & Investition</h3>
-                                        <div class="imo-form-grid">
-                                            <div class="input-group full-width">
-                                                <label class="hud-label">Adresse</label>
-                                                <input type="text" id="imoAdresse" class="hud-input" placeholder="Musterstr. 1, 12345 Musterstadt">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">PLZ</label>
-                                                <input type="text" id="imoPLZ" class="hud-input" placeholder="53840" maxlength="5">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Stadtteil</label>
-                                                <select id="imoStadtteil" class="hud-input">
-                                                    <option value="">Bitte wählen...</option>
-                                                    <option value="troisdorf_mitte">Troisdorf-Mitte</option>
-                                                    <option value="sieglar">Sieglar</option>
-                                                    <option value="eschmar">Eschmar</option>
-                                                    <option value="spich">Spich</option>
-                                                </select>
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Kaufdatum</label>
-                                                <input type="date" id="imoKaufdatum" class="hud-input">
-                                            </div>
-                                            <div class="input-group full-width">
-                                                <label class="hud-label">Kaufpreis (€)</label>
-                                                <input type="number" id="imoKaufpreis" class="hud-input" placeholder="250000" step="1000">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Wohnfläche (m²)</label>
-                                                <input type="number" id="imoFlaeche" class="hud-input" placeholder="80" step="0.1">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Zimmer</label>
-                                                <input type="number" id="imoZimmer" class="hud-input" placeholder="3" step="1">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Baujahr</label>
-                                                <input type="number" id="imoBaujahr" class="hud-input" placeholder="1990" step="1">
-                                            </div>
-                                        </div>
-                                        
-                                        <!-- Mietspiegel-Empfehlung (Modul 1) -->
-                                        <div class="mietspiegel-hint" id="mietspiegelHint" style="display: none;">
-                                            <div class="hint-header">
-                                                <span class="hint-icon">📊</span>
-                                                <strong>Mietspiegel-Empfehlung</strong>
-                                            </div>
-                                            <div class="hint-content">
-                                                <div class="mietspiegel-row">
-                                                    <span>Ortsübliche Kaltmiete:</span>
-                                                    <span id="mietspiegelMiete">-- €/m²</span>
-                                                </div>
-                                                <div class="mietspiegel-row">
-                                                    <span>Empfohlene Miete:</span>
-                                                    <span id="mietspiegelEmpfehlung">-- €/Monat</span>
-                                                </div>
-                                                <div class="mietspiegel-row warning" id="mietspiegelWarnung" style="display: none;">
-                                                    <span>⚠️ Hinweis:</span>
-                                                    <span id="mietspiegelWarnText">--</span>
-                                                </div>
-                                            </div>
-                                            <button class="hud-button small" id="mietspiegelUebernehmen">
-                                                Empfehlung übernehmen
-                                            </button>
-                                        </div>
-                                    </div>
+const $ = id => document.getElementById(id);
+const set = (id, v) => { const e = $(id); if (e) e.textContent = v; };
+const eur = n => n == null || isNaN(n) ? '—' : n.toLocaleString('de-DE', {maximumFractionDigits:0}) + ' €';
+const watt = n => n == null || isNaN(n) ? '—' : Math.round(n).toLocaleString('de-DE') + ' W';
 
-                                    <div class="imo-section">
-                                        <h3 class="imo-section-title">💰 Kaufnebenkosten</h3>
-                                        <div class="imo-form-grid">
-                                            <div class="input-group">
-                                                <label class="hud-label">Makler (%)</label>
-                                                <input type="number" id="imoMakler" class="hud-input" value="3.57" step="0.01">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Notar (%)</label>
-                                                <input type="number" id="imoNotar" class="hud-input" value="1.5" step="0.01">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Grundbuch (%)</label>
-                                                <input type="number" id="imoGrundbuch" class="hud-input" value="0.5" step="0.01">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Grunderwerbsteuer (%)</label>
-                                                <input type="number" id="imoGrunderwerb" class="hud-input" value="6.5" step="0.01">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Sonstige (€)</label>
-                                                <input type="number" id="imoSonstige" class="hud-input" value="0" step="100">
-                                            </div>
-                                        </div>
-                                    </div>
+// ============ Navigation ============
+document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', e => {
+  e.preventDefault();
+  if (a.dataset.view === 'bewertung') { openFlip(); return; }
+  document.querySelectorAll('nav a').forEach(x => x.classList.toggle('on', x === a));
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('on'));
+  const v = $('view-' + a.dataset.view);
+  if (v) v.classList.add('on');
+  set('areaName', a.textContent.toUpperCase());
+  window.scrollTo({top:0});
+}));
+document.querySelectorAll('#login .wer button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#login .wer button').forEach(x => x.classList.toggle('on', x === b));
+}));
+$('loginBtn').addEventListener('click', anmelden);
+$('pw').addEventListener('keydown', e => { if (e.key === 'Enter') anmelden(); });
 
-                                    <div class="imo-section">
-                                        <h3 class="imo-section-title">🏦 Finanzierung</h3>
-                                        <div class="imo-form-grid">
-                                            <div class="input-group">
-                                                <label class="hud-label">Eigenkapital (€)</label>
-                                                <input type="number" id="imoEigenkapital" class="hud-input" placeholder="50000" step="1000">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Zinssatz (%)</label>
-                                                <input type="number" id="imoZins" class="hud-input" placeholder="3.5" step="0.1">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Tilgung (%)</label>
-                                                <input type="number" id="imoTilgung" class="hud-input" placeholder="1.0" step="0.1">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Zinsbindung (Jahre)</label>
-                                                <input type="number" id="imoZinsbindung" class="hud-input" placeholder="10" step="1" value="10">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Anschluss-Zinssatz (%)</label>
-                                                <input type="number" id="imoAnschlussZins" class="hud-input" placeholder="5.0" step="0.1" value="5.0">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">Bodenwert-Anteil (%)</label>
-                                                <input type="number" id="imoBodenwert" class="hud-input" placeholder="25" step="1" value="25">
-                                            </div>
-                                            <div class="input-group">
-                                                <label class="hud-label">AfA-Modell</label>
-                                                <select id="imoAfaModell" class="hud-input">
-                                                    <option value="linear_2">Linear 2,0% (Bestand)</option>
-                                                    <option value="linear_3">Linear 3,0% (Neubau)</option>
-                                                    <option value="degressiv_5">Degressiv 5,0% (Sonder)</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
+// ============ Home Assistant ============
+let states = {};
+const st = id => {
+  const s = states[id];
+  if (!s) return null;
+  const v = parseFloat(s.state);
+  return isNaN(v) ? null : v;
+};
 
-                                    <div class="imo-section">
-                                        <h3 class="imo-section-title">🏠 Miete & Bewirtschaftung</h3>
-                                        <div class="imo-input-grid">
-                                            <div class="imo-input-group">
-                                                <label for="imoKaltmiete">📈 Kaltmiete (€/Monat)</label>
-                                                <input type="number" id="imoKaltmiete" placeholder="z.B. 450" step="0.01">
-                                            </div>
-                                            <div class="imo-input-group">
-                                                <label for="imoNebenkosten">💶 Nebenkosten (€/Monat)</label>
-                                                <input type="number" id="imoNebenkosten" placeholder="z.B. 150" step="0.01">
-                                            </div>
-                                            <div class="imo-input-group">
-                                                <label for="imoHausgeldGesamt">🏢 Hausgeld gesamt (€/Monat)</label>
-                                                <input type="number" id="imoHausgeldGesamt" placeholder="z.B. 139" step="0.01" value="0">
-                                                <small class="imo-hint">Inkl. WEG-Rücklage</small>
-                                            </div>
-                                            <div class="imo-input-group">
-                                                <label for="imoHausgeldUmlagefaehig">↗️ Davon umlagefähig (€/Monat)</label>
-                                                <input type="number" id="imoHausgeldUmlagefaehig" placeholder="z.B. 90" step="0.01" value="0">
-                                                <small class="imo-hint">Wird vom Mieter erstattet (ca. 65%)</small>
-                                            </div>
-                                            <div class="imo-input-group">
-                                                <label for="imoEigeneInstandhaltung">🔧 Eigene Instandhaltung (€/Monat)</label>
-                                                <input type="number" id="imoEigeneInstandhaltung" placeholder="z.B. 36" step="0.01" value="0">
-                                                <small class="imo-hint">Fläche × 10€/m² ÷ 12 (Empfehlung)</small>
-                                            </div>
-                                            <div class="imo-input-group">
-                                                <label for="imoMietausfall">⚠️ Mietausfall-Rücklage (€/Monat)</label>
-                                                <input type="number" id="imoMietausfall" placeholder="z.B. 14" step="0.01" value="0">
-                                                <small class="imo-hint">3% der Kaltmiete (Empfehlung)</small>
-                                            </div>
-                                        </div>
-                                    </div>
+async function ladeHA() {
+  try {
+    const r = await fetch(`${API}/ha-proxy/api/states`, {cache:'no-store'});
+    const arr = await r.json();
+    states = {};
+    arr.forEach(s => states[s.entity_id] = s);
+    return true;
+  } catch(e) { return false; }
+}
 
-                                    <div class="imo-section">
-                                        <h3 class="imo-section-title">📈 Inflation & Verlauf</h3>
-                                        <div class="imo-input-grid">
-                                            <div class="imo-input-group">
-                                                <label for="imoMietsteigerung">Mietsteigerung p.a. (%)</label>
-                                                <input type="number" id="imoMietsteigerung" placeholder="1.5" step="0.1" value="1.5">
-                                            </div>
-                                            <div class="imo-input-group">
-                                                <label for="imoKostensteigerung">Kostensteigerung p.a. (%)</label>
-                                                <input type="number" id="imoKostensteigerung" placeholder="2.0" step="0.1" value="2.0">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+// ============ Immobilien ============
+async function ladeImmobilien() {
+  // Kredite (Schuldenuhr)
+  let kredite = [], stand = '—';
+  for (const pfad of ['lvm-kredite.json', '../lvm-kredite.json']) {
+    try {
+      const r = await fetch(pfad, {cache:'no-store'});
+      if (!r.ok) continue;
+      const d = await r.json();
+      kredite = d.kredite || [];
+      stand = d.lastUpdated || '—';
+      break;
+    } catch(e) {}
+  }
 
-                                <!-- Rechte Spalte: Ergebnisse & Diagramme -->
-                                <div class="imo-results">
-                                    <div class="imo-section">
-                                        <h3 class="imo-section-title">📊 Kennzahlen</h3>
-                                        <div class="imo-kpi-grid">
-                                            <div class="imo-kpi-card">
-                                                <div class="kpi-label">Gesamtinvestition</div>
-                                                <div class="kpi-value" id="imoGesamtinvest">0 €</div>
-                                                <div class="kpi-sub">Kaufpreis + Nebenkosten</div>
-                                            </div>
-                                            <div class="imo-kpi-card">
-                                                <div class="kpi-label">Finanzierungssumme</div>
-                                                <div class="kpi-value" id="imoFinanzierung">0 €</div>
-                                                <div class="kpi-sub">Gesamtinvest - Eigenkapital</div>
-                                            </div>
-                                            <div class="imo-kpi-card">
-                                                <div class="kpi-label">Monatliche Rate</div>
-                                                <div class="kpi-value" id="imoMonatsrate">0 €</div>
-                                                <div class="kpi-sub">Zins + Tilgung</div>
-                                            </div>
-                                            <div class="imo-kpi-card highlight">
-                                                <div class="kpi-label">Netto-Kaltmiete (Jahr)</div>
-                                                <div class="kpi-value" id="imoJahresmiete">0 €</div>
-                                                <div class="kpi-sub">12 × Kaltmiete</div>
-                                            </div>
-                                            <div class="imo-kpi-card highlight">
-                                                <div class="kpi-label">Brutto-Rendite</div>
-                                                <div class="kpi-value" id="imoBruttorendite">0 %</div>
-                                                <div class="kpi-sub">Jahresmiete ÷ Gesamtinvest</div>
-                                            </div>
-                                            <div class="imo-kpi-card highlight">
-                                                <div class="kpi-label">Netto-Rendite</div>
-                                                <div class="kpi-value" id="imoNettorendite">0 %</div>
-                                                <div class="kpi-sub">Operativer Cashflow ÷ EK</div>
-                                            </div>
-                                            <div class="imo-kpi-card highlight">
-                                                <div class="kpi-label">Cashflow operativ</div>
-                                                <div class="kpi-value" id="imoCashflowOperativ">0 €/Monat</div>
-                                                <div class="kpi-sub">Vor Steuern</div>
-                                            </div>
-                                            <div class="imo-kpi-card highlight">
-                                                <div class="kpi-label">Cashflow nach Steuern</div>
-                                                <div class="kpi-value" id="imoCashflowNachSteuern">0 €/Monat</div>
-                                                <div class="kpi-sub">Inkl. Steuerersparnis</div>
-                                            </div>
-                                            <div class="imo-kpi-card">
-                                                <div class="kpi-label">Steuerersparnis</div>
-                                                <div class="kpi-value" id="imoSteuerersparnis">0 €/Monat</div>
-                                                <div class="kpi-sub">Bei Verlust</div>
-                                            </div>
-                                            <div class="imo-kpi-card highlight">
-                                                <div class="kpi-label">EK-Rendite vor Steuern</div>
-                                                <div class="kpi-value" id="imoEkRenditeVor">0 %</div>
-                                                <div class="kpi-sub">Cashflow ÷ Eigenkapital</div>
-                                            </div>
-                                            <div class="imo-kpi-card highlight">
-                                                <div class="kpi-label">EK-Rendite nach Steuern</div>
-                                                <div class="kpi-value" id="imoEkRenditeNach">0 %</div>
-                                                <div class="kpi-sub">Inkl. Steuer-Effekt</div>
-                                            </div>
-                                            <div class="imo-kpi-card highlight">
-                                                <div class="kpi-label">EK-Rendite nach Steuern</div>
-                                                <div class="kpi-value" id="imoEkRenditeNach">0 %</div>
-                                                <div class="kpi-sub">Cashflow n. St. ÷ EK</div>
-                                            </div>
-                                            <div class="imo-kpi-card">
-                                                <div class="kpi-label">Restschuld (Zinsende)</div>
-                                                <div class="kpi-value" id="imoRestschuld">0 €</div>
-                                                <div class="kpi-sub">Nach X Jahren Zinsbindung</div>
-                                            </div>
-                                            <div class="imo-kpi-card">
-                                                <div class="kpi-label">Neue Rate (Anschluss)</div>
-                                                <div class="kpi-value" id="imoNeueRate">0 €</div>
-                                                <div class="kpi-sub">Bei Anschlussfinanzierung</div>
-                                            </div>
-                                            <div class="imo-kpi-card">
-                                                <div class="kpi-label">Cashflow Δ (Anschluss)</div>
-                                                <div class="kpi-value" id="imoCashflowDelta">0 €</div>
-                                                <div class="kpi-sub">Änderung zur aktuellen Rate</div>
-                                            </div>
-                                            <div class="imo-kpi-card">
-                                                <div class="kpi-label">Steuerersparnis (Jahr)</div>
-                                                <div class="kpi-value" id="imoSteuerersparnis">0 €</div>
-                                                <div class="kpi-sub">Durch Verlustverrechnung</div>
-                                            </div>
-                                        </div>
-                                    </div>
+  const rest = kredite.reduce((s,k) => s + (k.restschuld_aktuell || 0), 0);
+  const summe = kredite.reduce((s,k) => s + (k.darlehenssumme || 0), 0);
+  const rate = kredite.reduce((s,k) => s + (k.darlehenssumme||0) * ((k.zins||0)+(k.tilgung||0))/1200, 0);
+  const getilgt = summe ? Math.max(0, Math.min(100, (1 - rest/summe) * 100)) : 0;
 
-                                    <div class="imo-section">
-                                        <h3 class="imo-section-title">📈 Diagramme</h3>
-                                        <div class="imo-chart-container">
-                                            <canvas id="imoChartCashflow"></canvas>
-                                        </div>
-                                        <div class="imo-chart-container">
-                                            <canvas id="imoChartRendite"></canvas>
-                                        </div>
-                                        <div class="imo-chart-container">
-                                            <canvas id="imoChartVerlauf"></canvas>
-                                        </div>
-                                    </div>
+  set('suRest', rest ? eur(rest) : '—');
+  set('suRate', rate ? eur(rate) : '—');
+  set('suStand', kredite.length ? `Stand ${stand}` : 'keine Daten');
+  set('suBar', ''); $('suBar').style.width = getilgt.toFixed(1) + '%';
+  set('suGetilgt', `getilgt ${getilgt.toFixed(1)} % von ${eur(summe)}`);
+  const zins = kredite.length ? kredite.reduce((s,k)=>s+(k.zins||0),0)/kredite.length : 0;
+  const tilg = kredite.length ? kredite.reduce((s,k)=>s+(k.tilgung||0),0)/kredite.length : 0;
+  set('suZins', `Zins ${zins.toFixed(2)} % · Tilgung ${tilg.toFixed(2)} %`);
 
-                                    <!-- Stresstest / Zinsrisiko Card -->
-                                    <div class="imo-section">
-                                        <h3 class="imo-section-title">⚠️ Stresstest & Zinsrisiko</h3>
-                                        <div class="imo-stresstest-grid">
-                                            <div class="stress-item">
-                                                <div class="stress-label">Zinsbindung endet in</div>
-                                                <div class="stress-value" id="stressZinsbindungJahre">10 Jahre</div>
-                                            </div>
-                                            <div class="stress-item">
-                                                <div class="stress-label">Restschuld dann</div>
-                                                <div class="stress-value" id="stressRestschuld">0 €</div>
-                                            </div>
-                                            <div class="stress-item">
-                                                <div class="stress-label">Neue Monatsrate</div>
-                                                <div class="stress-value" id="stressNeueRate">0 €</div>
-                                            </div>
-                                            <div class="stress-item warning">
-                                                <div class="stress-label">Cashflow-Änderung</div>
-                                                <div class="stress-value" id="stressCashflowDelta">0 €</div>
-                                            </div>
-                                        </div>
-                                        <div class="stress-hint">
-                                            💡 Bei Zinsauslauf erhöht sich Ihre monatliche Belastung um <strong id="stressDeltaHighlight">0 €</strong>. 
-                                            Planen Sie rechtzeitig für die Anschlussfinanzierung!
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  // Bestand (lokale Objekte)
+  let objekte = [];
+  try { objekte = JSON.parse(localStorage.getItem('jarvis_imo_objekte') || '[]'); } catch(e) {}
+  set('bestandAnzahl', objekte.length || '0');
+  set('bestandWert', objekte.length ? 'Objekte im Bestand' : 'Objekte im Bestand');
+  const miete = objekte.reduce((s,o) => s + (parseFloat(o.miete)||0), 0);
+  const wert = objekte.reduce((s,o) => s + (parseFloat(o.wert)||parseFloat(o.kaufpreis)||0), 0);
+  set('bestandMiete', miete ? eur(miete) : '—');
+  set('bestandCash', objekte.length ? eur(miete - rate) : '—');
 
-                    <div class="view-container" id="view-quixx24">
-                        <div class="tile wide-top">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">QUIXX24 — ÜBERSICHT</span></div>
-                            <div class="tile-body">
-                                <p class="placeholder-text">Miettoiletten-Status, Tracker und Auftragsdaten werden hier integriert.</p>
-                            </div>
-                        </div>
-                    </div>
+  // Anzeigen (Platzhalter, wird aus dem Feed gefüllt)
+  const anzeigen = [];
+  if (anzeigen.length) {
+    $('anzListe').innerHTML = anzeigen.map(a => `<div class="kv"><span>${a.titel}</span><b>${eur(a.preis)}</b></div>`).join('');
+    set('anzStand', `${anzeigen.length} Inserate`);
+  } else {
+    set('anzStand', 'Feed inaktiv');
+  }
 
-                    <div class="view-container" id="view-netzwerk">
-                        <div class="tile wide-top">
-                            <div class="tile-header"><span class="tile-line"></span><span class="tile-title">NETZWERK — GERÄTE</span></div>
-                            <div class="tile-body">
-                                <p class="placeholder-text">UniFi-Topologie, Clients und Gateway-Status werden hier angezeigt.</p>
-                            </div>
-                        </div>
-                    </div>
+  // Kassenbuch-Platzhalter bis zur Auswertung
+  set('kbStand', 'noch nicht angebunden');
+  set('kbOffen', '—'); set('kbUeberfaellig', '—'); set('kbDoppelt', '—');
+}
 
-                    <div class="view-container" id="view-einstellungen">
-                        <div class="tile wide-top settings-tile" data-id="settings-main">
-                            <div class="tile-header">
-                                <span class="tile-line"></span>
-                                <span class="tile-title">EINSTELLUNGEN & AUSWERTUNG</span>
-                            </div>
-                            <div class="tile-body settings-body">
-                                <div class="settings-section">
-                                    <div class="section-title">Sprachausgabe</div>
-                                    <div class="settings-row">
-                                        <label class="hud-label">Antworten laut vorlesen</label>
-                                        <label class="toggle">
-                                            <input type="checkbox" id="autoSpeakToggle" checked>
-                                            <span class="toggle-slider"></span>
-                                        </label>
-                                    </div>
-                                    <div class="settings-row">
-                                        <label class="hud-label">Stimmprofil</label>
-                                        <select id="voiceProfileSelect" class="hud-input">
-                                            <option value="standard">Standard (Butler)</option>
-                                            <option value="elegant">Elegant (Formal)</option>
-                                            <option value="sarcastic">Sarkastisch (Trocken)</option>
-                                            <option value="alarm">Alarm (Dringend)</option>
-                                        </select>
-                                    </div>
-                                    <div class="settings-row">
-                                        <button class="hud-button secondary" id="ttsTestBtn">Stimme testen</button>
-                                    </div>
-                                    <div class="settings-row">
-                                        <label class="hud-label">Test-Satz</label>
-                                        <input type="text" id="ttsTestText" class="hud-input" value="J.A.R.V.I.S. steht zu Ihren Diensten, Sir.">
-                                    </div>
-                                    <div class="settings-row">
-                                        <button class="hud-button secondary" id="ttsTestAgainBtn">Erneut testen</button>
-                                    </div>
-                                </div>
+// ============ Haus ============
+function ladeHaus() {
+  // PV-Erzeugung: eine Sammelquelle, kein Doppelzählen
+  const erzeugung = st('sensor.solar_gesamt_noah_hm1500')
+    ?? ((st('sensor.growatt_noah_mike_pv_leistung_gesamt')||0)
+      + (st('sensor.growatt_noah_mike2_pv_leistung_gesamt')||0)
+      + (st('sensor.hm1500_power')||0)
+      + (st('sensor.helios_sud_power_now')||0));
 
-                                <div class="settings-section">
-                                    <div class="section-title">Spracheingabe-Protokoll</div>
-                                    <div class="settings-row">
-                                        <label class="hud-label">Interim-Transkripte loggen</label>
-                                        <label class="toggle">
-                                            <input type="checkbox" id="logInterimToggle">
-                                            <span class="toggle-slider"></span>
-                                        </label>
-                                    </div>
-                                    <div class="settings-row">
-                                        <button class="hud-button secondary" id="exportLogBtn">Log exportieren</button>
-                                        <button class="hud-button secondary" id="clearLogBtn">Log löschen</button>
-                                    </div>
-                                </div>
+  const haus = st('sensor.total_power');
+  const import_ = st('sensor.power_import_grid');
+  const export_ = st('sensor.power_export_grid') || 0;
+  const netz = (export_ > 0) ? -export_ : import_;
+  const soc = st('sensor.gesamt_batterie_soc');
+  const laden = st('sensor.gesamt_lade_leistung') || 0;
+  const entladen = st('sensor.gesamt_entlade_leistung') || 0;
 
-                                <div class="settings-section">
-                                    <div class="section-title">Konversationsverlauf (<span id="logCount">0</span>)</div>
-                                    <div class="log-list" id="conversationLogList">
-                                        <div class="placeholder-text">Keine Einträge vorhanden.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  const heute = (st('sensor.growatt_generation_today') || 0)
+              + (st('sensor.growatt_2_generation_daily') || 0);
+  const prognose = st('sensor.solcast_pv_forecast_prognose_heute');
 
-                
-                <!-- Geräte View: Telefon finden -->
-                <div class="view-container devices-view" id="view-geraete">
-                    <div class="device-card device-left" data-device="mike">
-                        <div class="device-header">
-                            <span class="device-icon">📱</span>
-                            <span class="device-name">Pixel 9 Pro XL</span>
-                            <span class="device-status online" id="mike-status">ONLINE</span>
-                        </div>
-                        <div class="device-meta">Mike's Android Smartphone</div>
-                        <div class="device-row"><span>Batterie</span><span id="mike-battery">100%</span></div>
-                        <div class="device-row"><span>Bluetooth</span><span id="mike-bluetooth">0 Geräte</span></div>
-                        <div class="device-row"><span>Standort</span><span id="mike-location">Zuhause</span></div>
-                        <div class="device-actions">
-                            <button class="hud-button small" onclick="findPhone('mike', 'quiet')">🔔 Leise</button>
-                            <button class="hud-button small" onclick="findPhone('mike', 'loud')">🚨 Laut</button>
-                            <button class="hud-button small" onclick="findPhone('mike', 'announce')">📢 Durchsage</button>
-                            <button class="hud-button small stop" onclick="stopAlarm('mike')">⏹️ Stopp</button>
-                        </div>
-                    </div>
+  set('enErzeugung', watt(erzeugung));
+  set('enHaus', watt(haus));
+  set('enNetz', watt(Math.abs(netz)));
+  set('enNetzLbl', netz < 0 ? 'Einspeisung' : 'Netzbezug');
+  set('enSpeicher', soc != null ? `Speicher ${Math.round(soc)} %` : 'Speicher —');
+  set('enHeute', heute ? `heute ${heute.toFixed(1).replace('.',',')} kWh` + (prognose ? ` von ${prognose.toFixed(1).replace('.',',')}` : '') : 'heute —');
 
-                    <div class="device-card device-right" data-device="tanja">
-                        <div class="device-header">
-                            <span class="device-icon">📱</span>
-                            <span class="device-name">iPhone von Tanja</span>
-                            <span class="device-status online" id="tanja-status">ONLINE</span>
-                        </div>
-                        <div class="device-meta">Tanja's iPhone</div>
-                        <div class="device-row"><span>Batterie</span><span id="tanja-battery">100%</span></div>
-                        <div class="device-row"><span>Bluetooth</span><span id="tanja-bluetooth">—</span></div>
-                        <div class="device-row"><span>Standort</span><span id="tanja-location">Unterwegs</span></div>
-                        <div class="device-actions">
-                            <button class="hud-button small" onclick="findPhone('tanja', 'quiet')">🔔 Leise</button>
-                            <button class="hud-button small" onclick="findPhone('tanja', 'loud')">🚨 Laut</button>
-                            <button class="hud-button small" onclick="findPhone('tanja', 'announce')">📢 Durchsage</button>
-                            <button class="hud-button small stop" onclick="stopAlarm('tanja')">⏹️ Stopp</button>
-                        </div>
-                    </div>
-                </div>
+  const ts = states['sensor.total_power']?.last_updated;
+  set('enUpdate', ts ? 'Stand ' + new Date(ts).toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'}) : '—');
 
-</main>
+  // Batterie-Bewegung in der Unterzeile
+  const el = $('enSpeicher');
+  if (el && soc != null && (laden || entladen)) {
+    el.textContent = `Speicher ${Math.round(soc)} % · ${laden > entladen ? 'lädt '+watt(laden) : 'entlädt '+watt(entladen)}`;
+  }
 
-                <!-- Ollama VM Dashboard View (ersetzt GodCore) -->
-                <div class="view-container" id="view-ollama">
-                    <div class="ollama-header">
-                        <span class="tile-line"></span>
-                        <span class="tile-title">OLLAMA VM — LOKALE KI INFRASTRUKTUR</span>
-                        <span class="ollama-live" id="ollamaLive">LIVE</span>
-                    </div>
-                    <div class="ollama-grid" id="ollamaGrid">
-                        <div class="ollama-card" data-component="models">
-                            <div class="gc-card-top">
-                                <span class="gc-icon">🧠</span>
-                                <span class="gc-name">Modelle</span>
-                                <span class="gc-status online" id="gc-ollama-models-status">ONLINE</span>
-                            </div>
-                            <div class="gc-meta">Aktive Modelle: Kimi K3, Qwen3.5:397B, DeepSeek-V4</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-ollama-models-host">192.168.1.170:11434</span></div>
-                            <div class="gc-row"><span>Modellanzahl</span><span id="gc-ollama-models-count">—</span></div>
-                            <div class="gc-row"><span>VRAM Nutzung</span><span id="gc-ollama-models-vram">—</span></div>
-                            <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="ollama-models">Details</button>
-                                <button class="hud-button small gc-log" data-agent="ollama-models">Logs</button>
-                            </div>
-                        </div>
-                        <div class="ollama-card" data-component="performance">
-                            <div class="gc-card-top">
-                                <span class="gc-icon">⚡</span>
-                                <span class="gc-name">Performance</span>
-                                <span class="gc-status online" id="gc-ollama-perf-status">ONLINE</span>
-                            </div>
-                            <div class="gc-meta">Token/s, Latenz, GPU/CPU Auslastung</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-ollama-perf-host">192.168.1.170</span></div>
-                            <div class="gc-row"><span>Tokens/s</span><span id="gc-ollama-perf-tokens">—</span></div>
-                            <div class="gc-row"><span>Latenz</span><span id="gc-ollama-perf-latency">—</span></div>
-                            <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="ollama-perf">Benchmark</button>
-                                <button class="hud-button small gc-log" data-agent="ollama-perf">Metrics</button>
-                            </div>
-                        </div>
-                        <div class="ollama-card" data-component="api">
-                            <div class="gc-card-top">
-                                <span class="gc-icon">🔌</span>
-                                <span class="gc-name">API Endpoints</span>
-                                <span class="gc-status online" id="gc-ollama-api-status">ONLINE</span>
-                            </div>
-                            <div class="gc-meta">/api/generate, /api/chat, /api/embeddings</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-ollama-api-host">192.168.1.170:11434</span></div>
-                            <div class="gc-row"><span>Requests/min</span><span id="gc-ollama-api-reqs">—</span></div>
-                            <div class="gc-row"><span>Fehlerrate</span><span id="gc-ollama-api-errors">—</span></div>
-                            <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="ollama-api">Test</button>
-                                <button class="hud-button small gc-log" data-agent="ollama-api">Logs</button>
-                            </div>
-                        </div>
-                        <div class="ollama-card" data-component="storage">
-                            <div class="gc-card-top">
-                                <span class="gc-icon">💾</span>
-                                <span class="gc-name">Storage</span>
-                                <span class="gc-status online" id="gc-ollama-storage-status">ONLINE</span>
-                            </div>
-                            <div class="gc-meta">Model Storage, Cache, RAG Index</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-ollama-storage-host">192.168.1.170</span></div>
-                            <div class="gc-row"><span>Genutzt</span><span id="gc-ollama-storage-used">—</span></div>
-                            <div class="gc-row"><span>Frei</span><span id="gc-ollama-storage-free">—</span></div>
-                            <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="ollama-storage">Details</button>
-                                <button class="hud-button small gc-log" data-agent="ollama-storage">Cleanup</button>
-                            </div>
-                        </div>
-                        <div class="ollama-card" data-component="network">
-                            <div class="gc-card-top">
-                                <span class="gc-icon">🌐</span>
-                                <span class="gc-name">Netzwerk</span>
-                                <span class="gc-status online" id="gc-ollama-net-status">ONLINE</span>
-                            </div>
-                            <div class="gc-meta">Verbindungen, Bandbreite, Latenz zu Clients</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-ollama-net-host">192.168.1.170</span></div>
-                            <div class="gc-row"><span>Clients</span><span id="gc-ollama-net-clients">—</span></div>
-                            <div class="gc-row"><span>Bandbreite</span><span id="gc-ollama-net-bandwidth">—</span></div>
-                            <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="ollama-net">Topologie</button>
-                                <button class="hud-button small gc-log" data-agent="ollama-net">Traffic</button>
-                            </div>
-                        </div>
-                        <div class="ollama-card" data-component="health">
-                            <div class="gc-card-top">
-                                <span class="gc-icon">❤️</span>
-                                <span class="gc-name">Health</span>
-                                <span class="gc-status online" id="gc-ollama-health-status">ONLINE</span>
-                            </div>
-                            <div class="gc-meta">System Health, Uptime, Errors, Warnings</div>
-                            <div class="gc-row"><span>Host</span><span id="gc-ollama-health-host">192.168.1.170</span></div>
-                            <div class="gc-row"><span>Uptime</span><span id="gc-ollama-health-uptime">—</span></div>
-                            <div class="gc-row"><span>Errors</span><span id="gc-ollama-health-errors">—</span></div>
-                            <div class="gc-actions">
-                                <button class="hud-button small gc-chat" data-agent="ollama-health">Check</button>
-                                <button class="hud-button small gc-log" data-agent="ollama-health">Logs</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  // Klima (echte Räume)
+  const klimaDefs = [
+    ['Wohnzimmer', 'climate.split_klimaanlage'],
+    ['Schlafzimmer', 'climate.schlafzimmer'],
+    ['Arbeitszimmer', 'climate.arbeitzimmer_arbeitszimmer']
+  ];
+  $('klimaListe').innerHTML = klimaDefs.map(([name, ent]) => {
+    const c = states[ent];
+    const t = c?.attributes?.current_temperature ?? null;
+    const an = c && !['off','unavailable','unknown'].includes(c.state);
+    return `<div class="kv"><span>${name}</span><b class="num ${an?'acc':''}">${t!=null? t.toFixed(1).replace('.',',')+'°':'—'}${an?' · an':''}</b></div>`;
+  }).join('');
 
-                <!-- Right Status Panel -->
-                <aside class="status-panel">
-                    <div class="panel-header">
-                        <span class="panel-line"></span>
-                        <span class="panel-title">SYSTEM STATUS</span>
-                    </div>
-                    <div class="status-list" id="statusList">
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_haos" data-agent="haos">
-                            <span class="status-dot-sm" id="status-haos-dot"></span>
-                            <span class="status-name">HAOS</span>
-                        </div>
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_proxmox" data-agent="proxmox">
-                            <span class="status-dot-sm" id="status-proxmox-dot"></span>
-                            <span class="status-name">Proxmox</span>
-                        </div>
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_nas" data-agent="nas">
-                            <span class="status-dot-sm" id="status-nas-dot"></span>
-                            <span class="status-name">NAS</span>
-                        </div>
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_gateway">
-                            <span class="status-dot-sm" id="status-gateway-dot"></span>
-                            <span class="status-name">Gateway</span>
-                        </div>
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_solar">
-                            <span class="status-dot-sm" id="status-solar-dot"></span>
-                            <span class="status-name">Solar</span>
-                        </div>
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_zigbee">
-                            <span class="status-dot-sm" id="status-zigbee-dot"></span>
-                            <span class="status-name">Zigbee</span>
-                        </div>
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_opendtu">
-                            <span class="status-dot-sm" id="status-opendtu-dot"></span>
-                            <span class="status-name">OpenDTU</span>
-                        </div>
-                        <div class="status-row" data-entity="binary_sensor.jarvis_status_jarvis_api" data-agent="jarvis">
-                            <span class="status-dot-sm" id="status-jarvis-dot"></span>
-                            <span class="status-name">Jarvis API</span>
-                        </div>
-                        <div class="status-row" data-entity="binary_sensor.paperless_status" data-agent="paperless">
-                            <span class="status-dot-sm" id="status-paperless-dot"></span>
-                            <span class="status-name">Paperless</span>
-                        </div>
-                        <div class="status-row" data-entity="binary_sensor.immich_status" data-agent="immich">
-                            <span class="status-dot-sm" id="status-immich-dot"></span>
-                            <span class="status-name">Immich</span>
-                        </div>
-                        <div class="status-row" data-entity="binary_sensor.fredy_status" data-agent="fredy">
-                            <span class="status-dot-sm" id="status-fredy-dot"></span>
-                            <span class="status-name">Fredy</span>
-                        </div>
-                    </div>
+  // Hausstatus
+  const punkte = [
+    ['Home Assistant', !!states['sun.sun']],
+    ['PV / Wechselrichter', erzeugung != null && erzeugung > 0],
+    ['Batteriespeicher', soc != null],
+    ['Netzampel', states['sensor.netzampel']?.state === 'gruen']
+  ];
+  $('hausStatus').innerHTML = punkte.map(([n, ok]) =>
+    `<div class="kv"><span>${n}</span><b class="${ok?'ok':'warn'}">●</b></div>`).join('');
+}
 
-                    <div class="panel-divider"></div>
+// ============ Kameras ============
+const CAMS = [
+  {name:'Haustür',  entity:'camera.doorbird'},
+  {name:'Hinten',   entity:'camera.back_door_standardauflosung'},
+  {name:'Einfahrt', entity:'camera.einfahrt_hochauflosung'}
+];
+async function ladeKameras() {
+  const grid = $('camGrid');
+  grid.innerHTML = '';
+  for (const c of CAMS) {
+    const div = document.createElement('div');
+    div.className = 'c span4';
+    const verfuegbar = states[c.entity] && states[c.entity].state !== 'unavailable';
+    div.innerHTML = `<div class="lbl" style="margin-bottom:8px">${c.name}</div>
+      <div class="cam">${verfuegbar
+        ? `<img alt="${c.name}" src="${API}/ha-proxy/api/camera_proxy/${c.entity}?token=1&amp;t=${Date.now()}">`
+        : `<div class="off">nicht erreichbar</div>`}
+        <div class="cap">${c.name}</div></div>`;
+    grid.appendChild(div);
+  }
+}
 
-                    <div class="panel-header">
-                        <span class="panel-line"></span>
-                        <span class="panel-title">UMGEBUNG</span>
-                    </div>
-                    <div class="env-list">
-                        <div class="env-row">
-                            <span class="env-name">Garten</span>
-                            <span class="env-value" id="statusTempGarten">--°C</span>
-                        </div>
-                        <div class="env-row">
-                            <span class="env-name">Pool</span>
-                            <span class="env-value" id="statusTempPool">--°C</span>
-                        </div>
-                        <div class="env-row">
-                            <span class="env-name">Wohnz.</span>
-                            <span class="env-value" id="statusTempWohn">--°C</span>
-                        </div>
-                        <div class="env-row">
-                            <span class="env-name">Arbeitsz.</span>
-                            <span class="env-value" id="statusTempArbeit">--°C</span>
-                        </div>
-                        <div class="env-row env-row-feels">
-                            <span class="env-name" title="Gefühlte Außentemperatur — Lufttemperatur, Luftfeuchte und Wind zusammengefasst">Außen gefühlt</span>
-                            <span class="env-value" id="statusTempGefuehlt">--°C</span>
-                        </div>
-                    </div>
-                </aside>
+// ============ System ============
+async function ladeSystem() {
+  const zeilen = [
+    ['J.A.R.V.I.S. API', true],
+    ['Home Assistant', !!states['sun.sun']],
+    ['Paperless', states['sensor.jarvis_status_paperless']?.state === '200'],
+    ['Immich', states['sensor.jarvis_status_immich']?.state === '200'],
+    ['Zigbee', states['binary_sensor.jarvis_status_zigbee']?.state === 'on']
+  ];
+  $('infraListe').innerHTML = zeilen.map(([n, ok]) =>
+    `<div class="kv"><span>${n}</span><b class="${ok?'ok':'warn'}">${ok?'bereit':'gestört'}</b></div>`).join('');
 
-            </div>
+  try {
+    const r = await fetch(`${API}/ollama/api/tags`, {cache:'no-store'});
+    const d = await r.json();
+    const n = (d.models || []).length;
+    const gb = (d.models || []).reduce((s,m) => s + (m.size||0), 0) / 1e9;
+    set('kiModelle', n);
+    set('kiDetail', `${n} Modelle · ${gb.toFixed(0)} GB`);
+  } catch(e) { set('kiModelle', '—'); }
 
-            <!-- Footer -->
-            <footer class="dashboard-footer">
-                <div class="footer-left">
-                    <span class="connection-status online" id="footerConnection">● Verbindung aktiv</span>
-                    <span id="haEntityCount">HA: -- Entitäten</span>
-                </div>
-                <div class="footer-center">
-                    <span class="version" id="footerVersion">v1.0.0</span>
-                </div>
-                <div class="footer-right">
-                    <button class="hud-button small" id="cameraBtn">Analyse</button>
-                    <div class="input-pill">
-                        <input type="text" id="textInput" placeholder="Befehl oder Frage...">
-                        <button id="sendBtn">➤</button>
-                    </div>
-                </div>
-            </footer>
+  const geraete = Object.keys(states).filter(k => k.startsWith('device_tracker.') && states[k].state === 'home').length;
+  set('netGeraete', geraete || '—');
 
-            <!-- Overlays -->
-            <div class="chat-overlay" id="chatOverlay" style="display: none;">
-                <div class="chat-panel">
-                    <div class="chat-panel-header">
-                        <span>J.A.R.V.I.S. Dialog</span>
-                        <button class="close-panel" id="closeChat">×</button>
-                    </div>
-                    <div class="chat-panel-body" id="chatPanelBody"></div>
-                    <div class="chat-panel-footer">
-                        <input type="text" id="chatPanelInput" placeholder="Geben Sie einen Befehl ein...">
-                        <button id="chatPanelSend">➤</button>
-                    </div>
-                </div>
-            </div>
+  const stoerung = zeilen.some(([,ok]) => !ok);
+  $('sysState').innerHTML = `<span class="dot ${stoerung?'bad':''}"></span>${stoerung?'Störung':'Systeme normal'}`;
+}
 
-            <div class="camera-overlay" id="cameraOverlay" style="display: none;">
-                <div class="camera-frame">
-                    <video id="cameraVideo" autoplay playsinline></video>
-                    <canvas id="cameraCanvas" style="display: none;"></canvas>
-                    <div class="camera-controls">
-                        <button class="hud-button secondary" id="cameraCancel">Abbrechen</button>
-                        <button class="hud-button primary" id="cameraCapture">Aufnehmen</button>
-                    </div>
-                    <div class="camera-hint">Halten Sie das Objekt ruhig. Das Bild wird zur Analyse an J.A.R.V.I.S. gesendet.</div>
-                </div>
-            </div>
+// ============ Bewertungs-App (Flip-Deal) ============
+function openFlip() {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('on'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('on'));
+  const v = $('view-bewertung');
+  v.classList.add('on');
+  const frame = $('flipFrame');
+  if (!frame.dataset.geladen) {
+    frame.src = `${API}/flip/index.html`;
+    frame.dataset.geladen = '1';
+  }
+}
+function closeFlip() {
+  $('view-bewertung').classList.remove('on');
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('on'));
+  $('view-immo').classList.add('on');
+  document.querySelector('nav a[data-view="immo"]').classList.add('on');
+  set('areaName','IMMOBILIEN');
+}
 
-            <div class="climate-overlay" id="climateOverlay" style="display: none;">
-                <!-- Blueprint background -->
-                <div class="blueprint-bg" aria-hidden="true">
-                    <div class="blueprint-grid"></div>
-                    <div class="blueprint-title">SPLIT-KLIMAGERÄT — TECHNISCHE ZEICHNUNG</div>
-                    <div class="blueprint-drawing">
-                        <img src="klima-jarvis.png" alt="Klimaanlage technische Zeichnung" class="ac-drawing"/>
-                    </div>
-                </div>
+// ============ Anmeldung ============
+const SESSION_KEY = 'jarvis_session';
+function istLokal() {
+  const n = location.hostname;
+  return n === 'localhost' || n === '127.0.0.1' || n.startsWith('192.168.');
+}
+function sitzung() {
+  try { return JSON.parse(localStorage.getItem(SESSION_KEY) || 'null'); } catch(e) { return null; }
+}
+function appZeigen() {
+  $('login').classList.remove('on');
+  document.body.dataset.angemeldet = '1';
+  start();
+}
+async function anmelden() {
+  const btn = $('loginBtn'); const fehler = $('loginErr');
+  const user = document.querySelector('#login .wer button.on')?.dataset.user || 'mike';
+  const pw = $('pw').value;
+  fehler.textContent = '';
+  if (istLokal()) {
+    localStorage.setItem(SESSION_KEY, JSON.stringify({user, name:user, token:'local', lokal:true}));
+    appZeigen(); return;
+  }
+  if (!pw) { fehler.textContent = 'Passwort fehlt'; return; }
+  btn.disabled = true; btn.textContent = 'Prüfe …';
+  try {
+    const r = await fetch(`${API}/auth/login`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({username:user, password:pw})
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok || !d.token) throw new Error(d.error || 'Anmeldung fehlgeschlagen');
+    localStorage.setItem(SESSION_KEY, JSON.stringify({user, name:(d.user && d.user.name) || user, token:d.token}));
+    appZeigen();
+  } catch(e) {
+    fehler.textContent = 'Anmeldung fehlgeschlagen — Passwort prüfen.';
+  } finally {
+    btn.disabled = false; btn.textContent = 'Anmelden';
+  }
+}
+function abmelden() {
+  localStorage.removeItem(SESSION_KEY);
+  location.reload();
+}
 
-                <div class="climate-expander" id="climateExpander" aria-hidden="true"></div>
+// ============ Start ============
+async function start() {
+  const ok = await ladeHA();
+  await ladeImmobilien();
+  if (ok) { ladeHaus(); ladeKameras(); ladeSystem(); }
+  else {
+    set('enErzeugung','—');
+    $('klimaListe').innerHTML = '<div class="mut">Home Assistant nicht erreichbar</div>';
+    $('sysState').innerHTML = '<span class="dot bad"></span>keine Verbindung';
+  }
+  setInterval(async () => {
+    await ladeHA(); ladeHaus(); ladeSystem();
+  }, 60000);
+}
 
-                <div class="climate-panel" id="climatePanel">
-                    <div class="climate-panel-header">
-                        <span class="panel-title">KLIMA STEUERUNG</span>
-                        <button class="close-panel" id="closeClimate">×</button>
-                    </div>
-                    <div class="climate-panel-body" id="climatePanelBody">
-                        <!-- Wohnzimmer -->
-                        <div class="climate-zone" data-zone="wohnzimmer" data-entity="climate.split_klimaanlage">
-                            <div class="zone-header">
-                                <span class="zone-name">Wohnzimmer</span>
-                                <span class="zone-status" id="climateStatus-wohnzimmer">--</span>
-                            </div>
-                            <div class="zone-body">
-                                <div class="zone-temp">
-                                    <span class="zone-target" id="climateTarget-wohnzimmer">--°C</span>
-                                    <span class="zone-current" id="climateCurrent-wohnzimmer">Ist: --°C</span>
-                                </div>
-                                <div class="zone-controls">
-                                    <button class="mini-btn" data-action="minus" data-zone="wohnzimmer">−</button>
-                                    <button class="mini-btn mode" data-action="mode" data-zone="wohnzimmer" id="climateModeBtn-wohnzimmer">❄</button>
-                                    <button class="mini-btn power" data-action="power" data-zone="wohnzimmer" id="climatePowerBtn-wohnzimmer">⏻</button>
-                                    <button class="mini-btn" data-action="plus" data-zone="wohnzimmer">+</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Schlafzimmer -->
-                        <div class="climate-zone" data-zone="schlafzimmer" data-entity="climate.schlafzimmer">
-                            <div class="zone-header">
-                                <span class="zone-name">Schlafzimmer</span>
-                                <span class="zone-status" id="climateStatus-schlafzimmer">--</span>
-                            </div>
-                            <div class="zone-body">
-                                <div class="zone-temp">
-                                    <span class="zone-target" id="climateTarget-schlafzimmer">--°C</span>
-                                    <span class="zone-current" id="climateCurrent-schlafzimmer">Ist: --°C</span>
-                                </div>
-                                <div class="zone-controls">
-                                    <button class="mini-btn" data-action="minus" data-zone="schlafzimmer">−</button>
-                                    <button class="mini-btn mode" data-action="mode" data-zone="schlafzimmer" id="climateModeBtn-schlafzimmer">❄</button>
-                                    <button class="mini-btn power" data-action="power" data-zone="schlafzimmer" id="climatePowerBtn-schlafzimmer">⏻</button>
-                                    <button class="mini-btn" data-action="plus" data-zone="schlafzimmer">+</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Arbeitszimmer -->
-                        <div class="climate-zone" data-zone="arbeitszimmer" data-entity="climate.arbeitzimmer_arbeitszimmer">
-                            <div class="zone-header">
-                                <span class="zone-name">Arbeitszimmer</span>
-                                <span class="zone-status" id="climateStatus-arbeitszimmer">--</span>
-                            </div>
-                            <div class="zone-body">
-                                <div class="zone-temp">
-                                    <span class="zone-target" id="climateTarget-arbeitszimmer">--°C</span>
-                                    <span class="zone-current" id="climateCurrent-arbeitszimmer">Ist: --°C</span>
-                                </div>
-                                <div class="zone-controls">
-                                    <button class="mini-btn" data-action="minus" data-zone="arbeitszimmer">−</button>
-                                    <button class="mini-btn mode" data-action="mode" data-zone="arbeitszimmer" id="climateModeBtn-arbeitszimmer">❄</button>
-                                    <button class="mini-btn power" data-action="power" data-zone="arbeitszimmer" id="climatePowerBtn-arbeitszimmer">⏻</button>
-                                    <button class="mini-btn" data-action="plus" data-zone="arbeitszimmer">+</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <script>
-                                // Sub-Views dynamisch laden
-                                Promise.all([
-                                    fetch('imo-subviews.html').then(r => {
-                                        if (!r.ok) throw new Error('imo-subviews.html nicht gefunden: ' + r.status);
-                                        return r.text();
-                                    }),
-                                    fetch('imo-schuldenuhr.html').then(r => {
-                                        if (!r.ok) throw new Error('imo-schuldenuhr.html nicht gefunden: ' + r.status);
-                                        return r.text();
-                                    })
-                                ])
-                                .then(([subviewsHtml, schuldenuhrHtml]) => {
-                                    document.getElementById('imo-subviews-container').innerHTML = subviewsHtml;
-                                    document.getElementById('imo-schuldenuhr-container').innerHTML = schuldenuhrHtml;
-                                    
-                                    if (window.imoDebugLog) {
-                                        window.imoDebugLog('✅ Sub-View HTML geladen');
-                                        window.imoDebugLog(`  imo-subviews.html: ${subviewsHtml.length} Zeichen`);
-                                        window.imoDebugLog(`  imo-schuldenuhr.html: ${schuldenuhrHtml.length} Zeichen`);
-                                    }
-                                    
-                                    // Scripts neu initialisieren
-                                    setTimeout(() => {
-                                        // IMO Kalkulator erstellen falls noch nicht vorhanden
-                                        if (!window.imoKalkulator && typeof ImoKalkulator !== 'undefined') {
-                                            window.imoKalkulator = new ImoKalkulator();
-                                            if (window.imoDebugLog) window.imoDebugLog('✅ ImoKalkulator erstellt (nach HTML Load)');
-                                        }
-                                        // ImoModule erstellen falls noch nicht vorhanden
-                                        if (!window.imoModule && window.imoKalkulator && typeof ImoModule !== 'undefined') {
-                                            window.imoModule = new ImoModule(window.imoKalkulator);
-                                            if (window.imoDebugLog) window.imoDebugLog('✅ ImoModule erstellt (nach HTML Load)');
-                                        }
-                                        // ImoSubViews erstellen falls noch nicht vorhanden
-                                        if (!window.imoSubViews && window.imoKalkulator && typeof ImoSubViews !== 'undefined') {
-                                            window.imoSubViews = new ImoSubViews(window.imoKalkulator);
-                                            if (window.imoDebugLog) window.imoDebugLog('✅ ImoSubViews erstellt (nach HTML Load)');
-                                        }
-                                        // ImoSchuldenuhr erstellen falls noch nicht vorhanden (wichtig: nach HTML Load!)
-                                        if (!window.imoSchuldenuhr && typeof ImoSchuldenuhr !== 'undefined') {
-                                            window.imoSchuldenuhr = new ImoSchuldenuhr();
-                                            if (window.imoDebugLog) window.imoDebugLog('✅ ImoSchuldenuhr erstellt (nach HTML Load)');
-                                        }
-                                        // Init aufrufen (bei allen Klassen)
-                                        if (window.imoSubViews) window.imoSubViews.init();
-                                        if (window.imoSchuldenuhr) {
-                                            window.imoSchuldenuhr.init();
-                                            if (window.imoDebugLog) window.imoDebugLog('✅ ImoSchuldenuhr.init() aufgerufen');
-                                        }
-                                        if (window.imoDebugLog) window.imoDebugLog('🔄 Init abgeschlossen');
-                                    }, 100);
-                                })
-                                .catch(err => {
-                                    console.error('❌ FEHLER beim Laden der IMO Sub-Views:', err);
-                                    document.getElementById('imo-subviews-container').innerHTML = 
-                                        '<div style="padding:20px;color:var(--jarvis-red)">⚠️ Fehler: Sub-Views konnten nicht geladen werden. Bitte prüfen Sie ob imo-subviews.html und imo-schuldenuhr.html im public/ Ordner existieren.</div>';
-                                });
-                            </script>
-                </div>
-            </div>
-
-            <div class="scan-overlay"></div>
-
-            <!-- Voice-First Mobile Elements -->
-            <div class="voice-quick-status" id="voiceQuickStatus">
-                <div class="qs-left">
-                    <span class="qs-dot"></span>
-                    <span class="qs-text">ONLINE</span>
-                </div>
-                <span class="qs-time" id="voiceTime">--:--</span>
-                <span class="qs-user" id="voiceUserBadge">M</span>
-            </div>
-
-            <div class="voice-response-bubble" id="voiceResponseBubble">
-                <button class="bubble-close" id="voiceBubbleClose">×</button>
-                <div class="bubble-text" id="voiceBubbleText"></div>
-            </div>
-
-            <div class="voice-drawer-handle" id="voiceDrawerHandle">
-                <div class="drawer-bar"></div>
-                <div class="drawer-label">DASHBOARD</div>
-            </div>
-
-            <div class="voice-drawer" id="voiceDrawer">
-                <div class="voice-drawer-header">
-                    <span class="drawer-title">J.A.R.V.I.S. DASHBOARD</span>
-                    <button class="drawer-close" id="voiceDrawerClose">×</button>
-                </div>
-                <div class="voice-drawer-body" id="voiceDrawerBody">
-                    <button class="drawer-menu-item" data-view="home">
-                        <span class="menu-icon">⌂</span>
-                        <span>Home</span>
-                        <span class="menu-arrow">›</span>
-                    </button>
-                    <button class="drawer-menu-item" data-view="briefing">
-                        <span class="menu-icon">📰</span>
-                        <span>Briefing</span>
-                        <span class="menu-arrow">›</span>
-                    </button>
-                    <button class="drawer-menu-item" data-view="cameras">
-                        <span class="menu-icon">◉</span>
-                        <span>Kameras</span>
-                        <span class="menu-arrow">›</span>
-                    </button>
-                    <button class="drawer-menu-item" data-view="strom">
-                        <span class="menu-icon">⚡</span>
-                        <span>Strom</span>
-                        <span class="menu-arrow">›</span>
-                    </button>
-                    <button class="drawer-menu-item" data-view="quixx24">
-                        <span class="menu-icon">▤</span>
-                        <span>Quixx24</span>
-                        <span class="menu-arrow">›</span>
-                    </button>
-                    <button class="drawer-menu-item" data-view="netzwerk">
-                        <span class="menu-icon">◎</span>
-                        <span>Netzwerk</span>
-                        <span class="menu-arrow">›</span>
-                    </button>
-                    <button class="drawer-menu-item" data-view="einstellungen">
-                        <span class="menu-icon">⚙</span>
-                        <span>Einstellungen</span>
-                        <span class="menu-arrow">›</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Ollama VM Detail Modal -->
-            <div class="ollama-modal" id="ollamaModal" style="display: none;">
-                <div class="ollama-modal-backdrop" id="ollamaModalBackdrop"></div>
-                <div class="ollama-modal-card" id="ollamaModalCard">
-                    <div class="gc-modal-header">
-                        <span class="gc-modal-icon" id="ollamaModalIcon">🧠</span>
-                        <span class="gc-modal-name" id="ollamaModalName">Ollama VM Komponente</span>
-                        <span class="gc-status online" id="ollamaModalStatus">ONLINE</span>
-                        <button class="drawer-close" id="ollamaModalClose">×</button>
-                    </div>
-                    <div class="gc-modal-meta" id="ollamaModalMeta"></div>
-                    <div class="gc-modal-rows" id="ollamaModalRows"></div>
-                    <div class="gc-modal-actions">
-                        <button class="hud-button small" id="ollamaModalDetails">Details öffnen</button>
-                        <button class="hud-button small" id="ollamaModalLog">Log ansehen</button>
-                        <button class="hud-button small secondary" id="ollamaModalFull">Dashboard öffnen</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Status Detail Modal (generisch für alle Status-Einträge) -->
-            <div class="ollama-modal" id="statusDetailModal" style="display: none;">
-                <div class="ollama-modal-backdrop" id="statusDetailBackdrop"></div>
-                <div class="ollama-modal-card" id="statusDetailCard">
-                    <div class="gc-modal-header">
-                        <span class="gc-modal-icon" id="statusDetailIcon">🖥️</span>
-                        <span class="gc-modal-name" id="statusDetailName">System</span>
-                        <span class="gc-status online" id="statusDetailStatus">ONLINE</span>
-                        <button class="drawer-close" id="statusDetailClose">×</button>
-                    </div>
-                    <div class="gc-modal-meta" id="statusDetailMeta">IP: -- · Status: --</div>
-                    <div class="gc-modal-rows" id="statusDetailRows">
-                        <div class="placeholder-text">Lade Daten...</div>
-                    </div>
-                    <div class="gc-modal-actions">
-                        <button class="hud-button small" id="statusDetailRefresh">Aktualisieren</button>
-                        <button class="hud-button small secondary" id="statusDetailClose2">Schließen</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script type="module" src="camera-config.js"></script>
-    <script type="module" src="app.js?v=39"></script>
+// Beim Laden: Sitzung prüfen, sonst Anmeldebildschirm
+(function gate() {
+  const s = sitzung();
+  if (s) { appZeigen(); return; }
+  $('login').classList.add('on');
+  if (istLokal()) {
+    $('pw').placeholder = 'lokal — Passwort nicht nötig';
+    $('pw').style.opacity = '.55';
+  }
+})();
+</script>
 </body>
 </html>
