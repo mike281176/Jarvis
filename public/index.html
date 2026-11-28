@@ -696,7 +696,13 @@ function zeichneHaushalt() {
   const ist = name => (m.kategorien && m.kategorien[name]) || 0;
 
   const zeigbar = k => !(ist(k.name) === 0 && k.budget < 5);
-  $('hbFix').innerHTML = fix.filter(zeigbar).map(k => hbZeile(k.name, ist(k.name), k.budget, true)).join('')
+  $('hbFix').innerHTML = fix.filter(zeigbar).map(k => {
+    let zeile = hbZeile(k.name, ist(k.name), k.budget, true);
+    if (/Tanja/i.test(k.name) && s.rate) {
+      zeile += `<div class="hbsub">darin enthalten: Kreditraten ${eur(s.rate)} und Bewirtschaftung</div>`;
+    }
+    return zeile;
+  }).join('')
     || '<div class="mut">keine Fixkosten erkannt</div>';
   const fixBudget = fix.reduce((a, k) => a + k.budget, 0);
   set('hbFixSumme', eur(m.fix != null ? m.fix : fixBudget) + ' / ' + eur(fixBudget));
@@ -712,9 +718,8 @@ function zeichneHaushalt() {
   set('hbFrei', eur(frei));
   $('hbFrei').className = 'big num ' + (frei >= 0 ? 'ok' : 'warn');
   set('hbFreiText', `${monatKurz(hbMonat)}: Einnahmen ${eur(m.einnahmen)} − Budgets ${eur(plan)}`);
-  const rate = s.rate || 0;
   $('hbTipp').innerHTML = frei >= 0
-    ? `<div class="mut">Im Plan frei. Reicht für ${(frei / (rate || 1)).toFixed(1).replace('.', ',')}× Schuldenrate — oder als Sondertilgung einsetzen.</div>`
+    ? `<div class="mut">Im Plan frei — die Kreditrate ${s.rate ? eur(s.rate) : ''} ist in der Tanja-Überweisung schon enthalten. Frei heißt: Sondertilgung oder Rücklage.</div>`
     : `<div class="mut warn">Plan deckt die Ausgaben nicht. Prüfen, welche Kategorie über dem Budget liegt.</div>`;
 
   // Auffälligkeiten
