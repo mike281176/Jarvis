@@ -250,6 +250,33 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             print(f"❌ Lokalpost Error: {e}")
             self.send_json_response({'status': 'error', 'message': str(e)}, 500)
 
+    def handle_kassenbuch(self):
+        """Liefert die aufbereiteten Buchungen aus dem Kassenbuch-Import."""
+        pfad = os.path.expanduser('~/.hermes/data/kassenbuch.json')
+        try:
+            with open(pfad, encoding='utf-8') as f:
+                d = json.load(f)
+        except FileNotFoundError:
+            self.send_json_response({'status': 'leer',
+                                     'message': 'Noch kein Kassenbuch importiert.'}, 200)
+            return
+        except Exception as e:
+            self.send_json_response({'status': 'error', 'message': str(e)}, 500)
+            return
+
+        buchungen = d.get('buchungen', [])
+        # Kennzahlen + letzte Buchungen + Auffälligkeiten
+        antwort = {
+            'status': 'ok',
+            'stand': d.get('stand'),
+            'konten': d.get('konten', []),
+            'summen': d.get('summen', {}),
+            'auszuege': d.get('auszuege', []),
+            'doppelverdacht': d.get('doppelverdacht', []),
+            'letzte': buchungen[:40],
+        }
+        self.send_json_response(antwort)
+
     def handle_flip_static(self, path):
         """Liefert die Bewertungs-/Flip-App (statisch) unter /api/jarvis/flip/."""
         try:
@@ -321,6 +348,10 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             self.send_json_response({'status': 'error', 'message': f'Flip-Deal nicht erreichbar: {e}'}, 502)
 
     def do_GET(self):
+        if self.path.startswith('/api/jarvis/kassenbuch'):
+            self.handle_kassenbuch()
+            return
+
         if self.path.startswith('/api/jarvis/flip/'):
             self.handle_flip_static(self.path)
             return

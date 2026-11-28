@@ -131,14 +131,14 @@ nav a.on{color:var(--acc)}
       <div class="kv" style="border:0;padding:2px 0 0"><span class="mut">Cashflow</span><b class="num" id="bestandCash">—</b></div>
     </div></div>
 
-    <div class="c span4"><div class="flex">
+    <div class="c span4" onclick="openKassenbuch()" style="cursor:pointer"><div class="flex">
       <div class="between"><div class="lbl">Kassenbuch</div><div class="mut" id="kbStand">—</div></div>
       <div style="display:flex;gap:16px;margin-top:10px">
-        <div><div class="sm num ok" id="kbOffen">—</div><div class="mut">offen</div></div>
-        <div><div class="sm num warn" id="kbUeberfaellig">—</div><div class="mut">überfällig</div></div>
-        <div><div class="sm num" id="kbDoppelt">—</div><div class="mut">doppelt?</div></div>
+        <div><div class="sm num" id="kbAusgaben">—</div><div class="mut">Ausgaben</div></div>
+        <div><div class="sm num ok" id="kbEinnahmen">—</div><div class="mut">Einnahmen</div></div>
+        <div><div class="sm num warn" id="kbDoppelt">—</div><div class="mut">doppelt?</div></div>
       </div>
-      <div class="mut" style="margin-top:9px" id="kbHinweis">Kontoauszüge aus Paperless werden noch nicht ausgewertet.</div>
+      <div class="mut" style="margin-top:9px" id="kbHinweis">VR-Bank · wird geladen …</div>
     </div></div>
 
     <div class="c span4"><div class="flex">
@@ -203,6 +203,27 @@ nav a.on{color:var(--acc)}
       <div class="lbl">Netzwerk</div>
       <div class="mid num" id="netGeraete" style="margin-top:10px">—</div>
       <div class="mut">Geräte online</div>
+    </div></div>
+  </div>
+</section>
+
+<section class="view" id="view-kassenbuch">
+  <div class="bento">
+    <div class="c span4"><div class="flex">
+      <div class="between"><div class="lbl">Kassenbuch · VR-Bank</div><div class="mut" id="kbDetailStand">—</div></div>
+      <div style="display:flex;gap:18px;margin-top:12px">
+        <div><div class="mid num" id="kbDaus">—</div><div class="mut">Ausgaben 2026</div></div>
+        <div><div class="mid num ok" id="kbDein">—</div><div class="mut">Einnahmen</div></div>
+        <div><div class="mid num" id="kbDsaldo">—</div><div class="mut">Saldo</div></div>
+      </div>
+    </div></div>
+    <div class="c span4"><div class="flex">
+      <div class="lbl">Auffällig</div>
+      <div id="kbWarn" style="margin-top:9px"><div class="mut">nichts gefunden</div></div>
+    </div></div>
+    <div class="c span4"><div class="flex">
+      <div class="lbl">Letzte Buchungen</div>
+      <div id="kbListe" style="margin-top:9px"><div class="mut">lade …</div></div>
     </div></div>
   </div>
 </section>
@@ -431,6 +452,44 @@ async function ladeSystem() {
   $('sysState').innerHTML = `<span class="dot ${stoerung?'bad':''}"></span>${stoerung?'Störung':'Systeme normal'}`;
 }
 
+// ============ Kassenbuch ============
+let kbDaten = null;
+async function ladeKassenbuch() {
+  try {
+    const r = await fetch(`${API}/kassenbuch`, {cache:'no-store'});
+    const d = await r.json();
+    if (d.status !== 'ok') { set('kbHinweis', 'noch kein Import'); return; }
+    kbDaten = d;
+    const s = d.summen || {};
+    set('kbAusgaben', eur(s.ausgaben));
+    set('kbEinnahmen', eur(s.einnahmen));
+    set('kbDoppelt', (d.doppelverdacht || []).length);
+    set('kbStand', d.stand ? 'Stand ' + d.stand.slice(0,10) : '—');
+    set('kbHinweis', `${s.buchungen || 0} Buchungen · ${(d.auszuege||[]).length} Auszüge · VR-Bank`);
+  } catch(e) { set('kbHinweis', 'nicht erreichbar'); }
+}
+function openKassenbuch() {
+  document.querySelectorAll('nav a').forEach(x => x.classList.remove('on'));
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('on'));
+  $('view-kassenbuch').classList.add('on');
+  set('areaName','KASSENBUCH');
+  window.scrollTo({top:0});
+  if (!kbDaten) { ladeKassenbuch().then(zeichneKassenbuch); } else zeichneKassenbuch();
+}
+function zeichneKassenbuch() {
+  if (!kbDaten) return;
+  const s = kbDaten.summen || {};
+  set('kbDetailStand', kbDaten.stand ? kbDaten.stand.slice(0,16).replace('T',' ') : '—');
+  set('kbDaus', eur(s.ausgaben)); set('kbDein', eur(s.einnahmen)); set('kbDsaldo', eur(s.saldo));
+  const v = kbDaten.doppelverdacht || [];
+  $('kbWarn').innerHTML = v.length
+    ? v.map(x => `<div class="kv"><span>${x.empfaenger}<br><span class="mut">${x.buchungen.join(' und ')}${x.tage===0?' · gleicher Tag':' · '+x.tage+' Tage'}</span></span><b class="num warn">${eur(x.betrag)}</b></div>`).join('')
+    : '<div class="mut">nichts gefunden</div>';
+  $('kbListe').innerHTML = (kbDaten.letzte || []).slice(0,25).map(b =>
+    `<div class="kv"><span>${b.datum.slice(5)} ${(b.empfaenger||b.art).slice(0,28)}</span>
+     <b class="num ${b.richtung==='aus'?'':'ok'}">${b.richtung==='aus'?'−':'+'}${eur(b.betrag)}</b></div>`).join('');
+}
+
 // ============ Bewertungs-App (Flip-Deal) ============
 function openFlip() {
   document.querySelectorAll('.view').forEach(v => v.classList.remove('on'));
@@ -500,6 +559,7 @@ function abmelden() {
 async function start() {
   const ok = await ladeHA();
   await ladeImmobilien();
+  ladeKassenbuch();
   if (ok) { ladeHaus(); ladeKameras(); ladeSystem(); }
   else {
     set('enErzeugung','—');
