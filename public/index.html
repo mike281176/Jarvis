@@ -70,6 +70,14 @@ nav a.on{color:var(--acc)}
 #login input{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:12px;
        color:var(--fg);padding:14px;font-size:16px;font-family:inherit;margin-bottom:12px}
 #login input:focus{outline:none;border-color:var(--acc)}
+#login .pwfeld{position:relative;margin-bottom:12px}
+#login .pwfeld input{margin-bottom:0;padding-right:52px;color:var(--fg)}
+#login .auge{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:40px;height:40px;
+       display:flex;align-items:center;justify-content:center;background:none;border:0;cursor:pointer;
+       color:var(--mut);border-radius:10px;font-family:inherit}
+#login .auge:hover{color:var(--fg);background:rgba(255,255,255,.05)}
+#login .auge:focus-visible{outline:2px solid var(--acc);outline-offset:-2px}
+#login .auge svg{width:21px;height:21px;display:block}
 #login .go{width:100%;background:var(--acc);border:0;border-radius:12px;padding:15px;font-size:14px;
        font-weight:700;color:#14181e;font-family:inherit;cursor:pointer}
 #login .err{color:var(--warn);font-size:12px;margin-top:10px;min-height:16px}
@@ -98,7 +106,15 @@ nav a.on{color:var(--acc)}
     <button class="on" data-user="mike">Mike</button>
     <button data-user="tanja">Tanja</button>
   </div>
-  <input type="password" id="pw" placeholder="Passwort" autocomplete="current-password">
+  <div class="pwfeld">
+    <input type="password" id="pw" placeholder="Passwort" autocomplete="current-password">
+    <button type="button" class="auge" id="pwAuge" aria-label="Passwort anzeigen" aria-pressed="false" title="Passwort anzeigen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M1.8 12S5.4 5.5 12 5.5 22.2 12 22.2 12 18.6 18.5 12 18.5 1.8 12 1.8 12Z"/>
+        <circle cx="12" cy="12" r="3.1"/>
+      </svg>
+    </button>
+  </div>
   <button class="go" id="loginBtn">Anmelden</button>
   <div class="err" id="loginErr"></div>
   <div class="fuss">Moselstr. 46 · WohnAnker</div>
@@ -293,6 +309,18 @@ document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', e =>
 document.querySelectorAll('#login .wer button').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('#login .wer button').forEach(x => x.classList.toggle('on', x === b));
 }));
+$('pwAuge').addEventListener('click', () => {
+  const feld = $('pw'); const sichtbar = feld.type === 'password';
+  feld.type = sichtbar ? 'text' : 'password';
+  $('pwAuge').setAttribute('aria-pressed', String(sichtbar));
+  $('pwAuge').setAttribute('aria-label', sichtbar ? 'Passwort verbergen' : 'Passwort anzeigen');
+  $('pwAuge').title = sichtbar ? 'Passwort verbergen' : 'Passwort anzeigen';
+  // Sichtbar = Auge leuchtet und das Feld bekommt einen farbigen Rand
+  $('pwAuge').style.color = sichtbar ? 'var(--wa-teal)' : '';
+  feld.style.borderColor = sichtbar ? 'var(--wa-teal)' : '';
+  feld.style.boxShadow = sichtbar ? '0 0 0 3px rgba(58,163,176,.14)' : '';
+  feld.focus();
+});
 $('loginBtn').addEventListener('click', anmelden);
 $('pw').addEventListener('keydown', e => { if (e.key === 'Enter') anmelden(); });
 
@@ -579,6 +607,10 @@ function sitzung() {
 function appZeigen() {
   $('login').classList.remove('on');
   document.body.style.overflow = '';
+  // Passwort wieder verbergen, damit es beim nächsten Mal nicht offen steht
+  if ($('pw')) { $('pw').type = 'password'; }
+  if ($('pwAuge')) { $('pwAuge').setAttribute('aria-pressed','false'); $('pwAuge').style.color = ''; $('pwAuge').title = 'Passwort anzeigen'; }
+  if ($('pw')) { $('pw').style.borderColor = ''; $('pw').style.boxShadow = ''; }
   document.body.dataset.angemeldet = '1';
   start();
 }
