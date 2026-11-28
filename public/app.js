@@ -55,6 +55,13 @@ class JarvisPWA {
         localStorage.setItem('jarvis_config', JSON.stringify(this.config));
     }
 
+    // Ollama ist nur im Heimnetz direkt erreichbar — von außen über den API-Proxy
+    ollamaBase() {
+        const h = window.location.hostname;
+        const imHeimnetz = h === 'localhost' || h === '127.0.0.1' || h.startsWith('192.168.') || h.endsWith('.local');
+        return imHeimnetz ? 'http://192.168.1.170:11434' : `${this.apiBaseUrl}/api/jarvis/ollama`;
+    }
+
     // ==================== INITIALISIERUNG ====================
 
     init() {
@@ -786,7 +793,7 @@ class JarvisPWA {
         };
         const ollamaApi = async (endpoint) => {
             try {
-                const response = await fetch(`http://192.168.1.170:11434/api/${endpoint}`);
+                const response = await fetch(`${this.ollamaBase()}/api/${endpoint}`);
                 return await response.json();
             } catch(e) { return null; }
         };
@@ -799,18 +806,30 @@ class JarvisPWA {
             } else {
                 setStatus('models', 'offline');
             }
-            // Performance (simuliert)
-            setVal('gc-ollama-perf-tokens', '—');
-            setVal('gc-ollama-perf-latency', '—');
-            setStatus('perf', 'online');
+            // Performance: geladene Modelle aus Ollama selbst
+            const laufend = await ollamaApi('ps');
+            if (laufend && Array.isArray(laufend.models)) {
+                const aktiv = laufend.models.length;
+                const belegtGb = laufend.models.reduce((s, m) => s + (m.size || 0), 0) / 1e9;
+                setVal('gc-ollama-perf-tokens', `${aktiv} aktiv`);
+                setVal('gc-ollama-perf-latency', aktiv ? `${belegtGb.toFixed(1)} GB` : '—');
+                setStatus('perf', 'online');
+            } else {
+                setStatus('perf', 'offline');
+            }
             // API
             setVal('gc-ollama-api-reqs', '—');
             setVal('gc-ollama-api-errors', '—');
             setStatus('api', 'online');
-            // Storage (simuliert)
-            setVal('gc-ollama-storage-used', '—');
-            setVal('gc-ollama-storage-free', '—');
-            setStatus('storage', 'online');
+            // Storage: Summe der Modellgrößen
+            if (models && models.models) {
+                const gesamtGb = models.models.reduce((s, m) => s + (m.size || 0), 0) / 1e9;
+                setVal('gc-ollama-storage-used', `${gesamtGb.toFixed(0)} GB`);
+                setVal('gc-ollama-storage-free', `${models.models.length} Modelle`);
+                setStatus('storage', 'online');
+            } else {
+                setStatus('storage', 'offline');
+            }
             // Netzwerk (simuliert)
             setVal('gc-ollama-net-clients', '—');
             setVal('gc-ollama-net-bandwidth', '—');
@@ -1265,7 +1284,7 @@ class JarvisPWA {
         // Entities aus HAOS: camera.back_door_standardauflosung, camera.doorstation_* etc.
         // Frontdoor暂时禁用 (Entity existiert nicht)
         const cams = [
-            // { id: 'camFrontImg', entity: 'camera.front_door', webrtc: false }, // ❌ DEAKTIVIERT - keine Entity
+            { id: 'camFrontImg', entity: 'camera.doorbird', webrtc: false }, // Haustür = Doorbird
             { id: 'camBackImg', entity: 'camera.back_door_standardauflosung', webrtc: false },
             { id: 'camEinfahrtImg', entity: 'camera.einfahrt_hochauflosung', webrtc: false }, // ❌ unavailable in HA
             { id: 'camDoorbirdImg', entity: 'camera.doorstation_1ccae371de47_live', webrtc: false }
@@ -1391,6 +1410,7 @@ class JarvisPWA {
                 // Solar
                 'sensor.jarvis_solar_aktuell', 'sensor.jarvis_solar_heute',
                 'sensor.hm1500_power', 'sensor.solar_yieldday',
+                'sensor.helios_sud_power_now', 'sensor.growatt_noah_mike_pv_leistung_gesamt', 'sensor.growatt_noah_mike2_pv_leistung_gesamt',
                 // Battery
                 'sensor.gesamt_batterie_soc', 'sensor.batterie_summe',
                 'sensor.gesamt_lade_leistung', 'sensor.gesamt_entlade_leistung',
@@ -1400,7 +1420,7 @@ class JarvisPWA {
                 // Phases
                 'sensor.haus_channel_a_power', 'sensor.haus_channel_b_power', 'sensor.haus_channel_c_power',
                 // Climate
-                'climate.split_klimaanlage', 'climate.schlafzimmer', 'climate.arbeitszimmer', 'switch.klima_schlafzimmer',
+                'climate.split_klimaanlage', 'climate.schlafzimmer', 'climate.arbeitzimmer_arbeitszimmer', 'switch.klima_schlafzimmer',
                 // Environment temps
                 'sensor.garten', 'sensor.pool_temperatur',
                 'sensor.wohnzimmer_echo_temperatur', 'sensor.arbeitszimmer_temperatur',
@@ -1411,7 +1431,7 @@ class JarvisPWA {
                 'binary_sensor.jarvis_status_nas', 'binary_sensor.jarvis_status_gateway',
                 'binary_sensor.jarvis_status_solar', 'binary_sensor.jarvis_status_zigbee',
                 'binary_sensor.jarvis_status_opendtu', 'binary_sensor.jarvis_status_jarvis_api',
-                'binary_sensor.paperless_status'
+                'sensor.jarvis_status_paperless'
             ];
             
             // States einzeln laden und zusammenführen
@@ -1476,8 +1496,16 @@ class JarvisPWA {
         // Solar power and today
         const solarPowerState = states.find(s => s.entity_id === 'sensor.jarvis_solar_aktuell' || s.entity_id === 'sensor.hm1500_power');
         const solarTodayState = states.find(s => s.entity_id === 'sensor.jarvis_solar_heute' || s.entity_id === 'sensor.solar_yieldday');
-        if (solarPowerState) {
-            const watts = parseFloat(solarPowerState.state) || 0;
+        const SOLAR_QUELLEN = ['sensor.helios_sud_power_now', 'sensor.growatt_noah_mike_pv_leistung_gesamt', 'sensor.growatt_noah_mike2_pv_leistung_gesamt'];
+        const solarSum = SOLAR_QUELLEN.reduce((sum, id) => {
+            const s = states.find(x => x.entity_id === id);
+            const v = s ? parseFloat(s.state) : NaN;
+            return sum + (isNaN(v) ? 0 : v);
+        }, 0);
+        if (solarPowerState || solarSum > 0) {
+            let watts = solarPowerState ? (parseFloat(solarPowerState.state) || 0) : 0;
+            // Sammelwert tot oder null (Wechselrichter offline) → echte Erzeuger summieren
+            if (watts <= 0) watts = solarSum;
             const text = `${Math.round(watts)} W`;
             this.setText('homeSolarPower', text);
             this.setText('stromSolarPower', text);
@@ -1553,7 +1581,7 @@ class JarvisPWA {
         const zones = [
             { id: 'wohnzimmer', entity: 'climate.split_klimaanlage' },
             { id: 'schlafzimmer', entity: 'climate.schlafzimmer' },
-            { id: 'arbeitszimmer', entity: 'climate.arbeitszimmer' }
+            { id: 'arbeitszimmer', entity: 'climate.arbeitzimmer_arbeitszimmer' }
         ];
 
         // Cache latest states for overlay
@@ -1654,7 +1682,7 @@ class JarvisPWA {
         const zones = [
             { id: 'wohnzimmer', entity: 'climate.split_klimaanlage', name: 'Wohnzimmer' },
             { id: 'schlafzimmer', entity: 'climate.schlafzimmer', name: 'Schlafzimmer' },
-            { id: 'arbeitszimmer', entity: 'climate.arbeitszimmer', name: 'Arbeitszimmer' }
+            { id: 'arbeitszimmer', entity: 'climate.arbeitzimmer_arbeitszimmer', name: 'Arbeitszimmer' }
         ];
 
         zones.forEach(zone => {
@@ -1716,7 +1744,7 @@ class JarvisPWA {
     }
 
     getClimateEntity(zoneId) {
-        const map = { wohnzimmer: 'climate.split_klimaanlage', schlafzimmer: 'climate.schlafzimmer', arbeitszimmer: 'climate.arbeitszimmer' };
+        const map = { wohnzimmer: 'climate.split_klimaanlage', schlafzimmer: 'climate.schlafzimmer', arbeitszimmer: 'climate.arbeitzimmer_arbeitszimmer' };
         return map[zoneId];
     }
 
@@ -1816,9 +1844,9 @@ class JarvisPWA {
             'status-zigbee-dot': 'binary_sensor.jarvis_status_zigbee',
             'status-opendtu-dot': 'binary_sensor.jarvis_status_opendtu',
             'status-jarvis-dot': 'binary_sensor.jarvis_status_jarvis_api',
-            'status-paperless-dot': 'binary_sensor.jarvis_status_paperless',
-            'status-immich-dot': 'binary_sensor.jarvis_status_immich',
-            'status-fredy-dot': 'binary_sensor.jarvis_status_fredy'
+            'status-paperless-dot': 'sensor.jarvis_status_paperless',
+            'status-immich-dot': 'sensor.jarvis_status_immich',
+            'status-fredy-dot': 'sensor.jarvis_status_fredy'
         };
         let onlineCount = 0;
         

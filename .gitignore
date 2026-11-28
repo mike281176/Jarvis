@@ -23,3 +23,8 @@ __pycache__/
 node_modules/
 .vercel/
 state.db
+
+# Lokale Alt-Kopien (nicht ausliefern)
+.archiv/
+certs/
+*.pid

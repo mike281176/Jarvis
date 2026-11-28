@@ -42,7 +42,7 @@ export const API_CONFIG = {
     // Tokens
     tokens: {
         homeAssistant: '', // Optional: HA Long-Lived Token
-        paperless: '44568e6750650f79836f5cb18f5f76b0fe1eb29f',
+        paperless: '', // Zugriff läuft serverseitig über /api/jarvis/proxy/paperless
         proxmox: '' // Optional: PVE Token
     }
 };

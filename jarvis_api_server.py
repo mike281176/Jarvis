@@ -14,11 +14,14 @@ import sys
 import time
 import urllib.request
 import urllib.error
+import urllib.parse
 from datetime import datetime
 from urllib.parse import urlparse
 
 PORT = 8124
 HA_URL = "http://192.168.1.91:8123"
+OLLAMA_URL = os.environ.get('JARVIS_OLLAMA_URL', "http://192.168.1.170:11434")
+LOKALPOST_DIR = os.path.expanduser("~/tageszeitung")
 
 # Token aus Hermes-Umgebung oder .env laden
 HA_TOKEN = os.environ.get('HASS_TOKEN', '')
@@ -160,7 +163,100 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             print(f"❌ Proxy Error: {e}")
             self.send_json_response({'status': 'error', 'message': f'Proxy Error: {str(e)}'}, 500)
 
+    def handle_ollama_proxy(self, path, method, body=None):
+        """Proxy für Ollama — der Dienst ist nur im Heimnetz erreichbar,
+        die PWA läuft aber öffentlich über HTTPS (Mixed Content ist sonst blockiert)."""
+        try:
+            sub_path = path.replace('/api/jarvis/ollama', '', 1)
+            if not sub_path.startswith('/'):
+                sub_path = '/' + sub_path
+
+            headers = {'Accept': 'application/json'}
+            if body:
+                headers['Content-Type'] = 'application/json'
+
+            req = urllib.request.Request(
+                f"{OLLAMA_URL}{sub_path}",
+                data=body if body else None,
+                headers=headers,
+                method=method
+            )
+
+            with urllib.request.urlopen(req, timeout=60) as response:
+                resp_data = response.read()
+                self.send_response(response.getcode())
+                self.send_header('Content-Type', response.headers.get('Content-Type', 'application/json'))
+                for key, value in CORS_HEADERS.items():
+                    self.send_header(key, value)
+                self.end_headers()
+                self.wfile.write(resp_data)
+
+        except urllib.error.HTTPError as e:
+            self.send_response(e.code)
+            for key, value in CORS_HEADERS.items():
+                self.send_header(key, value)
+            self.end_headers()
+            self.wfile.write(e.read())
+        except Exception as e:
+            print(f"❌ Ollama-Proxy Error: {e}")
+            self.send_json_response({'status': 'error', 'message': f'Ollama nicht erreichbar: {str(e)}'}, 502)
+
+    def handle_lokalpost(self, path):
+        """Liefert die generierte Lokalpost (statische Dateien aus ~/tageszeitung).
+        Ersetzt den früheren Extra-Server auf Port 8130, der nicht mehr läuft."""
+        try:
+            rel = path.replace('/api/jarvis/lokalpost', '', 1) or '/'
+            # Umlaute in Dateinamen kommen percent-encoded an
+            rel = urllib.parse.unquote(rel.split('?')[0])
+            if rel in ('', '/'):
+                rel = '/index.html'
+
+            target = os.path.realpath(os.path.join(LOKALPOST_DIR, rel.lstrip('/')))
+            if not target.startswith(os.path.realpath(LOKALPOST_DIR)):
+                self.send_json_response({'status': 'error', 'message': 'Zugriff verweigert'}, 403)
+                return
+            if not os.path.isfile(target):
+                self.send_json_response({'status': 'error', 'message': 'Nicht gefunden'}, 404)
+                return
+
+            ext = os.path.splitext(target)[1].lower()
+            ctype = {
+                '.html': 'text/html; charset=utf-8',
+                '.css': 'text/css; charset=utf-8',
+                '.js': 'application/javascript',
+                '.json': 'application/json',
+                '.png': 'image/png',
+                '.jpg': 'image/jpeg',
+                '.jpeg': 'image/jpeg',
+                '.webp': 'image/webp',
+                '.svg': 'image/svg+xml',
+            }.get(ext, 'application/octet-stream')
+
+            with open(target, 'rb') as f:
+                data = f.read()
+
+            self.send_response(200)
+            self.send_header('Content-Type', ctype)
+            self.send_header('Content-Length', str(len(data)))
+            self.send_header('Cache-Control', 'no-cache')
+            for key, value in CORS_HEADERS.items():
+                self.send_header(key, value)
+            self.end_headers()
+            self.wfile.write(data)
+
+        except Exception as e:
+            print(f"❌ Lokalpost Error: {e}")
+            self.send_json_response({'status': 'error', 'message': str(e)}, 500)
+
     def do_GET(self):
+        if self.path.startswith('/api/jarvis/lokalpost'):
+            self.handle_lokalpost(self.path)
+            return
+
+        if self.path.startswith('/api/jarvis/ollama/'):
+            self.handle_ollama_proxy(self.path, 'GET')
+            return
+
         if self.path.startswith('/api/jarvis/ha-proxy/'):
             self.handle_ha_proxy(self.path, 'GET')
             return
@@ -183,6 +279,12 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             self.send_json_response({'status': 'error', 'message': 'Endpunkt nicht gefunden'}, 404)
     
     def do_POST(self):
+        if self.path.startswith('/api/jarvis/ollama/'):
+            content_length = int(self.headers.get('Content-Length', 0))
+            body = self.rfile.read(content_length) if content_length else None
+            self.handle_ollama_proxy(self.path, 'POST', body)
+            return
+
         if self.path.startswith('/api/jarvis/ha-proxy/'):
             content_length = int(self.headers.get('Content-Length', 0))
             body = self.rfile.read(content_length)
