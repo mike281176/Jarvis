@@ -273,6 +273,8 @@ class JarvisAPIHandler(http.server.BaseHTTPRequestHandler):
             'summen': d.get('summen', {}),
             'auszuege': d.get('auszuege', []),
             'doppelverdacht': d.get('doppelverdacht', []),
+            'geplatzt': d.get('geplatzt', []),
+            'laufende_kosten': d.get('laufende_kosten', []),
             'letzte': buchungen[:40],
         }
         self.send_json_response(antwort)

@@ -136,7 +136,7 @@ nav a.on{color:var(--acc)}
       <div style="display:flex;gap:16px;margin-top:10px">
         <div><div class="sm num" id="kbAusgaben">—</div><div class="mut">Ausgaben</div></div>
         <div><div class="sm num ok" id="kbEinnahmen">—</div><div class="mut">Einnahmen</div></div>
-        <div><div class="sm num warn" id="kbDoppelt">—</div><div class="mut">doppelt?</div></div>
+        <div><div class="sm num warn" id="kbGeplatzt">—</div><div class="mut">nicht bezahlt</div></div>
       </div>
       <div class="mut" style="margin-top:9px" id="kbHinweis">VR-Bank · wird geladen …</div>
     </div></div>
@@ -218,9 +218,20 @@ nav a.on{color:var(--acc)}
       </div>
     </div></div>
     <div class="c span4"><div class="flex">
-      <div class="lbl">Auffällig</div>
+      <div class="between"><div class="lbl">Nicht bezahlt</div><div class="mut num" id="kbOffenSumme">—</div></div>
+      <div id="kbOffen" style="margin-top:9px"><div class="mut">nichts offen</div></div>
+      <div class="mut" style="margin-top:10px" id="kbOffenHinweis"></div>
+    </div></div>
+
+    <div class="c span4"><div class="flex">
+      <div class="between"><div class="lbl">Laufende Kosten</div><div class="mut num" id="kbLaufendSumme">—</div></div>
+      <div id="kbLaufend" style="margin-top:9px"><div class="mut">lade …</div></div>
+    </div></div>
+    <div class="c span4"><div class="flex">
+      <div class="lbl">Doppelzahlung?</div>
       <div id="kbWarn" style="margin-top:9px"><div class="mut">nichts gefunden</div></div>
     </div></div>
+
     <div class="c span4"><div class="flex">
       <div class="lbl">Letzte Buchungen</div>
       <div id="kbListe" style="margin-top:9px"><div class="mut">lade …</div></div>
@@ -249,7 +260,12 @@ const API = window.location.protocol === 'file:' || window.location.port === '81
 
 const $ = id => document.getElementById(id);
 const set = (id, v) => { const e = $(id); if (e) e.textContent = v; };
-const eur = n => n == null || isNaN(n) ? '—' : n.toLocaleString('de-DE', {maximumFractionDigits:0}) + ' €';
+const eur = n => {
+  if (n == null || isNaN(n)) return '—';
+  const opt = Math.abs(n) >= 1000 ? {maximumFractionDigits:0}
+                                  : {minimumFractionDigits:2, maximumFractionDigits:2};
+  return n.toLocaleString('de-DE', opt) + ' €';
+};
 const watt = n => n == null || isNaN(n) ? '—' : Math.round(n).toLocaleString('de-DE') + ' W';
 
 // ============ Navigation ============
@@ -463,10 +479,18 @@ async function ladeKassenbuch() {
     const s = d.summen || {};
     set('kbAusgaben', eur(s.ausgaben));
     set('kbEinnahmen', eur(s.einnahmen));
-    set('kbDoppelt', (d.doppelverdacht || []).length);
+    const offen = (d.geplatzt || []).filter(g => !g.erledigt);
+    const offenSumme = offen.reduce((s, g) => s + (g.betrag || 0), 0);
+    set('kbGeplatzt', offen.length ? eur(offenSumme) : '0');
     set('kbStand', d.stand ? 'Stand ' + d.stand.slice(0,10) : '—');
     set('kbHinweis', `${s.buchungen || 0} Buchungen · ${(d.auszuege||[]).length} Auszüge · VR-Bank`);
   } catch(e) { set('kbHinweis', 'nicht erreichbar'); }
+}
+function deutsch(datum) {
+  if (!datum) return '—';
+  if (datum.includes('.')) return datum;              // schon deutsch formatiert
+  const [j, m, t] = datum.split('-');
+  return `${t}.${m}.${j}`;
 }
 function openKassenbuch() {
   document.querySelectorAll('nav a').forEach(x => x.classList.remove('on'));
@@ -481,6 +505,28 @@ function zeichneKassenbuch() {
   const s = kbDaten.summen || {};
   set('kbDetailStand', kbDaten.stand ? kbDaten.stand.slice(0,16).replace('T',' ') : '—');
   set('kbDaus', eur(s.ausgaben)); set('kbDein', eur(s.einnahmen)); set('kbDsaldo', eur(s.saldo));
+  // Nicht bezahlte Zahlungen
+  const offen = (kbDaten.geplatzt || []).filter(g => !g.erledigt);
+  const offenSumme = offen.reduce((s, g) => s + (g.betrag || 0), 0);
+  set('kbOffenSumme', offen.length ? eur(offenSumme) : '—');
+  $('kbOffen').innerHTML = offen.length
+    ? offen.map(g => `<div class="kv"><span>${g.empfaenger.slice(0,30)}<br>
+        <span class="mut">fällig ${deutsch(g.faelligkeit)}${g.grund ? ' · ' + g.grund.replace(/^AM04 /,'') : ''}</span></span>
+        <b class="num warn">${eur(g.betrag)}</b></div>`).join('')
+    : '<div class="mut">alles bezahlt</div>';
+  set('kbOffenHinweis', offen.length
+    ? `${offen.length} Zahlung${offen.length > 1 ? 'en' : ''} sind zurückgekommen — nachzahlen, sobald Luft da ist. Dazu ${eur(offen.reduce((s,g)=>s+(g.entgelt||0),0))} Rücklastschrift-Gebühren.`
+    : '');
+
+  // Laufende Kosten
+  const laufend = kbDaten.laufende_kosten || [];
+  set('kbLaufendSumme', laufend.length ? eur(laufend.reduce((s,k)=>s+k.monatlich,0)) + ' / Monat' : '—');
+  $('kbLaufend').innerHTML = laufend.length
+    ? laufend.slice(0,8).map(k => `<div class="kv"><span>${k.empfaenger.slice(0,30)}<br>
+        <span class="mut">${k.monate} Monate · im Schnitt</span></span>
+        <b class="num">${eur(k.monatlich)}</b></div>`).join('')
+    : '<div class="mut">noch zu wenig Daten</div>';
+
   const v = kbDaten.doppelverdacht || [];
   $('kbWarn').innerHTML = v.length
     ? v.map(x => `<div class="kv"><span>${x.empfaenger}<br><span class="mut">${x.buchungen.join(' und ')}${x.tage===0?' · gleicher Tag':' · '+x.tage+' Tage'}</span></span><b class="num warn">${eur(x.betrag)}</b></div>`).join('')
