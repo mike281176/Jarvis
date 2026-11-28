@@ -90,6 +90,14 @@ nav a.on{color:var(--acc)}
 #login .fuss{margin-top:auto;font-size:11px;color:var(--mut);text-align:center;padding-top:24px}
 
 /* Haushaltsbuch */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:8px;margin-top:10px}
+.kpi{background:var(--card2);border:1px solid var(--line);border-radius:11px;padding:9px 10px}
+.kpi .v{font-size:15px;font-weight:700;letter-spacing:-.2px}
+.kpi .t{font-size:10px;color:var(--mut);margin-top:2px;line-height:1.25}
+.kpi .h{font-size:9px;margin-top:3px;line-height:1.25}
+.kpi.g{border-color:rgba(53,208,127,.35)}.kpi.g .v{color:var(--ok)}
+.kpi.a{border-color:rgba(245,165,36,.35)}.kpi.a .v{color:var(--acc)}
+.kpi.r{border-color:rgba(255,107,107,.35)}.kpi.r .v{color:var(--warn)}
 .hbmonate{display:flex;gap:6px;overflow-x:auto;margin-top:12px;padding-bottom:2px;scrollbar-width:none}
 .hbmonate::-webkit-scrollbar{display:none}
 .hbmonate button{flex:0 0 auto;background:var(--card2);border:1px solid var(--line);color:var(--mut);
@@ -339,6 +347,11 @@ body.flip-offen{overflow:hidden}
       <div class="hbmonate" id="hbMonate"></div>
     </div></div>
 
+    <div class="c span4"><div class="flex">
+      <div class="between"><div class="lbl">Kennzahlen</div><div class="mut" id="hbKpiMonat">—</div></div>
+      <div class="kpis" id="hbKpis"></div>
+    </div></div>
+
     <div class="c span2"><div class="flex">
       <div class="between"><div class="lbl">Schuldenuhr</div><div class="mut" id="hbSuStand">—</div></div>
       <div class="big num acc" id="hbSuRest">—</div>
@@ -363,6 +376,12 @@ body.flip-offen{overflow:hidden}
     <div class="c span2"><div class="flex">
       <div class="between"><div class="lbl">Veränderlich</div><div class="mut" id="hbVarSumme">—</div></div>
       <div id="hbVar" style="margin-top:6px"><div class="mut">lade …</div></div>
+    </div></div>
+
+    <div class="c span4"><div class="flex">
+      <div class="between"><div class="lbl">Haus &amp; Bewirtschaftung</div><div class="mut num" id="hbBwSumme">—</div></div>
+      <div id="hbBw" style="margin-top:6px"><div class="mut">lade …</div></div>
+      <div id="hbBwFuss" class="mut" style="margin-top:10px"></div>
     </div></div>
 
     <div class="c span4"><div class="flex">
@@ -663,6 +682,48 @@ function hbZeile(name, ist, budget, mitBalken) {
       <span class="s ${quote > 1.02 ? 'warn' : ''}">${eur(ist)}<span class="mut"> / ${eur(budget)}</span></span></div>`;
   return mitBalken ? zeile + `<div class="hbbar"><i class="${klasse}" style="width:${breite}%"></i></div>` : zeile;
 }
+function hbKpis(d, m) {
+  const s = d.schulden || {}, bw = d.bewirtschaftung || {};
+  const ein = m.einnahmen || 0, saldo = m.saldo || 0;
+  const fix = m.fix || 0;
+  const ist = name => (m.kategorien && m.kategorien[name]) || 0;
+  const mitBudget = (d.kategorien || []).filter(k => k.budget > 0);
+  const imPlan = mitBudget.filter(k => ist(k.name) <= k.budget * 1.02).length;
+  const treue = mitBudget.length ? Math.round(imPlan / mitBudget.length * 100) : null;
+
+  // Ø der letzten drei Monate (inkl. gewähltem)
+  const alle = d.monate || [];
+  const idx = alle.findIndex(x => x.monat === m.monat);
+  const dreier = idx >= 0 ? alle.slice(Math.max(0, idx - 2), idx + 1) : [];
+  const schnitt = dreier.length ? dreier.reduce((a, x) => a + (x.saldo || 0), 0) / dreier.length : null;
+
+  const pct = (a, b) => (b > 0 ? Math.round(a / b * 1000) / 10 : null);
+  const spar = pct(saldo, ein);
+  const fixq = pct(fix, ein);
+  const tilg = pct(bw.kredite_monat || s.rate || 0, ein);
+  const puffer = bw.rest_monat;
+
+  const ampel = (w, gut, mittel) => (w == null ? '' : w >= gut ? 'g' : w >= mittel ? 'a' : 'r');
+  const liste = [
+    {t: 'Sparquote', v: spar == null ? '—' : (spar > 0 ? '+' : '') + spar.toFixed(1).replace('.', ',') + ' %',
+     k: ampel(spar, 10, 0), h: 'Ziel ab 10 % · Saldo ÷ Einnahmen'},
+    {t: 'Fixkostenquote', v: fixq == null ? '—' : fixq.toFixed(1).replace('.', ',') + ' %',
+     k: fixq == null ? '' : (fixq <= 50 ? 'g' : fixq <= 65 ? 'a' : 'r'),
+     h: 'Ziel unter 50 % · inkl. Kredite & Haus'},
+    {t: 'Budgettreue', v: treue == null ? '—' : treue + ' %',
+     k: treue == null ? '' : (treue >= 80 ? 'g' : treue >= 60 ? 'a' : 'r'),
+     h: mitBudget.length ? `${imPlan} von ${mitBudget.length} Budgets gehalten` : 'keine Budgets'},
+    {t: 'Tilgungsanteil', v: tilg == null ? '—' : tilg.toFixed(1).replace('.', ',') + ' %',
+     k: '', h: `Rate ${eur(bw.kredite_monat || s.rate || 0)} vom Einkommen`},
+    {t: 'Ø Saldo 3 Monate', v: schnitt == null ? '—' : eur(schnitt),
+     k: schnitt == null ? '' : (schnitt >= 0 ? 'g' : 'r'), h: dreier.map(x => monatKurz(x.monat)).join(' · ')},
+    {t: 'Puffer Haus', v: puffer == null ? '—' : eur(puffer),
+     k: puffer == null ? '' : (puffer >= 250 ? 'g' : puffer >= 0 ? 'a' : 'r'),
+     h: 'frei nach Krediten + Nebenkosten'}
+  ];
+  return liste;
+}
+
 function zeichneHaushalt() {
   if (!hbDaten) return;
   const d = hbDaten, m = hbAktuell();
@@ -675,6 +736,12 @@ function zeichneHaushalt() {
   $('hbMonate').querySelectorAll('button').forEach(b => {
     b.onclick = () => { hbMonat = b.dataset.m; zeichneHaushalt(); };
   });
+
+  // Kennzahlen
+  set('hbKpiMonat', monatKurz(hbMonat));
+  $('hbKpis').innerHTML = hbKpis(d, m).map(k =>
+    `<div class="kpi ${k.k}"><div class="v">${k.v}</div><div class="t">${k.t}</div><div class="h mut">${k.h}</div></div>`
+  ).join('');
 
   set('hbEin', eur(m.einnahmen));
   set('hbAus', eur(m.ausgaben));
@@ -721,6 +788,24 @@ function zeichneHaushalt() {
   $('hbTipp').innerHTML = frei >= 0
     ? `<div class="mut">Im Plan frei — die Kreditrate ${s.rate ? eur(s.rate) : ''} ist in der Tanja-Überweisung schon enthalten. Frei heißt: Sondertilgung oder Rücklage.</div>`
     : `<div class="mut warn">Plan deckt die Ausgaben nicht. Prüfen, welche Kategorie über dem Budget liegt.</div>`;
+
+  // Haus & Bewirtschaftung (aus den Belegen: Strom, Wasser, Versicherung, Grundsteuer …)
+  const bw = d.bewirtschaftung || {};
+  if (bw.posten && bw.posten.length) {
+    set('hbBwSumme', eur(bw.summe_monat) + ' / Monat');
+    $('hbBw').innerHTML = bw.posten.map(x =>
+      `<div class="hbrow"><span class="n">${x.name}</span>
+       <span class="s">${eur(x.betrag_monat)}<span class="mut"> ${(x.rhythmus || '').startsWith('Abschlag') ? '' : 'Ø'}</span></span></div>`
+    ).join('');
+    const rest = bw.rest_monat || 0;
+    $('hbBwFuss').innerHTML = `Kredite ${eur(bw.kredite_monat)} + Nebenkosten ${eur(bw.summe_monat)} =
+      <b style="color:var(--fg)">${eur(bw.gesamt_monat)}</b> — gedeckt durch die Überweisung an Tanja
+      (${eur(bw.tanja_budget)}). Rest ${eur(rest)} für Rücklage und Reparaturen.
+      <br><span style="opacity:.7">Quellen: ${(bw.posten || []).slice(0,3).map(x => x.quelle).join(' · ')} … · Stand ${deutsch(bw.stand)}</span>`;
+  } else {
+    set('hbBwSumme', '—');
+    $('hbBw').innerHTML = '<div class="mut">noch keine Belege hinterlegt</div>';
+  }
 
   // Auffälligkeiten
   const offen = d.offene_zahlungen || [];
