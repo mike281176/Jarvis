@@ -1,10 +1,22 @@
 {
-  "name": "J.A.R.V.I.S. · Immobilien",
-  "short_name": "J.A.R.V.I.S.",
-  "description": "Immobilien, Flippen, Haus und Systeme von Mike Schiller",
+  "name": "WohnAnker · Immobilien",
+  "short_name": "WohnAnker",
+  "description": "Immobilien, Flippen, Haus und Systeme",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#080b10",
   "theme_color": "#080b10",
-  "lang": "de"
+  "lang": "de",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

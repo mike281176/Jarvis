@@ -4,12 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#080b10">
-<title>J.A.R.V.I.S. · Immobilien</title>
+<title>WohnAnker · Immobilien</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="WohnAnker">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#080b10; --card:#111823; --card2:#16202d; --line:#1e2a38;
   --fg:#e8eef6; --mut:#7b8ea6; --acc:#f5a524; --ok:#35d07f; --warn:#ff6b6b; --blue:#4ea8ff;
+  --wa-teal:#3aa3b0; --wa-creme:#f0ede2; --wa-navy:#1f3e5c;
 }
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;
      background:var(--bg);color:var(--fg);line-height:1.45;padding:12px 12px 92px;max-width:720px;margin:0 auto}
@@ -88,8 +92,8 @@ nav a.on{color:var(--acc)}
 <body>
 
 <div id="login">
-  <div class="marke">J.A.R.V.I.S.</div>
-  <h2>Guten Tag, Sir.</h2>
+  <img src="/logo-wohnanker.png" alt="WohnAnker" style="width:118px;height:118px;margin:4px 0 16px;align-self:flex-start">
+  <h2>Willkommen zurück.</h2>
   <div class="wer">
     <button class="on" data-user="mike">Mike</button>
     <button data-user="tanja">Tanja</button>
@@ -97,11 +101,13 @@ nav a.on{color:var(--acc)}
   <input type="password" id="pw" placeholder="Passwort" autocomplete="current-password">
   <button class="go" id="loginBtn">Anmelden</button>
   <div class="err" id="loginErr"></div>
-  <div class="fuss">Moselstr. 46 · J.A.R.V.I.S.</div>
+  <div class="fuss">Moselstr. 46 · WohnAnker</div>
 </div>
 
 <header>
-  <h1>J.A.R.V.I.S. <span style="color:var(--acc)">/</span> <span id="areaName">IMMOBILIEN</span></h1>
+  <h1><img src="/logo-mark.png" alt="" style="width:30px;height:30px;border-radius:50%;vertical-align:-9px;margin-right:8px;border:1px solid rgba(255,255,255,.08)">
+    <span style="letter-spacing:-.01em;font-weight:700;font-size:15px"><span style="color:var(--wa-teal)">Wohn</span><span style="color:var(--wa-creme)">Anker</span></span>
+    <span style="color:var(--mut);font-weight:400;letter-spacing:.16em;font-size:11px;margin-left:8px" id="areaName">IMMOBILIEN</span></h1>
   <div class="mut" id="sysState"><span class="dot"></span>Systeme normal</div>
 </header>
 
@@ -448,7 +454,7 @@ async function ladeKameras() {
 // ============ System ============
 async function ladeSystem() {
   const zeilen = [
-    ['J.A.R.V.I.S. API', true],
+    ['WohnAnker API', true],
     ['Home Assistant', !!states['sun.sun']],
     ['Paperless', states['sensor.jarvis_status_paperless']?.state === '200'],
     ['Immich', states['sensor.jarvis_status_immich']?.state === '200'],
