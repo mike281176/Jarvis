@@ -80,7 +80,13 @@ nav a.on{color:var(--acc)}
 #login .auge svg{width:21px;height:21px;display:block}
 #login .go{width:100%;background:var(--acc);border:0;border-radius:12px;padding:15px;font-size:14px;
        font-weight:700;color:#14181e;font-family:inherit;cursor:pointer}
-#login .err{color:var(--warn);font-size:12px;margin-top:10px;min-height:16px}
+#login .err{color:var(--warn);font-size:12px;margin-top:10px;min-height:16px;line-height:1.35}
+#login .link{background:none;border:0;color:var(--mut);font-size:12px;cursor:pointer;font-family:inherit;
+       text-decoration:underline;padding:12px 0 0;display:block;margin:0 auto}
+#login .link:hover{color:var(--fg)}
+#login .hinweis{font-size:12px;color:var(--mut);line-height:1.45;margin:2px 0 12px}
+#login .hinweis b{color:var(--fg);font-weight:600}
+#resetBox{display:none;width:100%}
 #login .fuss{margin-top:auto;font-size:11px;color:var(--mut);text-align:center;padding-top:24px}
 
 /* Bewertungs-App im Vollbild */
@@ -117,6 +123,25 @@ nav a.on{color:var(--acc)}
   </div>
   <button class="go" id="loginBtn">Anmelden</button>
   <div class="err" id="loginErr"></div>
+  <button type="button" class="link" id="pwVergessen">Passwort vergessen?</button>
+
+  <div id="resetBox">
+    <p class="hinweis" id="resetInfo"></p>
+    <input type="text" id="resetCode" placeholder="6-stelliger Code aus der Mail"
+           inputmode="numeric" autocomplete="one-time-code" maxlength="6">
+    <div class="pwfeld">
+      <input type="password" id="resetPw" placeholder="Neues Passwort (mind. 8 Zeichen)" autocomplete="new-password">
+      <button type="button" class="auge" id="resetAuge" aria-label="Passwort anzeigen" aria-pressed="false" title="Passwort anzeigen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M1.8 12S5.4 5.5 12 5.5 22.2 12 22.2 12 18.6 18.5 12 18.5 1.8 12 1.8 12Z"/>
+          <circle cx="12" cy="12" r="3.1"/>
+        </svg>
+      </button>
+    </div>
+    <button class="go" id="resetBtn">Neues Passwort speichern</button>
+    <div class="err" id="resetErr"></div>
+    <button type="button" class="link" id="resetBack">Zurück zur Anmeldung</button>
+  </div>
   <div class="fuss">Moselstr. 46 · WohnAnker</div>
 </div>
 
@@ -309,18 +334,24 @@ document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', e =>
 document.querySelectorAll('#login .wer button').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('#login .wer button').forEach(x => x.classList.toggle('on', x === b));
 }));
-$('pwAuge').addEventListener('click', () => {
-  const feld = $('pw'); const sichtbar = feld.type === 'password';
-  feld.type = sichtbar ? 'text' : 'password';
-  $('pwAuge').setAttribute('aria-pressed', String(sichtbar));
-  $('pwAuge').setAttribute('aria-label', sichtbar ? 'Passwort verbergen' : 'Passwort anzeigen');
-  $('pwAuge').title = sichtbar ? 'Passwort verbergen' : 'Passwort anzeigen';
-  // Sichtbar = Auge leuchtet und das Feld bekommt einen farbigen Rand
-  $('pwAuge').style.color = sichtbar ? 'var(--wa-teal)' : '';
-  feld.style.borderColor = sichtbar ? 'var(--wa-teal)' : '';
-  feld.style.boxShadow = sichtbar ? '0 0 0 3px rgba(58,163,176,.14)' : '';
-  feld.focus();
-});
+function augeBinden(augeId, feldId) {
+  const auge = $(augeId); const feld = $(feldId);
+  if (!auge || !feld) return;
+  auge.addEventListener('click', () => {
+    const sichtbar = feld.type === 'password';
+    feld.type = sichtbar ? 'text' : 'password';
+    auge.setAttribute('aria-pressed', String(sichtbar));
+    auge.setAttribute('aria-label', sichtbar ? 'Passwort verbergen' : 'Passwort anzeigen');
+    auge.title = sichtbar ? 'Passwort verbergen' : 'Passwort anzeigen';
+    // Sichtbar = Auge leuchtet und das Feld bekommt einen farbigen Rand
+    auge.style.color = sichtbar ? 'var(--wa-teal)' : '';
+    feld.style.borderColor = sichtbar ? 'var(--wa-teal)' : '';
+    feld.style.boxShadow = sichtbar ? '0 0 0 3px rgba(58,163,176,.14)' : '';
+    feld.focus();
+  });
+}
+augeBinden('pwAuge', 'pw');
+augeBinden('resetAuge', 'resetPw');
 $('loginBtn').addEventListener('click', anmelden);
 $('pw').addEventListener('keydown', e => { if (e.key === 'Enter') anmelden(); });
 
@@ -631,15 +662,99 @@ async function anmelden() {
       body: JSON.stringify({username:user, password:pw})
     });
     const d = await r.json().catch(() => ({}));
-    if (!r.ok || !d.token) throw new Error(d.error || 'Anmeldung fehlgeschlagen');
+    if (r.status === 429) { sperreStarten(d.retry_after || 300); return; }
+    if (!r.ok || !d.token) {
+      fehler.textContent = d.message || 'Anmeldung fehlgeschlagen — Passwort prüfen.';
+      if (d.attempts_left === 1) $('pwVergessen').style.color = 'var(--warn)';
+      return;
+    }
     localStorage.setItem(SESSION_KEY, JSON.stringify({user, name:(d.user && d.user.name) || user, token:d.token}));
     appZeigen();
   } catch(e) {
-    fehler.textContent = 'Anmeldung fehlgeschlagen — Passwort prüfen.';
+    fehler.textContent = 'Keine Verbindung zum Server.';
   } finally {
-    btn.disabled = false; btn.textContent = 'Anmelden';
+    if (!sperreLaeuft) { btn.disabled = false; btn.textContent = 'Anmelden'; }
   }
 }
+
+// ---- 3 Fehlversuche = 5 Minuten Sperre: Restzeit sichtbar herunterzählen ----
+let sperreLaeuft = false, sperreTimer = null;
+function sperreStarten(sekunden) {
+  const btn = $('loginBtn'); const fehler = $('loginErr');
+  sperreLaeuft = true;
+  let rest = Math.max(1, parseInt(sekunden, 10) || 300);
+  clearInterval(sperreTimer);
+  const zeigen = () => {
+    const m = Math.floor(rest / 60), s = String(rest % 60).padStart(2, '0');
+    btn.disabled = true;
+    btn.textContent = `Gesperrt — ${m}:${s}`;
+    fehler.textContent = 'Nach drei Fehlversuchen ist die Anmeldung vorübergehend gesperrt.';
+  };
+  zeigen();
+  sperreTimer = setInterval(() => {
+    rest -= 1;
+    if (rest <= 0) {
+      clearInterval(sperreTimer); sperreLaeuft = false;
+      btn.disabled = false; btn.textContent = 'Anmelden';
+      fehler.textContent = 'Sperre aufgehoben — neuer Versuch möglich.';
+      return;
+    }
+    zeigen();
+  }, 1000);
+}
+
+// ---- Passwort zurücksetzen per Mail-Code ----
+$('pwVergessen').addEventListener('click', async () => {
+  const user = document.querySelector('#login .wer button.on')?.dataset.user || 'mike';
+  const info = $('resetInfo'); const box = $('resetBox');
+  $('loginErr').textContent = '';
+  box.style.display = 'block';
+  info.textContent = 'Code wird verschickt …';
+  try {
+    const r = await fetch(`${API}/auth/reset-request`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({username:user})
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(d.message || 'Code konnte nicht verschickt werden.');
+    info.innerHTML = `Ein <b>6-stelliger Code</b> ist unterwegs an <b>${d.sent_to}</b>.<br>Er gilt ${d.valid_minutes} Minuten.`;
+    $('resetCode').focus();
+  } catch (e) {
+    info.textContent = e.message;
+  }
+});
+$('resetBack').addEventListener('click', () => {
+  $('resetBox').style.display = 'none';
+  $('resetErr').textContent = '';
+});
+$('resetBtn').addEventListener('click', async () => {
+  const user = document.querySelector('#login .wer button.on')?.dataset.user || 'mike';
+  const code = $('resetCode').value.trim(); const pw = $('resetPw').value;
+  const err = $('resetErr'); const btn = $('resetBtn');
+  err.textContent = '';
+  if (code.length < 4) { err.textContent = 'Bitte den Code aus der Mail eintragen.'; return; }
+  if (pw.length < 8) { err.textContent = 'Das neue Passwort braucht mindestens 8 Zeichen.'; return; }
+  btn.disabled = true; btn.textContent = 'Speichere …';
+  try {
+    const r = await fetch(`${API}/auth/reset-confirm`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({username:user, code, password:pw})
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(d.message || 'Zurücksetzen fehlgeschlagen.');
+    $('resetBox').style.display = 'none';
+    $('resetCode').value = ''; $('resetPw').value = '';
+    $('pw').value = pw;
+    $('loginErr').textContent = '';
+    $('loginErr').style.color = 'var(--ok)';
+    $('loginErr').textContent = 'Passwort geändert — du kannst dich jetzt anmelden.';
+    anmelden();
+  } catch (e) {
+    err.textContent = e.message;
+  } finally {
+    btn.disabled = false; btn.textContent = 'Neues Passwort speichern';
+  }
+});
 function abmelden() {
   localStorage.removeItem(SESSION_KEY);
   location.reload();
