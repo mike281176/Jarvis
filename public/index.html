@@ -572,6 +572,7 @@ function sitzung() {
 }
 function appZeigen() {
   $('login').classList.remove('on');
+  document.body.style.overflow = '';
   document.body.dataset.angemeldet = '1';
   start();
 }
@@ -627,6 +628,7 @@ async function start() {
   const s = sitzung();
   if (s) { appZeigen(); return; }
   $('login').classList.add('on');
+  document.body.style.overflow = 'hidden';
   if (istLokal()) {
     $('pw').placeholder = 'lokal — Passwort nicht nötig';
     $('pw').style.opacity = '.55';
